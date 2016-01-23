@@ -1,0 +1,294 @@
+//
+//  Here belongs the styling and information for typography
+//
+html {
+    /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
+    font-size: $font-size-global;
+    line-height: $line-height-global;
+}
+
+body {
+    color: $font-color-global;
+    font-family: $font-family-global;
+    font-weight: $font-weight-global;
+    text-decoration: $text-decoration-global;
+}
+
+a {
+    color: $font-color-link;
+    font-size: $font-size-link;
+    font-family: $font-family-link;
+    font-weight: $font-weight-link;
+    text-decoration: $text-decoration-link;
+    line-height: $line-height-link;
+    &:hover {
+        color: $font-color-link-hover;
+        font-size: $font-size-link-hover;
+        font-family: $font-family-link-hover;
+        font-weight: $font-weight-link-hover;
+        text-decoration: $text-decoration-link-hover;
+    }
+}
+
+p {
+    color: $font-color-p;
+    font-size: $font-size-p;
+    font-family: $font-family-p;
+    font-weight: $font-weight-p;
+    text-decoration: $text-decoration-p;
+    line-height: $line-height-p;
+}
+
+h1 {
+    color: $font-color-h1;
+    font-size: $font-size-h1;
+    font-family: $font-family-h1;
+    font-weight: $font-weight-h1;
+    text-decoration: $text-decoration-h1;
+    line-height: $line-height-h1;
+}
+
+h2 {
+    color: $font-color-h2;
+    font-size: $font-size-h2;
+    font-family: $font-family-h2;
+    font-weight: $font-weight-h2;
+    text-decoration: $text-decoration-h2;
+    line-height: $line-height-h2;
+}
+
+h3 {
+    color: $font-color-h3;
+    font-size: $font-size-h3;
+    font-family: $font-family-h3;
+    font-weight: $font-weight-h3;
+    text-decoration: $text-decoration-h3;
+    line-height: $line-height-h3;
+}
+
+h4 {
+    color: $font-color-h4;
+    font-size: $font-size-h4;
+    font-family: $font-family-h4;
+    font-weight: $font-weight-h4;
+    text-decoration: $text-decoration-h4;
+    line-height: $line-height-h4;
+}
+
+h5 {
+    color: $font-color-h5;
+    font-size: $font-size-h5;
+    font-family: $font-family-h5;
+    font-weight: $font-weight-h5;
+    text-decoration: $text-decoration-h5;
+    line-height: $line-height-h5;
+}
+
+h6 {
+    color: $font-color-h6;
+    font-size: $font-size-h6;
+    font-family: $font-family-h6;
+    font-weight: $font-weight-h6;
+    text-decoration: $text-decoration-h6;
+    line-height: $line-height-h6;
+}
+
+#header {
+    color: $header-font-color;
+    font-size: $header-font-size;
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    text-decoration: $header-text-decoration;
+    line-height: $header-line-height;
+    a {
+        color: $header-font-color-link;
+        font-size: $header-font-size-link;
+        font-family: $header-font-family-link;
+        font-weight: $header-font-weight-link;
+        text-decoration: $header-text-decoration-link;
+        line-height: $header-line-height-link;
+        &:hover {
+            color: $header-font-color-link-hover;
+            font-size: $header-font-size-link-hover;
+            font-family: $header-font-family-link-hover;
+            font-weight: $header-font-weight-link-hover;
+            text-decoration: $header-text-decoration-link-hover;
+        }
+    }
+}
+
+#content {
+    color: $content-font-color;
+    font-size: $content-font-size;
+    font-family: $content-font-family;
+    font-weight: $content-font-weight;
+    text-decoration: $content-text-decoration;
+    line-height: $content-line-height;
+    a {
+        color: $content-font-color-link;
+        font-size: $content-font-size-link;
+        font-family: $content-font-family-link;
+        font-weight: $content-font-weight-link;
+        text-decoration: $content-text-decoration-link;
+        line-height: $content-line-height-link;
+        &:hover {
+            color: $content-font-color-link-hover;
+            font-size: $content-font-size-link-hover;
+            font-family: $content-font-family-link-hover;
+            font-weight: $content-font-weight-link-hover;
+            text-decoration: $content-text-decoration-link-hover;
+        }
+    }
+}
+
+.sidebar {
+    .heading {
+        color: #ffffff;
+        font-size: 11pt;
+        line-height: $sidebar-heading-height;
+    }
+}
+
+//For Sidebar general
+.sidebar {
+    color: $sidebar-font-color-global;
+    font-size: $sidebar-font-size-global;
+    font-family: $sidebar-font-family-global;
+    font-weight: $sidebar-font-weight-global;
+    text-decoration: $sidebar-text-decoration-global;
+    line-height: $sidebar-line-height-global;
+        a {
+        color: $sidebar-font-color-global-link;
+        font-size: $sidebar-font-size-global-link;
+        font-family: $sidebar-font-family-global-link;
+        font-weight: $sidebar-font-weight-global-link;
+        text-decoration: $sidebar-text-decoration-global-link;
+        line-height: $sidebar-line-height-global-link;
+        &:hover {
+            color: $sidebar-font-color-global-link-hover;
+            font-size: $sidebar-font-size-global-link-hover;
+            font-family: $sidebar-font-family-global-link-hover;
+            font-weight: $sidebar-font-weight-global-link-hover;
+            text-decoration: $sidebar-text-decoration-global-link-hover;
+        }
+    }
+}
+
+#sidebar-primary {
+    color: $sidebar-font-color-primary;
+    font-size: $sidebar-font-size-primary;
+    font-family: $sidebar-font-family-primary;
+    font-weight: $sidebar-font-weight-primary;
+    text-decoration: $sidebar-text-decoration-primary;
+    line-height: $sidebar-line-height-primary;
+    a {
+        color: $sidebar-font-color-primary-link;
+        font-size: $sidebar-font-size-primary-link;
+        font-family: $sidebar-font-family-primary-link;
+        font-weight: $sidebar-font-weight-primary-link;
+        text-decoration: $sidebar-text-decoration-primary-link;
+        line-height: $sidebar-line-height-primary-link;
+        &:hover {
+            color: $sidebar-font-color-primary-link-hover;
+            font-size: $sidebar-font-size-primary-link-hover;
+            font-family: $sidebar-font-family-primary-link-hover;
+            font-weight: $sidebar-font-weight-primary-link-hover;
+            text-decoration: $sidebar-text-decoration-primary-link-hover;
+        }
+    }
+}
+
+#sidebar-secondary {
+    color: $sidebar-font-color-secondary;
+    font-size: $sidebar-font-size-secondary;
+    font-family: $sidebar-font-family-secondary;
+    font-weight: $sidebar-font-weight-secondary;
+    text-decoration: $sidebar-text-decoration-secondary;
+    line-height: $sidebar-line-height-secondary;
+    a {
+        color: $sidebar-font-color-secondary-link;
+        font-size: $sidebar-font-size-secondary-link;
+        font-family: $sidebar-font-family-secondary-link;
+        font-weight: $sidebar-font-weight-secondary-link;
+        text-decoration: $sidebar-text-decoration-secondary-link;
+        line-height: $sidebar-line-height-secondary-link;
+        &:hover {
+            color: $sidebar-font-color-secondary-link-hover;
+            font-size: $sidebar-font-size-secondary-link-hover;
+            font-family: $sidebar-font-family-secondary-link-hover;
+            font-weight: $sidebar-font-weight-secondary-link-hover;
+            text-decoration: $sidebar-text-decoration-secondary-link-hover;
+        }
+    }
+}
+
+#content {
+    a {
+        &:hover {
+        }
+    }
+    .heading {
+        font-size: $product-list-heading-font-size;
+        color: $product-list-heading-font-color;
+        font-weight: $product-list-heading-font-weight;
+        font-style: $product-list-heading-font-style;
+        text-decoration: $product-list-heading-text-decoration;
+        text-transform: $product-list-heading-text-transform;
+        line-height: $product-list-heading-height;
+    }
+    .list-refine {
+        font-size: $product-list-refine-font-size;
+        color: $product-list-refine-font-color;
+        font-weight: $product-list-refine-font-weight;
+        font-style: $product-list-refine-font-style;
+        text-decoration: $product-list-refine-text-decoration;
+        text-transform: $product-list-refine-text-transform;
+        line-height: $product-list-refine-height;
+    }
+}
+
+#category-tree {
+    ul {
+        li {
+            a {
+                line-height: $category-tree-link-height;
+                color: $category-tree-font-color;
+                font-size: $category-tree-font-size;
+                font-weight: $category-tree-font-weight;
+                text-decoration: $category-tree-text-decoration;
+                border-bottom: $category-tree-border-bottom-width $category-tree-border-bottom-style $category-tree-border-bottom-color;
+                &:hover {
+                    color: $category-tree-font-color-hover;
+                    font-size: $category-tree-font-size;
+                    font-weight: $category-tree-font-weight-hover;
+                    text-decoration: $category-tree-text-decoration-hover;
+                    border-bottom: $category-tree-border-bottom-width-hover $category-tree-border-bottom-style-hover $category-tree-border-bottom-color-hover;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    color: $footer-font-color;
+    font-size: $footer-font-size;
+    font-family: $footer-font-family;
+    font-weight: $footer-font-weight;
+    text-decoration: $footer-text-decoration;
+    line-height: $footer-line-height;
+    a {
+        color: $footer-font-color-link;
+        font-size: $footer-font-size-link;
+        font-family: $footer-font-family-link;
+        font-weight: $footer-font-weight-link;
+        text-decoration: $footer-text-decoration-link;
+        line-height: $footer-line-height-link;
+        &:hover {
+            color: $footer-font-color-link-hover;
+            font-size: $footer-font-size-link-hover;
+            font-family: $footer-font-family-link-hover;
+            font-weight: $footer-font-weight-link-hover;
+            text-decoration: $footer-text-decoration-link-hover;
+        }
+    }
+}

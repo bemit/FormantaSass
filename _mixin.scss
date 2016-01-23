@@ -1,0 +1,89 @@
+//
+//  All Mixins
+//
+@mixin bp-xlarge {
+    @media (min-width: $bp-xlarge-min-size) {
+        @content;
+    }
+}
+
+@mixin bp-large {
+    @media (min-width: $bp-large-min-size) {
+        @content;
+    }
+}
+
+@mixin bp-medium {
+    @media (min-width: $bp-medium-min-size) {
+        @content;
+    }
+}
+
+@mixin bp-small {
+    @media (min-width: $bp-small-min-size) and (max-width: $bp-medium-min-size - 1) {
+        @content;
+    }
+}
+
+@mixin bp-xsmall {
+    @media (max-width: $bp-small-min-size - 1) {
+        @content;
+    }
+}
+
+@mixin bp-small-complete {/* General Mobile Devices: xsmall and small */
+    @media (max-width: $bp-medium-min-size - 1) {
+        @content;
+    }
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin shadow($args...) {
+    box-shadow: $args;
+    -moz-box-shadow: $args;
+    -webkit-box-shadow: $args;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+%visuallyhidden {
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+//  Include this mixin on a container if its children are all floated, to give the container a proper height.
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}

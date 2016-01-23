@@ -1,0 +1,94 @@
+//  Background
+//  ##########
+$sidebar-background: $color-primary;
+$sidebar-primary-background: $sidebar-background;
+$sidebar-secondary-background: $sidebar-background;
+
+$sidebar-heading-background: $color-secondary;
+$sidebar-heading-height: 30px;
+
+//  Font Color
+//  ##########
+$sidebar-font-color-global: $color-secondary;
+$sidebar-font-color-primary: $sidebar-font-color-global;
+$sidebar-font-color-secondary: $sidebar-font-color-global;
+$sidebar-font-color-global-link: $font-color-link;
+$sidebar-font-color-primary-link: $sidebar-font-color-global-link;
+$sidebar-font-color-secondary-link: $sidebar-font-color-global-link;
+$sidebar-font-color-global-link-hover: $font-color-link-hover;
+$sidebar-font-color-primary-link-hover: $sidebar-font-color-global-link-hover;
+$sidebar-font-color-secondary-link-hover: $sidebar-font-color-global-link-hover;
+
+//  Font-Size
+//  ##########
+$sidebar-font-size-global: $font-size-global;
+$sidebar-font-size-primary: $sidebar-font-size-global;
+$sidebar-font-size-secondary: $sidebar-font-size-global;
+$sidebar-font-size-global-link: $font-size-link;
+$sidebar-font-size-primary-link: $sidebar-font-size-global-link;
+$sidebar-font-size-secondary-link: $sidebar-font-size-global-link;
+$sidebar-font-size-global-link-hover: $font-size-link-hover;
+$sidebar-font-size-primary-link-hover: $sidebar-font-size-global-link-hover;
+$sidebar-font-size-secondary-link-hover: $sidebar-font-size-global-link-hover;
+
+//  Font Family
+//  ##########
+$sidebar-font-family-global-link: $font-family-link;
+$sidebar-font-family-primary-link: $sidebar-font-family-global-link;
+$sidebar-font-family-secondary-link: $sidebar-font-family-global-link;
+$sidebar-font-family-global-link-hover: $font-family-link-hover;
+$sidebar-font-family-primary-link-hover: $sidebar-font-family-global-link-hover;
+$sidebar-font-family-secondary-link-hover: $sidebar-font-family-global-link-hover;
+$sidebar-font-family-global: $font-family-global;
+$sidebar-font-family-primary: $sidebar-font-family-global;
+$sidebar-font-family-secondary: $sidebar-font-family-global;
+
+//  Font Weight
+//  ##########
+$sidebar-font-weight-global-link: $font-weight-link;
+$sidebar-font-weight-primary-link: $sidebar-font-weight-global-link;
+$sidebar-font-weight-secondary-link: $sidebar-font-weight-global-link;
+$sidebar-font-weight-global-link-hover: $font-weight-link-hover;
+$sidebar-font-weight-primary-link-hover: $sidebar-font-weight-global-link-hover;
+$sidebar-font-weight-secondary-link-hover: $sidebar-font-weight-global-link-hover;
+$sidebar-font-weight-global: $font-weight-global;
+$sidebar-font-weight-primary: $sidebar-font-weight-global;
+$sidebar-font-weight-secondary: $sidebar-font-weight-global;
+
+//  Text Decoration
+//  ##########
+$sidebar-text-decoration-global-link: $text-decoration-link;
+$sidebar-text-decoration-primary-link: $sidebar-text-decoration-global-link;
+$sidebar-text-decoration-secondary-link: $sidebar-text-decoration-global-link;
+$sidebar-text-decoration-global-link-hover: $text-decoration-link-hover;
+$sidebar-text-decoration-primary-link-hover: $sidebar-text-decoration-global-link-hover;
+$sidebar-text-decoration-secondary-link-hover: $sidebar-text-decoration-global-link-hover;
+$sidebar-text-decoration-global: $text-decoration-global;
+$sidebar-text-decoration-primary: $sidebar-text-decoration-global;
+$sidebar-text-decoration-secondary: $sidebar-text-decoration-global;
+
+//  Line Height
+//  ##########
+$sidebar-line-height-global-link: $line-height-link;
+$sidebar-line-height-primary-link: $sidebar-line-height-global-link;
+$sidebar-line-height-secondary-link: $sidebar-line-height-global-link;
+$sidebar-line-height-global-link-hover: $line-height-link-hover;
+$sidebar-line-height-primary-link-hover: $sidebar-line-height-global-link-hover;
+$sidebar-line-height-secondary-link-hover: $sidebar-line-height-global-link-hover;
+$sidebar-line-height-global: $line-height-global;
+$sidebar-line-height-primary: $sidebar-line-height-global;
+$sidebar-line-height-secondary: $sidebar-line-height-global;
+
+
+// Sizing
+// #########################################################
+$sidebar-mobile-width: 100%;
+$sidebar-desktop-width: 215px;
+
+$sidebar-padding-outer: 10px;
+$sidebar-margin-inner: 10px;
+
+$sidebar-primary-position: left;//Possible: right, left or none
+$sidebar-secondary-position: none;//Possible: right, left or none
+
+$sidebar-elements-gap: 30px;
