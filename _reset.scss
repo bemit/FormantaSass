@@ -1,7 +1,5 @@
 @import 'libs/normalize/normalize';
-//
-//  Here belongs everything that resets styling or making something default [normalize] (like semantic elements as block for old browsers)
-//
+
 html {
     width: 100%;
     height: 100%;
@@ -33,13 +31,14 @@ img {
     image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
     image-rendering: optimizeQuality;
     -ms-interpolation-mode: bicubic; /* Internetexplorer */
-    border: 0;
+    border: 0; /* removes border around images in older Internetexplorer */
 }
 
 select {
     width: 100%;
 }
 
+/* Remove standard design of browsers */
 button {
     -webkit-appearance: none;
     -moz-appearance: none;

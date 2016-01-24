@@ -1,0 +1,175 @@
+.content {
+    color: $content-font-color;
+    font-size: $content-font-size;
+    font-family: $content-font-family;
+    font-weight: $content-font-weight;
+    text-decoration: $content-text-decoration;
+    line-height: $content-line-height;
+    a {
+        color: $content-font-color-link;
+        font-size: $content-font-size-link;
+        font-family: $content-font-family-link;
+        font-weight: $content-font-weight-link;
+        text-decoration: $content-text-decoration-link;
+        line-height: $content-line-height-link;
+        &:hover {
+            color: $content-font-color-link-hover;
+            font-size: $content-font-size-link-hover;
+            font-family: $content-font-family-link-hover;
+            font-weight: $content-font-weight-link-hover;
+            text-decoration: $content-text-decoration-link-hover;
+        }
+    }
+}
+
+.sidebar {
+    .heading {
+        color: #ffffff;
+        font-size: 11pt;
+        line-height: $sidebar-heading-height;
+    }
+}
+
+//For Sidebar general
+.sidebar {
+    color: $sidebar-font-color-global;
+    font-size: $sidebar-font-size-global;
+    font-family: $sidebar-font-family-global;
+    font-weight: $sidebar-font-weight-global;
+    text-decoration: $sidebar-text-decoration-global;
+    line-height: $sidebar-line-height-global;
+        a {
+        color: $sidebar-font-color-global-link;
+        font-size: $sidebar-font-size-global-link;
+        font-family: $sidebar-font-family-global-link;
+        font-weight: $sidebar-font-weight-global-link;
+        text-decoration: $sidebar-text-decoration-global-link;
+        line-height: $sidebar-line-height-global-link;
+        &:hover {
+            color: $sidebar-font-color-global-link-hover;
+            font-size: $sidebar-font-size-global-link-hover;
+            font-family: $sidebar-font-family-global-link-hover;
+            font-weight: $sidebar-font-weight-global-link-hover;
+            text-decoration: $sidebar-text-decoration-global-link-hover;
+        }
+    }
+}
+
+#sidebar-primary {
+    color: $sidebar-font-color-primary;
+    font-size: $sidebar-font-size-primary;
+    font-family: $sidebar-font-family-primary;
+    font-weight: $sidebar-font-weight-primary;
+    text-decoration: $sidebar-text-decoration-primary;
+    line-height: $sidebar-line-height-primary;
+    a {
+        color: $sidebar-font-color-primary-link;
+        font-size: $sidebar-font-size-primary-link;
+        font-family: $sidebar-font-family-primary-link;
+        font-weight: $sidebar-font-weight-primary-link;
+        text-decoration: $sidebar-text-decoration-primary-link;
+        line-height: $sidebar-line-height-primary-link;
+        &:hover {
+            color: $sidebar-font-color-primary-link-hover;
+            font-size: $sidebar-font-size-primary-link-hover;
+            font-family: $sidebar-font-family-primary-link-hover;
+            font-weight: $sidebar-font-weight-primary-link-hover;
+            text-decoration: $sidebar-text-decoration-primary-link-hover;
+        }
+    }
+}
+
+#sidebar-secondary {
+    color: $sidebar-font-color-secondary;
+    font-size: $sidebar-font-size-secondary;
+    font-family: $sidebar-font-family-secondary;
+    font-weight: $sidebar-font-weight-secondary;
+    text-decoration: $sidebar-text-decoration-secondary;
+    line-height: $sidebar-line-height-secondary;
+    a {
+        color: $sidebar-font-color-secondary-link;
+        font-size: $sidebar-font-size-secondary-link;
+        font-family: $sidebar-font-family-secondary-link;
+        font-weight: $sidebar-font-weight-secondary-link;
+        text-decoration: $sidebar-text-decoration-secondary-link;
+        line-height: $sidebar-line-height-secondary-link;
+        &:hover {
+            color: $sidebar-font-color-secondary-link-hover;
+            font-size: $sidebar-font-size-secondary-link-hover;
+            font-family: $sidebar-font-family-secondary-link-hover;
+            font-weight: $sidebar-font-weight-secondary-link-hover;
+            text-decoration: $sidebar-text-decoration-secondary-link-hover;
+        }
+    }
+}
+
+.content {
+    a {
+        &:hover {
+        }
+    }
+    .heading {
+        font-size: $product-list-heading-font-size;
+        color: $product-list-heading-font-color;
+        font-weight: $product-list-heading-font-weight;
+        font-style: $product-list-heading-font-style;
+        text-decoration: $product-list-heading-text-decoration;
+        text-transform: $product-list-heading-text-transform;
+        line-height: $product-list-heading-height;
+    }
+    .list-refine {
+        font-size: $product-list-refine-font-size;
+        color: $product-list-refine-font-color;
+        font-weight: $product-list-refine-font-weight;
+        font-style: $product-list-refine-font-style;
+        text-decoration: $product-list-refine-text-decoration;
+        text-transform: $product-list-refine-text-transform;
+        line-height: $product-list-refine-height;
+    }
+}
+
+#category-tree {
+    ul {
+        li {
+            a {
+                line-height: $category-tree-link-height;
+                color: $category-tree-font-color;
+                font-size: $category-tree-font-size;
+                font-weight: $category-tree-font-weight;
+                text-decoration: $category-tree-text-decoration;
+                border-bottom: $category-tree-border-bottom-width $category-tree-border-bottom-style $category-tree-border-bottom-color;
+                &:hover {
+                    color: $category-tree-font-color-hover;
+                    font-size: $category-tree-font-size;
+                    font-weight: $category-tree-font-weight-hover;
+                    text-decoration: $category-tree-text-decoration-hover;
+                    border-bottom: $category-tree-border-bottom-width-hover $category-tree-border-bottom-style-hover $category-tree-border-bottom-color-hover;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    color: $footer-font-color;
+    font-size: $footer-font-size;
+    font-family: $footer-font-family;
+    font-weight: $footer-font-weight;
+    text-decoration: $footer-text-decoration;
+    line-height: $footer-line-height;
+    a {
+        color: $footer-font-color-link;
+        font-size: $footer-font-size-link;
+        font-family: $footer-font-family-link;
+        font-weight: $footer-font-weight-link;
+        text-decoration: $footer-text-decoration-link;
+        line-height: $footer-line-height-link;
+        &:hover {
+            color: $footer-font-color-link-hover;
+            font-size: $footer-font-size-link-hover;
+            font-family: $footer-font-family-link-hover;
+            font-weight: $footer-font-weight-link-hover;
+            text-decoration: $footer-text-decoration-link-hover;
+        }
+    }
+}

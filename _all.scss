@@ -8,28 +8,25 @@
     Company    : bemit UG
     Licence:   : MIT Licence
 */
-@import 'config/all';
-@import 'button/config';
 @import 'color/config';
 @import 'typography/config';
+@import 'breakpoint/config';
+@import 'button/config';
 @import 'grid/config';
 @import 'form/config';
 
+@import 'reset';
+
 @import 'mixin';
-@import 'button/mixin';
 @import 'color/mixin';
 @import 'typography/mixin';
+@import 'breakpoint/mixin';
+@import 'button/mixin';
 @import 'grid/mixin';
 @import 'form/mixin';
-
-@import 'reset';
 
 @import 'button/style';
 @import 'color/style';
 @import 'typography/style';
 @import 'grid/style';
 @import 'form/style';
-
-@import 'style';
-@import 'button';
-@import 'form';

@@ -1,201 +1,154 @@
-//  Here belongs the positioning and size of elements
-//  Don't: 
-//      width/height BUTTONS
-//      style elements
-//      typographic
-//      resetting style
-//      define variables
-//      define mixins
-
+//
+//  Here belongs the styling and information for typography
+//
 html {
-    
+    /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
+    font: {
+        size: $font-size-global;
+    }
+    line: {
+        height: $line-height-global;
+    }
 }
 
 body {
-    @include bp-small-complete{
-	}
-}
-
-#header {
-    .top {
-        @include bp-medium {
-        }
+    color: $font-color-global;
+    font: {
+        family: $font-family-global;
+        weight: $font-weight-global;
     }
-    .bottom {
-        @include bp-medium {
-        }
-    }
-    @include bp-small-complete {
-	}
-}
-
-.sidebar {
-    .heading {
-        height: $sidebar-heading-height;
-        padding-left: $sidebar-padding-outer;
+    text: {
+        decoration: $text-decoration-global;
     }
 }
 
-#content {
-    .heading {
-        display: block;
-        height: $product-list-heading-height;
-        margin-bottom: $product-list-heading-margin-bottom;
-        padding-left: $product-list-heading-padding-left;
+a {
+    color: $font-color-link;
+    font: {
+        size: $font-size-link;
+        family: $font-family-link;
+        weight: $font-weight-link;
     }
-    .list-refine {
-        display: block;
-        height: $product-list-refine-height;
-        margin-bottom: $product-list-refine-margin-bottom;
-        #sort-items {
-            float: left;
-            width: $content-desktop-width / 2;
-            & > span {
-                &:hover {
-                    .options {
-                        display: block;
-                        position: absolute;
-                        z-index: 1;
-                    }
-                }
-                .options {
-                    margin: 0;
-                    padding: 0;
-                    display: none;
-                }
-            }
+    text: {
+        decoration: $text-decoration-link;
+    }
+    line: {
+        height: $line-height-link;
+    }
+    &:hover {
+        color: $font-color-link-hover;
+        font: {
+            size: $font-size-link-hover;
+            family: $font-family-link-hover;
+            weight: $font-weight-link-hover;
         }
-        #items-per-page {
-            float: left;
-            width: $content-desktop-width / 2;
-            & > span {
-                &:hover {
-                    .options {
-                        display: block;
-                        position: absolute;
-                        z-index: 1;
-                    }
-                }
-                .options {
-                    margin: 0;
-                    padding: 0;
-                    display: none;
-                }
-            }
+        text: {
+            decoration: $text-decoration-link-hover;
         }
     }
 }
 
-#sidebar-primary {
-    @include bp-medium{
-        @if $sidebar-primary-position == none {
-            display: none;
-        } @else {
-            float: $sidebar-primary-position;
-            margin-right: $sidebar-margin-inner;
-            width: $sidebar-desktop-width;
-            &> * {
-                margin-bottom: $sidebar-elements-gap;
-            }
-        }
-	}
-    @include bp-small-complete{
-        width: $sidebar-mobile-width;
-	}
-}
-
-#sidebar-secondary {
-    @include bp-medium {
-        @if $sidebar-secondary-position == none {
-            display: none;
-        } @else {
-            float: $sidebar-secondary-position;
-            margin-left: $sidebar-margin-inner;
-        }
-        width: $sidebar-desktop-width;
-	}
-    @include bp-small-complete{
-        width: $sidebar-mobile-width;
-	}
-}
-
-#category-tree {
-    ul {
-        margin: 0;
-        padding: 0 0 0 $sidebar-padding-outer;
-        li {
-            margin: 0;
-            padding: 0;
-        }
+p {
+    color: $font-color-p;
+    font: {
+        size: $font-size-p;
+        family: $font-family-p;
+        weight: $font-weight-p;
+    }
+    text: {
+        decoration: $text-decoration-p;
+    }
+    line: {
+        height: $line-height-p;
     }
 }
 
-#productList {
-    margin: 0;
-    padding: 0;
-    li {
-        margin: 0;
-        padding: 0;
-        width: $content-desktop-width /2;
-        float: left;
+h1 {
+    color: $font-color-h1;
+    font: {
+        size: $font-size-h1;
+        family: $font-family-h1;
+        weight: $font-weight-h1;
+    }
+    text: {
+        decoration: $text-decoration-h1;
+    }
+    line: {
+        height: $line-height-h1;
     }
 }
 
-#loginBox {
-    @include bp-medium {
-        input[type=text],
-        input[type=password] {
-            display: block;
-            width: $sidebar-desktop-width - ($sidebar-padding-outer * 2);
-        }
-	}
-    @include bp-small-complete {
-	}
-    padding: 0 0 0 $sidebar-padding-outer;
-}
-
-.search {
-    #searchParam {
-        margin-left: $sidebar-padding-outer;
+h2 {
+    color: $font-color-h2;
+    font: {
+        size: $font-size-h2;
+        family: $font-family-h2;
+        weight: $font-weight-h2;
+    }
+    text: {
+        decoration: $text-decoration-h2;
+    }
+    line: {
+        height: $line-height-h2;
     }
 }
 
-#content {
-    @include bp-medium{
-        float: left;
-        width: $content-desktop-width;
-	}
-    @include bp-small-complete{
-        width: $content-mobile-width;
-	}
-}
-
-#footer {
-    @include clearfix;
-    ul,
-    li,
-    dl,
-    dt,
-    dd {
-        margin: 0;
-        padding: 0;
+h3 {
+    color: $font-color-h3;
+    font: {
+        size: $font-size-h3;
+        family: $font-family-h3;
+        weight: $font-weight-h3;
     }
-    dl {
-        float: left;
+    text: {
+        decoration: $text-decoration-h3;
+    }
+    line: {
+        height: $line-height-h3;
     }
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    @include bp-medium{
-        width: $container-desktop-width;
-	}
-    @include bp-small-complete{
-        width: $container-mobile-width;
-	}
+h4 {
+    color: $font-color-h4;
+    font: {
+        size: $font-size-h4;
+        family: $font-family-h4;
+        weight: $font-weight-h4;
+    }
+    text: {
+        decoration: $text-decoration-h4;
+    }
+    line: {
+        height: $line-height-h4;
+    }
 }
 
-#main-container {
-    @include clearfix;
+h5 {
+    color: $font-color-h5;
+    font: {
+        size: $font-size-h5;
+        family: $font-family-h5;
+        weight: $font-weight-h5;
+    }
+    text: {
+        decoration: $text-decoration-h5;
+    }
+    line: {
+        height: $line-height-h5;
+    }
+}
+
+h6 {
+    color: $font-color-h6;
+    font: {
+        size: $font-size-h6;
+        family: $font-family-h6;
+        weight: $font-weight-h6;
+    }
+    text: {
+        decoration: $text-decoration-h6;
+    }
+    line: {
+        height: $line-height-h6;
+    }
 }

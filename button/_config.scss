@@ -1,10 +1,99 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 23.01.2016, 13:41:03
-    Author     : mbecker
-*/
+//  Buttons
+//  #########################################################
 
+//  Typography
+//  ##########
+$button-font-family: $font-family-global;
+$button-font-size: $font-size-global;
+$button-font-color: #ffffff;
+$button-font-style: normal;
+$button-text-decoration: none;
+$button-text-transform: uppercase;
+$button-font-weight: 400;
+$button-font-size-hover: $button-font-size;
+$button-font-color-hover: $button-font-color;
+$button-font-style-hover: $button-font-style;
+$button-text-decoration-hover: $button-text-decoration;
+$button-font-weight-hover: $button-font-weight;
+
+//  Padding
+//  ##########
+$button-padding-complete: 10px;
+$button-padding-top: $button-padding-complete;
+$button-padding-right: $button-padding-complete;
+$button-padding-bottom: $button-padding-complete;
+$button-padding-left: $button-padding-complete;
+
+//  Margin
+//  ##########
+$button-margin-complete: 0;
+$button-margin-top: $button-margin-complete;
+$button-margin-right: $button-margin-complete;
+$button-margin-bottom: $button-margin-complete;
+$button-margin-left: $button-margin-complete;
+
+//  Border
+//  ##########
+$button-border-width: 0;
+$button-border-width-top: $button-border-width;
+$button-border-width-right: $button-border-width;
+$button-border-width-bottom: $button-border-width;
+$button-border-width-left: $button-border-width;
+$button-border-style: solid;
+$button-border-style-top: $button-border-style;
+$button-border-style-right: $button-border-style;
+$button-border-style-bottom: $button-border-style;
+$button-border-style-left: $button-border-style;
+$button-border-color: transparent;
+$button-border-color-top: $button-border-color;
+$button-border-color-right: $button-border-color;
+$button-border-color-bottom: $button-border-color;
+$button-border-color-left: $button-border-color;
+//  Border Radius
+$button-border-radius: 0;
+$button-border-radius-inner: $button-border-radius;//first part within css (before /)
+$button-border-radius-outer: $button-border-radius;//second part within css (after /)
+//  Border Radius complete
+$button-border-radius-top-left-top: $button-border-radius-inner;
+$button-border-radius-top-left-left: $button-border-radius-outer;
+$button-border-radius-top-right-top: $button-border-radius-inner;
+$button-border-radius-top-right-right: $button-border-radius-outer;
+$button-border-radius-bottom-right-bottom: $button-border-radius-inner;
+$button-border-radius-bottom-right-right: $button-border-radius-outer;
+$button-border-radius-bottom-left-bottom: $button-border-radius-inner;
+$button-border-radius-bottom-left-left: $button-border-radius-outer;
+//  Border Hover
+//  ###
+$button-border-hover-width: $button-border-width;
+$button-border-hover-style: $button-border-style;
+$button-border-hover-color: $button-border-color;
+$button-border-hover-width-top: $button-border-hover-width;
+$button-border-hover-style-top: $button-border-hover-style;
+$button-border-hover-color-top: $button-border-hover-color;
+$button-border-hover-width-right: $button-border-hover-width;
+$button-border-hover-style-right: $button-border-hover-style;
+$button-border-hover-color-right: $button-border-hover-color;
+$button-border-hover-width-bottom: $button-border-hover-width;
+$button-border-hover-style-bottom: $button-border-hover-style;
+$button-border-hover-color-bottom: $button-border-hover-color;
+$button-border-hover-width-left: $button-border-hover-width;
+$button-border-hover-style-left: $button-border-hover-style;
+$button-border-hover-color-left: $button-border-hover-color;
+//  Border Radius
+$button-border-radius-hover: $button-border-radius;
+$button-border-radius-hover-inner: $button-border-radius-hover;//first part within css (before /)
+$button-border-radius-hover-outer: $button-border-radius-hover;//second part within css (after /)
+//  Border Radius complete
+$button-border-radius-hover-top-left-top: $button-border-radius-hover-inner;
+$button-border-radius-hover-top-left-left: $button-border-radius-hover-outer;
+$button-border-radius-hover-top-right-top: $button-border-radius-hover-inner;
+$button-border-radius-hover-top-right-right: $button-border-radius-hover-outer;
+$button-border-radius-hover-bottom-right-bottom: $button-border-radius-hover-inner;
+$button-border-radius-hover-bottom-right-right: $button-border-radius-hover-outer;
+$button-border-radius-hover-bottom-left-bottom: $button-border-radius-hover-inner;
+$button-border-radius-hover-bottom-left-left: $button-border-radius-hover-outer;
+
+//  Background
+//  ##########
+$button-background: #000000;
+$button-background-hover: $color-secondary;

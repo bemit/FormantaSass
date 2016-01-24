@@ -1,10 +1,72 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 23.01.2016, 13:49:56
-    Author     : mbecker
-*/
+//
+//  Here belongs the style and everything for buttons
+//
+@mixin button-base($expand: true) {
+    @if $expand {
+        display: block;
+        width: 100%;
+    } @else {
+        display: inline-block;
+    }
+    // Not in hover ->
+    font-family: $button-font-family;
+    padding: $button-padding-top $button-padding-right $button-padding-bottom $button-padding-left;
+    margin: $button-margin-top $button-margin-right $button-margin-bottom $button-margin-left;
+    // <- Not in hover
+    background: $button-background;
+    color: $button-font-color;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    font-style: $button-font-style;
+    text-decoration: $button-text-decoration;
+    text-transform: $button-text-transform;
+    border-top-width: $button-border-width-top;
+    border-right-width: $button-border-width-right;
+    border-bottom-width: $button-border-width-bottom;
+    border-left-width: $button-border-width-left;
+    border-top-style: $button-border-style-top;
+    border-right-style: $button-border-style-right;
+    border-bottom-style: $button-border-style-bottom;
+    border-left-style: $button-border-style-left;
+    border-top-color: $button-border-color-top;
+    border-right-color: $button-border-color-right;
+    border-bottom-color: $button-border-color-bottom;
+    border-left-color: $button-border-color-left;
+    border-top-left-radius: $button-border-radius-top-left-top $button-border-radius-top-left-left;
+    border-top-right-radius: $button-border-radius-top-right-top $button-border-radius-top-right-right;
+    border-bottom-right-radius: $button-border-radius-bottom-right-bottom $button-border-radius-bottom-right-right;
+    border-bottom-left-radius: $button-border-radius-bottom-left-bottom $button-border-radius-bottom-left-left;
+    
+    &:hover {
+        background: $button-background-hover;
+        color: $button-font-color-hover;
+        font-size: $button-font-size-hover;
+        font-weight: $button-font-weight-hover;
+        font-style: $button-font-style-hover;
+        text-decoration: $button-text-decoration-hover;
+        border-top-width: $button-border-hover-width-top;
+        border-right-width: $button-border-hover-width-right;
+        border-bottom-width: $button-border-hover-width-bottom;
+        border-left-width: $button-border-hover-width-left;
+        border-top-style: $button-border-hover-style-top;
+        border-right-style: $button-border-hover-style-right;
+        border-bottom-style: $button-border-hover-style-bottom;
+        border-left-style: $button-border-hover-style-left;
+        border-top-color: $button-border-hover-color-top;
+        border-right-color: $button-border-hover-color-right;
+        border-bottom-color: $button-border-hover-color-bottom;
+        border-left-color: $button-border-hover-color-left;
+        border-top-left-radius: $button-border-radius-hover-top-left-top $button-border-radius-hover-top-left-left;
+        border-top-right-radius: $button-border-radius-hover-top-right-top $button-border-radius-hover-top-right-right;
+        border-bottom-right-radius: $button-border-radius-hover-bottom-right-bottom $button-border-radius-hover-bottom-right-right;
+        border-bottom-left-radius: $button-border-radius-hover-bottom-left-bottom $button-border-radius-hover-bottom-left-left;
+    }
+}
 
+@mixin button-normal($expand: true) {
+    @include button-base($expand);
+}
+
+@mixin button-outline($expand: true) {
+    @include button-base($expand);
+}

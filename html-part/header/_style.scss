@@ -1,0 +1,28 @@
+.header {
+    background: $header-background;
+    background-size: $header-background-size;
+}
+
+.header {
+    color: $header-font-color;
+    font-size: $header-font-size;
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    text-decoration: $header-text-decoration;
+    line-height: $header-line-height;
+    a {
+        color: $header-font-color-link;
+        font-size: $header-font-size-link;
+        font-family: $header-font-family-link;
+        font-weight: $header-font-weight-link;
+        text-decoration: $header-text-decoration-link;
+        line-height: $header-line-height-link;
+        &:hover {
+            color: $header-font-color-link-hover;
+            font-size: $header-font-size-link-hover;
+            font-family: $header-font-family-link-hover;
+            font-weight: $header-font-weight-link-hover;
+            text-decoration: $header-text-decoration-link-hover;
+        }
+    }
+}
