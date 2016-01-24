@@ -3,41 +3,41 @@
 
 //  Color
 //  ##########
-$font-color-global: #000000;
-$font-color-h1: $font-color-global;
-$font-color-h2: $font-color-global;
-$font-color-h3: $font-color-global;
-$font-color-h4: $font-color-global;
-$font-color-h5: $font-color-global;
-$font-color-h6: $font-color-global;
-$font-color-p: $font-color-global;
-$font-color-link: $font-color-global;
+$global-font-color: #000000;
+$font-color-h1: $global-font-color;
+$font-color-h2: $global-font-color;
+$font-color-h3: $global-font-color;
+$font-color-h4: $global-font-color;
+$font-color-h5: $global-font-color;
+$font-color-h6: $global-font-color;
+$font-color-p: $global-font-color;
+$font-color-link: $global-font-color;
 $font-color-link-hover: $font-color-link;
 
 //  Size
 //  ##########
-$font-size-global: 11pt;
-$font-size-h1: $font-size-global;
-$font-size-h2: $font-size-global;
-$font-size-h3: $font-size-global;
-$font-size-h4: $font-size-global;
-$font-size-h5: $font-size-global;
-$font-size-h6: $font-size-global;
-$font-size-p: $font-size-global;
-$font-size-link: $font-size-global;
+$global-font-size: 11pt;
+$font-size-h1: $global-font-size;
+$font-size-h2: $global-font-size;
+$font-size-h3: $global-font-size;
+$font-size-h4: $global-font-size;
+$font-size-h5: $global-font-size;
+$font-size-h6: $global-font-size;
+$font-size-p: $global-font-size;
+$font-size-link: $global-font-size;
 $font-size-link-hover: $font-size-link;
 
 //  Font Family
 //  ##########
-$font-family-global: Arial, Helvetica;
-$font-family-h1: $font-family-global;
-$font-family-h2: $font-family-global;
-$font-family-h3: $font-family-global;
-$font-family-h4: $font-family-global;
-$font-family-h5: $font-family-global;
-$font-family-h6: $font-family-global;
-$font-family-p: $font-family-global;
-$font-family-link: $font-family-global;
+$global-font-family: Arial, Helvetica;
+$font-family-h1: $global-font-family;
+$font-family-h2: $global-font-family;
+$font-family-h3: $global-font-family;
+$font-family-h4: $global-font-family;
+$font-family-h5: $global-font-family;
+$font-family-h6: $global-font-family;
+$font-family-p: $global-font-family;
+$font-family-link: $global-font-family;
 $font-family-link-hover: $font-family-link;
 
 //  Font Weight

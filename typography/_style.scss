@@ -4,7 +4,7 @@
 html {
     /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
     font: {
-        size: $font-size-global;
+        size: $global-font-size;
     }
     line: {
         height: $line-height-global;
@@ -12,9 +12,9 @@ html {
 }
 
 body {
-    color: $font-color-global;
+    color: $global-font-color;
     font: {
-        family: $font-family-global;
+        family: $global-font-family;
         weight: $font-weight-global;
     }
     text: {
