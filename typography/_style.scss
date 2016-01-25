@@ -1,154 +1,153 @@
-//
-//  Here belongs the styling and information for typography
-//
-html {
-    /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
-    font: {
-        size: $global-font-size;
-    }
-    line: {
-        height: $line-height-global;
-    }
-}
-
-body {
-    color: $global-font-color;
-    font: {
-        family: $global-font-family;
-        weight: $font-weight-global;
-    }
-    text: {
-        decoration: $text-decoration-global;
-    }
-}
-
-a {
-    color: $font-color-link;
-    font: {
-        size: $font-size-link;
-        family: $font-family-link;
-        weight: $font-weight-link;
-    }
-    text: {
-        decoration: $text-decoration-link;
-    }
-    line: {
-        height: $line-height-link;
-    }
-    &:hover {
-        color: $font-color-link-hover;
+@if($fd-generating-output-style) {
+    html {
+        /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
         font: {
-            size: $font-size-link-hover;
-            family: $font-family-link-hover;
-            weight: $font-weight-link-hover;
+            size: $global-font-size;
+        }
+        line: {
+            height: $line-height-global;
+        }
+    }
+
+    body {
+        color: $global-font-color;
+        font: {
+            family: $global-font-family;
+            weight: $font-weight-global;
         }
         text: {
-            decoration: $text-decoration-link-hover;
+            decoration: $text-decoration-global;
         }
     }
-}
 
-p {
-    color: $font-color-p;
-    font: {
-        size: $font-size-p;
-        family: $font-family-p;
-        weight: $font-weight-p;
+    a {
+        color: $font-color-link;
+        font: {
+            size: $font-size-link;
+            family: $font-family-link;
+            weight: $font-weight-link;
+        }
+        text: {
+            decoration: $text-decoration-link;
+        }
+        line: {
+            height: $line-height-link;
+        }
+        &:hover {
+            color: $font-color-link-hover;
+            font: {
+                size: $font-size-link-hover;
+                family: $font-family-link-hover;
+                weight: $font-weight-link-hover;
+            }
+            text: {
+                decoration: $text-decoration-link-hover;
+            }
+        }
     }
-    text: {
-        decoration: $text-decoration-p;
-    }
-    line: {
-        height: $line-height-p;
-    }
-}
 
-h1 {
-    color: $font-color-h1;
-    font: {
-        size: $font-size-h1;
-        family: $font-family-h1;
-        weight: $font-weight-h1;
+    p {
+        color: $font-color-p;
+        font: {
+            size: $font-size-p;
+            family: $font-family-p;
+            weight: $font-weight-p;
+        }
+        text: {
+            decoration: $text-decoration-p;
+        }
+        line: {
+            height: $line-height-p;
+        }
     }
-    text: {
-        decoration: $text-decoration-h1;
-    }
-    line: {
-        height: $line-height-h1;
-    }
-}
 
-h2 {
-    color: $font-color-h2;
-    font: {
-        size: $font-size-h2;
-        family: $font-family-h2;
-        weight: $font-weight-h2;
+    h1 {
+        color: $font-color-h1;
+        font: {
+            size: $font-size-h1;
+            family: $font-family-h1;
+            weight: $font-weight-h1;
+        }
+        text: {
+            decoration: $text-decoration-h1;
+        }
+        line: {
+            height: $line-height-h1;
+        }
     }
-    text: {
-        decoration: $text-decoration-h2;
-    }
-    line: {
-        height: $line-height-h2;
-    }
-}
 
-h3 {
-    color: $font-color-h3;
-    font: {
-        size: $font-size-h3;
-        family: $font-family-h3;
-        weight: $font-weight-h3;
+    h2 {
+        color: $font-color-h2;
+        font: {
+            size: $font-size-h2;
+            family: $font-family-h2;
+            weight: $font-weight-h2;
+        }
+        text: {
+            decoration: $text-decoration-h2;
+        }
+        line: {
+            height: $line-height-h2;
+        }
     }
-    text: {
-        decoration: $text-decoration-h3;
-    }
-    line: {
-        height: $line-height-h3;
-    }
-}
 
-h4 {
-    color: $font-color-h4;
-    font: {
-        size: $font-size-h4;
-        family: $font-family-h4;
-        weight: $font-weight-h4;
+    h3 {
+        color: $font-color-h3;
+        font: {
+            size: $font-size-h3;
+            family: $font-family-h3;
+            weight: $font-weight-h3;
+        }
+        text: {
+            decoration: $text-decoration-h3;
+        }
+        line: {
+            height: $line-height-h3;
+        }
     }
-    text: {
-        decoration: $text-decoration-h4;
-    }
-    line: {
-        height: $line-height-h4;
-    }
-}
 
-h5 {
-    color: $font-color-h5;
-    font: {
-        size: $font-size-h5;
-        family: $font-family-h5;
-        weight: $font-weight-h5;
+    h4 {
+        color: $font-color-h4;
+        font: {
+            size: $font-size-h4;
+            family: $font-family-h4;
+            weight: $font-weight-h4;
+        }
+        text: {
+            decoration: $text-decoration-h4;
+        }
+        line: {
+            height: $line-height-h4;
+        }
     }
-    text: {
-        decoration: $text-decoration-h5;
-    }
-    line: {
-        height: $line-height-h5;
-    }
-}
 
-h6 {
-    color: $font-color-h6;
-    font: {
-        size: $font-size-h6;
-        family: $font-family-h6;
-        weight: $font-weight-h6;
+    h5 {
+        color: $font-color-h5;
+        font: {
+            size: $font-size-h5;
+            family: $font-family-h5;
+            weight: $font-weight-h5;
+        }
+        text: {
+            decoration: $text-decoration-h5;
+        }
+        line: {
+            height: $line-height-h5;
+        }
     }
-    text: {
-        decoration: $text-decoration-h6;
-    }
-    line: {
-        height: $line-height-h6;
+
+    h6 {
+        color: $font-color-h6;
+        font: {
+            size: $font-size-h6;
+            family: $font-family-h6;
+            weight: $font-weight-h6;
+        }
+        text: {
+            decoration: $text-decoration-h6;
+        }
+        line: {
+            height: $line-height-h6;
+        }
     }
 }

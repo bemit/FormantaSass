@@ -1,9 +1,11 @@
-input[type=submit] {
-    @include button-normal(false);
-}
-input[type=button] {
-    @include button-normal(false);
-}
-button {
-    @include button-normal(false);
+@if($fd-generating-output-style) {
+    input[type=submit] {
+        @include button-normal(false);
+    }
+    input[type=button] {
+        @include button-normal(false);
+    }
+    button {
+        @include button-normal(false);
+    }
 }

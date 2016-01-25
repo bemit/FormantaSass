@@ -1,13 +1,16 @@
 @charset 'utf-8';
 /*
-    FloodSassLibrary for basis config, mixins, formatting and typography.
-    For use in any project, not only Flood
+    FormantaSassLibrary for basis config, mixins, formatting and typography.
+    For use in any project where there should be basic designs and other things.
+    
+    Part 1 of the FormantaLibrary for FrontendDevelopment.
 /* 
     Copyright  : © 2016 bemit UG //bemit.eu
     Author     : Michael Becker
     Company    : bemit UG
     Licence:   : MIT Licence
 */
+@import 'config';
 @import 'color/config';
 @import 'typography/config';
 @import 'breakpoint/config';

@@ -1,3 +1,5 @@
-.footer {
-    background: $footer-background;
+@if($fd-generating-output-style) {
+    .footer {
+        background: $footer-background;
+    }
 }

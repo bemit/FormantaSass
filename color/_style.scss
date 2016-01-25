@@ -1,6 +1,8 @@
-body {
-    background: $body-background;
-}
+@if($fd-generating-output-style) {
+    body {
+        background: $body-background;
+    }
 
-.content {
+    .content {
+    }
 }
