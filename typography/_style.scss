@@ -1,4 +1,4 @@
-@if($fd-generating-output-style) {
+@if($output-style-all) {
     html {
         /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
         font: {

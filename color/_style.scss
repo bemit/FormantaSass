@@ -1,4 +1,4 @@
-@if($fd-generating-output-style) {
+@if($output-style-all) {
     body {
         background: $body-background;
     }

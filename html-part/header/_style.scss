@@ -1,4 +1,4 @@
-@if($fd-generating-output-style) {
+@if($output-style-html-part) {
     .header {
         background: $header-background;
         background-size: $header-background-size;

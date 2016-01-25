@@ -1,0 +1,14 @@
+@mixin table($layout-fixed: true) {
+    @if($layout-fixed) {
+        table-layout: fixed;
+    }
+    display: table;
+}
+
+@mixin table-row {
+    display: table-row;
+}
+
+@mixin table-cell {
+    display: table-cell;
+}

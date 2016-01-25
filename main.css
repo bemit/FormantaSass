@@ -669,6 +669,16 @@ h6 {
   text-decoration: none;
   line-height: 100%; }
 
+.table {
+  table-layout: fixed;
+  display: table; }
+
+.row {
+  display: table-row; }
+
+.cell {
+  display: table-cell; }
+
 form input[type=text] {
   display: inline-block;
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;

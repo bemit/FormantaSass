@@ -1,4 +1,4 @@
-@if($fd-generating-output-style) {
+@if($output-style-html-part) {
     .sidebar {
         background: $sidebar-background;
     }
