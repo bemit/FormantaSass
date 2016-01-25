@@ -19,7 +19,7 @@
         style: $form-input-textbox-font-style;
     }
     text: {
-        decoration: $form-input-textbox-font-decoration;
+        decoration: $form-input-textbox-text-decoration;
     }
     border: {
         top: {
@@ -64,7 +64,7 @@
             style: $form-input-textbox-font-style-hover;
         }
         text: {
-            decoration: $form-input-textbox-font-decoration-hover;
+            decoration: $form-input-textbox-text-decoration-hover;
         }
         border: {
             top: {

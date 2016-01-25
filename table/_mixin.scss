@@ -1,8 +1,57 @@
-@mixin table($layout-fixed: true) {
+@mixin table-base {
+    font: {
+        family: $table-font-family;
+        size: $table-font-size;
+        weight: $table-font-weight;
+        style: $table-font-style;
+    }
+    text: {
+        decoration: $table-text-decoration;
+    }
+    border: {
+        top: {
+            width: $table-border-width-top;
+            style: $table-border-style-top;
+            color: $table-border-color-top;
+            left: {
+                radius: $table-border-radius-top-left-top $table-border-radius-top-left-left;
+            }
+            right: {
+                radius: $table-border-radius-top-right-top $table-border-radius-top-right-right;
+            }
+        }
+        right: {
+            width: $table-border-width-right;
+            style: $table-border-style-right;
+            color: $table-border-color-right;
+        }
+        bottom: {
+            width: $table-border-width-bottom;
+            style: $table-border-style-bottom;
+            color: $table-border-color-bottom;
+            left: {
+                radius: $table-border-radius-bottom-left-bottom $table-border-radius-bottom-left-left;
+            }
+            right: {
+                radius: $table-border-radius-bottom-right-bottom $table-border-radius-bottom-right-right;
+            }
+        }
+        left: {
+            width: $table-border-width-left;
+            style: $table-border-style-left;
+            color: $table-border-color-left;
+        }
+    }
+}
+@mixin table($layout-fixed: true, $expand: true) {
     @if($layout-fixed) {
         table-layout: fixed;
     }
+    @if($expand) {
+        width: 100%;
+    }
     display: table;
+    @include table-base;
 }
 
 @mixin table-row {

@@ -671,7 +671,29 @@ h6 {
 
 .table {
   table-layout: fixed;
-  display: table; }
+  width: 100%;
+  display: table;
+  font-family: Arial, Helvetica;
+  font-size: 11pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  border-top-width: 0;
+  border-top-style: solid;
+  border-top-color: #006633;
+  border-top-left-radius: 0 0;
+  border-top-right-radius: 0 0;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-right-color: #006633;
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+  border-bottom-color: #006633;
+  border-bottom-left-radius: 0 0;
+  border-bottom-right-radius: 0 0;
+  border-left-width: 0;
+  border-left-style: solid;
+  border-left-color: #006633; }
 
 .row {
   display: table-row; }
