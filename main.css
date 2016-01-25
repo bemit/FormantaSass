@@ -591,7 +591,7 @@ body {
 html {
   /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
   font-size: 11pt;
-  line-height: 100%; }
+  line-height: 30px; }
 
 body {
   color: #000000;
@@ -605,7 +605,7 @@ a {
   font-family: Arial, Helvetica;
   font-weight: 400;
   text-decoration: none;
-  line-height: 100%; }
+  line-height: 30px; }
   a:hover {
     color: #000000;
     font-size: 11pt;
@@ -619,7 +619,7 @@ p {
   font-family: Arial, Helvetica;
   font-weight: 400;
   text-decoration: none;
-  line-height: 100%; }
+  line-height: 30px; }
 
 h1 {
   color: #000000;
@@ -627,7 +627,7 @@ h1 {
   font-family: Arial, Helvetica;
   font-weight: 400;
   text-decoration: none;
-  line-height: 100%; }
+  line-height: 30px; }
 
 h2 {
   color: #000000;
@@ -635,7 +635,7 @@ h2 {
   font-family: Arial, Helvetica;
   font-weight: 400;
   text-decoration: none;
-  line-height: 100%; }
+  line-height: 30px; }
 
 h3 {
   color: #000000;
@@ -643,7 +643,7 @@ h3 {
   font-family: Arial, Helvetica;
   font-weight: 400;
   text-decoration: none;
-  line-height: 100%; }
+  line-height: 30px; }
 
 h4 {
   color: #000000;
@@ -651,7 +651,7 @@ h4 {
   font-family: Arial, Helvetica;
   font-weight: 400;
   text-decoration: none;
-  line-height: 100%; }
+  line-height: 30px; }
 
 h5 {
   color: #000000;
@@ -659,7 +659,7 @@ h5 {
   font-family: Arial, Helvetica;
   font-weight: 400;
   text-decoration: none;
-  line-height: 100%; }
+  line-height: 30px; }
 
 h6 {
   color: #000000;
@@ -667,16 +667,13 @@ h6 {
   font-family: Arial, Helvetica;
   font-weight: 400;
   text-decoration: none;
-  line-height: 100%; }
+  line-height: 30px; }
 
 .table {
   table-layout: fixed;
   width: 100%;
   display: table;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
-  font-weight: 400;
-  font-style: normal;
+  font: normal normal 400 11pt/30px Arial, Helvetica;
   text-decoration: none;
   border-top-width: 0;
   border-top-style: solid;
@@ -694,6 +691,17 @@ h6 {
   border-left-width: 0;
   border-left-style: solid;
   border-left-color: #006633; }
+  .table a {
+    font: normal normal 400 11pt Arial, Helvetica;
+    color: #000000;
+    text-decoration: none;
+    line-height: 30px; }
+    .table a:hover {
+      color: #000000;
+      font-size: 11pt;
+      font-family: Arial, Helvetica;
+      font-weight: 400;
+      text-decoration: none; }
 
 .row {
   display: table-row; }

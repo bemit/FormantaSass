@@ -6,72 +6,78 @@ $table-background: transparent !default;
 //  Font Color
 //  ##########
 $table-font-color: $global-font-color !default;
-$table-font-color-link: $font-color-link !default;
-$table-font-color-link-hover: $font-color-link-hover !default;
+$table-link-font-color: $link-font-color !default;
+$table-link-hover-font-color: $link-hover-font-color !default;
 
 //  Font-Size
 //  ##########
 $table-font-size: $global-font-size !default;
-$table-font-size-link: $font-size-link !default;
-$table-font-size-link-hover: $font-size-link-hover !default;
+$table-link-font-size: $link-font-size !default;
+$table-link-hover-font-size: $link-hover-font-size !default;
 
 //  Font Family
 //  ##########
 $table-font-family: $global-font-family !default;
-$table-font-family-link: $font-family-link !default;
-$table-font-family-link-hover: $font-family-link-hover !default;
+$table-link-font-family: $link-font-family !default;
+$table-link-hover-font-family: $link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
 $table-font-weight: $font-weight-global !default;
-$table-font-weight-link: $font-weight-link !default;
-$table-font-weight-link-hover: $font-weight-link-hover !default;
+$table-link-font-weight: $link-font-weight !default;
+$table-link-hover-font-weight: $link-hover-font-weight !default;
 
 //  Font Style
 //  ##########
 $table-font-style: normal !default;
-$table-font-style-link: $table-font-style !default;
-$table-font-style-link-hover: $table-font-style-link !default;
+$table-link-font-style: $table-font-style !default;
+$table-link-hover-font-style: $table-link-font-style !default;
+
+//  Font Variant
+//  ##########
+$table-font-variant: normal !default;
+$table-link-font-variant: $table-font-variant !default;
+$table-link-hover-font-variant: $table-link-font-variant !default;
 
 //  Text Decoration
 //  ##########
 $table-text-decoration: $text-decoration-global !default;
-$table-text-decoration-link: $text-decoration-link !default;
-$table-text-decoration-link-hover: $text-decoration-link-hover !default;
+$table-link-text-decoration: $link-text-decoration !default;
+$table-link-hover-text-decoration: $link-hover-text-decoration !default;
 
 //  Line Height
 //  ##########
 $table-line-height: $line-height-global !default;
-$table-line-height-link: $line-height-link !default;
-$table-line-height-link-hover: $line-height-link-hover !default;
+$table-link-line-height: $link-line-height !default;
+$table-link-line-height-hover: $link-line-height-hover !default;
 
 //  Border
 //  ##########
 $table-border-width: 0;
-$table-border-width-top: $table-border-width;
-$table-border-width-right: $table-border-width;
-$table-border-width-bottom: $table-border-width;
-$table-border-width-left: $table-border-width;
+$table-border-top-width: $table-border-width;
+$table-border-right-width: $table-border-width;
+$table-border-bottom-width: $table-border-width;
+$table-border-left-width: $table-border-width;
 $table-border-style: solid;
-$table-border-style-top: $table-border-style;
-$table-border-style-right: $table-border-style;
-$table-border-style-bottom: $table-border-style;
-$table-border-style-left: $table-border-style;
+$table-border-top-style: $table-border-style;
+$table-border-right-style: $table-border-style;
+$table-border-bottom-style: $table-border-style;
+$table-border-left-style: $table-border-style;
 $table-border-color: $color-secondary;
-$table-border-color-top: $table-border-color;
-$table-border-color-right: $table-border-color;
-$table-border-color-bottom: $table-border-color;
-$table-border-color-left: $table-border-color;
+$table-border-top-color: $table-border-color;
+$table-border-right-color: $table-border-color;
+$table-border-bottom-color: $table-border-color;
+$table-border-left-color: $table-border-color;
 //  Border Radius
 $table-border-radius: 0;
 $table-border-radius-inner: $table-border-radius;//first part within css (before /)
 $table-border-radius-outer: $table-border-radius;//second part within css (after /)
 //  Border Radius complete
-$table-border-radius-top-left-top: $table-border-radius-inner;
-$table-border-radius-top-left-left: $table-border-radius-outer;
-$table-border-radius-top-right-top: $table-border-radius-inner;
-$table-border-radius-top-right-right: $table-border-radius-outer;
-$table-border-radius-bottom-right-bottom: $table-border-radius-inner;
-$table-border-radius-bottom-right-right: $table-border-radius-outer;
-$table-border-radius-bottom-left-bottom: $table-border-radius-inner;
-$table-border-radius-bottom-left-left: $table-border-radius-outer;
+$table-border-top-left-radius-center: $table-border-radius-inner;
+$table-border-top-left-radius-left: $table-border-radius-outer;
+$table-border-top-right-radius-center: $table-border-radius-inner;
+$table-border-top-right-radius-right: $table-border-radius-outer;
+$table-border-bottom-right-radius-center: $table-border-radius-inner;
+$table-border-bottom-right-radius-right: $table-border-radius-outer;
+$table-border-bottom-left-radius-center: $table-border-radius-inner;
+$table-border-bottom-left-radius-left: $table-border-radius-outer;

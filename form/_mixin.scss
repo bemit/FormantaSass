@@ -23,36 +23,36 @@
     }
     border: {
         top: {
-            width: $form-input-textbox-border-width-top;
-            style: $form-input-textbox-border-style-top;
-            color: $form-input-textbox-border-color-top;
+            width: $form-input-textbox-border-top-width;
+            style: $form-input-textbox-border-top-style;
+            color: $form-input-textbox-border-top-color;
             left: {
-                radius: $form-input-textbox-border-radius-top-left-top $form-input-textbox-border-radius-top-left-left;
+                radius: $form-input-textbox-border-top-left-radius-center $form-input-textbox-border-top-left-radius-left;
             }
             right: {
-                radius: $form-input-textbox-border-radius-top-right-top $form-input-textbox-border-radius-top-right-right;
+                radius: $form-input-textbox-border-top-right-radius-center $form-input-textbox-border-top-right-radius-right;
             }
         }
         right: {
-            width: $form-input-textbox-border-width-right;
-            style: $form-input-textbox-border-style-right;
-            color: $form-input-textbox-border-color-right;
+            width: $form-input-textbox-border-right-width;
+            style: $form-input-textbox-border-right-style;
+            color: $form-input-textbox-border-right-color;
         }
         bottom: {
-            width: $form-input-textbox-border-width-bottom;
-            style: $form-input-textbox-border-style-bottom;
-            color: $form-input-textbox-border-color-bottom;
+            width: $form-input-textbox-border-bottom-width;
+            style: $form-input-textbox-border-bottom-style;
+            color: $form-input-textbox-border-bottom-color;
             left: {
-                radius: $form-input-textbox-border-radius-bottom-left-bottom $form-input-textbox-border-radius-bottom-left-left;
+                radius: $form-input-textbox-border-bottom-left-radius-center $form-input-textbox-border-bottom-left-radius-left;
             }
             right: {
-                radius: $form-input-textbox-border-radius-bottom-right-bottom $form-input-textbox-border-radius-bottom-right-right;
+                radius: $form-input-textbox-border-bottom-right-radius-center $form-input-textbox-border-bottom-right-radius-right;
             }
         }
         left: {
-            width: $form-input-textbox-border-width-left;
-            style: $form-input-textbox-border-style-left;
-            color: $form-input-textbox-border-color-left;
+            width: $form-input-textbox-border-left-width;
+            style: $form-input-textbox-border-left-style;
+            color: $form-input-textbox-border-left-color;
         }
     }
     &:hover {

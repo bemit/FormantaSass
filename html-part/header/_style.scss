@@ -12,18 +12,18 @@
         text-decoration: $header-text-decoration;
         line-height: $header-line-height;
         a {
-            color: $header-font-color-link;
-            font-size: $header-font-size-link;
-            font-family: $header-font-family-link;
-            font-weight: $header-font-weight-link;
-            text-decoration: $header-text-decoration-link;
-            line-height: $header-line-height-link;
+            color: $header-link-font-color;
+            font-size: $header-link-font-size;
+            font-family: $header-link-font-family;
+            font-weight: $header-link-font-weight;
+            text-decoration: $header-link-text-decoration;
+            line-height: $header-link-line-height;
             &:hover {
-                color: $header-font-color-link-hover;
-                font-size: $header-font-size-link-hover;
-                font-family: $header-font-family-link-hover;
-                font-weight: $header-font-weight-link-hover;
-                text-decoration: $header-text-decoration-link-hover;
+                color: $header-link-hover-font-color;
+                font-size: $header-link-hover-font-size;
+                font-family: $header-link-hover-font-family;
+                font-weight: $header-link-hover-font-weight;
+                text-decoration: $header-link-hover-text-decoration;
             }
         }
     }

@@ -11,8 +11,8 @@ $font-color-h4: $global-font-color;
 $font-color-h5: $global-font-color;
 $font-color-h6: $global-font-color;
 $font-color-p: $global-font-color;
-$font-color-link: $global-font-color;
-$font-color-link-hover: $font-color-link;
+$link-font-color: $global-font-color;
+$link-hover-font-color: $link-font-color;
 
 //  Size
 //  ##########
@@ -24,8 +24,8 @@ $font-size-h4: $global-font-size;
 $font-size-h5: $global-font-size;
 $font-size-h6: $global-font-size;
 $font-size-p: $global-font-size;
-$font-size-link: $global-font-size;
-$font-size-link-hover: $font-size-link;
+$link-font-size: $global-font-size;
+$link-hover-font-size: $link-font-size;
 
 //  Font Family
 //  ##########
@@ -37,8 +37,8 @@ $font-family-h4: $global-font-family;
 $font-family-h5: $global-font-family;
 $font-family-h6: $global-font-family;
 $font-family-p: $global-font-family;
-$font-family-link: $global-font-family;
-$font-family-link-hover: $font-family-link;
+$link-font-family: $global-font-family;
+$link-hover-font-family: $link-font-family;
 
 //  Font Weight
 //  ##########
@@ -50,12 +50,12 @@ $font-weight-h4: $font-weight-global;
 $font-weight-h5: $font-weight-global;
 $font-weight-h6: $font-weight-global;
 $font-weight-p: $font-weight-global;
-$font-weight-link: $font-weight-global;
-$font-weight-link-hover: $font-weight-link;
+$link-font-weight: $font-weight-global;
+$link-hover-font-weight: $link-font-weight;
 
 //  Line Height
 //  ##########
-$line-height-global: 100%;
+$line-height-global: 30px;
 $line-height-h1: $line-height-global;
 $line-height-h2: $line-height-global;
 $line-height-h3: $line-height-global;
@@ -63,8 +63,8 @@ $line-height-h4: $line-height-global;
 $line-height-h5: $line-height-global;
 $line-height-h6: $line-height-global;
 $line-height-p: $line-height-global;
-$line-height-link: $line-height-global;
-$line-height-link-hover: $line-height-link;
+$link-line-height: $line-height-global;
+$link-line-height-hover: $link-line-height;
 
 //  Font Style
 //  ##########
@@ -77,8 +77,22 @@ $font-style-h4: $font-style-global;
 $font-style-h5: $font-style-global;
 $font-style-h6: $font-style-global;
 $font-style-p: $font-style-global;
-$font-style-link: $font-style-global;
-$font-style-link-hover: $font-style-link;
+$link-font-style: $font-style-global;
+$link-hover-font-style: $link-font-style;
+
+//  Font Variant
+//  ##########
+//  TODO: implement
+$global-font-variant: normal;
+$h1-font-variant: $global-font-variant;
+$h1-font-variant: $global-font-variant;
+$h1-font-variant: $global-font-variant;
+$h1-font-variant: $global-font-variant;
+$h1-font-variant: $global-font-variant;
+$h1-font-variant: $global-font-variant;
+$p-font-variant: $global-font-variant;
+$link-font-variant: $global-font-variant;
+$link-hover-font-variant: $link-font-variant;
 
 
 //  Text Decoration
@@ -91,8 +105,8 @@ $text-decoration-h4: $text-decoration-global;
 $text-decoration-h5: $text-decoration-global;
 $text-decoration-h6: $text-decoration-global;
 $text-decoration-p: $text-decoration-global;
-$text-decoration-link: $text-decoration-global;
-$text-decoration-link-hover: $text-decoration-link;
+$link-text-decoration: $text-decoration-global;
+$link-hover-text-decoration: $link-text-decoration;
 
 //  Text Transform
 //  ##########

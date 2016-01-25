@@ -20,22 +20,22 @@
     font-style: $button-font-style;
     text-decoration: $button-text-decoration;
     text-transform: $button-text-transform;
-    border-top-width: $button-border-width-top;
-    border-right-width: $button-border-width-right;
-    border-bottom-width: $button-border-width-bottom;
-    border-left-width: $button-border-width-left;
-    border-top-style: $button-border-style-top;
-    border-right-style: $button-border-style-right;
-    border-bottom-style: $button-border-style-bottom;
-    border-left-style: $button-border-style-left;
-    border-top-color: $button-border-color-top;
-    border-right-color: $button-border-color-right;
-    border-bottom-color: $button-border-color-bottom;
-    border-left-color: $button-border-color-left;
-    border-top-left-radius: $button-border-radius-top-left-top $button-border-radius-top-left-left;
-    border-top-right-radius: $button-border-radius-top-right-top $button-border-radius-top-right-right;
-    border-bottom-right-radius: $button-border-radius-bottom-right-bottom $button-border-radius-bottom-right-right;
-    border-bottom-left-radius: $button-border-radius-bottom-left-bottom $button-border-radius-bottom-left-left;
+    border-top-width: $button-border-top-width;
+    border-right-width: $button-border-right-width;
+    border-bottom-width: $button-border-bottom-width;
+    border-left-width: $button-border-left-width;
+    border-top-style: $button-border-top-style;
+    border-right-style: $button-border-right-style;
+    border-bottom-style: $button-border-bottom-style;
+    border-left-style: $button-border-left-style;
+    border-top-color: $button-border-top-color;
+    border-right-color: $button-border-right-color;
+    border-bottom-color: $button-border-bottom-color;
+    border-left-color: $button-border-left-color;
+    border-top-left-radius: $button-border-top-left-radius-center $button-border-top-left-radius-left;
+    border-top-right-radius: $button-border-top-right-radius-center $button-border-top-right-radius-right;
+    border-bottom-right-radius: $button-border-bottom-right-radius-center $button-border-bottom-right-radius-right;
+    border-bottom-left-radius: $button-border-bottom-left-radius-center $button-border-bottom-left-radius-left;
     
     &:hover {
         background: $button-background-hover;

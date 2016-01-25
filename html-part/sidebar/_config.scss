@@ -12,10 +12,10 @@ $sidebar-heading-height: 30px;
 $sidebar-font-color-global: $color-secondary;
 $sidebar-font-color-primary: $sidebar-font-color-global;
 $sidebar-font-color-secondary: $sidebar-font-color-global;
-$sidebar-font-color-global-link: $font-color-link;
+$sidebar-font-color-global-link: $link-font-color;
 $sidebar-font-color-primary-link: $sidebar-font-color-global-link;
 $sidebar-font-color-secondary-link: $sidebar-font-color-global-link;
-$sidebar-font-color-global-link-hover: $font-color-link-hover;
+$sidebar-font-color-global-link-hover: $link-hover-font-color;
 $sidebar-font-color-primary-link-hover: $sidebar-font-color-global-link-hover;
 $sidebar-font-color-secondary-link-hover: $sidebar-font-color-global-link-hover;
 
@@ -24,19 +24,19 @@ $sidebar-font-color-secondary-link-hover: $sidebar-font-color-global-link-hover;
 $sidebar-font-size-global: $global-font-size;
 $sidebar-font-size-primary: $sidebar-font-size-global;
 $sidebar-font-size-secondary: $sidebar-font-size-global;
-$sidebar-font-size-global-link: $font-size-link;
+$sidebar-font-size-global-link: $link-font-size;
 $sidebar-font-size-primary-link: $sidebar-font-size-global-link;
 $sidebar-font-size-secondary-link: $sidebar-font-size-global-link;
-$sidebar-font-size-global-link-hover: $font-size-link-hover;
+$sidebar-font-size-global-link-hover: $link-hover-font-size;
 $sidebar-font-size-primary-link-hover: $sidebar-font-size-global-link-hover;
 $sidebar-font-size-secondary-link-hover: $sidebar-font-size-global-link-hover;
 
 //  Font Family
 //  ##########
-$sidebar-font-family-global-link: $font-family-link;
+$sidebar-font-family-global-link: $link-font-family;
 $sidebar-font-family-primary-link: $sidebar-font-family-global-link;
 $sidebar-font-family-secondary-link: $sidebar-font-family-global-link;
-$sidebar-font-family-global-link-hover: $font-family-link-hover;
+$sidebar-font-family-global-link-hover: $link-hover-font-family;
 $sidebar-font-family-primary-link-hover: $sidebar-font-family-global-link-hover;
 $sidebar-font-family-secondary-link-hover: $sidebar-font-family-global-link-hover;
 $sidebar-font-family-global: $global-font-family;
@@ -45,10 +45,10 @@ $sidebar-font-family-secondary: $sidebar-font-family-global;
 
 //  Font Weight
 //  ##########
-$sidebar-font-weight-global-link: $font-weight-link;
+$sidebar-font-weight-global-link: $link-font-weight;
 $sidebar-font-weight-primary-link: $sidebar-font-weight-global-link;
 $sidebar-font-weight-secondary-link: $sidebar-font-weight-global-link;
-$sidebar-font-weight-global-link-hover: $font-weight-link-hover;
+$sidebar-font-weight-global-link-hover: $link-hover-font-weight;
 $sidebar-font-weight-primary-link-hover: $sidebar-font-weight-global-link-hover;
 $sidebar-font-weight-secondary-link-hover: $sidebar-font-weight-global-link-hover;
 $sidebar-font-weight-global: $font-weight-global;
@@ -57,10 +57,10 @@ $sidebar-font-weight-secondary: $sidebar-font-weight-global;
 
 //  Text Decoration
 //  ##########
-$sidebar-text-decoration-global-link: $text-decoration-link;
+$sidebar-text-decoration-global-link: $link-text-decoration;
 $sidebar-text-decoration-primary-link: $sidebar-text-decoration-global-link;
 $sidebar-text-decoration-secondary-link: $sidebar-text-decoration-global-link;
-$sidebar-text-decoration-global-link-hover: $text-decoration-link-hover;
+$sidebar-text-decoration-global-link-hover: $link-hover-text-decoration;
 $sidebar-text-decoration-primary-link-hover: $sidebar-text-decoration-global-link-hover;
 $sidebar-text-decoration-secondary-link-hover: $sidebar-text-decoration-global-link-hover;
 $sidebar-text-decoration-global: $text-decoration-global;
@@ -69,10 +69,10 @@ $sidebar-text-decoration-secondary: $sidebar-text-decoration-global;
 
 //  Line Height
 //  ##########
-$sidebar-line-height-global-link: $line-height-link;
+$sidebar-line-height-global-link: $link-line-height;
 $sidebar-line-height-primary-link: $sidebar-line-height-global-link;
 $sidebar-line-height-secondary-link: $sidebar-line-height-global-link;
-$sidebar-line-height-global-link-hover: $line-height-link-hover;
+$sidebar-line-height-global-link-hover: $link-line-height-hover;
 $sidebar-line-height-primary-link-hover: $sidebar-line-height-global-link-hover;
 $sidebar-line-height-secondary-link-hover: $sidebar-line-height-global-link-hover;
 $sidebar-line-height-global: $line-height-global;

@@ -1,45 +1,61 @@
 @mixin table-base {
-    font: {
-        family: $table-font-family;
-        size: $table-font-size;
-        weight: $table-font-weight;
-        style: $table-font-style;
-    }
+    font: $table-font-style $table-font-variant $table-font-weight #{$table-font-size}/#{$table-line-height} $table-font-family;
     text: {
         decoration: $table-text-decoration;
     }
     border: {
         top: {
-            width: $table-border-width-top;
-            style: $table-border-style-top;
-            color: $table-border-color-top;
+            width: $table-border-top-width;
+            style: $table-border-top-style;
+            color: $table-border-top-color;
             left: {
-                radius: $table-border-radius-top-left-top $table-border-radius-top-left-left;
+                radius: $table-border-top-left-radius-center $table-border-top-left-radius-left;
             }
             right: {
-                radius: $table-border-radius-top-right-top $table-border-radius-top-right-right;
+                radius: $table-border-top-right-radius-center $table-border-top-right-radius-right;
             }
         }
         right: {
-            width: $table-border-width-right;
-            style: $table-border-style-right;
-            color: $table-border-color-right;
+            width: $table-border-right-width;
+            style: $table-border-right-style;
+            color: $table-border-right-color;
         }
         bottom: {
-            width: $table-border-width-bottom;
-            style: $table-border-style-bottom;
-            color: $table-border-color-bottom;
+            width: $table-border-bottom-width;
+            style: $table-border-bottom-style;
+            color: $table-border-bottom-color;
             left: {
-                radius: $table-border-radius-bottom-left-bottom $table-border-radius-bottom-left-left;
+                radius: $table-border-bottom-left-radius-center $table-border-bottom-left-radius-left;
             }
             right: {
-                radius: $table-border-radius-bottom-right-bottom $table-border-radius-bottom-right-right;
+                radius: $table-border-bottom-right-radius-center $table-border-bottom-right-radius-right;
             }
         }
         left: {
-            width: $table-border-width-left;
-            style: $table-border-style-left;
-            color: $table-border-color-left;
+            width: $table-border-left-width;
+            style: $table-border-left-style;
+            color: $table-border-left-color;
+        }
+    }
+    a {
+        font: $table-link-font-style $table-link-font-variant $table-link-font-weight $table-link-font-size $table-link-font-family;
+        color: $table-link-font-color;
+        text: {
+            decoration: $table-link-text-decoration;
+        }
+        line: {
+            height: $table-link-line-height;
+        }
+        &:hover {
+            color: $table-link-hover-font-color;
+            font: {
+                size: $table-link-hover-font-size;
+                family: $table-link-hover-font-family;
+                weight: $table-link-hover-font-weight;
+            }
+            text: {
+                decoration: $table-link-hover-text-decoration;
+            }
         }
     }
 }

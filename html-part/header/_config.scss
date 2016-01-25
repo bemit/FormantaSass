@@ -6,35 +6,35 @@ $header-background-size: auto !default;
 //  Font Color
 //  ##########
 $header-font-color: $global-font-color !default;
-$header-font-color-link: $font-color-link !default;
-$header-font-color-link-hover: $header-font-color-link !default;
+$header-link-font-color: $link-font-color !default;
+$header-link-hover-font-color: $header-link-font-color !default;
 
 //  Font-Size
 //  ##########
 $header-font-size: $global-font-size !default;
-$header-font-size-link: 13pt !default;
-$header-font-size-link-hover: $header-font-size-link !default;
+$header-link-font-size: 13pt !default;
+$header-link-hover-font-size: $header-link-font-size !default;
 
 //  Font Family
 //  ##########
 $header-font-family: $global-font-family !default;
-$header-font-family-link: $font-family-link !default;
-$header-font-family-link-hover: $font-family-link-hover !default;
+$header-link-font-family: $link-font-family !default;
+$header-link-hover-font-family: $link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
 $header-font-weight: $font-weight-global !default;
-$header-font-weight-link: $font-weight-link !default;
-$header-font-weight-link-hover: bold !default;
+$header-link-font-weight: $link-font-weight !default;
+$header-link-hover-font-weight: bold !default;
 
 //  Text Decoration
 //  ##########
 $header-text-decoration: $text-decoration-global !default;
-$header-text-decoration-link: $text-decoration-link !default;
-$header-text-decoration-link-hover: $text-decoration-link-hover !default;
+$header-link-text-decoration: $link-text-decoration !default;
+$header-link-hover-text-decoration: $link-hover-text-decoration !default;
 
 //  Line Height
 //  ##########
 $header-line-height: $line-height-global !default;
-$header-line-height-link: 30px !default;
-$header-line-height-link-hover: $header-line-height-link !default;
+$header-link-line-height: 30px !default;
+$header-link-line-height-hover: $header-link-line-height !default;

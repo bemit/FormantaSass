@@ -21,27 +21,27 @@
     }
 
     a {
-        color: $font-color-link;
+        color: $link-font-color;
         font: {
-            size: $font-size-link;
-            family: $font-family-link;
-            weight: $font-weight-link;
+            size: $link-font-size;
+            family: $link-font-family;
+            weight: $link-font-weight;
         }
         text: {
-            decoration: $text-decoration-link;
+            decoration: $link-text-decoration;
         }
         line: {
-            height: $line-height-link;
+            height: $link-line-height;
         }
         &:hover {
-            color: $font-color-link-hover;
+            color: $link-hover-font-color;
             font: {
-                size: $font-size-link-hover;
-                family: $font-family-link-hover;
-                weight: $font-weight-link-hover;
+                size: $link-hover-font-size;
+                family: $link-hover-font-family;
+                weight: $link-hover-font-weight;
             }
             text: {
-                decoration: $text-decoration-link-hover;
+                decoration: $link-hover-text-decoration;
             }
         }
     }

@@ -7,18 +7,18 @@
         text-decoration: $content-text-decoration;
         line-height: $content-line-height;
         a {
-            color: $content-font-color-link;
-            font-size: $content-font-size-link;
-            font-family: $content-font-family-link;
-            font-weight: $content-font-weight-link;
-            text-decoration: $content-text-decoration-link;
-            line-height: $content-line-height-link;
+            color: $content-link-font-color;
+            font-size: $content-link-font-size;
+            font-family: $content-link-font-family;
+            font-weight: $content-link-font-weight;
+            text-decoration: $content-link-text-decoration;
+            line-height: $content-link-line-height;
             &:hover {
-                color: $content-font-color-link-hover;
-                font-size: $content-font-size-link-hover;
-                font-family: $content-font-family-link-hover;
-                font-weight: $content-font-weight-link-hover;
-                text-decoration: $content-text-decoration-link-hover;
+                color: $content-link-hover-font-color;
+                font-size: $content-link-hover-font-size;
+                font-family: $content-link-hover-font-family;
+                font-weight: $content-link-hover-font-weight;
+                text-decoration: $content-link-hover-text-decoration;
             }
         }
     }
@@ -159,18 +159,18 @@
         text-decoration: $footer-text-decoration;
         line-height: $footer-line-height;
         a {
-            color: $footer-font-color-link;
-            font-size: $footer-font-size-link;
-            font-family: $footer-font-family-link;
-            font-weight: $footer-font-weight-link;
-            text-decoration: $footer-text-decoration-link;
-            line-height: $footer-line-height-link;
+            color: $footer-link-font-color;
+            font-size: $footer-link-font-size;
+            font-family: $footer-link-font-family;
+            font-weight: $footer-link-font-weight;
+            text-decoration: $footer-link-text-decoration;
+            line-height: $footer-link-line-height;
             &:hover {
-                color: $footer-font-color-link-hover;
-                font-size: $footer-font-size-link-hover;
-                font-family: $footer-font-family-link-hover;
-                font-weight: $footer-font-weight-link-hover;
-                text-decoration: $footer-text-decoration-link-hover;
+                color: $footer-link-hover-font-color;
+                font-size: $footer-link-hover-font-size;
+                font-family: $footer-link-hover-font-family;
+                font-weight: $footer-link-hover-font-weight;
+                text-decoration: $footer-link-hover-text-decoration;
             }
         }
     }

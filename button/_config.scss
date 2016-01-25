@@ -35,33 +35,33 @@ $button-margin-left: $button-margin-complete;
 //  Border
 //  ##########
 $button-border-width: 0;
-$button-border-width-top: $button-border-width;
-$button-border-width-right: $button-border-width;
-$button-border-width-bottom: $button-border-width;
-$button-border-width-left: $button-border-width;
+$button-border-top-width: $button-border-width;
+$button-border-right-width: $button-border-width;
+$button-border-bottom-width: $button-border-width;
+$button-border-left-width: $button-border-width;
 $button-border-style: solid;
-$button-border-style-top: $button-border-style;
-$button-border-style-right: $button-border-style;
-$button-border-style-bottom: $button-border-style;
-$button-border-style-left: $button-border-style;
+$button-border-top-style: $button-border-style;
+$button-border-right-style: $button-border-style;
+$button-border-bottom-style: $button-border-style;
+$button-border-left-style: $button-border-style;
 $button-border-color: transparent;
-$button-border-color-top: $button-border-color;
-$button-border-color-right: $button-border-color;
-$button-border-color-bottom: $button-border-color;
-$button-border-color-left: $button-border-color;
+$button-border-top-color: $button-border-color;
+$button-border-right-color: $button-border-color;
+$button-border-bottom-color: $button-border-color;
+$button-border-left-color: $button-border-color;
 //  Border Radius
 $button-border-radius: 0;
 $button-border-radius-inner: $button-border-radius;//first part within css (before /)
 $button-border-radius-outer: $button-border-radius;//second part within css (after /)
 //  Border Radius complete
-$button-border-radius-top-left-top: $button-border-radius-inner;
-$button-border-radius-top-left-left: $button-border-radius-outer;
-$button-border-radius-top-right-top: $button-border-radius-inner;
-$button-border-radius-top-right-right: $button-border-radius-outer;
-$button-border-radius-bottom-right-bottom: $button-border-radius-inner;
-$button-border-radius-bottom-right-right: $button-border-radius-outer;
-$button-border-radius-bottom-left-bottom: $button-border-radius-inner;
-$button-border-radius-bottom-left-left: $button-border-radius-outer;
+$button-border-top-left-radius-center: $button-border-radius-inner;
+$button-border-top-left-radius-left: $button-border-radius-outer;
+$button-border-top-right-radius-center: $button-border-radius-inner;
+$button-border-top-right-radius-right: $button-border-radius-outer;
+$button-border-bottom-right-radius-center: $button-border-radius-inner;
+$button-border-bottom-right-radius-right: $button-border-radius-outer;
+$button-border-bottom-left-radius-center: $button-border-radius-inner;
+$button-border-bottom-left-radius-left: $button-border-radius-outer;
 //  Border Hover
 //  ###
 $button-border-hover-width: $button-border-width;
