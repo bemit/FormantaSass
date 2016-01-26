@@ -1,5 +1,5 @@
-@if($output-style-html-part) {
+@if($for-output-style-html-part) {
     .sidebar {
-        background: $sidebar-background;
+        background: $for-sidebar-background;
     }
 }

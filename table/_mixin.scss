@@ -1,69 +1,69 @@
 @mixin table-base {
-    font: $table-font-style $table-font-variant $table-font-weight #{$table-font-size}/#{$table-line-height} $table-font-family;
+    font: $for-table-font-style $for-table-font-variant $for-table-font-weight #{$for-table-font-size}/#{$for-table-line-height} $for-table-font-family;
     text: {
-        decoration: $table-text-decoration;
+        decoration: $for-table-text-decoration;
     }
     border: {
         top: {
-            width: $table-border-top-width;
-            style: $table-border-top-style;
-            color: $table-border-top-color;
+            width: $for-table-border-top-width;
+            style: $for-table-border-top-style;
+            color: $for-table-border-top-color;
             left: {
-                radius: $table-border-top-left-radius-center $table-border-top-left-radius-left;
+                radius: $for-table-border-top-left-radius-center $for-table-border-top-left-radius-left;
             }
             right: {
-                radius: $table-border-top-right-radius-center $table-border-top-right-radius-right;
+                radius: $for-table-border-top-right-radius-center $for-table-border-top-right-radius-right;
             }
         }
         right: {
-            width: $table-border-right-width;
-            style: $table-border-right-style;
-            color: $table-border-right-color;
+            width: $for-table-border-right-width;
+            style: $for-table-border-right-style;
+            color: $for-table-border-right-color;
         }
         bottom: {
-            width: $table-border-bottom-width;
-            style: $table-border-bottom-style;
-            color: $table-border-bottom-color;
+            width: $for-table-border-bottom-width;
+            style: $for-table-border-bottom-style;
+            color: $for-table-border-bottom-color;
             left: {
-                radius: $table-border-bottom-left-radius-center $table-border-bottom-left-radius-left;
+                radius: $for-table-border-bottom-left-radius-center $for-table-border-bottom-left-radius-left;
             }
             right: {
-                radius: $table-border-bottom-right-radius-center $table-border-bottom-right-radius-right;
+                radius: $for-table-border-bottom-right-radius-center $for-table-border-bottom-right-radius-right;
             }
         }
         left: {
-            width: $table-border-left-width;
-            style: $table-border-left-style;
-            color: $table-border-left-color;
+            width: $for-table-border-left-width;
+            style: $for-table-border-left-style;
+            color: $for-table-border-left-color;
         }
     }
     a {
-        font: $table-link-font-style $table-link-font-variant $table-link-font-weight $table-link-font-size $table-link-font-family;
-        color: $table-link-font-color;
+        font: $for-table-link-font-style $for-table-link-font-variant $for-table-link-font-weight $for-table-link-font-size $for-table-link-font-family;
+        color: $for-table-link-font-color;
         text: {
-            decoration: $table-link-text-decoration;
+            decoration: $for-table-link-text-decoration;
         }
         line: {
-            height: $table-link-line-height;
+            height: $for-table-link-line-height;
         }
         &:hover {
-            color: $table-link-hover-font-color;
+            color: $for-table-link-hover-font-color;
             font: {
-                size: $table-link-hover-font-size;
-                family: $table-link-hover-font-family;
-                weight: $table-link-hover-font-weight;
+                size: $for-table-link-hover-font-size;
+                family: $for-table-link-hover-font-family;
+                weight: $for-table-link-hover-font-weight;
             }
             text: {
-                decoration: $table-link-hover-text-decoration;
+                decoration: $for-table-link-hover-text-decoration;
             }
         }
     }
 }
-@mixin table($layout-fixed: true, $expand: true) {
-    @if($layout-fixed) {
+@mixin table($for-layout-fixed: true, $for-expand: true) {
+    @if($for-layout-fixed) {
         table-layout: fixed;
     }
-    @if($expand) {
+    @if($for-expand) {
         width: 100%;
     }
     display: table;

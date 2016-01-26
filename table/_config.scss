@@ -1,83 +1,83 @@
 //
 // Table
 //
-$table-background: transparent !default;
+$for-table-background: transparent !default;
 
 //  Font Color
 //  ##########
-$table-font-color: $global-font-color !default;
-$table-link-font-color: $link-font-color !default;
-$table-link-hover-font-color: $link-hover-font-color !default;
+$for-table-font-color: $for-global-font-color !default;
+$for-table-link-font-color: $for-link-font-color !default;
+$for-table-link-hover-font-color: $for-link-hover-font-color !default;
 
 //  Font-Size
 //  ##########
-$table-font-size: $global-font-size !default;
-$table-link-font-size: $link-font-size !default;
-$table-link-hover-font-size: $link-hover-font-size !default;
+$for-table-font-size: $for-global-font-size !default;
+$for-table-link-font-size: $for-link-font-size !default;
+$for-table-link-hover-font-size: $for-link-hover-font-size !default;
 
 //  Font Family
 //  ##########
-$table-font-family: $global-font-family !default;
-$table-link-font-family: $link-font-family !default;
-$table-link-hover-font-family: $link-hover-font-family !default;
+$for-table-font-family: $for-global-font-family !default;
+$for-table-link-font-family: $for-link-font-family !default;
+$for-table-link-hover-font-family: $for-link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
-$table-font-weight: $font-weight-global !default;
-$table-link-font-weight: $link-font-weight !default;
-$table-link-hover-font-weight: $link-hover-font-weight !default;
+$for-table-font-weight: $for-font-weight-global !default;
+$for-table-link-font-weight: $for-link-font-weight !default;
+$for-table-link-hover-font-weight: $for-link-hover-font-weight !default;
 
 //  Font Style
 //  ##########
-$table-font-style: normal !default;
-$table-link-font-style: $table-font-style !default;
-$table-link-hover-font-style: $table-link-font-style !default;
+$for-table-font-style: normal !default;
+$for-table-link-font-style: $for-table-font-style !default;
+$for-table-link-hover-font-style: $for-table-link-font-style !default;
 
 //  Font Variant
 //  ##########
-$table-font-variant: normal !default;
-$table-link-font-variant: $table-font-variant !default;
-$table-link-hover-font-variant: $table-link-font-variant !default;
+$for-table-font-variant: normal !default;
+$for-table-link-font-variant: $for-table-font-variant !default;
+$for-table-link-hover-font-variant: $for-table-link-font-variant !default;
 
 //  Text Decoration
 //  ##########
-$table-text-decoration: $text-decoration-global !default;
-$table-link-text-decoration: $link-text-decoration !default;
-$table-link-hover-text-decoration: $link-hover-text-decoration !default;
+$for-table-text-decoration: $for-text-decoration-global !default;
+$for-table-link-text-decoration: $for-link-text-decoration !default;
+$for-table-link-hover-text-decoration: $for-link-hover-text-decoration !default;
 
 //  Line Height
 //  ##########
-$table-line-height: $line-height-global !default;
-$table-link-line-height: $link-line-height !default;
-$table-link-line-height-hover: $link-line-height-hover !default;
+$for-table-line-height: $for-line-height-global !default;
+$for-table-link-line-height: $for-link-line-height !default;
+$for-table-link-line-height-hover: $for-link-line-height-hover !default;
 
 //  Border
 //  ##########
-$table-border-width: 0;
-$table-border-top-width: $table-border-width;
-$table-border-right-width: $table-border-width;
-$table-border-bottom-width: $table-border-width;
-$table-border-left-width: $table-border-width;
-$table-border-style: solid;
-$table-border-top-style: $table-border-style;
-$table-border-right-style: $table-border-style;
-$table-border-bottom-style: $table-border-style;
-$table-border-left-style: $table-border-style;
-$table-border-color: $color-secondary;
-$table-border-top-color: $table-border-color;
-$table-border-right-color: $table-border-color;
-$table-border-bottom-color: $table-border-color;
-$table-border-left-color: $table-border-color;
+$for-table-border-width: 0;
+$for-table-border-top-width: $for-table-border-width;
+$for-table-border-right-width: $for-table-border-width;
+$for-table-border-bottom-width: $for-table-border-width;
+$for-table-border-left-width: $for-table-border-width;
+$for-table-border-style: solid;
+$for-table-border-top-style: $for-table-border-style;
+$for-table-border-right-style: $for-table-border-style;
+$for-table-border-bottom-style: $for-table-border-style;
+$for-table-border-left-style: $for-table-border-style;
+$for-table-border-color: $for-color-secondary;
+$for-table-border-top-color: $for-table-border-color;
+$for-table-border-right-color: $for-table-border-color;
+$for-table-border-bottom-color: $for-table-border-color;
+$for-table-border-left-color: $for-table-border-color;
 //  Border Radius
-$table-border-radius: 0;
-$table-border-radius-inner: $table-border-radius;//first part within css (before /)
-$table-border-radius-outer: $table-border-radius;//second part within css (after /)
+$for-table-border-radius: 0;
+$for-table-border-radius-inner: $for-table-border-radius;//first part within css (before /)
+$for-table-border-radius-outer: $for-table-border-radius;//second part within css (after /)
 //  Border Radius complete
-$table-border-top-left-radius-center: $table-border-radius-inner;
-$table-border-top-left-radius-left: $table-border-radius-outer;
-$table-border-top-right-radius-center: $table-border-radius-inner;
-$table-border-top-right-radius-right: $table-border-radius-outer;
-$table-border-bottom-right-radius-center: $table-border-radius-inner;
-$table-border-bottom-right-radius-right: $table-border-radius-outer;
-$table-border-bottom-left-radius-center: $table-border-radius-inner;
-$table-border-bottom-left-radius-left: $table-border-radius-outer;
+$for-table-border-top-left-radius-center: $for-table-border-radius-inner;
+$for-table-border-top-left-radius-left: $for-table-border-radius-outer;
+$for-table-border-top-right-radius-center: $for-table-border-radius-inner;
+$for-table-border-top-right-radius-right: $for-table-border-radius-outer;
+$for-table-border-bottom-right-radius-center: $for-table-border-radius-inner;
+$for-table-border-bottom-right-radius-right: $for-table-border-radius-outer;
+$for-table-border-bottom-left-radius-center: $for-table-border-radius-inner;
+$for-table-border-bottom-left-radius-left: $for-table-border-radius-outer;

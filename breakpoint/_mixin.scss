@@ -1,36 +1,36 @@
 @mixin bp-xlarge {
-    @media (min-width: $bp-xlarge-min-size) {
+    @media (min-width: $for-bp-xlarge-min-size) {
         @content;
     }
 }
 
 @mixin bp-large {
-    @media (min-width: $bp-large-min-size) {
+    @media (min-width: $for-bp-large-min-size) {
         @content;
     }
 }
 
 @mixin bp-medium {
-    @media (min-width: $bp-medium-min-size) {
+    @media (min-width: $for-bp-medium-min-size) {
         @content;
     }
 }
 
 @mixin bp-small {
-    @media (min-width: $bp-small-min-size) and (max-width: $bp-medium-min-size - 1) {
+    @media (min-width: $for-bp-small-min-size) and (max-width: $for-bp-medium-min-size - 1) {
         @content;
     }
 }
 
 @mixin bp-xsmall {
-    @media (max-width: $bp-small-min-size - 1) {
+    @media (max-width: $for-bp-xsmall-max-size) {
         @content;
     }
 }
 
 @mixin bp-small-all {
     /* General Mobile Devices: xsmall and small */
-    @media (max-width: $bp-medium-min-size - 1) {
+    @media (max-width: $for-bp-small-all-max-size) {
         @content;
     }
 }

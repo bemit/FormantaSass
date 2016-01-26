@@ -1,6 +1,6 @@
-@if($output-style-all) {
+@if($for-output-style-all) {
     body {
-        background: $body-background;
+        background: $for-body-background;
     }
 
     .content {

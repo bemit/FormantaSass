@@ -1,40 +1,40 @@
 //  Background
 //  ##########
-$header-background: #ffffff !default;
-$header-background-size: auto !default;
+$for-header-background: #ffffff !default;
+$for-header-background-size: auto !default;
 
 //  Font Color
 //  ##########
-$header-font-color: $global-font-color !default;
-$header-link-font-color: $link-font-color !default;
-$header-link-hover-font-color: $header-link-font-color !default;
+$for-header-font-color: $for-global-font-color !default;
+$for-header-link-font-color: $for-link-font-color !default;
+$for-header-link-hover-font-color: $for-header-link-font-color !default;
 
 //  Font-Size
 //  ##########
-$header-font-size: $global-font-size !default;
-$header-link-font-size: 13pt !default;
-$header-link-hover-font-size: $header-link-font-size !default;
+$for-header-font-size: $for-global-font-size !default;
+$for-header-link-font-size: 13pt !default;
+$for-header-link-hover-font-size: $for-header-link-font-size !default;
 
 //  Font Family
 //  ##########
-$header-font-family: $global-font-family !default;
-$header-link-font-family: $link-font-family !default;
-$header-link-hover-font-family: $link-hover-font-family !default;
+$for-header-font-family: $for-global-font-family !default;
+$for-header-link-font-family: $for-link-font-family !default;
+$for-header-link-hover-font-family: $for-link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
-$header-font-weight: $font-weight-global !default;
-$header-link-font-weight: $link-font-weight !default;
-$header-link-hover-font-weight: bold !default;
+$for-header-font-weight: $for-font-weight-global !default;
+$for-header-link-font-weight: $for-link-font-weight !default;
+$for-header-link-hover-font-weight: bold !default;
 
 //  Text Decoration
 //  ##########
-$header-text-decoration: $text-decoration-global !default;
-$header-link-text-decoration: $link-text-decoration !default;
-$header-link-hover-text-decoration: $link-hover-text-decoration !default;
+$for-header-text-decoration: $for-text-decoration-global !default;
+$for-header-link-text-decoration: $for-link-text-decoration !default;
+$for-header-link-hover-text-decoration: $for-link-hover-text-decoration !default;
 
 //  Line Height
 //  ##########
-$header-line-height: $line-height-global !default;
-$header-link-line-height: 30px !default;
-$header-link-line-height-hover: $header-link-line-height !default;
+$for-header-line-height: $for-line-height-global !default;
+$for-header-link-line-height: 30px !default;
+$for-header-link-line-height-hover: $for-header-link-line-height !default;

@@ -1,4 +1,4 @@
-@if($output-style-all) {
+@if($for-output-style-all) {
     input[type=submit] {
         @include button-normal(false);
     }
