@@ -1,13 +1,14 @@
 @if($for-output-style-all) {
     .table {
         @include table();
-    }
-
-    .row {
-        @include table-row;
-    }
-
-    .cell {
-        @include table-cell;
+        .row {
+            @include table-row;
+            .cell {
+                @include table-cell;
+            }
+            .cell {
+                @include table-cell;
+            }
+        }
     }
 }

@@ -77,3 +77,8 @@
 @mixin table-cell {
     display: table-cell;
 }
+
+@mixin table-cell-header {
+    @include table-cell;
+    font: $for-table-cell-header-font-style $for-table-cell-header-font-variant $for-table-cell-header-font-weight #{$for-table-cell-header-font-size}/#{$for-table-cell-header-line-height} $for-table-cell-header-font-family;
+}

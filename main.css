@@ -702,12 +702,12 @@ h6 {
       font-family: Arial, Helvetica;
       font-weight: 400;
       text-decoration: none; }
-
-.row {
-  display: table-row; }
-
-.cell {
-  display: table-cell; }
+  .table .row {
+    display: table-row; }
+    .table .row .cell {
+      display: table-cell; }
+    .table .row .cell {
+      display: table-cell; }
 
 form input[type=text] {
   display: inline-block;
