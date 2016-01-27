@@ -4,10 +4,8 @@
         decoration: $for-table-text-decoration;
     }
     border: {
+        top: $for-table-border-top-width $for-table-border-top-style $for-table-border-top-color;
         top: {
-            width: $for-table-border-top-width;
-            style: $for-table-border-top-style;
-            color: $for-table-border-top-color;
             left: {
                 radius: $for-table-border-top-left-radius-center $for-table-border-top-left-radius-left;
             }
@@ -15,15 +13,9 @@
                 radius: $for-table-border-top-right-radius-center $for-table-border-top-right-radius-right;
             }
         }
-        right: {
-            width: $for-table-border-right-width;
-            style: $for-table-border-right-style;
-            color: $for-table-border-right-color;
-        }
+        right: $for-table-border-right-width $for-table-border-right-style $for-table-border-right-color;
+        bottom: $for-table-border-bottom-width $for-table-border-bottom-style $for-table-border-bottom-color;
         bottom: {
-            width: $for-table-border-bottom-width;
-            style: $for-table-border-bottom-style;
-            color: $for-table-border-bottom-color;
             left: {
                 radius: $for-table-border-bottom-left-radius-center $for-table-border-bottom-left-radius-left;
             }
@@ -31,14 +23,10 @@
                 radius: $for-table-border-bottom-right-radius-center $for-table-border-bottom-right-radius-right;
             }
         }
-        left: {
-            width: $for-table-border-left-width;
-            style: $for-table-border-left-style;
-            color: $for-table-border-left-color;
-        }
+        left: $for-table-border-left-width $for-table-border-left-style $for-table-border-left-color;
     }
     a {
-        font: $for-table-link-font-style $for-table-link-font-variant $for-table-link-font-weight $for-table-link-font-size $for-table-link-font-family;
+        font: $for-table-link-font-style $for-table-link-font-variant $for-table-link-font-weight #{$for-table-link-font-size}/#{$for-table-line-height} $for-table-link-font-family;
         color: $for-table-link-font-color;
         text: {
             decoration: $for-table-link-text-decoration;
@@ -47,12 +35,8 @@
             height: $for-table-link-line-height;
         }
         &:hover {
+            font: $for-table-link-hover-font-style $for-table-link-hover-font-variant $for-table-link-hover-font-weight $for-table-link-hover-font-size $for-table-link-hover-font-family;
             color: $for-table-link-hover-font-color;
-            font: {
-                size: $for-table-link-hover-font-size;
-                family: $for-table-link-hover-font-family;
-                weight: $for-table-link-hover-font-weight;
-            }
             text: {
                 decoration: $for-table-link-hover-text-decoration;
             }

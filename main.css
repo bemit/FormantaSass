@@ -675,39 +675,30 @@ h6 {
   display: table;
   font: normal normal 400 11pt/30px Arial, Helvetica;
   text-decoration: none;
-  border-top-width: 0;
-  border-top-style: solid;
-  border-top-color: #006633;
+  border-top: 0 solid #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
-  border-right-style: solid;
-  border-right-color: #006633;
-  border-bottom-width: 0;
-  border-bottom-style: solid;
-  border-bottom-color: #006633;
+  border-right: 0 solid #006633;
+  border-bottom: 0 solid #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
-  border-left-style: solid;
-  border-left-color: #006633; }
+  border-left: 0 solid #006633; }
   .table a {
-    font: normal normal 400 11pt Arial, Helvetica;
+    font: normal normal 400 11pt/30px Arial, Helvetica;
     color: #000000;
     text-decoration: none;
     line-height: 30px; }
     .table a:hover {
+      font: normal normal 400 11pt Arial, Helvetica;
       color: #000000;
-      font-size: 11pt;
-      font-family: Arial, Helvetica;
-      font-weight: 400;
       text-decoration: none; }
   .table .row {
     display: table-row; }
     .table .row .cell {
       display: table-cell; }
-    .table .row .cell {
-      display: table-cell; }
+    .table .row .cell-header {
+      display: table-cell;
+      font: normal normal 400 11pt/30px Arial, Helvetica; }
 
 form input[type=text] {
   display: inline-block;
