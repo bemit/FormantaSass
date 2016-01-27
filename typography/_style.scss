@@ -16,7 +16,7 @@
             weight: $for-global-font-weight;
         }
         text: {
-            decoration: $for-text-decoration-global;
+            decoration: $for-global-text-decoration;
         }
     }
 
@@ -54,7 +54,7 @@
             weight: $for-p-font-weight;
         }
         text: {
-            decoration: $for-text-decoration-p;
+            decoration: $for-p-text-decoration;
         }
         line: {
             height: $for-p-line-height;
@@ -69,7 +69,7 @@
             weight: $for-h1-font-weight;
         }
         text: {
-            decoration: $for-text-decoration-h1;
+            decoration: $for-h1-text-decoration;
         }
         line: {
             height: $for-h1-line-height;
@@ -84,7 +84,7 @@
             weight: $for-h2-font-weight;
         }
         text: {
-            decoration: $for-text-decoration-h2;
+            decoration: $for-h2-text-decoration;
         }
         line: {
             height: $for-h2-line-height;
@@ -99,7 +99,7 @@
             weight: $for-h3-font-weight;
         }
         text: {
-            decoration: $for-text-decoration-h3;
+            decoration: $for-h3-text-decoration;
         }
         line: {
             height: $for-h3-line-height;
@@ -114,7 +114,7 @@
             weight: $for-h4-font-weight;
         }
         text: {
-            decoration: $for-text-decoration-h4;
+            decoration: $for-h4-text-decoration;
         }
         line: {
             height: $for-h4-line-height;
@@ -129,7 +129,7 @@
             weight: $for-h5-font-weight;
         }
         text: {
-            decoration: $for-text-decoration-h5;
+            decoration: $for-h5-text-decoration;
         }
         line: {
             height: $for-h5-line-height;
@@ -144,7 +144,7 @@
             weight: $for-h6-font-weight;
         }
         text: {
-            decoration: $for-text-decoration-h6;
+            decoration: $for-h6-text-decoration;
         }
         line: {
             height: $for-h6-line-height;

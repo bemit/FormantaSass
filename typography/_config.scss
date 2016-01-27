@@ -97,15 +97,15 @@ $for-link-hover-font-variant: $for-link-font-variant !default;
 
 //  Text Decoration
 //  ##########
-$for-text-decoration-global: none !default;
-$for-text-decoration-h1: $for-text-decoration-global !default;
-$for-text-decoration-h2: $for-text-decoration-global !default;
-$for-text-decoration-h3: $for-text-decoration-global !default;
-$for-text-decoration-h4: $for-text-decoration-global !default;
-$for-text-decoration-h5: $for-text-decoration-global !default;
-$for-text-decoration-h6: $for-text-decoration-global !default;
-$for-text-decoration-p: $for-text-decoration-global !default;
-$for-link-text-decoration: $for-text-decoration-global !default;
+$for-global-text-decoration: none !default;
+$for-h1-text-decoration: $for-global-text-decoration !default;
+$for-h2-text-decoration: $for-global-text-decoration !default;
+$for-h3-text-decoration: $for-global-text-decoration !default;
+$for-h4-text-decoration: $for-global-text-decoration !default;
+$for-h5-text-decoration: $for-global-text-decoration !default;
+$for-h6-text-decoration: $for-global-text-decoration !default;
+$for-p-text-decoration: $for-global-text-decoration !default;
+$for-link-text-decoration: $for-global-text-decoration !default;
 $for-link-hover-text-decoration: $for-link-text-decoration !default;
 
 //  Text Transform
