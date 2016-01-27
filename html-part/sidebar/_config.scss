@@ -1,15 +1,15 @@
 //  Background
 //  ##########
-$for-sidebar-background: $for-color-primary;
+$for-sidebar-background: $for-global-color-primary;
 $for-sidebar-primary-background: $for-sidebar-background;
 $for-sidebar-secondary-background: $for-sidebar-background;
 
-$for-sidebar-heading-background: $for-color-secondary;
+$for-sidebar-heading-background: $for-global-color-secondary;
 $for-sidebar-heading-height: 30px;
 
 //  Font Color
 //  ##########
-$for-sidebar-font-color-global: $for-color-secondary;
+$for-sidebar-font-color-global: $for-global-color-secondary;
 $for-sidebar-font-color-primary: $for-sidebar-font-color-global;
 $for-sidebar-font-color-secondary: $for-sidebar-font-color-global;
 $for-sidebar-font-color-global-link: $for-link-font-color;
