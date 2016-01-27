@@ -5,7 +5,7 @@
             size: $for-global-font-size;
         }
         line: {
-            height: $for-line-height-global;
+            height: $for-global-line-height;
         }
     }
 
@@ -13,7 +13,7 @@
         color: $for-global-font-color;
         font: {
             family: $for-global-font-family;
-            weight: $for-font-weight-global;
+            weight: $for-global-font-weight;
         }
         text: {
             decoration: $for-text-decoration-global;
@@ -49,105 +49,105 @@
     p {
         color: $for-p-font-color;
         font: {
-            size: $for-font-size-p;
-            family: $for-font-family-p;
-            weight: $for-font-weight-p;
+            size: $for-p-font-size;
+            family: $for-p-font-family;
+            weight: $for-p-font-weight;
         }
         text: {
             decoration: $for-text-decoration-p;
         }
         line: {
-            height: $for-line-height-p;
+            height: $for-p-line-height;
         }
     }
 
     h1 {
         color: $for-h1-font-color;
         font: {
-            size: $for-font-size-h1;
-            family: $for-font-family-h1;
-            weight: $for-font-weight-h1;
+            size: $for-h1-font-size;
+            family: $for-h1-font-family;
+            weight: $for-h1-font-weight;
         }
         text: {
             decoration: $for-text-decoration-h1;
         }
         line: {
-            height: $for-line-height-h1;
+            height: $for-h1-line-height;
         }
     }
 
     h2 {
         color: $for-h2-font-color;
         font: {
-            size: $for-font-size-h2;
-            family: $for-font-family-h2;
-            weight: $for-font-weight-h2;
+            size: $for-h2-font-size;
+            family: $for-h2-font-family;
+            weight: $for-h2-font-weight;
         }
         text: {
             decoration: $for-text-decoration-h2;
         }
         line: {
-            height: $for-line-height-h2;
+            height: $for-h2-line-height;
         }
     }
 
     h3 {
         color: $for-h3-font-color;
         font: {
-            size: $for-font-size-h3;
-            family: $for-font-family-h3;
-            weight: $for-font-weight-h3;
+            size: $for-h3-font-size;
+            family: $for-h3-font-family;
+            weight: $for-h3-font-weight;
         }
         text: {
             decoration: $for-text-decoration-h3;
         }
         line: {
-            height: $for-line-height-h3;
+            height: $for-h3-line-height;
         }
     }
 
     h4 {
         color: $for-h4-font-color;
         font: {
-            size: $for-font-size-h4;
-            family: $for-font-family-h4;
-            weight: $for-font-weight-h4;
+            size: $for-h4-font-size;
+            family: $for-h4-font-family;
+            weight: $for-h4-font-weight;
         }
         text: {
             decoration: $for-text-decoration-h4;
         }
         line: {
-            height: $for-line-height-h4;
+            height: $for-h4-line-height;
         }
     }
 
     h5 {
         color: $for-h5-font-color;
         font: {
-            size: $for-font-size-h5;
-            family: $for-font-family-h5;
-            weight: $for-font-weight-h5;
+            size: $for-h5-font-size;
+            family: $for-h5-font-family;
+            weight: $for-h5-font-weight;
         }
         text: {
             decoration: $for-text-decoration-h5;
         }
         line: {
-            height: $for-line-height-h5;
+            height: $for-h5-line-height;
         }
     }
 
     h6 {
         color: $for-h6-font-color;
         font: {
-            size: $for-font-size-h6;
-            family: $for-font-family-h6;
-            weight: $for-font-weight-h6;
+            size: $for-h6-font-size;
+            family: $for-h6-font-family;
+            weight: $for-h6-font-weight;
         }
         text: {
             decoration: $for-text-decoration-h6;
         }
         line: {
-            height: $for-line-height-h6;
+            height: $for-h6-line-height;
         }
     }
 }

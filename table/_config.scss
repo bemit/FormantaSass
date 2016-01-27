@@ -26,7 +26,7 @@ $for-table-link-hover-font-family: $for-link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
-$for-table-font-weight: $for-font-weight-global !default;
+$for-table-font-weight: $for-global-font-weight !default;
 $for-table-cell-header-font-weight: $for-table-font-weight !default;
 $for-table-link-font-weight: $for-link-font-weight !default;
 $for-table-link-hover-font-weight: $for-link-hover-font-weight !default;
@@ -53,10 +53,10 @@ $for-table-link-hover-text-decoration: $for-link-hover-text-decoration !default;
 
 //  Line Height
 //  ##########
-$for-table-line-height: $for-line-height-global !default;
+$for-table-line-height: $for-global-line-height !default;
 $for-table-cell-header-line-height: $for-table-line-height !default;
 $for-table-link-line-height: $for-link-line-height !default;
-$for-table-link-line-height-hover: $for-link-line-height-hover !default;
+$for-table-link-line-height-hover: $for-link-hover-line-height !default;
 
 //  Border of the outside of the table
 //  ##########

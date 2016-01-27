@@ -3,121 +3,121 @@
 
 //  Color
 //  ##########
-$for-global-font-color: #000000;
-$for-h1-font-color: $for-global-font-color;
-$for-h2-font-color: $for-global-font-color;
-$for-h3-font-color: $for-global-font-color;
-$for-h4-font-color: $for-global-font-color;
-$for-h5-font-color: $for-global-font-color;
-$for-h6-font-color: $for-global-font-color;
-$for-p-font-color: $for-global-font-color;
-$for-link-font-color: $for-global-font-color;
-$for-link-hover-font-color: $for-link-font-color;
+$for-global-font-color: #000000 !default;
+$for-h1-font-color: $for-global-font-color !default;
+$for-h2-font-color: $for-global-font-color !default;
+$for-h3-font-color: $for-global-font-color !default;
+$for-h4-font-color: $for-global-font-color !default;
+$for-h5-font-color: $for-global-font-color !default;
+$for-h6-font-color: $for-global-font-color !default;
+$for-p-font-color: $for-global-font-color !default;
+$for-link-font-color: $for-global-font-color !default;
+$for-link-hover-font-color: $for-link-font-color !default;
 
 //  Size
 //  ##########
-$for-global-font-size: 11pt;
-$for-font-size-h1: $for-global-font-size;
-$for-font-size-h2: $for-global-font-size;
-$for-font-size-h3: $for-global-font-size;
-$for-font-size-h4: $for-global-font-size;
-$for-font-size-h5: $for-global-font-size;
-$for-font-size-h6: $for-global-font-size;
-$for-font-size-p: $for-global-font-size;
-$for-link-font-size: $for-global-font-size;
-$for-link-hover-font-size: $for-link-font-size;
+$for-global-font-size: 11pt !default;
+$for-h1-font-size: $for-global-font-size !default;
+$for-h2-font-size: $for-global-font-size !default;
+$for-h3-font-size: $for-global-font-size !default;
+$for-h4-font-size: $for-global-font-size !default;
+$for-h5-font-size: $for-global-font-size !default;
+$for-h6-font-size: $for-global-font-size !default;
+$for-p-font-size: $for-global-font-size !default;
+$for-link-font-size: $for-global-font-size !default;
+$for-link-hover-font-size: $for-link-font-size !default;
 
 //  Font Family
 //  ##########
-$for-global-font-family: Arial, Helvetica;
-$for-font-family-h1: $for-global-font-family;
-$for-font-family-h2: $for-global-font-family;
-$for-font-family-h3: $for-global-font-family;
-$for-font-family-h4: $for-global-font-family;
-$for-font-family-h5: $for-global-font-family;
-$for-font-family-h6: $for-global-font-family;
-$for-font-family-p: $for-global-font-family;
-$for-link-font-family: $for-global-font-family;
-$for-link-hover-font-family: $for-link-font-family;
+$for-global-font-family: Arial, Helvetica !default;
+$for-h1-font-family: $for-global-font-family !default;
+$for-h2-font-family: $for-global-font-family !default;
+$for-h3-font-family: $for-global-font-family !default;
+$for-h4-font-family: $for-global-font-family !default;
+$for-h5-font-family: $for-global-font-family !default;
+$for-h6-font-family: $for-global-font-family !default;
+$for-p-font-family: $for-global-font-family !default;
+$for-link-font-family: $for-global-font-family !default;
+$for-link-hover-font-family: $for-link-font-family !default;
 
 //  Font Weight
 //  ##########
-$for-font-weight-global: 400;
-$for-font-weight-h1: $for-font-weight-global;
-$for-font-weight-h2: $for-font-weight-global;
-$for-font-weight-h3: $for-font-weight-global;
-$for-font-weight-h4: $for-font-weight-global;
-$for-font-weight-h5: $for-font-weight-global;
-$for-font-weight-h6: $for-font-weight-global;
-$for-font-weight-p: $for-font-weight-global;
-$for-link-font-weight: $for-font-weight-global;
-$for-link-hover-font-weight: $for-link-font-weight;
+$for-global-font-weight: 400 !default;
+$for-h1-font-weight: $for-global-font-weight !default;
+$for-h2-font-weight: $for-global-font-weight !default;
+$for-h3-font-weight: $for-global-font-weight !default;
+$for-h4-font-weight: $for-global-font-weight !default;
+$for-h5-font-weight: $for-global-font-weight !default;
+$for-h6-font-weight: $for-global-font-weight !default;
+$for-p-font-weight: $for-global-font-weight !default;
+$for-link-font-weight: $for-global-font-weight !default;
+$for-link-hover-font-weight: $for-link-font-weight !default;
 
 //  Line Height
 //  ##########
-$for-line-height-global: 30px;
-$for-line-height-h1: $for-line-height-global;
-$for-line-height-h2: $for-line-height-global;
-$for-line-height-h3: $for-line-height-global;
-$for-line-height-h4: $for-line-height-global;
-$for-line-height-h5: $for-line-height-global;
-$for-line-height-h6: $for-line-height-global;
-$for-line-height-p: $for-line-height-global;
-$for-link-line-height: $for-line-height-global;
-$for-link-line-height-hover: $for-link-line-height;
+$for-global-line-height: normal !default;
+$for-h1-line-height: $for-global-line-height !default;
+$for-h2-line-height: $for-global-line-height !default;
+$for-h3-line-height: $for-global-line-height !default;
+$for-h4-line-height: $for-global-line-height !default;
+$for-h5-line-height: $for-global-line-height !default;
+$for-h6-line-height: $for-global-line-height !default;
+$for-p-line-height: $for-global-line-height !default;
+$for-link-line-height: $for-global-line-height !default;
+$for-link-hover-line-height: $for-link-line-height !default;
 
 //  Font Style
 //  ##########
 //  TODO: implement
-$for-font-style-global: none;
-$for-font-style-h1: $for-font-style-global;
-$for-font-style-h2: $for-font-style-global;
-$for-font-style-h3: $for-font-style-global;
-$for-font-style-h4: $for-font-style-global;
-$for-font-style-h5: $for-font-style-global;
-$for-font-style-h6: $for-font-style-global;
-$for-font-style-p: $for-font-style-global;
-$for-link-font-style: $for-font-style-global;
-$for-link-hover-font-style: $for-link-font-style;
+$for-global-font-style: none !default;
+$for-h1-font-style: $for-global-font-style !default;
+$for-h2-font-style: $for-global-font-style !default;
+$for-h3-font-style: $for-global-font-style !default;
+$for-h4-font-style: $for-global-font-style !default;
+$for-h5-font-style: $for-global-font-style !default;
+$for-h6-font-style: $for-global-font-style !default;
+$for-p-font-style: $for-global-font-style !default;
+$for-link-font-style: $for-global-font-style !default;
+$for-link-hover-font-style: $for-link-font-style !default;
 
 //  Font Variant
 //  ##########
 //  TODO: implement
-$for-global-font-variant: normal;
-$for-h1-font-variant: $for-global-font-variant;
-$for-h1-font-variant: $for-global-font-variant;
-$for-h1-font-variant: $for-global-font-variant;
-$for-h1-font-variant: $for-global-font-variant;
-$for-h1-font-variant: $for-global-font-variant;
-$for-h1-font-variant: $for-global-font-variant;
-$for-p-font-variant: $for-global-font-variant;
-$for-link-font-variant: $for-global-font-variant;
-$for-link-hover-font-variant: $for-link-font-variant;
+$for-global-font-variant: normal !default;
+$for-h1-font-variant: $for-global-font-variant !default;
+$for-h1-font-variant: $for-global-font-variant !default;
+$for-h1-font-variant: $for-global-font-variant !default;
+$for-h1-font-variant: $for-global-font-variant !default;
+$for-h1-font-variant: $for-global-font-variant !default;
+$for-h1-font-variant: $for-global-font-variant !default;
+$for-p-font-variant: $for-global-font-variant !default;
+$for-link-font-variant: $for-global-font-variant !default;
+$for-link-hover-font-variant: $for-link-font-variant !default;
 
 
 //  Text Decoration
 //  ##########
-$for-text-decoration-global: none;
-$for-text-decoration-h1: $for-text-decoration-global;
-$for-text-decoration-h2: $for-text-decoration-global;
-$for-text-decoration-h3: $for-text-decoration-global;
-$for-text-decoration-h4: $for-text-decoration-global;
-$for-text-decoration-h5: $for-text-decoration-global;
-$for-text-decoration-h6: $for-text-decoration-global;
-$for-text-decoration-p: $for-text-decoration-global;
-$for-link-text-decoration: $for-text-decoration-global;
-$for-link-hover-text-decoration: $for-link-text-decoration;
+$for-text-decoration-global: none !default;
+$for-text-decoration-h1: $for-text-decoration-global !default;
+$for-text-decoration-h2: $for-text-decoration-global !default;
+$for-text-decoration-h3: $for-text-decoration-global !default;
+$for-text-decoration-h4: $for-text-decoration-global !default;
+$for-text-decoration-h5: $for-text-decoration-global !default;
+$for-text-decoration-h6: $for-text-decoration-global !default;
+$for-text-decoration-p: $for-text-decoration-global !default;
+$for-link-text-decoration: $for-text-decoration-global !default;
+$for-link-hover-text-decoration: $for-link-text-decoration !default;
 
 //  Text Transform
 //  ##########
 //  TODO: implement
-$for-text-transform-global: normal;
-$for-text-transform-h1: $for-text-transform-global;
-$for-text-transform-h2: $for-text-transform-global;
-$for-text-transform-h3: $for-text-transform-global;
-$for-text-transform-h4: $for-text-transform-global;
-$for-text-transform-h5: $for-text-transform-global;
-$for-text-transform-h6: $for-text-transform-global;
-$for-text-transform-p: $for-text-transform-global;
-$for-text-transform-link: $for-text-transform-global;
-$for-text-transform-link-hover: $for-text-transform-link;
+$for-text-transform-global: normal !default;
+$for-text-transform-h1: $for-text-transform-global !default;
+$for-text-transform-h2: $for-text-transform-global !default;
+$for-text-transform-h3: $for-text-transform-global !default;
+$for-text-transform-h4: $for-text-transform-global !default;
+$for-text-transform-h5: $for-text-transform-global !default;
+$for-text-transform-h6: $for-text-transform-global !default;
+$for-text-transform-p: $for-text-transform-global !default;
+$for-text-transform-link: $for-text-transform-global !default;
+$for-text-transform-link-hover: $for-text-transform-link !default;

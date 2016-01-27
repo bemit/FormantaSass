@@ -22,7 +22,7 @@ $for-content-link-hover-font-family: $for-link-hover-font-family;
 
 //  Font Weight
 //  ##########
-$for-content-font-weight: $for-font-weight-global;
+$for-content-font-weight: $for-global-font-weight;
 $for-content-link-font-weight: $for-link-font-weight;
 $for-content-link-hover-font-weight: $for-link-hover-font-weight;
 
@@ -34,9 +34,9 @@ $for-content-link-hover-text-decoration: $for-link-hover-text-decoration;
 
 //  Line Height
 //  ##########
-$for-content-line-height: $for-line-height-global;
+$for-content-line-height: $for-global-line-height;
 $for-content-link-line-height: $for-link-line-height;
-$for-content-link-line-height-hover: $for-link-line-height-hover;
+$for-content-link-line-height-hover: $for-link-hover-line-height;
 
 //  Sizing
 //  ##########

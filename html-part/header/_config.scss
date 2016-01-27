@@ -23,7 +23,7 @@ $for-header-link-hover-font-family: $for-link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
-$for-header-font-weight: $for-font-weight-global !default;
+$for-header-font-weight: $for-global-font-weight !default;
 $for-header-link-font-weight: $for-link-font-weight !default;
 $for-header-link-hover-font-weight: bold !default;
 
@@ -35,6 +35,6 @@ $for-header-link-hover-text-decoration: $for-link-hover-text-decoration !default
 
 //  Line Height
 //  ##########
-$for-header-line-height: $for-line-height-global !default;
+$for-header-line-height: $for-global-line-height !default;
 $for-header-link-line-height: 30px !default;
 $for-header-link-line-height-hover: $for-header-link-line-height !default;
