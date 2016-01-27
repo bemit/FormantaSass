@@ -111,13 +111,13 @@ $for-link-hover-text-decoration: $for-link-text-decoration !default;
 //  Text Transform
 //  ##########
 //  TODO: implement
-$for-text-transform-global: normal !default;
-$for-text-transform-h1: $for-text-transform-global !default;
-$for-text-transform-h2: $for-text-transform-global !default;
-$for-text-transform-h3: $for-text-transform-global !default;
-$for-text-transform-h4: $for-text-transform-global !default;
-$for-text-transform-h5: $for-text-transform-global !default;
-$for-text-transform-h6: $for-text-transform-global !default;
-$for-text-transform-p: $for-text-transform-global !default;
-$for-text-transform-link: $for-text-transform-global !default;
-$for-text-transform-link-hover: $for-text-transform-link !default;
+$for-global-text-transform: normal !default;
+$for-h1-text-transform: $for-global-text-transform !default;
+$for-h2-text-transform: $for-global-text-transform !default;
+$for-h3-text-transform: $for-global-text-transform !default;
+$for-h4-text-transform: $for-global-text-transform !default;
+$for-h5-text-transform: $for-global-text-transform !default;
+$for-h6-text-transform: $for-global-text-transform !default;
+$for-p-text-transform: $for-global-text-transform !default;
+$for-link-text-transform: $for-global-text-transform !default;
+$for-link-hover-text-transform: $for-link-text-transform !default;

@@ -32,34 +32,34 @@
     border-right-color: $for-button-border-right-color;
     border-bottom-color: $for-button-border-bottom-color;
     border-left-color: $for-button-border-left-color;
-    border-top-left-radius: $for-button-border-top-left-radius-center $for-button-border-top-left-radius-left;
-    border-top-right-radius: $for-button-border-top-right-radius-center $for-button-border-top-right-radius-right;
-    border-bottom-right-radius: $for-button-border-bottom-right-radius-center $for-button-border-bottom-right-radius-right;
-    border-bottom-left-radius: $for-button-border-bottom-left-radius-center $for-button-border-bottom-left-radius-left;
+    border-top-left-radius: $for-button-border-top-left-radius-inner $for-button-border-top-left-radius-left;
+    border-top-right-radius: $for-button-border-top-right-radius-inner $for-button-border-top-right-radius-right;
+    border-bottom-right-radius: $for-button-border-bottom-right-radius-inner $for-button-border-bottom-right-radius-right;
+    border-bottom-left-radius: $for-button-border-bottom-left-radius-inner $for-button-border-bottom-left-radius-left;
     
     &:hover {
         background: $for-button-background-hover;
-        color: $for-button-font-color-hover;
-        font-size: $for-button-font-size-hover;
-        font-weight: $for-button-font-weight-hover;
-        font-style: $for-button-font-style-hover;
-        text-decoration: $for-button-text-decoration-hover;
-        border-top-width: $for-button-border-hover-width-top;
-        border-right-width: $for-button-border-hover-width-right;
-        border-bottom-width: $for-button-border-hover-width-bottom;
-        border-left-width: $for-button-border-hover-width-left;
-        border-top-style: $for-button-border-hover-style-top;
-        border-right-style: $for-button-border-hover-style-right;
-        border-bottom-style: $for-button-border-hover-style-bottom;
-        border-left-style: $for-button-border-hover-style-left;
-        border-top-color: $for-button-border-hover-color-top;
-        border-right-color: $for-button-border-hover-color-right;
-        border-bottom-color: $for-button-border-hover-color-bottom;
-        border-left-color: $for-button-border-hover-color-left;
-        border-top-left-radius: $for-button-border-radius-hover-top-left-top $for-button-border-radius-hover-top-left-left;
-        border-top-right-radius: $for-button-border-radius-hover-top-right-top $for-button-border-radius-hover-top-right-right;
-        border-bottom-right-radius: $for-button-border-radius-hover-bottom-right-bottom $for-button-border-radius-hover-bottom-right-right;
-        border-bottom-left-radius: $for-button-border-radius-hover-bottom-left-bottom $for-button-border-radius-hover-bottom-left-left;
+        color: $for-button-hover-font-color;
+        font-size: $for-button-hover-font-size;
+        font-weight: $for-button-hover-font-weight;
+        font-style: $for-button-hover-font-style;
+        text-decoration: $for-button-hover-text-decoration;
+        border-top-width: $for-button-hover-border-top-width;
+        border-right-width: $for-button-hover-border-right-width;
+        border-bottom-width: $for-button-hover-border-bottom-width;
+        border-left-width: $for-button-hover-border-left-width;
+        border-top-style: $for-button-hover-border-top-style;
+        border-right-style: $for-button-hover-border-right-style;
+        border-bottom-style: $for-button-hover-border-bottom-style;
+        border-left-style: $for-button-hover-border-left-style;
+        border-top-color: $for-button-hover-border-top-color;
+        border-right-color: $for-button-hover-border-right-color;
+        border-bottom-color: $for-button-hover-border-bottom-color;
+        border-left-color: $for-button-hover-border-left-color;
+        border-top-left-radius: $for-button-hover-border-top-left-radius-inner $for-button-hover-border-top-left-radius-left;
+        border-top-right-radius: $for-button-hover-border-top-right-radius-inner $for-button-hover-border-top-right-radius-right;
+        border-bottom-right-radius: $for-button-hover-border-bottom-right-radius-inner $for-button-hover-border-bottom-right-radius-right;
+        border-bottom-left-radius: $for-button-hover-border-bottom-left-radius-inner $for-button-hover-border-bottom-left-radius-left;
     }
 }
 
