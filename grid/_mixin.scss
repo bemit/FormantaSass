@@ -1,0 +1,33 @@
+@mixin clear {
+    clear: both;
+}
+@mixin tenth {
+    width: 10%;
+}
+@mixin fifth {
+    width: 20%;
+}
+@mixin quarter {
+    width: 25%;
+}
+@mixin third {
+    width: 33.3%;
+}
+@mixin half {
+    width: 50%;
+}
+@mixin three-quarters {
+    width: 75%;
+}
+@mixin hundred {
+    width: 100%;
+}
+@mixin block {
+    display: block;
+}
+@mixin inline-block {
+    display: inline-block;
+}
+@mixin inline {
+    display: inline;
+}

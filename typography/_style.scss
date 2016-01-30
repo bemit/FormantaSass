@@ -2,21 +2,21 @@
     html {
         /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
         font: {
-            size: $for-global-font-size;
+            size: $for-general-font-size;
         }
         line: {
-            height: $for-global-line-height;
+            height: $for-general-line-height;
         }
     }
 
     body {
-        color: $for-global-font-color;
+        color: $for-general-font-color;
         font: {
-            family: $for-global-font-family;
-            weight: $for-global-font-weight;
+            family: $for-general-font-family;
+            weight: $for-general-font-weight;
         }
         text: {
-            decoration: $for-global-text-decoration;
+            decoration: $for-general-text-decoration;
         }
     }
 

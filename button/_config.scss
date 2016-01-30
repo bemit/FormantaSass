@@ -3,14 +3,14 @@
 
 //  Typography
 //  ##########
-$for-button-font-family: $for-global-font-family !default;
-$for-button-font-size: $for-global-font-size !default;
-$for-button-font-color: $for-global-font-color !default;
-$for-button-font-style: $for-global-font-style !default;
-$for-button-font-variant: $for-global-font-variant !default;
-$for-button-text-decoration: $for-global-text-decoration !default;
-$for-button-text-transform: $for-global-text-transform !default;
-$for-button-font-weight: $for-global-font-weight !default;
+$for-button-font-family: $for-general-font-family !default;
+$for-button-font-size: $for-general-font-size !default;
+$for-button-font-color: $for-general-font-color !default;
+$for-button-font-style: $for-general-font-style !default;
+$for-button-font-variant: $for-general-font-variant !default;
+$for-button-text-decoration: $for-general-text-decoration !default;
+$for-button-text-transform: $for-general-text-transform !default;
+$for-button-font-weight: $for-general-font-weight !default;
 
 $for-button-hover-font-size: $for-button-font-size !default;
 $for-button-hover-font-color: $for-button-font-color !default;
@@ -73,19 +73,19 @@ $for-button-border-bottom-left-radius-left: $for-button-border-radius-outer !def
 //  ###
 $for-button-hover-border-width: $for-button-border-width !default;
 $for-button-hover-border-style: $for-button-border-style !default;
-$for-button-border-hover-color: $for-button-border-color !default;
+$for-button-hover-border-color: $for-button-border-color !default;
 $for-button-hover-border-top-width: $for-button-hover-border-width !default;
 $for-button-hover-border-top-style: $for-button-hover-border-style !default;
-$for-button-hover-border-top-color: $for-button-border-hover-color !default;
+$for-button-hover-border-top-color: $for-button-hover-border-color !default;
 $for-button-hover-border-right-width: $for-button-hover-border-width !default;
 $for-button-hover-border-right-style: $for-button-hover-border-style !default;
-$for-button-hover-border-right-color: $for-button-border-hover-color !default;
+$for-button-hover-border-right-color: $for-button-hover-border-color !default;
 $for-button-hover-border-bottom-width: $for-button-hover-border-width !default;
 $for-button-hover-border-bottom-style: $for-button-hover-border-style !default;
-$for-button-hover-border-bottom-color: $for-button-border-hover-color !default;
+$for-button-hover-border-bottom-color: $for-button-hover-border-color !default;
 $for-button-hover-border-left-width: $for-button-hover-border-width !default;
 $for-button-hover-border-left-style: $for-button-hover-border-style !default;
-$for-button-hover-border-left-color: $for-button-border-hover-color !default;
+$for-button-hover-border-left-color: $for-button-hover-border-color !default;
 //  Border Radius
 $for-button-hover-border-radius: $for-button-border-radius !default;
 $for-button-hover-border-radius-inner: $for-button-hover-border-radius !default;//first part within css (before /)
@@ -102,5 +102,5 @@ $for-button-hover-border-bottom-left-radius-left: $for-button-hover-border-radiu
 
 //  Background
 //  ##########
-$for-button-background: $for-global-color-primary !default;
-$for-button-background-hover: $for-global-color-secondary !default;
+$for-button-background: $for-general-color-primary !default;
+$for-button-hover-background: $for-general-color-secondary !default;

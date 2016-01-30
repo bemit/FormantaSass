@@ -11,6 +11,7 @@
         font-weight: $for-header-font-weight;
         text-decoration: $for-header-text-decoration;
         line-height: $for-header-line-height;
+        
         a {
             color: $for-header-link-font-color;
             font-size: $for-header-link-font-size;
@@ -18,6 +19,7 @@
             font-weight: $for-header-link-font-weight;
             text-decoration: $for-header-link-text-decoration;
             line-height: $for-header-link-line-height;
+            
             &:hover {
                 color: $for-header-link-hover-font-color;
                 font-size: $for-header-link-hover-font-size;

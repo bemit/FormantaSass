@@ -1,44 +1,60 @@
 //  Background
 //  ##########
-$for-content-background: #ffffff;
+$for-content-background: #ffffff !default;
 
 //  Font Color
 //  ##########
-$for-content-font-color: $for-global-font-color;
-$for-content-link-font-color: $for-link-font-color;
-$for-content-link-hover-font-color: $for-link-hover-font-color;
+$for-content-font-color: $for-general-font-color !default;
+$for-content-link-font-color: $for-link-font-color !default;
+$for-content-link-hover-font-color: $for-link-hover-font-color !default;
 
 //  Font-Size
 //  ##########
-$for-content-font-size: $for-global-font-size;
-$for-content-link-font-size: $for-link-font-size;
-$for-content-link-hover-font-size: $for-link-hover-font-size;
+$for-content-font-size: $for-general-font-size !default;
+$for-content-link-font-size: $for-link-font-size !default;
+$for-content-link-hover-font-size: $for-link-hover-font-size !default;
 
 //  Font Family
 //  ##########
-$for-content-font-family: $for-global-font-family;
-$for-content-link-font-family: $for-link-font-family;
-$for-content-link-hover-font-family: $for-link-hover-font-family;
+$for-content-font-family: $for-general-font-family !default;
+$for-content-link-font-family: $for-link-font-family !default;
+$for-content-link-hover-font-family: $for-link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
-$for-content-font-weight: $for-global-font-weight;
-$for-content-link-font-weight: $for-link-font-weight;
-$for-content-link-hover-font-weight: $for-link-hover-font-weight;
+$for-content-font-weight: $for-general-font-weight !default;
+$for-content-link-font-weight: $for-link-font-weight !default;
+$for-content-link-hover-font-weight: $for-link-hover-font-weight !default;
+
+//  Font Variant
+//  ##########
+$for-content-font-variant: $for-general-font-variant !default;
+$for-content-link-font-variant: $for-link-font-variant !default;
+$for-content-link-hover-font-variant: $for-link-hover-font-variant !default;
 
 //  Text Decoration
 //  ##########
-$for-content-text-decoration: $for-global-text-decoration;
-$for-content-link-text-decoration: $for-link-text-decoration;
-$for-content-link-hover-text-decoration: $for-link-hover-text-decoration;
+$for-content-text-decoration: $for-general-text-decoration !default;
+$for-content-link-text-decoration: $for-link-text-decoration !default;
+$for-content-link-hover-text-decoration: $for-link-hover-text-decoration !default;
+
+//  Text Transform
+//  ##########
+$for-content-text-transform: $for-general-text-transform !default;
+$for-content-link-text-transform: $for-link-text-transform !default;
+$for-content-link-hover-text-transform: $for-link-hover-text-transform !default;
 
 //  Line Height
 //  ##########
-$for-content-line-height: $for-global-line-height;
-$for-content-link-line-height: $for-link-line-height;
-$for-content-link-line-height-hover: $for-link-hover-line-height;
+$for-content-line-height: $for-general-line-height !default;
+$for-content-link-line-height: $for-link-line-height !default;
+$for-content-link-line-height-hover: $for-link-hover-line-height !default;
 
 //  Sizing
 //  ##########
-$for-content-mobile-width: 100%;
-$for-content-desktop-width: 710px;
+$for-content-xlarge-width: 1200px !default;
+$for-content-large-width: 750px !default;
+$for-content-medium-width: 690px !default;
+$for-content-small-all-width: 100% !default;
+$for-content-small-width: $for-content-small-all-width !default;
+$for-content-xsmall-width: $for-content-small-all-width !default;

@@ -1,14 +1,14 @@
 @charset "UTF-8";
+/*! FormantaSassLibrary v0.0.01.|╬▒ | GNU LGPL v3 | https://github.com/bemit/FormantaSassLibrary */
 /*
-    FormantaSassLibrary for basis config, mixins, formatting and typography.
-    For use in any project where there should be basic designs and other things.
+    FormantaSassLibrary for basic config, mixins, formatting and typography.
     
     Part 1 of the FormantaLibrary for FrontendDevelopment.
-/* 
-    Copyright  : ┬® 2016 bemit UG //bemit.eu
+/*
+    Copyright  : ┬® 2016 Michael Becker, bemit UG (haftungsbeschr├ñnkt) //bemit.eu
     Author     : Michael Becker
-    Company    : bemit UG
-    Licence:   : MIT Licence
+    Company    : bemit UG (haftungsbeschr├ñnkt)
+    Licence:   : GNU LGPL v3
 */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -431,12 +431,12 @@ textarea {
 
 input[type=submit] {
   display: inline-block;
-  font-family: Arial, Helvetica;
+  font-family: Helvetica, sans-serif;
   padding: 10px 10px 10px 10px;
   margin: 0 0 0 0;
   background: #b8c802;
-  color: #000000;
-  font-size: 11pt;
+  color: #333;
+  font-size: 12pt;
   font-weight: 400;
   font-style: none;
   text-decoration: none;
@@ -459,8 +459,8 @@ input[type=submit] {
   border-bottom-left-radius: 0 0; }
   input[type=submit]:hover {
     background: #006633;
-    color: #000000;
-    font-size: 11pt;
+    color: #333;
+    font-size: 12pt;
     font-weight: 400;
     font-style: none;
     text-decoration: none;
@@ -483,12 +483,12 @@ input[type=submit] {
 
 input[type=button] {
   display: inline-block;
-  font-family: Arial, Helvetica;
+  font-family: Helvetica, sans-serif;
   padding: 10px 10px 10px 10px;
   margin: 0 0 0 0;
   background: #b8c802;
-  color: #000000;
-  font-size: 11pt;
+  color: #333;
+  font-size: 12pt;
   font-weight: 400;
   font-style: none;
   text-decoration: none;
@@ -511,8 +511,8 @@ input[type=button] {
   border-bottom-left-radius: 0 0; }
   input[type=button]:hover {
     background: #006633;
-    color: #000000;
-    font-size: 11pt;
+    color: #333;
+    font-size: 12pt;
     font-weight: 400;
     font-style: none;
     text-decoration: none;
@@ -535,12 +535,12 @@ input[type=button] {
 
 button {
   display: inline-block;
-  font-family: Arial, Helvetica;
+  font-family: Helvetica, sans-serif;
   padding: 10px 10px 10px 10px;
   margin: 0 0 0 0;
   background: #b8c802;
-  color: #000000;
-  font-size: 11pt;
+  color: #333;
+  font-size: 12pt;
   font-weight: 400;
   font-style: none;
   text-decoration: none;
@@ -563,8 +563,8 @@ button {
   border-bottom-left-radius: 0 0; }
   button:hover {
     background: #006633;
-    color: #000000;
-    font-size: 11pt;
+    color: #333;
+    font-size: 12pt;
     font-weight: 400;
     font-style: none;
     text-decoration: none;
@@ -590,90 +590,123 @@ body {
 
 html {
   /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
-  font-size: 11pt;
+  font-size: 12pt;
   line-height: normal; }
 
 body {
-  color: #000000;
-  font-family: Arial, Helvetica;
+  color: #333;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none; }
 
 a {
-  color: #000000;
-  font-size: 11pt;
-  font-family: Arial, Helvetica;
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
   line-height: normal; }
   a:hover {
-    color: #000000;
-    font-size: 11pt;
-    font-family: Arial, Helvetica;
+    color: #333;
+    font-size: 12pt;
+    font-family: Helvetica, sans-serif;
     font-weight: 400;
     text-decoration: none; }
 
 p {
-  color: #000000;
-  font-size: 11pt;
-  font-family: Arial, Helvetica;
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
   line-height: normal; }
 
 h1 {
-  color: #000000;
-  font-size: 11pt;
-  font-family: Arial, Helvetica;
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
   line-height: normal; }
 
 h2 {
-  color: #000000;
-  font-size: 11pt;
-  font-family: Arial, Helvetica;
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
   line-height: normal; }
 
 h3 {
-  color: #000000;
-  font-size: 11pt;
-  font-family: Arial, Helvetica;
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
   line-height: normal; }
 
 h4 {
-  color: #000000;
-  font-size: 11pt;
-  font-family: Arial, Helvetica;
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
   line-height: normal; }
 
 h5 {
-  color: #000000;
-  font-size: 11pt;
-  font-family: Arial, Helvetica;
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
   line-height: normal; }
 
 h6 {
-  color: #000000;
-  font-size: 11pt;
-  font-family: Arial, Helvetica;
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
   line-height: normal; }
+
+.clear {
+  clear: both; }
+
+.tenth {
+  width: 10%; }
+
+.fifth {
+  width: 20%; }
+
+.quarter {
+  width: 25%; }
+
+.third {
+  width: 33.3%; }
+
+.half {
+  width: 50%; }
+
+.three-quarters {
+  width: 75%; }
+
+.hundred {
+  width: 100%; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.inline {
+  display: inline; }
 
 .table {
   table-layout: fixed;
   width: 100%;
   display: table;
-  font: normal normal 400 11pt/normal Arial, Helvetica;
+  font: normal normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
   border-top: 0 solid #006633;
   border-top-left-radius: 0 0;
@@ -684,13 +717,13 @@ h6 {
   border-bottom-right-radius: 0 0;
   border-left: 0 solid #006633; }
   .table a {
-    font: normal normal 400 11pt/normal Arial, Helvetica;
-    color: #000000;
+    font: normal normal 400 12pt/normal Helvetica, sans-serif;
+    color: #333;
     text-decoration: none;
     line-height: normal; }
     .table a:hover {
-      font: normal normal 400 11pt Arial, Helvetica;
-      color: #000000;
+      font: normal normal 400 12pt Helvetica, sans-serif;
+      color: #333;
       text-decoration: none; }
   .table .row {
     display: table-row; }
@@ -698,36 +731,37 @@ h6 {
       display: table-cell; }
     .table .row .cell-header {
       display: table-cell;
-      font: normal normal 400 11pt/normal Arial, Helvetica; }
+      font: normal normal 400 12pt/normal Helvetica, sans-serif;
+      background: transparent; }
 
 form input[type=text] {
   display: inline-block;
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=password] {
@@ -735,29 +769,29 @@ form input[type=password] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=color] {
@@ -765,29 +799,29 @@ form input[type=color] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=date] {
@@ -795,29 +829,29 @@ form input[type=date] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=datetime] {
@@ -825,29 +859,29 @@ form input[type=datetime] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=datetime-local] {
@@ -855,29 +889,29 @@ form input[type=datetime-local] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=email] {
@@ -885,29 +919,29 @@ form input[type=email] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=month] {
@@ -915,29 +949,29 @@ form input[type=month] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=number] {
@@ -945,29 +979,29 @@ form input[type=number] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=range] {
@@ -975,29 +1009,29 @@ form input[type=range] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=search] {
@@ -1005,29 +1039,29 @@ form input[type=search] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=tel] {
@@ -1035,29 +1069,29 @@ form input[type=tel] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=time] {
@@ -1065,29 +1099,29 @@ form input[type=time] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=url] {
@@ -1095,29 +1129,29 @@ form input[type=url] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
 form input[type=week] {
@@ -1125,30 +1159,129 @@ form input[type=week] {
   box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -moz-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
   -webkit-box-shadow: inset 4px 4px 10px 1px #e6e6e6;
-  padding: 3px 3px 3px 3px;
-  height: 30px;
+  padding: 5px 5px 5px 5px;
+  height: 20px;
   background: #ffffff;
-  color: #000000;
-  font-family: Arial, Helvetica;
-  font-size: 11pt;
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 12pt;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  border-top-width: 0;
+  border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #006633;
   border-top-left-radius: 0 0;
   border-top-right-radius: 0 0;
-  border-right-width: 0;
+  border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #006633;
-  border-bottom-width: 0;
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #006633;
   border-bottom-left-radius: 0 0;
   border-bottom-right-radius: 0 0;
-  border-left-width: 0;
+  border-left-width: 1px;
   border-left-style: solid;
   border-left-color: #006633; }
+
+.container {
+  /* General Mobile Devices: xsmall and small */ }
+  @media (min-width: 1824px) {
+    .container {
+      width: 1600px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1000px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 940px; } }
+  @media (max-width: 991px) {
+    .container {
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .container {
+      width: 100%; } }
+
+.content {
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: normal; }
+  .content a {
+    color: #333;
+    font-size: 12pt;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: normal; }
+    .content a:hover {
+      color: #333;
+      font-size: 12pt;
+      font-family: Helvetica, sans-serif;
+      font-weight: 400;
+      text-decoration: none; }
+
+.footer {
+  background: #006633; }
+
+.header {
+  background: #ffffff;
+  background-size: auto; }
+
+.header {
+  color: #333;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: normal; }
+  .header a {
+    color: #333;
+    font-size: 13pt;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 30px; }
+    .header a:hover {
+      color: #333;
+      font-size: 13pt;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      text-decoration: none; }
+
+.sidebar {
+  background: #b8c802; }
+
+.sidebar .heading {
+  color: #ffffff;
+  font-size: 11pt;
+  line-height: 40px; }
+
+.sidebar {
+  color: #006633;
+  font-size: 12pt;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: normal; }
+  .sidebar a {
+    color: #333;
+    font-size: 12pt;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: normal; }
+    .sidebar a:hover {
+      color: #333;
+      font-size: 12pt;
+      font-family: Helvetica, sans-serif;
+      font-weight: 400;
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

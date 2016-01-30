@@ -2,4 +2,38 @@
     .sidebar {
         background: $for-sidebar-background;
     }
+    
+
+    .sidebar {
+        .heading {
+            color: #ffffff;
+            font-size: 11pt;
+            line-height: $for-sidebar-heading-height;
+        }
+    }
+
+    //For Sidebar general
+    .sidebar {
+        color: $for-sidebar-font-color;
+        font-size: $for-sidebar-font-size;
+        font-family: $for-sidebar-font-family;
+        font-weight: $for-sidebar-font-weight;
+        text-decoration: $for-sidebar-text-decoration;
+        line-height: $for-sidebar-line-height;
+            a {
+            color: $for-sidebar-link-general-font-color;
+            font-size: $for-sidebar-link-font-size;
+            font-family: $for-sidebar-link-font-family;
+            font-weight: $for-sidebar-link-font-weight;
+            text-decoration: $for-sidebar-link-text-decoration;
+            line-height: $for-sidebar-link-line-height;
+            &:hover {
+                color: $for-sidebar-link-hover-font-color;
+                font-size: $for-sidebar-link-hover-font-size;
+                font-family: $for-sidebar-link-hover-font-family;
+                font-weight: $for-sidebar-link-hover-font-weight;
+                text-decoration: $for-sidebar-link-hover-text-decoration;
+            }
+        }
+    }
 }

@@ -16,6 +16,13 @@
     }
 }
 
+@mixin bp-small-all {
+    /* General Mobile Devices: xsmall and small */
+    @media (max-width: $for-bp-small-all-max-size) {
+        @content;
+    }
+}
+
 @mixin bp-small {
     @media (min-width: $for-bp-small-min-size) and (max-width: $for-bp-medium-min-size - 1) {
         @content;
@@ -24,13 +31,6 @@
 
 @mixin bp-xsmall {
     @media (max-width: $for-bp-xsmall-max-size) {
-        @content;
-    }
-}
-
-@mixin bp-small-all {
-    /* General Mobile Devices: xsmall and small */
-    @media (max-width: $for-bp-small-all-max-size) {
         @content;
     }
 }

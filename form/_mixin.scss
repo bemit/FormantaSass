@@ -7,52 +7,52 @@
     }
     @include shadow(inset 4px 4px 10px 1px #e6e6e6);
     // Not in hover ->
-    padding: $for-form-input-textbox-padding-top $for-form-input-textbox-padding-right $for-form-input-textbox-padding-bottom $for-form-input-textbox-padding-left;
+    padding: $for-form-input-text-padding-top $for-form-input-text-padding-right $for-form-input-text-padding-bottom $for-form-input-text-padding-left;
     // <- Not in hover
-    height: $for-form-input-textbox-height;
-    background: $for-form-input-textbox-background;
-    color: $for-form-input-textbox-font-color;
+    height: $for-form-input-text-height;
+    background: $for-form-input-text-background;
+    color: $for-form-input-text-font-color;
     font: {
-        family: $for-form-input-textbox-font-family;
-        size: $for-form-input-textbox-font-size;
-        weight: $for-form-input-textbox-font-weight;
-        style: $for-form-input-textbox-font-style;
+        family: $for-form-input-text-font-family;
+        size: $for-form-input-text-font-size;
+        weight: $for-form-input-text-font-weight;
+        style: $for-form-input-text-font-style;
     }
     text: {
-        decoration: $for-form-input-textbox-text-decoration;
+        decoration: $for-form-input-text-text-decoration;
     }
     border: {
         top: {
-            width: $for-form-input-textbox-border-top-width;
-            style: $for-form-input-textbox-border-top-style;
-            color: $for-form-input-textbox-border-top-color;
+            width: $for-form-input-text-border-top-width;
+            style: $for-form-input-text-border-top-style;
+            color: $for-form-input-text-border-top-color;
             left: {
-                radius: $for-form-input-textbox-border-top-left-radius-inner $for-form-input-textbox-border-top-left-radius-left;
+                radius: $for-form-input-text-border-top-left-radius-inner $for-form-input-text-border-top-left-radius-left;
             }
             right: {
-                radius: $for-form-input-textbox-border-top-right-radius-inner $for-form-input-textbox-border-top-right-radius-right;
+                radius: $for-form-input-text-border-top-right-radius-inner $for-form-input-text-border-top-right-radius-right;
             }
         }
         right: {
-            width: $for-form-input-textbox-border-right-width;
-            style: $for-form-input-textbox-border-right-style;
-            color: $for-form-input-textbox-border-right-color;
+            width: $for-form-input-text-border-right-width;
+            style: $for-form-input-text-border-right-style;
+            color: $for-form-input-text-border-right-color;
         }
         bottom: {
-            width: $for-form-input-textbox-border-bottom-width;
-            style: $for-form-input-textbox-border-bottom-style;
-            color: $for-form-input-textbox-border-bottom-color;
+            width: $for-form-input-text-border-bottom-width;
+            style: $for-form-input-text-border-bottom-style;
+            color: $for-form-input-text-border-bottom-color;
             left: {
-                radius: $for-form-input-textbox-border-bottom-left-radius-inner $for-form-input-textbox-border-bottom-left-radius-left;
+                radius: $for-form-input-text-border-bottom-left-radius-inner $for-form-input-text-border-bottom-left-radius-left;
             }
             right: {
-                radius: $for-form-input-textbox-border-bottom-right-radius-inner $for-form-input-textbox-border-bottom-right-radius-right;
+                radius: $for-form-input-text-border-bottom-right-radius-inner $for-form-input-text-border-bottom-right-radius-right;
             }
         }
         left: {
-            width: $for-form-input-textbox-border-left-width;
-            style: $for-form-input-textbox-border-left-style;
-            color: $for-form-input-textbox-border-left-color;
+            width: $for-form-input-text-border-left-width;
+            style: $for-form-input-text-border-left-style;
+            color: $for-form-input-text-border-left-color;
         }
     }
     &:disabled {

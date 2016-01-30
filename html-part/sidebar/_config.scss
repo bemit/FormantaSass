@@ -1,94 +1,117 @@
 //  Background
 //  ##########
-$for-sidebar-background: $for-global-color-primary;
-$for-sidebar-primary-background: $for-sidebar-background;
-$for-sidebar-secondary-background: $for-sidebar-background;
+$for-sidebar-background: $for-general-color-primary !default;
+$for-sidebar-background-primary: $for-sidebar-background !default;
+$for-sidebar-background-secondary: $for-sidebar-background !default;
 
-$for-sidebar-heading-background: $for-global-color-secondary;
-$for-sidebar-heading-height: 30px;
+$for-sidebar-heading-background: $for-general-color-secondary !default;
+$for-sidebar-heading-height: 40px !default;
 
 //  Font Color
 //  ##########
-$for-sidebar-font-color-global: $for-global-color-secondary;
-$for-sidebar-font-color-primary: $for-sidebar-font-color-global;
-$for-sidebar-font-color-secondary: $for-sidebar-font-color-global;
-$for-sidebar-font-color-global-link: $for-link-font-color;
-$for-sidebar-font-color-primary-link: $for-sidebar-font-color-global-link;
-$for-sidebar-font-color-secondary-link: $for-sidebar-font-color-global-link;
-$for-sidebar-font-color-global-link-hover: $for-link-hover-font-color;
-$for-sidebar-font-color-primary-link-hover: $for-sidebar-font-color-global-link-hover;
-$for-sidebar-font-color-secondary-link-hover: $for-sidebar-font-color-global-link-hover;
+$for-sidebar-font-color: $for-general-color-secondary !default;
+$for-sidebar-primary-font-color: $for-sidebar-font-color !default;
+$for-sidebar-secondary-font-color: $for-sidebar-font-color !default;
+$for-sidebar-link-general-font-color: $for-link-font-color !default;
+$for-sidebar-primary-link-font-color: $for-sidebar-link-general-font-color !default;
+$for-sidebar-secondary-link-font-color: $for-sidebar-link-general-font-color !default;
+$for-sidebar-link-hover-font-color: $for-link-hover-font-color !default;
+$for-sidebar-primary-link-hover-font-color: $for-sidebar-link-hover-font-color !default;
+$for-sidebar-secondary-link-hover-font-color: $for-sidebar-link-hover-font-color !default;
 
 //  Font-Size
 //  ##########
-$for-sidebar-font-size-global: $for-global-font-size;
-$for-sidebar-font-size-primary: $for-sidebar-font-size-global;
-$for-sidebar-font-size-secondary: $for-sidebar-font-size-global;
-$for-sidebar-font-size-global-link: $for-link-font-size;
-$for-sidebar-font-size-primary-link: $for-sidebar-font-size-global-link;
-$for-sidebar-font-size-secondary-link: $for-sidebar-font-size-global-link;
-$for-sidebar-font-size-global-link-hover: $for-link-hover-font-size;
-$for-sidebar-font-size-primary-link-hover: $for-sidebar-font-size-global-link-hover;
-$for-sidebar-font-size-secondary-link-hover: $for-sidebar-font-size-global-link-hover;
+$for-sidebar-font-size: $for-general-font-size !default;
+$for-sidebar-primary-font-size: $for-sidebar-font-size !default;
+$for-sidebar-secondary-font-size: $for-sidebar-font-size !default;
+$for-sidebar-link-font-size: $for-link-font-size !default;
+$for-sidebar-primary-link-font-size: $for-sidebar-link-font-size !default;
+$for-sidebar-secondary-link-font-size: $for-sidebar-link-font-size !default;
+$for-sidebar-link-hover-font-size: $for-link-hover-font-size !default;
+$for-sidebar-primary-link-hover-font-size: $for-sidebar-link-hover-font-size !default;
+$for-sidebar-secondary-link-hover-font-size: $for-sidebar-link-hover-font-size !default;
 
 //  Font Family
 //  ##########
-$for-sidebar-font-family-global-link: $for-link-font-family;
-$for-sidebar-font-family-primary-link: $for-sidebar-font-family-global-link;
-$for-sidebar-font-family-secondary-link: $for-sidebar-font-family-global-link;
-$for-sidebar-font-family-global-link-hover: $for-link-hover-font-family;
-$for-sidebar-font-family-primary-link-hover: $for-sidebar-font-family-global-link-hover;
-$for-sidebar-font-family-secondary-link-hover: $for-sidebar-font-family-global-link-hover;
-$for-sidebar-font-family-global: $for-global-font-family;
-$for-sidebar-font-family-primary: $for-sidebar-font-family-global;
-$for-sidebar-font-family-secondary: $for-sidebar-font-family-global;
+$for-sidebar-font-family: $for-general-font-family !default;
+$for-sidebar-primary-font-family: $for-sidebar-font-family !default;
+$for-sidebar-secondary-font-family: $for-sidebar-font-family !default;
+$for-sidebar-link-font-family: $for-link-font-family !default;
+$for-sidebar-primary-link-font-family: $for-sidebar-link-font-family !default;
+$for-sidebar-secondary-link-font-family: $for-sidebar-link-font-family !default;
+$for-sidebar-link-hover-font-family: $for-link-hover-font-family !default;
+$for-sidebar-primary-link-hover-font-family: $for-sidebar-link-hover-font-family !default;
+$for-sidebar-secondary-link-hover-font-family: $for-sidebar-link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
-$for-sidebar-font-weight-global-link: $for-link-font-weight;
-$for-sidebar-font-weight-primary-link: $for-sidebar-font-weight-global-link;
-$for-sidebar-font-weight-secondary-link: $for-sidebar-font-weight-global-link;
-$for-sidebar-font-weight-global-link-hover: $for-link-hover-font-weight;
-$for-sidebar-font-weight-primary-link-hover: $for-sidebar-font-weight-global-link-hover;
-$for-sidebar-font-weight-secondary-link-hover: $for-sidebar-font-weight-global-link-hover;
-$for-sidebar-font-weight-global: $for-global-font-weight;
-$for-sidebar-font-weight-primary: $for-sidebar-font-weight-global;
-$for-sidebar-font-weight-secondary: $for-sidebar-font-weight-global;
+$for-sidebar-font-weight: $for-general-font-weight !default;
+$for-sidebar-primary-font-weight: $for-sidebar-font-weight !default;
+$for-sidebar-secondary-font-weight: $for-sidebar-font-weight !default;
+$for-sidebar-link-font-weight: $for-link-font-weight !default;
+$for-sidebar-primary-link-font-weight: $for-sidebar-link-font-weight !default;
+$for-sidebar-secondary-link-font-weight: $for-sidebar-link-font-weight !default;
+$for-sidebar-link-hover-font-weight: $for-link-hover-font-weight !default;
+$for-sidebar-primary-link-hover-font-weight: $for-sidebar-link-hover-font-weight !default;
+$for-sidebar-secondary-link-hover-font-weight: $for-sidebar-link-hover-font-weight !default;
+
+//  Font Variant
+//  ##########
+$for-sidebar-font-variant: $for-general-font-variant !default;
+$for-sidebar-primary-font-variant: $for-sidebar-font-variant !default;
+$for-sidebar-secondary-font-variant: $for-sidebar-font-variant !default;
+$for-sidebar-link-font-variant: $for-link-font-variant !default;
+$for-sidebar-primary-link-font-variant: $for-sidebar-link-font-variant !default;
+$for-sidebar-secondary-link-font-variant: $for-sidebar-link-font-variant !default;
+$for-sidebar-link-hover-font-variant: $for-link-hover-font-variant !default;
+$for-sidebar-primary-link-hover-font-variant: $for-sidebar-link-hover-font-variant !default;
+$for-sidebar-secondary-link-hover-font-variant: $for-sidebar-link-hover-font-variant !default;
 
 //  Text Decoration
 //  ##########
-$for-sidebar-text-decoration-global-link: $for-link-text-decoration;
-$for-sidebar-text-decoration-primary-link: $for-sidebar-text-decoration-global-link;
-$for-sidebar-text-decoration-secondary-link: $for-sidebar-text-decoration-global-link;
-$for-sidebar-text-decoration-global-link-hover: $for-link-hover-text-decoration;
-$for-sidebar-text-decoration-primary-link-hover: $for-sidebar-text-decoration-global-link-hover;
-$for-sidebar-text-decoration-secondary-link-hover: $for-sidebar-text-decoration-global-link-hover;
-$for-sidebar-text-decoration-global: $for-global-text-decoration;
-$for-sidebar-text-decoration-primary: $for-sidebar-text-decoration-global;
-$for-sidebar-text-decoration-secondary: $for-sidebar-text-decoration-global;
+$for-sidebar-text-decoration: $for-general-text-decoration !default;
+$for-sidebar-primary-text-decoration: $for-sidebar-text-decoration !default;
+$for-sidebar-secondary-text-decoration: $for-sidebar-text-decoration !default;
+$for-sidebar-link-text-decoration: $for-link-text-decoration !default;
+$for-sidebar-primary-link-text-decoration: $for-sidebar-link-text-decoration !default;
+$for-sidebar-secondary-link-text-decoration: $for-sidebar-link-text-decoration !default;
+$for-sidebar-link-hover-text-decoration: $for-link-hover-text-decoration !default;
+$for-sidebar-primary-link-hover-text-decoration: $for-sidebar-link-hover-text-decoration !default;
+$for-sidebar-secondary-link-hover-text-decoration: $for-sidebar-link-hover-text-decoration !default;
+
+//  Text Transform
+//  ##########
+$for-sidebar-text-transform: $for-general-text-transform !default;
+$for-sidebar-primary-text-transform: $for-sidebar-text-transform !default;
+$for-sidebar-secondary-text-transform: $for-sidebar-text-transform !default;
+$for-sidebar-link-text-transform: $for-link-text-transform !default;
+$for-sidebar-primary-link-text-transform: $for-sidebar-link-text-transform !default;
+$for-sidebar-secondary-link-text-transform: $for-sidebar-link-text-transform !default;
+$for-sidebar-link-hover-text-transform: $for-link-hover-text-transform !default;
+$for-sidebar-primary-link-hover-text-transform: $for-sidebar-link-hover-text-transform !default;
+$for-sidebar-secondary-link-hover-text-transform: $for-sidebar-link-hover-text-transform !default;
 
 //  Line Height
 //  ##########
-$for-sidebar-line-height-global-link: $for-link-line-height;
-$for-sidebar-line-height-primary-link: $for-sidebar-line-height-global-link;
-$for-sidebar-line-height-secondary-link: $for-sidebar-line-height-global-link;
-$for-sidebar-line-height-global-link-hover: $for-link-hover-line-height;
-$for-sidebar-line-height-primary-link-hover: $for-sidebar-line-height-global-link-hover;
-$for-sidebar-line-height-secondary-link-hover: $for-sidebar-line-height-global-link-hover;
-$for-sidebar-line-height-global: $for-global-line-height;
-$for-sidebar-line-height-primary: $for-sidebar-line-height-global;
-$for-sidebar-line-height-secondary: $for-sidebar-line-height-global;
+$for-sidebar-line-height: $for-general-line-height !default;
+$for-sidebar-primary-line-height: $for-sidebar-line-height !default;
+$for-sidebar-secondary-line-height: $for-sidebar-line-height !default;
+$for-sidebar-link-line-height: $for-link-line-height !default;
+$for-sidebar-primary-link-line-height: $for-sidebar-link-line-height !default;
+$for-sidebar-secondary-link-line-height: $for-sidebar-link-line-height !default;
+$for-sidebar-link-hover-line-height: $for-link-hover-line-height !default;
+$for-sidebar-primary-link-hover-line-height: $for-sidebar-link-hover-line-height !default;
+$for-sidebar-secondary-link-hover-line-height: $for-sidebar-link-hover-line-height !default;
 
 
 // Sizing
 // #########################################################
-$for-sidebar-mobile-width: 100%;
-$for-sidebar-desktop-width: 215px;
+$for-sidebar-xlarge-width: $for-container-xlarge-width - $for-content-xlarge-width !default;
+$for-sidebar-large-width: $for-container-large-width - $for-content-large-width !default;
+$for-sidebar-medium-width: $for-container-medium-width - $for-content-medium-width !default;
+$for-sidebar-small-all-width: 100% !default;
+$for-sidebar-small-width: $for-sidebar-small-all-width !default;
+$for-sidebar-xsmall-width: $for-sidebar-small-all-width !default;
 
-$for-sidebar-padding-outer: 10px;
-$for-sidebar-margin-inner: 10px;
-
-$for-sidebar-primary-position: left;//Possible: right, left or none
-$for-sidebar-secondary-position: none;//Possible: right, left or none
-
-$for-sidebar-elements-gap: 30px;
+$for-sidebar-primary-position: left !default;//Possible: right, left or none
+$for-sidebar-secondary-position: none !default;//Possible: right, left or none

@@ -1,14 +1,14 @@
 @charset 'utf-8';
+/*! FormantaSassLibrary v0.0.01.|α | GNU LGPL v3 | https://github.com/bemit/FormantaSassLibrary */
 /*
-    FormantaSassLibrary for basis config, mixins, formatting and typography.
-    For use in any project where there should be basic designs and other things.
+    FormantaSassLibrary for basic config, mixins, formatting and typography.
     
     Part 1 of the FormantaLibrary for FrontendDevelopment.
-/* 
-    Copyright  : © 2016 bemit UG //bemit.eu
+/*
+    Copyright  : © 2016 Michael Becker, bemit UG (haftungsbeschränkt) //bemit.eu
     Author     : Michael Becker
-    Company    : bemit UG
-    Licence:   : MIT Licence
+    Company    : bemit UG (haftungsbeschränkt)
+    Licence:   : GNU LGPL v3
 */
 @import 'config';
 @import 'color/config';
@@ -36,3 +36,5 @@
 @import 'grid/style';
 @import 'table/style';
 @import 'form/style';
+
+@import 'html-part/all';

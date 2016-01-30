@@ -2,31 +2,32 @@
 // Table
 //
 $for-table-background: transparent !default;
+$for-table-cell-header-background: $for-table-background !default;
 
 //  Font Color
 //  ##########
-$for-table-font-color: $for-global-font-color !default;
+$for-table-font-color: $for-general-font-color !default;
 $for-table-cell-header-font-color: $for-table-font-color !default;
 $for-table-link-font-color: $for-link-font-color !default;
 $for-table-link-hover-font-color: $for-link-hover-font-color !default;
 
 //  Font-Size
 //  ##########
-$for-table-font-size: $for-global-font-size !default;
+$for-table-font-size: $for-general-font-size !default;
 $for-table-cell-header-font-size: $for-table-font-size !default;
 $for-table-link-font-size: $for-link-font-size !default;
 $for-table-link-hover-font-size: $for-link-hover-font-size !default;
 
 //  Font Family
 //  ##########
-$for-table-font-family: $for-global-font-family !default;
+$for-table-font-family: $for-general-font-family !default;
 $for-table-cell-header-font-family: $for-table-font-family !default;
 $for-table-link-font-family: $for-link-font-family !default;
 $for-table-link-hover-font-family: $for-link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
-$for-table-font-weight: $for-global-font-weight !default;
+$for-table-font-weight: $for-general-font-weight !default;
 $for-table-cell-header-font-weight: $for-table-font-weight !default;
 $for-table-link-font-weight: $for-link-font-weight !default;
 $for-table-link-hover-font-weight: $for-link-hover-font-weight !default;
@@ -47,13 +48,13 @@ $for-table-link-hover-font-variant: $for-table-link-font-variant !default;
 
 //  Text Decoration
 //  ##########
-$for-table-text-decoration: $for-global-text-decoration !default;
+$for-table-text-decoration: $for-general-text-decoration !default;
 $for-table-link-text-decoration: $for-link-text-decoration !default;
 $for-table-link-hover-text-decoration: $for-link-hover-text-decoration !default;
 
 //  Line Height
 //  ##########
-$for-table-line-height: $for-global-line-height !default;
+$for-table-line-height: $for-general-line-height !default;
 $for-table-cell-header-line-height: $for-table-line-height !default;
 $for-table-link-line-height: $for-link-line-height !default;
 $for-table-link-line-height-hover: $for-link-hover-line-height !default;
@@ -62,7 +63,7 @@ $for-table-link-line-height-hover: $for-link-hover-line-height !default;
 //  ##########
 $for-table-border-width: 0 !default;
 $for-table-border-style: solid !default;
-$for-table-border-color: $for-global-color-secondary !default;
+$for-table-border-color: $for-general-color-secondary !default;
 $for-table-border-radius: 0 !default;
 
 $for-table-border-top-width: $for-table-border-width !default;
@@ -96,7 +97,7 @@ $for-table-border-bottom-left-radius-left: $for-table-border-radius-outer !defau
 //  ##########
 $for-table-cell-border-width: 0 !default;
 $for-table-cell-border-style: solid !default;
-$for-table-cell-border-color: $for-global-color-secondary !default;
+$for-table-cell-border-color: $for-general-color-secondary !default;
 $for-table-cell-border-radius: 0 !default;
 
 $for-table-cell-border-top-width: $for-table-cell-border-width !default;
@@ -130,7 +131,7 @@ $for-table-cell-border-bottom-left-radius-left: $for-table-cell-border-radius-ou
 //  ##########
 $for-table-cell-border-width: 0 !default;
 $for-table-cell-border-style: solid !default;
-$for-table-cell-border-color: $for-global-color-secondary !default;
+$for-table-cell-border-color: $for-general-color-secondary !default;
 $for-table-cell-border-radius: 0 !default;
 
 $for-table-cell-border-top-width: $for-table-cell-border-width !default;
@@ -145,7 +146,7 @@ $for-table-cell-border-left-style: $for-table-cell-border-style !default;
 
 $for-table-cell-border-top-color: $for-table-cell-border-color !default;
 $for-table-cell-border-right-color: $for-table-cell-border-color !default;
-$for-table-cell-border-bottom-color: $for-global-color-secondary !default;
+$for-table-cell-border-bottom-color: $for-general-color-secondary !default;
 $for-table-cell-border-left-color: $for-table-cell-border-color !default;
 
 $for-table-cell-border-radius-inner: $for-table-cell-border-radius !default;//first part within css (before /)
