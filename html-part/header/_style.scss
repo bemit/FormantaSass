@@ -1,0 +1,32 @@
+@if($for-output-style-html-part) {
+    .header {
+        background: $for-header-background;
+        background-size: $for-header-background-size;
+    }
+
+    .header {
+        color: $for-header-font-color;
+        font-size: $for-header-font-size;
+        font-family: $for-header-font-family;
+        font-weight: $for-header-font-weight;
+        text-decoration: $for-header-text-decoration;
+        line-height: $for-header-line-height;
+        
+        a {
+            color: $for-header-link-font-color;
+            font-size: $for-header-link-font-size;
+            font-family: $for-header-link-font-family;
+            font-weight: $for-header-link-font-weight;
+            text-decoration: $for-header-link-text-decoration;
+            line-height: $for-header-link-line-height;
+            
+            &:hover {
+                color: $for-header-link-hover-font-color;
+                font-size: $for-header-link-hover-font-size;
+                font-family: $for-header-link-hover-font-family;
+                font-weight: $for-header-link-hover-font-weight;
+                text-decoration: $for-header-link-hover-text-decoration;
+            }
+        }
+    }
+}

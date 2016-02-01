@@ -1,0 +1,27 @@
+@if($for-output-style-html-part) {
+    .container {
+        @include bp-xlarge {
+            width: $for-container-xlarge-width;
+        }
+
+        @include bp-large {
+            width: $for-container-large-width;
+        }
+
+        @include bp-medium {
+            width: $for-container-medium-width;
+        }
+        
+        @include bp-small-all {
+            width: $for-container-small-all-width;
+        }
+
+        @include bp-small {
+            width: $for-container-small-width;
+        }
+
+        @include bp-xsmall {
+            width: $for-container-xsmall-width;
+        }
+    }
+}

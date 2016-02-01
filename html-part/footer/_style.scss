@@ -1,0 +1,5 @@
+@if($for-output-style-html-part) {
+    .footer {
+        background: $for-footer-background;
+    }
+}

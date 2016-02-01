@@ -1,0 +1,153 @@
+@if($for-output-style-all) {
+    html {
+        /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
+        font: {
+            size: $for-general-font-size;
+        }
+        line: {
+            height: $for-general-line-height;
+        }
+    }
+
+    body {
+        color: $for-general-font-color;
+        font: {
+            family: $for-general-font-family;
+            weight: $for-general-font-weight;
+        }
+        text: {
+            decoration: $for-general-text-decoration;
+        }
+    }
+
+    a {
+        color: $for-link-font-color;
+        font: {
+            size: $for-link-font-size;
+            family: $for-link-font-family;
+            weight: $for-link-font-weight;
+        }
+        text: {
+            decoration: $for-link-text-decoration;
+        }
+        line: {
+            height: $for-link-line-height;
+        }
+        &:hover {
+            color: $for-link-hover-font-color;
+            font: {
+                size: $for-link-hover-font-size;
+                family: $for-link-hover-font-family;
+                weight: $for-link-hover-font-weight;
+            }
+            text: {
+                decoration: $for-link-hover-text-decoration;
+            }
+        }
+    }
+
+    p {
+        color: $for-p-font-color;
+        font: {
+            size: $for-p-font-size;
+            family: $for-p-font-family;
+            weight: $for-p-font-weight;
+        }
+        text: {
+            decoration: $for-p-text-decoration;
+        }
+        line: {
+            height: $for-p-line-height;
+        }
+    }
+
+    h1 {
+        color: $for-h1-font-color;
+        font: {
+            size: $for-h1-font-size;
+            family: $for-h1-font-family;
+            weight: $for-h1-font-weight;
+        }
+        text: {
+            decoration: $for-h1-text-decoration;
+        }
+        line: {
+            height: $for-h1-line-height;
+        }
+    }
+
+    h2 {
+        color: $for-h2-font-color;
+        font: {
+            size: $for-h2-font-size;
+            family: $for-h2-font-family;
+            weight: $for-h2-font-weight;
+        }
+        text: {
+            decoration: $for-h2-text-decoration;
+        }
+        line: {
+            height: $for-h2-line-height;
+        }
+    }
+
+    h3 {
+        color: $for-h3-font-color;
+        font: {
+            size: $for-h3-font-size;
+            family: $for-h3-font-family;
+            weight: $for-h3-font-weight;
+        }
+        text: {
+            decoration: $for-h3-text-decoration;
+        }
+        line: {
+            height: $for-h3-line-height;
+        }
+    }
+
+    h4 {
+        color: $for-h4-font-color;
+        font: {
+            size: $for-h4-font-size;
+            family: $for-h4-font-family;
+            weight: $for-h4-font-weight;
+        }
+        text: {
+            decoration: $for-h4-text-decoration;
+        }
+        line: {
+            height: $for-h4-line-height;
+        }
+    }
+
+    h5 {
+        color: $for-h5-font-color;
+        font: {
+            size: $for-h5-font-size;
+            family: $for-h5-font-family;
+            weight: $for-h5-font-weight;
+        }
+        text: {
+            decoration: $for-h5-text-decoration;
+        }
+        line: {
+            height: $for-h5-line-height;
+        }
+    }
+
+    h6 {
+        color: $for-h6-font-color;
+        font: {
+            size: $for-h6-font-size;
+            family: $for-h6-font-family;
+            weight: $for-h6-font-weight;
+        }
+        text: {
+            decoration: $for-h6-text-decoration;
+        }
+        line: {
+            height: $for-h6-line-height;
+        }
+    }
+}

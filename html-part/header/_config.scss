@@ -1,0 +1,52 @@
+//  Background
+//  ##########
+$for-header-background: #ffffff !default;
+$for-header-background-size: auto !default;
+
+//  Font Color
+//  ##########
+$for-header-font-color: $for-general-font-color !default;
+$for-header-link-font-color: $for-link-font-color !default;
+$for-header-link-hover-font-color: $for-header-link-font-color !default;
+
+//  Font-Size
+//  ##########
+$for-header-font-size: $for-general-font-size !default;
+$for-header-link-font-size: 13pt !default;
+$for-header-link-hover-font-size: $for-header-link-font-size !default;
+
+//  Font Family
+//  ##########
+$for-header-font-family: $for-general-font-family !default;
+$for-header-link-font-family: $for-link-font-family !default;
+$for-header-link-hover-font-family: $for-link-hover-font-family !default;
+
+//  Font Weight
+//  ##########
+$for-header-font-weight: $for-general-font-weight !default;
+$for-header-link-font-weight: $for-link-font-weight !default;
+$for-header-link-hover-font-weight: bold !default;
+
+//  Font Variant
+//  ##########
+$for-header-font-variant: $for-general-font-variant !default;
+$for-header-link-font-variant: $for-link-font-variant !default;
+$for-header-link-hover-font-variant: $for-link-hover-font-variant!default;
+
+//  Text Decoration
+//  ##########
+$for-header-text-decoration: $for-general-text-decoration !default;
+$for-header-link-text-decoration: $for-link-text-decoration !default;
+$for-header-link-hover-text-decoration: $for-link-hover-text-decoration !default;
+
+//  Text Transform
+//  ##########
+$for-header-text-transform: $for-general-text-transform !default;
+$for-header-link-text-transform: $for-link-text-transform !default;
+$for-header-link-hover-text-transform: $for-link-hover-text-transform !default;
+
+//  Line Height
+//  ##########
+$for-header-line-height: $for-general-line-height !default;
+$for-header-link-line-height: 30px !default;
+$for-header-link-line-height-hover: $for-header-link-line-height !default;
