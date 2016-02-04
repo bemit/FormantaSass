@@ -34,3 +34,40 @@
         @content;
     }
 }
+
+/**
+    Syntax: 'max100px', 'min100px'
+*/
+@mixin bp-individual($widths...) {
+    $media-str: '';
+    $already-found: false;
+    @each $width in $widths {
+        $found: false;
+        $tmp-media-str: '';
+        @if(str-index($width, 'max')) {
+            $found: true;
+            $already-found: true;
+            $tmp-media-str: '(max-width: ' + str-slice($width, 4) + ')';
+        } @else if(str-index($width, 'min')) {
+            $already-found: true;
+            $found: true;
+            $tmp-media-str: '(min-width: ' + str-slice($width, 4) + ')';
+        }
+        @if($already-found && $found) {
+            $media-str: $media-str + ' and ';
+            $already-found: false;
+        }
+            //$media-str: $media-str + $tmp-media-str;
+        
+        //width: $width;
+    }
+    $media-str: unquote($media-str);
+    @media ($media-str) {
+        @content;
+    }
+    /*
+        @include bp-individual('max100', 'min200', '300', '450'){
+            color: #fff;
+        }
+    */
+}

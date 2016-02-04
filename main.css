@@ -429,6 +429,9 @@ textarea {
   height: auto;
   min-height: 50px; }
 
+/**
+    Syntax: 'max100px', 'min100px'
+*/
 input[type=submit] {
   display: inline-block;
   font-family: Helvetica, sans-serif;
@@ -587,6 +590,13 @@ button {
 
 body {
   background: #ffffff; }
+
+.fade {
+  -webkit-transition: opacity 0s linear;
+  -moz-transition: opacity 0s linear;
+  -ms-transition: opacity 0s linear;
+  -o-transition: opacity 0s linear;
+  transition: opacity 0s linear; }
 
 html {
   /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
