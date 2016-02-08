@@ -434,159 +434,90 @@ textarea {
 */
 input[type=submit] {
   display: inline-block;
-  font-family: Helvetica, sans-serif;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  color: #333;
   padding: 10px 10px 10px 10px;
   margin: 0 0 0 0;
   background: #b8c802;
-  color: #333;
-  font-size: 12pt;
-  font-weight: 400;
-  font-style: none;
+  background-size: auto;
   text-decoration: none;
   text-transform: normal;
-  border-top-width: 0;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-top-left-radius: 0 0;
-  border-top-right-radius: 0 0;
-  border-bottom-right-radius: 0 0;
-  border-bottom-left-radius: 0 0; }
+  text-align: left;
+  border-top: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-radius: 0 0 0 NaN 0 0 0; }
   input[type=submit]:hover {
     background: #006633;
+    background-size: auto;
+    font: none normal 400 12pt;
     color: #333;
-    font-size: 12pt;
-    font-weight: 400;
-    font-style: none;
     text-decoration: none;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-top-left-radius: 0 0;
-    border-top-right-radius: 0 0;
-    border-bottom-right-radius: 0 0;
-    border-bottom-left-radius: 0 0; }
+    text-transform: normal;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-radius: 0 0 0 NaN 0 0 0; }
 
 input[type=button] {
   display: inline-block;
-  font-family: Helvetica, sans-serif;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  color: #333;
   padding: 10px 10px 10px 10px;
   margin: 0 0 0 0;
   background: #b8c802;
-  color: #333;
-  font-size: 12pt;
-  font-weight: 400;
-  font-style: none;
+  background-size: auto;
   text-decoration: none;
   text-transform: normal;
-  border-top-width: 0;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-top-left-radius: 0 0;
-  border-top-right-radius: 0 0;
-  border-bottom-right-radius: 0 0;
-  border-bottom-left-radius: 0 0; }
+  text-align: left;
+  border-top: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-radius: 0 0 0 NaN 0 0 0; }
   input[type=button]:hover {
     background: #006633;
+    background-size: auto;
+    font: none normal 400 12pt;
     color: #333;
-    font-size: 12pt;
-    font-weight: 400;
-    font-style: none;
     text-decoration: none;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-top-left-radius: 0 0;
-    border-top-right-radius: 0 0;
-    border-bottom-right-radius: 0 0;
-    border-bottom-left-radius: 0 0; }
+    text-transform: normal;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-radius: 0 0 0 NaN 0 0 0; }
 
 button {
   display: inline-block;
-  font-family: Helvetica, sans-serif;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  color: #333;
   padding: 10px 10px 10px 10px;
   margin: 0 0 0 0;
   background: #b8c802;
-  color: #333;
-  font-size: 12pt;
-  font-weight: 400;
-  font-style: none;
+  background-size: auto;
   text-decoration: none;
   text-transform: normal;
-  border-top-width: 0;
-  border-right-width: 0;
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
-  border-top-left-radius: 0 0;
-  border-top-right-radius: 0 0;
-  border-bottom-right-radius: 0 0;
-  border-bottom-left-radius: 0 0; }
+  text-align: left;
+  border-top: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-radius: 0 0 0 NaN 0 0 0; }
   button:hover {
     background: #006633;
+    background-size: auto;
+    font: none normal 400 12pt;
     color: #333;
-    font-size: 12pt;
-    font-weight: 400;
-    font-style: none;
     text-decoration: none;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-bottom-width: 0;
-    border-left-width: 0;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-top-left-radius: 0 0;
-    border-top-right-radius: 0 0;
-    border-bottom-right-radius: 0 0;
-    border-bottom-left-radius: 0 0; }
+    text-transform: normal;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-radius: 0 0 0 NaN 0 0 0; }
 
 body {
   background: #ffffff; }
