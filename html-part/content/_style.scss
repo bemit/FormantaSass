@@ -1,26 +1,56 @@
 @if($for-output-style-html-part) {
     .content {
+        background: $for-content-background;
+        background-size: $for-content-background-size;
+        
+        font: $for-content-font-style $for-content-font-weight #{$for-content-font-size}/#{$for-content-line-height} $for-content-font-family;
+        font-variant: $for-content-font-variant;
         color: $for-content-font-color;
-        font-size: $for-content-font-size;
-        font-family: $for-content-font-family;
-        font-weight: $for-content-font-weight;
-        text-decoration: $for-content-text-decoration;
-        line-height: $for-content-line-height;
+        text: {
+            decoration: $for-content-text-decoration;
+            transform: $for-content-text-transform;
+        }
+        
+        @include bp-xlarge {
+            width: $for-content-xlarge-width;
+        }
+
+        @include bp-large {
+            width: $for-content-large-width;
+        }
+
+        @include bp-medium {
+            width: $for-content-medium-width;
+        }
+        
+        @include bp-small-all {
+            width: $for-content-small-all-width;
+        }
+
+        @include bp-small {
+            width: $for-content-small-width;
+        }
+
+        @include bp-xsmall {
+            width: $for-content-xsmall-width;
+        }
         
         a {
+            font: $for-content-link-font-style $for-content-link-font-weight #{$for-content-link-font-size}/#{$for-content-link-line-height} $for-content-link-font-family;
+            font-variant: $for-content-link-font-variant;
             color: $for-content-link-font-color;
-            font-size: $for-content-link-font-size;
-            font-family: $for-content-link-font-family;
-            font-weight: $for-content-link-font-weight;
-            text-decoration: $for-content-link-text-decoration;
-            line-height: $for-content-link-line-height;
-            
+            text: {
+                decoration: $for-content-link-text-decoration;
+                transform: $for-content-link-text-transform;
+            }
             &:hover {
+                font: $for-content-link-hover-font-style $for-content-link-hover-font-weight $for-content-link-hover-font-size $for-content-link-hover-font-family;
+                font-variant: $for-content-link-hover-font-variant;
                 color: $for-content-link-hover-font-color;
-                font-size: $for-content-link-hover-font-size;
-                font-family: $for-content-link-hover-font-family;
-                font-weight: $for-content-link-hover-font-weight;
-                text-decoration: $for-content-link-hover-text-decoration;
+                text: {
+                    decoration: $for-content-link-hover-text-decoration;
+                    transform: $for-content-link-hover-text-transform;
+                }
             }
         }
     }

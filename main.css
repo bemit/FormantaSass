@@ -1163,25 +1163,44 @@ form input[type=week] {
       width: 100%; } }
 
 .content {
+  background: #ffffff;
+  background-size: auto;
+  font: none 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  /* General Mobile Devices: xsmall and small */ }
+  @media (min-width: 1824px) {
+    .content {
+      width: 1200px; } }
+  @media (min-width: 1200px) {
+    .content {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .content {
+      width: 690px; } }
+  @media (max-width: 991px) {
+    .content {
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .content {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .content {
+      width: 100%; } }
   .content a {
+    font: none 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
     color: #333;
-    font-size: 12pt;
-    font-family: Helvetica, sans-serif;
-    font-weight: 400;
     text-decoration: none;
-    line-height: normal; }
+    text-transform: normal; }
     .content a:hover {
+      font: none 400 12pt Helvetica, sans-serif;
+      font-variant: normal;
       color: #333;
-      font-size: 12pt;
-      font-family: Helvetica, sans-serif;
-      font-weight: 400;
-      text-decoration: none; }
+      text-decoration: none;
+      text-transform: normal; }
 
 .footer {
   background: #006633; }
