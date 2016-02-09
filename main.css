@@ -1203,60 +1203,127 @@ form input[type=week] {
       text-transform: normal; }
 
 .footer {
-  background: #006633; }
+  background: #006633;
+  background-size: auto;
+  font: none 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
+  color: #333;
+  text-decoration: none;
+  text-transform: normal;
+  /* General Mobile Devices: xsmall and small */ }
+  @media (min-width: 1824px) {
+    .footer {
+      width: 1600px; } }
+  @media (min-width: 1200px) {
+    .footer {
+      width: 1000px; } }
+  @media (min-width: 992px) {
+    .footer {
+      width: 940px; } }
+  @media (max-width: 991px) {
+    .footer {
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .footer {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .footer {
+      width: 100%; } }
+  .footer a {
+    font: none 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
+    color: #333;
+    text-decoration: none;
+    text-transform: normal; }
+    .footer a:hover {
+      font: none 400 12pt Helvetica, sans-serif;
+      font-variant: normal;
+      color: #333;
+      text-decoration: none;
+      text-transform: normal; }
 
 .header {
   background: #ffffff;
-  background-size: auto; }
-
-.header {
+  background-size: auto;
+  font: none 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  /* General Mobile Devices: xsmall and small */ }
+  @media (min-width: 1824px) {
+    .header {
+      height: 300px; } }
+  @media (min-width: 1200px) {
+    .header {
+      height: 300px; } }
+  @media (min-width: 992px) {
+    .header {
+      height: 300px; } }
+  @media (max-width: 991px) {
+    .header {
+      height: 100px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .header {
+      height: 100px; } }
+  @media (max-width: 767px) {
+    .header {
+      height: 100px; } }
   .header a {
+    font: none 400 13pt/30px Helvetica, sans-serif;
+    font-variant: normal;
     color: #333;
-    font-size: 13pt;
-    font-family: Helvetica, sans-serif;
-    font-weight: 400;
     text-decoration: none;
-    line-height: 30px; }
+    text-transform: normal; }
     .header a:hover {
+      font: none bold 13pt Helvetica, sans-serif;
+      font-variant: normal;
       color: #333;
-      font-size: 13pt;
-      font-family: Helvetica, sans-serif;
-      font-weight: bold;
-      text-decoration: none; }
+      text-decoration: none;
+      text-transform: normal; }
 
 .sidebar {
-  background: #b8c802; }
-
-.sidebar .heading {
-  color: #ffffff;
-  font-size: 11pt;
-  line-height: 40px; }
-
-.sidebar {
+  background: #b8c802;
+  background-size: auto;
+  font: none 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   color: #006633;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  /* General Mobile Devices: xsmall and small */ }
+  @media (min-width: 1824px) {
+    .sidebar {
+      width: 400px; } }
+  @media (min-width: 1200px) {
+    .sidebar {
+      width: 250px; } }
+  @media (min-width: 992px) {
+    .sidebar {
+      width: 250px; } }
+  @media (max-width: 991px) {
+    .sidebar {
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .sidebar {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .sidebar {
+      width: 100%; } }
   .sidebar a {
+    font: none 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
     color: #333;
-    font-size: 12pt;
-    font-family: Helvetica, sans-serif;
-    font-weight: 400;
     text-decoration: none;
-    line-height: normal; }
+    text-transform: normal; }
     .sidebar a:hover {
+      font: none 400 12pt Helvetica, sans-serif;
+      font-variant: normal;
       color: #333;
-      font-size: 12pt;
-      font-family: Helvetica, sans-serif;
-      font-weight: 400;
-      text-decoration: none; }
+      text-decoration: none;
+      text-transform: normal; }
+  .sidebar .heading {
+    color: #ffffff; }
+  .sidebar .content {
+    color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */
