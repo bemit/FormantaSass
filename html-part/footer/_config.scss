@@ -1,6 +1,7 @@
 //  Background
 //  ##########
 $for-footer-background: $for-general-color-secondary !default;
+$for-footer-background-size: auto !default;
 
 //  Font Color
 //  ##########
@@ -13,6 +14,12 @@ $for-footer-link-hover-font-color: $for-link-hover-font-color !default;
 $for-footer-font-size: $for-general-font-size !default;
 $for-footer-link-font-size: $for-link-font-size !default;
 $for-footer-link-hover-font-size: $for-link-hover-font-size !default;
+
+//  Font Style
+//  ##########
+$for-footer-font-style: $for-general-font-style !default;
+$for-footer-link-font-style: $for-link-font-style !default;
+$for-footer-link-hover-font-style: $for-link-hover-font-style !default;
 
 //  Font Family
 //  ##########
@@ -48,7 +55,6 @@ $for-footer-link-hover-text-transform: $for-link-hover-text-transform !default;
 //  ##########
 $for-footer-line-height: $for-general-line-height !default;
 $for-footer-link-line-height: $for-link-line-height !default;
-$for-footer-link-line-height-hover: $for-link-hover-line-height !default;
 
 //  Sizing
 //  ##########

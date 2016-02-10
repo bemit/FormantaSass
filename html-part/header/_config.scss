@@ -15,6 +15,12 @@ $for-header-font-size: $for-general-font-size !default;
 $for-header-link-font-size: 13pt !default;
 $for-header-link-hover-font-size: $for-header-link-font-size !default;
 
+//  Font Style
+//  ##########
+$for-header-font-style: $for-general-font-style !default;
+$for-header-link-font-style: $for-link-font-style !default;
+$for-header-link-hover-font-style: $for-link-hover-font-style !default;
+
 //  Font Family
 //  ##########
 $for-header-font-family: $for-general-font-family !default;
@@ -50,3 +56,12 @@ $for-header-link-hover-text-transform: $for-link-hover-text-transform !default;
 $for-header-line-height: $for-general-line-height !default;
 $for-header-link-line-height: 30px !default;
 $for-header-link-line-height-hover: $for-header-link-line-height !default;
+
+//  Sizing
+//  ##########
+$for-header-xlarge-height: 300px !default;
+$for-header-large-height: 300px !default;
+$for-header-medium-height: 300px !default;
+$for-header-small-all-height: 100px !default;
+$for-header-small-height: $for-header-small-all-height !default;
+$for-header-xsmall-height: $for-header-small-all-height !default;

@@ -1,27 +1,17 @@
-
-
-@mixin border-radius($radius) {
+@mixin for-border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
     border-radius: $radius;
 }
 
-@mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    -o-transition: $args;
-    transition: $args;
-}
-
-@mixin shadow($args...) {
+@mixin for-shadow($args...) {
     box-shadow: $args;
     -moz-box-shadow: $args;
     -webkit-box-shadow: $args;
 }
 
-@mixin opacity($opacity) {
+@mixin for-opacity($opacity) {
     opacity: $opacity;
     $opacity-ie: $opacity * 100;
     filter: alpha(opacity=$opacity-ie); //IE8
@@ -39,7 +29,7 @@
 }
 
 //  Include this mixin on a container if its children are all floated, to give the container a proper height.
-@mixin clearfix {
+@mixin for-clearfix {
     &:before,
     &:after {
         content: ' ';

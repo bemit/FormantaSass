@@ -12,8 +12,9 @@
 */
 @import 'config';
 @import 'color/config';
-@import 'typography/config';
 @import 'breakpoint/config';
+@import 'animation/config';
+@import 'typography/config';
 @import 'button/config';
 @import 'grid/config';
 @import 'table/config';
@@ -23,8 +24,9 @@
 
 @import 'mixin';
 @import 'color/mixin';
-@import 'typography/mixin';
 @import 'breakpoint/mixin';
+@import 'animation/mixin';
+@import 'typography/mixin';
 @import 'button/mixin';
 @import 'grid/mixin';
 @import 'table/mixin';
@@ -32,6 +34,7 @@
 
 @import 'button/style';
 @import 'color/style';
+@import 'animation/style';
 @import 'typography/style';
 @import 'grid/style';
 @import 'table/style';

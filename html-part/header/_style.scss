@@ -2,30 +2,55 @@
     .header {
         background: $for-header-background;
         background-size: $for-header-background-size;
-    }
-
-    .header {
+        
+        font: $for-header-font-style $for-header-font-weight #{$for-header-font-size}/#{$for-header-line-height} $for-header-font-family;
+        font-variant: $for-header-font-variant;
         color: $for-header-font-color;
-        font-size: $for-header-font-size;
-        font-family: $for-header-font-family;
-        font-weight: $for-header-font-weight;
-        text-decoration: $for-header-text-decoration;
-        line-height: $for-header-line-height;
+        text: {
+            decoration: $for-header-text-decoration;
+            transform: $for-header-text-transform;
+        }
+        
+        @include for-bp-xlarge {
+            height: $for-header-xlarge-height;
+        }
+
+        @include for-bp-large {
+            height: $for-header-large-height;
+        }
+
+        @include for-bp-medium {
+            height: $for-header-medium-height;
+        }
+        
+        @include for-bp-small-all {
+            height: $for-header-small-all-height;
+        }
+
+        @include for-bp-small {
+            height: $for-header-small-height;
+        }
+
+        @include for-bp-xsmall {
+            height: $for-header-xsmall-height;
+        }
         
         a {
+            font: $for-header-link-font-style $for-header-link-font-weight #{$for-header-link-font-size}/#{$for-header-link-line-height} $for-header-link-font-family;
+            font-variant: $for-header-link-font-variant;
             color: $for-header-link-font-color;
-            font-size: $for-header-link-font-size;
-            font-family: $for-header-link-font-family;
-            font-weight: $for-header-link-font-weight;
-            text-decoration: $for-header-link-text-decoration;
-            line-height: $for-header-link-line-height;
-            
+            text: {
+                decoration: $for-header-link-text-decoration;
+                transform: $for-header-link-text-transform;
+            }
             &:hover {
+                font: $for-header-link-hover-font-style $for-header-link-hover-font-weight $for-header-link-hover-font-size $for-header-link-hover-font-family;
+                font-variant: $for-header-link-hover-font-variant;
                 color: $for-header-link-hover-font-color;
-                font-size: $for-header-link-hover-font-size;
-                font-family: $for-header-link-hover-font-family;
-                font-weight: $for-header-link-hover-font-weight;
-                text-decoration: $for-header-link-hover-text-decoration;
+                text: {
+                    decoration: $for-header-link-hover-text-decoration;
+                    transform: $for-header-link-hover-text-transform;
+                }
             }
         }
     }

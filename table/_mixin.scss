@@ -1,35 +1,24 @@
-@mixin table-base {
+@mixin for-table-base {
     font: $for-table-font-style $for-table-font-variant $for-table-font-weight #{$for-table-font-size}/#{$for-table-line-height} $for-table-font-family;
     text: {
         decoration: $for-table-text-decoration;
+        transform: $for-table-text-transform;
+        align: $for-table-text-align;
     }
     border: {
         top: $for-table-border-top-width $for-table-border-top-style $for-table-border-top-color;
-        top: {
-            left: {
-                radius: $for-table-border-top-left-radius-inner $for-table-border-top-left-radius-left;
-            }
-            right: {
-                radius: $for-table-border-top-right-radius-inner $for-table-border-top-right-radius-right;
-            }
-        }
         right: $for-table-border-right-width $for-table-border-right-style $for-table-border-right-color;
         bottom: $for-table-border-bottom-width $for-table-border-bottom-style $for-table-border-bottom-color;
-        bottom: {
-            left: {
-                radius: $for-table-border-bottom-left-radius-inner $for-table-border-bottom-left-radius-left;
-            }
-            right: {
-                radius: $for-table-border-bottom-right-radius-inner $for-table-border-bottom-right-radius-right;
-            }
-        }
         left: $for-table-border-left-width $for-table-border-left-style $for-table-border-left-color;
+        radius: $for-table-border-top-left-radius-inner $for-table-border-top-right-radius-inner $for-table-border-bottom-right-radius-inner $for-table-border-bottom-left-radius-inner / $for-table-border-top-left-radius-left $for-table-border-top-right-radius-right $for-table-border-bottom-right-radius-right $for-table-border-bottom-left-radius-left;
     }
     a {
         font: $for-table-link-font-style $for-table-link-font-variant $for-table-link-font-weight #{$for-table-link-font-size}/#{$for-table-line-height} $for-table-link-font-family;
         color: $for-table-link-font-color;
         text: {
             decoration: $for-table-link-text-decoration;
+            transform: $for-table-link-text-transform;
+            align: $for-table-link-text-align;
         }
         line: {
             height: $for-table-link-line-height;
@@ -39,11 +28,13 @@
             color: $for-table-link-hover-font-color;
             text: {
                 decoration: $for-table-link-hover-text-decoration;
+                transform: $for-table-link-hover-text-transform;
+                align: $for-table-link-hover-text-align;
             }
         }
     }
 }
-@mixin table($for-layout-fixed: true, $for-expand: true) {
+@mixin for-table($for-expand: true, $for-layout-fixed: true) {
     @if($for-layout-fixed) {
         table-layout: fixed;
     }
@@ -51,19 +42,25 @@
         width: 100%;
     }
     display: table;
-    @include table-base;
+    @include for-table-base;
 }
 
-@mixin table-row {
+@mixin for-table-row {
     display: table-row;
 }
 
-@mixin table-cell {
+@mixin for-table-cell {
     display: table-cell;
 }
 
-@mixin table-cell-header {
-    @include table-cell;
-    font: $for-table-cell-header-font-style $for-table-cell-header-font-variant $for-table-cell-header-font-weight #{$for-table-cell-header-font-size}/#{$for-table-cell-header-line-height} $for-table-cell-header-font-family;
-    background: $for-table-cell-header-background;
+@mixin for-table-cell-heading {
+    @include for-table-cell;
+    font: $for-table-cell-heading-font-style $for-table-cell-heading-font-variant $for-table-cell-heading-font-weight #{$for-table-cell-heading-font-size}/#{$for-table-cell-heading-line-height} $for-table-cell-heading-font-family;
+    color: $for-table-cell-heading-font-color;
+    background: $for-table-cell-heading-background;
+    text: {
+        decoration: $for-table-cell-heading-text-decoration;
+        transform: $for-table-cell-heading-text-transform;
+        align: $for-table-cell-heading-text-align;
+    }
 }

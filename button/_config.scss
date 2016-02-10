@@ -1,5 +1,5 @@
 //  Buttons
-//  #########################################################
+//  ##################################################
 
 //  Typography
 //  ##########
@@ -8,8 +8,10 @@ $for-button-font-size: $for-general-font-size !default;
 $for-button-font-color: $for-general-font-color !default;
 $for-button-font-style: $for-general-font-style !default;
 $for-button-font-variant: $for-general-font-variant !default;
+$for-button-line-height: $for-general-line-height !default;
 $for-button-text-decoration: $for-general-text-decoration !default;
 $for-button-text-transform: $for-general-text-transform !default;
+$for-button-text-align: $for-general-text-align !default;
 $for-button-font-weight: $for-general-font-weight !default;
 
 $for-button-hover-font-size: $for-button-font-size !default;
@@ -103,4 +105,6 @@ $for-button-hover-border-bottom-left-radius-left: $for-button-hover-border-radiu
 //  Background
 //  ##########
 $for-button-background: $for-general-color-primary !default;
+$for-button-background-size: auto !default;
 $for-button-hover-background: $for-general-color-secondary !default;
+$for-button-hover-background-size: $for-button-background-size !default;

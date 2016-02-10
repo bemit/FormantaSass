@@ -2,51 +2,51 @@
     form {
         input{
             &[type=text] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=password] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             // HTML5 types, when no browser support fallback to type=text
             // ->
             &[type=color] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=date] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=datetime] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=datetime-local] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=email] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=month] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=number] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=range] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=search] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=tel] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=time] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=url] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             &[type=week] {
-                @include form-input-textbox-base(false);
+                @include for-form-input-text-base(false);
             }
             // <-
             &[type=submit] {
