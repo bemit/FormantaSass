@@ -1176,13 +1176,13 @@ form input[type=week] {
 
 .container {
   /* General Mobile Devices: xsmall and small */ }
+  @media (max-width: 991px) {
+    .container {
+      width: 100%; } }
   @media (max-width: 767px) {
     .container {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .container {
-      width: 100%; } }
-  @media (max-width: 991px) {
     .container {
       width: 100%; } }
   @media (min-width: 992px) {
@@ -1204,13 +1204,13 @@ form input[type=week] {
   text-decoration: none;
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
+  @media (max-width: 991px) {
+    .content {
+      width: 100%; } }
   @media (max-width: 767px) {
     .content {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .content {
-      width: 100%; } }
-  @media (max-width: 991px) {
     .content {
       width: 100%; } }
   @media (min-width: 992px) {
@@ -1244,13 +1244,13 @@ form input[type=week] {
   text-decoration: none;
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
+  @media (max-width: 991px) {
+    .footer {
+      width: 100%; } }
   @media (max-width: 767px) {
     .footer {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .footer {
-      width: 100%; } }
-  @media (max-width: 991px) {
     .footer {
       width: 100%; } }
   @media (min-width: 992px) {
@@ -1284,13 +1284,13 @@ form input[type=week] {
   text-decoration: none;
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
+  @media (max-width: 991px) {
+    .header {
+      width: 100px; } }
   @media (max-width: 767px) {
     .header {
       width: 100px; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .header {
-      width: 100px; } }
-  @media (max-width: 991px) {
     .header {
       width: 100px; } }
   @media (min-width: 992px) {
@@ -1324,13 +1324,13 @@ form input[type=week] {
   text-decoration: none;
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
+  @media (max-width: 991px) {
+    .sidebar {
+      width: 100%; } }
   @media (max-width: 767px) {
     .sidebar {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .sidebar {
-      width: 100%; } }
-  @media (max-width: 991px) {
     .sidebar {
       width: 100%; } }
   @media (min-width: 992px) {

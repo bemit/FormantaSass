@@ -11,16 +11,16 @@
             transform: $for-header-text-transform;
         }
         
+        @include for-bp-small-all {
+            width: $for-header-small-all-height;
+        }
+        
         @include for-bp-xsmall {
             width: $for-header-xsmall-height;
         }
         
         @include for-bp-small {
             width: $for-header-small-height;
-        }
-        
-        @include for-bp-small-all {
-            width: $for-header-small-all-height;
         }
         
         @include for-bp-medium {

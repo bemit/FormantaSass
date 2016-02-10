@@ -1,15 +1,15 @@
 @if($for-output-style-html-part) {
     .container {
+        @include for-bp-small-all {
+            width: $for-container-small-all-width;
+        }
+        
         @include for-bp-xsmall {
             width: $for-container-xsmall-width;
         }
         
         @include for-bp-small {
             width: $for-container-small-width;
-        }
-        
-        @include for-bp-small-all {
-            width: $for-container-small-all-width;
         }
         
         @include for-bp-medium {

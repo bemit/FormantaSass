@@ -10,6 +10,10 @@
             decoration: $for-content-text-decoration;
             transform: $for-content-text-transform;
         }
+                
+        @include for-bp-small-all {
+            width: $for-content-small-all-width;
+        }
         
         @include for-bp-xsmall {
             width: $for-content-xsmall-width;
@@ -17,10 +21,6 @@
         
         @include for-bp-small {
             width: $for-content-small-width;
-        }
-        
-        @include for-bp-small-all {
-            width: $for-content-small-all-width;
         }
         
         @include for-bp-medium {

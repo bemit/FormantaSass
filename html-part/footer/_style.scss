@@ -11,16 +11,16 @@
             transform: $for-footer-text-transform;
         }
         
+        @include for-bp-small-all {
+            width: $for-footer-small-all-width;
+        }
+        
         @include for-bp-xsmall {
             width: $for-footer-xsmall-width;
         }
         
         @include for-bp-small {
             width: $for-footer-small-width;
-        }
-        
-        @include for-bp-small-all {
-            width: $for-footer-small-all-width;
         }
         
         @include for-bp-medium {
