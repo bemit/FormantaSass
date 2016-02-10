@@ -1,33 +1,33 @@
-@mixin clear {
+@mixin for-clear {
     clear: both;
 }
-@mixin tenth {
+@mixin for-tenth {
     width: 10%;
 }
-@mixin fifth {
+@mixin for-fifth {
     width: 20%;
 }
-@mixin quarter {
+@mixin for-quarter {
     width: 25%;
 }
-@mixin third {
+@mixin for-third {
     width: 33.3%;
 }
-@mixin half {
+@mixin for-half {
     width: 50%;
 }
-@mixin three-quarters {
+@mixin for-three-quarters {
     width: 75%;
 }
-@mixin hundred {
+@mixin for-hundred {
     width: 100%;
 }
-@mixin block {
+@mixin for-block {
     display: block;
 }
-@mixin inline-block {
+@mixin for-inline-block {
     display: inline-block;
 }
-@mixin inline {
+@mixin for-inline {
     display: inline;
 }

@@ -11,27 +11,27 @@
             transform: $for-content-text-transform;
         }
         
-        @include bp-xlarge {
+        @include for-bp-xlarge {
             width: $for-content-xlarge-width;
         }
 
-        @include bp-large {
+        @include for-bp-large {
             width: $for-content-large-width;
         }
 
-        @include bp-medium {
+        @include for-bp-medium {
             width: $for-content-medium-width;
         }
         
-        @include bp-small-all {
+        @include for-bp-small-all {
             width: $for-content-small-all-width;
         }
 
-        @include bp-small {
+        @include for-bp-small {
             width: $for-content-small-width;
         }
 
-        @include bp-xsmall {
+        @include for-bp-xsmall {
             width: $for-content-xsmall-width;
         }
         

@@ -1,35 +1,35 @@
-@mixin bp-xlarge {
+@mixin for-bp-xlarge {
     @media (min-width: $for-bp-xlarge-min-size) {
         @content;
     }
 }
 
-@mixin bp-large {
+@mixin for-bp-large {
     @media (min-width: $for-bp-large-min-size) {
         @content;
     }
 }
 
-@mixin bp-medium {
+@mixin for-bp-medium {
     @media (min-width: $for-bp-medium-min-size) {
         @content;
     }
 }
 
-@mixin bp-small-all {
+@mixin for-bp-small-all {
     /* General Mobile Devices: xsmall and small */
     @media (max-width: $for-bp-small-all-max-size) {
         @content;
     }
 }
 
-@mixin bp-small {
+@mixin for-bp-small {
     @media (min-width: $for-bp-small-min-size) and (max-width: $for-bp-medium-min-size - 1) {
         @content;
     }
 }
 
-@mixin bp-xsmall {
+@mixin for-bp-xsmall {
     @media (max-width: $for-bp-xsmall-max-size) {
         @content;
     }
@@ -40,7 +40,7 @@
 */
 // TODO
 /*
-@mixin bp-individual($widths...) {
+@mixin for-bp-individual($widths...) {
     $media-str: '';
     $already-found: false;
     @each $width in $widths {
@@ -68,7 +68,7 @@
         @content;
     }
     
-    //    @include bp-individual('max100', 'min200', '300', '450'){
+    //    @include for-bp-individual('max100', 'min200', '300', '450'){
     //        color: #fff;
     //    }
     

@@ -1,4 +1,4 @@
-@mixin transition($args...) {
+@mixin for-transition($args...) {
     -webkit-transition: $args;
     -moz-transition: $args;
     -ms-transition: $args;
@@ -6,7 +6,7 @@
     transition: $args;
 }
 
-@mixin fade($duration: null, $timing-function: null, $delay: null) {
+@mixin for-fade($duration: null, $timing-function: null, $delay: null) {
     @if($duration) {
         $duration: $duration;
     } @else {
@@ -22,5 +22,5 @@
     } @else {
         $delay: $for-animation-fade-delay;
     }
-    @include transition(opacity $duration $timing-function $delay);
+    @include for-transition(opacity $duration $timing-function $delay);
 }

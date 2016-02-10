@@ -1,7 +1,7 @@
 //
 //  Here belongs the style and everything for buttons
 //
-@mixin button-base($for-expand: true) {
+@mixin for-button-base($for-expand: true) {
     @if $for-expand {
         display: block;
         width: 100%;
@@ -49,11 +49,11 @@
     }
 }
 
-@mixin button-normal($for-expand: true) {
-    @include button-base($for-expand);
+@mixin for-button-normal($for-expand: true) {
+    @include for-button-base($for-expand);
 }
 
-@mixin button-outline($for-expand: true) {
+@mixin for-button-outline($for-expand: true) {
     //TODO
-    @include button-base($for-expand);
+    @include for-button-base($for-expand);
 }

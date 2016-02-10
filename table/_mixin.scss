@@ -1,4 +1,4 @@
-@mixin table-base {
+@mixin for-table-base {
     font: $for-table-font-style $for-table-font-variant $for-table-font-weight #{$for-table-font-size}/#{$for-table-line-height} $for-table-font-family;
     text: {
         decoration: $for-table-text-decoration;
@@ -34,7 +34,7 @@
         }
     }
 }
-@mixin table($for-expand: true, $for-layout-fixed: true) {
+@mixin for-table($for-expand: true, $for-layout-fixed: true) {
     @if($for-layout-fixed) {
         table-layout: fixed;
     }
@@ -42,19 +42,19 @@
         width: 100%;
     }
     display: table;
-    @include table-base;
+    @include for-table-base;
 }
 
-@mixin table-row {
+@mixin for-table-row {
     display: table-row;
 }
 
-@mixin table-cell {
+@mixin for-table-cell {
     display: table-cell;
 }
 
-@mixin table-cell-heading {
-    @include table-cell;
+@mixin for-table-cell-heading {
+    @include for-table-cell;
     font: $for-table-cell-heading-font-style $for-table-cell-heading-font-variant $for-table-cell-heading-font-weight #{$for-table-cell-heading-font-size}/#{$for-table-cell-heading-line-height} $for-table-cell-heading-font-family;
     color: $for-table-cell-heading-font-color;
     background: $for-table-cell-heading-background;

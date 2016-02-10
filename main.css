@@ -433,7 +433,7 @@ textarea {
     Syntax: 'max100px', 'min100px'
 */
 /*
-@mixin bp-individual($widths...) {
+@mixin for-bp-individual($widths...) {
     $media-str: '';
     $already-found: false;
     @each $width in $widths {
@@ -461,7 +461,7 @@ textarea {
         @content;
     }
     
-    //    @include bp-individual('max100', 'min200', '300', '450'){
+    //    @include for-bp-individual('max100', 'min200', '300', '450'){
     //        color: #fff;
     //    }
     

@@ -11,27 +11,27 @@
             transform: $for-footer-text-transform;
         }
         
-        @include bp-xlarge {
+        @include for-bp-xlarge {
             width: $for-footer-xlarge-width;
         }
 
-        @include bp-large {
+        @include for-bp-large {
             width: $for-footer-large-width;
         }
 
-        @include bp-medium {
+        @include for-bp-medium {
             width: $for-footer-medium-width;
         }
         
-        @include bp-small-all {
+        @include for-bp-small-all {
             width: $for-footer-small-all-width;
         }
 
-        @include bp-small {
+        @include for-bp-small {
             width: $for-footer-small-width;
         }
 
-        @include bp-xsmall {
+        @include for-bp-xsmall {
             width: $for-footer-xsmall-width;
         }
         
