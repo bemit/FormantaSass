@@ -5,6 +5,7 @@
     -o-transition: $args;
     transition: $args;
 }
+
 @mixin fade($duration: null, $timing-function: null, $delay: null) {
     @if($duration) {
         $duration: $duration;

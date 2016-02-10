@@ -38,6 +38,8 @@
 /**
     Syntax: 'max100px', 'min100px'
 */
+// TODO
+/*
 @mixin bp-individual($widths...) {
     $media-str: '';
     $already-found: false;
@@ -65,9 +67,9 @@
     @media ($media-str) {
         @content;
     }
-    /*
-        @include bp-individual('max100', 'min200', '300', '450'){
-            color: #fff;
-        }
-    */
-}
+    
+    //    @include bp-individual('max100', 'min200', '300', '450'){
+    //        color: #fff;
+    //    }
+    
+}*/
