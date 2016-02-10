@@ -475,7 +475,7 @@ input[type=submit] {
   background: #b8c802;
   background-size: auto;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left;
   border-top: 0 solid transparent;
   border-right: 0 solid transparent;
@@ -488,7 +488,7 @@ input[type=submit] {
     font: none normal 400 12pt;
     color: #333;
     text-decoration: none;
-    text-transform: normal;
+    text-transform: none;
     border-top: 0 solid transparent;
     border-right: 0 solid transparent;
     border-bottom: 0 solid transparent;
@@ -504,7 +504,7 @@ input[type=button] {
   background: #b8c802;
   background-size: auto;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left;
   border-top: 0 solid transparent;
   border-right: 0 solid transparent;
@@ -517,7 +517,7 @@ input[type=button] {
     font: none normal 400 12pt;
     color: #333;
     text-decoration: none;
-    text-transform: normal;
+    text-transform: none;
     border-top: 0 solid transparent;
     border-right: 0 solid transparent;
     border-bottom: 0 solid transparent;
@@ -533,7 +533,7 @@ button {
   background: #b8c802;
   background-size: auto;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left;
   border-top: 0 solid transparent;
   border-right: 0 solid transparent;
@@ -546,7 +546,7 @@ button {
     font: none normal 400 12pt;
     color: #333;
     text-decoration: none;
-    text-transform: normal;
+    text-transform: none;
     border-top: 0 solid transparent;
     border-right: 0 solid transparent;
     border-bottom: 0 solid transparent;
@@ -573,7 +573,7 @@ body {
   font-family: Helvetica, sans-serif;
   font-weight: 400;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left; }
 
 a {
@@ -584,56 +584,56 @@ a {
     color: #333;
     font: none normal 400 12pt Helvetica, sans-serif;
     text-decoration: none;
-    text-transform: normal;
+    text-transform: none;
     text-align: left; }
 
 p {
   color: #333;
   font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left; }
 
 h1 {
   color: #333;
   font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left; }
 
 h2 {
   color: #333;
   font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left; }
 
 h3 {
   color: #333;
   font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left; }
 
 h4 {
   color: #333;
   font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left; }
 
 h5 {
   color: #333;
   font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left; }
 
 h6 {
   color: #333;
   font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left; }
 
 .clear {
@@ -675,7 +675,7 @@ h6 {
   display: table;
   font: normal normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   text-align: left;
   border-top: 0 solid #006633;
   border-right: 0 solid #006633;
@@ -686,14 +686,14 @@ h6 {
     font: normal normal 400 12pt/normal Helvetica, sans-serif;
     color: #333;
     text-decoration: none;
-    text-transform: normal;
+    text-transform: none;
     text-align: left;
     line-height: normal; }
     .table a:hover {
       font: normal normal 400 12pt Helvetica, sans-serif;
       color: #333;
       text-decoration: none;
-      text-transform: normal;
+      text-transform: none;
       text-align: left; }
   .table .row {
     display: table-row; }
@@ -705,7 +705,7 @@ h6 {
       color: #333;
       background: transparent;
       text-decoration: none;
-      text-transform: normal;
+      text-transform: none;
       text-align: left; }
 
 form input[type=text] {
@@ -1202,7 +1202,7 @@ form input[type=week] {
   font-variant: normal;
   color: #333;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
   @media (min-width: 1824px) {
     .content {
@@ -1227,13 +1227,13 @@ form input[type=week] {
     font-variant: normal;
     color: #333;
     text-decoration: none;
-    text-transform: normal; }
+    text-transform: none; }
     .content a:hover {
       font: none 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
-      text-transform: normal; }
+      text-transform: none; }
 
 .footer {
   background: #006633;
@@ -1242,7 +1242,7 @@ form input[type=week] {
   font-variant: normal;
   color: #333;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
   @media (min-width: 1824px) {
     .footer {
@@ -1267,13 +1267,13 @@ form input[type=week] {
     font-variant: normal;
     color: #333;
     text-decoration: none;
-    text-transform: normal; }
+    text-transform: none; }
     .footer a:hover {
       font: none 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
-      text-transform: normal; }
+      text-transform: none; }
 
 .header {
   background: #ffffff;
@@ -1282,7 +1282,7 @@ form input[type=week] {
   font-variant: normal;
   color: #333;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
   @media (min-width: 1824px) {
     .header {
@@ -1307,13 +1307,13 @@ form input[type=week] {
     font-variant: normal;
     color: #333;
     text-decoration: none;
-    text-transform: normal; }
+    text-transform: none; }
     .header a:hover {
       font: none bold 13pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
-      text-transform: normal; }
+      text-transform: none; }
 
 .sidebar {
   background: #b8c802;
@@ -1322,7 +1322,7 @@ form input[type=week] {
   font-variant: normal;
   color: #006633;
   text-decoration: none;
-  text-transform: normal;
+  text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
   @media (min-width: 1824px) {
     .sidebar {
@@ -1347,13 +1347,13 @@ form input[type=week] {
     font-variant: normal;
     color: #333;
     text-decoration: none;
-    text-transform: normal; }
+    text-transform: none; }
     .sidebar a:hover {
       font: none 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
-      text-transform: normal; }
+      text-transform: none; }
   .sidebar .heading {
     color: #ffffff; }
   .sidebar .content {
