@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! FormantaSassLibrary v0.0.1.0|╬▒ | GNU LGPL v3 | https://github.com/bemit/FormantaSassLibrary */
+/*! FormantaSassLibrary v0.0.1.1|╬▒ | GNU LGPL v3 | https://github.com/bemit/FormantaSassLibrary */
 /*
     FormantaSassLibrary for basic config, mixins, formatting and typography.
     
@@ -1176,24 +1176,24 @@ form input[type=week] {
 
 .container {
   /* General Mobile Devices: xsmall and small */ }
-  @media (min-width: 1824px) {
-    .container {
-      width: 1600px; } }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1000px; } }
-  @media (min-width: 992px) {
-    .container {
-      width: 940px; } }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .container {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .container {
       width: 100%; } }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .container {
       width: 100%; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 940px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1000px; } }
+  @media (min-width: 1824px) {
+    .container {
+      width: 1600px; } }
 
 .content {
   background: #ffffff;
@@ -1204,24 +1204,24 @@ form input[type=week] {
   text-decoration: none;
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
-  @media (min-width: 1824px) {
-    .content {
-      width: 1200px; } }
-  @media (min-width: 1200px) {
-    .content {
-      width: 750px; } }
-  @media (min-width: 992px) {
-    .content {
-      width: 690px; } }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .content {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .content {
       width: 100%; } }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .content {
       width: 100%; } }
+  @media (min-width: 992px) {
+    .content {
+      width: 690px; } }
+  @media (min-width: 1200px) {
+    .content {
+      width: 750px; } }
+  @media (min-width: 1824px) {
+    .content {
+      width: 1200px; } }
   .content a {
     font: none 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
@@ -1244,24 +1244,24 @@ form input[type=week] {
   text-decoration: none;
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
-  @media (min-width: 1824px) {
-    .footer {
-      width: 1600px; } }
-  @media (min-width: 1200px) {
-    .footer {
-      width: 1000px; } }
-  @media (min-width: 992px) {
-    .footer {
-      width: 940px; } }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .footer {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .footer {
       width: 100%; } }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .footer {
       width: 100%; } }
+  @media (min-width: 992px) {
+    .footer {
+      width: 940px; } }
+  @media (min-width: 1200px) {
+    .footer {
+      width: 1000px; } }
+  @media (min-width: 1824px) {
+    .footer {
+      width: 1600px; } }
   .footer a {
     font: none 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
@@ -1284,24 +1284,24 @@ form input[type=week] {
   text-decoration: none;
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
-  @media (min-width: 1824px) {
-    .header {
-      height: 300px; } }
-  @media (min-width: 1200px) {
-    .header {
-      height: 300px; } }
-  @media (min-width: 992px) {
-    .header {
-      height: 300px; } }
-  @media (max-width: 991px) {
-    .header {
-      height: 100px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .header {
-      height: 100px; } }
   @media (max-width: 767px) {
     .header {
-      height: 100px; } }
+      width: 100px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .header {
+      width: 100px; } }
+  @media (max-width: 991px) {
+    .header {
+      width: 100px; } }
+  @media (min-width: 992px) {
+    .header {
+      width: 300px; } }
+  @media (min-width: 1200px) {
+    .header {
+      width: 300px; } }
+  @media (min-width: 1824px) {
+    .header {
+      width: 300px; } }
   .header a {
     font: none 400 13pt/30px Helvetica, sans-serif;
     font-variant: normal;
@@ -1324,24 +1324,24 @@ form input[type=week] {
   text-decoration: none;
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
-  @media (min-width: 1824px) {
-    .sidebar {
-      width: 400px; } }
-  @media (min-width: 1200px) {
-    .sidebar {
-      width: 250px; } }
-  @media (min-width: 992px) {
-    .sidebar {
-      width: 250px; } }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .sidebar {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .sidebar {
       width: 100%; } }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .sidebar {
       width: 100%; } }
+  @media (min-width: 992px) {
+    .sidebar {
+      width: 250px; } }
+  @media (min-width: 1200px) {
+    .sidebar {
+      width: 250px; } }
+  @media (min-width: 1824px) {
+    .sidebar {
+      width: 400px; } }
   .sidebar a {
     font: none 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;

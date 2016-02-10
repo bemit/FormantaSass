@@ -11,28 +11,28 @@
             transform: $for-sidebar-text-transform;
         }
         
-        @include for-bp-xlarge {
-            width: $for-sidebar-xlarge-width;
+        @include for-bp-xsmall {
+            width: $for-sidebar-xsmall-width;
+        }
+        
+        @include for-bp-small {
+            width: $for-sidebar-small-width;
+        }
+        
+        @include for-bp-small-all {
+            width: $for-sidebar-small-all-width;
+        }
+        
+        @include for-bp-medium {
+            width: $for-sidebar-medium-width;
         }
 
         @include for-bp-large {
             width: $for-sidebar-large-width;
         }
 
-        @include for-bp-medium {
-            width: $for-sidebar-medium-width;
-        }
-        
-        @include for-bp-small-all {
-            width: $for-sidebar-small-all-width;
-        }
-
-        @include for-bp-small {
-            width: $for-sidebar-small-width;
-        }
-
-        @include for-bp-xsmall {
-            width: $for-sidebar-xsmall-width;
+        @include for-bp-xlarge {
+            width: $for-sidebar-xlarge-width;
         }
         
         a {

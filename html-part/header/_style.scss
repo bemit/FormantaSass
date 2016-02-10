@@ -11,28 +11,28 @@
             transform: $for-header-text-transform;
         }
         
-        @include for-bp-xlarge {
-            height: $for-header-xlarge-height;
+        @include for-bp-xsmall {
+            width: $for-header-xsmall-height;
         }
-
-        @include for-bp-large {
-            height: $for-header-large-height;
-        }
-
-        @include for-bp-medium {
-            height: $for-header-medium-height;
+        
+        @include for-bp-small {
+            width: $for-header-small-height;
         }
         
         @include for-bp-small-all {
-            height: $for-header-small-all-height;
+            width: $for-header-small-all-height;
+        }
+        
+        @include for-bp-medium {
+            width: $for-header-medium-height;
         }
 
-        @include for-bp-small {
-            height: $for-header-small-height;
+        @include for-bp-large {
+            width: $for-header-large-height;
         }
 
-        @include for-bp-xsmall {
-            height: $for-header-xsmall-height;
+        @include for-bp-xlarge {
+            width: $for-header-xlarge-height;
         }
         
         a {

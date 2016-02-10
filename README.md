@@ -26,7 +26,7 @@ https://github.com/bemit/FormantaSassLibrary
 More informations, contacts and even support for the FormantaSassLibrary is found under http://formanta-sass.bemit.eu
 
 #Version
-Version 0.0.1.0|α
+Version 0.0.1.1|α
 
 #Made by
 Original author of the basis versions of the library is Michael Becker (http://mbecker.bemit.eu) of bemit UG (haftungsbeschränkt) (http://bemit.eu).
