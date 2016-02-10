@@ -26,9 +26,9 @@ https://github.com/bemit/FormantaSassLibrary
 More informations, contacts and even support for the FormantaSassLibrary is found under http://formanta-sass.bemit.eu
 
 #Version
-Version 0.0.0.1|α
+Version 0.0.1.0|α
 
 #Made by
-Original author of the first versions of the library is Michael Becker (http://mbecker.bemit.eu) of bemit UG (haftungsbeschränkt) (http://bemit.eu).
+Original author of the basis versions of the library is Michael Becker (http://mbecker.bemit.eu) of bemit UG (haftungsbeschränkt) (http://bemit.eu).
 
-Icons, logos an many more creative ideas and media files are made with love from our friends at Advertising Agency Born & Partner (http://www.werbeagentur-born.de), when you wish a perfect web design please contact them, in German or English!
+Icons, logos an many more creative ideas and media files are made with love from our friends at the Advertising Agency Born & Partner (http://www.werbeagentur-born.de)!
