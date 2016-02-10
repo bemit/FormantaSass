@@ -1,0 +1,26 @@
+@mixin for-transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin for-fade($duration: null, $timing-function: null, $delay: null) {
+    @if($duration) {
+        $duration: $duration;
+    } @else {
+        $duration: $for-animation-fade-duration;
+    }
+    @if($timing-function) {
+        $timing-function: $timing-function;
+    } @else {
+        $timing-function: $for-animation-fade-timing-function;
+    }
+    @if($duration) {
+        $delay: $delay;
+    } @else {
+        $delay: $for-animation-fade-delay;
+    }
+    @include for-transition(opacity $duration $timing-function $delay);
+}

@@ -1,0 +1,14 @@
+@if($for-output-style-all) {
+    .table {
+        @include for-table();
+        .row {
+            @include for-table-row;
+            .cell {
+                @include for-table-cell;
+            }
+            .cell-heading {
+                @include for-table-cell-heading;
+            }
+        }
+    }
+}

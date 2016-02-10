@@ -1,0 +1,11 @@
+@if($for-output-style-all) {
+    input[type=submit] {
+        @include for-button-normal(false);
+    }
+    input[type=button] {
+        @include for-button-normal(false);
+    }
+    button {
+        @include for-button-normal(false);
+    }
+}

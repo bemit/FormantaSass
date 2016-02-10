@@ -1,0 +1,63 @@
+@if($for-output-style-html-part) {
+    .sidebar {
+        background: $for-sidebar-background;
+        background-size: $for-sidebar-background-size;
+        
+        font: $for-sidebar-font-style $for-sidebar-font-weight #{$for-sidebar-font-size}/#{$for-sidebar-line-height} $for-sidebar-font-family;
+        font-variant: $for-sidebar-font-variant;
+        color: $for-sidebar-font-color;
+        text: {
+            decoration: $for-sidebar-text-decoration;
+            transform: $for-sidebar-text-transform;
+        }
+        
+        @include for-bp-xlarge {
+            width: $for-sidebar-xlarge-width;
+        }
+
+        @include for-bp-large {
+            width: $for-sidebar-large-width;
+        }
+
+        @include for-bp-medium {
+            width: $for-sidebar-medium-width;
+        }
+        
+        @include for-bp-small-all {
+            width: $for-sidebar-small-all-width;
+        }
+
+        @include for-bp-small {
+            width: $for-sidebar-small-width;
+        }
+
+        @include for-bp-xsmall {
+            width: $for-sidebar-xsmall-width;
+        }
+        
+        a {
+            font: $for-sidebar-link-font-style $for-sidebar-link-font-weight #{$for-sidebar-link-font-size}/#{$for-sidebar-link-line-height} $for-sidebar-link-font-family;
+            font-variant: $for-sidebar-link-font-variant;
+            color: $for-sidebar-link-font-color;
+            text: {
+                decoration: $for-sidebar-link-text-decoration;
+                transform: $for-sidebar-link-text-transform;
+            }
+            &:hover {
+                font: $for-sidebar-link-hover-font-style $for-sidebar-link-hover-font-weight $for-sidebar-link-hover-font-size $for-sidebar-link-hover-font-family;
+                font-variant: $for-sidebar-link-hover-font-variant;
+                color: $for-sidebar-link-hover-font-color;
+                text: {
+                    decoration: $for-sidebar-link-hover-text-decoration;
+                    transform: $for-sidebar-link-hover-text-transform;
+                }
+            }
+        }
+        .heading {
+            color: #ffffff;
+        }
+        .content {
+            color: #ffffff;
+        }
+    }
+}

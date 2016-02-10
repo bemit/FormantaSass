@@ -1,0 +1,35 @@
+@if($for-output-style-all) {
+    .clear {
+        @include for-clear;
+    }
+    .tenth {
+        @include for-tenth;
+    }
+    .fifth {
+        @include for-fifth;
+    }
+    .quarter {
+        @include for-quarter;
+    }
+    .third {
+        @include for-third;
+    }
+    .half {
+        @include for-half;
+    }
+    .three-quarters {
+        @include for-three-quarters;
+    }
+    .hundred {
+        @include for-hundred;
+    }
+    .block {
+        @include for-block;
+    }
+    .inline-block {
+        @include for-inline-block;
+    }
+    .inline {
+        @include for-inline;
+    }
+}

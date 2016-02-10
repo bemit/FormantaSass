@@ -1,0 +1,75 @@
+@mixin for-bp-xlarge {
+    @media (min-width: $for-bp-xlarge-min-size) {
+        @content;
+    }
+}
+
+@mixin for-bp-large {
+    @media (min-width: $for-bp-large-min-size) {
+        @content;
+    }
+}
+
+@mixin for-bp-medium {
+    @media (min-width: $for-bp-medium-min-size) {
+        @content;
+    }
+}
+
+@mixin for-bp-small-all {
+    /* General Mobile Devices: xsmall and small */
+    @media (max-width: $for-bp-small-all-max-size) {
+        @content;
+    }
+}
+
+@mixin for-bp-small {
+    @media (min-width: $for-bp-small-min-size) and (max-width: $for-bp-medium-min-size - 1) {
+        @content;
+    }
+}
+
+@mixin for-bp-xsmall {
+    @media (max-width: $for-bp-xsmall-max-size) {
+        @content;
+    }
+}
+
+/**
+    Syntax: 'max100px', 'min100px'
+*/
+// TODO
+/*
+@mixin for-bp-individual($widths...) {
+    $media-str: '';
+    $already-found: false;
+    @each $width in $widths {
+        $found: false;
+        $tmp-media-str: '';
+        @if(str-index($width, 'max')) {
+            $found: true;
+            $already-found: true;
+            $tmp-media-str: '(max-width: ' + str-slice($width, 4) + ')';
+        } @else if(str-index($width, 'min')) {
+            $already-found: true;
+            $found: true;
+            $tmp-media-str: '(min-width: ' + str-slice($width, 4) + ')';
+        }
+        @if($already-found && $found) {
+            $media-str: $media-str + ' and ';
+            $already-found: false;
+        }
+            //$media-str: $media-str + $tmp-media-str;
+        
+        //width: $width;
+    }
+    $media-str: unquote($media-str);
+    @media ($media-str) {
+        @content;
+    }
+    
+    //    @include for-bp-individual('max100', 'min200', '300', '450'){
+    //        color: #fff;
+    //    }
+    
+}*/

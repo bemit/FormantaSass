@@ -1,0 +1,110 @@
+//  Buttons
+//  ##################################################
+
+//  Typography
+//  ##########
+$for-button-font-family: $for-general-font-family !default;
+$for-button-font-size: $for-general-font-size !default;
+$for-button-font-color: $for-general-font-color !default;
+$for-button-font-style: $for-general-font-style !default;
+$for-button-font-variant: $for-general-font-variant !default;
+$for-button-line-height: $for-general-line-height !default;
+$for-button-text-decoration: $for-general-text-decoration !default;
+$for-button-text-transform: $for-general-text-transform !default;
+$for-button-text-align: $for-general-text-align !default;
+$for-button-font-weight: $for-general-font-weight !default;
+
+$for-button-hover-font-size: $for-button-font-size !default;
+$for-button-hover-font-color: $for-button-font-color !default;
+$for-button-hover-font-style: $for-button-font-style !default;
+$for-button-hover-font-variant: $for-button-font-variant !default;
+$for-button-hover-text-decoration: $for-button-text-decoration !default;
+$for-button-hover-text-transform: $for-button-text-transform !default;
+$for-button-hover-font-weight: $for-button-font-weight !default;
+
+//  Padding
+//  ##########
+$for-button-padding: 10px !default;
+$for-button-padding-top: $for-button-padding !default;
+$for-button-padding-right: $for-button-padding !default;
+$for-button-padding-bottom: $for-button-padding !default;
+$for-button-padding-left: $for-button-padding !default;
+
+//  Margin
+//  ##########
+$for-button-margin: 0 !default;
+$for-button-margin-top: $for-button-margin !default;
+$for-button-margin-right: $for-button-margin !default;
+$for-button-margin-bottom: $for-button-margin !default;
+$for-button-margin-left: $for-button-margin !default;
+
+//  Border
+//  ##########
+$for-button-border-width: 0 !default;
+$for-button-border-style: solid !default;
+$for-button-border-color: transparent !default;
+$for-button-border-radius: 0 !default;
+
+$for-button-border-top-width: $for-button-border-width !default;
+$for-button-border-right-width: $for-button-border-width !default;
+$for-button-border-bottom-width: $for-button-border-width !default;
+$for-button-border-left-width: $for-button-border-width !default;
+
+$for-button-border-top-style: $for-button-border-style !default;
+$for-button-border-right-style: $for-button-border-style !default;
+$for-button-border-bottom-style: $for-button-border-style !default;
+$for-button-border-left-style: $for-button-border-style !default;
+
+$for-button-border-top-color: $for-button-border-color !default;
+$for-button-border-right-color: $for-button-border-color !default;
+$for-button-border-bottom-color: $for-button-border-color !default;
+$for-button-border-left-color: $for-button-border-color !default;
+
+$for-button-border-radius-inner: $for-button-border-radius !default;//first part within css (before /)
+$for-button-border-radius-outer: $for-button-border-radius !default;//second part within css (after /)
+
+$for-button-border-top-left-radius-inner: $for-button-border-radius-inner !default;
+$for-button-border-top-left-radius-left: $for-button-border-radius-outer !default;
+$for-button-border-top-right-radius-inner: $for-button-border-radius-inner !default;
+$for-button-border-top-right-radius-right: $for-button-border-radius-outer !default;
+$for-button-border-bottom-right-radius-inner: $for-button-border-radius-inner !default;
+$for-button-border-bottom-right-radius-right: $for-button-border-radius-outer !default;
+$for-button-border-bottom-left-radius-inner: $for-button-border-radius-inner !default;
+$for-button-border-bottom-left-radius-left: $for-button-border-radius-outer !default;
+//  Border Hover
+//  ###
+$for-button-hover-border-width: $for-button-border-width !default;
+$for-button-hover-border-style: $for-button-border-style !default;
+$for-button-hover-border-color: $for-button-border-color !default;
+$for-button-hover-border-top-width: $for-button-hover-border-width !default;
+$for-button-hover-border-top-style: $for-button-hover-border-style !default;
+$for-button-hover-border-top-color: $for-button-hover-border-color !default;
+$for-button-hover-border-right-width: $for-button-hover-border-width !default;
+$for-button-hover-border-right-style: $for-button-hover-border-style !default;
+$for-button-hover-border-right-color: $for-button-hover-border-color !default;
+$for-button-hover-border-bottom-width: $for-button-hover-border-width !default;
+$for-button-hover-border-bottom-style: $for-button-hover-border-style !default;
+$for-button-hover-border-bottom-color: $for-button-hover-border-color !default;
+$for-button-hover-border-left-width: $for-button-hover-border-width !default;
+$for-button-hover-border-left-style: $for-button-hover-border-style !default;
+$for-button-hover-border-left-color: $for-button-hover-border-color !default;
+//  Border Radius
+$for-button-hover-border-radius: $for-button-border-radius !default;
+$for-button-hover-border-radius-inner: $for-button-hover-border-radius !default;//first part within css (before /)
+$for-button-hover-border-radius-outer: $for-button-hover-border-radius !default;//second part within css (after /)
+//  Border Radius complete
+$for-button-hover-border-top-left-radius-inner: $for-button-hover-border-radius-inner !default;
+$for-button-hover-border-top-left-radius-left: $for-button-hover-border-radius-outer !default;
+$for-button-hover-border-top-right-radius-inner: $for-button-hover-border-radius-inner !default;
+$for-button-hover-border-top-right-radius-right: $for-button-hover-border-radius-outer !default;
+$for-button-hover-border-bottom-right-radius-inner: $for-button-hover-border-radius-inner !default;
+$for-button-hover-border-bottom-right-radius-right: $for-button-hover-border-radius-outer !default;
+$for-button-hover-border-bottom-left-radius-inner: $for-button-hover-border-radius-inner !default;
+$for-button-hover-border-bottom-left-radius-left: $for-button-hover-border-radius-outer !default;
+
+//  Background
+//  ##########
+$for-button-background: $for-general-color-primary !default;
+$for-button-background-size: auto !default;
+$for-button-hover-background: $for-general-color-secondary !default;
+$for-button-hover-background-size: $for-button-background-size !default;
