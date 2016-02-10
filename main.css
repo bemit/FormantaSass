@@ -538,77 +538,69 @@ body {
   color: #333;
   font-family: Helvetica, sans-serif;
   font-weight: 400;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: normal;
+  text-align: left; }
 
 a {
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
-  text-decoration: none;
-  line-height: normal; }
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  text-decoration: none; }
   a:hover {
     color: #333;
-    font-size: 12pt;
-    font-family: Helvetica, sans-serif;
-    font-weight: 400;
-    text-decoration: none; }
+    font: none normal 400 12pt Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: normal;
+    text-align: left; }
 
 p {
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  text-align: left; }
 
 h1 {
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  text-align: left; }
 
 h2 {
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  text-align: left; }
 
 h3 {
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  text-align: left; }
 
 h4 {
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  text-align: left; }
 
 h5 {
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  text-align: left; }
 
 h6 {
   color: #333;
-  font-size: 12pt;
-  font-family: Helvetica, sans-serif;
-  font-weight: 400;
+  font: none normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
-  line-height: normal; }
+  text-transform: normal;
+  text-align: left; }
 
 .clear {
   clear: both; }
