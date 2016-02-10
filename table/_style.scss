@@ -6,8 +6,8 @@
             .cell {
                 @include table-cell;
             }
-            .cell-header {
-                @include table-cell-header;
+            .cell-heading {
+                @include table-cell-heading;
             }
         }
     }

@@ -649,31 +649,38 @@ h6 {
   display: table;
   font: normal normal 400 12pt/normal Helvetica, sans-serif;
   text-decoration: none;
+  text-transform: normal;
+  text-align: left;
   border-top: 0 solid #006633;
-  border-top-left-radius: 0 0;
-  border-top-right-radius: 0 0;
   border-right: 0 solid #006633;
   border-bottom: 0 solid #006633;
-  border-bottom-left-radius: 0 0;
-  border-bottom-right-radius: 0 0;
-  border-left: 0 solid #006633; }
+  border-left: 0 solid #006633;
+  border-radius: 0 0 0 NaN 0 0 0; }
   .table a {
     font: normal normal 400 12pt/normal Helvetica, sans-serif;
     color: #333;
     text-decoration: none;
+    text-transform: normal;
+    text-align: left;
     line-height: normal; }
     .table a:hover {
       font: normal normal 400 12pt Helvetica, sans-serif;
       color: #333;
-      text-decoration: none; }
+      text-decoration: none;
+      text-transform: normal;
+      text-align: left; }
   .table .row {
     display: table-row; }
     .table .row .cell {
       display: table-cell; }
-    .table .row .cell-header {
+    .table .row .cell-heading {
       display: table-cell;
       font: normal normal 400 12pt/normal Helvetica, sans-serif;
-      background: transparent; }
+      color: #333;
+      background: transparent;
+      text-decoration: none;
+      text-transform: normal;
+      text-align: left; }
 
 form input[type=text] {
   display: inline-block;
