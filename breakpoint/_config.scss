@@ -1,7 +1,7 @@
-// Breakpoint
+    // Breakpoint
 // ##################################################
 
-$for-bp-xlarge-min-size: 1824px !default;//e.g. 4k
+$for-bp-xlarge-min-size: 3000px !default;//e.g. 4k
 $for-bp-large-min-size: 1200px !default;//e.g. desktop-pc (HD)
 $for-bp-medium-min-size: 992px !default;//e.g. laptop/desktop-pc (SD)
 $for-bp-small-all-max-size: $for-bp-medium-min-size - 1 !default;//all small sizes (to adress all "mobile" devices)

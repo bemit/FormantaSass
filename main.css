@@ -1191,7 +1191,7 @@ form input[type=week] {
   @media (min-width: 1200px) {
     .container {
       width: 1000px; } }
-  @media (min-width: 1824px) {
+  @media (min-width: 3000px) {
     .container {
       width: 1600px; } }
 
@@ -1219,7 +1219,7 @@ form input[type=week] {
   @media (min-width: 1200px) {
     .content {
       width: 750px; } }
-  @media (min-width: 1824px) {
+  @media (min-width: 3000px) {
     .content {
       width: 1200px; } }
   .content a {
@@ -1259,7 +1259,7 @@ form input[type=week] {
   @media (min-width: 1200px) {
     .footer {
       width: 1000px; } }
-  @media (min-width: 1824px) {
+  @media (min-width: 3000px) {
     .footer {
       width: 1600px; } }
   .footer a {
@@ -1299,7 +1299,7 @@ form input[type=week] {
   @media (min-width: 1200px) {
     .header {
       width: 300px; } }
-  @media (min-width: 1824px) {
+  @media (min-width: 3000px) {
     .header {
       width: 300px; } }
   .header a {
@@ -1339,7 +1339,7 @@ form input[type=week] {
   @media (min-width: 1200px) {
     .sidebar {
       width: 250px; } }
-  @media (min-width: 1824px) {
+  @media (min-width: 3000px) {
     .sidebar {
       width: 400px; } }
   .sidebar a {
