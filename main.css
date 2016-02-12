@@ -481,7 +481,7 @@ input[type=submit] {
   border-right: 0 solid transparent;
   border-bottom: 0 solid transparent;
   border-left: 0 solid transparent;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   input[type=submit]:hover {
     background: #006633;
     background-size: auto;
@@ -493,7 +493,7 @@ input[type=submit] {
     border-right: 0 solid transparent;
     border-bottom: 0 solid transparent;
     border-left: 0 solid transparent;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 
 input[type=button] {
   display: inline-block;
@@ -510,7 +510,7 @@ input[type=button] {
   border-right: 0 solid transparent;
   border-bottom: 0 solid transparent;
   border-left: 0 solid transparent;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   input[type=button]:hover {
     background: #006633;
     background-size: auto;
@@ -522,7 +522,7 @@ input[type=button] {
     border-right: 0 solid transparent;
     border-bottom: 0 solid transparent;
     border-left: 0 solid transparent;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 
 button {
   display: inline-block;
@@ -539,7 +539,7 @@ button {
   border-right: 0 solid transparent;
   border-bottom: 0 solid transparent;
   border-left: 0 solid transparent;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   button:hover {
     background: #006633;
     background-size: auto;
@@ -551,17 +551,17 @@ button {
     border-right: 0 solid transparent;
     border-bottom: 0 solid transparent;
     border-left: 0 solid transparent;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 
 body {
   background: #ffffff; }
 
 .fade {
-  -webkit-transition: opacity 0s linear;
-  -moz-transition: opacity 0s linear;
-  -ms-transition: opacity 0s linear;
-  -o-transition: opacity 0s linear;
-  transition: opacity 0s linear; }
+  -webkit-transition: opacity 0.4s linear;
+  -moz-transition: opacity 0.4s linear;
+  -ms-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear; }
 
 html {
   /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
@@ -681,7 +681,7 @@ h6 {
   border-right: 0 solid #006633;
   border-bottom: 0 solid #006633;
   border-left: 0 solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   .table a {
     font: normal normal 400 12pt/normal Helvetica, sans-serif;
     color: #333;
@@ -725,7 +725,7 @@ form input[type=text] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=text]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -738,7 +738,7 @@ form input[type=text] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=password] {
   display: inline-block;
   box-shadow: none;
@@ -756,7 +756,7 @@ form input[type=password] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=password]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -769,7 +769,7 @@ form input[type=password] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=color] {
   display: inline-block;
   box-shadow: none;
@@ -787,7 +787,7 @@ form input[type=color] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=color]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -800,7 +800,7 @@ form input[type=color] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=date] {
   display: inline-block;
   box-shadow: none;
@@ -818,7 +818,7 @@ form input[type=date] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=date]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -831,7 +831,7 @@ form input[type=date] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=datetime] {
   display: inline-block;
   box-shadow: none;
@@ -849,7 +849,7 @@ form input[type=datetime] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=datetime]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -862,7 +862,7 @@ form input[type=datetime] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=datetime-local] {
   display: inline-block;
   box-shadow: none;
@@ -880,7 +880,7 @@ form input[type=datetime-local] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=datetime-local]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -893,7 +893,7 @@ form input[type=datetime-local] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=email] {
   display: inline-block;
   box-shadow: none;
@@ -911,7 +911,7 @@ form input[type=email] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=email]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -924,7 +924,7 @@ form input[type=email] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=month] {
   display: inline-block;
   box-shadow: none;
@@ -942,7 +942,7 @@ form input[type=month] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=month]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -955,7 +955,7 @@ form input[type=month] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=number] {
   display: inline-block;
   box-shadow: none;
@@ -973,7 +973,7 @@ form input[type=number] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=number]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -986,7 +986,7 @@ form input[type=number] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=range] {
   display: inline-block;
   box-shadow: none;
@@ -1004,7 +1004,7 @@ form input[type=range] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=range]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -1017,7 +1017,7 @@ form input[type=range] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=search] {
   display: inline-block;
   box-shadow: none;
@@ -1035,7 +1035,7 @@ form input[type=search] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=search]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -1048,7 +1048,7 @@ form input[type=search] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=tel] {
   display: inline-block;
   box-shadow: none;
@@ -1066,7 +1066,7 @@ form input[type=tel] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=tel]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -1079,7 +1079,7 @@ form input[type=tel] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=time] {
   display: inline-block;
   box-shadow: none;
@@ -1097,7 +1097,7 @@ form input[type=time] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=time]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -1110,7 +1110,7 @@ form input[type=time] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=url] {
   display: inline-block;
   box-shadow: none;
@@ -1128,7 +1128,7 @@ form input[type=url] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=url]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -1141,7 +1141,7 @@ form input[type=url] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 form input[type=week] {
   display: inline-block;
   box-shadow: none;
@@ -1159,7 +1159,7 @@ form input[type=week] {
   border-right: 1px solid #006633;
   border-bottom: 1px solid #006633;
   border-left: 1px solid #006633;
-  border-radius: 0 0 0 NaN 0 0 0; }
+  border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=week]:hover {
     box-shadow: none;
     -moz-box-shadow: none;
@@ -1172,7 +1172,7 @@ form input[type=week] {
     border-right: 1px solid #006633;
     border-bottom: 1px solid #006633;
     border-left: 1px solid #006633;
-    border-radius: 0 0 0 NaN 0 0 0; }
+    border-radius: 0 0 0 0 / 0 0 0 0; }
 
 .container {
   /* General Mobile Devices: xsmall and small */ }
