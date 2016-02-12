@@ -17,19 +17,14 @@
     } @else {
         $timing-function: $for-animation-fade-timing-function;
     }
-    @if($duration) {
+    @if($delay) {
         $delay: $delay;
     } @else {
         $delay: $for-animation-fade-delay;
     }
-    @if($duration) {
-        $to-opacity: $to-opacity;
-    } @else {
-        $to-opacity: $for-animation-fade-to-opacity;
-    }
     @include for-transition(opacity $duration $timing-function $delay);
     &:hover {
-        @if($duration) {
+        @if($to-opacity) {
             $to-opacity: $to-opacity;
         } @else {
             $to-opacity: $for-animation-fade-to-opacity;

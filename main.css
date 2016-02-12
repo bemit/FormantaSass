@@ -557,11 +557,13 @@ body {
   background: #ffffff; }
 
 .fade {
-  -webkit-transition: opacity 0.4s linear;
-  -moz-transition: opacity 0.4s linear;
-  -ms-transition: opacity 0.4s linear;
-  -o-transition: opacity 0.4s linear;
-  transition: opacity 0.4s linear; }
+  -webkit-transition: opacity 0.4s linear 0s;
+  -moz-transition: opacity 0.4s linear 0s;
+  -ms-transition: opacity 0.4s linear 0s;
+  -o-transition: opacity 0.4s linear 0s;
+  transition: opacity 0.4s linear 0s; }
+  .fade:hover {
+    opacity: 0.6; }
 
 html {
   /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
