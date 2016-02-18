@@ -14,11 +14,6 @@ $for-form-input-text-font-style: normal !default;
 $for-form-input-text-font-weight: 400 !default;
 $for-form-input-text-text-decoration: none !default;
 $for-form-input-text-line-height: normal !default;
-$for-form-input-text-hover-font-size: $for-form-input-text-font-size !default;
-$for-form-input-text-hover-font-color: $for-form-input-text-font-color !default;
-$for-form-input-text-hover-font-style: $for-form-input-text-font-style !default;
-$for-form-input-text-hover-font-weight: $for-form-input-text-font-weight !default;
-$for-form-input-text-hover-text-decoration: $for-form-input-text-text-decoration !default;
 
 //  Padding
 //  ##########
@@ -31,7 +26,6 @@ $for-form-input-text-padding-left: $for-form-input-text-padding !default;
 //  Shadow
 //  ##########
 $for-form-input-text-shadow: none;
-$for-form-input-text-hover-shadow: $for-form-input-text-shadow;
 
 //  Border
 //  ##########

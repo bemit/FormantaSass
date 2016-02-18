@@ -8,7 +8,8 @@
     } @else {
         display: inline-block;
     }
-    font: $for-button-font-style $for-button-font-variant $for-button-font-weight #{$for-button-font-size}/#{$for-button-line-height} $for-button-font-family;
+    font: $for-button-font-style $for-button-font-weight #{$for-button-font-size}/#{$for-button-line-height} $for-button-font-family;
+    font-variant: $for-button-font-variant;
     color: $for-button-font-color;
     
     padding: $for-button-padding-top $for-button-padding-right $for-button-padding-bottom $for-button-padding-left;
@@ -33,7 +34,8 @@
     &:hover {
         background: $for-button-hover-background;
         background-size: $for-button-hover-background-size;
-        font: $for-button-hover-font-style $for-button-hover-font-variant $for-button-hover-font-weight $for-button-hover-font-size;
+        font: $for-button-hover-font-style $for-button-hover-font-weight #{$for-button-hover-font-size}/#{$for-button-line-height} $for-button-font-family;
+        font-variant: $for-button-hover-font-variant;
         color: $for-button-hover-font-color;
         text: {
             decoration: $for-button-hover-text-decoration;

@@ -468,7 +468,8 @@ textarea {
 }*/
 input[type=submit] {
   display: inline-block;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   color: #333;
   padding: 10px 10px 10px 10px;
   margin: 0 0 0 0;
@@ -485,7 +486,8 @@ input[type=submit] {
   input[type=submit]:hover {
     background: #0044aa;
     background-size: auto;
-    font: none normal 400 12pt;
+    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none;
@@ -497,7 +499,8 @@ input[type=submit] {
 
 input[type=button] {
   display: inline-block;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   color: #333;
   padding: 10px 10px 10px 10px;
   margin: 0 0 0 0;
@@ -514,7 +517,8 @@ input[type=button] {
   input[type=button]:hover {
     background: #0044aa;
     background-size: auto;
-    font: none normal 400 12pt;
+    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none;
@@ -526,7 +530,8 @@ input[type=button] {
 
 button {
   display: inline-block;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   color: #333;
   padding: 10px 10px 10px 10px;
   margin: 0 0 0 0;
@@ -543,7 +548,8 @@ button {
   button:hover {
     background: #0044aa;
     background-size: auto;
-    font: none normal 400 12pt;
+    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none;
@@ -580,60 +586,69 @@ body {
 
 a {
   color: #333;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   text-decoration: none; }
   a:hover {
     color: #333;
-    font: none normal 400 12pt Helvetica, sans-serif;
+    font: normal 400 12pt Helvetica, sans-serif;
+    font-variant: normal;
     text-decoration: none;
     text-transform: none;
     text-align: left; }
 
 p {
   color: #333;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h1 {
   color: #333;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h2 {
   color: #333;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h3 {
   color: #333;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h4 {
   color: #333;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h5 {
   color: #333;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h6 {
   color: #333;
-  font: none normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
@@ -729,12 +744,6 @@ form input[type=text] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=text]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -760,12 +769,6 @@ form input[type=password] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=password]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -791,12 +794,6 @@ form input[type=color] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=color]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -822,12 +819,6 @@ form input[type=date] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=date]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -853,12 +844,6 @@ form input[type=datetime] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=datetime]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -884,12 +869,6 @@ form input[type=datetime-local] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=datetime-local]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -915,12 +894,6 @@ form input[type=email] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=email]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -946,12 +919,6 @@ form input[type=month] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=month]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -977,12 +944,6 @@ form input[type=number] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=number]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -1008,12 +969,6 @@ form input[type=range] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=range]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -1039,12 +994,6 @@ form input[type=search] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=search]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -1070,12 +1019,6 @@ form input[type=tel] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=tel]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -1101,12 +1044,6 @@ form input[type=time] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=time]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -1132,12 +1069,6 @@ form input[type=url] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=url]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -1163,12 +1094,6 @@ form input[type=week] {
   border-left: 1px solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
   form input[type=week]:hover {
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    font: normal 400 12pt;
-    color: #333;
-    text-decoration: none;
     background: #ffffff;
     border-top: 1px solid #0044aa;
     border-right: 1px solid #0044aa;
@@ -1200,7 +1125,7 @@ form input[type=week] {
 .content {
   background: #ffffff;
   background-size: auto;
-  font: none 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
   color: #333;
   text-decoration: none;
@@ -1225,13 +1150,13 @@ form input[type=week] {
     .content {
       width: 1200px; } }
   .content a {
-    font: none 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none; }
     .content a:hover {
-      font: none 400 12pt Helvetica, sans-serif;
+      font: normal 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
@@ -1240,7 +1165,7 @@ form input[type=week] {
 .footer {
   background: #0044aa;
   background-size: auto;
-  font: none 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
   color: #333;
   text-decoration: none;
@@ -1265,13 +1190,13 @@ form input[type=week] {
     .footer {
       width: 1600px; } }
   .footer a {
-    font: none 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none; }
     .footer a:hover {
-      font: none 400 12pt Helvetica, sans-serif;
+      font: normal 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
@@ -1280,7 +1205,7 @@ form input[type=week] {
 .header {
   background: #ffffff;
   background-size: auto;
-  font: none 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
   color: #333;
   text-decoration: none;
@@ -1305,13 +1230,13 @@ form input[type=week] {
     .header {
       width: 300px; } }
   .header a {
-    font: none 400 13pt/30px Helvetica, sans-serif;
+    font: normal 400 13pt/30px Helvetica, sans-serif;
     font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none; }
     .header a:hover {
-      font: none bold 13pt Helvetica, sans-serif;
+      font: normal bold 13pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
@@ -1320,7 +1245,7 @@ form input[type=week] {
 .sidebar {
   background: #6ab42a;
   background-size: auto;
-  font: none 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
   color: #0044aa;
   text-decoration: none;
@@ -1345,13 +1270,13 @@ form input[type=week] {
     .sidebar {
       width: 400px; } }
   .sidebar a {
-    font: none 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none; }
     .sidebar a:hover {
-      font: none 400 12pt Helvetica, sans-serif;
+      font: normal 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
