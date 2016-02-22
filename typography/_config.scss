@@ -68,7 +68,7 @@ $for-link-hover-line-height: $for-link-line-height !default;
 
 //  Font Style
 //  ##########
-$for-general-font-style: none !default;
+$for-general-font-style: normal !default;
 $for-h1-font-style: $for-general-font-style !default;
 $for-h2-font-style: $for-general-font-style !default;
 $for-h3-font-style: $for-general-font-style !default;
@@ -108,7 +108,7 @@ $for-link-hover-text-decoration: $for-link-text-decoration !default;
 
 //  Text Transform
 //  ##########
-$for-general-text-transform: normal !default;
+$for-general-text-transform: none !default;
 $for-h1-text-transform: $for-general-text-transform !default;
 $for-h2-text-transform: $for-general-text-transform !default;
 $for-h3-text-transform: $for-general-text-transform !default;

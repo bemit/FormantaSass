@@ -25,22 +25,16 @@
         right: $for-form-input-text-border-right-width $for-form-input-text-border-right-style $for-form-input-text-border-right-color;
         bottom: $for-form-input-text-border-bottom-width $for-form-input-text-border-bottom-style $for-form-input-text-border-bottom-color;
         left: $for-form-input-text-border-left-width $for-form-input-text-border-left-style $for-form-input-text-border-left-color;
-        radius: $for-form-input-text-border-top-left-radius-inner $for-form-input-text-border-top-right-radius-inner $for-form-input-text-border-bottom-right-radius-inner $for-form-input-text-border-bottom-left-radius-inner / $for-form-input-text-border-top-left-radius-left $for-form-input-text-border-top-right-radius-right $for-form-input-text-border-bottom-right-radius-right $for-form-input-text-border-bottom-left-radius-left;
+        radius: $for-form-input-text-border-top-left-radius-inner $for-form-input-text-border-top-right-radius-inner $for-form-input-text-border-bottom-right-radius-inner #{$for-form-input-text-border-bottom-left-radius-inner} / #{$for-form-input-text-border-top-left-radius-left} $for-form-input-text-border-top-right-radius-right $for-form-input-text-border-bottom-right-radius-right $for-form-input-text-border-bottom-left-radius-left;
     }
     &:hover {
-        @include for-shadow($for-form-input-text-hover-shadow);
-        font: $for-form-input-text-hover-font-style $for-form-input-text-hover-font-weight $for-form-input-text-hover-font-size;
-        color: $for-form-input-text-hover-font-color;
-        text: {
-            decoration: $for-form-input-text-hover-text-decoration;
-        }
         background: $for-form-input-text-hover-background;
         border: {
             top: $for-form-input-text-hover-border-top-width $for-form-input-text-hover-border-top-style $for-form-input-text-hover-border-top-color;
             right: $for-form-input-text-hover-border-right-width $for-form-input-text-hover-border-right-style $for-form-input-text-hover-border-right-color;
             bottom: $for-form-input-text-hover-border-bottom-width $for-form-input-text-hover-border-bottom-style $for-form-input-text-hover-border-bottom-color;
             left: $for-form-input-text-hover-border-left-width $for-form-input-text-hover-border-left-style $for-form-input-text-hover-border-left-color;
-            radius: $for-form-input-text-hover-border-top-left-radius-inner $for-form-input-text-hover-border-top-right-radius-inner $for-form-input-text-hover-border-bottom-right-radius-inner $for-form-input-text-hover-border-bottom-left-radius-inner / $for-form-input-text-hover-border-top-left-radius-left $for-form-input-text-hover-border-top-right-radius-right $for-form-input-text-hover-border-bottom-right-radius-right $for-form-input-text-hover-border-bottom-left-radius-left;
+            radius: $for-form-input-text-hover-border-top-left-radius-inner $for-form-input-text-hover-border-top-right-radius-inner $for-form-input-text-hover-border-bottom-right-radius-inner #{$for-form-input-text-hover-border-bottom-left-radius-inner} / #{$for-form-input-text-hover-border-top-left-radius-left} $for-form-input-text-hover-border-top-right-radius-right $for-form-input-text-hover-border-bottom-right-radius-right $for-form-input-text-hover-border-bottom-left-radius-left;
         }
     }   
     &:disabled {
