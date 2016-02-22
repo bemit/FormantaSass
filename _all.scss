@@ -1,15 +1,16 @@
 @charset 'utf-8';
-/*! FormantaSassLibrary v0.0.1.1|α | GNU LGPL v3 | https://github.com/bemit/FormantaSassLibrary */
+/*! FormantaSassLibrary v0.0.1.2|α | GNU LGPL v3 | http://formanta-sass.bemit.eu */
 /*
     FormantaSassLibrary for basic config, mixins, formatting and typography.
     
     Part 1 of the FormantaLibrary for FrontendDevelopment.
 /*
-    Copyright  : © 2016 Michael Becker, bemit UG (haftungsbeschränkt) //bemit.eu
+    Copyright  : © 2016 Michael Becker, bemit UG (haftungsbeschränkt), bemit.eu
     Author     : Michael Becker
     Company    : bemit UG (haftungsbeschränkt)
     Licence:   : GNU LGPL v3
 */
+
 @import 'config';
 @import 'color/config';
 @import 'breakpoint/config';
@@ -21,6 +22,8 @@
 @import 'form/config';
 
 @import 'reset';
+
+@import 'libs/font-awesome/scss/font-awesome.scss';
 
 @import 'mixin';
 @import 'color/mixin';
