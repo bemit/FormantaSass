@@ -10,7 +10,7 @@
         right: $for-table-border-right-width $for-table-border-right-style $for-table-border-right-color;
         bottom: $for-table-border-bottom-width $for-table-border-bottom-style $for-table-border-bottom-color;
         left: $for-table-border-left-width $for-table-border-left-style $for-table-border-left-color;
-        radius: $for-table-border-top-left-radius-inner $for-table-border-top-right-radius-inner $for-table-border-bottom-right-radius-inner $for-table-border-bottom-left-radius-inner / $for-table-border-top-left-radius-left $for-table-border-top-right-radius-right $for-table-border-bottom-right-radius-right $for-table-border-bottom-left-radius-left;
+        radius: $for-table-border-top-left-radius-inner $for-table-border-top-right-radius-inner $for-table-border-bottom-right-radius-inner #{$for-table-border-bottom-left-radius-inner} / #{$for-table-border-top-left-radius-left} $for-table-border-top-right-radius-right $for-table-border-bottom-right-radius-right $for-table-border-bottom-left-radius-left;
     }
     a {
         font: $for-table-link-font-style $for-table-link-font-variant $for-table-link-font-weight #{$for-table-link-font-size}/#{$for-table-line-height} $for-table-link-font-family;
