@@ -1,5 +1,5 @@
 @if($for-output-style-all) {
-    .fade {
+    .for-fade {
         @include for-fade();
     }
 }
