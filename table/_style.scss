@@ -1,4 +1,4 @@
-@if($for-output-style-all) {
+@if($for-output-table) {
     .for-table {
         @include for-table();
         .for-row {

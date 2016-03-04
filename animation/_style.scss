@@ -1,4 +1,4 @@
-@if($for-output-style-all) {
+@if($for-output-animation) {
     .for-fade {
         @include for-fade();
     }
