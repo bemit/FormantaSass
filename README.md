@@ -1,6 +1,5 @@
-##Dev Version!
-In development, using in productive environment is not recommended.
-Many things need to be done at the moment, till the first release.
+##Productive or not?
+At the moment it is still in development, but in a beta phase, many elements will be added in the near future. The existing components should not be renamed, little changes which will affect the backwards compatibility are possible.
 
 #FormantaSassLibrary 
 is the first part of the FormantaLibrary, a Frontend Framework with basic styles and more which we (http://bemit.eu) use at least in every 4th project.  
@@ -26,9 +25,9 @@ https://github.com/bemit/FormantaSassLibrary
 More informations, contacts and even support for the FormantaSassLibrary is found under http://formanta-sass.bemit.eu
 
 #Version
-Version 0.0.1.2|α
+Version 0.0.2.0
 
 #Made by
 Original author of the basis versions of the library is Michael Becker (http://mbecker.bemit.eu) of bemit UG (haftungsbeschränkt) (http://bemit.eu).
 
-Icons, logos an many more creative ideas and media files are made with love from our friends at the Advertising Agency Born & Partner (http://www.werbeagentur-born.de)!
+Icons, logos an many more creative ideas and media files are made with love from our friends from the advertising agency Born & Partner (http://werbeagentur-born.de)!

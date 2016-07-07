@@ -1,5 +1,5 @@
-@if($for-output-style-html-part) {
-    .container {
+@if($for-output-html-module-container) {
+    .for-container {
         @include for-bp-small-all {
             width: $for-container-small-all-width;
         }

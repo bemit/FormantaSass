@@ -1,5 +1,5 @@
 @charset 'utf-8';
-/*! FormantaSassLibrary v0.0.1.2|α | GNU LGPL v3 | http://formanta-sass.bemit.eu */
+/*! FormantaSassLibrary v0.0.2.0 | GNU LGPL v3 | http://formanta-sass.bemit.eu */
 /*
     FormantaSassLibrary for basic config, mixins, formatting and typography.
     
@@ -11,7 +11,8 @@
     Licence:   : GNU LGPL v3
 */
 
-@import 'config';
+@import 'general-config/all';
+
 @import 'color/config';
 @import 'breakpoint/config';
 @import 'animation/config';
@@ -43,4 +44,4 @@
 @import 'table/style';
 @import 'form/style';
 
-@import 'html-part/all';
+@import 'html-module/all';

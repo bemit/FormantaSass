@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! FormantaSassLibrary v0.0.1.2|╬▒ | GNU LGPL v3 | http://formanta-sass.bemit.eu */
+/*! FormantaSassLibrary v0.0.2.0 | GNU LGPL v3 | http://formanta-sass.bemit.eu */
 /*
     FormantaSassLibrary for basic config, mixins, formatting and typography.
     
@@ -437,8 +437,8 @@ textarea {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("libs/font-awesome/fonts/fontawesome-webfont.eot?v=4.5.0");
-  src: url("libs/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("libs/font-awesome/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("libs/font-awesome/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("libs/font-awesome/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("libs/font-awesome/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
+  src: url("//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?v=4.5.0");
+  src: url("//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2?v=4.5.0") format("woff2"), url("//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff?v=4.5.0") format("woff"), url("//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf?v=4.5.0") format("truetype"), url("//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -2636,13 +2636,13 @@ button {
 body {
   background: #ffffff; }
 
-.fade {
+.for-fade {
   -webkit-transition: opacity 0.4s linear 0s;
   -moz-transition: opacity 0.4s linear 0s;
   -ms-transition: opacity 0.4s linear 0s;
   -o-transition: opacity 0.4s linear 0s;
   transition: opacity 0.4s linear 0s; }
-  .fade:hover {
+  .for-fade:hover {
     opacity: 0.6; }
 
 html {
@@ -2727,40 +2727,40 @@ h6 {
   text-transform: none;
   text-align: left; }
 
-.clear {
+.for-clear {
   clear: both; }
 
-.tenth {
+.for-tenth {
   width: 10%; }
 
-.fifth {
+.for-fifth {
   width: 20%; }
 
-.quarter {
+.for-quarter {
   width: 25%; }
 
-.third {
+.for-third {
   width: 33.3%; }
 
-.half {
+.for-half {
   width: 50%; }
 
-.three-quarters {
+.for-three-quarters {
   width: 75%; }
 
-.hundred {
+.for-hundred {
   width: 100%; }
 
-.block {
+.for-block {
   display: block; }
 
-.inline-block {
+.for-inline-block {
   display: inline-block; }
 
-.inline {
+.for-inline {
   display: inline; }
 
-.table {
+.for-table {
   table-layout: fixed;
   width: 100%;
   display: table;
@@ -2773,24 +2773,24 @@ h6 {
   border-bottom: 0 solid #0044aa;
   border-left: 0 solid #0044aa;
   border-radius: 0 0 0 0 / 0 0 0 0; }
-  .table a {
+  .for-table a {
     font: normal normal 400 12pt/normal Helvetica, sans-serif;
     color: #333;
     text-decoration: none;
     text-transform: none;
     text-align: left;
     line-height: normal; }
-    .table a:hover {
+    .for-table a:hover {
       font: normal normal 400 12pt Helvetica, sans-serif;
       color: #333;
       text-decoration: none;
       text-transform: none;
       text-align: left; }
-  .table .row {
+  .for-table .for-row {
     display: table-row; }
-    .table .row .cell {
+    .for-table .for-row .for-cell {
       display: table-cell; }
-    .table .row .cell-heading {
+    .for-table .for-row .for-cell-heading {
       display: table-cell;
       font: normal normal 400 12pt/normal Helvetica, sans-serif;
       color: #333;
@@ -3175,28 +3175,28 @@ form input[type=week] {
     border-left: 1px solid #0044aa;
     border-radius: 0 0 0 0 / 0 0 0 0; }
 
-.container {
+.for-container {
   /* General Mobile Devices: xsmall and small */ }
   @media (max-width: 991px) {
-    .container {
+    .for-container {
       width: 100%; } }
   @media (max-width: 767px) {
-    .container {
+    .for-container {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .container {
+    .for-container {
       width: 100%; } }
   @media (min-width: 992px) {
-    .container {
+    .for-container {
       width: 940px; } }
   @media (min-width: 1200px) {
-    .container {
+    .for-container {
       width: 1000px; } }
   @media (min-width: 3000px) {
-    .container {
+    .for-container {
       width: 1600px; } }
 
-.content {
+.for-content {
   background: #ffffff;
   background-size: auto;
   font: normal 400 12pt/normal Helvetica, sans-serif;
@@ -3206,37 +3206,37 @@ form input[type=week] {
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
   @media (max-width: 991px) {
-    .content {
+    .for-content {
       width: 100%; } }
   @media (max-width: 767px) {
-    .content {
+    .for-content {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .content {
+    .for-content {
       width: 100%; } }
   @media (min-width: 992px) {
-    .content {
+    .for-content {
       width: 690px; } }
   @media (min-width: 1200px) {
-    .content {
+    .for-content {
       width: 750px; } }
   @media (min-width: 3000px) {
-    .content {
+    .for-content {
       width: 1200px; } }
-  .content a {
+  .for-content a {
     font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none; }
-    .content a:hover {
+    .for-content a:hover {
       font: normal 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
       text-transform: none; }
 
-.footer {
+.for-footer {
   background: #0044aa;
   background-size: auto;
   font: normal 400 12pt/normal Helvetica, sans-serif;
@@ -3246,37 +3246,37 @@ form input[type=week] {
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
   @media (max-width: 991px) {
-    .footer {
+    .for-footer {
       width: 100%; } }
   @media (max-width: 767px) {
-    .footer {
+    .for-footer {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .footer {
+    .for-footer {
       width: 100%; } }
   @media (min-width: 992px) {
-    .footer {
+    .for-footer {
       width: 940px; } }
   @media (min-width: 1200px) {
-    .footer {
+    .for-footer {
       width: 1000px; } }
   @media (min-width: 3000px) {
-    .footer {
+    .for-footer {
       width: 1600px; } }
-  .footer a {
+  .for-footer a {
     font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none; }
-    .footer a:hover {
+    .for-footer a:hover {
       font: normal 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
       text-transform: none; }
 
-.header {
+.for-header {
   background: #ffffff;
   background-size: auto;
   font: normal 400 12pt/normal Helvetica, sans-serif;
@@ -3286,37 +3286,37 @@ form input[type=week] {
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
   @media (max-width: 991px) {
-    .header {
+    .for-header {
       width: 100px; } }
   @media (max-width: 767px) {
-    .header {
+    .for-header {
       width: 100px; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .header {
+    .for-header {
       width: 100px; } }
   @media (min-width: 992px) {
-    .header {
+    .for-header {
       width: 300px; } }
   @media (min-width: 1200px) {
-    .header {
+    .for-header {
       width: 300px; } }
   @media (min-width: 3000px) {
-    .header {
+    .for-header {
       width: 300px; } }
-  .header a {
+  .for-header a {
     font: normal 400 13pt/30px Helvetica, sans-serif;
     font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none; }
-    .header a:hover {
+    .for-header a:hover {
       font: normal bold 13pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
       text-transform: none; }
 
-.sidebar {
+.for-sidebar {
   background: #6ab42a;
   background-size: auto;
   font: normal 400 12pt/normal Helvetica, sans-serif;
@@ -3326,38 +3326,34 @@ form input[type=week] {
   text-transform: none;
   /* General Mobile Devices: xsmall and small */ }
   @media (max-width: 991px) {
-    .sidebar {
+    .for-sidebar {
       width: 100%; } }
   @media (max-width: 767px) {
-    .sidebar {
+    .for-sidebar {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .sidebar {
+    .for-sidebar {
       width: 100%; } }
   @media (min-width: 992px) {
-    .sidebar {
+    .for-sidebar {
       width: 250px; } }
   @media (min-width: 1200px) {
-    .sidebar {
+    .for-sidebar {
       width: 250px; } }
   @media (min-width: 3000px) {
-    .sidebar {
+    .for-sidebar {
       width: 400px; } }
-  .sidebar a {
+  .for-sidebar a {
     font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
     color: #333;
     text-decoration: none;
     text-transform: none; }
-    .sidebar a:hover {
+    .for-sidebar a:hover {
       font: normal 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;
       text-decoration: none;
       text-transform: none; }
-  .sidebar .heading {
-    color: #ffffff; }
-  .sidebar .content {
-    color: #ffffff; }
 
 /*# sourceMappingURL=main.css.map */

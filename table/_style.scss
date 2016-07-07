@@ -1,12 +1,12 @@
-@if($for-output-style-all) {
-    .table {
+@if($for-output-table) {
+    .for-table {
         @include for-table();
-        .row {
+        .for-row {
             @include for-table-row;
-            .cell {
+            .for-cell {
                 @include for-table-cell;
             }
-            .cell-heading {
+            .for-cell-heading {
                 @include for-table-cell-heading;
             }
         }

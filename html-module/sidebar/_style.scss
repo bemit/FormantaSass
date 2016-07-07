@@ -1,5 +1,5 @@
-@if($for-output-style-html-part) {
-    .sidebar {
+@if($for-output-html-module-sidebar) {
+    .for-sidebar {
         background: $for-sidebar-background;
         background-size: $for-sidebar-background-size;
         
@@ -53,11 +53,11 @@
                 }
             }
         }
-        .heading {
-            color: #ffffff;
+        .for-heading {
+            //TODO
         }
-        .content {
-            color: #ffffff;
+        .for-content {
+            //TODO
         }
     }
 }
