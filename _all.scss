@@ -1,5 +1,5 @@
-@charset 'utf-8';
-/*! FormantaSassLibrary v0.0.2.0 | GNU LGPL v3 | http://formanta-sass.bemit.eu */
+@charset "utf-8";
+/*! FormantaSassLibrary v0.1.0.0 | GNU LGPL v3 | http://formanta-sass.bemit.eu */
 /*
     FormantaSassLibrary for basic config, mixins, formatting and typography.
     
@@ -14,11 +14,10 @@
 @import 'general-config/all';
 
 @import 'color/config';
-@import 'breakpoint/config';
+@import 'grid/config';
 @import 'animation/config';
 @import 'typography/config';
 @import 'button/config';
-@import 'grid/config';
 @import 'table/config';
 @import 'form/config';
 
@@ -28,11 +27,10 @@
 
 @import 'mixin';
 @import 'color/mixin';
-@import 'breakpoint/mixin';
+@import 'grid/mixin';
 @import 'animation/mixin';
 @import 'typography/mixin';
 @import 'button/mixin';
-@import 'grid/mixin';
 @import 'table/mixin';
 @import 'form/mixin';
 

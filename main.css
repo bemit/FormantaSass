@@ -1,13 +1,13 @@
 @charset "UTF-8";
-/*! FormantaSassLibrary v0.0.2.0 | GNU LGPL v3 | http://formanta-sass.bemit.eu */
+/*! FormantaSassLibrary v0.1.0.0 | GNU LGPL v3 | http://formanta-sass.bemit.eu */
 /*
     FormantaSassLibrary for basic config, mixins, formatting and typography.
     
     Part 1 of the FormantaLibrary for FrontendDevelopment.
 /*
-    Copyright  : ┬® 2016 Michael Becker, bemit UG (haftungsbeschr├ñnkt), bemit.eu
+    Copyright  : © 2016 Michael Becker, bemit UG (haftungsbeschränkt), bemit.eu
     Author     : Michael Becker
-    Company    : bemit UG (haftungsbeschr├ñnkt)
+    Company    : bemit UG (haftungsbeschränkt)
     Licence:   : GNU LGPL v3
 */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -2527,18 +2527,18 @@ textarea {
             $already-found: false;
         }
             //$media-str: $media-str + $tmp-media-str;
-        
+
         //width: $width;
     }
     $media-str: unquote($media-str);
     @media ($media-str) {
         @content;
     }
-    
+
     //    @include for-bp-individual('max100', 'min200', '300', '450'){
     //        color: #fff;
     //    }
-    
+
 }*/
 input[type=submit] {
   display: inline-block;
@@ -3175,26 +3175,21 @@ form input[type=week] {
     border-left: 1px solid #0044aa;
     border-radius: 0 0 0 0 / 0 0 0 0; }
 
-.for-container {
-  /* General Mobile Devices: xsmall and small */ }
-  @media (max-width: 991px) {
-    .for-container {
-      width: 100%; } }
-  @media (max-width: 767px) {
-    .for-container {
-      width: 100%; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .for-container {
-      width: 100%; } }
-  @media (min-width: 992px) {
-    .for-container {
-      width: 940px; } }
-  @media (min-width: 1200px) {
-    .for-container {
-      width: 1000px; } }
-  @media (min-width: 3000px) {
-    .for-container {
-      width: 1600px; } }
+@media (max-width: 767px) {
+  .for-container {
+    width: 100%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .for-container {
+    width: 100%; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .for-container {
+    width: 940px; } }
+@media (min-width: 1200px) and (max-width: 2999px) {
+  .for-container {
+    width: 1000px; } }
+@media (min-width: 3000px) {
+  .for-container {
+    width: 1600px; } }
 
 .for-content {
   background: #ffffff;
@@ -3203,21 +3198,17 @@ form input[type=week] {
   font-variant: normal;
   color: #333;
   text-decoration: none;
-  text-transform: none;
-  /* General Mobile Devices: xsmall and small */ }
-  @media (max-width: 991px) {
-    .for-content {
-      width: 100%; } }
+  text-transform: none; }
   @media (max-width: 767px) {
     .for-content {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .for-content {
       width: 100%; } }
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     .for-content {
       width: 690px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 2999px) {
     .for-content {
       width: 750px; } }
   @media (min-width: 3000px) {
@@ -3243,21 +3234,17 @@ form input[type=week] {
   font-variant: normal;
   color: #333;
   text-decoration: none;
-  text-transform: none;
-  /* General Mobile Devices: xsmall and small */ }
-  @media (max-width: 991px) {
-    .for-footer {
-      width: 100%; } }
+  text-transform: none; }
   @media (max-width: 767px) {
     .for-footer {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .for-footer {
       width: 100%; } }
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     .for-footer {
       width: 940px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 2999px) {
     .for-footer {
       width: 1000px; } }
   @media (min-width: 3000px) {
@@ -3283,21 +3270,17 @@ form input[type=week] {
   font-variant: normal;
   color: #333;
   text-decoration: none;
-  text-transform: none;
-  /* General Mobile Devices: xsmall and small */ }
-  @media (max-width: 991px) {
-    .for-header {
-      width: 100px; } }
+  text-transform: none; }
   @media (max-width: 767px) {
     .for-header {
       width: 100px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .for-header {
       width: 100px; } }
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     .for-header {
       width: 300px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 2999px) {
     .for-header {
       width: 300px; } }
   @media (min-width: 3000px) {
@@ -3323,21 +3306,17 @@ form input[type=week] {
   font-variant: normal;
   color: #0044aa;
   text-decoration: none;
-  text-transform: none;
-  /* General Mobile Devices: xsmall and small */ }
-  @media (max-width: 991px) {
-    .for-sidebar {
-      width: 100%; } }
+  text-transform: none; }
   @media (max-width: 767px) {
     .for-sidebar {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .for-sidebar {
       width: 100%; } }
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     .for-sidebar {
       width: 250px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 2999px) {
     .for-sidebar {
       width: 250px; } }
   @media (min-width: 3000px) {

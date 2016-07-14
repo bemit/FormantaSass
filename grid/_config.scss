@@ -1,0 +1,8 @@
+// Breakpoint
+// ##################################################
+
+$for-bp-lgx-min-size: 3000px !default;//e.g. 4k
+$for-bp-lg-min-size: 1200px !default;//e.g. desktop-pc (HD)
+$for-bp-md-min-size: 992px !default;//e.g. laptop/desktop-pc (SD)
+$for-bp-sm-min-size: 768px !default;//e.g. netbook/tablet
+$for-bp-smx-max-size: $for-bp-sm-min-size - 1 !default;//e.g. smartphone
