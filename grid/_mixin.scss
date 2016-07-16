@@ -1,35 +1,54 @@
-@mixin for-clear {
-    clear: both;
-}
-@mixin for-tenth {
-    width: 10%;
-}
-@mixin for-fifth {
-    width: 20%;
-}
-@mixin for-quarter {
-    width: 25%;
-}
-@mixin for-third {
-    width: 33.3%;
-}
-@mixin for-half {
-    width: 50%;
-}
-@mixin for-three-quarters {
-    width: 75%;
-}
-@mixin for-hundred {
-    width: 100%;
-}
-@mixin for-block {
-    display: block;
-}
-@mixin for-inline-block {
-    display: inline-block;
-}
-@mixin for-inline {
-    display: inline;
-}
 @import 'mixin-breakpoint';
 @import 'mixin-visibility';
+//
+// Fixed width blocks
+// DO NOT mistake it with for-col-* classes!
+//
+@mixin for-block-tenth {
+    width: 10%;
+}
+@mixin for-block-fifth {
+    width: 20%;
+}
+@mixin for-block-quarter {
+    width: 25%;
+}
+@mixin for-block-third {
+    width: 33.3%;
+}
+@mixin for-block-half {
+    width: 50%;
+}
+@mixin for-block-three-quarters {
+    width: 75%;
+}
+@mixin for-block-hundred {
+    width: 100%;
+}
+//
+// Display
+//
+@mixin for-display-block {
+    display: block;
+}
+@mixin for-display-inline-block {
+    display: inline-block;
+}
+@mixin for-display-inline {
+    display: inline;
+}
+//
+// Clear
+//
+@mixin for-clear-both {
+    clear: both;
+}
+@mixin for-clear-left {
+    clear: left;
+}
+@mixin for-clear-right {
+    clear: right;
+}
+//
+// Columns
+//

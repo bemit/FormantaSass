@@ -1,35 +1,177 @@
-@if($for-output-grid) {
-    .for-clear {
-        @include for-clear;
+@if ($for-output-grid) {
+    //
+    // Fixed width blocks
+    // DO NOT mistake it with for-col-* classes!
+    //
+    .for-block-tenth {
+        @include for-block-tenth;
     }
-    .for-tenth {
-        @include for-tenth;
+    .for-block-fifth {
+        @include for-block-fifth;
     }
-    .for-fifth {
-        @include for-fifth;
+    .for-block-quarter {
+        @include for-block-quarter;
     }
-    .for-quarter {
-        @include for-quarter;
+    .for-block-third {
+        @include for-block-third;
     }
-    .for-third {
-        @include for-third;
+    .for-block-half {
+        @include for-block-half;
     }
-    .for-half {
-        @include for-half;
+    .for-block-three-quarters {
+        @include for-block-three-quarters;
     }
-    .for-three-quarters {
-        @include for-three-quarters;
+    .for-block-hundred {
+        @include for-block-hundred;
     }
-    .for-hundred {
-        @include for-hundred;
+    //
+    // Display
+    //
+    .for-display-block {
+        @include for-display-block;
     }
-    .for-block {
-        @include for-block;
+    .for-display-inline-block {
+        @include for-display-inline-block;
     }
-    .for-inline-block {
-        @include for-inline-block;
+    .for-display-inline {
+        @include for-display-inline;
     }
-    .for-inline {
-        @include for-inline;
+    //
+    // Clear
+    //
+    .for-clear-both {
+        @include for-clear-both;
+    }
+    .for-clear-left {
+        @include for-clear-left;
+    }
+    .for-clear-right {
+        @include for-clear-right;
+    }
+    //
+    // Columns
+    // You could expand it further than 20 column! Insetr your code directly after the formanta import with using the below codes (modifing needed)
+    //
+    @include for-bp-smx {
+        @if (0 < $for-col-qty){
+            .for-col-smx-1 {
+                width: $for-col-basic-size * 1;
+            }
+        }
+        @if (1 < $for-col-qty){
+            .for-col-smx-2 {
+                width: $for-col-basic-size * 2;
+            }
+        }
+        @if (2 < $for-col-qty){
+            .for-col-smx-3 {
+                width: $for-col-basic-size * 3;
+            }
+        }
+        @if (3 < $for-col-qty){
+            .for-col-smx-4 {
+                width: $for-col-basic-size * 4;
+            }
+        }
+        @if (4 < $for-col-qty){
+            .for-col-smx-5 {
+                width: $for-col-basic-size * 5;
+            }
+        }
+        @if (5 < $for-col-qty){
+            .for-col-smx-6 {
+                width: $for-col-basic-size * 6;
+            }
+        }
+        @if (6 < $for-col-qty){
+            .for-col-smx-7 {
+                width: $for-col-basic-size * 7;
+            }
+        }
+        @if (7 < $for-col-qty){
+            .for-col-smx-8 {
+                width: $for-col-basic-size * 8;
+            }
+        }
+        @if (8 < $for-col-qty){
+            .for-col-smx-9 {
+                width: $for-col-basic-size * 9;
+            }
+        }
+        @if (9 < $for-col-qty){
+            .for-col-smx-10 {
+                width: $for-col-basic-size * 10;
+            }
+        }
+        @if (10 < $for-col-qty){
+            .for-col-smx-11 {
+                width: $for-col-basic-size * 11;
+            }
+        }
+        @if (11 < $for-col-qty){
+            .for-col-smx-12 {
+                width: $for-col-basic-size * 12;
+            }
+        }
+        @if (12 < $for-col-qty){
+            .for-col-smx-13 {
+                width: $for-col-basic-size * 13;
+            }
+        }
+        @if (13 < $for-col-qty){
+            .for-col-smx-14 {
+                width: $for-col-basic-size * 14;
+            }
+        }
+        @if (14 < $for-col-qty){
+            .for-col-smx-15 {
+                width: $for-col-basic-size * 15;
+            }
+        }
+        @if (15 < $for-col-qty){
+            .for-col-smx-16 {
+                width: $for-col-basic-size * 16;
+            }
+        }
+        @if (16 < $for-col-qty){
+            .for-col-smx-17 {
+                width: $for-col-basic-size * 17;
+            }
+        }
+        @if (17 < $for-col-qty){
+            .for-col-smx-18 {
+                width: $for-col-basic-size * 18;
+            }
+        }
+        @if (18 < $for-col-qty){
+            .for-col-smx-19 {
+                width: $for-col-basic-size * 19;
+            }
+        }
+        @if (19 < $for-col-qty){
+            .for-col-smx-20 {
+                width: $for-col-basic-size * 20;
+            }
+        }
+    }
+    @include for-bp-sm {
+        .for-col-sm {
+
+        }
+    }
+    @include for-bp-md {
+        .for-col-md {
+
+        }
+    }
+    @include for-bp-lg {
+        .for-col-lg {
+
+        }
+    }
+    @include for-bp-lgx {
+        .for-col-lgx {
+
+        }
     }
 }
