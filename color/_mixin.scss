@@ -1,13 +1,17 @@
-// Keep as Placeholder for further development
-@mixin gradient() {
+
+@mixin linear-gradient-2-color($first-color, $second-color, $angular) {
     // Old browser
-    background: #d2ff52;
+    background: $first-color;
     // FF < 15
-    background: -moz-linear-gradient(45deg, #d2ff52 0%, #37bfba 100%);
+    background: -moz-linear-gradient($angular, $first-color 0%, $second-color 100%);
     // Chrome < 25, Safari < 6
-    background: -webkit-linear-gradient(45deg, #d2ff52 0%, #37bfba 100%);
+    background: -webkit-linear-gradient($angular, $first-color 0%, $second-color 100%);
     // Standard
-    background: linear-gradient(45deg, #d2ff52 0%, #37bfba 100%);
+    background: linear-gradient($angular, $first-color 0%, $second-color 100%);
     // IE 6-9
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#37bfba', GradientType=1);
+    $gradientType: 1;
+    @if(0% < $angular OR 0% > $angular) {
+        $gradientType: 0;
+    }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'$first-color\', endColorstr=\'$second-color\', GradientType=1);
 }
