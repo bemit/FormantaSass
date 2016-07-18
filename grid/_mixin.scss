@@ -7,48 +7,659 @@
 @mixin for-block-tenth {
     width: 10%;
 }
+
 @mixin for-block-fifth {
     width: 20%;
 }
+
 @mixin for-block-quarter {
     width: 25%;
 }
+
 @mixin for-block-third {
     width: 33.3%;
 }
+
 @mixin for-block-half {
     width: 50%;
 }
+
 @mixin for-block-three-quarters {
     width: 75%;
 }
+
 @mixin for-block-hundred {
     width: 100%;
 }
+
 //
 // Display
 //
 @mixin for-display-block {
     display: block;
 }
+
 @mixin for-display-inline-block {
     display: inline-block;
 }
+
 @mixin for-display-inline {
     display: inline;
 }
+
 //
 // Clear
 //
 @mixin for-clear-both {
     clear: both;
 }
+
 @mixin for-clear-left {
     clear: left;
 }
+
 @mixin for-clear-right {
     clear: right;
 }
+
 //
 // Columns
 //
+@mixin for-col($number: $for-col-basic-size) {
+    width: $for-col-basic-size * $number;
+}
+
+// Cols for smx
+@mixin for-col-smx {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+@mixin for-col-smx-1 {
+    @include for-col(1);
+}
+
+@mixin for-col-smx-2 {
+    @include for-col(2);
+}
+
+@mixin for-col-smx-3 {
+    @include for-col(3);
+}
+
+@mixin for-col-smx-4 {
+    @include for-col(4);
+}
+
+@mixin for-col-smx-5 {
+    @include for-col(5);
+}
+
+@mixin for-col-smx-6 {
+    @include for-col(6);
+}
+
+@mixin for-col-smx-7 {
+    @include for-col(7);
+}
+
+@mixin for-col-smx-8 {
+    @include for-col(8);
+}
+
+@mixin for-col-smx-9 {
+    @include for-col(9);
+}
+
+@mixin for-col-smx-10 {
+    @include for-col(10);
+}
+
+@mixin for-col-smx-11 {
+    @include for-col(11);
+}
+
+@mixin for-col-smx-12 {
+    @include for-col(12);
+}
+
+@mixin for-col-smx-13 {
+    @include for-col(13);
+}
+
+@mixin for-col-smx-14 {
+    @include for-col(14);
+}
+
+@mixin for-col-smx-15 {
+    @include for-col(15);
+}
+
+@mixin for-col-smx-16 {
+    @include for-col(16);
+}
+
+@mixin for-col-smx-17 {
+    @include for-col(17);
+}
+
+@mixin for-col-smx-18 {
+    @include for-col(18);
+}
+
+@mixin for-col-smx-19 {
+    @include for-col(19);
+}
+
+@mixin for-col-smx-20 {
+    @include for-col(20);
+}
+
+// Cols for sm
+@mixin for-col-sm {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+@mixin for-col-sm-1 {
+    @include for-bp-sm-up {
+        @include for-col(1);
+    }
+}
+
+@mixin for-col-sm-2 {
+    @include for-bp-sm-up {
+        @include for-col(2);
+    }
+}
+
+@mixin for-col-sm-3 {
+    @include for-bp-sm-up {
+        @include for-col(3);
+    }
+}
+
+@mixin for-col-sm-4 {
+    @include for-bp-sm-up {
+        @include for-col(4);
+    }
+}
+
+@mixin for-col-sm-5 {
+    @include for-bp-sm-up {
+        @include for-col(5);
+    }
+}
+
+@mixin for-col-sm-6 {
+    @include for-bp-sm-up {
+        @include for-col(6);
+    }
+}
+
+@mixin for-col-sm-7 {
+    @include for-bp-sm-up {
+        @include for-col(7);
+    }
+}
+
+@mixin for-col-sm-8 {
+    @include for-bp-sm-up {
+        @include for-col(8);
+    }
+}
+
+@mixin for-col-sm-9 {
+    @include for-bp-sm-up {
+        @include for-col(9);
+    }
+}
+
+@mixin for-col-sm-10 {
+    @include for-bp-sm-up {
+        @include for-col(10);
+    }
+}
+
+@mixin for-col-sm-11 {
+    @include for-bp-sm-up {
+        @include for-col(11);
+    }
+}
+
+@mixin for-col-sm-12 {
+    @include for-bp-sm-up {
+        @include for-col(12);
+    }
+}
+
+@mixin for-col-sm-13 {
+    @include for-bp-sm-up {
+        @include for-col(13);
+    }
+}
+
+@mixin for-col-sm-14 {
+    @include for-bp-sm-up {
+        @include for-col(14);
+    }
+}
+
+@mixin for-col-sm-15 {
+    @include for-bp-sm-up {
+        @include for-col(15);
+    }
+}
+
+@mixin for-col-sm-16 {
+    @include for-bp-sm-up {
+        @include for-col(16);
+    }
+}
+
+@mixin for-col-sm-17 {
+    @include for-bp-sm-up {
+        @include for-col(17);
+    }
+}
+
+@mixin for-col-sm-18 {
+    @include for-bp-sm-up {
+        @include for-col(18);
+    }
+}
+
+@mixin for-col-sm-19 {
+    @include for-bp-sm-up {
+        @include for-col(19);
+    }
+}
+
+@mixin for-col-sm-20 {
+    @include for-bp-sm-up {
+        @include for-col(20);
+    }
+}
+
+// Cols for md
+@mixin for-col-md {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+@mixin for-col-md-1 {
+    @include for-bp-md-up {
+        @include for-col(1);
+    }
+}
+
+@mixin for-col-md-2 {
+    @include for-bp-md-up {
+        @include for-col(2);
+    }
+}
+
+@mixin for-col-md-3 {
+    @include for-bp-md-up {
+        @include for-col(3);
+    }
+}
+
+@mixin for-col-md-4 {
+    @include for-bp-md-up {
+        @include for-col(4);
+    }
+}
+
+@mixin for-col-md-5 {
+    @include for-bp-md-up {
+        @include for-col(5);
+    }
+}
+
+@mixin for-col-md-6 {
+    @include for-bp-md-up {
+        @include for-col(6);
+    }
+}
+
+@mixin for-col-md-7 {
+    @include for-bp-md-up {
+        @include for-col(7);
+    }
+}
+
+@mixin for-col-md-8 {
+    @include for-bp-md-up {
+        @include for-col(8);
+    }
+}
+
+@mixin for-col-md-9 {
+    @include for-bp-md-up {
+        @include for-col(9);
+    }
+}
+
+@mixin for-col-md-10 {
+    @include for-bp-md-up {
+        @include for-col(10);
+    }
+}
+
+@mixin for-col-md-11 {
+    @include for-bp-md-up {
+        @include for-col(11);
+    }
+}
+
+@mixin for-col-md-12 {
+    @include for-bp-md-up {
+        @include for-col(12);
+    }
+}
+
+@mixin for-col-md-13 {
+    @include for-bp-md-up {
+        @include for-col(13);
+    }
+}
+
+@mixin for-col-md-14 {
+    @include for-bp-md-up {
+        @include for-col(14);
+    }
+}
+
+@mixin for-col-md-15 {
+    @include for-bp-md-up {
+        @include for-col(15);
+    }
+}
+
+@mixin for-col-md-16 {
+    @include for-bp-md-up {
+        @include for-col(16);
+    }
+}
+
+@mixin for-col-md-17 {
+    @include for-bp-md-up {
+        @include for-col(17);
+    }
+}
+
+@mixin for-col-md-18 {
+    @include for-bp-md-up {
+        @include for-col(18);
+    }
+}
+
+@mixin for-col-md-19 {
+    @include for-bp-md-up {
+        @include for-col(19);
+    }
+}
+
+@mixin for-col-md-20 {
+    @include for-bp-md-up {
+        @include for-col(20);
+    }
+}
+
+// Cols for lg
+@mixin for-col-lg {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+@mixin for-col-lg-1 {
+    @include for-bp-lg-up {
+        @include for-col(1);
+    }
+}
+
+@mixin for-col-lg-2 {
+    @include for-bp-lg-up {
+        @include for-col(2);
+    }
+}
+
+@mixin for-col-lg-3 {
+    @include for-bp-lg-up {
+        @include for-col(3);
+    }
+}
+
+@mixin for-col-lg-4 {
+    @include for-bp-lg-up {
+        @include for-col(4);
+    }
+}
+
+@mixin for-col-lg-5 {
+    @include for-bp-lg-up {
+        @include for-col(5);
+    }
+}
+
+@mixin for-col-lg-6 {
+    @include for-bp-lg-up {
+        @include for-col(6);
+    }
+}
+
+@mixin for-col-lg-7 {
+    @include for-bp-lg-up {
+        @include for-col(7);
+    }
+}
+
+@mixin for-col-lg-8 {
+    @include for-bp-lg-up {
+        @include for-col(8);
+    }
+}
+
+@mixin for-col-lg-9 {
+    @include for-bp-lg-up {
+        @include for-col(9);
+    }
+}
+
+@mixin for-col-lg-10 {
+    @include for-bp-lg-up {
+        @include for-col(10);
+    }
+}
+
+@mixin for-col-lg-11 {
+    @include for-bp-lg-up {
+        @include for-col(11);
+    }
+}
+
+@mixin for-col-lg-12 {
+    @include for-bp-lg-up {
+        @include for-col(12);
+    }
+}
+
+@mixin for-col-lg-13 {
+    @include for-bp-lg-up {
+        @include for-col(13);
+    }
+}
+
+@mixin for-col-lg-14 {
+    @include for-bp-lg-up {
+        @include for-col(14);
+    }
+}
+
+@mixin for-col-lg-15 {
+    @include for-bp-lg-up {
+        @include for-col(15);
+    }
+}
+
+@mixin for-col-lg-16 {
+    @include for-bp-lg-up {
+        @include for-col(16);
+    }
+}
+
+@mixin for-col-lg-17 {
+    @include for-bp-lg-up {
+        @include for-col(17);
+    }
+}
+
+@mixin for-col-lg-18 {
+    @include for-bp-lg-up {
+        @include for-col(18);
+    }
+}
+
+@mixin for-col-lg-19 {
+    @include for-bp-lg-up {
+        @include for-col(19);
+    }
+}
+
+@mixin for-col-lg-20 {
+    @include for-bp-lg-up {
+        @include for-col(20);
+    }
+}
+
+// Cols for lgx
+@mixin for-col-lgx {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+@mixin for-col-lgx-1 {
+    @include for-bp-lgx {
+        @include for-col(1);
+    }
+}
+
+@mixin for-col-lgx-2 {
+    @include for-bp-lgx {
+        @include for-col(2);
+    }
+}
+
+@mixin for-col-lgx-3 {
+    @include for-bp-lgx {
+        @include for-col(3);
+    }
+}
+
+@mixin for-col-lgx-4 {
+    @include for-bp-lgx {
+        @include for-col(4);
+    }
+}
+
+@mixin for-col-lgx-5 {
+    @include for-bp-lgx {
+        @include for-col(5);
+    }
+}
+
+@mixin for-col-lgx-6 {
+    @include for-bp-lgx {
+        @include for-col(6);
+    }
+}
+
+@mixin for-col-lgx-7 {
+    @include for-bp-lgx {
+        @include for-col(7);
+    }
+}
+
+@mixin for-col-lgx-8 {
+    @include for-bp-lgx {
+        @include for-col(8);
+    }
+}
+
+@mixin for-col-lgx-9 {
+    @include for-bp-lgx {
+        @include for-col(9);
+    }
+}
+
+@mixin for-col-lgx-10 {
+    @include for-bp-lgx {
+        @include for-col(10);
+    }
+}
+
+@mixin for-col-lgx-11 {
+    @include for-bp-lgx {
+        @include for-col(11);
+    }
+}
+
+@mixin for-col-lgx-12 {
+    @include for-bp-lgx {
+        @include for-col(12);
+    }
+}
+
+@mixin for-col-lgx-13 {
+    @include for-bp-lgx {
+        @include for-col(13);
+    }
+}
+
+@mixin for-col-lgx-14 {
+    @include for-bp-lgx {
+        @include for-col(14);
+    }
+}
+
+@mixin for-col-lgx-15 {
+    @include for-bp-lgx {
+        @include for-col(15);
+    }
+}
+
+@mixin for-col-lgx-16 {
+    @include for-bp-lgx {
+        @include for-col(16);
+    }
+}
+
+@mixin for-col-lgx-17 {
+    @include for-bp-lgx {
+        @include for-col(17);
+    }
+}
+
+@mixin for-col-lgx-18 {
+    @include for-bp-lgx {
+        @include for-col(18);
+    }
+}
+
+@mixin for-col-lgx-19 {
+    @include for-bp-lgx {
+        @include for-col(19);
+    }
+}
+
+@mixin for-col-lgx-20 {
+    @include for-bp-lgx {
+        @include for-col(20);
+    }
+}
