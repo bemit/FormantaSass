@@ -1,5 +1,5 @@
 
-@mixin linear-gradient-2-color($first-color, $second-color, $angular) {
+@mixin for-linear-gradient-2-color($first-color, $second-color, $angular) {
     // Old browser
     background: $first-color;
     // FF < 15
@@ -10,8 +10,8 @@
     background: linear-gradient($angular, $first-color 0%, $second-color 100%);
     // IE 6-9
     $gradientType: 1;
-    @if(0% < $angular OR 0% > $angular) {
+    @if(0 < $angular OR 0 > $angular) {
         $gradientType: 0;
     }
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\'$first-color\', endColorstr=\'$second-color\', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$first-color}", endColorstr="#{$second-color}" GradientType=1);
 }
