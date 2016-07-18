@@ -1,1 +1,13 @@
 // Keep as Placeholder for further development
+@mixin gradient() {
+    // Old browser
+    background: #d2ff52;
+    // FF < 15
+    background: -moz-linear-gradient(45deg, #d2ff52 0%, #37bfba 100%);
+    // Chrome < 25, Safari < 6
+    background: -webkit-linear-gradient(45deg, #d2ff52 0%, #37bfba 100%);
+    // Standard
+    background: linear-gradient(45deg, #d2ff52 0%, #37bfba 100%);
+    // IE 6-9
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff52', endColorstr='#37bfba', GradientType=1);
+}
