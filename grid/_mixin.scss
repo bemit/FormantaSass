@@ -1,4 +1,4 @@
-//  Include this mixin on a container if its children are all floated, to give the container a proper height.
+// Include this mixin on a container if its children are all floated, to give the container a proper height.
 @mixin for-clearfix {
     &:before,
     &:after {
@@ -9,6 +9,13 @@
     &:after {
         clear: both;
     }
+}
+
+// Will position elements vertical aligned middle
+@mixin for-vertical-align($position: relative) {
+    top: 50%;
+    position: $position;
+    @include for-transform(perspective(1px) translateY(-50%));
 }
 
 @import 'mixin-breakpoint';

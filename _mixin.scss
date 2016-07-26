@@ -5,6 +5,13 @@
     border-radius: $radius;
 }
 
+@mixin for-transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}
+
 @mixin for-shadow($args...) {
     box-shadow: $args;
     -moz-box-shadow: $args;
