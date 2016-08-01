@@ -5,6 +5,13 @@
     border-radius: $radius;
 }
 
+@mixin for-transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}
+
 @mixin for-shadow($args...) {
     box-shadow: $args;
     -moz-box-shadow: $args;
@@ -26,17 +33,4 @@
     clip: rect(0 0 0 0);
     clip: rect(0, 0, 0, 0);
     position: absolute;
-}
-
-//  Include this mixin on a container if its children are all floated, to give the container a proper height.
-@mixin for-clearfix {
-    &:before,
-    &:after {
-        content: ' ';
-        display: table;
-    }
-
-    &:after {
-        clear: both;
-    }
 }

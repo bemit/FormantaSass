@@ -1,1 +1,17 @@
-// Keep as Placeholder for further development
+
+@mixin for-linear-gradient-2-color($first-color, $second-color, $angular) {
+    // Old browser
+    background: $first-color;
+    // FF < 15
+    background: -moz-linear-gradient($angular, $first-color 0%, $second-color 100%);
+    // Chrome < 25, Safari < 6
+    background: -webkit-linear-gradient($angular, $first-color 0%, $second-color 100%);
+    // Standard
+    background: linear-gradient($angular, $first-color 0%, $second-color 100%);
+    // IE 6-9
+    $gradientType: 1;
+    @if(0 < $angular OR 0 > $angular) {
+        $gradientType: 0;
+    }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$first-color}", endColorstr="#{$second-color}" GradientType=1);
+}

@@ -7,24 +7,26 @@
 }
 
 @mixin for-fade($to-opacity: null, $duration: null, $timing-function: null, $delay: null) {
-    @if($duration) {
+    @if ($duration) {
         $duration: $duration;
     } @else {
         $duration: $for-animation-fade-duration;
     }
-    @if($timing-function) {
+    @if ($timing-function) {
         $timing-function: $timing-function;
     } @else {
         $timing-function: $for-animation-fade-timing-function;
     }
-    @if($delay) {
+    @if ($delay) {
         $delay: $delay;
     } @else {
-        $delay: $for-animation-fade-delay;
+        @if ($for-animation-fade-delay > 0) {
+            $delay: $for-animation-fade-delay;
+        }
     }
     @include for-transition(opacity $duration $timing-function $delay);
     &:hover {
-        @if($to-opacity) {
+        @if ($to-opacity) {
             $to-opacity: $to-opacity;
         } @else {
             $to-opacity: $for-animation-fade-to-opacity;
