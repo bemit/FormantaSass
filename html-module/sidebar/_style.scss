@@ -1,5 +1,5 @@
 @if($for-output-html-module-sidebar) {
-    .for-sidebar {
+    .#{$for-output-prefix}sidebar {
         background: $for-sidebar-background;
         background-size: $for-sidebar-background-size;
         
@@ -49,10 +49,10 @@
                 }
             }
         }
-        .for-heading {
+        .#{$for-output-prefix}heading {
             //TODO
         }
-        .for-content {
+        .#{$for-output-prefix}content {
             //TODO
         }
     }

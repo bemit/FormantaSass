@@ -1,5 +1,5 @@
 @if($for-output-html-module-content) {
-    .for-content {
+    .#{$for-output-prefix}content {
         background: $for-content-background;
         background-size: $for-content-background-size;
         

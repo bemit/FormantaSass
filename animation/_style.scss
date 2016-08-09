@@ -1,5 +1,5 @@
 @if($for-output-animation) {
-    .for-fade {
+    .#{$for-output-prefix}fade {
         @include for-fade();
     }
 }

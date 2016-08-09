@@ -1,5 +1,5 @@
 @if($for-output-html-module-container) {
-    .for-container {
+    .#{$for-output-prefix}container {
         @include for-bp-smx {
             width: $for-container-xsmall-width;
         }
