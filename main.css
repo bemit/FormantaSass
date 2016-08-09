@@ -2545,6 +2545,10 @@ textarea {
     //    }
 
 }*/
+/**
+    With $number you specify what column you want to be calculated
+    with $col-qty you could overwrite the standard column qty grid, so you could do use 1 out of 5 columns instead of the standard "4,8" out of 24
+**/
 input[type=submit] {
   display: inline-block;
   font: normal 400 12pt/normal Helvetica, sans-serif;
@@ -2771,332 +2775,298 @@ h6 {
 .for-clear-right {
   clear: right; }
 
-.for-col-smx-1,
-.for-col-smx-2,
-.for-col-smx-3,
-.for-col-smx-4,
-.for-col-smx-5,
-.for-col-smx-6,
-.for-col-smx-7,
-.for-col-smx-8,
-.for-col-smx-9,
-.for-col-smx-10,
-.for-col-smx-11,
-.for-col-smx-12,
-.for-col-smx-14,
-.for-col-smx-15,
-.for-col-smx-16,
-.for-col-smx-17,
-.for-col-smx-18,
-.for-col-smx-19,
-.for-col-smx-20,
-.for-col-sm-1,
-.for-col-sm-2,
-.for-col-sm-3,
-.for-col-sm-4,
-.for-col-sm-5,
-.for-col-sm-6,
-.for-col-sm-7,
-.for-col-sm-8,
-.for-col-sm-9,
-.for-col-sm-10,
-.for-col-sm-11,
-.for-col-sm-12,
-.for-col-sm-14,
-.for-col-sm-15,
-.for-col-sm-16,
-.for-col-sm-17,
-.for-col-sm-18,
-.for-col-sm-19,
-.for-col-sm-20,
-.for-col-md-1,
-.for-col-md-2,
-.for-col-md-3,
-.for-col-md-4,
-.for-col-md-5,
-.for-col-md-6,
-.for-col-md-7,
-.for-col-md-8,
-.for-col-md-9,
-.for-col-md-10,
-.for-col-md-11,
-.for-col-md-12,
-.for-col-md-14,
-.for-col-md-15,
-.for-col-md-16,
-.for-col-md-17,
-.for-col-md-18,
-.for-col-md-19,
-.for-col-md-20,
-.for-col-lg-1,
-.for-col-lg-2,
-.for-col-lg-3,
-.for-col-lg-4,
-.for-col-lg-5,
-.for-col-lg-6,
-.for-col-lg-7,
-.for-col-lg-8,
-.for-col-lg-9,
-.for-col-lg-10,
-.for-col-lg-11,
-.for-col-lg-12,
-.for-col-lg-14,
-.for-col-lg-15,
-.for-col-lg-16,
-.for-col-lg-17,
-.for-col-lg-18,
-.for-col-lg-19,
-.for-col-lg-20,
-.for-col-lgx-1,
-.for-col-lgx-2,
-.for-col-lgx-3,
-.for-col-lgx-4,
-.for-col-lgx-5,
-.for-col-lgx-6,
-.for-col-lgx-7,
-.for-col-lgx-8,
-.for-col-lgx-9,
-.for-col-lgx-10,
-.for-col-lgx-11,
-.for-col-lgx-12,
-.for-col-lgx-14,
-.for-col-lgx-15,
-.for-col-lgx-16,
-.for-col-lgx-17,
-.for-col-lgx-18,
-.for-col-lgx-19,
-.for-col-lgx-20 {
+.for-col-smx-1, .for-col-sm-1, .for-col-md-1, .for-col-lg-1, .for-col-lgx-1, .for-col-smx-2, .for-col-sm-2, .for-col-md-2, .for-col-lg-2, .for-col-lgx-2, .for-col-smx-3, .for-col-sm-3, .for-col-md-3, .for-col-lg-3, .for-col-lgx-3, .for-col-smx-4, .for-col-sm-4, .for-col-md-4, .for-col-lg-4, .for-col-lgx-4, .for-col-smx-5, .for-col-sm-5, .for-col-md-5, .for-col-lg-5, .for-col-lgx-5, .for-col-smx-6, .for-col-sm-6, .for-col-md-6, .for-col-lg-6, .for-col-lgx-6, .for-col-smx-7, .for-col-sm-7, .for-col-md-7, .for-col-lg-7, .for-col-lgx-7, .for-col-smx-8, .for-col-sm-8, .for-col-md-8, .for-col-lg-8, .for-col-lgx-8, .for-col-smx-9, .for-col-sm-9, .for-col-md-9, .for-col-lg-9, .for-col-lgx-9, .for-col-smx-10, .for-col-sm-10, .for-col-md-10, .for-col-lg-10, .for-col-lgx-10, .for-col-smx-11, .for-col-sm-11, .for-col-md-11, .for-col-lg-11, .for-col-lgx-11, .for-col-smx-12, .for-col-sm-12, .for-col-md-12, .for-col-lg-12, .for-col-lgx-12, .for-col-smx-13, .for-col-sm-13, .for-col-md-13, .for-col-lg-13, .for-col-lgx-13, .for-col-smx-14, .for-col-sm-14, .for-col-md-14, .for-col-lg-14, .for-col-lgx-14, .for-col-smx-15, .for-col-sm-15, .for-col-md-15, .for-col-lg-15, .for-col-lgx-15, .for-col-smx-16, .for-col-sm-16, .for-col-md-16, .for-col-lg-16, .for-col-lgx-16, .for-col-smx-17, .for-col-sm-17, .for-col-md-17, .for-col-lg-17, .for-col-lgx-17, .for-col-smx-18, .for-col-sm-18, .for-col-md-18, .for-col-lg-18, .for-col-lgx-18, .for-col-smx-19, .for-col-sm-19, .for-col-md-19, .for-col-lg-19, .for-col-lgx-19, .for-col-smx-20, .for-col-sm-20, .for-col-md-20, .for-col-lg-20, .for-col-lgx-20, .for-col-smx-21, .for-col-sm-21, .for-col-md-21, .for-col-lg-21, .for-col-lgx-21, .for-col-smx-22, .for-col-sm-22, .for-col-md-22, .for-col-lg-22, .for-col-lgx-22, .for-col-smx-23, .for-col-sm-23, .for-col-md-23, .for-col-lg-23, .for-col-lgx-23, .for-col-smx-24, .for-col-sm-24, .for-col-md-24, .for-col-lg-24, .for-col-lgx-24 {
   position: relative;
   min-height: 1px;
   float: left; }
 
 .for-col-smx-1 {
-  width: 8.33333%; }
+  width: 4.16667%; }
 
 .for-col-smx-2 {
-  width: 16.66667%; }
+  width: 8.33333%; }
 
 .for-col-smx-3 {
-  width: 25%; }
+  width: 12.5%; }
 
 .for-col-smx-4 {
-  width: 33.33333%; }
+  width: 16.66667%; }
 
 .for-col-smx-5 {
-  width: 41.66667%; }
+  width: 20.83333%; }
 
 .for-col-smx-6 {
-  width: 50%; }
+  width: 25%; }
 
 .for-col-smx-7 {
-  width: 58.33333%; }
+  width: 29.16667%; }
 
 .for-col-smx-8 {
-  width: 66.66667%; }
+  width: 33.33333%; }
 
 .for-col-smx-9 {
-  width: 75%; }
+  width: 37.5%; }
 
 .for-col-smx-10 {
-  width: 83.33333%; }
+  width: 41.66667%; }
 
 .for-col-smx-11 {
-  width: 91.66667%; }
+  width: 45.83333%; }
 
 .for-col-smx-12 {
+  width: 50%; }
+
+.for-col-smx-13 {
+  width: 54.16667%; }
+
+.for-col-smx-14 {
+  width: 58.33333%; }
+
+.for-col-smx-15 {
+  width: 62.5%; }
+
+.for-col-smx-16 {
+  width: 66.66667%; }
+
+.for-col-smx-17 {
+  width: 70.83333%; }
+
+.for-col-smx-18 {
+  width: 75%; }
+
+.for-col-smx-19 {
+  width: 79.16667%; }
+
+.for-col-smx-20 {
+  width: 83.33333%; }
+
+.for-col-smx-21 {
+  width: 87.5%; }
+
+.for-col-smx-22 {
+  width: 91.66667%; }
+
+.for-col-smx-23 {
+  width: 95.83333%; }
+
+.for-col-smx-24 {
   width: 100%; }
 
 @media (min-width: 768px) {
   .for-col-sm-1 {
-    width: 8.33333%; } }
-
-@media (min-width: 768px) {
+    width: 4.16667%; }
   .for-col-sm-2 {
-    width: 16.66667%; } }
-
-@media (min-width: 768px) {
+    width: 8.33333%; }
   .for-col-sm-3 {
-    width: 25%; } }
-
-@media (min-width: 768px) {
+    width: 12.5%; }
   .for-col-sm-4 {
-    width: 33.33333%; } }
-
-@media (min-width: 768px) {
+    width: 16.66667%; }
   .for-col-sm-5 {
-    width: 41.66667%; } }
-
-@media (min-width: 768px) {
+    width: 20.83333%; }
   .for-col-sm-6 {
-    width: 50%; } }
-
-@media (min-width: 768px) {
+    width: 25%; }
   .for-col-sm-7 {
-    width: 58.33333%; } }
-
-@media (min-width: 768px) {
+    width: 29.16667%; }
   .for-col-sm-8 {
-    width: 66.66667%; } }
-
-@media (min-width: 768px) {
+    width: 33.33333%; }
   .for-col-sm-9 {
-    width: 75%; } }
-
-@media (min-width: 768px) {
+    width: 37.5%; }
   .for-col-sm-10 {
-    width: 83.33333%; } }
-
-@media (min-width: 768px) {
+    width: 41.66667%; }
   .for-col-sm-11 {
-    width: 91.66667%; } }
-
-@media (min-width: 768px) {
+    width: 45.83333%; }
   .for-col-sm-12 {
+    width: 50%; }
+  .for-col-sm-13 {
+    width: 54.16667%; }
+  .for-col-sm-14 {
+    width: 58.33333%; }
+  .for-col-sm-15 {
+    width: 62.5%; }
+  .for-col-sm-16 {
+    width: 66.66667%; }
+  .for-col-sm-17 {
+    width: 70.83333%; }
+  .for-col-sm-18 {
+    width: 75%; }
+  .for-col-sm-19 {
+    width: 79.16667%; }
+  .for-col-sm-20 {
+    width: 83.33333%; }
+  .for-col-sm-21 {
+    width: 87.5%; }
+  .for-col-sm-22 {
+    width: 91.66667%; }
+  .for-col-sm-23 {
+    width: 95.83333%; }
+  .for-col-sm-24 {
     width: 100%; } }
 
 @media (min-width: 992px) {
   .for-col-md-1 {
-    width: 8.33333%; } }
-
-@media (min-width: 992px) {
+    width: 4.16667%; }
   .for-col-md-2 {
-    width: 16.66667%; } }
-
-@media (min-width: 992px) {
+    width: 8.33333%; }
   .for-col-md-3 {
-    width: 25%; } }
-
-@media (min-width: 992px) {
+    width: 12.5%; }
   .for-col-md-4 {
-    width: 33.33333%; } }
-
-@media (min-width: 992px) {
+    width: 16.66667%; }
   .for-col-md-5 {
-    width: 41.66667%; } }
-
-@media (min-width: 992px) {
+    width: 20.83333%; }
   .for-col-md-6 {
-    width: 50%; } }
-
-@media (min-width: 992px) {
+    width: 25%; }
   .for-col-md-7 {
-    width: 58.33333%; } }
-
-@media (min-width: 992px) {
+    width: 29.16667%; }
   .for-col-md-8 {
-    width: 66.66667%; } }
-
-@media (min-width: 992px) {
+    width: 33.33333%; }
   .for-col-md-9 {
-    width: 75%; } }
-
-@media (min-width: 992px) {
+    width: 37.5%; }
   .for-col-md-10 {
-    width: 83.33333%; } }
-
-@media (min-width: 992px) {
+    width: 41.66667%; }
   .for-col-md-11 {
-    width: 91.66667%; } }
-
-@media (min-width: 992px) {
+    width: 45.83333%; }
   .for-col-md-12 {
+    width: 50%; }
+  .for-col-md-13 {
+    width: 54.16667%; }
+  .for-col-md-14 {
+    width: 58.33333%; }
+  .for-col-md-15 {
+    width: 62.5%; }
+  .for-col-md-16 {
+    width: 66.66667%; }
+  .for-col-md-17 {
+    width: 70.83333%; }
+  .for-col-md-18 {
+    width: 75%; }
+  .for-col-md-19 {
+    width: 79.16667%; }
+  .for-col-md-20 {
+    width: 83.33333%; }
+  .for-col-md-21 {
+    width: 87.5%; }
+  .for-col-md-22 {
+    width: 91.66667%; }
+  .for-col-md-23 {
+    width: 95.83333%; }
+  .for-col-md-24 {
     width: 100%; } }
 
 @media (min-width: 1200px) {
   .for-col-lg-1 {
-    width: 8.33333%; } }
-
-@media (min-width: 1200px) {
+    width: 4.16667%; }
   .for-col-lg-2 {
-    width: 16.66667%; } }
-
-@media (min-width: 1200px) {
+    width: 8.33333%; }
   .for-col-lg-3 {
-    width: 25%; } }
-
-@media (min-width: 1200px) {
+    width: 12.5%; }
   .for-col-lg-4 {
-    width: 33.33333%; } }
-
-@media (min-width: 1200px) {
+    width: 16.66667%; }
   .for-col-lg-5 {
-    width: 41.66667%; } }
-
-@media (min-width: 1200px) {
+    width: 20.83333%; }
   .for-col-lg-6 {
-    width: 50%; } }
-
-@media (min-width: 1200px) {
+    width: 25%; }
   .for-col-lg-7 {
-    width: 58.33333%; } }
-
-@media (min-width: 1200px) {
+    width: 29.16667%; }
   .for-col-lg-8 {
-    width: 66.66667%; } }
-
-@media (min-width: 1200px) {
+    width: 33.33333%; }
   .for-col-lg-9 {
-    width: 75%; } }
-
-@media (min-width: 1200px) {
+    width: 37.5%; }
   .for-col-lg-10 {
-    width: 83.33333%; } }
-
-@media (min-width: 1200px) {
+    width: 41.66667%; }
   .for-col-lg-11 {
-    width: 91.66667%; } }
-
-@media (min-width: 1200px) {
+    width: 45.83333%; }
   .for-col-lg-12 {
+    width: 50%; }
+  .for-col-lg-13 {
+    width: 54.16667%; }
+  .for-col-lg-14 {
+    width: 58.33333%; }
+  .for-col-lg-15 {
+    width: 62.5%; }
+  .for-col-lg-16 {
+    width: 66.66667%; }
+  .for-col-lg-17 {
+    width: 70.83333%; }
+  .for-col-lg-18 {
+    width: 75%; }
+  .for-col-lg-19 {
+    width: 79.16667%; }
+  .for-col-lg-20 {
+    width: 83.33333%; }
+  .for-col-lg-21 {
+    width: 87.5%; }
+  .for-col-lg-22 {
+    width: 91.66667%; }
+  .for-col-lg-23 {
+    width: 95.83333%; }
+  .for-col-lg-24 {
     width: 100%; } }
 
 @media (min-width: 3000px) {
   .for-col-lgx-1 {
-    width: 8.33333%; } }
-
-@media (min-width: 3000px) {
+    width: 4.16667%; }
   .for-col-lgx-2 {
-    width: 16.66667%; } }
-
-@media (min-width: 3000px) {
+    width: 8.33333%; }
   .for-col-lgx-3 {
-    width: 25%; } }
-
-@media (min-width: 3000px) {
+    width: 12.5%; }
   .for-col-lgx-4 {
-    width: 33.33333%; } }
-
-@media (min-width: 3000px) {
+    width: 16.66667%; }
   .for-col-lgx-5 {
-    width: 41.66667%; } }
-
-@media (min-width: 3000px) {
+    width: 20.83333%; }
   .for-col-lgx-6 {
-    width: 50%; } }
-
-@media (min-width: 3000px) {
+    width: 25%; }
   .for-col-lgx-7 {
-    width: 58.33333%; } }
-
-@media (min-width: 3000px) {
+    width: 29.16667%; }
   .for-col-lgx-8 {
-    width: 66.66667%; } }
-
-@media (min-width: 3000px) {
+    width: 33.33333%; }
   .for-col-lgx-9 {
-    width: 75%; } }
-
-@media (min-width: 3000px) {
+    width: 37.5%; }
   .for-col-lgx-10 {
-    width: 83.33333%; } }
-
-@media (min-width: 3000px) {
+    width: 41.66667%; }
   .for-col-lgx-11 {
-    width: 91.66667%; } }
-
-@media (min-width: 3000px) {
+    width: 45.83333%; }
   .for-col-lgx-12 {
+    width: 50%; }
+  .for-col-lgx-13 {
+    width: 54.16667%; }
+  .for-col-lgx-14 {
+    width: 58.33333%; }
+  .for-col-lgx-15 {
+    width: 62.5%; }
+  .for-col-lgx-16 {
+    width: 66.66667%; }
+  .for-col-lgx-17 {
+    width: 70.83333%; }
+  .for-col-lgx-18 {
+    width: 75%; }
+  .for-col-lgx-19 {
+    width: 79.16667%; }
+  .for-col-lgx-20 {
+    width: 83.33333%; }
+  .for-col-lgx-21 {
+    width: 87.5%; }
+  .for-col-lgx-22 {
+    width: 91.66667%; }
+  .for-col-lgx-23 {
+    width: 95.83333%; }
+  .for-col-lgx-24 {
     width: 100%; } }
+
+@media (max-width: 767px) {
+  .for-smx-visible {
+    display: block; } }
+
+@media (min-width: 768px) {
+  .for-sm-up-visible {
+    display: block; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .for-sm-visible {
+    display: block; } }
+
+@media (max-width: 991px) {
+  .for-sm-down-visible {
+    display: block; } }
 
 .for-table {
   table-layout: fixed;

@@ -48,715 +48,154 @@
     .#{$for-output-prefix}clear-right {
         @include for-clear-right;
     }
+
+    //
+    //
     //
     // Columns
-    // You could expand it further than 20 column! Insert your code directly after the formanta import with using the below codes (modifing needed)
     //
-    .#{$for-output-prefix}col-smx-1,
-    .#{$for-output-prefix}col-smx-2,
-    .#{$for-output-prefix}col-smx-3,
-    .#{$for-output-prefix}col-smx-4,
-    .#{$for-output-prefix}col-smx-5,
-    .#{$for-output-prefix}col-smx-6,
-    .#{$for-output-prefix}col-smx-7,
-    .#{$for-output-prefix}col-smx-8,
-    .#{$for-output-prefix}col-smx-9,
-    .#{$for-output-prefix}col-smx-10,
-    .#{$for-output-prefix}col-smx-11,
-    .#{$for-output-prefix}col-smx-12,
-    .#{$for-output-prefix}col-smx-14,
-    .#{$for-output-prefix}col-smx-15,
-    .#{$for-output-prefix}col-smx-16,
-    .#{$for-output-prefix}col-smx-17,
-    .#{$for-output-prefix}col-smx-18,
-    .#{$for-output-prefix}col-smx-19,
-    .#{$for-output-prefix}col-smx-20,
-    .#{$for-output-prefix}col-sm-1,
-    .#{$for-output-prefix}col-sm-2,
-    .#{$for-output-prefix}col-sm-3,
-    .#{$for-output-prefix}col-sm-4,
-    .#{$for-output-prefix}col-sm-5,
-    .#{$for-output-prefix}col-sm-6,
-    .#{$for-output-prefix}col-sm-7,
-    .#{$for-output-prefix}col-sm-8,
-    .#{$for-output-prefix}col-sm-9,
-    .#{$for-output-prefix}col-sm-10,
-    .#{$for-output-prefix}col-sm-11,
-    .#{$for-output-prefix}col-sm-12,
-    .#{$for-output-prefix}col-sm-14,
-    .#{$for-output-prefix}col-sm-15,
-    .#{$for-output-prefix}col-sm-16,
-    .#{$for-output-prefix}col-sm-17,
-    .#{$for-output-prefix}col-sm-18,
-    .#{$for-output-prefix}col-sm-19,
-    .#{$for-output-prefix}col-sm-20,
-    .#{$for-output-prefix}col-md-1,
-    .#{$for-output-prefix}col-md-2,
-    .#{$for-output-prefix}col-md-3,
-    .#{$for-output-prefix}col-md-4,
-    .#{$for-output-prefix}col-md-5,
-    .#{$for-output-prefix}col-md-6,
-    .#{$for-output-prefix}col-md-7,
-    .#{$for-output-prefix}col-md-8,
-    .#{$for-output-prefix}col-md-9,
-    .#{$for-output-prefix}col-md-10,
-    .#{$for-output-prefix}col-md-11,
-    .#{$for-output-prefix}col-md-12,
-    .#{$for-output-prefix}col-md-14,
-    .#{$for-output-prefix}col-md-15,
-    .#{$for-output-prefix}col-md-16,
-    .#{$for-output-prefix}col-md-17,
-    .#{$for-output-prefix}col-md-18,
-    .#{$for-output-prefix}col-md-19,
-    .#{$for-output-prefix}col-md-20,
-    .#{$for-output-prefix}col-lg-1,
-    .#{$for-output-prefix}col-lg-2,
-    .#{$for-output-prefix}col-lg-3,
-    .#{$for-output-prefix}col-lg-4,
-    .#{$for-output-prefix}col-lg-5,
-    .#{$for-output-prefix}col-lg-6,
-    .#{$for-output-prefix}col-lg-7,
-    .#{$for-output-prefix}col-lg-8,
-    .#{$for-output-prefix}col-lg-9,
-    .#{$for-output-prefix}col-lg-10,
-    .#{$for-output-prefix}col-lg-11,
-    .#{$for-output-prefix}col-lg-12,
-    .#{$for-output-prefix}col-lg-14,
-    .#{$for-output-prefix}col-lg-15,
-    .#{$for-output-prefix}col-lg-16,
-    .#{$for-output-prefix}col-lg-17,
-    .#{$for-output-prefix}col-lg-18,
-    .#{$for-output-prefix}col-lg-19,
-    .#{$for-output-prefix}col-lg-20,
-    .#{$for-output-prefix}col-lgx-1,
-    .#{$for-output-prefix}col-lgx-2,
-    .#{$for-output-prefix}col-lgx-3,
-    .#{$for-output-prefix}col-lgx-4,
-    .#{$for-output-prefix}col-lgx-5,
-    .#{$for-output-prefix}col-lgx-6,
-    .#{$for-output-prefix}col-lgx-7,
-    .#{$for-output-prefix}col-lgx-8,
-    .#{$for-output-prefix}col-lgx-9,
-    .#{$for-output-prefix}col-lgx-10,
-    .#{$for-output-prefix}col-lgx-11,
-    .#{$for-output-prefix}col-lgx-12,
-    .#{$for-output-prefix}col-lgx-14,
-    .#{$for-output-prefix}col-lgx-15,
-    .#{$for-output-prefix}col-lgx-16,
-    .#{$for-output-prefix}col-lgx-17,
-    .#{$for-output-prefix}col-lgx-18,
-    .#{$for-output-prefix}col-lgx-19,
-    .#{$for-output-prefix}col-lgx-20 {
+    //
+    //
+    $for-col-base-str: '';
+    @for $i from 1 through $for-col-qty {
+        $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-smx-#{$i},';
+        $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-sm-#{$i},';
+        $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-md-#{$i},';
+        $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-lg-#{$i},';
+        $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-lgx-#{$i},';
+    }
+    #{$for-col-base-str} {
         @include for-col-base;
     }
 
     //
     // SMX
-    @if (0 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-1 {
-            @include for-col-smx-1;
-        }
-    }
-
-    @if (1 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-2 {
-            @include for-col-smx-2;
-        }
-    }
-
-    @if (2 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-3 {
-            @include for-col-smx-3;
-        }
-    }
-
-    @if (3 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-4 {
-            @include for-col-smx-4;
-        }
-    }
-
-    @if (4 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-5 {
-            @include for-col-smx-5;
-        }
-    }
-
-    @if (5 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-6 {
-            @include for-col-smx-6;
-        }
-    }
-
-    @if (6 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-7 {
-            @include for-col-smx-7;
-        }
-    }
-
-    @if (7 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-8 {
-            @include for-col-smx-8;
-        }
-    }
-
-    @if (8 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-9 {
-            @include for-col-smx-9;
-        }
-    }
-
-    @if (9 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-10 {
-            @include for-col-smx-10;
-        }
-    }
-
-    @if (10 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-11 {
-            @include for-col-smx-11;
-        }
-    }
-
-    @if (11 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-12 {
-            @include for-col-smx-12;
-        }
-    }
-
-    @if (12 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-13 {
-            @include for-col-smx-13;
-        }
-    }
-
-    @if (13 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-14 {
-            @include for-col-smx-14;
-        }
-    }
-
-    @if (14 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-15 {
-            @include for-col-smx-15;
-        }
-    }
-
-    @if (15 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-16 {
-            @include for-col-smx-16;
-        }
-    }
-
-    @if (16 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-17 {
-            @include for-col-smx-17;
-        }
-    }
-
-    @if (17 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-18 {
-            @include for-col-smx-18;
-        }
-    }
-
-    @if (18 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-19 {
-            @include for-col-smx-19;
-        }
-    }
-
-    @if (19 < $for-col-qty) {
-        .#{$for-output-prefix}col-smx-20 {
-            @include for-col-smx-20;
+    @for $i from 1 through $for-col-qty {
+        .#{$for-output-prefix}col-smx-#{$i} {
+            @include for-col-smx($i);
         }
     }
 
     //
     // SM
-    @if (0 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-1 {
-            @include for-col-sm-1;
-        }
-    }
-
-    @if (1 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-2 {
-            @include for-col-sm-2;
-        }
-    }
-
-    @if (2 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-3 {
-            @include for-col-sm-3;
-        }
-    }
-
-    @if (3 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-4 {
-            @include for-col-sm-4;
-        }
-    }
-
-    @if (4 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-5 {
-            @include for-col-sm-5;
-        }
-    }
-
-    @if (5 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-6 {
-            @include for-col-sm-6;
-        }
-    }
-
-    @if (6 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-7 {
-            @include for-col-sm-7;
-        }
-    }
-
-    @if (7 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-8 {
-            @include for-col-sm-8;
-        }
-    }
-
-    @if (8 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-9 {
-            @include for-col-sm-9;
-        }
-    }
-
-    @if (9 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-10 {
-            @include for-col-sm-10;
-        }
-    }
-
-    @if (10 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-11 {
-            @include for-col-sm-11;
-        }
-    }
-
-    @if (11 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-12 {
-            @include for-col-sm-12;
-        }
-    }
-
-    @if (12 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-13 {
-            @include for-col-sm-13;
-        }
-    }
-
-    @if (13 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-14 {
-            @include for-col-sm-14;
-        }
-    }
-
-    @if (14 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-15 {
-            @include for-col-sm-15;
-        }
-    }
-
-    @if (15 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-16 {
-            @include for-col-sm-16;
-        }
-    }
-
-    @if (16 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-17 {
-            @include for-col-sm-17;
-        }
-    }
-
-    @if (17 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-18 {
-            @include for-col-sm-18;
-        }
-    }
-
-    @if (18 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-19 {
-            @include for-col-sm-19;
-        }
-    }
-
-    @if (19 < $for-col-qty) {
-        .#{$for-output-prefix}col-sm-20 {
-            @include for-col-sm-20;
+    @include for-bp-sm-up {
+        @for $i from 1 through $for-col-qty {
+            .#{$for-output-prefix}col-sm-#{$i} {
+                @include for-col($i);
+            }
         }
     }
 
     //
     // MD
-    @if (0 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-1 {
-            @include for-col-md-1;
-        }
-    }
-
-    @if (1 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-2 {
-            @include for-col-md-2;
-        }
-    }
-
-    @if (2 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-3 {
-            @include for-col-md-3;
-        }
-    }
-
-    @if (3 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-4 {
-            @include for-col-md-4;
-        }
-    }
-
-    @if (4 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-5 {
-            @include for-col-md-5;
-        }
-    }
-
-    @if (5 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-6 {
-            @include for-col-md-6;
-        }
-    }
-
-    @if (6 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-7 {
-            @include for-col-md-7;
-        }
-    }
-
-    @if (7 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-8 {
-            @include for-col-md-8;
-        }
-    }
-
-    @if (8 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-9 {
-            @include for-col-md-9;
-        }
-    }
-
-    @if (9 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-10 {
-            @include for-col-md-10;
-        }
-    }
-
-    @if (10 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-11 {
-            @include for-col-md-11;
-        }
-    }
-
-    @if (11 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-12 {
-            @include for-col-md-12;
-        }
-    }
-
-    @if (12 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-13 {
-            @include for-col-md-13;
-        }
-    }
-
-    @if (13 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-14 {
-            @include for-col-md-14;
-        }
-    }
-
-    @if (14 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-15 {
-            @include for-col-md-15;
-        }
-    }
-
-    @if (15 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-16 {
-            @include for-col-md-16;
-        }
-    }
-
-    @if (16 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-17 {
-            @include for-col-md-17;
-        }
-    }
-
-    @if (17 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-18 {
-            @include for-col-md-18;
-        }
-    }
-
-    @if (18 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-19 {
-            @include for-col-md-19;
-        }
-    }
-
-    @if (19 < $for-col-qty) {
-        .#{$for-output-prefix}col-md-20 {
-            @include for-col-md-20;
+    @include for-bp-md-up {
+        @for $i from 1 through $for-col-qty {
+            .#{$for-output-prefix}col-md-#{$i} {
+                @include for-col($i);
+            }
         }
     }
 
     //
     // LG
-    @if (0 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-1 {
-            @include for-col-lg-1;
-        }
-    }
-
-    @if (1 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-2 {
-            @include for-col-lg-2;
-        }
-    }
-
-    @if (2 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-3 {
-            @include for-col-lg-3;
-        }
-    }
-
-    @if (3 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-4 {
-            @include for-col-lg-4;
-        }
-    }
-
-    @if (4 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-5 {
-            @include for-col-lg-5;
-        }
-    }
-
-    @if (5 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-6 {
-            @include for-col-lg-6;
-        }
-    }
-
-    @if (6 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-7 {
-            @include for-col-lg-7;
-        }
-    }
-
-    @if (7 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-8 {
-            @include for-col-lg-8;
-        }
-    }
-
-    @if (8 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-9 {
-            @include for-col-lg-9;
-        }
-    }
-
-    @if (9 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-10 {
-            @include for-col-lg-10;
-        }
-    }
-
-    @if (10 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-11 {
-            @include for-col-lg-11;
-        }
-    }
-
-    @if (11 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-12 {
-            @include for-col-lg-12;
-        }
-    }
-
-    @if (12 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-13 {
-            @include for-col-lg-13;
-        }
-    }
-
-    @if (13 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-14 {
-            @include for-col-lg-14;
-        }
-    }
-
-    @if (14 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-15 {
-            @include for-col-lg-15;
-        }
-    }
-
-    @if (15 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-16 {
-            @include for-col-lg-16;
-        }
-    }
-
-    @if (16 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-17 {
-            @include for-col-lg-17;
-        }
-    }
-
-    @if (17 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-18 {
-            @include for-col-lg-18;
-        }
-    }
-
-    @if (18 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-19 {
-            @include for-col-lg-19;
-        }
-    }
-
-    @if (19 < $for-col-qty) {
-        .#{$for-output-prefix}col-lg-20 {
-            @include for-col-lg-20;
+    @include for-bp-lg-up {
+        @for $i from 1 through $for-col-qty {
+            .#{$for-output-prefix}col-lg-#{$i} {
+                @include for-col($i);
+            }
         }
     }
 
     //
     // LGX
-    @if (0 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-1 {
-            @include for-col-lgx-1;
+    @include for-bp-lgx {
+        @for $i from 1 through $for-col-qty {
+            .#{$for-output-prefix}col-lgx-#{$i} {
+                @include for-col($i);
+            }
         }
     }
 
-    @if (1 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-2 {
-            @include for-col-lgx-2;
-        }
+    //
+    //
+    //
+    // Visibility
+    //
+    //
+    //
+    .#{$for-output-prefix}smx-visible {
+        @include for-smx-visible;
+    }
+    .#{$for-output-prefix}smx-hidden {
+        @include for-smx-hidden;
     }
 
-    @if (2 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-3 {
-            @include for-col-lgx-3;
-        }
+    // small
+    .#{$for-output-prefix}sm-up-visible {
+        @include for-sm-up-visible;
+    }
+    .#{$for-output-prefix}sm-visible {
+        @include for-sm-visible;
+    }
+    .#{$for-output-prefix}sm-down-visible {
+        @include for-sm-down-visible;
+    }
+    .#{$for-output-prefix}sm-up-hidden {
+        @include for-sm-up-hidden;
+    }
+    .#{$for-output-prefix}sm-hidden {
+        @include for-sm-hidden;
+    }
+    .#{$for-output-prefix}sm-down-hidden {
+        @include for-sm-down-hidden;
     }
 
-    @if (3 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-4 {
-            @include for-col-lgx-4;
-        }
+    // medium
+    .#{$for-output-prefix}md-up-visible {
+        @include for-md-up-visible;
+    }
+    .#{$for-output-prefix}md-visible {
+        @include for-md-visible;
+    }
+    .#{$for-output-prefix}md-down-visible {
+        @include for-md-down-visible;
+    }
+    .#{$for-output-prefix}md-up-hidden {
+        @include for-md-up-hidden;
+    }
+    .#{$for-output-prefix}md-hidden {
+        @include for-md-hidden;
+    }
+    .#{$for-output-prefix}md-down-hidden {
+        @include for-md-down-hidden;
     }
 
-    @if (4 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-5 {
-            @include for-col-lgx-5;
-        }
+    // large
+    .#{$for-output-prefix}lg-up-visible {
+        @include for-lg-up-visible;
+    }
+    .#{$for-output-prefix}lg-visible {
+        @include for-lg-visible;
+    }
+    .#{$for-output-prefix}lg-down-visible {
+        @include for-lg-down-visible;
+    }
+    .#{$for-output-prefix}lg-up-hidden {
+        @include for-lg-up-hidden;
+    }
+    .#{$for-output-prefix}lg-hidden {
+        @include for-lg-hidden;
+    }
+    .#{$for-output-prefix}lg-down-hidden {
+        @include for-lg-down-hidden;
     }
 
-    @if (5 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-6 {
-            @include for-col-lgx-6;
-        }
+    // large-eXtra
+    // got no -up or -down version, as -down would be all and -up would be like normal lgx, as it is the highest size
+    .#{$for-output-prefix}lgx-visible {
+        @include for-lgx-visible;
     }
-
-    @if (6 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-7 {
-            @include for-col-lgx-7;
-        }
-    }
-
-    @if (7 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-8 {
-            @include for-col-lgx-8;
-        }
-    }
-
-    @if (8 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-9 {
-            @include for-col-lgx-9;
-        }
-    }
-
-    @if (9 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-10 {
-            @include for-col-lgx-10;
-        }
-    }
-
-    @if (10 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-11 {
-            @include for-col-lgx-11;
-        }
-    }
-
-    @if (11 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-12 {
-            @include for-col-lgx-12;
-        }
-    }
-
-    @if (12 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-13 {
-            @include for-col-lgx-13;
-        }
-    }
-
-    @if (13 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-14 {
-            @include for-col-lgx-14;
-        }
-    }
-
-    @if (14 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-15 {
-            @include for-col-lgx-15;
-        }
-    }
-
-    @if (15 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-16 {
-            @include for-col-lgx-16;
-        }
-    }
-
-    @if (16 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-17 {
-            @include for-col-lgx-17;
-        }
-    }
-
-    @if (17 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-18 {
-            @include for-col-lgx-18;
-        }
-    }
-
-    @if (18 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-19 {
-            @include for-col-lgx-19;
-        }
-    }
-
-    @if (19 < $for-col-qty) {
-        .#{$for-output-prefix}col-lgx-20 {
-            @include for-col-lgx-20;
-        }
+    .#{$for-output-prefix}lgx-hidden {
+        @include for-lgx-hidden;
     }
 }
