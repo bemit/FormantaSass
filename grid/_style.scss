@@ -72,7 +72,7 @@
     // SMX
     @for $i from 1 through $for-col-qty {
         .#{$for-output-prefix}col-smx-#{$i} {
-            @include for-col-smx($i);
+            @include for-col($i);
         }
     }
 
