@@ -2775,10 +2775,97 @@ h6 {
 .for-clear-right {
   clear: right; }
 
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
+/*
+            Concatenating the all needed classes of the columns
+        */
 .for-col-smx-1, .for-col-sm-1, .for-col-md-1, .for-col-lg-1, .for-col-lgx-1, .for-col-smx-2, .for-col-sm-2, .for-col-md-2, .for-col-lg-2, .for-col-lgx-2, .for-col-smx-3, .for-col-sm-3, .for-col-md-3, .for-col-lg-3, .for-col-lgx-3, .for-col-smx-4, .for-col-sm-4, .for-col-md-4, .for-col-lg-4, .for-col-lgx-4, .for-col-smx-5, .for-col-sm-5, .for-col-md-5, .for-col-lg-5, .for-col-lgx-5, .for-col-smx-6, .for-col-sm-6, .for-col-md-6, .for-col-lg-6, .for-col-lgx-6, .for-col-smx-7, .for-col-sm-7, .for-col-md-7, .for-col-lg-7, .for-col-lgx-7, .for-col-smx-8, .for-col-sm-8, .for-col-md-8, .for-col-lg-8, .for-col-lgx-8, .for-col-smx-9, .for-col-sm-9, .for-col-md-9, .for-col-lg-9, .for-col-lgx-9, .for-col-smx-10, .for-col-sm-10, .for-col-md-10, .for-col-lg-10, .for-col-lgx-10, .for-col-smx-11, .for-col-sm-11, .for-col-md-11, .for-col-lg-11, .for-col-lgx-11, .for-col-smx-12, .for-col-sm-12, .for-col-md-12, .for-col-lg-12, .for-col-lgx-12, .for-col-smx-13, .for-col-sm-13, .for-col-md-13, .for-col-lg-13, .for-col-lgx-13, .for-col-smx-14, .for-col-sm-14, .for-col-md-14, .for-col-lg-14, .for-col-lgx-14, .for-col-smx-15, .for-col-sm-15, .for-col-md-15, .for-col-lg-15, .for-col-lgx-15, .for-col-smx-16, .for-col-sm-16, .for-col-md-16, .for-col-lg-16, .for-col-lgx-16, .for-col-smx-17, .for-col-sm-17, .for-col-md-17, .for-col-lg-17, .for-col-lgx-17, .for-col-smx-18, .for-col-sm-18, .for-col-md-18, .for-col-lg-18, .for-col-lgx-18, .for-col-smx-19, .for-col-sm-19, .for-col-md-19, .for-col-lg-19, .for-col-lgx-19, .for-col-smx-20, .for-col-sm-20, .for-col-md-20, .for-col-lg-20, .for-col-lgx-20, .for-col-smx-21, .for-col-sm-21, .for-col-md-21, .for-col-lg-21, .for-col-lgx-21, .for-col-smx-22, .for-col-sm-22, .for-col-md-22, .for-col-lg-22, .for-col-lgx-22, .for-col-smx-23, .for-col-sm-23, .for-col-md-23, .for-col-lg-23, .for-col-lgx-23, .for-col-smx-24, .for-col-sm-24, .for-col-md-24, .for-col-lg-24, .for-col-lgx-24 {
   position: relative;
   min-height: 1px;
   float: left; }
+  @media (max-width: 767px) {
+    .for-col-smx-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-smx-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-smx-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-smx-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-smx-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-smx-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-smx-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-smx-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-smx-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-smx-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-smx-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-smx-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-smx-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-smx-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-smx-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-smx-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-smx-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-smx-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-smx-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-smx-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-smx-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-smx-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-smx-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-smx-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+      padding: 10px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .for-col-smx-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-smx-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-smx-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-smx-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-smx-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-smx-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-smx-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-smx-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-smx-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-smx-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-smx-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-smx-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-smx-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-smx-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-smx-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-smx-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-smx-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-smx-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-smx-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-smx-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-smx-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-smx-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-smx-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-smx-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+      padding: 10px 20px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .for-col-smx-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-smx-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-smx-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-smx-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-smx-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-smx-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-smx-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-smx-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-smx-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-smx-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-smx-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-smx-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-smx-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-smx-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-smx-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-smx-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-smx-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-smx-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-smx-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-smx-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-smx-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-smx-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-smx-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-smx-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+      padding: 10px 20px; } }
+  @media (min-width: 1200px) and (max-width: 2999px) {
+    .for-col-smx-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-smx-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-smx-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-smx-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-smx-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-smx-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-smx-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-smx-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-smx-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-smx-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-smx-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-smx-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-smx-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-smx-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-smx-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-smx-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-smx-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-smx-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-smx-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-smx-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-smx-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-smx-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-smx-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-smx-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+      padding: 15px 30px; } }
+  @media (min-width: 3000px) {
+    .for-col-smx-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-smx-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-smx-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-smx-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-smx-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-smx-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-smx-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-smx-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-smx-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-smx-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-smx-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-smx-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-smx-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-smx-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-smx-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-smx-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-smx-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-smx-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-smx-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-smx-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-smx-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-smx-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-smx-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-smx-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+      padding: 15px 30px; } }
 
 .for-col-smx-1 {
   width: 4.16667%; }
@@ -3053,20 +3140,48 @@ h6 {
     width: 100%; } }
 
 @media (max-width: 767px) {
-  .for-smx-visible {
-    display: block; } }
-
-@media (min-width: 768px) {
-  .for-sm-up-visible {
-    display: block; } }
+  .for-gutter {
+    padding: 10px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .for-sm-visible {
-    display: block; } }
+  .for-gutter {
+    padding: 10px 20px; } }
 
-@media (max-width: 991px) {
-  .for-sm-down-visible {
-    display: block; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .for-gutter {
+    padding: 10px 20px; } }
+
+@media (min-width: 1200px) and (max-width: 2999px) {
+  .for-gutter {
+    padding: 15px 30px; } }
+
+@media (min-width: 3000px) {
+  .for-gutter {
+    padding: 15px 30px; } }
+
+.for-gutter-thickest {
+  padding: 75px; }
+
+.for-gutter-thicker {
+  padding: 50px; }
+
+.for-gutter-thick {
+  padding: 15px 30px; }
+
+.for-gutter-normal {
+  padding: 10px 20px; }
+
+.for-gutter-thin {
+  padding: 10px; }
+
+.for-gutter-thinner {
+  padding: 6px; }
+
+.for-gutter-thinnest {
+  padding: 3px; }
+
+.for-gutter-none {
+  /* just as reminder: when this class is together with a col-* class no gutter will be displayed! */ }
 
 .for-table {
   table-layout: fixed;
@@ -3497,25 +3612,29 @@ form input[type=week] {
     border-left: 1px solid #0044aa;
     border-radius: 0 0 0 0 / 0 0 0 0; }
 
-@media (max-width: 767px) {
-  .for-container {
-    width: 100%; } }
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .for-container {
-    width: 100%; } }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .for-container {
-    width: 940px; } }
-
-@media (min-width: 1200px) and (max-width: 2999px) {
-  .for-container {
-    width: 1000px; } }
-
-@media (min-width: 3000px) {
-  .for-container {
-    width: 1600px; } }
+.for-container {
+  margin-left: auto;
+  margin-right: auto; }
+  .for-container:before, .for-container:after {
+    content: ' ';
+    display: table; }
+  .for-container:after {
+    clear: both; }
+  @media (max-width: 767px) {
+    .for-container {
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .for-container {
+      width: 100%; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .for-container {
+      width: 940px; } }
+  @media (min-width: 1200px) and (max-width: 2999px) {
+    .for-container {
+      width: 1000px; } }
+  @media (min-width: 3000px) {
+    .for-container {
+      width: 1600px; } }
 
 .for-content {
   background: #ffffff;

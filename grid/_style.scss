@@ -58,6 +58,9 @@
     //
     $for-col-base-str: '';
     @for $i from 1 through $for-col-qty {
+        /*
+            Concatenating the all needed classes of the columns
+        */
         $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-smx-#{$i},';
         $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-sm-#{$i},';
         $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-md-#{$i},';
@@ -66,6 +69,9 @@
     }
     #{$for-col-base-str} {
         @include for-col-base;
+        &:not(.#{$for-output-prefix}gutter-none) {
+            @include for-gutter;
+        }
     }
 
     //
@@ -123,79 +129,40 @@
     //
     //
     //
-    .#{$for-output-prefix}smx-visible {
-        @include for-smx-visible;
-    }
-    .#{$for-output-prefix}smx-hidden {
-        @include for-smx-hidden;
-    }
 
-    // small
-    .#{$for-output-prefix}sm-up-visible {
-        @include for-sm-up-visible;
-    }
-    .#{$for-output-prefix}sm-visible {
-        @include for-sm-visible;
-    }
-    .#{$for-output-prefix}sm-down-visible {
-        @include for-sm-down-visible;
-    }
-    .#{$for-output-prefix}sm-up-hidden {
-        @include for-sm-up-hidden;
-    }
-    .#{$for-output-prefix}sm-hidden {
-        @include for-sm-hidden;
-    }
-    .#{$for-output-prefix}sm-down-hidden {
-        @include for-sm-down-hidden;
-    }
 
-    // medium
-    .#{$for-output-prefix}md-up-visible {
-        @include for-md-up-visible;
+    //
+    //
+    //
+    // Gutter
+    //
+    //
+    //
+    .#{$for-output-prefix}gutter {
+        @include for-gutter;
     }
-    .#{$for-output-prefix}md-visible {
-        @include for-md-visible;
+    .#{$for-output-prefix}gutter-thickest {
+        @include for-gutter-thickest;
     }
-    .#{$for-output-prefix}md-down-visible {
-        @include for-md-down-visible;
+    .#{$for-output-prefix}gutter-thicker {
+        @include for-gutter-thicker;
     }
-    .#{$for-output-prefix}md-up-hidden {
-        @include for-md-up-hidden;
+    .#{$for-output-prefix}gutter-thick {
+        @include for-gutter-thick;
     }
-    .#{$for-output-prefix}md-hidden {
-        @include for-md-hidden;
+    .#{$for-output-prefix}gutter-normal {
+        @include for-gutter-normal;
     }
-    .#{$for-output-prefix}md-down-hidden {
-        @include for-md-down-hidden;
+    .#{$for-output-prefix}gutter-thin {
+        @include for-gutter-thin;
     }
-
-    // large
-    .#{$for-output-prefix}lg-up-visible {
-        @include for-lg-up-visible;
+    .#{$for-output-prefix}gutter-thinner {
+        @include for-gutter-thinner;
     }
-    .#{$for-output-prefix}lg-visible {
-        @include for-lg-visible;
+    .#{$for-output-prefix}gutter-thinnest {
+        @include for-gutter-thinnest;
     }
-    .#{$for-output-prefix}lg-down-visible {
-        @include for-lg-down-visible;
-    }
-    .#{$for-output-prefix}lg-up-hidden {
-        @include for-lg-up-hidden;
-    }
-    .#{$for-output-prefix}lg-hidden {
-        @include for-lg-hidden;
-    }
-    .#{$for-output-prefix}lg-down-hidden {
-        @include for-lg-down-hidden;
-    }
-
-    // large-eXtra
-    // got no -up or -down version, as -down would be all and -up would be like normal lgx, as it is the highest size
-    .#{$for-output-prefix}lgx-visible {
-        @include for-lgx-visible;
-    }
-    .#{$for-output-prefix}lgx-hidden {
-        @include for-lgx-hidden;
+    .#{$for-output-prefix}gutter-none {
+        /* just as reminder: when this class is together with a col-* class no gutter will be displayed! */
     }
 }

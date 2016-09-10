@@ -1,0 +1,38 @@
+@mixin for-gutter {
+    @include for-bp-smx {
+        padding: $for-gutter-smx-max-size;
+    }
+    @include for-bp-sm {
+        padding: $for-gutter-sm-min-size;
+    }
+    @include for-bp-md {
+        padding: $for-gutter-md-min-size;
+    }
+    @include for-bp-lg {
+        padding: $for-gutter-lg-min-size;
+    }
+    @include for-bp-lgx {
+        padding: $for-gutter-lgx-min-size;
+    }
+}
+@mixin for-gutter-thickest {
+    padding: $for-gutter-thickest;
+}
+@mixin for-gutter-thicker {
+    padding: $for-gutter-thicker;
+}
+@mixin for-gutter-thick {
+    padding: $for-gutter-thick;
+}
+@mixin for-gutter-normal {
+    padding: $for-gutter-normal;
+}
+@mixin for-gutter-thin {
+    padding: $for-gutter-thin;
+}
+@mixin for-gutter-thinner {
+    padding: $for-gutter-thinner;
+}
+@mixin for-gutter-thinnest {
+    padding: $for-gutter-thinnest;
+}

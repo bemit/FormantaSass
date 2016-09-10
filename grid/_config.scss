@@ -13,3 +13,19 @@ $for-bp-smx-max-size: $for-bp-sm-min-size - 1 !default;//e.g. smartphone
 // ##################################################
 $for-col-qty: 24 !default;
 $for-col-basic-size: 100% / $for-col-qty; // The size of one column
+
+//
+// Gutter
+// ##################################################
+$for-gutter-thickest: 75px !default;
+$for-gutter-thicker: 50px !default;
+$for-gutter-thick: 15px 30px !default;
+$for-gutter-normal: 10px 20px !default;
+$for-gutter-thin: 10px !default;
+$for-gutter-thinner: 6px !default;
+$for-gutter-thinnest: 3px !default;
+$for-gutter-lgx-min-size: $for-gutter-thick !default;//e.g. 4k
+$for-gutter-lg-min-size: $for-gutter-thick !default;//e.g. desktop-pc (HD)
+$for-gutter-md-min-size: $for-gutter-normal !default;//e.g. laptop/desktop-pc (SD)
+$for-gutter-sm-min-size: $for-gutter-normal !default;//e.g. netbook/tablet
+$for-gutter-smx-max-size: $for-gutter-thin !default;//e.g. smartphone
