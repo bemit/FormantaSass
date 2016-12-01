@@ -3636,6 +3636,13 @@ form input[type=week] {
     .for-container {
       width: 1600px; } }
 
+/*
+$for-content-xlarge-width: 1200px !default;
+$for-content-large-width: 750px !default;
+$for-content-medium-width: 690px !default;
+$for-content-small-all-width: 100% !default;
+$for-content-small-width: $for-content-small-all-width !default;
+$for-content-xsmall-width: $for-content-small-all-width !default;*/
 .for-content {
   background: #ffffff;
   background-size: auto;
@@ -3643,22 +3650,27 @@ form input[type=week] {
   font-variant: normal;
   color: #333;
   text-decoration: none;
-  text-transform: none; }
-  @media (max-width: 767px) {
-    .for-content {
-      width: 100%; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .for-content {
-      width: 100%; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .for-content {
-      width: 690px; } }
-  @media (min-width: 1200px) and (max-width: 2999px) {
-    .for-content {
-      width: 750px; } }
-  @media (min-width: 3000px) {
-    .for-content {
-      width: 1200px; } }
+  text-transform: none;
+  /*
+        @include for-bp-smx {
+            width: $for-content-xsmall-width;
+        }
+        
+        @include for-bp-sm {
+            width: $for-content-small-width;
+        }
+        
+        @include for-bp-md {
+            width: $for-content-medium-width;
+        }
+
+        @include for-bp-lg {
+            width: $for-content-large-width;
+        }
+
+        @include for-bp-lgx {
+            width: $for-content-xlarge-width;
+        }*/ }
   .for-content a {
     font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
@@ -3682,19 +3694,19 @@ form input[type=week] {
   text-transform: none; }
   @media (max-width: 767px) {
     .for-footer {
-      width: 100%; } }
+      height: 50px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .for-footer {
-      width: 100%; } }
+      height: 50px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .for-footer {
-      width: 940px; } }
+      height: 200px; } }
   @media (min-width: 1200px) and (max-width: 2999px) {
     .for-footer {
-      width: 1000px; } }
+      height: 250px; } }
   @media (min-width: 3000px) {
     .for-footer {
-      width: 1600px; } }
+      height: 300px; } }
   .for-footer a {
     font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
@@ -3718,19 +3730,19 @@ form input[type=week] {
   text-transform: none; }
   @media (max-width: 767px) {
     .for-header {
-      width: 100px; } }
+      height: 100px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .for-header {
-      width: 100px; } }
+      height: 100px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .for-header {
-      width: 300px; } }
+      height: 300px; } }
   @media (min-width: 1200px) and (max-width: 2999px) {
     .for-header {
-      width: 300px; } }
+      height: 300px; } }
   @media (min-width: 3000px) {
     .for-header {
-      width: 300px; } }
+      height: 300px; } }
   .for-header a {
     font: normal 400 13pt/30px Helvetica, sans-serif;
     font-variant: normal;
@@ -3744,6 +3756,12 @@ form input[type=week] {
       text-decoration: none;
       text-transform: none; }
 
+/*$for-sidebar-xlarge-width: $for-container-xlarge-width - $for-content-xlarge-width !default;
+$for-sidebar-large-width: $for-container-large-width - $for-content-large-width !default;
+$for-sidebar-medium-width: $for-container-medium-width - $for-content-medium-width !default;
+$for-sidebar-small-all-width: 100% !default;
+$for-sidebar-small-width: $for-sidebar-small-all-width !default;
+$for-sidebar-xsmall-width: $for-sidebar-small-all-width !default;*/
 .for-sidebar {
   background: #6ab42a;
   background-size: auto;
@@ -3751,22 +3769,26 @@ form input[type=week] {
   font-variant: normal;
   color: #0044aa;
   text-decoration: none;
-  text-transform: none; }
-  @media (max-width: 767px) {
-    .for-sidebar {
-      width: 100%; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .for-sidebar {
-      width: 100%; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .for-sidebar {
-      width: 250px; } }
-  @media (min-width: 1200px) and (max-width: 2999px) {
-    .for-sidebar {
-      width: 250px; } }
-  @media (min-width: 3000px) {
-    .for-sidebar {
-      width: 400px; } }
+  text-transform: none;
+  /*@include for-bp-smx {
+            width: $for-sidebar-xsmall-width;
+        }
+        
+        @include for-bp-sm {
+            width: $for-sidebar-small-width;
+        }
+        
+        @include for-bp-md {
+            width: $for-sidebar-medium-width;
+        }
+
+        @include for-bp-lg {
+            width: $for-sidebar-large-width;
+        }
+
+        @include for-bp-lgx {
+            width: $for-sidebar-xlarge-width;
+        }*/ }
   .for-sidebar a {
     font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;

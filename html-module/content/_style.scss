@@ -10,7 +10,7 @@
             decoration: $for-content-text-decoration;
             transform: $for-content-text-transform;
         }
-        
+        /*
         @include for-bp-smx {
             width: $for-content-xsmall-width;
         }
@@ -29,7 +29,7 @@
 
         @include for-bp-lgx {
             width: $for-content-xlarge-width;
-        }
+        }*/
         
         a {
             font: $for-content-link-font-style $for-content-link-font-weight #{$for-content-link-font-size}/#{$for-content-link-line-height} $for-content-link-font-family;

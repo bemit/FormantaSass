@@ -11,7 +11,7 @@
             transform: $for-sidebar-text-transform;
         }
         
-        @include for-bp-smx {
+        /*@include for-bp-smx {
             width: $for-sidebar-xsmall-width;
         }
         
@@ -29,7 +29,7 @@
 
         @include for-bp-lgx {
             width: $for-sidebar-xlarge-width;
-        }
+        }*/
         
         a {
             font: $for-sidebar-link-font-style $for-sidebar-link-font-weight #{$for-sidebar-link-font-size}/#{$for-sidebar-link-line-height} $for-sidebar-link-font-family;
