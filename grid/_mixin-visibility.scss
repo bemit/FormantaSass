@@ -1,121 +1,136 @@
-// large-eXtra
-// got no -up or -down version, as -down would be all and -up would be like normal lgx, as it is the highest size
-@mixin for-lgx-visible {
-    @media (min-width: $for-bp-lgx-min-size) {
-        @content;
-    }
-}
-@mixin for-lgx-hidden {
-    @media (min-width: $for-bp-lgx-min-size) {
-        @content;
-    }
-}
-
-// large
-@mixin for-lg-up-visible {
-    @media (min-width: $for-bp-lg-min-size) {
-        @content;
-    }
-}
-@mixin for-lg-visible {
-    @media (min-width: $for-bp-lg-min-size) and (max-width: $for-bp-lgx-min-size - 1) {
-        @content;
-    }
-}
-@mixin for-lg-down-visible {
-    @media (max-width: $for-bp-lgx-min-size - 1) {
-        @content;
-    }
-}
-@mixin for-lg-up-hidden {
-    @media (min-width: $for-bp-lg-min-size) {
-        @content;
-    }
-}
-@mixin for-lg-hidden {
-    @media (min-width: $for-bp-lg-min-size) and (max-width: $for-bp-lgx-min-size - 1) {
-        @content;
-    }
-}
-@mixin for-lg-down-hidden {
-    @media (max-width: $for-bp-lgx-min-size - 1) {
-        @content;
-    }
-}
-
-// medium
-@mixin for-md-up-visible {
-    @media (min-width: $for-bp-md-min-size) {
-        @content;
-    }
-}
-@mixin for-md-visible {
-    @media (min-width: $for-bp-md-min-size) and (max-width: $for-bp-lg-min-size - 1) {
-        @content;
-    }
-}
-@mixin for-md-down-visible {
-    @media (max-width: $for-bp-lg-min-size - 1) {
-        @content;
-    }
-}
-@mixin for-md-up-hidden {
-    @media (min-width: $for-bp-md-min-size) {
-        @content;
-    }
-}
-@mixin for-md-hidden {
-    @media (min-width: $for-bp-md-min-size) and (max-width: $for-bp-lg-min-size - 1) {
-        @content;
-    }
-}
-@mixin for-md-down-hidden {
-    @media (max-width: $for-bp-lg-min-size - 1) {
-        @content;
-    }
-}
-
-// small
-@mixin for-sm-up-visible {
-    @media (min-width: $for-bp-sm-min-size) {
-        @content;
-    }
-}
-@mixin for-sm-visible {
-    @media (min-width: $for-bp-sm-min-size) and (max-width: $for-bp-md-min-size - 1) {
-        @content;
-    }
-}
-@mixin for-sm-down-visible {
-    @media (max-width: $for-bp-md-min-size - 1) {
-        @content;
-    }
-}
-@mixin for-sm-up-hidden {
-    @media (min-width: $for-bp-sm-min-size) {
-        @content;
-    }
-}
-@mixin for-sm-hidden {
-    @media (min-width: $for-bp-sm-min-size) and (max-width: $for-bp-md-min-size - 1) {
-        @content;
-    }
-}
-@mixin for-sm-down-hidden {
-    @media (max-width: $for-bp-md-min-size - 1) {
-        @content;
-    }
-}
-
 // small-eXtra
 // got no -up or -down version, as -up would be all and -down would be like normal smx, as it is the smallest size
-@mixin for-smx-visible {
-    @media (max-width: $for-bp-smx-max-size) {
+
+@mixin for-visible {
+    display: block;
+    &.#{$for-output-prefix}display-block {
+        //default
+    }
+    &.#{$for-output-prefix}display-inline-block {
+        @include for-display-inline-block;
+    }
+    &.#{$for-output-prefix}display-inline {
+        @include for-display-inline;
+    }
+    &.#{$for-output-prefix}display-flex {
+        display: flex;
+    }
+}
+@mixin for-hidden {
+    display: none;
+}
+@mixin for-visible-smx {
+    @include for-bp-smx {
+        @include for-visible;
+    }
+}
+@mixin for-hidden-smx {
+    @include for-bp-smx {
+        @include for-hidden;
+    }
+}
+// small
+@mixin for-visible-sm-up {
+    @media (min-width: $for-bp-sm-min-size) {
+        display: block;
+    }
+}
+@mixin for-visible-sm {
+    @media (min-width: $for-bp-sm-min-size) and (max-width: $for-bp-md-min-size - 1) {
+        display: block;
+    }
+}
+@mixin for-visible-sm-down {
+    @media (max-width: $for-bp-md-min-size - 1) {
+        display: block;
+    }
+}
+@mixin for-hidden-sm-up {
+    @media (min-width: $for-bp-sm-min-size) {
         @content;
     }
 }
-@mixin for-smx-hidden {
-    @media (max-width: $for-bp-smx-max-size) {
+@mixin for-hidden-sm {
+    @media (min-width: $for-bp-sm-min-size) and (max-width: $for-bp-md-min-size - 1) {
+        @content;
+    }
+}
+@mixin for-hidden-sm-down {
+    @media (max-width: $for-bp-md-min-size - 1) {
+        @content;
+    }
+}
+// medium
+@mixin for-visible-md-up {
+    @media (min-width: $for-bp-md-min-size) {
+        @content;
+    }
+}
+@mixin for-visible-md {
+    @media (min-width: $for-bp-md-min-size) and (max-width: $for-bp-lg-min-size - 1) {
+        @content;
+    }
+}
+@mixin for-visible-md-down {
+    @media (max-width: $for-bp-lg-min-size - 1) {
+        @content;
+    }
+}
+@mixin for-hidden-md-up {
+    @media (min-width: $for-bp-md-min-size) {
+        @content;
+    }
+}
+@mixin for-hidden-md {
+    @media (min-width: $for-bp-md-min-size) and (max-width: $for-bp-lg-min-size - 1) {
+        @content;
+    }
+}
+@mixin for-hidden-md-down {
+    @media (max-width: $for-bp-lg-min-size - 1) {
+        @content;
+    }
+}
+// large
+@mixin for-visible-lg-up {
+    @media (min-width: $for-bp-lg-min-size) {
+        @content;
+    }
+}
+@mixin for-visible-lg {
+    @media (min-width: $for-bp-lg-min-size) and (max-width: $for-bp-lgx-min-size - 1) {
+        @content;
+    }
+}
+@mixin for-visible-lg-down {
+    @media (max-width: $for-bp-lgx-min-size - 1) {
+        @content;
+    }
+}
+@mixin for-hidden-lg-up {
+    @media (min-width: $for-bp-lg-min-size) {
+        @content;
+    }
+}
+@mixin for-hidden-lg {
+    @media (min-width: $for-bp-lg-min-size) and (max-width: $for-bp-lgx-min-size - 1) {
+        @content;
+    }
+}
+@mixin for-hidden-lg-down {
+    @media (max-width: $for-bp-lgx-min-size - 1) {
+        @content;
+    }
+}
+// large-eXtra
+// got no -up or -down version, as -down would be all and -up would be like normal lgx, as it is the highest size
+@mixin for-visible-lgx {
+    @media (min-width: $for-bp-lgx-min-size) {
+        @content;
+    }
+}
+@mixin for-hidden-lgx {
+    @media (min-width: $for-bp-lgx-min-size) {
         @content;
     }
 }

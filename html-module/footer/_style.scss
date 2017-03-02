@@ -1,5 +1,5 @@
 @if($for-output-html-module-footer) {
-    .for-footer {
+    .#{$for-output-prefix}footer {
         background: $for-footer-background;
         background-size: $for-footer-background-size;
         
@@ -12,23 +12,23 @@
         }
         
         @include for-bp-smx {
-            width: $for-footer-xsmall-width;
+            height: $for-footer-xsmall-height;
         }
         
         @include for-bp-sm {
-            width: $for-footer-small-width;
+            height: $for-footer-small-height;
         }
         
         @include for-bp-md {
-            width: $for-footer-medium-width;
+            height: $for-footer-medium-height;
         }
 
         @include for-bp-lg {
-            width: $for-footer-large-width;
+            height: $for-footer-large-height;
         }
 
         @include for-bp-lgx {
-            width: $for-footer-xlarge-width;
+            height: $for-footer-xlarge-height;
         }
         
         a {

@@ -1,5 +1,5 @@
 @if($for-output-html-module-header) {
-    .for-header {
+    .#{$for-output-prefix}header {
         background: $for-header-background;
         background-size: $for-header-background-size;
         
@@ -12,23 +12,23 @@
         }
         
         @include for-bp-smx {
-            width: $for-header-xsmall-height;
+            height: $for-header-xsmall-height;
         }
         
         @include for-bp-sm {
-            width: $for-header-small-height;
+            height: $for-header-small-height;
         }
         
         @include for-bp-md {
-            width: $for-header-medium-height;
+            height: $for-header-medium-height;
         }
 
         @include for-bp-lg {
-            width: $for-header-large-height;
+            height: $for-header-large-height;
         }
 
         @include for-bp-lgx {
-            width: $for-header-xlarge-height;
+            height: $for-header-xlarge-height;
         }
         
         a {

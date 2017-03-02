@@ -2,7 +2,7 @@
 /*! FormantaSassLibrary v0.1.0.0 | GNU LGPL v3 | http://formanta-sass.bemit.eu */
 /*
     FormantaSassLibrary for basic config, mixins, formatting and typography.
-    
+
     Part 1 of the FormantaLibrary for FrontendDevelopment.
 /*
     Copyright  : © 2016 Michael Becker, bemit UG (haftungsbeschränkt), bemit.eu
@@ -11,7 +11,7 @@
     Licence:   : GNU LGPL v3
 */
 
-@import 'general-config/all';
+@import 'config/all';
 
 @import 'color/config';
 @import 'grid/config';
@@ -22,8 +22,6 @@
 @import 'form/config';
 
 @import 'reset';
-
-@import 'libs/font-awesome/scss/font-awesome.scss';
 
 @import 'mixin';
 @import 'color/mixin';
