@@ -1,0 +1,21 @@
+{
+  "name": "@bemit_eu/formantasass",
+  "version": "0.0.4",
+  "description": "The formanta framework for Sass",
+  "homepage": "https://formanta.bemit.eu/",
+  "license": "(LGPL-3.0 OR CeCILL-C-1.0)",
+  "authors": [
+    {
+      "name": "Michael Becker",
+      "email": "mb.project@bemit.eu",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "docs": "https://doc.formanta.bemit.eu"
+  },
+  "devDependencies": {
+    "grunt-sass": "^2.0.0",
+    "grunt-contrib-cssmin": "^2.0.0"
+  }
+}
