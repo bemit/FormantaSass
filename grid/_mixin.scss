@@ -1,4 +1,14 @@
-// Include this mixin on a container if its children are all floated, to give the container a proper height.
+////
+/// Grid: Mixin
+/// ================
+/// All the grid things.
+/// @group Grid
+/// @author Michael Becker
+////
+
+/// Gives float parents its size
+/// @example Include this mixin on a container if all children are floated, gives the container a proper size.
+/// @output :before and :after tricks with display: table on before and after and clear: both only on :after
 @mixin for-clearfix {
     &:before,
     &:after {
@@ -10,7 +20,9 @@
         clear: both;
     }
 }
-// Will position elements vertical aligned middle
+/// Will position elements vertical aligned middle
+/// @param {String} $position [relative] - The position the element should become, normally relative is working
+/// @output positioning with top: 50% and a for-transform with translateY(-50%)
 @mixin for-vertical-align($position: relative) {
     top: 50%;
     position: $position;
@@ -47,24 +59,30 @@
 //
 // Display
 //
+/// @output display: block;
 @mixin for-display-block {
     display: block;
 }
+/// @output display: inline-block;
 @mixin for-display-inline-block {
     display: inline-block;
 }
+/// @output display: inline;
 @mixin for-display-inline {
     display: inline;
 }
 //
 // Clear
 //
+/// @output clear: both;
 @mixin for-clear-both {
     clear: both;
 }
+/// @output clear: left;
 @mixin for-clear-left {
     clear: left;
 }
+/// @output clear: right;
 @mixin for-clear-right {
     clear: right;
 }
@@ -76,39 +94,53 @@
     With $number you specify what column you want to be calculated
     with $col-qty you could overwrite the standard column qty grid, so you could do use 1 out of 5 columns instead of the standard "4,8" out of 24
 **/
+/// Basic column calculator
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
 @mixin for-col($number, $col-qty: $for-col-qty) {
     width: (100% / $col-qty) * $number;
 }
+/// Basic column style
 @mixin for-col-base {
     position: relative;
     min-height: 1px;
     float: left;
 }
-// Cols for smx
+/// Generates a column for breakpoint size smx
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
 @mixin for-col-smx($number, $col-qty: $for-col-qty) {
-    @include for-col($number);
+    @include for-col($number, $col-qty);
 }
-// Cols for sm
+/// Generates a column for breakpoint size sm
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
 @mixin for-col-sm($number, $col-qty: $for-col-qty) {
     @include for-bp-sm-up {
-        @include for-col($number);
+        @include for-col($number, $col-qty);
     }
 }
-// Cols for md
+/// Generates a column for breakpoint size md
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
 @mixin for-col-md($number, $col-qty: $for-col-qty) {
     @include for-bp-md-up {
-        @include for-col($number);
+        @include for-col($number, $col-qty);
     }
 }
-// Cols for lg
+/// Generates a column for breakpoint size lg
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
 @mixin for-col-lg($number, $col-qty: $for-col-qty) {
     @include for-bp-lg-up {
-        @include for-col($number);
+        @include for-col($number, $col-qty);
     }
 }
-// Cols for lgx
+/// Generates a column for breakpoint size lgx
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
 @mixin for-col-lgx($number, $col-qty: $for-col-qty) {
     @include for-bp-lgx {
-        @include for-col($number);
+        @include for-col($number, $col-qty);
     }
 }

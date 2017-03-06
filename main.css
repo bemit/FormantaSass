@@ -1,9 +1,9 @@
 @charset "UTF-8";
-/*! FormantaSass v0.1.0.0 | GNU LGPL v3 | http://formanta-sass.bemit.eu */
+/*! FormantaSass v0.1.0.0 | GNU LGPL v3 or CeCILL-C 1.0 | http://formanta.bemit.eu */
 /*
     FormantaSass for basic config, mixins, formatting and typography.
 
-    Part 1 of the FormantaLibrary for FrontendDevelopment.
+    A sass for FrontendDevelopment.
 /*
     Copyright  : © 2016 Michael Becker, bemit.eu
     Author     : Michael Becker
@@ -573,6 +573,34 @@ body {
   transition: opacity 0.4s linear; }
   .for-fade:hover {
     opacity: 0.6; }
+
+.for-zoom {
+  overflow: hidden;
+  position: relative; }
+  .for-zoom * {
+    position: relative;
+    z-index: 2; }
+  .for-zoom:hover:before {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  .for-zoom:before, .for-zoom:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .for-zoom:before {
+    -webkit-transition: -moz-transform 0.4s linear;
+    -moz-transition: -webkit-transform 0.4s linear;
+    -o-transition: -o-transform 0.4s linear;
+    transition: transform 0.4s linear;
+    background: url("../../img/footer/bottom-banner/bg-1.jpg") no-repeat;
+    background-size: cover;
+    z-index: 0; }
 
 html {
   /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */

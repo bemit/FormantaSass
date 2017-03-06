@@ -1,11 +1,11 @@
 {
-  "name": "bemit_eu/formantasass",
+  "name": "bemit/formantasass",
   "version": "0.0.4",
   "description": "The formanta framework for Sass",
   "homepage": "https://formanta.bemit.eu/",
   "license": [
     "LGPL-3.0",
-    "CeCILL-C-1.0"
+    "CECILL-C"
   ],
   "authors": [
     {
@@ -16,7 +16,11 @@
   ],
   "support": {
     "docs": "https://doc.formanta.bemit.eu"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bemit/FormantaSass.git"
+  },
   "minimum-stability": "dev",
   "prefer-stable": true
 }

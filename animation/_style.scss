@@ -2,4 +2,7 @@
     .#{$for-output-prefix}fade {
         @include for-fade();
     }
+    .#{$for-output-prefix}zoom {
+        @include for-zoom('../../img/footer/bottom-banner/bg-1.jpg', false);
+    }
 }
