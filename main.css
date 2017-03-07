@@ -474,8 +474,8 @@ input[type=submit] {
   font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
   color: #333;
-  padding: 10px 10px 10px 10px;
-  margin: 0 0 0 0;
+  padding: 10px;
+  margin: 0;
   background: #6ab42a;
   background-size: auto;
   text-decoration: none;
@@ -505,8 +505,8 @@ input[type=button] {
   font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
   color: #333;
-  padding: 10px 10px 10px 10px;
-  margin: 0 0 0 0;
+  padding: 10px;
+  margin: 0;
   background: #6ab42a;
   background-size: auto;
   text-decoration: none;
@@ -536,8 +536,8 @@ button {
   font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
   color: #333;
-  padding: 10px 10px 10px 10px;
-  margin: 0 0 0 0;
+  padding: 10px;
+  margin: 0;
   background: #6ab42a;
   background-size: auto;
   text-decoration: none;

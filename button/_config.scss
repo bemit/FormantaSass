@@ -1,58 +1,86 @@
-//  Buttons
-//  ##################################################
+////
+/// Button: Config
+/// ================
+/// Button and button and buttons
+/// @group Button
+/// @author Michael Becker
+////
 
 //  Typography
 //  ##########
+/// @prop {String} $for-button-font-family [$for-general-font-family] - font family for button
 $for-button-font-family: $for-general-font-family !default;
+/// @prop {Float} $for-button-font-size [$for-general-font-size] - font size for button
 $for-button-font-size: $for-general-font-size !default;
+/// @prop {Float} $for-button-font-color [$for-general-font-color] - font color for button
 $for-button-font-color: $for-general-font-color !default;
+/// @prop {Float} $for-button-font-style [$for-general-font-style] - font style for button
 $for-button-font-style: $for-general-font-style !default;
+/// @prop {Float} $for-button-font-variant [$for-general-font-variant] - font variant for button
 $for-button-font-variant: $for-general-font-variant !default;
+/// @prop {Float} $for-button-line-height [$for-general-line-height] - line height for button
 $for-button-line-height: $for-general-line-height !default;
+/// @prop {Float} $for-button-text-decoration [$for-general-text-decoration] - text decoration for button
 $for-button-text-decoration: $for-general-text-decoration !default;
+/// @prop {Float} $for-button-text-transform [$for-general-text-transform] - text transform for button
 $for-button-text-transform: $for-general-text-transform !default;
+/// @prop {Float} $for-button-text-align [$for-general-text-align] - text align for button
 $for-button-text-align: $for-general-text-align !default;
+/// @prop {Float} $for-button-font-weight [$for-general-font-weight] - font weight for button
 $for-button-font-weight: $for-general-font-weight !default;
 
+/// @prop {Float} $for-button-hover-font-size [$for-button-font-size] - font size for button:hover
 $for-button-hover-font-size: $for-button-font-size !default;
+/// @prop {Float} $for-button-hover-font-color [$for-button-font-color] - font color for button:hover
 $for-button-hover-font-color: $for-button-font-color !default;
+/// @prop {Float} $for-button-hover-font-style [$for-button-font-style] - font style for button:hover
 $for-button-hover-font-style: $for-button-font-style !default;
+/// @prop {Float} $for-button-hover-font-variant [$for-button-font-variant] - font variant for button:hover
 $for-button-hover-font-variant: $for-button-font-variant !default;
+/// @prop {Float} $for-button-hover-text-decoration [$for-button-text-decoration] - text decoration for button:hover
 $for-button-hover-text-decoration: $for-button-text-decoration !default;
+/// @prop {Float} $for-button-hover-text-transform [$for-button-text-transform] - text transform for button:hover
 $for-button-hover-text-transform: $for-button-text-transform !default;
+/// @prop {Float} $for-button-hover-font-weight [$for-button-font-weight] - font weight for button:hover
 $for-button-hover-font-weight: $for-button-font-weight !default;
 
 //  Padding
 //  ##########
+/// @prop {Float} $for-button-padding [10px] - padding for button
 $for-button-padding: 10px !default;
-$for-button-padding-top: $for-button-padding !default;
-$for-button-padding-right: $for-button-padding !default;
-$for-button-padding-bottom: $for-button-padding !default;
-$for-button-padding-left: $for-button-padding !default;
 
 //  Margin
 //  ##########
+/// @prop {Float} $for-button-margin [0] - margin for button
 $for-button-margin: 0 !default;
-$for-button-margin-top: $for-button-margin !default;
-$for-button-margin-right: $for-button-margin !default;
-$for-button-margin-bottom: $for-button-margin !default;
-$for-button-margin-left: $for-button-margin !default;
 
 //  Border
 //  ##########
+/// @prop {Float} $for-button-border-width [] - border width for button
 $for-button-border-width: 0 !default;
+/// @prop {Float} $for-button-border-style [] - border style for button
 $for-button-border-style: solid !default;
+/// @prop {Float} $for-button-border-color [] - border color for button
 $for-button-border-color: transparent !default;
+/// @prop {Float} $for-button-border-radius [] - border radius for button
 $for-button-border-radius: 0 !default;
 
+/// @prop {Float} $for-button-border-top-width [$for-button-border-width] - border top for button
 $for-button-border-top-width: $for-button-border-width !default;
+/// @prop {Float} $for-button-border-right-width [$for-button-border-width] - border right for button
 $for-button-border-right-width: $for-button-border-width !default;
+/// @prop {Float} $for-button-border-bottom-width [$for-button-border-width] - border bottom for button
 $for-button-border-bottom-width: $for-button-border-width !default;
+/// @prop {Float} $for-button-border-left-width [$for-button-border-width] - border left for button
 $for-button-border-left-width: $for-button-border-width !default;
 
+/// @prop {Float} $for-button-border-top-style [$for-button-border-style] - border top style for button
 $for-button-border-top-style: $for-button-border-style !default;
+/// @prop {Float} $for-button-border-right-style [$for-button-border-style] - border right style for button
 $for-button-border-right-style: $for-button-border-style !default;
+/// @prop {Float} $for-button-border-bottom-style [$for-button-border-style] - border bottom style for button
 $for-button-border-bottom-style: $for-button-border-style !default;
+/// @prop {Float} $for-button-border-left-style [$for-button-border-style] - border left style for button
 $for-button-border-left-style: $for-button-border-style !default;
 
 $for-button-border-top-color: $for-button-border-color !default;

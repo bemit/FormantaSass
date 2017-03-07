@@ -1,8 +1,11 @@
 module.exports = function(grunt) {
+    // Time
+    require('time-grunt')(grunt);
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        // CSS
+        // Sass / CSS
         sass: {
             options: {
                 sourceMap: true
@@ -24,10 +27,29 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        sassdoc: {
+            bare: {
+                src: '**/*.scss',
+                options: {
+                    groups: {
+                        'undefined': 'Ungrouped',
+                        'Animation': 'Animation',
+                        'Grid': 'Grid'
+                    },
+                    display: {
+                        watermark: true
+                    }
+                }
+            }
+        }
     });
 
-    // SASS
+    // Sass / CSS
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.registerTask('css', ['sass', 'cssmin']);
+
+    // Sassdoc
+    grunt.loadNpmTasks('grunt-sassdoc');
+    grunt.registerTask('sassdoc', ['sassdoc']);
 };
