@@ -1,8 +1,19 @@
 // Backgrounds
 // ##################################################
-$for-body-background: #ffffff !default;
+
+/// @prop {Color} $for-body-background [#fff] - background color for body
+$for-body-background: #fff !default;
 
 //  Basis Coloring
 //  ##################################################
+/// @prop {Color} $for-general-color-primary [#fff] - background color for body
 $for-general-color-primary: #6ab42a !default;
-$for-general-color-secondary: #0044aa !default;
+$for-general-color-secondary: #04a !default;
+
+$for-grayscale-qty: 5;
+/// @prop {Color} $for-general-color-primary [#fff] - in grabase
+$for-grayscale-base: #7f7f7f;
+$for-grayscale-base-n2: darken($for-grayscale-base, 85);
+$for-grayscale-base-n1: darken($for-grayscale-base, 50);
+$for-grayscale-base-p1: lighten($for-grayscale-base, 50);
+$for-grayscale-base-p2: lighten($for-grayscale-base, 85);
