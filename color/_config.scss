@@ -14,7 +14,7 @@ $for-general-color-primary: #6ab42a !default;
 $for-general-color-secondary: #04a !default;
 
 /// @prop {Int} $for-grayscale-qty [5] - how big the grayscale should be, needs to be an eneven number, half is negative (n1, n2, n3..), half positive (p1, p2, p3...)
-$for-grayscale-qty: 15;
+$for-grayscale-qty: 5;
 /// @prop {Color} $for-grayscale-base [#7f7f7f] - center of the grayscale
 $for-grayscale-base: #7f7f7f;
 /// @prop {Color} $for-grayscale-base-n2 [#darken($for-grayscale-base, 80)] - negative grayscale, dark step 2

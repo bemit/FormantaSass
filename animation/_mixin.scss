@@ -50,11 +50,17 @@
         opacity: $to-opacity;
     }
 }
-/// Generates a background at this element which zooms in with hover and there could be some overlay over it
-/// @access public
-/// @param {String} $bg-url - the relative path to the background from the folder where the end css is located
-/// @param {Bool|Color} $bg-overlay [false] - false: not displaying, null: use default config, else: Color Value (rgba(), hex, ..)
-@mixin for-zoom($bg-url, $bg-overlay: false, $to-scale: null, $to-opacity: null, $duration: null, $timing-function: null, $delay: null) {
+/// Base mixin for all the zoom
+/// @param {String} $bg-url [] - needed for pure css animation, optional for html elements based, will be used as background for zoom effect
+/// @param {String} $selector-image [] - selector for thing containing the image for the effect, html or pure pseudo is in use
+/// @param {String} $selector-overlay [] - optinal when no overlay wanted, a transparent overlay, behind the content
+/// @param {Bool|Color} $bg-overlay [false] - optional, false: not displaying, null: use default config, else: Color Value (rgba(), hex, ..)
+/// @param {Int} $to-scale [null] - to which scale the image should animate
+/// @param {Int} $to-opacity [null] - to which opacity the overlay should animate
+/// @param {Int} $duration [null] - how long the animations should take
+/// @param {Int} $timing-function [null] - what css3 timing function should be used for the animation
+/// @param {Int} $delay [null] - how long the animation should be delayed
+@mixin for-zoom-base($bg-url, $selector-image, $selector-overlay, $bg-overlay: false, $to-scale: null, $to-opacity: null, $duration: null, $timing-function: null, $delay: null) {
     @if ($duration) {
         $duration: $duration;
     } @else {
@@ -80,27 +86,14 @@
 
     overflow: hidden;
     position: relative;
-    * {
+    // That the content doesn't vanish
+    > * {
         position: relative;
         z-index: 2;
     }
-    &:hover {
-        &:before {
-            @include for-transform(scale($to-scale));
-        }
-        @if ($bg-overlay != false) {
-            &:after {
-                @if ($to-opacity) {
-                    $to-opacity: $to-opacity;
-                } @else {
-                    $to-opacity: $for-animation-zoom-to-opacity;
-                }
-                opacity: $to-opacity;
-            }
-        }
-    }
-    &:before,
-    &:after {
+    // Image CSS & Overlay CSS
+    &#{$selector-image},
+    &#{$selector-overlay} {
         content: ' ';
         display: block;
         position: absolute;
@@ -109,17 +102,17 @@
         bottom: 0;
         left: 0;
     }
-    &:before {
+    // Image CSS
+    &#{$selector-image} {
         -webkit-transition: -moz-transform $duration $timing-function $delay;
         -moz-transition: -webkit-transform $duration $timing-function $delay;
         -o-transition: -o-transform $duration $timing-function $delay;
         transition: transform $duration $timing-function $delay;
-        background: url($bg-url) no-repeat;
-        background-size: cover;
         z-index: 0;
     }
+    // Overlay CSS
     @if ($bg-overlay != false) {
-        &:after {
+        &#{$selector-overlay} {
             @if ($bg-overlay) {
                 $bg-overlay: $bg-overlay;
             } @else {
@@ -130,4 +123,61 @@
             @include for-transition(opacity $duration $timing-function $delay);
         }
     }
+    // Effects executing
+    &:hover {
+        // Image CSS
+        &#{$selector-image} {
+            @include for-transform(scale($to-scale));
+        }
+        @if ($bg-overlay != false) {
+            // Overlay CSS
+            &#{$selector-overlay} {
+                @if ($to-opacity) {
+                    $to-opacity: $to-opacity;
+                } @else {
+                    $to-opacity: $for-animation-zoom-to-opacity;
+                }
+                opacity: $to-opacity;
+            }
+        }
+    }
+}
+/// Generates a background at this element which zooms in with hover and there could be some overlay over it
+/// @param {String} $bg-url [] - will be used as background for zoom effect
+/// @param {Bool|Color} $bg-overlay [false] - optional, false: not displaying, null: use default config, else: Color Value (rgba(), hex, ..)
+/// @param {Int} $to-scale [null] - to which scale the image should animate
+/// @param {Int} $to-opacity [null] - to which opacity the overlay should animate
+/// @param {Int} $duration [null] - how long the animations should take
+/// @param {Int} $timing-function [null] - what css3 timing function should be used for the animation
+/// @param {Int} $delay [null] - how long the animation should be delayed
+@mixin for-zoom($bg-url, $bg-overlay: false, $to-scale: null, $to-opacity: null, $duration: null, $timing-function: null, $delay: null) {
+    &:before {
+        background: url($bg-url) no-repeat;
+        background-size: cover;
+    }
+    $selector-image: '&:before';
+    $selector-overlay: '&:after';
+    @include for-zoom-base($bg-url, $selector-image, $selector-overlay, $bg-overlay, $to-scale, $to-opacity, $duration, $timing-function, $delay);
+}
+/// Zoom mixin for html container
+/// @param {String} $selector-image [] - selector for thing containing the image for the effect, html or pure pseudo is in use
+/// @param {String} $selector-overlay [] - optinal when no overlay wanted, a transparent overlay, behind the content
+/// @param {Bool|Color} $bg-overlay [false] - optional, false: not displaying, null: use default config, else: Color Value (rgba(), hex, ..)
+/// @param {Int} $to-scale [null] - to which scale the image should animate
+/// @param {Int} $to-opacity [null] - to which opacity the overlay should animate
+/// @param {Int} $duration [null] - how long the animations should take
+/// @param {Int} $timing-function [null] - what css3 timing function should be used for the animation
+/// @param {Int} $delay [null] - how long the animation should be delayed
+@mixin for-zoom-html($selector-image: null, $selector-overlay: null, $bg-overlay: false, $to-scale: null, $to-opacity: null, $duration: null, $timing-function: null, $delay: null) {
+    @if ($selector-image) {
+
+    } @else {
+        $selector-image: ' img:first-child';
+    }
+    @if ($selector-overlay) {
+
+    } @else {
+        $selector-overlay: ' .zoom-overlay';
+    }
+    @include for-zoom-base(null, $selector-image, $selector-overlay, $bg-overlay, $to-scale, $to-opacity, $duration, $timing-function, $delay);
 }

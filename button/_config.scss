@@ -8,6 +8,7 @@
 
 //  Typography
 //  ##########
+
 /// @prop {String} $for-button-font-family [$for-general-font-family] - font family for button
 $for-button-font-family: $for-general-font-family !default;
 /// @prop {Float} $for-button-font-size [$for-general-font-size] - font size for button
@@ -46,69 +47,72 @@ $for-button-hover-font-weight: $for-button-font-weight !default;
 
 //  Padding
 //  ##########
+
 /// @prop {Float} $for-button-padding [10px] - padding for button
 $for-button-padding: 10px !default;
 
 //  Margin
 //  ##########
+
 /// @prop {Float} $for-button-margin [0] - margin for button
 $for-button-margin: 0 !default;
 
 //  Border
 //  ##########
-/// @prop {Float} $for-button-border-width [] - border width for button
+
+/// @prop {Size} $for-button-border-width [] - border width for button
 $for-button-border-width: 0 !default;
-/// @prop {Float} $for-button-border-style [] - border style for button
+/// @prop {String} $for-button-border-style [] - border style for button
 $for-button-border-style: solid !default;
-/// @prop {Float} $for-button-border-color [] - border color for button
+/// @prop {String} $for-button-border-color [] - border color for button
 $for-button-border-color: transparent !default;
-/// @prop {Float} $for-button-border-radius [] - border radius for button
+/// @prop {Size} $for-button-border-radius [] - border radius for button
 $for-button-border-radius: 0 !default;
 
-/// @prop {Float} $for-button-border-top [$for-button-border-width $for-button-border-style $for-button-border-color] - border top for button
+/// @prop $for-button-border-top [$for-button-border-width $for-button-border-style $for-button-border-color] - border top for button
 $for-button-border-top: $for-button-border-width $for-button-border-style $for-button-border-color !default;
-/// @prop {Float} $for-button-border-right [$for-button-border-width $for-button-border-style $for-button-border-color] - border right for button
+/// @prop $for-button-border-right [$for-button-border-width $for-button-border-style $for-button-border-color] - border right for button
 $for-button-border-right: $for-button-border-width $for-button-border-style $for-button-border-color !default;
-/// @prop {Float} $for-button-border-bottom [$for-button-border-width $for-button-border-style $for-button-border-color] - border bottom for button
+/// @prop $for-button-border-bottom [$for-button-border-width $for-button-border-style $for-button-border-color] - border bottom for button
 $for-button-border-bottom: $for-button-border-width $for-button-border-style $for-button-border-color !default;
-/// @prop {Float} $for-button-border-left [$for-button-border-width $for-button-border-style $for-button-border-color] - border left for button
+/// @prop $for-button-border-left [$for-button-border-width $for-button-border-style $for-button-border-color] - border left for button
 $for-button-border-left: $for-button-border-width $for-button-border-style $for-button-border-color !default;
 
+/// @prop {Size} $for-button-border-radius-inner [$for-button-border-radius] - border radius inner, first part within css (before /)
+$for-button-border-radius-inner: $for-button-border-radius !default; //first part within css (before /)
+/// @prop {Size} $for-button-border-radius-outer [$for-button-border-radius] - border radius inner, second part within css (before /)
+$for-button-border-radius-outer: $for-button-border-radius !default; //second part within css (after /)
 
-$for-button-border-radius-inner: $for-button-border-radius !default;//first part within css (before /)
-$for-button-border-radius-outer: $for-button-border-radius !default;//second part within css (after /)
-
-$for-button-border-top-left-radius-inner: $for-button-border-radius-inner !default;
-$for-button-border-top-left-radius-left: $for-button-border-radius-outer !default;
-$for-button-border-top-right-radius-inner: $for-button-border-radius-inner !default;
-$for-button-border-top-right-radius-right: $for-button-border-radius-outer !default;
-$for-button-border-bottom-right-radius-inner: $for-button-border-radius-inner !default;
-$for-button-border-bottom-right-radius-right: $for-button-border-radius-outer !default;
-$for-button-border-bottom-left-radius-inner: $for-button-border-radius-inner !default;
-$for-button-border-bottom-left-radius-left: $for-button-border-radius-outer !default;
 //  Border Hover
-//  ###
+//  ##########
+
+/// @prop $for-button-hover-border-top [$for-button-border-top] - border top for button:hover
 $for-button-hover-border-top: $for-button-border-top !default;
+/// @prop $for-button-hover-border-right [$for-button-border-right] - border right for button:hover
 $for-button-hover-border-right: $for-button-border-right !default;
+/// @prop $for-button-hover-border-bottom [$for-button-border-bottom] - border bottom for button:hover
 $for-button-hover-border-bottom: $for-button-border-bottom !default;
+/// @prop $for-button-hover-border-left [$for-button-border-left] - border left for button:hover
 $for-button-hover-border-left: $for-button-border-left !default;
+
 //  Border Radius
+//  ##########
+
+/// @prop {Size} $for-button-hover-border-radius [$for-button-border-radius] - border radius for button:hover
 $for-button-hover-border-radius: $for-button-border-radius !default;
-$for-button-hover-border-radius-inner: $for-button-hover-border-radius !default;//first part within css (before /)
-$for-button-hover-border-radius-outer: $for-button-hover-border-radius !default;//second part within css (after /)
-//  Border Radius complete
-$for-button-hover-border-top-left-radius-inner: $for-button-hover-border-radius-inner !default;
-$for-button-hover-border-top-left-radius-left: $for-button-hover-border-radius-outer !default;
-$for-button-hover-border-top-right-radius-inner: $for-button-hover-border-radius-inner !default;
-$for-button-hover-border-top-right-radius-right: $for-button-hover-border-radius-outer !default;
-$for-button-hover-border-bottom-right-radius-inner: $for-button-hover-border-radius-inner !default;
-$for-button-hover-border-bottom-right-radius-right: $for-button-hover-border-radius-outer !default;
-$for-button-hover-border-bottom-left-radius-inner: $for-button-hover-border-radius-inner !default;
-$for-button-hover-border-bottom-left-radius-left: $for-button-hover-border-radius-outer !default;
+/// @prop {Size} $for-button-hover-border-radius-inner [$for-button-hover-border-radius] - border radius onner for button:hover
+$for-button-hover-border-radius-inner: $for-button-hover-border-radius !default; //first part within css (before /)
+/// @prop {Size} $for-button-hover-border-radius-outer [$for-button-hover-border-radius] - border radius outer for button:hover
+$for-button-hover-border-radius-outer: $for-button-hover-border-radius !default; //second part within css (after /)
 
 //  Background
 //  ##########
+
+/// @prop {Size} $for-button-background [$for-general-color-primary] - background size for button
 $for-button-background: $for-general-color-primary !default;
+/// @prop {Size} $for-button-background-size [auto] - background color for button
 $for-button-background-size: auto !default;
+/// @prop {Size} $for-button-hover-background [$for-general-color-secondary] - background color for button:hover
 $for-button-hover-background: $for-general-color-secondary !default;
+/// @prop {Size} $for-button-hover-background-size [$for-button-background-size] - background size for button:hover
 $for-button-hover-background-size: $for-button-background-size !default;

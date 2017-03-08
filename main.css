@@ -9,12 +9,6 @@
     Author     : Michael Becker
     Licence:   : GNU LGPL v3 | CeCILL-C 1.0
 */
-.gray {
-  n2: black;
-  n1: #191919;
-  p1: #e5e5e5;
-  p2: white; }
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
      * 1. Set default font family to sans-serif.
@@ -475,68 +469,9 @@ textarea {
     With $number you specify what column you want to be calculated
     with $col-qty you could overwrite the standard column qty grid, so you could do use 1 out of 5 columns instead of the standard "4,8" out of 24
 **/
-input[type=submit] {
-  display: inline-block;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
-  font-variant: normal;
-  color: #333;
-  padding: 10px;
-  margin: 0;
-  background: #6ab42a;
-  background-size: auto;
-  text-decoration: none;
-  text-transform: none;
-  text-align: left;
-  border-top: 0 solid transparent;
-  border-right: 0 solid transparent;
-  border-bottom: 0 solid transparent;
-  border-left: 0 solid transparent;
-  border-radius: 0 0 0 0 / 0 0 0 0; }
-  input[type=submit]:hover {
-    background: #04a;
-    background-size: auto;
-    font: normal 400 12pt/normal Helvetica, sans-serif;
-    font-variant: normal;
-    color: #333;
-    text-decoration: none;
-    text-transform: none;
-    border-top: 0 solid transparent;
-    border-right: 0 solid transparent;
-    border-bottom: 0 solid transparent;
-    border-left: 0 solid transparent;
-    border-radius: 0 0 0 0 / 0 0 0 0; }
-
-input[type=button] {
-  display: inline-block;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
-  font-variant: normal;
-  color: #333;
-  padding: 10px;
-  margin: 0;
-  background: #6ab42a;
-  background-size: auto;
-  text-decoration: none;
-  text-transform: none;
-  text-align: left;
-  border-top: 0 solid transparent;
-  border-right: 0 solid transparent;
-  border-bottom: 0 solid transparent;
-  border-left: 0 solid transparent;
-  border-radius: 0 0 0 0 / 0 0 0 0; }
-  input[type=button]:hover {
-    background: #04a;
-    background-size: auto;
-    font: normal 400 12pt/normal Helvetica, sans-serif;
-    font-variant: normal;
-    color: #333;
-    text-decoration: none;
-    text-transform: none;
-    border-top: 0 solid transparent;
-    border-right: 0 solid transparent;
-    border-bottom: 0 solid transparent;
-    border-left: 0 solid transparent;
-    border-radius: 0 0 0 0 / 0 0 0 0; }
-
+input[type=submit],
+input[type=button],
+.for-btn,
 button {
   display: inline-block;
   font: normal 400 12pt/normal Helvetica, sans-serif;
@@ -553,7 +488,10 @@ button {
   border-right: 0 solid transparent;
   border-bottom: 0 solid transparent;
   border-left: 0 solid transparent;
-  border-radius: 0 0 0 0 / 0 0 0 0; }
+  border-radius: 0 / 0; }
+  input[type=submit]:hover,
+  input[type=button]:hover,
+  .for-btn:hover,
   button:hover {
     background: #04a;
     background-size: auto;
@@ -566,51 +504,118 @@ button {
     border-right: 0 solid transparent;
     border-bottom: 0 solid transparent;
     border-left: 0 solid transparent;
-    border-radius: 0 0 0 0 / 0 0 0 0; }
+    border-radius: 0 / 0; }
+
+.for-btn-expand {
+  display: inline-block;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
+  color: #333;
+  padding: 10px;
+  margin: 0;
+  background: #6ab42a;
+  background-size: auto;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  border-top: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-radius: 0 / 0; }
+  .for-btn-expand:hover {
+    background: #04a;
+    background-size: auto;
+    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
+    color: #333;
+    text-decoration: none;
+    text-transform: none;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-radius: 0 / 0; }
+
+.for-btn-outline,
+.for-btn-o {
+  display: inline-block;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
+  color: #333;
+  padding: 10px;
+  margin: 0;
+  background: #6ab42a;
+  background-size: auto;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  border-top: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-radius: 0 / 0; }
+  .for-btn-outline:hover,
+  .for-btn-o:hover {
+    background: #04a;
+    background-size: auto;
+    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
+    color: #333;
+    text-decoration: none;
+    text-transform: none;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-radius: 0 / 0; }
+  .for-btn-outline.for-expand,
+  .for-btn-o.for-expand {
+    display: block;
+    width: 100%;
+    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+    background: #6ab42a;
+    background-size: auto;
+    text-decoration: none;
+    text-transform: none;
+    text-align: left;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-radius: 0 / 0; }
+    .for-btn-outline.for-expand:hover,
+    .for-btn-o.for-expand:hover {
+      background: #04a;
+      background-size: auto;
+      font: normal 400 12pt/normal Helvetica, sans-serif;
+      font-variant: normal;
+      color: #333;
+      text-decoration: none;
+      text-transform: none;
+      border-top: 0 solid transparent;
+      border-right: 0 solid transparent;
+      border-bottom: 0 solid transparent;
+      border-left: 0 solid transparent;
+      border-radius: 0 / 0; }
 
 .for-body {
   background: #fff; }
 
 .for-gray-n1 {
-  color: #5d5d5d; }
-
-.for-gray-n2 {
-  color: #3b3b3b; }
-
-.for-gray-n3 {
   color: #191919; }
 
-.for-gray-n4 {
-  color: black; }
-
-.for-gray-n5 {
-  color: black; }
-
-.for-gray-n6 {
-  color: black; }
-
-.for-gray-n7 {
+.for-gray-n2 {
   color: black; }
 
 .for-gray-p1 {
-  color: #a1a1a1; }
-
-.for-gray-p2 {
-  color: #c3c3c3; }
-
-.for-gray-p3 {
   color: #e5e5e5; }
 
-.for-gray-p4 {
-  color: white; }
-
-.for-gray-p5 {
-  color: white; }
-
-.for-gray-p6 {
-  color: white; }
-
-.for-gray-p7 {
+.for-gray-p2 {
   color: white; }
 
 .for-fade {
@@ -625,15 +630,11 @@ button {
 .for-zoom {
   overflow: hidden;
   position: relative; }
-  .for-zoom * {
+  .for-zoom > * {
     position: relative;
     z-index: 2; }
-  .for-zoom:hover:before {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1); }
-  .for-zoom:before, .for-zoom:after {
+  .for-zoom img:first-child,
+  .for-zoom .zoom-overlay {
     content: ' ';
     display: block;
     position: absolute;
@@ -641,14 +642,54 @@ button {
     right: 0;
     bottom: 0;
     left: 0; }
-  .for-zoom:before {
+  .for-zoom img:first-child {
     -webkit-transition: -moz-transform 0.4s linear;
     -moz-transition: -webkit-transform 0.4s linear;
     -o-transition: -o-transform 0.4s linear;
     transition: transform 0.4s linear;
-    background: url("../../img/footer/bottom-banner/bg-1.jpg") no-repeat;
-    background-size: cover;
     z-index: 0; }
+  .for-zoom:hover img:first-child {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.for-zoom-overlay {
+  overflow: hidden;
+  position: relative; }
+  .for-zoom-overlay > * {
+    position: relative;
+    z-index: 2; }
+  .for-zoom-overlay img:first-child,
+  .for-zoom-overlay .zoom-overlay {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .for-zoom-overlay img:first-child {
+    -webkit-transition: -moz-transform 0.4s linear;
+    -moz-transition: -webkit-transform 0.4s linear;
+    -o-transition: -o-transform 0.4s linear;
+    transition: transform 0.4s linear;
+    z-index: 0; }
+  .for-zoom-overlay .zoom-overlay {
+    background: rgba(25, 25, 25, 0.5);
+    z-index: 1;
+    -webkit-transition: opacity 0.4s linear;
+    -moz-transition: opacity 0.4s linear;
+    -ms-transition: opacity 0.4s linear;
+    -o-transition: opacity 0.4s linear;
+    transition: opacity 0.4s linear; }
+  .for-zoom-overlay:hover img:first-child {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  .for-zoom-overlay:hover .zoom-overlay {
+    opacity: 0.2; }
 
 html {
   /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
