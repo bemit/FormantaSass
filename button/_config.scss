@@ -65,28 +65,15 @@ $for-button-border-color: transparent !default;
 /// @prop {Float} $for-button-border-radius [] - border radius for button
 $for-button-border-radius: 0 !default;
 
-/// @prop {Float} $for-button-border-top-width [$for-button-border-width] - border top for button
-$for-button-border-top-width: $for-button-border-width !default;
-/// @prop {Float} $for-button-border-right-width [$for-button-border-width] - border right for button
-$for-button-border-right-width: $for-button-border-width !default;
-/// @prop {Float} $for-button-border-bottom-width [$for-button-border-width] - border bottom for button
-$for-button-border-bottom-width: $for-button-border-width !default;
-/// @prop {Float} $for-button-border-left-width [$for-button-border-width] - border left for button
-$for-button-border-left-width: $for-button-border-width !default;
+/// @prop {Float} $for-button-border-top [$for-button-border-width $for-button-border-style $for-button-border-color] - border top for button
+$for-button-border-top: $for-button-border-width $for-button-border-style $for-button-border-color !default;
+/// @prop {Float} $for-button-border-right [$for-button-border-width $for-button-border-style $for-button-border-color] - border right for button
+$for-button-border-right: $for-button-border-width $for-button-border-style $for-button-border-color !default;
+/// @prop {Float} $for-button-border-bottom [$for-button-border-width $for-button-border-style $for-button-border-color] - border bottom for button
+$for-button-border-bottom: $for-button-border-width $for-button-border-style $for-button-border-color !default;
+/// @prop {Float} $for-button-border-left [$for-button-border-width $for-button-border-style $for-button-border-color] - border left for button
+$for-button-border-left: $for-button-border-width $for-button-border-style $for-button-border-color !default;
 
-/// @prop {Float} $for-button-border-top-style [$for-button-border-style] - border top style for button
-$for-button-border-top-style: $for-button-border-style !default;
-/// @prop {Float} $for-button-border-right-style [$for-button-border-style] - border right style for button
-$for-button-border-right-style: $for-button-border-style !default;
-/// @prop {Float} $for-button-border-bottom-style [$for-button-border-style] - border bottom style for button
-$for-button-border-bottom-style: $for-button-border-style !default;
-/// @prop {Float} $for-button-border-left-style [$for-button-border-style] - border left style for button
-$for-button-border-left-style: $for-button-border-style !default;
-
-$for-button-border-top-color: $for-button-border-color !default;
-$for-button-border-right-color: $for-button-border-color !default;
-$for-button-border-bottom-color: $for-button-border-color !default;
-$for-button-border-left-color: $for-button-border-color !default;
 
 $for-button-border-radius-inner: $for-button-border-radius !default;//first part within css (before /)
 $for-button-border-radius-outer: $for-button-border-radius !default;//second part within css (after /)
@@ -101,21 +88,10 @@ $for-button-border-bottom-left-radius-inner: $for-button-border-radius-inner !de
 $for-button-border-bottom-left-radius-left: $for-button-border-radius-outer !default;
 //  Border Hover
 //  ###
-$for-button-hover-border-width: $for-button-border-width !default;
-$for-button-hover-border-style: $for-button-border-style !default;
-$for-button-hover-border-color: $for-button-border-color !default;
-$for-button-hover-border-top-width: $for-button-hover-border-width !default;
-$for-button-hover-border-top-style: $for-button-hover-border-style !default;
-$for-button-hover-border-top-color: $for-button-hover-border-color !default;
-$for-button-hover-border-right-width: $for-button-hover-border-width !default;
-$for-button-hover-border-right-style: $for-button-hover-border-style !default;
-$for-button-hover-border-right-color: $for-button-hover-border-color !default;
-$for-button-hover-border-bottom-width: $for-button-hover-border-width !default;
-$for-button-hover-border-bottom-style: $for-button-hover-border-style !default;
-$for-button-hover-border-bottom-color: $for-button-hover-border-color !default;
-$for-button-hover-border-left-width: $for-button-hover-border-width !default;
-$for-button-hover-border-left-style: $for-button-hover-border-style !default;
-$for-button-hover-border-left-color: $for-button-hover-border-color !default;
+$for-button-hover-border-top: $for-button-border-top !default;
+$for-button-hover-border-right: $for-button-border-right !default;
+$for-button-hover-border-bottom: $for-button-border-bottom !default;
+$for-button-hover-border-left: $for-button-border-left !default;
 //  Border Radius
 $for-button-hover-border-radius: $for-button-border-radius !default;
 $for-button-hover-border-radius-inner: $for-button-hover-border-radius !default;//first part within css (before /)

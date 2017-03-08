@@ -1,0 +1,26 @@
+////
+/// Flexbox: Mixin
+/// ================
+/// Flexible layout for components.
+/// @group Flexbox
+/// @author Michael Becker
+////
+
+//
+// Display
+//
+/// @output display: flex;
+@mixin for-display-flex {
+    display: flex;
+}
+/// @output display: inline-flex;
+@mixin for-display-inline-flex {
+    display: inline-block;
+}
+/// The container for a flexbox layout element
+/// @param {String} $flex-direction [row] - the direction of the flexbox, row | row-reverse | column | column-reverse
+/// @param {String} $flex-wrap [wrap] - if the flex-items should wrap or stay in one line, nowrap | wrap | wrap-reverse
+@mixin for-flex-container($flex-direction: 'row', $flex-wrap: 'wrap') {
+    @include for-display-flex;
+    flex-flow: #{$flex-direction} #{$flex-wrap};
+}

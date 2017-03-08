@@ -1,24 +1,10 @@
 ////
-/// Grid: Config
+/// Flexbox: Config
 /// ================
-/// All the grid default things.
-/// @group Grid
+/// All the flexbox default things.
+/// @group Flexbox
 /// @author Michael Becker
 ////
-
-//
-// Breakpoint
-// ##################################################
-/// @prop {Size} $for-bp-lgx-min-size [3000px] - the minimum size for screen size large eXtra
-$for-bp-lgx-min-size: 3000px !default;
-/// @prop {Size} $for-bp-lg-min-size [1200px] - the minimum size for screen size large
-$for-bp-lg-min-size: 1200px !default;
-/// @prop {Size} $for-bp-md-min-size [992px] - the minimum size for screen size medium
-$for-bp-md-min-size: 992px !default;
-/// @prop {Size} $for-bp-sm-min-size [768px] - the minimum size for screen size small
-$for-bp-sm-min-size: 768px !default;
-/// @prop {Size} $for-bp-smx-max-size [$for-bp-sm-min-size - 1] - the maximum size for screen size smale eXtra
-$for-bp-smx-max-size: $for-bp-sm-min-size - 1 !default;
 
 //
 // Columns
@@ -79,14 +65,3 @@ $for-gutter-thinnest-right: $for-gutter-thinnest-general !default;
 $for-gutter-thinnest-bottom: $for-gutter-thinnest-general !default;
 $for-gutter-thinnest-left: $for-gutter-thinnest-general !default;
 $for-gutter-thinnest: $for-gutter-thinnest-top $for-gutter-thinnest-right $for-gutter-thinnest-bottom $for-gutter-thinnest-left !default;
-
-/// @prop {Size} $for-gutter-lgx [$for-gutter-thick] - the gutter thicknest applied to bp-lgx
-$for-gutter-lgx: $for-gutter-thick !default;
-/// @prop {Size} $for-gutter-lg [$for-gutter-thick] - the gutter thicknest applied to bp-lg
-$for-gutter-lg: $for-gutter-thick !default;
-/// @prop {Size} $for-gutter-md [$for-gutter-normal] - the gutter thicknest applied to bp-md
-$for-gutter-md: $for-gutter-normal !default;
-/// @prop {Size} $for-gutter-sm [$for-gutter-normal] - the gutter thicknest applied to bp-sm
-$for-gutter-sm: $for-gutter-normal !default;
-/// @prop {Size} $for-gutter-smx [$for-gutter-thin] - the gutter thicknest applied to bp-smx
-$for-gutter-smx: $for-gutter-thin !default;
