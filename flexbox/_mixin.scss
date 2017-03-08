@@ -24,3 +24,10 @@
     @include for-display-flex;
     flex-flow: #{$flex-direction} #{$flex-wrap};
 }
+/// An item inside a for-flexbox-container
+/// @param {Int} $flex-grow [0] - the proportion the item is allowed to grow
+/// @param {Int} $flex-shrink [1] - if the item is allowed to shrink
+/// @param {Size} $flex-basis [auto] - the default size of the element
+@mixin for-flex-item($flex-grow, $flex-shrink, $flex-basis) {
+    flex: $flex-grow $flex-shrink $flex-basis;
+}

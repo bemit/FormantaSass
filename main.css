@@ -9,6 +9,12 @@
     Author     : Michael Becker
     Licence:   : GNU LGPL v3 | CeCILL-C 1.0
 */
+.gray {
+  n2: black;
+  n1: #191919;
+  p1: #e5e5e5;
+  p2: white; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
      * 1. Set default font family to sans-serif.
@@ -566,27 +572,45 @@ button {
   background: #fff; }
 
 .for-gray-n1 {
-  color: #333232; }
+  color: #5d5d5d; }
 
 .for-gray-n2 {
+  color: #3b3b3b; }
+
+.for-gray-n3 {
+  color: #191919; }
+
+.for-gray-n4 {
+  color: black; }
+
+.for-gray-n5 {
+  color: black; }
+
+.for-gray-n6 {
+  color: black; }
+
+.for-gray-n7 {
   color: black; }
 
 .for-gray-p1 {
-  color: #cccbcb; }
+  color: #a1a1a1; }
 
 .for-gray-p2 {
+  color: #c3c3c3; }
+
+.for-gray-p3 {
+  color: #e5e5e5; }
+
+.for-gray-p4 {
   color: white; }
 
-.for-gray-nn2 {
-  color: black; }
+.for-gray-p5 {
+  color: white; }
 
-.for-gray-nn1 {
-  color: black; }
+.for-gray-p6 {
+  color: white; }
 
-.for-gray-pp1 {
-  color: #fffefe; }
-
-.for-gray-pp2 {
+.for-gray-p7 {
   color: white; }
 
 .for-fade {

@@ -2,31 +2,5 @@
     .#{$for-output-prefix}body {
         background: $for-body-background;
     }
-    @for $i from 1 through ($for-grayscale-qty - 1) {
-        $tmp-grayscale-name: '';
-        $tmp-grayscale-color: $for-grayscale-base;
-        @if $i < ($for-grayscale-qty/2) {
-            $tmp-grayscale-name: n + $i;
-            @warn "darken" + ((100 / 2 - (100 / 2 / ($for-grayscale-qty / 2))) * $i);
-            $tmp-grayscale-color: darken($for-grayscale-base, ((100 / 2 - (100 / 2 / ($for-grayscale-qty / 2))) * $i));
-        } @else if $i > ($for-grayscale-qty/2) {
-            $tmp-grayscale-name: p + ($i - $for-grayscale-qty/2 + 0.5);
-            $tmp-grayscale-color: lighten($for-grayscale-base, ((100 / 2 - (100 / 2 / ($for-grayscale-qty / 2))) * ($i - $for-grayscale-qty/2 + 0.5)));
-        }
-        .#{$for-output-prefix}gray-#{$tmp-grayscale-name} {
-            color: $tmp-grayscale-color;
-        }
-    }
-    .#{$for-output-prefix}gray-nn2 {
-        color: $for-grayscale-base-n2;
-    }
-    .#{$for-output-prefix}gray-nn1 {
-        color: $for-grayscale-base-n1;
-    }
-    .#{$for-output-prefix}gray-pp1 {
-        color: $for-grayscale-base-p1;
-    }
-    .#{$for-output-prefix}gray-pp2 {
-        color: $for-grayscale-base-p2;
-    }
+    @include for-grayscale();
 }
