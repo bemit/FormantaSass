@@ -94,7 +94,7 @@
 /// @param {Int} $col-qty [$for-col-qty] - max. columns used
 @mixin for-col($number, $col-qty: $for-col-qty) {
     // Todo: FIX error stack level to deep in the next line, need to check where it got called
-    @include for-col($number, $col-qty);
+    //@include for-col($number, $col-qty);
 }
 /// Generates a column for breakpoint size sm and bigger
 /// @param {Int} $number - id of the column you want
