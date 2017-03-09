@@ -80,8 +80,8 @@
 /// for "4,8" out of 24
 /// @param {Int} $number - id of the column you want
 /// @param {Int} $col-qty [$for-col-qty] - max. columns used
-@mixin for-col($number, $col-qty: $for-col-qty) {
-    width: (100% / $col-qty) * $number;
+@function for-col($number, $col-qty: $for-col-qty) {
+    @return (100% / $col-qty) * $number;
 }
 /// Basic column style
 @mixin for-col-base {
@@ -93,8 +93,7 @@
 /// @param {Int} $number - id of the column you want
 /// @param {Int} $col-qty [$for-col-qty] - max. columns used
 @mixin for-col($number, $col-qty: $for-col-qty) {
-    // Todo: FIX error stack level to deep in the next line, need to check where it got called
-    //@include for-col($number, $col-qty);
+    width: for-col($number, $col-qty);
 }
 /// Generates a column for breakpoint size sm and bigger
 /// @param {Int} $number - id of the column you want

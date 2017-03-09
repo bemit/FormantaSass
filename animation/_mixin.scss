@@ -92,8 +92,8 @@
         z-index: 2;
     }
     // Image CSS & Overlay CSS
-    #{&}#{$selector-image},
-    #{&}#{$selector-overlay} {
+    #{$selector-image},
+    #{$selector-overlay} {
         content: ' ';
         display: block;
         position: absolute;
@@ -103,7 +103,7 @@
         left: 0;
     }
     // Image CSS
-    &#{$selector-image} {
+    #{$selector-image} {
         -webkit-transition: -moz-transform $duration $timing-function $delay;
         -moz-transition: -webkit-transform $duration $timing-function $delay;
         -o-transition: -o-transform $duration $timing-function $delay;
@@ -126,12 +126,12 @@
     // Effects executing
     &:hover {
         // Image CSS
-        &#{$selector-image} {
+        #{$selector-image} {
             @include for-transform(scale($to-scale));
         }
         @if ($bg-overlay != false) {
             // Overlay CSS
-            &#{$selector-overlay} {
+            #{$selector-overlay} {
                 @if ($to-opacity) {
                     $to-opacity: $to-opacity;
                 } @else {

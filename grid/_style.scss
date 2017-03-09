@@ -36,7 +36,7 @@
         /*
             Concatenating the all needed classes of the columns
         */
-        $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-smx-#{$i},';
+        $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-#{$i},';
         $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-sm-#{$i},';
         $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-md-#{$i},';
         $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-lg-#{$i},';
