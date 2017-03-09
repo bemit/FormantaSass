@@ -1,8 +1,21 @@
+////
+/// HTML-Module: container
+/// ================
+/// basic selector: .for-container
+/// @group HTML-Module:container
+/// @author Michael Becker
+////
+
 //  Sizing
 //  ##########
-$for-container-xlarge-width: 1600px !default;
-$for-container-large-width: 1000px !default;
-$for-container-medium-width: 940px !default;
-$for-container-small-all-width: 100% !default;
-$for-container-small-width: $for-container-small-all-width !default;
-$for-container-xsmall-width: $for-container-small-all-width !default;
+
+/// @prop {Size} $for-container-lgx-width [1600px] - width of the container on bg lgx
+$for-container-lgx-width: 1600px !default;
+/// @prop {Size} $for-container-lg-width [1000px] - width of the container on bg lg
+$for-container-lg-width: 1000px !default;
+/// @prop {Size} $for-container-md-width [940px] - width of the container on bg md
+$for-container-md-width: 940px !default;
+/// @prop {Size} $for-container-sm-width [100%] - width of the container on bg sm
+$for-container-sm-width: 100% !default;
+/// @prop {Size} $for-container-smx-width [100%] - width of the container on bg smx
+$for-container-smx-width: 100% !default;

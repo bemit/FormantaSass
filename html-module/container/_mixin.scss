@@ -1,3 +1,13 @@
+////
+/// HTML-Module: container
+/// ================
+/// basic mixin: @for-container
+/// @group HTML-Module:container
+/// @author Michael Becker
+////
+
+/// Generates the size and property of a for-container with the required breakpoints and centered margin
+/// @output none
 @mixin for-container {
     margin: {
         left: auto;
@@ -5,22 +15,22 @@
     }
     @include for-clearfix;
     @include for-bp-smx {
-        width: $for-container-xsmall-width;
+        width: $for-container-smx-width;
     }
 
     @include for-bp-sm {
-        width: $for-container-small-width;
+        width: $for-container-sm-width;
     }
 
     @include for-bp-md {
-        width: $for-container-medium-width;
+        width: $for-container-md-width;
     }
 
     @include for-bp-lg {
-        width: $for-container-large-width;
+        width: $for-container-lg-width;
     }
 
     @include for-bp-lgx {
-        width: $for-container-xlarge-width;
+        width: $for-container-lgx-width;
     }
 }

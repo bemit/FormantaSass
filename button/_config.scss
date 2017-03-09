@@ -60,13 +60,13 @@ $for-button-margin: 0 !default;
 //  Border
 //  ##########
 
-/// @prop {Size} $for-button-border-width [] - border width for button
+/// @prop {Size} $for-button-border-width [0] - border width for button
 $for-button-border-width: 0 !default;
-/// @prop {String} $for-button-border-style [] - border style for button
+/// @prop {String} $for-button-border-style [solid] - border style for button
 $for-button-border-style: solid !default;
-/// @prop {String} $for-button-border-color [] - border color for button
+/// @prop {String} $for-button-border-color [transparent] - border color for button
 $for-button-border-color: transparent !default;
-/// @prop {Size} $for-button-border-radius [] - border radius for button
+/// @prop {Size} $for-button-border-radius [0] - border radius for button
 $for-button-border-radius: 0 !default;
 
 /// @prop $for-button-border-top [$for-button-border-width $for-button-border-style $for-button-border-color] - border top for button

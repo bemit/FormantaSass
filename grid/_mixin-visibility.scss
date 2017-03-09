@@ -1,136 +1,148 @@
-// small-eXtra
-// got no -up or -down version, as -up would be all and -down would be like normal smx, as it is the smallest size
+////
+/// Grid: Visibility
+/// ================
+/// All the grid visible invisible potato things.
+/// @group Grid:Visibility
+/// @author Michael Becker
+////
 
+/// Display the thing
 @mixin for-visible {
-    display: block;
-    &.#{$for-output-prefix}display-block {
-        //default
-    }
-    &.#{$for-output-prefix}display-inline-block {
-        @include for-display-inline-block;
-    }
-    &.#{$for-output-prefix}display-inline {
-        @include for-display-inline;
-    }
-    &.#{$for-output-prefix}display-flex {
-        display: flex;
-    }
+    @include for-display-block;
 }
+/// Hide the thing
 @mixin for-hidden {
     display: none;
 }
+/// Display the thing: bp smx
 @mixin for-visible-smx {
     @include for-bp-smx {
         @include for-visible;
     }
 }
+/// Hide the thing: bp smx
 @mixin for-hidden-smx {
     @include for-bp-smx {
         @include for-hidden;
     }
 }
-// small
+/// Display the thing: bp sm up
 @mixin for-visible-sm-up {
-    @media (min-width: $for-bp-sm-min-size) {
-        display: block;
+    @include for-bp-sm-up {
+        @include for-visible;
     }
 }
+/// Display the thing: bp sm
 @mixin for-visible-sm {
-    @media (min-width: $for-bp-sm-min-size) and (max-width: $for-bp-md-min-size - 1) {
-        display: block;
+    @include for-bp-sm {
+        @include for-visible;
     }
 }
+/// Display the thing: bp sm down
 @mixin for-visible-sm-down {
-    @media (max-width: $for-bp-md-min-size - 1) {
-        display: block;
+    @include for-bp-sm-down {
+        @include for-visible;
     }
 }
+/// Hide the thing: bp sm up
 @mixin for-hidden-sm-up {
-    @media (min-width: $for-bp-sm-min-size) {
-        @content;
+    @include for-bp-sm-up {
+        @include for-hidden;
     }
 }
+/// Hide the thing: bp sm
 @mixin for-hidden-sm {
-    @media (min-width: $for-bp-sm-min-size) and (max-width: $for-bp-md-min-size - 1) {
-        @content;
+    @include for-bp-sm {
+        @include for-hidden;
     }
 }
+/// Hide the thing: bp sm down
 @mixin for-hidden-sm-down {
-    @media (max-width: $for-bp-md-min-size - 1) {
-        @content;
+    @include for-bp-sm-down {
+        @include for-hidden;
     }
 }
-// medium
+/// Display the thing: bp md up
 @mixin for-visible-md-up {
-    @media (min-width: $for-bp-md-min-size) {
-        @content;
+    @include for-bp-md-up {
+        @include for-visible;
     }
 }
+/// Display the thing: bp md
 @mixin for-visible-md {
-    @media (min-width: $for-bp-md-min-size) and (max-width: $for-bp-lg-min-size - 1) {
-        @content;
+    @include for-bp-md {
+        @include for-visible;
     }
 }
+/// Display the thing: bp md down
 @mixin for-visible-md-down {
-    @media (max-width: $for-bp-lg-min-size - 1) {
-        @content;
+    @include for-bp-md-down {
+        @include for-visible;
     }
 }
+/// Hide the thing: bp md up
 @mixin for-hidden-md-up {
-    @media (min-width: $for-bp-md-min-size) {
-        @content;
+    @include for-bp-md-up {
+        @include for-hidden;
     }
 }
+/// Hide the thing: bp md
 @mixin for-hidden-md {
-    @media (min-width: $for-bp-md-min-size) and (max-width: $for-bp-lg-min-size - 1) {
-        @content;
+    @include for-bp-md {
+        @include for-hidden;
     }
 }
+/// Hide the thing: bp md down
 @mixin for-hidden-md-down {
-    @media (max-width: $for-bp-lg-min-size - 1) {
-        @content;
+    @include for-bp-md-down {
+        @include for-hidden;
     }
 }
-// large
+/// Display the thing: bp lg up
 @mixin for-visible-lg-up {
-    @media (min-width: $for-bp-lg-min-size) {
-        @content;
+    @include for-bp-lg-up {
+        @include for-visible;
     }
 }
+/// Display the thing: bp lg
 @mixin for-visible-lg {
-    @media (min-width: $for-bp-lg-min-size) and (max-width: $for-bp-lgx-min-size - 1) {
-        @content;
+    @include for-bp-lg {
+        @include for-visible;
     }
 }
+/// Display the thing: bp lg down
 @mixin for-visible-lg-down {
-    @media (max-width: $for-bp-lgx-min-size - 1) {
-        @content;
+    @include for-bp-lg-down {
+        @include for-visible;
     }
 }
+/// Hide the thing: bp lg up
 @mixin for-hidden-lg-up {
-    @media (min-width: $for-bp-lg-min-size) {
-        @content;
+    @include for-bp-lg-up {
+        @include for-hidden;
     }
 }
+/// Hide the thing: bp lg
 @mixin for-hidden-lg {
-    @media (min-width: $for-bp-lg-min-size) and (max-width: $for-bp-lgx-min-size - 1) {
-        @content;
+    @include for-bp-lg {
+        @include for-hidden;
     }
 }
+/// Hide the thing: bp lg down
 @mixin for-hidden-lg-down {
-    @media (max-width: $for-bp-lgx-min-size - 1) {
-        @content;
+    @include for-bp-lg-down {
+        @include for-hidden;
     }
 }
-// large-eXtra
-// got no -up or -down version, as -down would be all and -up would be like normal lgx, as it is the highest size
+/// Display the thing: bp lgx
 @mixin for-visible-lgx {
-    @media (min-width: $for-bp-lgx-min-size) {
-        @content;
+    @include for-bp-lgx {
+        @include for-visible;
     }
 }
+/// Hide the thing: bp lgx
 @mixin for-hidden-lgx {
-    @media (min-width: $for-bp-lgx-min-size) {
-        @content;
+    @include for-bp-lgx {
+        @include for-hidden;
     }
 }

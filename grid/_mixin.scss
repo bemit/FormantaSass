@@ -31,31 +31,7 @@
 @import 'mixin-breakpoint';
 @import 'mixin-gutter';
 @import 'mixin-visibility';
-//
-// Fixed width blocks
-// DO NOT mistake it with for-col-* classes!
-//
-@mixin for-block-tenth {
-    width: 10%;
-}
-@mixin for-block-fifth {
-    width: 20%;
-}
-@mixin for-block-quarter {
-    width: 25%;
-}
-@mixin for-block-third {
-    width: 33.3%;
-}
-@mixin for-block-half {
-    width: 50%;
-}
-@mixin for-block-three-quarters {
-    width: 75%;
-}
-@mixin for-block-hundred {
-    width: 100%;
-}
+
 //
 // Display
 //
@@ -90,13 +66,12 @@
 // Columns
 //
 
-/**
-    With $number you specify what column you want to be calculated
-    with $col-qty you could overwrite the standard column qty grid, so you could do use 1 out of 5 columns instead of the standard "4,8" out of 24
-**/
-/// Basic column calculator
+/// With $number you specify what column you want to be calculated
+/// with $col-qty you could overwrite the standard column qty grid,
+/// so you could do use 1 out of 5 columns instead of the standard
+/// for "4,8" out of 24
 /// @param {Int} $number - id of the column you want
-/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
+/// @param {Int} $col-qty [$for-col-qty] - max. columns used
 @mixin for-col($number, $col-qty: $for-col-qty) {
     width: (100% / $col-qty) * $number;
 }
@@ -106,15 +81,16 @@
     min-height: 1px;
     float: left;
 }
-/// Generates a column for breakpoint size smx
+/// Generates a column for breakpoint size smx and smaller
 /// @param {Int} $number - id of the column you want
-/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
-@mixin for-col-smx($number, $col-qty: $for-col-qty) {
+/// @param {Int} $col-qty [$for-col-qty] - max. columns used
+@mixin for-col($number, $col-qty: $for-col-qty) {
+    // Todo: FIX error stack level to deep in the next line, need to check where it got called
     @include for-col($number, $col-qty);
 }
-/// Generates a column for breakpoint size sm
+/// Generates a column for breakpoint size sm and bigger
 /// @param {Int} $number - id of the column you want
-/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
+/// @param {Int} $col-qty [$for-col-qty] - max. columns used
 @mixin for-col-sm($number, $col-qty: $for-col-qty) {
     @include for-bp-sm-up {
         @include for-col($number, $col-qty);
@@ -122,7 +98,7 @@
 }
 /// Generates a column for breakpoint size md
 /// @param {Int} $number - id of the column you want
-/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
+/// @param {Int} $col-qty [$for-col-qty] - max. columns used
 @mixin for-col-md($number, $col-qty: $for-col-qty) {
     @include for-bp-md-up {
         @include for-col($number, $col-qty);
@@ -130,7 +106,7 @@
 }
 /// Generates a column for breakpoint size lg
 /// @param {Int} $number - id of the column you want
-/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
+/// @param {Int} $col-qty [$for-col-qty] - max. columns used
 @mixin for-col-lg($number, $col-qty: $for-col-qty) {
     @include for-bp-lg-up {
         @include for-col($number, $col-qty);
@@ -138,7 +114,7 @@
 }
 /// Generates a column for breakpoint size lgx
 /// @param {Int} $number - id of the column you want
-/// @param {Int} $col-qty [$for-col-qty] - max. collumns used
+/// @param {Int} $col-qty [$for-col-qty] - max. columns used
 @mixin for-col-lgx($number, $col-qty: $for-col-qty) {
     @include for-bp-lgx {
         @include for-col($number, $col-qty);
