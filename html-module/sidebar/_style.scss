@@ -1,8 +1,8 @@
-@if($for-output-html-module-sidebar) {
+@if ($for-output-html-module-sidebar) {
     .#{$for-output-prefix}sidebar {
         background: $for-sidebar-background;
         background-size: $for-sidebar-background-size;
-        
+
         font: $for-sidebar-font-style $for-sidebar-font-weight #{$for-sidebar-font-size}/#{$for-sidebar-line-height} $for-sidebar-font-family;
         font-variant: $for-sidebar-font-variant;
         color: $for-sidebar-font-color;
@@ -10,27 +10,7 @@
             decoration: $for-sidebar-text-decoration;
             transform: $for-sidebar-text-transform;
         }
-        
-        /*@include for-bp-smx {
-            width: $for-sidebar-xsmall-width;
-        }
-        
-        @include for-bp-sm {
-            width: $for-sidebar-small-width;
-        }
-        
-        @include for-bp-md {
-            width: $for-sidebar-medium-width;
-        }
 
-        @include for-bp-lg {
-            width: $for-sidebar-large-width;
-        }
-
-        @include for-bp-lgx {
-            width: $for-sidebar-xlarge-width;
-        }*/
-        
         a {
             font: $for-sidebar-link-font-style $for-sidebar-link-font-weight #{$for-sidebar-link-font-size}/#{$for-sidebar-link-line-height} $for-sidebar-link-font-family;
             font-variant: $for-sidebar-link-font-variant;
@@ -49,11 +29,67 @@
                 }
             }
         }
-        .#{$for-output-prefix}heading {
-            //TODO
+    }
+    .#{$for-output-prefix}sidebar-heading {
+        background: $for-sidebar-heading-background;
+        background-size: $for-sidebar-heading-background-size;
+
+        font: $for-sidebar-heading-font-style $for-sidebar-heading-font-weight #{$for-sidebar-heading-font-size}/#{$for-sidebar-heading-line-height} $for-sidebar-heading-font-family;
+        font-variant: $for-sidebar-heading-font-variant;
+        color: $for-sidebar-heading-font-color;
+        text: {
+            decoration: $for-sidebar-heading-text-decoration;
+            transform: $for-sidebar-heading-text-transform;
         }
-        .#{$for-output-prefix}content {
-            //TODO
+
+        a {
+            font: $for-sidebar-heading-link-font-style $for-sidebar-heading-link-font-weight #{$for-sidebar-heading-link-font-size}/#{$for-sidebar-heading-link-line-height} $for-sidebar-heading-link-font-family;
+            font-variant: $for-sidebar-heading-link-font-variant;
+            color: $for-sidebar-heading-link-font-color;
+            text: {
+                decoration: $for-sidebar-heading-link-text-decoration;
+                transform: $for-sidebar-heading-link-text-transform;
+            }
+            &:hover {
+                font: $for-sidebar-heading-link-hover-font-style $for-sidebar-heading-link-hover-font-weight $for-sidebar-heading-link-hover-font-size $for-sidebar-heading-link-hover-font-family;
+                font-variant: $for-sidebar-heading-link-hover-font-variant;
+                color: $for-sidebar-heading-link-hover-font-color;
+                text: {
+                    decoration: $for-sidebar-heading-link-hover-text-decoration;
+                    transform: $for-sidebar-heading-link-hover-text-transform;
+                }
+            }
+        }
+    }
+    .#{$for-output-prefix}sidebar-content {
+        background: $for-sidebar-content-background;
+        background-size: $for-sidebar-content-background-size;
+
+        font: $for-sidebar-content-font-style $for-sidebar-content-font-weight #{$for-sidebar-content-font-size}/#{$for-sidebar-content-line-height} $for-sidebar-content-font-family;
+        font-variant: $for-sidebar-content-font-variant;
+        color: $for-sidebar-content-font-color;
+        text: {
+            decoration: $for-sidebar-content-text-decoration;
+            transform: $for-sidebar-content-text-transform;
+        }
+
+        a {
+            font: $for-sidebar-content-link-font-style $for-sidebar-content-link-font-weight #{$for-sidebar-content-link-font-size}/#{$for-sidebar-content-link-line-height} $for-sidebar-content-link-font-family;
+            font-variant: $for-sidebar-content-link-font-variant;
+            color: $for-sidebar-content-link-font-color;
+            text: {
+                decoration: $for-sidebar-content-link-text-decoration;
+                transform: $for-sidebar-content-link-text-transform;
+            }
+            &:hover {
+                font: $for-sidebar-content-link-hover-font-style $for-sidebar-content-link-hover-font-weight $for-sidebar-content-link-hover-font-size $for-sidebar-content-link-hover-font-family;
+                font-variant: $for-sidebar-content-link-hover-font-variant;
+                color: $for-sidebar-content-link-hover-font-color;
+                text: {
+                    decoration: $for-sidebar-content-link-hover-text-decoration;
+                    transform: $for-sidebar-content-link-hover-text-transform;
+                }
+            }
         }
     }
 }

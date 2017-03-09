@@ -150,7 +150,7 @@ mark {
 /**
      * Address inconsistent and variable font size in all browsers.
      */
-small {
+sm {
   font-size: 80%; }
 
 /**
@@ -1384,41 +1384,14 @@ form input[type=text], form input[type=password], form input[type=color], form i
     .for-container {
       width: 1600px; } }
 
-/*
-$for-content-xlarge-width: 1200px !default;
-$for-content-large-width: 750px !default;
-$for-content-medium-width: 690px !default;
-$for-content-small-all-width: 100% !default;
-$for-content-small-width: $for-content-small-all-width !default;
-$for-content-xsmall-width: $for-content-small-all-width !default;*/
 .for-content {
-  background: #ffffff;
+  background: white;
   background-size: auto;
   font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
   color: #333;
   text-decoration: none;
-  text-transform: none;
-  /*
-        @include for-bp-smx {
-            width: $for-content-xsmall-width;
-        }
-        
-        @include for-bp-sm {
-            width: $for-content-small-width;
-        }
-        
-        @include for-bp-md {
-            width: $for-content-medium-width;
-        }
-
-        @include for-bp-lg {
-            width: $for-content-large-width;
-        }
-
-        @include for-bp-lgx {
-            width: $for-content-xlarge-width;
-        }*/ }
+  text-transform: none; }
   .for-content a {
     font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
@@ -1433,7 +1406,7 @@ $for-content-xsmall-width: $for-content-small-all-width !default;*/
       text-transform: none; }
 
 .for-footer {
-  background: #04a;
+  background: white;
   background-size: auto;
   font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
@@ -1442,19 +1415,19 @@ $for-content-xsmall-width: $for-content-small-all-width !default;*/
   text-transform: none; }
   @media (max-width: 767px) {
     .for-footer {
-      height: 50px; } }
+      height: auto; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .for-footer {
-      height: 50px; } }
+      height: auto; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .for-footer {
-      height: 200px; } }
+      height: auto; } }
   @media (min-width: 1200px) and (max-width: 2999px) {
     .for-footer {
-      height: 250px; } }
+      height: auto; } }
   @media (min-width: 3000px) {
     .for-footer {
-      height: 300px; } }
+      height: auto; } }
   .for-footer a {
     font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
@@ -1468,75 +1441,20 @@ $for-content-xsmall-width: $for-content-small-all-width !default;*/
       text-decoration: none;
       text-transform: none; }
 
-.for-header {
-  background: #ffffff;
+/*$for-sidebar-lgx-width: $for-container-lgx-width - $for-content-lgx-width !default;
+$for-sidebar-lg-width: $for-container-lg-width - $for-content-lg-width !default;
+$for-sidebar-md-width: $for-container-md-width - $for-content-md-width !default;
+$for-sidebar-sm-all-width: 100% !default;
+$for-sidebar-sm-width: $for-sidebar-sm-all-width !default;
+$for-sidebar-smx-width: $for-sidebar-sm-all-width !default;*/
+.for-sidebar {
+  background: white;
   background-size: auto;
   font: normal 400 12pt/normal Helvetica, sans-serif;
   font-variant: normal;
   color: #333;
   text-decoration: none;
   text-transform: none; }
-  @media (max-width: 767px) {
-    .for-header {
-      height: 100px; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .for-header {
-      height: 100px; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .for-header {
-      height: 300px; } }
-  @media (min-width: 1200px) and (max-width: 2999px) {
-    .for-header {
-      height: 300px; } }
-  @media (min-width: 3000px) {
-    .for-header {
-      height: 300px; } }
-  .for-header a {
-    font: normal 400 13pt/30px Helvetica, sans-serif;
-    font-variant: normal;
-    color: #333;
-    text-decoration: none;
-    text-transform: none; }
-    .for-header a:hover {
-      font: normal bold 13pt Helvetica, sans-serif;
-      font-variant: normal;
-      color: #333;
-      text-decoration: none;
-      text-transform: none; }
-
-/*$for-sidebar-xlarge-width: $for-container-lgx-width - $for-content-xlarge-width !default;
-$for-sidebar-large-width: $for-container-lg-width - $for-content-large-width !default;
-$for-sidebar-medium-width: $for-container-md-width - $for-content-medium-width !default;
-$for-sidebar-small-all-width: 100% !default;
-$for-sidebar-small-width: $for-sidebar-small-all-width !default;
-$for-sidebar-xsmall-width: $for-sidebar-small-all-width !default;*/
-.for-sidebar {
-  background: #6ab42a;
-  background-size: auto;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
-  font-variant: normal;
-  color: #04a;
-  text-decoration: none;
-  text-transform: none;
-  /*@include for-bp-smx {
-            width: $for-sidebar-xsmall-width;
-        }
-        
-        @include for-bp-sm {
-            width: $for-sidebar-small-width;
-        }
-        
-        @include for-bp-md {
-            width: $for-sidebar-medium-width;
-        }
-
-        @include for-bp-lg {
-            width: $for-sidebar-large-width;
-        }
-
-        @include for-bp-lgx {
-            width: $for-sidebar-xlarge-width;
-        }*/ }
   .for-sidebar a {
     font: normal 400 12pt/normal Helvetica, sans-serif;
     font-variant: normal;
@@ -1544,6 +1462,48 @@ $for-sidebar-xsmall-width: $for-sidebar-small-all-width !default;*/
     text-decoration: none;
     text-transform: none; }
     .for-sidebar a:hover {
+      font: normal 400 12pt Helvetica, sans-serif;
+      font-variant: normal;
+      color: #333;
+      text-decoration: none;
+      text-transform: none; }
+
+.for-sidebar-heading {
+  background: white;
+  background-size: auto;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
+  color: #333;
+  text-decoration: none;
+  text-transform: none; }
+  .for-sidebar-heading a {
+    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
+    color: #333;
+    text-decoration: none;
+    text-transform: none; }
+    .for-sidebar-heading a:hover {
+      font: normal 400 12pt Helvetica, sans-serif;
+      font-variant: normal;
+      color: #333;
+      text-decoration: none;
+      text-transform: none; }
+
+.for-sidebar-content {
+  background: white;
+  background-size: auto;
+  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font-variant: normal;
+  color: #333;
+  text-decoration: none;
+  text-transform: none; }
+  .for-sidebar-content a {
+    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font-variant: normal;
+    color: #333;
+    text-decoration: none;
+    text-transform: none; }
+    .for-sidebar-content a:hover {
       font: normal 400 12pt Helvetica, sans-serif;
       font-variant: normal;
       color: #333;

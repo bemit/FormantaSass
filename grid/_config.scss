@@ -9,13 +9,13 @@
 //
 // Breakpoint
 // ##################################################
-/// @prop {Size} $for-bp-lgx-min-size [3000px] - the minimum size for screen size large eXtra
+/// @prop {Size} $for-bp-lgx-min-size [3000px] - the minimum size for screen size lg eXtra
 $for-bp-lgx-min-size: 3000px !default;
-/// @prop {Size} $for-bp-lg-min-size [1200px] - the minimum size for screen size large
+/// @prop {Size} $for-bp-lg-min-size [1200px] - the minimum size for screen size lg
 $for-bp-lg-min-size: 1200px !default;
-/// @prop {Size} $for-bp-md-min-size [992px] - the minimum size for screen size medium
+/// @prop {Size} $for-bp-md-min-size [992px] - the minimum size for screen size md
 $for-bp-md-min-size: 992px !default;
-/// @prop {Size} $for-bp-sm-min-size [768px] - the minimum size for screen size small
+/// @prop {Size} $for-bp-sm-min-size [768px] - the minimum size for screen size sm
 $for-bp-sm-min-size: 768px !default;
 /// @prop {Size} $for-bp-smx-max-size [$for-bp-sm-min-size - 1] - the maximum size for screen size smale eXtra
 $for-bp-smx-max-size: $for-bp-sm-min-size - 1 !default;

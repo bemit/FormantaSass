@@ -1,67 +1,103 @@
+////
+/// HTML-Module: content
+/// ================
+/// basic selector: .for-content, using this should apply the styles for a cms like section
+/// @group HTML-Module:content
+/// @author Michael Becker
+////
+
 //  Background
 //  ##########
-$for-content-background: #ffffff !default;
+
+/// @prop {Color} $for-content-background [$for-grayscale-base-p2] - in html-module: content
+$for-content-background: $for-grayscale-base-p2 !default;
+/// @prop {Size} $for-content-background-size [auto] - in html-module: content
 $for-content-background-size: auto !default;
 
 //  Font Color
 //  ##########
+
+/// @prop {Color} $for-content-font-color [$for-general-font-color] - in html-module: content
 $for-content-font-color: $for-general-font-color !default;
+/// @prop {Color} $for-content-link-font-color [$for-link-font-color] - in html-module: content
 $for-content-link-font-color: $for-link-font-color !default;
+/// @prop {Color} $for-content-link-hover-font-color [$for-link-hover-font-color] - in html-module: content
 $for-content-link-hover-font-color: $for-link-hover-font-color !default;
 
 //  Font Size
 //  ##########
+
+/// @prop {Size} $for-content-font-size [$for-general-font-size] - in html-module: content
 $for-content-font-size: $for-general-font-size !default;
+/// @prop {Size} $for-content-link-font-size [$for-link-font-size] - in html-module: content
 $for-content-link-font-size: $for-link-font-size !default;
+/// @prop {Size} $for-content-link-hover-font-size [$for-link-hover-font-size] - in html-module: content
 $for-content-link-hover-font-size: $for-link-hover-font-size !default;
 
 //  Font Style
 //  ##########
+
+/// @prop {Style} $for-content-font-style [$for-general-font-style] - in html-module: content
 $for-content-font-style: $for-general-font-style !default;
+/// @prop {Style} $for-content-link-font-style [$for-link-font-style] - in html-module: content
 $for-content-link-font-style: $for-link-font-style !default;
+/// @prop {Style} $for-content-link-hover-font-style [$for-link-hover-font-style] - in html-module: content
 $for-content-link-hover-font-style: $for-link-hover-font-style !default;
 
 //  Font Family
 //  ##########
+
+/// @prop {String} $for-content-font-family [$for-general-font-family] - in html-module: content
 $for-content-font-family: $for-general-font-family !default;
+/// @prop {String} $for-content-link-font-family [$for-link-font-family] - in html-module: content
 $for-content-link-font-family: $for-link-font-family !default;
+/// @prop {String} $for-content-link-hover-font-family [$for-link-hover-font-family] - in html-module: content
 $for-content-link-hover-font-family: $for-link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
+
+/// @prop {Size} $for-content-font-weight [$for-general-font-weight] - in html-module: content
 $for-content-font-weight: $for-general-font-weight !default;
+/// @prop {Size} $for-content-link-font-weight [$for-link-font-weight] - in html-module: content
 $for-content-link-font-weight: $for-link-font-weight !default;
+/// @prop {Size} $for-content-link-hover-font-weight [$for-link-hover-font-weight] - in html-module: content
 $for-content-link-hover-font-weight: $for-link-hover-font-weight !default;
 
 //  Font Variant
 //  ##########
+
+/// @prop {String} $for-content-font-variant [$for-general-font-variant] - in html-module: content
 $for-content-font-variant: $for-general-font-variant !default;
+/// @prop {String} $for-content-link-font-variant [$for-link-font-variant] - in html-module: content
 $for-content-link-font-variant: $for-link-font-variant !default;
+/// @prop {String} $for-content-link-hover-font-variant [$for-link-hover-font-variant] - in html-module: content
 $for-content-link-hover-font-variant: $for-link-hover-font-variant !default;
 
 //  Text Decoration
 //  ##########
+
+/// @prop {String} $for-content-text-decoration [$for-general-text-decoration] - in html-module: content
 $for-content-text-decoration: $for-general-text-decoration !default;
+/// @prop {String} $for-content-link-text-decoration [$for-link-text-decoration] - in html-module: content
 $for-content-link-text-decoration: $for-link-text-decoration !default;
+/// @prop {String} $for-content-link-hover-text-decoration [$for-link-hover-text-decoration] - in html-module: content
 $for-content-link-hover-text-decoration: $for-link-hover-text-decoration !default;
 
 //  Text Transform
 //  ##########
+
+/// @prop {String} $for-content-text-transform [$for-general-text-transform] - in html-module: content
 $for-content-text-transform: $for-general-text-transform !default;
+/// @prop {String} $for-content-link-text-transform [$for-link-text-transform] - in html-module: content
 $for-content-link-text-transform: $for-link-text-transform !default;
+/// @prop {String} $for-content-link-hover-text-transform [$for-link-hover-text-transform] - in html-module: content
 $for-content-link-hover-text-transform: $for-link-hover-text-transform !default;
 
 //  Line Height
 //  ##########
-$for-content-line-height: $for-general-line-height !default;
-$for-content-link-line-height: $for-link-line-height !default;
 
-//  Sizing
-//  ##########
-/*
-$for-content-xlarge-width: 1200px !default;
-$for-content-large-width: 750px !default;
-$for-content-medium-width: 690px !default;
-$for-content-small-all-width: 100% !default;
-$for-content-small-width: $for-content-small-all-width !default;
-$for-content-xsmall-width: $for-content-small-all-width !default;*/
+/// @prop {String} $for-content-line-height [$for-general-line-height] - in html-module: content
+$for-content-line-height: $for-general-line-height !default;
+/// @prop {String} $for-content-link-line-height [$for-link-line-height] - in html-module: content
+$for-content-link-line-height: $for-link-line-height !default;
