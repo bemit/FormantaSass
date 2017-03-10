@@ -89,7 +89,7 @@
     min-height: 1px;
     float: left;
 }
-/// Generates a column for breakpoint size smx and smer
+/// Generates size for a column
 /// @param {Int} $number - id of the column you want
 /// @param {Int} $col-qty [$for-col-qty] - max. columns used
 @mixin for-col($number, $col-qty: $for-col-qty) {
