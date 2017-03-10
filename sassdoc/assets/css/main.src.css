@@ -688,6 +688,8 @@ li.item__description {
 }
 .layout-toggle {
     position: absolute;
+    width: 33px;
+    height: 45px;
     top: 19px;
     left: 20px;
     font-size: 0;
