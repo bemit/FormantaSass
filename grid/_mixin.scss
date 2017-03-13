@@ -74,12 +74,11 @@
 // Columns
 //
 
-/// With $number you specify what column you want to be calculated
-/// with $col-qty you could overwrite the standard column qty grid,
-/// so you could do use 1 out of 5 columns instead of the standard
-/// for "4,8" out of 24
-/// @param {Int} $number - id of the column you want
-/// @param {Int} $col-qty [$for-col-qty] - max. columns used
+/// Easy column size calculator for whatever size the grid wanted is based on
+/// @example "1,5" (1 out of 5) gives the size (20)[%] for a column in a 5er grid system, even the default grid system doesn't allow the use of 5 cols per row, this would be a 4.8 column "4.8 out of 24" with default $for-col-qty: 24
+/// @example "1" (1 out of default) gives the size (4,166)[%] for a column in a 24er grid system with default $for-col-qty: 24
+/// @param {Int} $number - id of the column calculated
+/// @param {Int} $col-qty [$for-col-qty] - max. columns used, overwrites the standard column qty grid
 @function for-col($number, $col-qty: $for-col-qty) {
     @return (100% / $col-qty) * $number;
 }
