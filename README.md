@@ -1,4 +1,4 @@
-The project is under active development, compatibility with further versions could not be guaranteed at the moment. A lot of elements, functions and more could break in the near future due to refaotring and bugs which are needed to be fixed.
+The project is under active development, compatibility with further versions could not be guaranteed at the moment. A lot of elements, functions and more could break in the near future due to refactoring and bugs which are needed to be fixed.
 
 #FormantaSass
 A Sass Library with style output or not, complete themes could be build using only config values.
