@@ -58,8 +58,8 @@ $for-link-hover-font-size: $for-link-font-size !default;
 //  ##########
 
 /// @prop {Color} $for-general-font-family [wwwwwwwwwww] - in typography
-$for-general-font-family: Helvetica, sans-serif !default
-/// @prop {Color} $for-h1-font-family [$for-general-font-family] - in typography;
+$for-general-font-family: Helvetica, sans-serif !default;
+/// @prop {Color} $for-h1-font-family [$for-general-font-family] - in typography
 $for-h1-font-family: $for-general-font-family !default;
 /// @prop {Color} $for-h2-font-family [$for-general-font-family] - in typography
 $for-h2-font-family: $for-general-font-family !default;
@@ -74,8 +74,8 @@ $for-h6-font-family: $for-general-font-family !default;
 /// @prop {Color} $for-p-font-family [$for-general-font-family] - in typography
 $for-p-font-family: $for-general-font-family !default;
 /// @prop {Color} $for-link-font-family [$for-general-font-family] - in typography
-$for-link-font-family: $for-general-font-family !default
-/// @prop {Color} $for-link-hover-font-family [$for-link-font-family] - in typography;
+$for-link-font-family: $for-general-font-family !default;
+/// @prop {Color} $for-link-hover-font-family [$for-link-font-family] - in typography
 $for-link-hover-font-family: $for-link-font-family !default;
 
 //  Font Weight
@@ -98,8 +98,8 @@ $for-h6-font-weight: $for-general-font-weight !default;
 /// @prop {Color} $for-p-font-weight [$for-general-font-weight] - in typography
 $for-p-font-weight: $for-general-font-weight !default;
 /// @prop {Color} $for-link-font-weight [$for-general-font-weight] - in typography
-$for-link-font-weight: $for-general-font-weight !default
-/// @prop {Color} $for-link-hover-font-weight [$for-link-font-weight] - in typography;
+$for-link-font-weight: $for-general-font-weight !default;
+/// @prop {Color} $for-link-hover-font-weight [$for-link-font-weight] - in typography
 $for-link-hover-font-weight: $for-link-font-weight !default;
 
 //  Line Height
@@ -122,8 +122,8 @@ $for-h6-line-height: $for-general-line-height !default;
 /// @prop {Color} $for-p-line-height [$for-general-line-height] - in typography
 $for-p-line-height: $for-general-line-height !default;
 /// @prop {Color} $for-link-line-height [$for-general-line-height] - in typography
-$for-link-line-height: $for-general-line-height !default
-/// @prop {Color} $for-link-hover-line-height [$for-link-line-height] - in typography;
+$for-link-line-height: $for-general-line-height !default;
+/// @prop {Color} $for-link-hover-line-height [$for-link-line-height] - in typography
 $for-link-hover-line-height: $for-link-line-height !default;
 
 //  Font Style
@@ -156,18 +156,18 @@ $for-link-hover-font-style: $for-link-font-style !default;
 /// @prop {Color} $for-general-font-variant [normal] - in typography
 $for-general-font-variant: normal !default;
 /// @prop {Color} $for-h1-font-variant [$for-general-font-variant] - in typography
-$for-h1-font-variant: $for-general-font-variant !default
-/// @prop {Color} $for-h2-font-variant [$for-general-font-variant] - in typography;
-$for-h2-font-variant: $for-general-font-variant !default
-/// @prop {Color} $for-h3-font-variant [$for-general-font-variant] - in typography;
-$for-h3-font-variant: $for-general-font-variant !default
-/// @prop {Color} $for-h4-font-variant [$for-general-font-variant] - in typography;
-$for-h4-font-variant: $for-general-font-variant !default
-/// @prop {Color} $for-h5-font-variant [$for-general-font-variant] - in typography;
-$for-h5-font-variant: $for-general-font-variant !default
-/// @prop {Color} $for-h6-font-variant [$for-general-font-variant] - in typography;
-$for-h6-font-variant: $for-general-font-variant !default
-/// @prop {Color} $for-p-font-variant [$for-general-font-variant] - in typography;
+$for-h1-font-variant: $for-general-font-variant !default;
+/// @prop {Color} $for-h2-font-variant [$for-general-font-variant] - in typography
+$for-h2-font-variant: $for-general-font-variant !default;
+/// @prop {Color} $for-h3-font-variant [$for-general-font-variant] - in typography
+$for-h3-font-variant: $for-general-font-variant !default;
+/// @prop {Color} $for-h4-font-variant [$for-general-font-variant] - in typography
+$for-h4-font-variant: $for-general-font-variant !default;
+/// @prop {Color} $for-h5-font-variant [$for-general-font-variant] - in typography
+$for-h5-font-variant: $for-general-font-variant !default;
+/// @prop {Color} $for-h6-font-variant [$for-general-font-variant] - in typography
+$for-h6-font-variant: $for-general-font-variant !default;
+/// @prop {Color} $for-p-font-variant [$for-general-font-variant] - in typography
 $for-p-font-variant: $for-general-font-variant !default;
 /// @prop {Color} $for-link-font-variant [$for-general-font-variant] - in typography
 $for-link-font-variant: $for-general-font-variant !default;

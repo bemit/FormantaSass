@@ -10,7 +10,7 @@
 /// @author Michael Becker
 ////
 
-@if($for-output-table) {
+@if ($for-output-table) {
     /// .for-table - a table with all font styling for the content
     .#{$for-output-prefix}table {
         @include for-table();

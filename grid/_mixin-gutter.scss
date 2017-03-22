@@ -25,36 +25,43 @@
         padding: $for-gutter-lgx;
     }
 }
+
 /// The thickest gutter as padding
 /// @output gutter as padding in thickest
 @mixin for-gutter-thickest {
     padding: $for-gutter-thickest;
 }
+
 /// The thickest gutter as padding
 /// @output gutter as padding in thicker
 @mixin for-gutter-thicker {
     padding: $for-gutter-thicker;
 }
+
 /// The thickest gutter as padding
 /// @output gutter as padding in thick
 @mixin for-gutter-thick {
     padding: $for-gutter-thick;
 }
+
 /// The thickest gutter as padding
 /// @output gutter as padding in normal
 @mixin for-gutter-normal {
     padding: $for-gutter-normal;
 }
+
 /// The thickest gutter as padding
 /// @output gutter as padding in thin
 @mixin for-gutter-thin {
     padding: $for-gutter-thin;
 }
+
 /// The thickest gutter as padding
 /// @output gutter as padding in thinner
 @mixin for-gutter-thinner {
     padding: $for-gutter-thinner;
 }
+
 /// The thickest gutter as padding
 /// @output gutter as padding in thinnest
 @mixin for-gutter-thinnest {

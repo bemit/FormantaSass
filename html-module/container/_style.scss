@@ -6,7 +6,7 @@
 /// @author Michael Becker
 ////
 
-@if($for-output-html-module-container) {
+@if ($for-output-html-module-container) {
     /// .for-container for responsive, centered, basic container
     .#{$for-output-prefix}container {
         @include for-container;

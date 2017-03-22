@@ -25,6 +25,7 @@
     }
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$first-color}", endColorstr="#{$second-color}" GradientType=1);
 }
+
 /// Generates a grayscale
 /// @param {Int} $grayscale-qty [$for-grayscale-qty] - how much steps the grayscale should have
 /// @param {Color} $grayscale-base [$for-grayscale-base] - what should be the center of the grayscale

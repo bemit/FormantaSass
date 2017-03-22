@@ -16,6 +16,7 @@
         align: $for-general-text-align;
     }
 }
+
 /// @output the h1 font styling
 @mixin for-typography-h1 {
     color: $for-h1-font-color;
@@ -27,6 +28,7 @@
         align: $for-h1-text-align;
     }
 }
+
 /// @output the h2 font styling
 @mixin for-typography-h2 {
     color: $for-h2-font-color;
@@ -38,6 +40,7 @@
         align: $for-h2-text-align;
     }
 }
+
 /// @output the h3 font styling
 @mixin for-typography-h3 {
     color: $for-h3-font-color;
@@ -49,6 +52,7 @@
         align: $for-h3-text-align;
     }
 }
+
 /// @output the h4 font styling
 @mixin for-typography-h4 {
     color: $for-h4-font-color;
@@ -60,6 +64,7 @@
         align: $for-h4-text-align;
     }
 }
+
 /// @output the h5 font styling
 @mixin for-typography-h5 {
     color: $for-h5-font-color;
@@ -71,6 +76,7 @@
         align: $for-h5-text-align;
     }
 }
+
 /// @output the h6 font styling
 @mixin for-typography-h6 {
     color: $for-h6-font-color;
@@ -82,6 +88,7 @@
         align: $for-h6-text-align;
     }
 }
+
 /// @output the p font styling
 @mixin for-typography-p {
     color: $for-p-font-color;
@@ -93,6 +100,7 @@
         align: $for-p-text-align;
     }
 }
+
 /// @output the link (a) font styling, including :hover
 @mixin for-typography-link {
     color: $for-link-font-color;

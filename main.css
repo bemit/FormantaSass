@@ -1,9 +1,9 @@
 @charset "UTF-8";
-/*! FormantaSass v0.1.0.0 | GNU LGPL v3 or CeCILL-C 1.0 | http://formanta.bemit.eu */
+/*! FormantaSass v0.9.0 | GNU LGPL v3 or CeCILL-C 1.0 | formanta.bemit.eu */
 /*
-    FormantaSass for basic config, mixins, formatting and typography.
 
-    A sass for FrontendDevelopment.
+    FormantaSass, the individualist Sass Framework.
+
 /*
     Copyright  : © 2016 Michael Becker, bemit.eu
     Author     : Michael Becker
@@ -470,9 +470,9 @@ input[type=button],
 .for-btn,
 button {
   display: inline-block;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
   font-variant: normal;
-  color: #333;
+  color: #7f7f7f;
   padding: 10px;
   margin: 0;
   background: #6ab42a;
@@ -491,9 +491,9 @@ button {
   button:hover {
     background: #04a;
     background-size: auto;
-    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 1rem/normal Helvetica, sans-serif;
     font-variant: normal;
-    color: #333;
+    color: #7f7f7f;
     text-decoration: none;
     text-transform: none;
     border-top: 0 solid transparent;
@@ -504,9 +504,9 @@ button {
 
 .for-btn-expand {
   display: inline-block;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
   font-variant: normal;
-  color: #333;
+  color: #7f7f7f;
   padding: 10px;
   margin: 0;
   background: #6ab42a;
@@ -522,9 +522,9 @@ button {
   .for-btn-expand:hover {
     background: #04a;
     background-size: auto;
-    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 1rem/normal Helvetica, sans-serif;
     font-variant: normal;
-    color: #333;
+    color: #7f7f7f;
     text-decoration: none;
     text-transform: none;
     border-top: 0 solid transparent;
@@ -536,9 +536,9 @@ button {
 .for-btn-outline,
 .for-btn-o {
   display: inline-block;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
   font-variant: normal;
-  color: #333;
+  color: #7f7f7f;
   padding: 10px;
   margin: 0;
   background: #6ab42a;
@@ -555,9 +555,9 @@ button {
   .for-btn-o:hover {
     background: #04a;
     background-size: auto;
-    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 1rem/normal Helvetica, sans-serif;
     font-variant: normal;
-    color: #333;
+    color: #7f7f7f;
     text-decoration: none;
     text-transform: none;
     border-top: 0 solid transparent;
@@ -569,9 +569,9 @@ button {
   .for-btn-o.for-expand {
     display: block;
     width: 100%;
-    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 1rem/normal Helvetica, sans-serif;
     font-variant: normal;
-    color: #333;
+    color: #7f7f7f;
     padding: 10px;
     margin: 0;
     background: #6ab42a;
@@ -588,9 +588,9 @@ button {
     .for-btn-o.for-expand:hover {
       background: #04a;
       background-size: auto;
-      font: normal 400 12pt/normal Helvetica, sans-serif;
+      font: normal 400 1rem/normal Helvetica, sans-serif;
       font-variant: normal;
-      color: #333;
+      color: #7f7f7f;
       text-decoration: none;
       text-transform: none;
       border-top: 0 solid transparent;
@@ -689,81 +689,84 @@ button {
 
 html {
   /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
-  font-size: 12pt;
+  font-size: 1rem;
   line-height: normal; }
 
 body {
-  color: #333;
+  color: #7f7f7f;
   font-family: Helvetica, sans-serif;
   font-weight: 400;
+  font-style: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 a {
-  color: #333;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  color: #7f7f7f;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
   font-variant: normal;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: none;
+  text-align: left; }
   a:hover {
-    color: #333;
-    font: normal 400 12pt Helvetica, sans-serif;
+    color: #7f7f7f;
+    font: normal 400 1rem Helvetica, sans-serif;
     font-variant: normal;
     text-decoration: none;
     text-transform: none;
     text-align: left; }
 
 p {
-  color: #333;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  color: #7f7f7f;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h1 {
-  color: #333;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  color: #7f7f7f;
+  font: normal 400 2.5rem/normal Helvetica, sans-serif;
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h2 {
-  color: #333;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  color: #7f7f7f;
+  font: normal 400 2rem/normal Helvetica, sans-serif;
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h3 {
-  color: #333;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  color: #7f7f7f;
+  font: normal 400 1.75rem/normal Helvetica, sans-serif;
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h4 {
-  color: #333;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  color: #7f7f7f;
+  font: normal 400 1.5rem/normal Helvetica, sans-serif;
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h5 {
-  color: #333;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  color: #7f7f7f;
+  font: normal 400 1.3rem/normal Helvetica, sans-serif;
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
   text-align: left; }
 
 h6 {
-  color: #333;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  color: #7f7f7f;
+  font: normal 400 1.1rem/normal Helvetica, sans-serif;
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
@@ -786,6 +789,13 @@ h6 {
 
 .for-clear-right {
   clear: right; }
+
+.for-row:before, .for-row:after {
+  content: ' ';
+  display: table; }
+
+.for-row:after {
+  clear: both; }
 
 /*
             Concatenating the all needed classes of the columns
@@ -1299,48 +1309,58 @@ h6 {
   table-layout: fixed;
   width: 100%;
   display: table;
-  font: normal normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal normal 400 1rem/normal Helvetica, sans-serif;
   text-decoration: none;
   text-transform: none;
   text-align: left;
-  border-top: 0 solid #04a;
-  border-right: 0 solid #04a;
-  border-bottom: 0 solid #04a;
-  border-left: 0 solid #04a;
-  border-radius: 0 0 0 0 / 0 0 0 0; }
+  border-top: 0 solid #e5e5e5;
+  border-right: 0 solid #e5e5e5;
+  border-bottom: 0 solid #e5e5e5;
+  border-left: 0 solid #e5e5e5;
+  border-radius: 0 / 0; }
   .for-table a {
-    font: normal normal 400 12pt/normal Helvetica, sans-serif;
-    color: #333;
+    font: normal normal 400 1rem/normal Helvetica, sans-serif;
+    color: #7f7f7f;
     text-decoration: none;
     text-transform: none;
     text-align: left;
     line-height: normal; }
     .for-table a:hover {
-      font: normal normal 400 12pt Helvetica, sans-serif;
-      color: #333;
+      font: normal normal 400 1rem Helvetica, sans-serif;
+      color: #7f7f7f;
       text-decoration: none;
       text-transform: none;
       text-align: left; }
-  .for-table .for-row {
+  .for-table .for-table-row {
     display: table-row; }
-    .for-table .for-row .for-cell {
+    .for-table .for-table-row .for-table-cell {
+      border-top: 0 solid #e5e5e5;
+      border-right: 0 solid #e5e5e5;
+      border-bottom: 0 solid #e5e5e5;
+      border-left: 0 solid #e5e5e5;
+      border-radius: 0 / 0;
       display: table-cell; }
-    .for-table .for-row .for-cell-heading {
+    .for-table .for-table-row .for-table-cell-heading {
       display: table-cell;
-      font: normal normal 400 12pt/normal Helvetica, sans-serif;
-      color: #333;
-      background: transparent;
+      font: normal normal 400 1rem/normal Helvetica, sans-serif;
+      color: #7f7f7f;
+      background: white;
       text-decoration: none;
       text-transform: none;
-      text-align: left; }
+      text-align: left;
+      border-top: 0 solid #e5e5e5;
+      border-right: 0 solid #e5e5e5;
+      border-bottom: 0 solid #e5e5e5;
+      border-left: 0 solid #e5e5e5;
+      border-radius: 0 / 0; }
 
 form input[type=text], form input[type=password], form input[type=color], form input[type=date], form input[type=datetime], form input[type=datetime-local], form input[type=email], form input[type=month], form input[type=number], form input[type=range], form input[type=search], form input[type=tel], form input[type=time], form input[type=url], form input[type=week] {
   display: inline-block;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
-  color: #333;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
+  color: #7f7f7f;
   text-decoration: none;
   height: 20px;
   padding: 10px;
@@ -1387,30 +1407,30 @@ form input[type=text], form input[type=password], form input[type=color], form i
 .for-content {
   background: white;
   background-size: auto;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
   font-variant: normal;
-  color: #333;
+  color: #7f7f7f;
   text-decoration: none;
   text-transform: none; }
   .for-content a {
-    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 1rem/normal Helvetica, sans-serif;
     font-variant: normal;
-    color: #333;
+    color: #7f7f7f;
     text-decoration: none;
     text-transform: none; }
     .for-content a:hover {
-      font: normal 400 12pt Helvetica, sans-serif;
+      font: normal 400 1rem Helvetica, sans-serif;
       font-variant: normal;
-      color: #333;
+      color: #7f7f7f;
       text-decoration: none;
       text-transform: none; }
 
 .for-footer {
   background: white;
   background-size: auto;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
   font-variant: normal;
-  color: #333;
+  color: #7f7f7f;
   text-decoration: none;
   text-transform: none; }
   @media (max-width: 767px) {
@@ -1429,15 +1449,51 @@ form input[type=text], form input[type=password], form input[type=color], form i
     .for-footer {
       height: auto; } }
   .for-footer a {
-    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 1rem/normal Helvetica, sans-serif;
     font-variant: normal;
-    color: #333;
+    color: #7f7f7f;
     text-decoration: none;
     text-transform: none; }
     .for-footer a:hover {
-      font: normal 400 12pt Helvetica, sans-serif;
+      font: normal 400 1rem Helvetica, sans-serif;
       font-variant: normal;
-      color: #333;
+      color: #7f7f7f;
+      text-decoration: none;
+      text-transform: none; }
+
+.for-header {
+  background: white;
+  background-size: auto;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
+  font-variant: normal;
+  color: #7f7f7f;
+  text-decoration: none;
+  text-transform: none; }
+  @media (max-width: 767px) {
+    .for-header {
+      height: auto; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .for-header {
+      height: auto; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .for-header {
+      height: auto; } }
+  @media (min-width: 1200px) and (max-width: 2999px) {
+    .for-header {
+      height: auto; } }
+  @media (min-width: 3000px) {
+    .for-header {
+      height: auto; } }
+  .for-header a {
+    font: normal 400 1rem/normal Helvetica, sans-serif;
+    font-variant: normal;
+    color: #7f7f7f;
+    text-decoration: none;
+    text-transform: none; }
+    .for-header a:hover {
+      font: normal 400 1rem Helvetica, sans-serif;
+      font-variant: normal;
+      color: #7f7f7f;
       text-decoration: none;
       text-transform: none; }
 
@@ -1450,64 +1506,62 @@ $for-sidebar-smx-width: $for-sidebar-sm-all-width !default;*/
 .for-sidebar {
   background: white;
   background-size: auto;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
   font-variant: normal;
-  color: #333;
+  color: #7f7f7f;
   text-decoration: none;
   text-transform: none; }
   .for-sidebar a {
-    font: normal 400 12pt/normal Helvetica, sans-serif;
+    font: normal 400 1rem/normal Helvetica, sans-serif;
     font-variant: normal;
-    color: #333;
+    color: #7f7f7f;
     text-decoration: none;
     text-transform: none; }
     .for-sidebar a:hover {
-      font: normal 400 12pt Helvetica, sans-serif;
+      font: normal 400 1rem Helvetica, sans-serif;
       font-variant: normal;
-      color: #333;
+      color: #7f7f7f;
       text-decoration: none;
       text-transform: none; }
-
-.for-sidebar-heading {
-  background: white;
-  background-size: auto;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
-  font-variant: normal;
-  color: #333;
-  text-decoration: none;
-  text-transform: none; }
-  .for-sidebar-heading a {
-    font: normal 400 12pt/normal Helvetica, sans-serif;
+  .for-sidebar .for-sidebar-heading {
+    background: white;
+    background-size: auto;
+    font: normal 400 1rem/normal Helvetica, sans-serif;
     font-variant: normal;
-    color: #333;
+    color: #7f7f7f;
     text-decoration: none;
     text-transform: none; }
-    .for-sidebar-heading a:hover {
-      font: normal 400 12pt Helvetica, sans-serif;
+    .for-sidebar .for-sidebar-heading a {
+      font: normal 400 1rem/normal Helvetica, sans-serif;
       font-variant: normal;
-      color: #333;
+      color: #7f7f7f;
       text-decoration: none;
       text-transform: none; }
-
-.for-sidebar-content {
-  background: white;
-  background-size: auto;
-  font: normal 400 12pt/normal Helvetica, sans-serif;
-  font-variant: normal;
-  color: #333;
-  text-decoration: none;
-  text-transform: none; }
-  .for-sidebar-content a {
-    font: normal 400 12pt/normal Helvetica, sans-serif;
+      .for-sidebar .for-sidebar-heading a:hover {
+        font: normal 400 1rem Helvetica, sans-serif;
+        font-variant: normal;
+        color: #7f7f7f;
+        text-decoration: none;
+        text-transform: none; }
+  .for-sidebar .for-sidebar-content {
+    background: white;
+    background-size: auto;
+    font: normal 400 1rem/normal Helvetica, sans-serif;
     font-variant: normal;
-    color: #333;
+    color: #7f7f7f;
     text-decoration: none;
     text-transform: none; }
-    .for-sidebar-content a:hover {
-      font: normal 400 12pt Helvetica, sans-serif;
+    .for-sidebar .for-sidebar-content a {
+      font: normal 400 1rem/normal Helvetica, sans-serif;
       font-variant: normal;
-      color: #333;
+      color: #7f7f7f;
       text-decoration: none;
       text-transform: none; }
+      .for-sidebar .for-sidebar-content a:hover {
+        font: normal 400 1rem Helvetica, sans-serif;
+        font-variant: normal;
+        color: #7f7f7f;
+        text-decoration: none;
+        text-transform: none; }
 
 /*# sourceMappingURL=main.css.map */

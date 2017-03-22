@@ -47,6 +47,7 @@
         }
     }
 }
+
 /// A table container with all styling
 /// @param {Bool} $for-expand [true] - if the table should be over the full available width
 /// @param {Bool} $for-layout-fixed [true] - if the tables layout should be fixed, only with this it is possible to define cell widths through css
@@ -60,14 +61,17 @@
     display: table;
     @include for-table-base;
 }
+
 /// @output display: table-row
 @mixin for-table-row {
     display: table-row;
 }
+
 /// @output display: table-cell
 @mixin for-table-cell-base {
     display: table-cell;
 }
+
 /// Generates the border for a table-cell
 /// @output border and display: table-cell
 @mixin for-table-cell {
@@ -80,6 +84,7 @@
     }
     @include for-table-cell-base;
 }
+
 /// Generates the styling of a table cell which should be used as a table heading
 /// @output font and border styling as well as display: table-cell
 @mixin for-table-cell-heading {
@@ -100,6 +105,7 @@
         radius: #{$for-table-cell-heading-border-radius-inner} / #{$for-table-cell-heading-border-radius-outer};
     }
 }
+
 /// Generates a checkered background for a table
 /// @param {Map} $row [] - each element would be used according to its position in the map as the background for a row, repeatedly
 /// @param {Map} $column [] - each element would be used according to its position in the map as the background for a column, overwrites already set row backgrounds

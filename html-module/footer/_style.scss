@@ -6,7 +6,7 @@
 /// @author Michael Becker
 ////
 
-@if($for-output-html-module-footer) {
+@if ($for-output-html-module-footer) {
     /// .for-footer - for the page end
     .#{$for-output-prefix}footer {
         @include for-footer;

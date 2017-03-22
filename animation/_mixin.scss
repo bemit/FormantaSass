@@ -16,6 +16,7 @@
     -o-transition: $args;
     transition: $args;
 }
+
 /// Fade effect with included hover
 /// @access public
 /// @param {Float} $to-opacity [$for-animation-fade-to-opacity] - the opacity that should be applied on hover
@@ -50,6 +51,7 @@
         opacity: $to-opacity;
     }
 }
+
 /// Base mixin for all the zoom
 /// @param {String} $bg-url [] - needed for pure css animation, optional for html elements based, will be used as background for zoom effect
 /// @param {String} $selector-image [] - selector for thing containing the image for the effect, html or pure pseudo is in use
@@ -142,6 +144,7 @@
         }
     }
 }
+
 /// Generates a background at this element which zooms in with hover and there could be some overlay over it
 /// @param {String} $bg-url [] - will be used as background for zoom effect
 /// @param {Bool|Color} $bg-overlay [false] - optional, false: not displaying, null: use default config, else: Color Value (rgba(), hex, ..)
@@ -159,6 +162,7 @@
     $selector-overlay: '&:after';
     @include for-zoom-base($bg-url, $selector-image, $selector-overlay, $bg-overlay, $to-scale, $to-opacity, $duration, $timing-function, $delay);
 }
+
 /// Zoom mixin for html container
 /// @param {String} $selector-image [] - selector for thing containing the image for the effect, html or pure pseudo is in use
 /// @param {String} $selector-overlay [] - optinal when no overlay wanted, a transparent overlay, behind the content

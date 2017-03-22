@@ -6,7 +6,7 @@
 /// @author Michael Becker
 ////
 
-@if($for-output-html-module-content) {
+@if ($for-output-html-module-content) {
     /// .for-content - cms like content section design
     .#{$for-output-prefix}content {
         @include for-content;
