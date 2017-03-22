@@ -10,9 +10,6 @@ For more informations on the Licences which are applied read LICENCE.md
 ###Information, Support and Documentation
 More informations, contacts and support for FormantaSass could be found under <https://formanta.bemit.eu> the documentation is located at <https://doc.formanta.bemit.eu> and could be contributed to at <https://github.com/bemit/Doc-FormantaSass>
 
-#Version
-Version 0.0.4
-
 #Made by
 Original author is Michael Becker, mb.project@bemit.eu
 
