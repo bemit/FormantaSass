@@ -7,16 +7,16 @@
 ////
 
 /// @prop {Size} $for-gutter-thickest [75px] - gutter size for thickest
-$for-gutter-thickest: 75px !default;
+$for-gutter-thickest: 25px !default;
 
 /// @prop {Size} $for-gutter-thicker [50px] - gutter size for thicker
-$for-gutter-thicker: 50px !default;
+$for-gutter-thicker: 20px !default;
 
 /// @prop {Size} $for-gutter-thick [15px 30px] - gutter size for thick
-$for-gutter-thick: 15px 30px !default;
+$for-gutter-thick: 15px 15px !default;
 
 /// @prop {Size} $for-gutter-normal [10px 20px] - gutter size for normal
-$for-gutter-normal: 10px 20px !default;
+$for-gutter-normal: 10px 15px !default;
 
 /// @prop {Size} $for-gutter-thin [10px] - gutter size for thin
 $for-gutter-thin: 10px !default;

@@ -5,14 +5,6 @@
 /// @author Michael Becker
 ////
 
-/// @prop {Color} $for-body-background [#fff] - background color for body
-$for-body-background: #fff !default;
-
-/// @prop {Color} $for-general-color-primary [#6ab42a] - primary-color
-$for-general-color-primary: #6ab42a !default;
-/// @prop {Color} $for-general-color-secondary [#04a] - secondary-color
-$for-general-color-secondary: #04a !default;
-
 /// @prop {Int} $for-grayscale-qty [5] - how big the grayscale should be, needs to be an eneven number, half is negative (n1, n2, n3..), half positive (p1, p2, p3...)
 $for-grayscale-qty: 5;
 /// @prop {Color} $for-grayscale-base [#7f7f7f] - center of the grayscale
@@ -25,3 +17,11 @@ $for-grayscale-base-n1: darken($for-grayscale-base, 40%);
 $for-grayscale-base-p1: lighten($for-grayscale-base, 40%);
 /// @prop {Color} $for-grayscale-base-p2 [lighten($for-grayscale-base, 80)] - positive grayscale, light step 2
 $for-grayscale-base-p2: lighten($for-grayscale-base, 80%);
+
+/// @prop {Color} $for-general-color-primary [#6ab42a] - primary-color
+$for-general-color-primary: #6ab42a !default;
+/// @prop {Color} $for-general-color-secondary [#04a] - secondary-color
+$for-general-color-secondary: #04a !default;
+
+/// @prop {Color} $for-body-background [#fff] - background color for body
+$for-body-background: $for-grayscale-base-p1 !default;
