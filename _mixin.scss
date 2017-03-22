@@ -1,29 +1,32 @@
+////
+/// Mixins
+/// ================
+/// Mixins free and without any group atm.
+/// @group Just-Mixins
+/// @author Michael Becker
+////
+
+/// Prefixs border-radius
 @mixin for-border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
     border-radius: $radius;
 }
-
+/// Prefixs transform
 @mixin for-transform($transform) {
     -webkit-transform: $transform;
     -moz-transform: $transform;
     -ms-transform: $transform;
     transform: $transform;
 }
-
+/// Prefixs shadow
 @mixin for-shadow($args...) {
     box-shadow: $args;
     -moz-box-shadow: $args;
     -webkit-box-shadow: $args;
 }
-
-@mixin for-opacity($opacity) {
-    opacity: $opacity;
-    $opacity-ie: $opacity * 100;
-    filter: alpha(opacity=$opacity-ie); //IE8
-}
-
+/// Placeholder for a really visually hidden, but not not displayed
 %visuallyhidden {
     margin: -1px;
     padding: 0;

@@ -18,6 +18,7 @@
     .#{$for-output-prefix}display-inline {
         @include for-display-inline;
     }
+
     //
     // Clear
     //
@@ -32,12 +33,14 @@
     }
 
     //
-    //
-    //
     // Columns
     //
-    //
-    //
+
+    /// .for-row - should be direct father container for all .for-col-*
+    .#{$for-output-prefix}row {
+        @include for-row;
+    }
+
     $for-col-base-str: '';
     @for $i from 1 through $for-col-qty {
         /*
@@ -121,10 +124,12 @@
     .#{$for-output-prefix}visible {
         @include for-display-block;
     }
+
     /// Hide the thing
     .#{$for-output-prefix}hidden {
         display: none;
     }
+
     /// Display the thing: bp smx
     .#{$for-output-prefix}visible-smx {
         @include for-visible-smx;

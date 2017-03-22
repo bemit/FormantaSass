@@ -1,5 +1,5 @@
 @import 'libs/normalize/normalize';
-@if($for-output-reset) {
+@if ($for-output-reset) {
     html {
         width: 100%;
         height: 100%;
@@ -27,7 +27,7 @@
 
     img {
         image-rendering: -moz-optimizeQuality; /* Firefox */
-        image-rendering:   -o-optimizeQuality; /* Opera */
+        image-rendering: -o-optimizeQuality; /* Opera */
         image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
         image-rendering: optimizeQuality;
         -ms-interpolation-mode: bicubic; /* Internetexplorer */
