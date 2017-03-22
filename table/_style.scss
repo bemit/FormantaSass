@@ -1,12 +1,28 @@
+////
+/// Table
+/// ================
+/// selectors:
+/// .for-table
+/// .for-table-row
+/// .for-table-cell
+/// .for-table-cell-heading
+/// @group Table
+/// @author Michael Becker
+////
+
 @if($for-output-table) {
+    /// .for-table - a table with all font styling for the content
     .#{$for-output-prefix}table {
         @include for-table();
-        .#{$for-output-prefix}row {
+        /// .for-table-row - a table row, child of .for-table
+        .#{$for-output-prefix}table-row {
             @include for-table-row;
-            .#{$for-output-prefix}cell {
+            /// .for-table-cell - a table cell, child of .for-table and .for-table-row, adds borders and right display
+            .#{$for-output-prefix}table-cell {
                 @include for-table-cell;
             }
-            .#{$for-output-prefix}cell-heading {
+            /// .for-table-cell-heading - a table cell, child of .for-table and .for-table-row, adds borders and right display
+            .#{$for-output-prefix}table-cell-heading {
                 @include for-table-cell-heading;
             }
         }

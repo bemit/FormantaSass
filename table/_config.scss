@@ -1,177 +1,220 @@
-//
-// Table
-//
-$for-table-background: transparent !default;
+////
+/// Table
+/// ================
+/// selectors:
+/// .for-table
+/// .for-table-row
+/// .for-table-cell
+/// .for-table-cell-heading
+/// @group Table
+/// @author Michael Becker
+////
+
+//  Background
+//  ##########
+
+/// @prop {Color} $for-table-background [$for-grayscale-base-p2] - in table
+$for-table-background: $for-grayscale-base-p2 !default;
+/// @prop {Color} $for-table-cell-heading-background [$for-table-background] - in table
 $for-table-cell-heading-background: $for-table-background !default;
+/// @prop {Size} $for-table-background-size [auto] - in table
+$for-table-background-size: auto !default;
 
 //  Font Color
 //  ##########
+
+/// @prop {Color} $for-table-font-color [$for-general-font-color] - in table
 $for-table-font-color: $for-general-font-color !default;
+/// @prop {Color} $for-table-cell-heading-font-color [$for-table-font-color] - in table
 $for-table-cell-heading-font-color: $for-table-font-color !default;
+/// @prop {Color} $for-table-link-font-color [$for-link-font-color] - in table
 $for-table-link-font-color: $for-link-font-color !default;
+/// @prop {Color} $for-table-link-hover-font-color [$for-link-hover-font-color] - in table
 $for-table-link-hover-font-color: $for-link-hover-font-color !default;
 
-//  Font-Size
+//  Font Size
 //  ##########
+
+/// @prop {Size} $for-table-font-size [$for-general-font-size] - in table
 $for-table-font-size: $for-general-font-size !default;
+/// @prop {Size} $for-table-cell-heading-font-size [$for-table-font-size] - in table
 $for-table-cell-heading-font-size: $for-table-font-size !default;
+/// @prop {Size} $for-table-link-font-size [$for-link-font-size] - in table
 $for-table-link-font-size: $for-link-font-size !default;
+/// @prop {Size} $for-table-link-hover-font-size [$for-link-hover-font-size] - in table
 $for-table-link-hover-font-size: $for-link-hover-font-size !default;
+
+//  Font Style
+//  ##########
+
+/// @prop {Style} $for-table-font-style [$for-general-font-style] - in table
+$for-table-font-style: $for-general-font-style !default;
+/// @prop {Style} $for-table-cell-heading-font-style [$for-table-font-style] - in table
+$for-table-cell-heading-font-style: $for-table-font-style !default;
+/// @prop {Style} $for-table-link-font-style [$for-link-font-style] - in table
+$for-table-link-font-style: $for-link-font-style !default;
+/// @prop {Style} $for-table-link-hover-font-style [$for-link-hover-font-style] - in table
+$for-table-link-hover-font-style: $for-link-hover-font-style !default;
 
 //  Font Family
 //  ##########
+
+/// @prop {String} $for-table-font-family [$for-general-font-family] - in table
 $for-table-font-family: $for-general-font-family !default;
+/// @prop {String} $for-table-cell-heading-font-family [$for-table-font-family] - in table
 $for-table-cell-heading-font-family: $for-table-font-family !default;
+/// @prop {String} $for-table-link-font-family [$for-link-font-family] - in table
 $for-table-link-font-family: $for-link-font-family !default;
+/// @prop {String} $for-table-link-hover-font-family [$for-link-hover-font-family] - in table
 $for-table-link-hover-font-family: $for-link-hover-font-family !default;
 
 //  Font Weight
 //  ##########
-$for-table-font-weight: $for-general-font-weight !default;
-$for-table-cell-heading-font-weight: $for-table-font-weight !default;
-$for-table-link-font-weight: $for-link-font-weight !default;
-$for-table-link-hover-font-weight: $for-link-hover-font-weight !default;
 
-//  Font Style
-//  ##########
-$for-table-font-style: normal !default;
-$for-table-cell-heading-font-style: $for-table-font-style !default;
-$for-table-link-font-style: $for-table-font-style !default;
-$for-table-link-hover-font-style: $for-table-link-font-style !default;
+/// @prop {Size} $for-table-font-weight [$for-general-font-weight] - in table
+$for-table-font-weight: $for-general-font-weight !default;
+/// @prop {Size} $for-table-cell-heading-font-weight [$for-table-font-weight] - in table
+$for-table-cell-heading-font-weight: $for-table-font-weight !default;
+/// @prop {Size} $for-table-link-font-weight [$for-link-font-weight] - in table
+$for-table-link-font-weight: $for-link-font-weight !default;
+/// @prop {Size} $for-table-link-hover-font-weight [$for-link-hover-font-weight] - in table
+$for-table-link-hover-font-weight: $for-link-hover-font-weight !default;
 
 //  Font Variant
 //  ##########
-$for-table-font-variant: normal !default;
+
+/// @prop {String} $for-table-font-variant [$for-general-font-variant] - in table
+$for-table-font-variant: $for-general-font-variant !default;
+/// @prop {String} $for-table-cell-heading-font-variant [$for-table-font-variant] - in table
 $for-table-cell-heading-font-variant: $for-table-font-variant !default;
-$for-table-link-font-variant: $for-table-font-variant !default;
-$for-table-link-hover-font-variant: $for-table-link-font-variant !default;
+/// @prop {String} $for-table-link-font-variant [$for-link-font-variant] - in table
+$for-table-link-font-variant: $for-link-font-variant !default;
+/// @prop {String} $for-table-link-hover-font-variant [$for-link-hover-font-variant] - in table
+$for-table-link-hover-font-variant: $for-link-hover-font-variant !default;
 
 //  Text Decoration
 //  ##########
+
+/// @prop {String} $for-table-text-decoration [$for-general-text-decoration] - in table
 $for-table-text-decoration: $for-general-text-decoration !default;
+/// @prop {String} $for-table-cell-heading-text-decoration [$for-table-text-decoration] - in table
+$for-table-cell-heading-text-decoration: $for-table-text-decoration !default;
+/// @prop {String} $for-table-link-text-decoration [$for-link-text-decoration] - in table
 $for-table-link-text-decoration: $for-link-text-decoration !default;
+/// @prop {String} $for-table-link-hover-text-decoration [$for-link-hover-text-decoration] - in table
 $for-table-link-hover-text-decoration: $for-link-hover-text-decoration !default;
-$for-table-cell-heading-text-decoration: $for-link-hover-text-decoration !default;
 
 //  Text Transform
 //  ##########
+
+/// @prop {String} $for-table-text-transform [$for-general-text-transform] - in table
 $for-table-text-transform: $for-general-text-transform !default;
+/// @prop {String} $for-table-cell-heading-text-transform [$for-table-text-transform] - in table
+$for-table-cell-heading-text-transform: $for-table-text-transform !default;
+/// @prop {String} $for-table-link-text-transform [$for-link-text-transform] - in table
 $for-table-link-text-transform: $for-link-text-transform !default;
+/// @prop {String} $for-table-link-hover-text-transform [$for-link-hover-text-transform] - in table
 $for-table-link-hover-text-transform: $for-link-hover-text-transform !default;
-$for-table-cell-heading-text-transform: $for-link-hover-text-transform !default;
 
 //  Text Align
 //  ##########
+
+/// @prop {String} $for-table-text-align [$for-general-text-align] - in table
 $for-table-text-align: $for-general-text-align !default;
+/// @prop {String} $for-table-cell-heading-text-align [$for-table-text-align] - in table
+$for-table-cell-heading-text-align: $for-table-text-align !default;
+/// @prop {String} $for-table-link-text-align [$for-link-text-align] - in table
 $for-table-link-text-align: $for-link-text-align !default;
+/// @prop {String} $for-table-link-hover-text-align [$for-link-hover-text-align] - in table
 $for-table-link-hover-text-align: $for-link-hover-text-align !default;
-$for-table-cell-heading-text-align: $for-link-hover-text-align !default;
 
 //  Line Height
 //  ##########
-$for-table-line-height: $for-general-line-height !default;
-$for-table-cell-heading-line-height: $for-table-line-height !default;
-$for-table-link-line-height: $for-link-line-height !default;
-$for-table-link-line-height-hover: $for-link-hover-line-height !default;
 
-//  Border of the outside of the table
+/// @prop {String} $for-table-line-height [$for-general-line-height] - in table
+$for-table-line-height: $for-general-line-height !default;
+/// @prop {String} $for-table-cell-heading-line-height [$for-general-line-height] - in table
+$for-table-cell-heading-line-height: $for-table-line-height !default;
+/// @prop {String} $for-table-link-line-height [$for-link-line-height] - in table
+$for-table-link-line-height: $for-link-line-height !default;
+
+//  Border
 //  ##########
+
+//  Border Table, could be used as outside border when cell*border is set to 0
+//  #####
+
+/// @prop {Size} $for-table-border-width [0] - border width for table
 $for-table-border-width: 0 !default;
+/// @prop {String} $for-table-border-style [solid] - border style for table
 $for-table-border-style: solid !default;
-$for-table-border-color: $for-general-color-secondary !default;
+/// @prop {String} $for-table-border-color [$for-grayscale-base-p1] - border color for table
+$for-table-border-color: $for-grayscale-base-p1 !default;
+/// @prop {Size} $for-table-border-radius [0] - border radius for table
 $for-table-border-radius: 0 !default;
 
-$for-table-border-top-width: $for-table-border-width !default;
-$for-table-border-right-width: $for-table-border-width !default;
-$for-table-border-bottom-width: $for-table-border-width !default;
-$for-table-border-left-width: $for-table-border-width !default;
+/// @prop $for-table-border-top [$for-table-border-width $for-table-border-style $for-table-border-color] - border top for table
+$for-table-border-top: $for-table-border-width $for-table-border-style $for-table-border-color !default;
+/// @prop $for-table-border-right [$for-table-border-width $for-table-border-style $for-table-border-color] - border right for table
+$for-table-border-right: $for-table-border-width $for-table-border-style $for-table-border-color !default;
+/// @prop $for-table-border-bottom [$for-table-border-width $for-table-border-style $for-table-border-color] - border bottom for table
+$for-table-border-bottom: $for-table-border-width $for-table-border-style $for-table-border-color !default;
+/// @prop $for-table-border-left [$for-table-border-width $for-table-border-style $for-table-border-color] - border left for table
+$for-table-border-left: $for-table-border-width $for-table-border-style $for-table-border-color !default;
 
-$for-table-border-top-style: $for-table-border-style !default;
-$for-table-border-right-style: $for-table-border-style !default;
-$for-table-border-bottom-style: $for-table-border-style !default;
-$for-table-border-left-style: $for-table-border-style !default;
+/// @prop {Size} $for-table-border-radius-inner [$for-table-border-radius] - border radius inner, first part within css (before /)
+$for-table-border-radius-inner: $for-table-border-radius !default; //first part within css (before /)
+/// @prop {Size} $for-table-border-radius-outer [$for-table-border-radius] - border radius inner, second part within css (before /)
+$for-table-border-radius-outer: $for-table-border-radius !default; //second part within css (after /)//  Border
 
-$for-table-border-top-color: $for-table-border-color !default;
-$for-table-border-right-color: $for-table-border-color !default;
-$for-table-border-bottom-color: $for-table-border-color !default;
-$for-table-border-left-color: $for-table-border-color !default;
+//  Border Table Cell Heading
+//  #####
 
-$for-table-border-radius-inner: $for-table-border-radius !default;//first part within css (before /)
-$for-table-border-radius-outer: $for-table-border-radius !default;//second part within css (after /)
+/// @prop {Size} $for-table-cell-heading-border-width [$for-table-border-width] - border width for table
+$for-table-cell-heading-border-width: $for-table-border-width !default;
+/// @prop {String} $for-table-cell-heading-border-style [$for-table-border-style] - border style for table
+$for-table-cell-heading-border-style: $for-table-border-style !default;
+/// @prop {String} $for-table-cell-heading-border-color [$for-table-border-color] - border color for table
+$for-table-cell-heading-border-color: $for-table-border-color !default;
+/// @prop {Size} $for-table-cell-heading-border-radius [$for-table-border-radius] - border radius for table
+$for-table-cell-heading-border-radius: $for-table-border-radius !default;
 
-$for-table-border-top-left-radius-inner: $for-table-border-radius-inner !default;
-$for-table-border-top-left-radius-left: $for-table-border-radius-outer !default;
-$for-table-border-top-right-radius-inner: $for-table-border-radius-inner !default;
-$for-table-border-top-right-radius-right: $for-table-border-radius-outer !default;
-$for-table-border-bottom-right-radius-inner: $for-table-border-radius-inner !default;
-$for-table-border-bottom-right-radius-right: $for-table-border-radius-outer !default;
-$for-table-border-bottom-left-radius-inner: $for-table-border-radius-inner !default;
-$for-table-border-bottom-left-radius-left: $for-table-border-radius-outer !default;
+/// @prop $for-table-cell-heading-border-top [$for-table-cell-heading-border-width $for-table-cell-heading-border-style $for-table-cell-heading-border-color] - border top for table
+$for-table-cell-heading-border-top: $for-table-cell-heading-border-width $for-table-cell-heading-border-style $for-table-cell-heading-border-color !default;
+/// @prop $for-table-cell-heading-border-right [$for-table-cell-heading-border-width $for-table-cell-heading-border-style $for-table-cell-heading-border-color] - border right for table
+$for-table-cell-heading-border-right: $for-table-cell-heading-border-width $for-table-cell-heading-border-style $for-table-cell-heading-border-color !default;
+/// @prop $for-table-cell-heading-border-bottom [$for-table-cell-heading-border-width $for-table-cell-heading-border-style $for-table-cell-heading-border-color] - border bottom for table
+$for-table-cell-heading-border-bottom: $for-table-cell-heading-border-width $for-table-cell-heading-border-style $for-table-cell-heading-border-color !default;
+/// @prop $for-table-cell-heading-border-left [$for-table-cell-heading-border-width $for-table-cell-heading-border-style $for-table-cell-heading-border-color] - border left for table
+$for-table-cell-heading-border-left: $for-table-cell-heading-border-width $for-table-cell-heading-border-style $for-table-cell-heading-border-color !default;
 
-//  Border of the outside of the normal cells
-//  ##########
-$for-table-cell-border-width: 0 !default;
-$for-table-cell-border-style: solid !default;
-$for-table-cell-border-color: $for-general-color-secondary !default;
-$for-table-cell-border-radius: 0 !default;
+/// @prop {Size} $for-table-cell-heading-border-radius-inner [$for-table-border-radius] - border radius inner, first part within css (before /)
+$for-table-cell-heading-border-radius-inner: $for-table-border-radius !default; //first part within css (before /)
+/// @prop {Size} $for-table-cell-heading-border-radius-outer [$for-table-border-radius] - border radius inner, second part within css (before /)
+$for-table-cell-heading-border-radius-outer: $for-table-border-radius !default; //second part within css (after /)
 
-$for-table-cell-border-top-width: $for-table-cell-border-width !default;
-$for-table-cell-border-right-width: $for-table-cell-border-width !default;
-$for-table-cell-border-bottom-width: $for-table-cell-border-width !default;
-$for-table-cell-border-left-width: $for-table-cell-border-width !default;
+//  Border Table Cell
+//  #####
 
-$for-table-cell-border-top-style: $for-table-cell-border-style !default;
-$for-table-cell-border-right-style: $for-table-cell-border-style !default;
-$for-table-cell-border-bottom-style: $for-table-cell-border-style !default;
-$for-table-cell-border-left-style: $for-table-cell-border-style !default;
+/// @prop {Size} $for-table-cell-border-width [$for-table-border-width] - border width for table
+$for-table-cell-border-width: $for-table-border-width !default;
+/// @prop {String} $for-table-cell-border-style [$for-table-border-style] - border style for table
+$for-table-cell-border-style: $for-table-border-style !default;
+/// @prop {String} $for-table-cell-border-color [$for-table-border-color] - border color for table
+$for-table-cell-border-color: $for-table-border-color !default;
+/// @prop {Size} $for-table-cell-border-radius [$for-table-border-radius] - border radius for table
+$for-table-cell-border-radius: $for-table-border-radius !default;
 
-$for-table-cell-border-top-color: $for-table-cell-border-color !default;
-$for-table-cell-border-right-color: $for-table-cell-border-color !default;
-$for-table-cell-border-bottom-color: $for-table-cell-border-color !default;
-$for-table-cell-border-left-color: $for-table-cell-border-color !default;
+/// @prop $for-table-cell-border-top [$for-table-cell-border-width $for-table-cell-border-style $for-table-cell-border-color] - border top for table
+$for-table-cell-border-top: $for-table-cell-border-width $for-table-cell-border-style $for-table-cell-border-color !default;
+/// @prop $for-table-cell-border-right [$for-table-cell-border-width $for-table-cell-border-style $for-table-cell-border-color] - border right for table
+$for-table-cell-border-right: $for-table-cell-border-width $for-table-cell-border-style $for-table-cell-border-color !default;
+/// @prop $for-table-cell-border-bottom [$for-table-cell-border-width $for-table-cell-border-style $for-table-cell-border-color] - border bottom for table
+$for-table-cell-border-bottom: $for-table-cell-border-width $for-table-cell-border-style $for-table-cell-border-color !default;
+/// @prop $for-table-cell-border-left [$for-table-cell-border-width $for-table-cell-border-style $for-table-cell-border-color] - border left for table
+$for-table-cell-border-left: $for-table-cell-border-width $for-table-cell-border-style $for-table-cell-border-color !default;
 
-$for-table-cell-border-radius-inner: $for-table-cell-border-radius !default;//first part within css (before /)
-$for-table-cell-border-radius-outer: $for-table-cell-border-radius !default;//second part within css (after /)
-
-$for-table-cell-border-top-left-radius-inner: $for-table-cell-border-radius-inner !default;
-$for-table-cell-border-top-left-radius-left: $for-table-cell-border-radius-outer !default;
-$for-table-cell-border-top-right-radius-inner: $for-table-cell-border-radius-inner !default;
-$for-table-cell-border-top-right-radius-right: $for-table-cell-border-radius-outer !default;
-$for-table-cell-border-bottom-right-radius-inner: $for-table-cell-border-radius-inner !default;
-$for-table-cell-border-bottom-right-radius-right: $for-table-cell-border-radius-outer !default;
-$for-table-cell-border-bottom-left-radius-inner: $for-table-cell-border-radius-inner !default;
-$for-table-cell-border-bottom-left-radius-left: $for-table-cell-border-radius-outer !default;
-
-//  Border of the outside of the header cells
-//  ##########
-$for-table-cell-border-width: 0 !default;
-$for-table-cell-border-style: solid !default;
-$for-table-cell-border-color: $for-general-color-secondary !default;
-$for-table-cell-border-radius: 0 !default;
-
-$for-table-cell-border-top-width: $for-table-cell-border-width !default;
-$for-table-cell-border-right-width: $for-table-cell-border-width !default;
-$for-table-cell-border-bottom-width: 1px !default;
-$for-table-cell-border-left-width: $for-table-cell-border-width !default;
-
-$for-table-cell-border-top-style: $for-table-cell-border-style !default;
-$for-table-cell-border-right-style: $for-table-cell-border-style !default;
-$for-table-cell-border-bottom-style: dashed !default;
-$for-table-cell-border-left-style: $for-table-cell-border-style !default;
-
-$for-table-cell-border-top-color: $for-table-cell-border-color !default;
-$for-table-cell-border-right-color: $for-table-cell-border-color !default;
-$for-table-cell-border-bottom-color: $for-general-color-secondary !default;
-$for-table-cell-border-left-color: $for-table-cell-border-color !default;
-
-$for-table-cell-border-radius-inner: $for-table-cell-border-radius !default;//first part within css (before /)
-$for-table-cell-border-radius-outer: $for-table-cell-border-radius !default;//second part within css (after /)
-
-$for-table-cell-border-top-left-radius-inner: $for-table-cell-border-radius-inner !default;
-$for-table-cell-border-top-left-radius-left: $for-table-cell-border-radius-outer !default;
-$for-table-cell-border-top-right-radius-inner: $for-table-cell-border-radius-inner !default;
-$for-table-cell-border-top-right-radius-right: $for-table-cell-border-radius-outer !default;
-$for-table-cell-border-bottom-right-radius-inner: $for-table-cell-border-radius-inner !default;
-$for-table-cell-border-bottom-right-radius-right: $for-table-cell-border-radius-outer !default;
-$for-table-cell-border-bottom-left-radius-inner: $for-table-cell-border-radius-inner !default;
-$for-table-cell-border-bottom-left-radius-left: $for-table-cell-border-radius-outer !default;
+/// @prop {Size} $for-table-cell-border-radius-inner [$for-table-border-radius] - border radius inner, first part within css (before /)
+$for-table-cell-border-radius-inner: $for-table-border-radius !default; //first part within css (before /)
+/// @prop {Size} $for-table-cell-border-radius-outer [$for-table-border-radius] - border radius inner, second part within css (before /)
+$for-table-cell-border-radius-outer: $for-table-border-radius !default; //second part within css (after /)

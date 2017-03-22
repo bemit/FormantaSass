@@ -1,3 +1,16 @@
+////
+/// Table
+/// ================
+/// selectors:
+/// .for-table
+/// .for-table-row
+/// .for-table-cell
+/// .for-table-cell-heading
+/// @group Table
+/// @author Michael Becker
+////
+
+/// Table base styling
 @mixin for-table-base {
     font: $for-table-font-style $for-table-font-variant $for-table-font-weight #{$for-table-font-size}/#{$for-table-line-height} $for-table-font-family;
     text: {
@@ -6,11 +19,11 @@
         align: $for-table-text-align;
     }
     border: {
-        top: $for-table-border-top-width $for-table-border-top-style $for-table-border-top-color;
-        right: $for-table-border-right-width $for-table-border-right-style $for-table-border-right-color;
-        bottom: $for-table-border-bottom-width $for-table-border-bottom-style $for-table-border-bottom-color;
-        left: $for-table-border-left-width $for-table-border-left-style $for-table-border-left-color;
-        radius: $for-table-border-top-left-radius-inner $for-table-border-top-right-radius-inner $for-table-border-bottom-right-radius-inner #{$for-table-border-bottom-left-radius-inner} / #{$for-table-border-top-left-radius-left} $for-table-border-top-right-radius-right $for-table-border-bottom-right-radius-right $for-table-border-bottom-left-radius-left;
+        top: $for-table-border-top;
+        right: $for-table-border-right;
+        bottom: $for-table-border-bottom;
+        left: $for-table-border-left;
+        radius: #{$for-table-border-radius-inner} / #{$for-table-border-radius-outer};
     }
     a {
         font: $for-table-link-font-style $for-table-link-font-variant $for-table-link-font-weight #{$for-table-link-font-size}/#{$for-table-line-height} $for-table-link-font-family;
@@ -34,27 +47,43 @@
         }
     }
 }
+/// A table container with all styling
+/// @param {Bool} $for-expand [true] - if the table should be over the full available width
+/// @param {Bool} $for-layout-fixed [true] - if the tables layout should be fixed, only with this it is possible to define cell widths through css
 @mixin for-table($for-expand: true, $for-layout-fixed: true) {
-    @if($for-layout-fixed) {
+    @if ($for-layout-fixed) {
         table-layout: fixed;
     }
-    @if($for-expand) {
+    @if ($for-expand) {
         width: 100%;
     }
     display: table;
     @include for-table-base;
 }
-
+/// @output display: table-row
 @mixin for-table-row {
     display: table-row;
 }
-
-@mixin for-table-cell {
+/// @output display: table-cell
+@mixin for-table-cell-base {
     display: table-cell;
 }
-
+/// Generates the border for a table-cell
+/// @output border and display: table-cell
+@mixin for-table-cell {
+    border: {
+        top: $for-table-cell-border-top;
+        right: $for-table-cell-border-right;
+        bottom: $for-table-cell-border-bottom;
+        left: $for-table-cell-border-left;
+        radius: #{$for-table-cell-border-radius-inner} / #{$for-table-cell-border-radius-outer};
+    }
+    @include for-table-cell-base;
+}
+/// Generates the styling of a table cell which should be used as a table heading
+/// @output font and border styling as well as display: table-cell
 @mixin for-table-cell-heading {
-    @include for-table-cell;
+    @include for-table-cell-base;
     font: $for-table-cell-heading-font-style $for-table-cell-heading-font-variant $for-table-cell-heading-font-weight #{$for-table-cell-heading-font-size}/#{$for-table-cell-heading-line-height} $for-table-cell-heading-font-family;
     color: $for-table-cell-heading-font-color;
     background: $for-table-cell-heading-background;
@@ -63,4 +92,17 @@
         transform: $for-table-cell-heading-text-transform;
         align: $for-table-cell-heading-text-align;
     }
+    border: {
+        top: $for-table-cell-heading-border-top;
+        right: $for-table-cell-heading-border-right;
+        bottom: $for-table-cell-heading-border-bottom;
+        left: $for-table-cell-heading-border-left;
+        radius: #{$for-table-cell-heading-border-radius-inner} / #{$for-table-cell-heading-border-radius-outer};
+    }
+}
+/// Generates a checkered background for a table
+/// @param {Map} $row [] - each element would be used according to its position in the map as the background for a row, repeatedly
+/// @param {Map} $column [] - each element would be used according to its position in the map as the background for a column, overwrites already set row backgrounds
+@mixin for-table-bg-checkered($row, $column) {
+    // TODO
 }

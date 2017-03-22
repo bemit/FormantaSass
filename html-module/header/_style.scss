@@ -9,6 +9,6 @@
 @if ($for-output-html-module-header) {
     /// .for-header - a header style selector
     .#{$for-output-prefix}header {
-
+        @include for-header;
     }
 }

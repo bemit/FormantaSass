@@ -1,6 +1,13 @@
-//
-//  Here belongs the style and everything for buttons
-//
+////
+/// Button: Config
+/// ================
+/// Button and button and buttons
+/// @group Button
+/// @author Michael Becker
+////
+
+/// Adds the basic styling of a button
+/// @param {Bool} $for-expand [true] - if the button should be over the full available width
 @mixin for-button-base($for-expand: true) {
     @if $for-expand {
         display: block;
