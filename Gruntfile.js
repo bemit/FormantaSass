@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+    require('load-grunt-tasks')(grunt);
+
     // Time
     require('time-grunt')(grunt);
 
@@ -7,26 +9,66 @@ module.exports = function(grunt) {
 
         // Sass / CSS
         sass: {
-            options: {
-                sourceMap: true
-            },
-            dist: {
+            main: {
+                options: {
+                    sourceMap: true
+                },
                 files: {
                     'main.css': 'main.scss'
                 }
+            },
+            example: {
+                options: {
+                    sourceMap: true
+                },
+                files: {
+                    'example/main.css': 'example/main.scss'
+                }
             }
         },
+
+        postcss: {
+            main: {
+                options: {
+                    processors: [
+                        require('pixrem')(), // add fallbacks for rem units
+                        require('autoprefixer')({browsers: 'last 4 versions'})
+                    ]
+                },
+                src: 'main.css'
+            },
+            example: {
+                options: {
+                    processors: [
+                        require('pixrem')(), // add fallbacks for rem units
+                        require('autoprefixer')({browsers: 'last 4 versions'})
+                    ]
+                },
+                src: 'example/main.css'
+            }
+        },
+        
         cssmin: {
-            target: {
+            main: {
                 files: [{
                     expand: true,
                     cwd: '',
-                    src: ['main.css', '!main.css.map'],
+                    src: ['main.css'],
+                    dest: '',
+                    ext: '.min.css'
+                }]
+            },
+            example: {
+                files: [{
+                    expand: true,
+                    cwd: '',
+                    src: ['example/main.css'],
                     dest: '',
                     ext: '.min.css'
                 }]
             }
         },
+
         sassdoc: {
             bare: {
                 src: '**/*.scss',
@@ -41,15 +83,21 @@ module.exports = function(grunt) {
                     }
                 }
             }
+        },
+
+        concurrent: {
+            build: ['css', 'css-example', 'doc'],
         }
     });
 
     // Sass / CSS
-    grunt.loadNpmTasks('grunt-sass');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.registerTask('css', ['sass', 'cssmin']);
+    grunt.registerTask('css', ['sass:main', 'postcss:main', 'cssmin:main']);
+
+    grunt.registerTask('css-example', ['sass:example', 'postcss:example', 'cssmin:example']);
 
     // Sassdoc
-    grunt.loadNpmTasks('grunt-sassdoc');
-    grunt.registerTask('sassdoc', ['sassdoc']);
+    grunt.registerTask('doc', ['sassdoc']);
+
+    // Make all
+    grunt.registerTask('build', ['concurrent:build']);
 };
