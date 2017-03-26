@@ -27,9 +27,9 @@
     $calculated-gray: $grayscale-base;
 
     @if $ident < 0 {
-        $calculated-gray: for-darken($for-grayscale-base, (100 * (($ident * -1)/ ($grayscale-qty / 2))));
+        $calculated-gray: for-darken($grayscale-base, (100 * (($ident * -1)/ ($grayscale-qty / 2))));
     } @else if $ident > 0 {
-        $calculated-gray: for-lighten($for-grayscale-base, (100 * ($ident / ($grayscale-qty / 2))));
+        $calculated-gray: for-lighten($grayscale-base, (100 * ($ident / ($grayscale-qty / 2))));
     }
 
     @return $calculated-gray;

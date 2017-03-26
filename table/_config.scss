@@ -240,3 +240,17 @@ $for-table-bg-striped-column: null !default;
 $for-table-bg-striped-row-selector: tr !default;
 /// @prop {List} $for-table-bg-striped-column-selector [td] - in table
 $for-table-bg-striped-column-selector: td !default;
+/// @prop {Color} $for-table-bg-striped-row-hover [td] - in table
+$for-table-bg-striped-row-hover: for-grayscale(4, 15) !default;
+/// @prop {Color} $for-table-bg-striped-column-hover [td] - in table
+$for-table-bg-striped-column-hover: for-grayscale(8, 17) !default;
+
+//  Table bg striped
+//  ##########
+
+/// @prop {Color} $for-table-bg-checkered-color [td] - in table
+$for-table-bg-checkered-color: rgba($for-general-color-primary, 0.5) rgba($for-general-color-secondary, 0.5) rgba(red, 0.5) rgba(pink, 0.5);
+/// @prop {List} $for-table-bg-checkered-row-selector [tr] - in table
+$for-table-bg-checkered-row-selector: tr !default;
+/// @prop {List} $for-table-bg-checkered-column-selector [td] - in table
+$for-table-bg-checkered-column-selector: td !default;
