@@ -24,17 +24,17 @@
 /// @param {Float} $timing-function [$for-animation-fade-timing-function] - the css3 transition timing function that should be used
 /// @param {Float} $delay [$for-animation-fade-delay] - the delay that should be there before the transition starts
 @mixin for-fade($to-opacity: null, $duration: null, $timing-function: null, $delay: null) {
-    @if ($duration) {
+    @if $duration {
         $duration: $duration;
     } @else {
         $duration: $for-animation-fade-duration;
     }
-    @if ($timing-function) {
+    @if $timing-function {
         $timing-function: $timing-function;
     } @else {
         $timing-function: $for-animation-fade-timing-function;
     }
-    @if ($delay) {
+    @if $delay {
         $delay: $delay;
     } @else {
         @if ($for-animation-fade-delay > 0) {
@@ -43,7 +43,7 @@
     }
     @include for-transition(opacity $duration $timing-function $delay);
     &:hover {
-        @if ($to-opacity) {
+        @if $to-opacity {
             $to-opacity: $to-opacity;
         } @else {
             $to-opacity: $for-animation-fade-to-opacity;
@@ -63,25 +63,25 @@
 /// @param {Int} $timing-function [null] - what css3 timing function should be used for the animation
 /// @param {Int} $delay [null] - how long the animation should be delayed
 @mixin for-zoom-base($bg-url, $selector-image, $selector-overlay, $bg-overlay: false, $to-scale: null, $to-opacity: null, $duration: null, $timing-function: null, $delay: null) {
-    @if ($duration) {
+    @if $duration {
         $duration: $duration;
     } @else {
         $duration: $for-animation-zoom-duration;
     }
-    @if ($to-scale) {
+    @if $to-scale {
         $to-scale: $to-scale;
     } @else {
         $to-scale: $for-animation-zoom-to-scale;
     }
-    @if ($timing-function) {
+    @if $timing-function {
         $timing-function: $timing-function;
     } @else {
         $timing-function: $for-animation-zoom-timing-function;
     }
-    @if ($delay) {
+    @if $delay {
         $delay: $delay;
     } @else {
-        @if ($for-animation-zoom-delay > 0) {
+        @if $for-animation-zoom-delay > 0 {
             $delay: $for-animation-zoom-delay;
         }
     }
@@ -113,9 +113,9 @@
         z-index: 0;
     }
     // Overlay CSS
-    @if ($bg-overlay != false) {
+    @if $bg-overlay != false {
         &#{$selector-overlay} {
-            @if ($bg-overlay) {
+            @if $bg-overlay {
                 $bg-overlay: $bg-overlay;
             } @else {
                 $bg-overlay: $for-animation-zoom-bg-overlay;
@@ -131,10 +131,10 @@
         #{$selector-image} {
             @include for-transform(scale($to-scale));
         }
-        @if ($bg-overlay != false) {
+        @if $bg-overlay != false {
             // Overlay CSS
             #{$selector-overlay} {
-                @if ($to-opacity) {
+                @if $to-opacity {
                     $to-opacity: $to-opacity;
                 } @else {
                     $to-opacity: $for-animation-zoom-to-opacity;
@@ -173,12 +173,12 @@
 /// @param {Int} $timing-function [null] - what css3 timing function should be used for the animation
 /// @param {Int} $delay [null] - how long the animation should be delayed
 @mixin for-zoom-html($selector-image: null, $selector-overlay: null, $bg-overlay: false, $to-scale: null, $to-opacity: null, $duration: null, $timing-function: null, $delay: null) {
-    @if ($selector-image) {
+    @if $selector-image {
 
     } @else {
         $selector-image: ' img:first-child';
     }
-    @if ($selector-overlay) {
+    @if $selector-overlay {
 
     } @else {
         $selector-overlay: ' .zoom-overlay';

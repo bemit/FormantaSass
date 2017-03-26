@@ -35,11 +35,10 @@
         $tmp-grayscale-color: $for-grayscale-base;
         @if $i < ($grayscale-qty/2) {
             $tmp-grayscale-name: n + $i;
-            $tmp-grayscale-color: darken($for-grayscale-base, (100 * ($i/($grayscale-qty/2))));
-            //$tmp-grayscale-color: darken($for-grayscale-base, ((100 / 2 - (100 / 2 / ($grayscale-qty / 2))) * $i));
+            $tmp-grayscale-color: for-grayscale(($i * -1), $grayscale-qty, $grayscale-base);
         } @else if $i > ($grayscale-qty/2) {
             $tmp-grayscale-name: p + ($i - $grayscale-qty/2 + 0.5);
-            $tmp-grayscale-color: lighten($for-grayscale-base, (100 * (($i - $grayscale-qty/2 + 0.5)/($grayscale-qty/2))));
+            $tmp-grayscale-color: for-grayscale(($i - $grayscale-qty/2 + 0.5), $grayscale-qty, $grayscale-base);
         }
         .#{$for-output-prefix}gray-#{$tmp-grayscale-name} {
             color: $tmp-grayscale-color;

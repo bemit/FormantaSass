@@ -611,16 +611,16 @@ button {
   background: #e5e5e5; }
 
 .for-gray-n1 {
-  color: #191919; }
+  color: #4c4c4c; }
 
 .for-gray-n2 {
-  color: black; }
+  color: #191919; }
 
 .for-gray-p1 {
-  color: #e5e5e5; }
+  color: #b2b2b2; }
 
 .for-gray-p2 {
-  color: white; }
+  color: #e5e5e5; }
 
 .for-fade {
   transition: opacity 0.4s linear; }
@@ -673,7 +673,7 @@ button {
     transition: transform 0.4s linear, -webkit-transform 0.4s linear;
     z-index: 0; }
   .for-zoom-overlay .zoom-overlay {
-    background: rgba(25, 25, 25, 0.5);
+    background: rgba(76, 76, 76, 0.5);
     z-index: 1;
     transition: opacity 0.4s linear; }
   .for-zoom-overlay:hover img:first-child {
@@ -1329,11 +1329,12 @@ h6 {
   text-decoration: none;
   text-transform: none;
   text-align: left;
-  border-top: 0 solid #e5e5e5;
-  border-right: 0 solid #e5e5e5;
-  border-bottom: 0 solid #e5e5e5;
-  border-left: 0 solid #e5e5e5;
-  border-radius: 0 / 0; }
+  border-top: 0 solid #b2b2b2;
+  border-right: 0 solid #b2b2b2;
+  border-bottom: 0 solid #b2b2b2;
+  border-left: 0 solid #b2b2b2;
+  border-radius: 0 / 0;
+  border-collapse: collapse; }
   .for-table a {
     font: normal normal 400 16px/normal Helvetica, sans-serif;
     font: normal normal 400 1rem/normal Helvetica, sans-serif;
@@ -1352,26 +1353,78 @@ h6 {
   .for-table .for-table-row {
     display: table-row; }
     .for-table .for-table-row .for-table-cell {
-      border-top: 0 solid #e5e5e5;
-      border-right: 0 solid #e5e5e5;
-      border-bottom: 0 solid #e5e5e5;
-      border-left: 0 solid #e5e5e5;
+      border-top: 0 solid #b2b2b2;
+      border-right: 0 solid #b2b2b2;
+      border-bottom: 0 solid #b2b2b2;
+      border-left: 0 solid #b2b2b2;
       border-radius: 0 / 0;
+      padding: 8px 5px;
       display: table-cell; }
-    .for-table .for-table-row .for-table-cell-heading {
+    .for-table .for-table-row .for-table-cell-head {
       display: table-cell;
       font: normal normal 400 16px/normal Helvetica, sans-serif;
       font: normal normal 400 1rem/normal Helvetica, sans-serif;
       color: #7f7f7f;
-      background: white;
+      background: #e5e5e5;
       text-decoration: none;
       text-transform: none;
       text-align: left;
-      border-top: 0 solid #e5e5e5;
-      border-right: 0 solid #e5e5e5;
-      border-bottom: 0 solid #e5e5e5;
-      border-left: 0 solid #e5e5e5;
-      border-radius: 0 / 0; }
+      border-top: 0 solid #b2b2b2;
+      border-right: 0 solid #b2b2b2;
+      border-bottom: 0 solid #b2b2b2;
+      border-left: 0 solid #b2b2b2;
+      border-radius: 0 / 0;
+      padding: 8px 5px; }
+
+.for-table-easy {
+  table-layout: fixed;
+  width: 100%;
+  display: table;
+  font: normal normal 400 16px/normal Helvetica, sans-serif;
+  font: normal normal 400 1rem/normal Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  border-top: 0 solid #b2b2b2;
+  border-right: 0 solid #b2b2b2;
+  border-bottom: 0 solid #b2b2b2;
+  border-left: 0 solid #b2b2b2;
+  border-radius: 0 / 0;
+  border-collapse: collapse; }
+  .for-table-easy a {
+    font: normal normal 400 16px/normal Helvetica, sans-serif;
+    font: normal normal 400 1rem/normal Helvetica, sans-serif;
+    color: #04a;
+    text-decoration: none;
+    text-transform: none;
+    text-align: left;
+    line-height: normal; }
+    .for-table-easy a:hover {
+      font: normal normal 400 16px Helvetica, sans-serif;
+      font: normal normal 400 1rem Helvetica, sans-serif;
+      color: #04a;
+      text-decoration: none;
+      text-transform: none;
+      text-align: left; }
+  .for-table-easy tr {
+    display: table-row; }
+    .for-table-easy tr td {
+      border-top: 0 solid #b2b2b2;
+      border-right: 0 solid #b2b2b2;
+      border-bottom: 0 solid #b2b2b2;
+      border-left: 0 solid #b2b2b2;
+      border-radius: 0 / 0;
+      padding: 8px 5px;
+      display: table-cell; }
+
+.for-table-bg-striped tr:nth-child(3n+1) {
+  background-color: #f6f6f6; }
+
+.for-table-bg-striped tr:nth-child(3n+2) {
+  background-color: #e5e5e5; }
+
+.for-table-bg-striped tr:nth-child(3n+3) {
+  background-color: #d4d4d4; }
 
 form input[type=text], form input[type=password], form input[type=color], form input[type=date], form input[type=datetime], form input[type=datetime-local], form input[type=email], form input[type=month], form input[type=number], form input[type=range], form input[type=search], form input[type=tel], form input[type=time], form input[type=url], form input[type=week] {
   display: inline-block;
@@ -1384,7 +1437,7 @@ form input[type=text], form input[type=password], form input[type=color], form i
   text-decoration: none;
   height: 20px;
   padding: 10px;
-  background: white;
+  background: #e5e5e5;
   cursor: pointer;
   vertical-align: middle;
   border-top: 1px solid #7f7f7f;
@@ -1393,7 +1446,7 @@ form input[type=text], form input[type=password], form input[type=color], form i
   border-left: 1px solid #7f7f7f;
   border-radius: 0 / 0; }
   form input[type=text]:hover, form input[type=password]:hover, form input[type=color]:hover, form input[type=date]:hover, form input[type=datetime]:hover, form input[type=datetime-local]:hover, form input[type=email]:hover, form input[type=month]:hover, form input[type=number]:hover, form input[type=range]:hover, form input[type=search]:hover, form input[type=tel]:hover, form input[type=time]:hover, form input[type=url]:hover, form input[type=week]:hover {
-    background: #e5e5e5;
+    background: #b2b2b2;
     border-top: 1px solid #7f7f7f;
     border-right: 1px solid #7f7f7f;
     border-bottom: 1px solid #7f7f7f;
@@ -1425,7 +1478,7 @@ form input[type=text], form input[type=password], form input[type=color], form i
       width: 1600px; } }
 
 .for-content {
-  background: white;
+  background: #e5e5e5;
   background-size: auto;
   font: normal 400 16px/normal Helvetica, sans-serif;
   font: normal 400 1rem/normal Helvetica, sans-serif;
@@ -1449,7 +1502,7 @@ form input[type=text], form input[type=password], form input[type=color], form i
       text-transform: none; }
 
 .for-footer {
-  background: white;
+  background: #e5e5e5;
   background-size: auto;
   font: normal 400 16px/normal Helvetica, sans-serif;
   font: normal 400 1rem/normal Helvetica, sans-serif;
@@ -1488,7 +1541,7 @@ form input[type=text], form input[type=password], form input[type=color], form i
       text-transform: none; }
 
 .for-header {
-  background: white;
+  background: #e5e5e5;
   background-size: auto;
   font: normal 400 16px/normal Helvetica, sans-serif;
   font: normal 400 1rem/normal Helvetica, sans-serif;
@@ -1533,7 +1586,7 @@ $for-sidebar-sm-all-width: 100% !default;
 $for-sidebar-sm-width: $for-sidebar-sm-all-width !default;
 $for-sidebar-smx-width: $for-sidebar-sm-all-width !default;*/
 .for-sidebar {
-  background: white;
+  background: #e5e5e5;
   background-size: auto;
   font: normal 400 16px/normal Helvetica, sans-serif;
   font: normal 400 1rem/normal Helvetica, sans-serif;
@@ -1556,7 +1609,7 @@ $for-sidebar-smx-width: $for-sidebar-sm-all-width !default;*/
       text-decoration: none;
       text-transform: none; }
   .for-sidebar .for-sidebar-heading {
-    background: white;
+    background: #e5e5e5;
     background-size: auto;
     font: normal 400 16px/normal Helvetica, sans-serif;
     font: normal 400 1rem/normal Helvetica, sans-serif;
@@ -1579,7 +1632,7 @@ $for-sidebar-smx-width: $for-sidebar-sm-all-width !default;*/
         text-decoration: none;
         text-transform: none; }
   .for-sidebar .for-sidebar-content {
-    background: white;
+    background: #e5e5e5;
     background-size: auto;
     font: normal 400 16px/normal Helvetica, sans-serif;
     font: normal 400 1rem/normal Helvetica, sans-serif;
@@ -1603,7 +1656,7 @@ $for-sidebar-smx-width: $for-sidebar-sm-all-width !default;*/
         text-transform: none; }
 
 hr {
-  border-top: 1px solid white; }
+  border-top: 1px solid #e5e5e5; }
 
 img {
   width: 100%;

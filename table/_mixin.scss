@@ -5,7 +5,7 @@
 /// .for-table
 /// .for-table-row
 /// .for-table-cell
-/// .for-table-cell-heading
+/// .for-table-cell-head
 /// @group Table
 /// @author Michael Becker
 ////
@@ -24,6 +24,7 @@
         bottom: $for-table-border-bottom;
         left: $for-table-border-left;
         radius: #{$for-table-border-radius-inner} / #{$for-table-border-radius-outer};
+        collapse: $for-table-border-collapse;
     }
     a {
         font: $for-table-link-font-style $for-table-link-font-variant $for-table-link-font-weight #{$for-table-link-font-size}/#{$for-table-line-height} $for-table-link-font-family;
@@ -82,33 +83,73 @@
         left: $for-table-cell-border-left;
         radius: #{$for-table-cell-border-radius-inner} / #{$for-table-cell-border-radius-outer};
     }
+    padding: $for-table-cell-padding;
     @include for-table-cell-base;
 }
 
 /// Generates the styling of a table cell which should be used as a table heading
 /// @output font and border styling as well as display: table-cell
-@mixin for-table-cell-heading {
+@mixin for-table-cell-head {
     @include for-table-cell-base;
-    font: $for-table-cell-heading-font-style $for-table-cell-heading-font-variant $for-table-cell-heading-font-weight #{$for-table-cell-heading-font-size}/#{$for-table-cell-heading-line-height} $for-table-cell-heading-font-family;
-    color: $for-table-cell-heading-font-color;
-    background: $for-table-cell-heading-background;
+    font: $for-table-cell-head-font-style $for-table-cell-head-font-variant $for-table-cell-head-font-weight #{$for-table-cell-head-font-size}/#{$for-table-cell-head-line-height} $for-table-cell-head-font-family;
+    color: $for-table-cell-head-font-color;
+    background: $for-table-cell-head-background;
     text: {
-        decoration: $for-table-cell-heading-text-decoration;
-        transform: $for-table-cell-heading-text-transform;
-        align: $for-table-cell-heading-text-align;
+        decoration: $for-table-cell-head-text-decoration;
+        transform: $for-table-cell-head-text-transform;
+        align: $for-table-cell-head-text-align;
     }
     border: {
-        top: $for-table-cell-heading-border-top;
-        right: $for-table-cell-heading-border-right;
-        bottom: $for-table-cell-heading-border-bottom;
-        left: $for-table-cell-heading-border-left;
-        radius: #{$for-table-cell-heading-border-radius-inner} / #{$for-table-cell-heading-border-radius-outer};
+        top: $for-table-cell-head-border-top;
+        right: $for-table-cell-head-border-right;
+        bottom: $for-table-cell-head-border-bottom;
+        left: $for-table-cell-head-border-left;
+        radius: #{$for-table-cell-head-border-radius-inner} / #{$for-table-cell-head-border-radius-outer};
     }
+    padding: $for-table-cell-head-padding;
 }
 
-/// Generates a checkered background for a table
+/// Generates a striped background for the rows and columns, should be applied to <table> or .for-table, as every first child would be interpreted as row and the second generation as column
 /// @param {Map} $row [] - each element would be used according to its position in the map as the background for a row, repeatedly
 /// @param {Map} $column [] - each element would be used according to its position in the map as the background for a column, overwrites already set row backgrounds
-@mixin for-table-bg-checkered($row, $column) {
-    // TODO
+@mixin for-table-bg-striped($row: null, $column: null, $row-selector: null, $column-selector: null) {
+    @if $row == null {
+        $row: $for-table-bg-striped-row;
+    }
+    @if $row {
+        @if $row-selector == null {
+            $row-selector: $for-table-bg-striped-row-selector;
+        }
+
+        $qty-row: 0;
+        @each $row-elem in $row {
+            $qty-row: $qty-row + 1;
+        }
+        $i-row: 1;
+        @each $row-elem in $row {
+            #{$row-selector}:nth-child(#{$qty-row}n+#{$i-row}) {
+                background-color: $row-elem;
+            }
+            $i-row: $i-row + 1;
+        }
+    }
+    @if $column == null {
+        $column: $for-table-bg-striped-column;
+    }
+    @if $column {
+        @if $column-selector == null {
+            $column-selector: $for-table-bg-striped-column-selector;
+        }
+        $qty-column: 0;
+        @each $column-elem in $column {
+            $qty-column: $qty-column + 1;
+        }
+        $i-column: 1;
+        @each $column-elem in $column {
+            #{$column-selector}:nth-child(#{$qty-column}n+#{$i-column}) {
+                background-color: $column-elem;
+            }
+            $i-column: $i-column + 1;
+        }
+    }
 }
