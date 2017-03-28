@@ -45,4 +45,65 @@
     .#{$for-output-prefix}table-bg-striped {
         @include for-table-bg-striped();
     }
+
+    /// .for-table-bg-checkered - creates a row-column checkered background for a table
+    .#{$for-output-prefix}table-bg-checkered {
+        @include for-table-bg-checkered;
+        /*tr:nth-child(4n+1) {
+            td:nth-child(4n+1) {
+                background-color: for-grayscale(7, 15);
+            }
+            td:nth-child(4n+2) {
+                background-color: for-grayscale(6, 15);
+            }
+            td:nth-child(4n+3) {
+                background-color: for-grayscale(5, 15);
+            }
+            td:nth-child(4n+4) {
+                background-color: for-grayscale(4, 15);
+            }
+        }
+        tr:nth-child(4n+2) {
+            td:nth-child(4n+1) {
+                background-color: for-grayscale(6, 15);
+            }
+            td:nth-child(4n+2) {
+                background-color: for-grayscale(5, 15);
+            }
+            td:nth-child(4n+3) {
+                background-color: for-grayscale(4, 15);
+            }
+            td:nth-child(4n+4) {
+                background-color: for-grayscale(7, 15);
+            }
+        }
+        tr:nth-child(4n+3) {
+            td:nth-child(4n+1) {
+                background-color: for-grayscale(5, 15);
+            }
+            td:nth-child(4n+2) {
+                background-color: for-grayscale(6, 15);
+            }
+            td:nth-child(4n+3) {
+                background-color: for-grayscale(7, 15);
+            }
+            td:nth-child(4n+4) {
+                background-color: for-grayscale(4, 15);
+            }
+        }
+        tr:nth-child(4n+4) {
+            td:nth-child(4n+1) {
+                background-color: for-grayscale(6, 15);
+            }
+            td:nth-child(4n+2) {
+                background-color: for-grayscale(7, 15);
+            }
+            td:nth-child(4n+3) {
+                background-color: for-grayscale(4, 15);
+            }
+            td:nth-child(4n+4) {
+                background-color: for-grayscale(5, 15);
+            }
+        }*/
+    }
 }

@@ -160,3 +160,53 @@
         }
     }
 }
+
+/// Generates a striped background for the rows and columns, should be applied to <table> or .for-table, as every first child would be interpreted as row and the second generation as column
+/// @param {Map} $row [] - working with 2, 4, only even quantities
+/// @param {Color} $row-hover [] -
+/// @param {Color} $column-hover [] -
+@mixin for-table-bg-checkered($color: $for-table-bg-checkered-color, $row-selector: $for-table-bg-checkered-row-selector, $column-selector: $for-table-bg-checkered-column-selector, $row-hover: null, $column-hover: null) {
+
+    $qty-color: length($color);
+
+    @if not for-even($qty-color) {
+        @warn 'The provided $color list is not in an even number, this could break the design!';
+    }
+
+    $i-row: 1;
+    @each $color-elem-row in $color {
+        #{$row-selector}:nth-child(#{$qty-color}n+#{$i-row}) {
+            $i-col: 1;
+            @each $color-elem-col in $color {
+                #{$column-selector}:nth-child(#{$qty-color}n+#{$i-col}) {
+                    @if ($i-row * $i-col) > $qty-color{
+                        background-color: nth($color, $i-col);
+                    } @else {
+                        background-color: nth($color, $i-row * $i-col);
+                    }
+                }
+                $i-col: $i-col + 1;
+            }
+        }
+        $i-row: $i-row + 1;
+    }
+/*1 2 - 1 1 - 1 2
+2 3 - 2 1 - 2 2
+4 5 - 3 1 - 3 2
+
+1 + 1 - 1 = 1, 1 + 2 - 1 = 2
+2 + 1 - 1 = 2, 2 + 2 - 2 = 2
+
+1 1 - 1 2 - 1 3
+2 1 - 2 2 - 2 3
+3 1 - 3 2 - 3 3*/
+
+    /*@if $row-hover == null {
+        $row-hover: $for-table-bg-striped-row-hover;
+    }
+    @if $row-hover {
+        #{$row-selector}:hover {
+            background-color: $row-hover;
+        }
+    }*/
+}
