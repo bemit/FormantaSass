@@ -8,7 +8,7 @@ This file and the LICENCE.* files need to be distributed and not changed when di
 For more informations on the Licences which are applied read LICENCE.md
 
 ###Information, Support and Documentation
-More informations, contacts and support for FormantaSass could be found under <https://formanta.bemit.eu> the documentation is located at <https://doc.formanta.bemit.eu> and could be contributed to at <https://github.com/bemit/Doc-FormantaSass>
+More informations, contacts and support for FormantaSass could be found under <https://formanta.bemit.eu> the documentation is located at <https://help.formanta.bemit.eu>.
 
 #Made by
 Original author is Michael Becker, mb.project@bemit.eu
