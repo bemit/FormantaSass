@@ -6,8 +6,8 @@
 /// @author Michael Becker
 ////
 
-//  Typography
-//  ##########
+// Typography
+// ##########
 
 /// @prop {String} $for-button-font-family [$for-general-font-family] - font family for button
 $for-button-font-family: $for-general-font-family !default;
@@ -45,20 +45,20 @@ $for-button-hover-text-transform: $for-button-text-transform !default;
 /// @prop {Float} $for-button-hover-font-weight [$for-button-font-weight] - font weight for button:hover
 $for-button-hover-font-weight: $for-button-font-weight !default;
 
-//  Padding
-//  ##########
+// Padding
+// ##########
 
 /// @prop {Float} $for-button-padding [10px] - padding for button
 $for-button-padding: 10px !default;
 
-//  Margin
-//  ##########
+// Margin
+// ##########
 
 /// @prop {Float} $for-button-margin [0] - margin for button
 $for-button-margin: 0 !default;
 
-//  Border
-//  ##########
+// Border
+// ##########
 
 /// @prop {Size} $for-button-border-width [0] - border width for button
 $for-button-border-width: 0 !default;
@@ -83,8 +83,8 @@ $for-button-border-radius-inner: $for-button-border-radius !default; //first par
 /// @prop {Size} $for-button-border-radius-outer [$for-button-border-radius] - border radius inner, second part within css (before /)
 $for-button-border-radius-outer: $for-button-border-radius !default; //second part within css (after /)
 
-//  Border Hover
-//  ##########
+// Border Hover
+// ##########
 
 /// @prop $for-button-hover-border-top [$for-button-border-top] - border top for button:hover
 $for-button-hover-border-top: $for-button-border-top !default;
@@ -95,8 +95,8 @@ $for-button-hover-border-bottom: $for-button-border-bottom !default;
 /// @prop $for-button-hover-border-left [$for-button-border-left] - border left for button:hover
 $for-button-hover-border-left: $for-button-border-left !default;
 
-//  Border Radius
-//  ##########
+// Border Radius
+// ##########
 
 /// @prop {Size} $for-button-hover-border-radius [$for-button-border-radius] - border radius for button:hover
 $for-button-hover-border-radius: $for-button-border-radius !default;
@@ -105,8 +105,8 @@ $for-button-hover-border-radius-inner: $for-button-hover-border-radius !default;
 /// @prop {Size} $for-button-hover-border-radius-outer [$for-button-hover-border-radius] - border radius outer for button:hover
 $for-button-hover-border-radius-outer: $for-button-hover-border-radius !default; //second part within css (after /)
 
-//  Background
-//  ##########
+// Background
+// ##########
 
 /// @prop {Size} $for-button-background [$for-general-color-primary] - background size for button
 $for-button-background: $for-general-color-primary !default;

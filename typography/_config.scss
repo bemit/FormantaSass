@@ -6,8 +6,8 @@
 /// @author Michael Becker
 ////
 
-//  Color
-//  ##########
+// Color
+// ##########
 
 /// @prop {Color} $for-general-font-color [$for-grayscale-base] - in typography
 $for-general-font-color: $for-grayscale-base !default;
@@ -30,8 +30,8 @@ $for-link-font-color: $for-general-color-secondary !default;
 /// @prop {Color} $for-link-hover-font-color [$for-link-font-color] - in typography
 $for-link-hover-font-color: $for-link-font-color !default;
 
-//  Size
-//  ##########
+// Size
+// ##########
 
 /// @prop {Size} $for-general-font-size [1rem] - in typography
 $for-general-font-size: 1rem !default;
@@ -54,8 +54,8 @@ $for-link-font-size: $for-general-font-size !default;
 /// @prop {Size} $for-link-hover-font-size [$for-link-font-size] - in typography
 $for-link-hover-font-size: $for-link-font-size !default;
 
-//  Font Family
-//  ##########
+// Font Family
+// ##########
 
 /// @prop {String} $for-general-font-family [wwwwwwwwwww] - in typography
 $for-general-font-family: Helvetica, sans-serif !default;
@@ -78,8 +78,8 @@ $for-link-font-family: $for-general-font-family !default;
 /// @prop {String} $for-link-hover-font-family [$for-link-font-family] - in typography
 $for-link-hover-font-family: $for-link-font-family !default;
 
-//  Font Weight
-//  ##########
+// Font Weight
+// ##########
 
 /// @prop {Int|String} $for-general-font-weight [400] - in typography
 $for-general-font-weight: 400 !default;
@@ -102,8 +102,8 @@ $for-link-font-weight: $for-general-font-weight !default;
 /// @prop {Int|String} $for-link-hover-font-weight [$for-link-font-weight] - in typography
 $for-link-hover-font-weight: $for-link-font-weight !default;
 
-//  Line Height
-//  ##########
+// Line Height
+// ##########
 
 /// @prop {Size|String} $for-general-line-height [normal] - in typography
 $for-general-line-height: normal !default;
@@ -126,8 +126,8 @@ $for-link-line-height: $for-general-line-height !default;
 /// @prop {Size|String} $for-link-hover-line-height [$for-link-line-height] - in typography
 $for-link-hover-line-height: $for-link-line-height !default;
 
-//  Font Style
-//  ##########
+// Font Style
+// ##########
 
 /// @prop {String} $for-general-font-style [normal] - in typography
 $for-general-font-style: normal !default;
@@ -150,8 +150,8 @@ $for-link-font-style: $for-general-font-style !default;
 /// @prop {String} $for-link-hover-font-style [$for-link-font-style] - in typography
 $for-link-hover-font-style: $for-link-font-style !default;
 
-//  Font Variant
-//  ##########
+// Font Variant
+// ##########
 
 /// @prop {String} $for-general-font-variant [normal] - in typography
 $for-general-font-variant: normal !default;
@@ -175,8 +175,8 @@ $for-link-font-variant: $for-general-font-variant !default;
 $for-link-hover-font-variant: $for-link-font-variant !default;
 
 
-//  Text Decoration
-//  ##########
+// Text Decoration
+// ##########
 
 /// @prop {String} $for-general-text-decoration [none] - in typography
 $for-general-text-decoration: none !default;
@@ -199,8 +199,8 @@ $for-link-text-decoration: $for-general-text-decoration !default;
 /// @prop {String} $for-link-hover-text-decoration [$for-link-text-decoration] - in typography
 $for-link-hover-text-decoration: $for-link-text-decoration !default;
 
-//  Text Transform
-//  ##########
+// Text Transform
+// ##########
 
 /// @prop {String} $for-general-text-transform [none] - in typography
 $for-general-text-transform: none !default;
@@ -223,8 +223,8 @@ $for-link-text-transform: $for-general-text-transform !default;
 /// @prop {String} $for-link-hover-text-transform [$for-link-text-transform] - in typography
 $for-link-hover-text-transform: $for-link-text-transform !default;
 
-//  Text Align
-//  ##########
+// Text Align
+// ##########
 
 /// @prop {String} $for-general-text-align [left] - in typography
 $for-general-text-align: left !default;

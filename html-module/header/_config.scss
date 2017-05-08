@@ -6,16 +6,16 @@
 /// @author Michael Becker
 ////
 
-//  Background
-//  ##########
+// Background
+// ##########
 
 /// @prop {Map|Url|Color} $for-header-background [$for-grayscale-base-p2] - background-map or simply color/uri in html-module: header
 $for-header-background: $for-grayscale-base-p2 !default;
 /// @prop {Size} $for-header-background-size [auto] - background-size in html-module: header
 $for-header-background-size: auto !default;
 
-//  Font Color
-//  ##########
+// Font Color
+// ##########
 
 /// @prop {Color} $for-header-font-color [$for-general-font-color] - general font-color in html-module: header
 $for-header-font-color: $for-general-font-color !default;
@@ -24,8 +24,8 @@ $for-header-link-font-color: $for-link-font-color !default;
 /// @prop {Color} $for-header-link-hover-font-color [$for-link-hover-font-color] - font-color for link:hover in html-module: header
 $for-header-link-hover-font-color: $for-link-hover-font-color !default;
 
-//  Font Size
-//  ##########
+// Font Size
+// ##########
 
 /// @prop {Size} $for-header-font-size [$for-general-font-size] - general font-size in html-module: header
 $for-header-font-size: $for-general-font-size !default;
@@ -34,8 +34,8 @@ $for-header-link-font-size: $for-link-font-size !default;
 /// @prop {Size} $for-header-link-hover-font-size [$for-link-hover-font-size] - font-size for link:hover in html-module: header
 $for-header-link-hover-font-size: $for-link-hover-font-size !default;
 
-//  Font Style
-//  ##########
+// Font Style
+// ##########
 
 /// @prop {Style} $for-header-font-style [$for-general-font-style] - general font-style in html-module: header
 $for-header-font-style: $for-general-font-style !default;
@@ -44,8 +44,8 @@ $for-header-link-font-style: $for-link-font-style !default;
 /// @prop {Style} $for-header-link-hover-font-style [$for-link-hover-font-style] - font-style for link:hover in html-module: header
 $for-header-link-hover-font-style: $for-link-hover-font-style !default;
 
-//  Font Family
-//  ##########
+// Font Family
+// ##########
 
 /// @prop {String} $for-header-font-family [$for-general-font-family] - general font-family in html-module: header
 $for-header-font-family: $for-general-font-family !default;
@@ -54,8 +54,8 @@ $for-header-link-font-family: $for-link-font-family !default;
 /// @prop {String} $for-header-link-hover-font-family [$for-link-hover-font-family] - font-family for link:hover in html-module: header
 $for-header-link-hover-font-family: $for-link-hover-font-family !default;
 
-//  Font Weight
-//  ##########
+// Font Weight
+// ##########
 
 /// @prop {Size} $for-header-font-weight [$for-general-font-weight] - general font-weight in html-module: header
 $for-header-font-weight: $for-general-font-weight !default;
@@ -64,8 +64,8 @@ $for-header-link-font-weight: $for-link-font-weight !default;
 /// @prop {Size} $for-header-link-hover-font-weight [$for-link-hover-font-weight] - font-weight for link:hover in html-module: header
 $for-header-link-hover-font-weight: $for-link-hover-font-weight !default;
 
-//  Font Variant
-//  ##########
+// Font Variant
+// ##########
 
 /// @prop {String} $for-header-font-variant [$for-general-font-variant] - general font-variant in html-module: header
 $for-header-font-variant: $for-general-font-variant !default;
@@ -74,8 +74,8 @@ $for-header-link-font-variant: $for-link-font-variant !default;
 /// @prop {String} $for-header-link-hover-font-variant [$for-link-hover-font-variant] - font-variant for link:hover in html-module: header
 $for-header-link-hover-font-variant: $for-link-hover-font-variant !default;
 
-//  Text Decoration
-//  ##########
+// Text Decoration
+// ##########
 
 /// @prop {String} $for-header-text-decoration [$for-general-text-decoration] - general text-decoration in html-module: header
 $for-header-text-decoration: $for-general-text-decoration !default;
@@ -84,8 +84,8 @@ $for-header-link-text-decoration: $for-link-text-decoration !default;
 /// @prop {String} $for-header-link-hover-text-decoration [$for-link-hover-text-decoration] - text-decoration for link:hover in html-module: header
 $for-header-link-hover-text-decoration: $for-link-hover-text-decoration !default;
 
-//  Text Transform
-//  ##########
+// Text Transform
+// ##########
 
 /// @prop {String} $for-header-text-transform [$for-general-text-transform] - general text-transform in html-module: header
 $for-header-text-transform: $for-general-text-transform !default;
@@ -94,8 +94,8 @@ $for-header-link-text-transform: $for-link-text-transform !default;
 /// @prop {String} $for-header-link-hover-text-transform [$for-link-hover-text-transform] - text-transform for link:hover in html-module: header
 $for-header-link-hover-text-transform: $for-link-hover-text-transform !default;
 
-//  Line Height
-//  ##########
+// Line Height
+// ##########
 
 /// @prop {String} $for-header-line-height [$for-general-line-height] - general line-height in html-module: header
 $for-header-line-height: $for-general-line-height !default;
@@ -103,7 +103,7 @@ $for-header-line-height: $for-general-line-height !default;
 $for-header-link-line-height: $for-link-line-height !default;
 
 // Sizing
-//  ##########
+// ##########
 
 /// @prop {} $for-header-smx-height [auto] - header height for bp smx in html-module: header
 $for-header-smx-height: auto;
@@ -116,8 +116,8 @@ $for-header-lg-height: $for-header-md-height !default;
 /// @prop {} $for-header-lgx-height [$for-header-lg-height] - header height for bp lgx in html-module: header
 $for-header-lgx-height: $for-header-lg-height !default;
 
-//  Padding
-//  ##########
+// Padding
+// ##########
 
 /// @prop {Size|Map} $for-header-lgx-padding [$for-gutter-lgx] - padding for bp lgx in html-module: header
 $for-header-lgx-padding: $for-gutter-lgx !default;
@@ -130,8 +130,8 @@ $for-header-sm-padding: $for-gutter-sm !default;
 /// @prop {Size|Map} $for-header-smx-padding [$for-gutter-smx] - padding for bp smx in html-module: header
 $for-header-smx-padding: $for-gutter-smx !default;
 
-//  Margin
-//  ##########
+// Margin
+// ##########
 
 /// @prop {Size|Map} $for-header-lgx-margin [$for-gutter-lgx] - margin for bp lgx in html-module: header
 $for-header-lgx-margin: $for-gutter-lgx !default;

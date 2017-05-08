@@ -6,17 +6,17 @@
 /// @author Michael Becker
 ////
 
-//  Form
-//  ##################################################
+// Form
+// ##################################################
 
-//  Input: Text (everything with fallback: type=text)
-//  ##############################
+// Input: Text (everything with fallback: type=text)
+// ##############################
 
 /// @prop {String} $for-form-input-text-height [20px] - font family for input-text items
 $for-form-input-text-height: 20px !default;
 
-//  Typography
-//  ##########
+// Typography
+// ##########
 
 /// @prop {String} $for-form-input-text-font-family [$for-general-font-family] - font family for input-text items
 $for-form-input-text-font-family: $for-general-font-family !default;
@@ -39,24 +39,24 @@ $for-form-input-text-text-align: $for-general-text-align !default;
 /// @prop {Float} $for-form-input-text-font-weight [$for-general-font-weight] - font weight for input-text items
 $for-form-input-text-font-weight: $for-general-font-weight !default;
 
-//  Padding
-//  ##########
+// Padding
+// ##########
 
 /// @prop {Float} $for-form-input-text-padding [10px] - padding for button
 $for-form-input-text-padding: 10px !default;
 
-//  Margin
-//  ##########
+// Margin
+// ##########
 
 /// @prop {Float} $for-form-input-text-margin [0] - margin for button
 $for-form-input-text-margin: 0 !default;
 
-//  Shadow
-//  ##########
+// Shadow
+// ##########
 $for-form-input-text-shadow: none;
 
-//  Border
-//  ##########
+// Border
+// ##########
 
 /// @prop {Size} $for-form-input-text-border-width [1px] - border width for button
 $for-form-input-text-border-width: 1px !default;
@@ -81,8 +81,8 @@ $for-form-input-text-border-radius-inner: $for-form-input-text-border-radius !de
 /// @prop {Size} $for-form-input-text-border-radius-outer [$for-form-input-text-border-radius] - border radius inner, second part within css (before /)
 $for-form-input-text-border-radius-outer: $for-form-input-text-border-radius !default; //second part within css (after /)
 
-//  Border Hover
-//  ##########
+// Border Hover
+// ##########
 
 /// @prop $for-form-input-text-hover-border-top [$for-form-input-text-border-top] - border top for button:hover
 $for-form-input-text-hover-border-top: $for-form-input-text-border-top !default;
@@ -93,8 +93,8 @@ $for-form-input-text-hover-border-bottom: $for-form-input-text-border-bottom !de
 /// @prop $for-form-input-text-hover-border-left [$for-form-input-text-border-left] - border left for button:hover
 $for-form-input-text-hover-border-left: $for-form-input-text-border-left !default;
 
-//  Border Radius
-//  ##########
+// Border Radius
+// ##########
 
 /// @prop {Size} $for-form-input-text-hover-border-radius [$for-form-input-text-border-radius] - border radius for button:hover
 $for-form-input-text-hover-border-radius: $for-form-input-text-border-radius !default;
@@ -103,15 +103,15 @@ $for-form-input-text-hover-border-radius-inner: $for-form-input-text-hover-borde
 /// @prop {Size} $for-form-input-text-hover-border-radius-outer [$for-form-input-text-hover-border-radius] - border radius outer for button:hover
 $for-form-input-text-hover-border-radius-outer: $for-form-input-text-hover-border-radius !default; //second part within css (after /)
 
-//  Background
-//  ##########
+// Background
+// ##########
 
 /// @prop {Size} $for-form-input-text-background [$for-general-color-primary] - background size for button
 $for-form-input-text-background: $for-grayscale-base-p2 !default;
 /// @prop {Size} $for-form-input-text-hover-background [$for-general-color-secondary] - background color for button:hover
 $for-form-input-text-hover-background: $for-grayscale-base-p1 !default;
 
-//  Input: Password
-//  ##############################
+// Input: Password
+// ##############################
 
 // Todo

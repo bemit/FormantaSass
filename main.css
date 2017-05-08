@@ -460,9 +460,9 @@ textarea {
         @content;
     }
 
-    //    @include for-bp-individual('max100', 'min200', '300', '450'){
-    //        color: #fff;
-    //    }
+    //   @include for-bp-individual('max100', 'min200', '300', '450'){
+    //       color: #fff;
+    //   }
 
 }*/
 input[type=submit],

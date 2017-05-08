@@ -10,20 +10,20 @@
 
 //
 //
-//  Sidebar general
+// Sidebar general
 //
-//  ##################################################
+// ##################################################
 
-//  Background
-//  ##########
+// Background
+// ##########
 
 /// @prop {Map|Url|Color} $for-sidebar-background [$for-grayscale-base-p2] - background-map or simply color/uri in html-module: sidebar
 $for-sidebar-background: $for-grayscale-base-p2 !default;
 /// @prop {Size} $for-sidebar-background-size [auto] - background-size in html-module: sidebar
 $for-sidebar-background-size: auto !default;
 
-//  Font Color
-//  ##########
+// Font Color
+// ##########
 
 /// @prop {Color} $for-sidebar-font-color [$for-general-font-color] - general font-color in html-module: sidebar
 $for-sidebar-font-color: $for-general-font-color !default;
@@ -32,8 +32,8 @@ $for-sidebar-link-font-color: $for-link-font-color !default;
 /// @prop {Color} $for-sidebar-link-hover-font-color [$for-link-hover-font-color] - font-color for link:hover in html-module: sidebar
 $for-sidebar-link-hover-font-color: $for-link-hover-font-color !default;
 
-//  Font Size
-//  ##########
+// Font Size
+// ##########
 
 /// @prop {Size} $for-sidebar-font-size [$for-general-font-size] - general font-size in html-module: sidebar
 $for-sidebar-font-size: $for-general-font-size !default;
@@ -42,8 +42,8 @@ $for-sidebar-link-font-size: $for-link-font-size !default;
 /// @prop {Size} $for-sidebar-link-hover-font-size [$for-link-hover-font-size] - font-size for link:hover in html-module: sidebar
 $for-sidebar-link-hover-font-size: $for-link-hover-font-size !default;
 
-//  Font Style
-//  ##########
+// Font Style
+// ##########
 
 /// @prop {Style} $for-sidebar-font-style [$for-general-font-style] - general font-style in html-module: sidebar
 $for-sidebar-font-style: $for-general-font-style !default;
@@ -52,8 +52,8 @@ $for-sidebar-link-font-style: $for-link-font-style !default;
 /// @prop {Style} $for-sidebar-link-hover-font-style [$for-link-hover-font-style] - font-style for link:hover in html-module: sidebar
 $for-sidebar-link-hover-font-style: $for-link-hover-font-style !default;
 
-//  Font Family
-//  ##########
+// Font Family
+// ##########
 
 /// @prop {String} $for-sidebar-font-family [$for-general-font-family] - general font-family in html-module: sidebar
 $for-sidebar-font-family: $for-general-font-family !default;
@@ -62,8 +62,8 @@ $for-sidebar-link-font-family: $for-link-font-family !default;
 /// @prop {String} $for-sidebar-link-hover-font-family [$for-link-hover-font-family] - font-family for link:hover in html-module: sidebar
 $for-sidebar-link-hover-font-family: $for-link-hover-font-family !default;
 
-//  Font Weight
-//  ##########
+// Font Weight
+// ##########
 
 /// @prop {Size} $for-sidebar-font-weight [$for-general-font-weight] - general font-weight in html-module: sidebar
 $for-sidebar-font-weight: $for-general-font-weight !default;
@@ -72,8 +72,8 @@ $for-sidebar-link-font-weight: $for-link-font-weight !default;
 /// @prop {Size} $for-sidebar-link-hover-font-weight [$for-link-hover-font-weight] - font-weight for link:hover in html-module: sidebar
 $for-sidebar-link-hover-font-weight: $for-link-hover-font-weight !default;
 
-//  Font Variant
-//  ##########
+// Font Variant
+// ##########
 
 /// @prop {String} $for-sidebar-font-variant [$for-general-font-variant] - general font-variant in html-module: sidebar
 $for-sidebar-font-variant: $for-general-font-variant !default;
@@ -82,8 +82,8 @@ $for-sidebar-link-font-variant: $for-link-font-variant !default;
 /// @prop {String} $for-sidebar-link-hover-font-variant [$for-link-hover-font-variant] - font-variant for link:hover in html-module: sidebar
 $for-sidebar-link-hover-font-variant: $for-link-hover-font-variant !default;
 
-//  Text Decoration
-//  ##########
+// Text Decoration
+// ##########
 
 /// @prop {String} $for-sidebar-text-decoration [$for-general-text-decoration] - general text-decoration in html-module: sidebar
 $for-sidebar-text-decoration: $for-general-text-decoration !default;
@@ -92,8 +92,8 @@ $for-sidebar-link-text-decoration: $for-link-text-decoration !default;
 /// @prop {String} $for-sidebar-link-hover-text-decoration [$for-link-hover-text-decoration] - text-decoration for link:hover in html-module: sidebar
 $for-sidebar-link-hover-text-decoration: $for-link-hover-text-decoration !default;
 
-//  Text Transform
-//  ##########
+// Text Transform
+// ##########
 
 /// @prop {String} $for-sidebar-text-transform [$for-general-text-transform] - general text-transform in html-module: sidebar
 $for-sidebar-text-transform: $for-general-text-transform !default;
@@ -102,8 +102,8 @@ $for-sidebar-link-text-transform: $for-link-text-transform !default;
 /// @prop {String} $for-sidebar-link-hover-text-transform [$for-link-hover-text-transform] - text-transform for link:hover in html-module: sidebar
 $for-sidebar-link-hover-text-transform: $for-link-hover-text-transform !default;
 
-//  Line Height
-//  ##########
+// Line Height
+// ##########
 
 /// @prop {String} $for-sidebar-line-height [$for-general-line-height] - general line-height in html-module: sidebar
 $for-sidebar-line-height: $for-general-line-height !default;
@@ -112,20 +112,20 @@ $for-sidebar-link-line-height: $for-link-line-height !default;
 
 //
 //
-//  Sidebar heading
+// Sidebar heading
 //
-//  ##################################################
+// ##################################################
 
-//  Background
-//  ##########
+// Background
+// ##########
 
 /// @prop {Map|Url|Color} $for-sidebar-heading-background [$for-grayscale-base-p2] - background-map or simply color/uri in html-module: sidebar-heading
 $for-sidebar-heading-background: $for-grayscale-base-p2 !default;
 /// @prop {Size} $for-sidebar-heading-background-size [auto] - background-size in html-module: sidebar-heading
 $for-sidebar-heading-background-size: auto !default;
 
-//  Font Color
-//  ##########
+// Font Color
+// ##########
 
 /// @prop {Color} $for-sidebar-heading-font-color [$for-sidebar-font-color] - general font-color in html-module: sidebar-heading
 $for-sidebar-heading-font-color: $for-sidebar-font-color !default;
@@ -134,8 +134,8 @@ $for-sidebar-heading-link-font-color: $for-link-font-color !default;
 /// @prop {Color} $for-sidebar-heading-link-hover-font-color [$for-link-hover-font-color] - font-color for link:hover in html-module: sidebar-heading
 $for-sidebar-heading-link-hover-font-color: $for-link-hover-font-color !default;
 
-//  Font Size
-//  ##########
+// Font Size
+// ##########
 
 /// @prop {Size} $for-sidebar-heading-font-size [$for-sidebar-font-size] - general font-size in html-module: sidebar-heading
 $for-sidebar-heading-font-size: $for-sidebar-font-size !default;
@@ -144,8 +144,8 @@ $for-sidebar-heading-link-font-size: $for-link-font-size !default;
 /// @prop {Size} $for-sidebar-heading-link-hover-font-size [$for-link-hover-font-size] - font-size for link:hover in html-module: sidebar-heading
 $for-sidebar-heading-link-hover-font-size: $for-link-hover-font-size !default;
 
-//  Font Style
-//  ##########
+// Font Style
+// ##########
 
 /// @prop {Style} $for-sidebar-heading-font-style [$for-sidebar-font-style] - general font-style in html-module: sidebar-heading
 $for-sidebar-heading-font-style: $for-sidebar-font-style !default;
@@ -154,8 +154,8 @@ $for-sidebar-heading-link-font-style: $for-link-font-style !default;
 /// @prop {Style} $for-sidebar-heading-link-hover-font-style [$for-link-hover-font-style] - font-style for link:hover in html-module: sidebar-heading
 $for-sidebar-heading-link-hover-font-style: $for-link-hover-font-style !default;
 
-//  Font Family
-//  ##########
+// Font Family
+// ##########
 
 /// @prop {String} $for-sidebar-heading-font-family [$for-sidebar-font-family] - general font-family in html-module: sidebar-heading
 $for-sidebar-heading-font-family: $for-sidebar-font-family !default;
@@ -164,8 +164,8 @@ $for-sidebar-heading-link-font-family: $for-link-font-family !default;
 /// @prop {String} $for-sidebar-heading-link-hover-font-family [$for-link-hover-font-family] - font-family for link:hover in html-module: sidebar-heading
 $for-sidebar-heading-link-hover-font-family: $for-link-hover-font-family !default;
 
-//  Font Weight
-//  ##########
+// Font Weight
+// ##########
 
 /// @prop {Size} $for-sidebar-heading-font-weight [$for-sidebar-font-weight] - general font-weight in html-module: sidebar-heading
 $for-sidebar-heading-font-weight: $for-sidebar-font-weight !default;
@@ -174,8 +174,8 @@ $for-sidebar-heading-link-font-weight: $for-link-font-weight !default;
 /// @prop {Size} $for-sidebar-heading-link-hover-font-weight [$for-link-hover-font-weight] - font-weight for link:hover in html-module: sidebar-heading
 $for-sidebar-heading-link-hover-font-weight: $for-link-hover-font-weight !default;
 
-//  Font Variant
-//  ##########
+// Font Variant
+// ##########
 
 /// @prop {String} $for-sidebar-heading-font-variant [$for-sidebar-font-variant] - general font-variant in html-module: sidebar-heading
 $for-sidebar-heading-font-variant: $for-sidebar-font-variant !default;
@@ -184,8 +184,8 @@ $for-sidebar-heading-link-font-variant: $for-link-font-variant !default;
 /// @prop {String} $for-sidebar-heading-link-hover-font-variant [$for-link-hover-font-variant] - font-variant for link:hover in html-module: sidebar-heading
 $for-sidebar-heading-link-hover-font-variant: $for-link-hover-font-variant !default;
 
-//  Text Decoration
-//  ##########
+// Text Decoration
+// ##########
 
 /// @prop {String} $for-sidebar-heading-text-decoration [$for-sidebar-text-decoration] - general text-decoration in html-module: sidebar-heading
 $for-sidebar-heading-text-decoration: $for-sidebar-text-decoration !default;
@@ -194,8 +194,8 @@ $for-sidebar-heading-link-text-decoration: $for-link-text-decoration !default;
 /// @prop {String} $for-sidebar-heading-link-hover-text-decoration [$for-link-hover-text-decoration] - text-decoration for link:hover in html-module: sidebar-heading
 $for-sidebar-heading-link-hover-text-decoration: $for-link-hover-text-decoration !default;
 
-//  Text Transform
-//  ##########
+// Text Transform
+// ##########
 
 /// @prop {String} $for-sidebar-heading-text-transform [$for-sidebar-text-transform] - general text-transform in html-module: sidebar-heading
 $for-sidebar-heading-text-transform: $for-sidebar-text-transform !default;
@@ -204,8 +204,8 @@ $for-sidebar-heading-link-text-transform: $for-link-text-transform !default;
 /// @prop {String} $for-sidebar-heading-link-hover-text-transform [$for-link-hover-text-transform] - text-transform for link:hover in html-module: sidebar-heading
 $for-sidebar-heading-link-hover-text-transform: $for-link-hover-text-transform !default;
 
-//  Line Height
-//  ##########
+// Line Height
+// ##########
 
 /// @prop {String} $for-sidebar-heading-line-height [$for-sidebar-line-height] - general line-height in html-module: sidebar-heading
 $for-sidebar-heading-line-height: $for-sidebar-line-height !default;
@@ -214,20 +214,20 @@ $for-sidebar-heading-link-line-height: $for-link-line-height !default;
 
 //
 //
-//  Sidebar content
+// Sidebar content
 //
-//  ##################################################
+// ##################################################
 
-//  Background
-//  ##########
+// Background
+// ##########
 
 /// @prop {Map|Url|Color} $for-sidebar-content-background [$for-grayscale-base-p2] - background-map or simply color/uri in html-module: sidebar-content
 $for-sidebar-content-background: $for-grayscale-base-p2 !default;
 /// @prop {Size} $for-sidebar-content-background-size [auto] - background-size in html-module: sidebar-content
 $for-sidebar-content-background-size: auto !default;
 
-//  Font Color
-//  ##########
+// Font Color
+// ##########
 
 /// @prop {Color} $for-sidebar-content-font-color [$for-sidebar-font-color] - general font-color in html-module: sidebar-content
 $for-sidebar-content-font-color: $for-sidebar-font-color !default;
@@ -236,8 +236,8 @@ $for-sidebar-content-link-font-color: $for-link-font-color !default;
 /// @prop {Color} $for-sidebar-content-link-hover-font-color [$for-link-hover-font-color] - font-color for link:hover in html-module: sidebar-content
 $for-sidebar-content-link-hover-font-color: $for-link-hover-font-color !default;
 
-//  Font Size
-//  ##########
+// Font Size
+// ##########
 
 /// @prop {Size} $for-sidebar-content-font-size [$for-sidebar-font-size] - general font-size in html-module: sidebar-content
 $for-sidebar-content-font-size: $for-sidebar-font-size !default;
@@ -246,8 +246,8 @@ $for-sidebar-content-link-font-size: $for-link-font-size !default;
 /// @prop {Size} $for-sidebar-content-link-hover-font-size [$for-link-hover-font-size] - font-size for link:hover in html-module: sidebar-content
 $for-sidebar-content-link-hover-font-size: $for-link-hover-font-size !default;
 
-//  Font Style
-//  ##########
+// Font Style
+// ##########
 
 /// @prop {Style} $for-sidebar-content-font-style [$for-sidebar-font-style] - general font-style in html-module: sidebar-content
 $for-sidebar-content-font-style: $for-sidebar-font-style !default;
@@ -256,8 +256,8 @@ $for-sidebar-content-link-font-style: $for-link-font-style !default;
 /// @prop {Style} $for-sidebar-content-link-hover-font-style [$for-link-hover-font-style] - font-style for link:hover in html-module: sidebar-content
 $for-sidebar-content-link-hover-font-style: $for-link-hover-font-style !default;
 
-//  Font Family
-//  ##########
+// Font Family
+// ##########
 
 /// @prop {String} $for-sidebar-content-font-family [$for-sidebar-font-family] - general font-family in html-module: sidebar-content
 $for-sidebar-content-font-family: $for-sidebar-font-family !default;
@@ -266,8 +266,8 @@ $for-sidebar-content-link-font-family: $for-link-font-family !default;
 /// @prop {String} $for-sidebar-content-link-hover-font-family [$for-link-hover-font-family] - font-family for link:hover in html-module: sidebar-content
 $for-sidebar-content-link-hover-font-family: $for-link-hover-font-family !default;
 
-//  Font Weight
-//  ##########
+// Font Weight
+// ##########
 
 /// @prop {Size} $for-sidebar-content-font-weight [$for-sidebar-font-weight] - general font-weight in html-module: sidebar-content
 $for-sidebar-content-font-weight: $for-sidebar-font-weight !default;
@@ -276,8 +276,8 @@ $for-sidebar-content-link-font-weight: $for-link-font-weight !default;
 /// @prop {Size} $for-sidebar-content-link-hover-font-weight [$for-link-hover-font-weight] - font-weight for link:hover in html-module: sidebar-content
 $for-sidebar-content-link-hover-font-weight: $for-link-hover-font-weight !default;
 
-//  Font Variant
-//  ##########
+// Font Variant
+// ##########
 
 /// @prop {String} $for-sidebar-content-font-variant [$for-sidebar-font-variant] - general font-variant in html-module: sidebar-content
 $for-sidebar-content-font-variant: $for-sidebar-font-variant !default;
@@ -286,8 +286,8 @@ $for-sidebar-content-link-font-variant: $for-link-font-variant !default;
 /// @prop {String} $for-sidebar-content-link-hover-font-variant [$for-link-hover-font-variant] - font-variant for link:hover in html-module: sidebar-content
 $for-sidebar-content-link-hover-font-variant: $for-link-hover-font-variant !default;
 
-//  Text Decoration
-//  ##########
+// Text Decoration
+// ##########
 
 /// @prop {String} $for-sidebar-content-text-decoration [$for-sidebar-text-decoration] - general text-decoration in html-module: sidebar-content
 $for-sidebar-content-text-decoration: $for-sidebar-text-decoration !default;
@@ -296,8 +296,8 @@ $for-sidebar-content-link-text-decoration: $for-link-text-decoration !default;
 /// @prop {String} $for-sidebar-content-link-hover-text-decoration [$for-link-hover-text-decoration] - text-decoration for link:hover in html-module: sidebar-content
 $for-sidebar-content-link-hover-text-decoration: $for-link-hover-text-decoration !default;
 
-//  Text Transform
-//  ##########
+// Text Transform
+// ##########
 
 /// @prop {String} $for-sidebar-content-text-transform [$for-sidebar-text-transform] - general text-transform in html-module: sidebar-content
 $for-sidebar-content-text-transform: $for-sidebar-text-transform !default;
@@ -306,8 +306,8 @@ $for-sidebar-content-link-text-transform: $for-link-text-transform !default;
 /// @prop {String} $for-sidebar-content-link-hover-text-transform [$for-link-hover-text-transform] - text-transform for link:hover in html-module: sidebar-content
 $for-sidebar-content-link-hover-text-transform: $for-link-hover-text-transform !default;
 
-//  Line Height
-//  ##########
+// Line Height
+// ##########
 
 /// @prop {String} $for-sidebar-content-line-height [$for-sidebar-line-height] - general line-height in html-module: sidebar-content
 $for-sidebar-content-line-height: $for-sidebar-line-height !default;
