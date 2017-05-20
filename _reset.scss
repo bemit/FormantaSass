@@ -1,4 +1,8 @@
-@import 'libs/normalize/normalize';
+@import 'libs/normalize/_normalize';
+
+// using scss file with output check, original when installed through bower, lays there:
+// @import '../../../bower_components/normalize-css/normalize.css';
+
 
 @if ($for-output-reset) {
     html {

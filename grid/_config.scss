@@ -27,5 +27,3 @@ $for-bp-smx-max-size: $for-bp-sm-min-size - 1 !default;
 $for-col-qty: 24 !default;
 /// @prop {Size} $for-col-basic-size [100% / $for-col-qty] - basic size for one column element
 $for-col-basic-size: 100% / $for-col-qty !default;
-
-@import "config-gutter";

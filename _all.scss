@@ -10,13 +10,14 @@
     Licence:   : GNU LGPL v3 | CeCILL-C 1.0
 */
 
-@import 'config/all';
+@import 'output';
 
 @import 'calculation/function';
 @import 'color/function';
 
 @import 'color/config';
 @import 'grid/config';
+@import 'grid/config-gutter';
 @import 'animation/config';
 @import 'typography/config';
 @import 'button/config';
