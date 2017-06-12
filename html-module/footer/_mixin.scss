@@ -18,25 +18,37 @@
         decoration: $for-footer-text-decoration;
         transform: $for-footer-text-transform;
     }
+    // Border
+    // ##########
 
     @include for-bp-smx {
         height: $for-footer-smx-height;
+        border: $for-footer-smx-border;
+        padding: $for-footer-smx-padding;
     }
 
     @include for-bp-sm {
         height: $for-footer-sm-height;
+        border: $for-footer-sm-border;
+        padding: $for-footer-sm-padding;
     }
 
     @include for-bp-md {
         height: $for-footer-md-height;
+        border: $for-footer-md-border;
+        padding: $for-footer-md-padding;
     }
 
     @include for-bp-lg {
         height: $for-footer-lg-height;
+        border: $for-footer-lg-border;
+        padding: $for-footer-lg-padding;
     }
 
     @include for-bp-lgx {
         height: $for-footer-lgx-height;
+        border: $for-footer-lgx-border;
+        padding: $for-footer-lgx-padding;
     }
 
     a {

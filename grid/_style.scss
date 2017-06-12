@@ -54,7 +54,7 @@
     }
     #{$for-col-base-str} {
         @include for-col-base;
-        &:not(.#{$for-output-prefix}gutter-none) {
+        &:not([class*="#{$for-output-prefix}gutter*"]) {
             @include for-gutter;
         }
     }

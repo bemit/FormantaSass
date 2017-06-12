@@ -27,6 +27,7 @@
         transform: $for-h1-text-transform;
         align: $for-h1-text-align;
     }
+    margin: $for-h1-margin;
 }
 
 /// @output the h2 font styling
@@ -39,6 +40,7 @@
         transform: $for-h2-text-transform;
         align: $for-h2-text-align;
     }
+    margin: $for-h2-margin;
 }
 
 /// @output the h3 font styling
@@ -51,6 +53,7 @@
         transform: $for-h3-text-transform;
         align: $for-h3-text-align;
     }
+    margin: $for-h3-margin;
 }
 
 /// @output the h4 font styling
@@ -63,6 +66,7 @@
         transform: $for-h4-text-transform;
         align: $for-h4-text-align;
     }
+    margin: $for-h4-margin;
 }
 
 /// @output the h5 font styling
@@ -75,6 +79,7 @@
         transform: $for-h5-text-transform;
         align: $for-h5-text-align;
     }
+    margin: $for-h5-margin;
 }
 
 /// @output the h6 font styling
@@ -87,6 +92,7 @@
         transform: $for-h6-text-transform;
         align: $for-h6-text-align;
     }
+    margin: $for-h6-margin;
 }
 
 /// @output the p font styling
@@ -99,6 +105,7 @@
         transform: $for-p-text-transform;
         align: $for-p-text-align;
     }
+    margin: $for-p-margin;
 }
 
 /// @output the link (a) font styling, including :hover

@@ -143,3 +143,17 @@ $for-footer-md-margin: $for-gutter-md !default;
 $for-footer-sm-margin: $for-gutter-sm !default;
 /// @prop {Size|Map} $for-footer-smx-margin [$for-gutter-smx] - margin for bp smx in html-module: footer
 $for-footer-smx-margin: $for-gutter-smx !default;
+
+// Border
+// ##########
+
+/// @prop {Size|Map} $for-footer-smx-border [0] - border for bp smx in html-module: footer
+$for-footer-smx-border: 0 !default;
+/// @prop {Size|Map} $for-footer-sm-border [$for-footer-smx-border] - border for bp sm in html-module: footer
+$for-footer-sm-border: $for-footer-smx-border !default;
+/// @prop {Size|Map} $for-footer-md-border [$for-footer-sm-border] - border for bp md in html-module: footer
+$for-footer-md-border: $for-footer-sm-border !default;
+/// @prop {Size|Map} $for-footer-lg-border [$for-footer-md-border] - border for bp lg in html-module: footer
+$for-footer-lg-border: $for-footer-md-border !default;
+/// @prop {Size|Map} $for-footer-lgx-border [$for-footer-lg-border] - border for bp lgx in html-module: footer
+$for-footer-lgx-border: $for-footer-lg-border !default;

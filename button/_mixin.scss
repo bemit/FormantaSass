@@ -39,6 +39,7 @@
     }
 
     &:hover {
+        cursor: pointer;
         background: $for-button-hover-background;
         background-size: $for-button-hover-background-size;
         font: $for-button-hover-font-style $for-button-hover-font-weight #{$for-button-hover-font-size}/#{$for-button-line-height} $for-button-font-family;

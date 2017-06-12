@@ -174,7 +174,6 @@ $for-link-font-variant: $for-general-font-variant !default;
 /// @prop {String} $for-link-hover-font-variant [$for-link-font-variant] - in typography
 $for-link-hover-font-variant: $for-link-font-variant !default;
 
-
 // Text Decoration
 // ##########
 
@@ -246,3 +245,25 @@ $for-p-text-align: $for-general-text-align !default;
 $for-link-text-align: $for-general-text-align !default;
 /// @prop {String} $for-link-hover-text-align [$for-link-text-align] - in typography
 $for-link-hover-text-align: $for-link-text-align !default;
+
+// Margins
+// ##########
+
+/// @prop {String} $for-general-margin-horizontal [left] - margin faktor for margin calc in typography
+$for-general-margin-horizontal: 0 !default;
+/// @prop {String} $for-general-margin-vertical [left] - margin faktor for margin calc in typography
+$for-general-margin-vertical: 0.85 !default;
+/// @prop {String} $for-h1-margin [calculation] - in typography
+$for-h1-margin: ($for-h1-font-size * 1.3 * $for-general-margin-vertical) ($for-h1-font-size * 1.3 * $for-general-margin-horizontal) !default;
+/// @prop {String} $for-h2-margin [calculation] - in typography
+$for-h2-margin: ($for-h2-font-size * 0.9 * $for-general-margin-vertical) ($for-h2-font-size * 0.9 * $for-general-margin-horizontal) !default;
+/// @prop {String} $for-h3-margin [calculation] - in typography
+$for-h3-margin: ($for-h3-font-size * 0.7 * $for-general-margin-vertical) ($for-h3-font-size * 0.7 * $for-general-margin-horizontal) !default;
+/// @prop {String} $for-h4-margin [calculation] - in typography
+$for-h4-margin: ($for-h4-font-size * 0.5 * $for-general-margin-vertical) ($for-h4-font-size * 0.5 * $for-general-margin-horizontal) !default;
+/// @prop {String} $for-h5-margin[calculation] - in typography
+$for-h5-margin: ($for-h5-font-size * 0.35 * $for-general-margin-vertical) ($for-h5-font-size * 0.35 * $for-general-margin-horizontal) !default;
+/// @prop {String} $for-h6-margin [calculation] - in typography
+$for-h6-margin: ($for-h6-font-size * 0.15 * $for-general-margin-vertical) ($for-h6-font-size * 0.15 * $for-general-margin-horizontal) !default;
+/// @prop {String} $for-p-margin [calculation] - in typography
+$for-p-margin: ($for-p-font-size * 0.3 * $for-general-margin-vertical) ($for-p-font-size * 0.3 * $for-general-margin-horizontal) !default;

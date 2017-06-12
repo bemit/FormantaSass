@@ -9,192 +9,70 @@
     Author     : Michael Becker
     Licence:   : GNU LGPL v3 | CeCILL-C 1.0
 */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+       ========================================================================== */
 /**
-     * 1. Set default font family to sans-serif.
-     * 2. Prevent iOS and IE text size adjust after device orientation change,
-     *    without disabling user zoom.
+     * 1. Correct the line height in all browsers.
+     * 2. Prevent adjustments of font size after orientation changes in
+     *    IE on Windows Phone and in iOS.
      */
 html {
-  font-family: sans-serif;
+  line-height: 1.15;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
+/* Sections
+       ========================================================================== */
 /**
-     * Remove default margin.
+     * Remove the margin in all browsers (opinionated).
      */
 body {
   margin: 0; }
 
-/* HTML5 display definitions
-       ========================================================================== */
 /**
-     * Correct `block` display not defined for any HTML5 element in IE 8/9.
-     * Correct `block` display not defined for `details` or `summary` in IE 10/11
-     * and Firefox.
-     * Correct `block` display not defined for `main` in IE 11.
+     * Add the correct display in IE 9-.
      */
 article,
 aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-main,
-menu,
 nav,
-section,
-summary {
+section {
   display: block; }
 
 /**
-     * 1. Correct `inline-block` display not defined in IE 8/9.
-     * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
-     */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
-
-/**
-     * Prevent modern browsers from displaying `audio` without controls.
-     * Remove excess height in iOS 5 devices.
-     */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
-     * Address `[hidden]` styling not present in IE 8/9/10.
-     * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
-     */
-[hidden],
-template {
-  display: none; }
-
-/* Links
-       ========================================================================== */
-/**
-     * Remove the gray background color from active links in IE 10.
-     */
-a {
-  background-color: transparent; }
-
-/**
-     * Improve readability of focused elements when they are also in an
-     * active/hover state.
-     */
-a:active,
-a:hover {
-  outline: 0; }
-
-/* Text-level semantics
-       ========================================================================== */
-/**
-     * Address inconsistent styling of `abbr[title]`.
-     * 1. Correct styling in Firefox 39 and Opera 12.
-     * 2. Correct missing styling in Chrome, Edge, IE, Opera, and Safari.
-     */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */ }
-
-/**
-     * Address inconsistent styling of b and strong.
-     * 1. Correct duplicate application of `bolder` in Safari 6.0.2.
-     * 2. Correct style set to `bold` in Edge 12+, Safari 6.2+, and Chrome 18+.
-     */
-b,
-strong {
-  font-weight: inherit;
-  /* 1 */ }
-
-b,
-strong {
-  font-weight: bolder;
-  /* 2 */ }
-
-/**
-     * Address styling not present in Safari and Chrome.
-     */
-dfn {
-  font-style: italic; }
-
-/**
-     * Address variable `h1` font-size and margin within `section` and `article`
-     * contexts in Firefox 4+, Safari, and Chrome.
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
      */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/**
-     * Address styling not present in IE 8/9.
-     */
-mark {
-  background-color: #ff0;
-  color: #000; }
-
-/**
-     * Address inconsistent and variable font size in all browsers.
-     */
-sm {
-  font-size: 80%; }
-
-/**
-     * Prevent `sub` and `sup` affecting `line-height` in all browsers.
-     */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-/* Embedded content
-       ========================================================================== */
-/**
-     * Remove border when inside `a` element in IE 8/9/10.
-     */
-img {
-  border: 0; }
-
-/**
-     * Correct overflow not hidden in IE 9/10/11.
-     */
-svg:not(:root) {
-  overflow: hidden; }
-
 /* Grouping content
        ========================================================================== */
 /**
-     * Address margin not present in IE 8/9 and Safari.
+     * Add the correct display in IE 9-.
+     * 1. Add the correct display in IE.
+     */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+     * Add the correct margin in IE 8.
      */
 figure {
   margin: 1em 40px; }
 
 /**
-     * Address inconsistent styling of `hr`.
-     * 1. Correct `box-sizing` set to `border-box` in Firefox.
-     * 2. Correct `overflow` set to `hidden` in IE 8/9/10/11 and Edge 12.
+     * 1. Add the correct box sizing in Firefox.
+     * 2. Show the overflow in Edge and IE.
      */
 hr {
   box-sizing: content-box;
@@ -205,179 +83,322 @@ hr {
   /* 2 */ }
 
 /**
-     * Contain overflow in all browsers.
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
      */
 pre {
-  overflow: auto; }
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+       ========================================================================== */
+/**
+     * 1. Remove the gray background on active links in IE 10.
+     * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+     */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
 
 /**
-     * 1. Correct inheritance and scaling of font-size for preformatted text.
-     * 2. Address odd `em`-unit font size rendering in all browsers.
+     * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+     * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+     */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+     * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+     */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
      */
 code,
 kbd,
-pre,
 samp {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
 
+/**
+     * Add the correct font style in Android 4.3-.
+     */
+dfn {
+  font-style: italic; }
+
+/**
+     * Add the correct background and color in IE 9-.
+     */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+     * Add the correct font size in all browsers.
+     */
+small {
+  font-size: 80%; }
+
+/**
+     * Prevent `sub` and `sup` elements from affecting the line height in
+     * all browsers.
+     */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+       ========================================================================== */
+/**
+     * Add the correct display in IE 9-.
+     */
+audio,
+video {
+  display: inline-block; }
+
+/**
+     * Add the correct display in iOS 4-7.
+     */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+     * Remove the border on images inside links in IE 10-.
+     */
+img {
+  border-style: none; }
+
+/**
+     * Hide the overflow in IE.
+     */
+svg:not(:root) {
+  overflow: hidden; }
+
 /* Forms
        ========================================================================== */
 /**
-     * Known limitation: by default, Chrome and Safari on OS X allow very limited
-     * styling of `select`, unless a `border` property is set.
-     */
-/**
-     * 1. Correct font properties not being inherited.
-     * 2. Address margins set differently in Firefox 4+, Safari, and Chrome.
+     * 1. Change the font styles in all browsers (opinionated).
+     * 2. Remove the margin in Firefox and Safari.
      */
 button,
 input,
 optgroup,
 select,
 textarea {
-  font: inherit;
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
   /* 1 */
   margin: 0;
   /* 2 */ }
 
 /**
-     * Address `overflow` set to `hidden` in IE 8/9/10/11.
+     * Show the overflow in IE.
+     * 1. Show the overflow in Edge.
      */
-button {
+button,
+input {
+  /* 1 */
   overflow: visible; }
 
 /**
-     * Address inconsistent `text-transform` inheritance for `button` and `select`.
-     * All other form control elements do not inherit `text-transform` values.
-     * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
-     * Correct `select` style inheritance in Firefox.
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
      */
 button,
 select {
+  /* 1 */
   text-transform: none; }
 
 /**
-     * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
-     *    and `video` controls.
-     * 2. Correct inability to style clickable `input` types in iOS.
-     * 3. Improve usability and consistency of cursor style between image-type
-     *    `input` and others.
+     * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+     *    controls in Android 4.
+     * 2. Correct the inability to style clickable types in iOS and Safari.
      */
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */ }
+  /* 2 */ }
 
 /**
-     * Re-set default cursor for disabled elements.
-     */
-button[disabled],
-html input[disabled] {
-  cursor: default; }
-
-/**
-     * Remove inner padding and border in Firefox 4+.
+     * Remove the inner border and padding in Firefox.
      */
 button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
   padding: 0; }
 
 /**
-     * Address Firefox 4+ setting `line-height` on `input` using `!important` in
-     * the UA stylesheet.
+     * Restore the focus styles unset by the previous rule.
      */
-input {
-  line-height: normal; }
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
 
 /**
-     * It's recommended that you don't attempt to style these elements.
-     * Firefox's implementation doesn't respect box-sizing, padding, or width.
-     *
-     * 1. Address box sizing set to `content-box` in IE 8/9/10.
-     * 2. Remove excess padding in IE 8/9/10.
+     * Correct the padding in Firefox.
      */
-input[type="checkbox"],
-input[type="radio"] {
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+     * 1. Correct the text wrapping in Edge and IE.
+     * 2. Correct the color inheritance from `fieldset` elements in IE.
+     * 3. Remove the padding so developers are not caught out when they zero out
+     *    `fieldset` elements in all browsers.
+     */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+     * 1. Add the correct display in IE 9-.
+     * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+     */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+     * Remove the default vertical scrollbar in IE.
+     */
+textarea {
+  overflow: auto; }
+
+/**
+     * 1. Add the correct box sizing in IE 10-.
+     * 2. Remove the padding in IE 10-.
+     */
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
 
 /**
-     * Fix the cursor style for Chrome's increment/decrement buttons. For certain
-     * `font-size` values of the `input`, it causes the cursor style of the
-     * decrement button to change from `default` to `text`.
+     * Correct the cursor style of increment and decrement buttons in Chrome.
      */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
-     * Address `appearance` set to `searchfield` in Safari and Chrome.
+     * 1. Correct the odd appearance in Chrome and Safari.
+     * 2. Correct the outline style in Safari.
      */
-input[type="search"] {
-  -webkit-appearance: textfield; }
-
-/**
-     * Remove inner padding and search cancel button in Safari and Chrome on OS X.
-     * Safari (but not Chrome) clips the cancel button when the search input has
-     * padding (and `textfield` appearance).
-     */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
-     * Define consistent border, margin, and padding.
-     */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/**
-     * 1. Correct `color` not being inherited in IE 8/9/10/11.
-     * 2. Remove padding so people aren't caught out if they zero out fieldsets.
-     */
-legend {
-  border: 0;
+[type="search"] {
+  -webkit-appearance: textfield;
   /* 1 */
-  padding: 0;
+  outline-offset: -2px;
   /* 2 */ }
 
 /**
-     * Remove default vertical scrollbar in IE 8/9/10/11.
+     * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
      */
-textarea {
-  overflow: auto; }
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
 
 /**
-     * Don't inherit the `font-weight` (applied by a rule above).
-     * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+     * 1. Correct the inability to style clickable types in iOS and Safari.
+     * 2. Change font properties to `inherit` in Safari.
      */
-optgroup {
-  font-weight: bold; }
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
 
-/* Tables
+/* Interactive
+       ========================================================================== */
+/*
+     * Add the correct display in IE 9-.
+     * 1. Add the correct display in Edge, IE, and Firefox.
+     */
+details,
+menu {
+  display: block; }
+
+/*
+     * Add the correct display in all browsers.
+     */
+summary {
+  display: list-item; }
+
+/* Scripting
        ========================================================================== */
 /**
-     * Remove most spacing between table cells.
+     * Add the correct display in IE 9-.
      */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+canvas {
+  display: inline-block; }
 
-td,
-th {
-  padding: 0; }
+/**
+     * Add the correct display in IE.
+     */
+template {
+  display: none; }
+
+/* Hidden
+       ========================================================================== */
+/**
+     * Add the correct display in IE 10-.
+     */
+[hidden] {
+  display: none; }
 
 html {
   width: 100%;
@@ -490,6 +511,7 @@ button {
   input[type=button]:hover,
   .for-btn:hover,
   button:hover {
+    cursor: pointer;
     background: #04a;
     background-size: auto;
     font: normal 400 16px/normal Helvetica, sans-serif;
@@ -523,6 +545,7 @@ button {
   border-left: 0 solid transparent;
   border-radius: 0 / 0; }
   .for-btn-expand:hover {
+    cursor: pointer;
     background: #04a;
     background-size: auto;
     font: normal 400 16px/normal Helvetica, sans-serif;
@@ -558,6 +581,7 @@ button {
   border-radius: 0 / 0; }
   .for-btn-outline:hover,
   .for-btn-o:hover {
+    cursor: pointer;
     background: #04a;
     background-size: auto;
     font: normal 400 16px/normal Helvetica, sans-serif;
@@ -593,6 +617,7 @@ button {
     border-radius: 0 / 0; }
     .for-btn-outline.for-expand:hover,
     .for-btn-o.for-expand:hover {
+      cursor: pointer;
       background: #04a;
       background-size: auto;
       font: normal 400 16px/normal Helvetica, sans-serif;
@@ -643,12 +668,9 @@ button {
     bottom: 0;
     left: 0; }
   .for-zoom img:first-child {
-    transition: -webkit-transform 0.4s linear;
     transition: transform 0.4s linear;
-    transition: transform 0.4s linear, -webkit-transform 0.4s linear;
     z-index: 0; }
   .for-zoom:hover img:first-child {
-    -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
 
@@ -668,16 +690,13 @@ button {
     bottom: 0;
     left: 0; }
   .for-zoom-overlay img:first-child {
-    transition: -webkit-transform 0.4s linear;
     transition: transform 0.4s linear;
-    transition: transform 0.4s linear, -webkit-transform 0.4s linear;
     z-index: 0; }
   .for-zoom-overlay .zoom-overlay {
     background: rgba(76, 76, 76, 0.5);
     z-index: 1;
     transition: opacity 0.4s linear; }
   .for-zoom-overlay:hover img:first-child {
-    -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
   .for-zoom-overlay:hover .zoom-overlay {
@@ -722,7 +741,9 @@ p {
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
-  text-align: left; }
+  text-align: left;
+  margin: 4.08px 0px;
+  margin: 0.255rem 0rem; }
 
 h1 {
   color: #7f7f7f;
@@ -731,7 +752,9 @@ h1 {
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
-  text-align: left; }
+  text-align: left;
+  margin: 44.2px 0px;
+  margin: 2.7625rem 0rem; }
 
 h2 {
   color: #7f7f7f;
@@ -740,7 +763,9 @@ h2 {
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
-  text-align: left; }
+  text-align: left;
+  margin: 24.48px 0px;
+  margin: 1.53rem 0rem; }
 
 h3 {
   color: #7f7f7f;
@@ -749,7 +774,9 @@ h3 {
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
-  text-align: left; }
+  text-align: left;
+  margin: 16.66px 0px;
+  margin: 1.04125rem 0rem; }
 
 h4 {
   color: #7f7f7f;
@@ -758,7 +785,9 @@ h4 {
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
-  text-align: left; }
+  text-align: left;
+  margin: 10.2px 0px;
+  margin: 0.6375rem 0rem; }
 
 h5 {
   color: #7f7f7f;
@@ -767,7 +796,9 @@ h5 {
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
-  text-align: left; }
+  text-align: left;
+  margin: 6.188px 0px;
+  margin: 0.38675rem 0rem; }
 
 h6 {
   color: #7f7f7f;
@@ -776,7 +807,9 @@ h6 {
   font-variant: normal;
   text-decoration: none;
   text-transform: none;
-  text-align: left; }
+  text-align: left;
+  margin: 2.244px 0px;
+  margin: 0.14025rem 0rem; }
 
 .for-text-left {
   text-align: left; }
@@ -889,19 +922,19 @@ h6 {
   min-height: 1px;
   float: left; }
   @media (max-width: 767px) {
-    .for-col-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+    .for-col-1:not([class*="for-gutter*"]), .for-col-sm-1:not([class*="for-gutter*"]), .for-col-md-1:not([class*="for-gutter*"]), .for-col-lg-1:not([class*="for-gutter*"]), .for-col-lgx-1:not([class*="for-gutter*"]), .for-col-2:not([class*="for-gutter*"]), .for-col-sm-2:not([class*="for-gutter*"]), .for-col-md-2:not([class*="for-gutter*"]), .for-col-lg-2:not([class*="for-gutter*"]), .for-col-lgx-2:not([class*="for-gutter*"]), .for-col-3:not([class*="for-gutter*"]), .for-col-sm-3:not([class*="for-gutter*"]), .for-col-md-3:not([class*="for-gutter*"]), .for-col-lg-3:not([class*="for-gutter*"]), .for-col-lgx-3:not([class*="for-gutter*"]), .for-col-4:not([class*="for-gutter*"]), .for-col-sm-4:not([class*="for-gutter*"]), .for-col-md-4:not([class*="for-gutter*"]), .for-col-lg-4:not([class*="for-gutter*"]), .for-col-lgx-4:not([class*="for-gutter*"]), .for-col-5:not([class*="for-gutter*"]), .for-col-sm-5:not([class*="for-gutter*"]), .for-col-md-5:not([class*="for-gutter*"]), .for-col-lg-5:not([class*="for-gutter*"]), .for-col-lgx-5:not([class*="for-gutter*"]), .for-col-6:not([class*="for-gutter*"]), .for-col-sm-6:not([class*="for-gutter*"]), .for-col-md-6:not([class*="for-gutter*"]), .for-col-lg-6:not([class*="for-gutter*"]), .for-col-lgx-6:not([class*="for-gutter*"]), .for-col-7:not([class*="for-gutter*"]), .for-col-sm-7:not([class*="for-gutter*"]), .for-col-md-7:not([class*="for-gutter*"]), .for-col-lg-7:not([class*="for-gutter*"]), .for-col-lgx-7:not([class*="for-gutter*"]), .for-col-8:not([class*="for-gutter*"]), .for-col-sm-8:not([class*="for-gutter*"]), .for-col-md-8:not([class*="for-gutter*"]), .for-col-lg-8:not([class*="for-gutter*"]), .for-col-lgx-8:not([class*="for-gutter*"]), .for-col-9:not([class*="for-gutter*"]), .for-col-sm-9:not([class*="for-gutter*"]), .for-col-md-9:not([class*="for-gutter*"]), .for-col-lg-9:not([class*="for-gutter*"]), .for-col-lgx-9:not([class*="for-gutter*"]), .for-col-10:not([class*="for-gutter*"]), .for-col-sm-10:not([class*="for-gutter*"]), .for-col-md-10:not([class*="for-gutter*"]), .for-col-lg-10:not([class*="for-gutter*"]), .for-col-lgx-10:not([class*="for-gutter*"]), .for-col-11:not([class*="for-gutter*"]), .for-col-sm-11:not([class*="for-gutter*"]), .for-col-md-11:not([class*="for-gutter*"]), .for-col-lg-11:not([class*="for-gutter*"]), .for-col-lgx-11:not([class*="for-gutter*"]), .for-col-12:not([class*="for-gutter*"]), .for-col-sm-12:not([class*="for-gutter*"]), .for-col-md-12:not([class*="for-gutter*"]), .for-col-lg-12:not([class*="for-gutter*"]), .for-col-lgx-12:not([class*="for-gutter*"]), .for-col-13:not([class*="for-gutter*"]), .for-col-sm-13:not([class*="for-gutter*"]), .for-col-md-13:not([class*="for-gutter*"]), .for-col-lg-13:not([class*="for-gutter*"]), .for-col-lgx-13:not([class*="for-gutter*"]), .for-col-14:not([class*="for-gutter*"]), .for-col-sm-14:not([class*="for-gutter*"]), .for-col-md-14:not([class*="for-gutter*"]), .for-col-lg-14:not([class*="for-gutter*"]), .for-col-lgx-14:not([class*="for-gutter*"]), .for-col-15:not([class*="for-gutter*"]), .for-col-sm-15:not([class*="for-gutter*"]), .for-col-md-15:not([class*="for-gutter*"]), .for-col-lg-15:not([class*="for-gutter*"]), .for-col-lgx-15:not([class*="for-gutter*"]), .for-col-16:not([class*="for-gutter*"]), .for-col-sm-16:not([class*="for-gutter*"]), .for-col-md-16:not([class*="for-gutter*"]), .for-col-lg-16:not([class*="for-gutter*"]), .for-col-lgx-16:not([class*="for-gutter*"]), .for-col-17:not([class*="for-gutter*"]), .for-col-sm-17:not([class*="for-gutter*"]), .for-col-md-17:not([class*="for-gutter*"]), .for-col-lg-17:not([class*="for-gutter*"]), .for-col-lgx-17:not([class*="for-gutter*"]), .for-col-18:not([class*="for-gutter*"]), .for-col-sm-18:not([class*="for-gutter*"]), .for-col-md-18:not([class*="for-gutter*"]), .for-col-lg-18:not([class*="for-gutter*"]), .for-col-lgx-18:not([class*="for-gutter*"]), .for-col-19:not([class*="for-gutter*"]), .for-col-sm-19:not([class*="for-gutter*"]), .for-col-md-19:not([class*="for-gutter*"]), .for-col-lg-19:not([class*="for-gutter*"]), .for-col-lgx-19:not([class*="for-gutter*"]), .for-col-20:not([class*="for-gutter*"]), .for-col-sm-20:not([class*="for-gutter*"]), .for-col-md-20:not([class*="for-gutter*"]), .for-col-lg-20:not([class*="for-gutter*"]), .for-col-lgx-20:not([class*="for-gutter*"]), .for-col-21:not([class*="for-gutter*"]), .for-col-sm-21:not([class*="for-gutter*"]), .for-col-md-21:not([class*="for-gutter*"]), .for-col-lg-21:not([class*="for-gutter*"]), .for-col-lgx-21:not([class*="for-gutter*"]), .for-col-22:not([class*="for-gutter*"]), .for-col-sm-22:not([class*="for-gutter*"]), .for-col-md-22:not([class*="for-gutter*"]), .for-col-lg-22:not([class*="for-gutter*"]), .for-col-lgx-22:not([class*="for-gutter*"]), .for-col-23:not([class*="for-gutter*"]), .for-col-sm-23:not([class*="for-gutter*"]), .for-col-md-23:not([class*="for-gutter*"]), .for-col-lg-23:not([class*="for-gutter*"]), .for-col-lgx-23:not([class*="for-gutter*"]), .for-col-24:not([class*="for-gutter*"]), .for-col-sm-24:not([class*="for-gutter*"]), .for-col-md-24:not([class*="for-gutter*"]), .for-col-lg-24:not([class*="for-gutter*"]), .for-col-lgx-24:not([class*="for-gutter*"]) {
       padding: 10px; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    .for-col-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+    .for-col-1:not([class*="for-gutter*"]), .for-col-sm-1:not([class*="for-gutter*"]), .for-col-md-1:not([class*="for-gutter*"]), .for-col-lg-1:not([class*="for-gutter*"]), .for-col-lgx-1:not([class*="for-gutter*"]), .for-col-2:not([class*="for-gutter*"]), .for-col-sm-2:not([class*="for-gutter*"]), .for-col-md-2:not([class*="for-gutter*"]), .for-col-lg-2:not([class*="for-gutter*"]), .for-col-lgx-2:not([class*="for-gutter*"]), .for-col-3:not([class*="for-gutter*"]), .for-col-sm-3:not([class*="for-gutter*"]), .for-col-md-3:not([class*="for-gutter*"]), .for-col-lg-3:not([class*="for-gutter*"]), .for-col-lgx-3:not([class*="for-gutter*"]), .for-col-4:not([class*="for-gutter*"]), .for-col-sm-4:not([class*="for-gutter*"]), .for-col-md-4:not([class*="for-gutter*"]), .for-col-lg-4:not([class*="for-gutter*"]), .for-col-lgx-4:not([class*="for-gutter*"]), .for-col-5:not([class*="for-gutter*"]), .for-col-sm-5:not([class*="for-gutter*"]), .for-col-md-5:not([class*="for-gutter*"]), .for-col-lg-5:not([class*="for-gutter*"]), .for-col-lgx-5:not([class*="for-gutter*"]), .for-col-6:not([class*="for-gutter*"]), .for-col-sm-6:not([class*="for-gutter*"]), .for-col-md-6:not([class*="for-gutter*"]), .for-col-lg-6:not([class*="for-gutter*"]), .for-col-lgx-6:not([class*="for-gutter*"]), .for-col-7:not([class*="for-gutter*"]), .for-col-sm-7:not([class*="for-gutter*"]), .for-col-md-7:not([class*="for-gutter*"]), .for-col-lg-7:not([class*="for-gutter*"]), .for-col-lgx-7:not([class*="for-gutter*"]), .for-col-8:not([class*="for-gutter*"]), .for-col-sm-8:not([class*="for-gutter*"]), .for-col-md-8:not([class*="for-gutter*"]), .for-col-lg-8:not([class*="for-gutter*"]), .for-col-lgx-8:not([class*="for-gutter*"]), .for-col-9:not([class*="for-gutter*"]), .for-col-sm-9:not([class*="for-gutter*"]), .for-col-md-9:not([class*="for-gutter*"]), .for-col-lg-9:not([class*="for-gutter*"]), .for-col-lgx-9:not([class*="for-gutter*"]), .for-col-10:not([class*="for-gutter*"]), .for-col-sm-10:not([class*="for-gutter*"]), .for-col-md-10:not([class*="for-gutter*"]), .for-col-lg-10:not([class*="for-gutter*"]), .for-col-lgx-10:not([class*="for-gutter*"]), .for-col-11:not([class*="for-gutter*"]), .for-col-sm-11:not([class*="for-gutter*"]), .for-col-md-11:not([class*="for-gutter*"]), .for-col-lg-11:not([class*="for-gutter*"]), .for-col-lgx-11:not([class*="for-gutter*"]), .for-col-12:not([class*="for-gutter*"]), .for-col-sm-12:not([class*="for-gutter*"]), .for-col-md-12:not([class*="for-gutter*"]), .for-col-lg-12:not([class*="for-gutter*"]), .for-col-lgx-12:not([class*="for-gutter*"]), .for-col-13:not([class*="for-gutter*"]), .for-col-sm-13:not([class*="for-gutter*"]), .for-col-md-13:not([class*="for-gutter*"]), .for-col-lg-13:not([class*="for-gutter*"]), .for-col-lgx-13:not([class*="for-gutter*"]), .for-col-14:not([class*="for-gutter*"]), .for-col-sm-14:not([class*="for-gutter*"]), .for-col-md-14:not([class*="for-gutter*"]), .for-col-lg-14:not([class*="for-gutter*"]), .for-col-lgx-14:not([class*="for-gutter*"]), .for-col-15:not([class*="for-gutter*"]), .for-col-sm-15:not([class*="for-gutter*"]), .for-col-md-15:not([class*="for-gutter*"]), .for-col-lg-15:not([class*="for-gutter*"]), .for-col-lgx-15:not([class*="for-gutter*"]), .for-col-16:not([class*="for-gutter*"]), .for-col-sm-16:not([class*="for-gutter*"]), .for-col-md-16:not([class*="for-gutter*"]), .for-col-lg-16:not([class*="for-gutter*"]), .for-col-lgx-16:not([class*="for-gutter*"]), .for-col-17:not([class*="for-gutter*"]), .for-col-sm-17:not([class*="for-gutter*"]), .for-col-md-17:not([class*="for-gutter*"]), .for-col-lg-17:not([class*="for-gutter*"]), .for-col-lgx-17:not([class*="for-gutter*"]), .for-col-18:not([class*="for-gutter*"]), .for-col-sm-18:not([class*="for-gutter*"]), .for-col-md-18:not([class*="for-gutter*"]), .for-col-lg-18:not([class*="for-gutter*"]), .for-col-lgx-18:not([class*="for-gutter*"]), .for-col-19:not([class*="for-gutter*"]), .for-col-sm-19:not([class*="for-gutter*"]), .for-col-md-19:not([class*="for-gutter*"]), .for-col-lg-19:not([class*="for-gutter*"]), .for-col-lgx-19:not([class*="for-gutter*"]), .for-col-20:not([class*="for-gutter*"]), .for-col-sm-20:not([class*="for-gutter*"]), .for-col-md-20:not([class*="for-gutter*"]), .for-col-lg-20:not([class*="for-gutter*"]), .for-col-lgx-20:not([class*="for-gutter*"]), .for-col-21:not([class*="for-gutter*"]), .for-col-sm-21:not([class*="for-gutter*"]), .for-col-md-21:not([class*="for-gutter*"]), .for-col-lg-21:not([class*="for-gutter*"]), .for-col-lgx-21:not([class*="for-gutter*"]), .for-col-22:not([class*="for-gutter*"]), .for-col-sm-22:not([class*="for-gutter*"]), .for-col-md-22:not([class*="for-gutter*"]), .for-col-lg-22:not([class*="for-gutter*"]), .for-col-lgx-22:not([class*="for-gutter*"]), .for-col-23:not([class*="for-gutter*"]), .for-col-sm-23:not([class*="for-gutter*"]), .for-col-md-23:not([class*="for-gutter*"]), .for-col-lg-23:not([class*="for-gutter*"]), .for-col-lgx-23:not([class*="for-gutter*"]), .for-col-24:not([class*="for-gutter*"]), .for-col-sm-24:not([class*="for-gutter*"]), .for-col-md-24:not([class*="for-gutter*"]), .for-col-lg-24:not([class*="for-gutter*"]), .for-col-lgx-24:not([class*="for-gutter*"]) {
       padding: 10px 15px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
-    .for-col-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+    .for-col-1:not([class*="for-gutter*"]), .for-col-sm-1:not([class*="for-gutter*"]), .for-col-md-1:not([class*="for-gutter*"]), .for-col-lg-1:not([class*="for-gutter*"]), .for-col-lgx-1:not([class*="for-gutter*"]), .for-col-2:not([class*="for-gutter*"]), .for-col-sm-2:not([class*="for-gutter*"]), .for-col-md-2:not([class*="for-gutter*"]), .for-col-lg-2:not([class*="for-gutter*"]), .for-col-lgx-2:not([class*="for-gutter*"]), .for-col-3:not([class*="for-gutter*"]), .for-col-sm-3:not([class*="for-gutter*"]), .for-col-md-3:not([class*="for-gutter*"]), .for-col-lg-3:not([class*="for-gutter*"]), .for-col-lgx-3:not([class*="for-gutter*"]), .for-col-4:not([class*="for-gutter*"]), .for-col-sm-4:not([class*="for-gutter*"]), .for-col-md-4:not([class*="for-gutter*"]), .for-col-lg-4:not([class*="for-gutter*"]), .for-col-lgx-4:not([class*="for-gutter*"]), .for-col-5:not([class*="for-gutter*"]), .for-col-sm-5:not([class*="for-gutter*"]), .for-col-md-5:not([class*="for-gutter*"]), .for-col-lg-5:not([class*="for-gutter*"]), .for-col-lgx-5:not([class*="for-gutter*"]), .for-col-6:not([class*="for-gutter*"]), .for-col-sm-6:not([class*="for-gutter*"]), .for-col-md-6:not([class*="for-gutter*"]), .for-col-lg-6:not([class*="for-gutter*"]), .for-col-lgx-6:not([class*="for-gutter*"]), .for-col-7:not([class*="for-gutter*"]), .for-col-sm-7:not([class*="for-gutter*"]), .for-col-md-7:not([class*="for-gutter*"]), .for-col-lg-7:not([class*="for-gutter*"]), .for-col-lgx-7:not([class*="for-gutter*"]), .for-col-8:not([class*="for-gutter*"]), .for-col-sm-8:not([class*="for-gutter*"]), .for-col-md-8:not([class*="for-gutter*"]), .for-col-lg-8:not([class*="for-gutter*"]), .for-col-lgx-8:not([class*="for-gutter*"]), .for-col-9:not([class*="for-gutter*"]), .for-col-sm-9:not([class*="for-gutter*"]), .for-col-md-9:not([class*="for-gutter*"]), .for-col-lg-9:not([class*="for-gutter*"]), .for-col-lgx-9:not([class*="for-gutter*"]), .for-col-10:not([class*="for-gutter*"]), .for-col-sm-10:not([class*="for-gutter*"]), .for-col-md-10:not([class*="for-gutter*"]), .for-col-lg-10:not([class*="for-gutter*"]), .for-col-lgx-10:not([class*="for-gutter*"]), .for-col-11:not([class*="for-gutter*"]), .for-col-sm-11:not([class*="for-gutter*"]), .for-col-md-11:not([class*="for-gutter*"]), .for-col-lg-11:not([class*="for-gutter*"]), .for-col-lgx-11:not([class*="for-gutter*"]), .for-col-12:not([class*="for-gutter*"]), .for-col-sm-12:not([class*="for-gutter*"]), .for-col-md-12:not([class*="for-gutter*"]), .for-col-lg-12:not([class*="for-gutter*"]), .for-col-lgx-12:not([class*="for-gutter*"]), .for-col-13:not([class*="for-gutter*"]), .for-col-sm-13:not([class*="for-gutter*"]), .for-col-md-13:not([class*="for-gutter*"]), .for-col-lg-13:not([class*="for-gutter*"]), .for-col-lgx-13:not([class*="for-gutter*"]), .for-col-14:not([class*="for-gutter*"]), .for-col-sm-14:not([class*="for-gutter*"]), .for-col-md-14:not([class*="for-gutter*"]), .for-col-lg-14:not([class*="for-gutter*"]), .for-col-lgx-14:not([class*="for-gutter*"]), .for-col-15:not([class*="for-gutter*"]), .for-col-sm-15:not([class*="for-gutter*"]), .for-col-md-15:not([class*="for-gutter*"]), .for-col-lg-15:not([class*="for-gutter*"]), .for-col-lgx-15:not([class*="for-gutter*"]), .for-col-16:not([class*="for-gutter*"]), .for-col-sm-16:not([class*="for-gutter*"]), .for-col-md-16:not([class*="for-gutter*"]), .for-col-lg-16:not([class*="for-gutter*"]), .for-col-lgx-16:not([class*="for-gutter*"]), .for-col-17:not([class*="for-gutter*"]), .for-col-sm-17:not([class*="for-gutter*"]), .for-col-md-17:not([class*="for-gutter*"]), .for-col-lg-17:not([class*="for-gutter*"]), .for-col-lgx-17:not([class*="for-gutter*"]), .for-col-18:not([class*="for-gutter*"]), .for-col-sm-18:not([class*="for-gutter*"]), .for-col-md-18:not([class*="for-gutter*"]), .for-col-lg-18:not([class*="for-gutter*"]), .for-col-lgx-18:not([class*="for-gutter*"]), .for-col-19:not([class*="for-gutter*"]), .for-col-sm-19:not([class*="for-gutter*"]), .for-col-md-19:not([class*="for-gutter*"]), .for-col-lg-19:not([class*="for-gutter*"]), .for-col-lgx-19:not([class*="for-gutter*"]), .for-col-20:not([class*="for-gutter*"]), .for-col-sm-20:not([class*="for-gutter*"]), .for-col-md-20:not([class*="for-gutter*"]), .for-col-lg-20:not([class*="for-gutter*"]), .for-col-lgx-20:not([class*="for-gutter*"]), .for-col-21:not([class*="for-gutter*"]), .for-col-sm-21:not([class*="for-gutter*"]), .for-col-md-21:not([class*="for-gutter*"]), .for-col-lg-21:not([class*="for-gutter*"]), .for-col-lgx-21:not([class*="for-gutter*"]), .for-col-22:not([class*="for-gutter*"]), .for-col-sm-22:not([class*="for-gutter*"]), .for-col-md-22:not([class*="for-gutter*"]), .for-col-lg-22:not([class*="for-gutter*"]), .for-col-lgx-22:not([class*="for-gutter*"]), .for-col-23:not([class*="for-gutter*"]), .for-col-sm-23:not([class*="for-gutter*"]), .for-col-md-23:not([class*="for-gutter*"]), .for-col-lg-23:not([class*="for-gutter*"]), .for-col-lgx-23:not([class*="for-gutter*"]), .for-col-24:not([class*="for-gutter*"]), .for-col-sm-24:not([class*="for-gutter*"]), .for-col-md-24:not([class*="for-gutter*"]), .for-col-lg-24:not([class*="for-gutter*"]), .for-col-lgx-24:not([class*="for-gutter*"]) {
       padding: 10px 15px; } }
   @media (min-width: 1200px) and (max-width: 2999px) {
-    .for-col-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+    .for-col-1:not([class*="for-gutter*"]), .for-col-sm-1:not([class*="for-gutter*"]), .for-col-md-1:not([class*="for-gutter*"]), .for-col-lg-1:not([class*="for-gutter*"]), .for-col-lgx-1:not([class*="for-gutter*"]), .for-col-2:not([class*="for-gutter*"]), .for-col-sm-2:not([class*="for-gutter*"]), .for-col-md-2:not([class*="for-gutter*"]), .for-col-lg-2:not([class*="for-gutter*"]), .for-col-lgx-2:not([class*="for-gutter*"]), .for-col-3:not([class*="for-gutter*"]), .for-col-sm-3:not([class*="for-gutter*"]), .for-col-md-3:not([class*="for-gutter*"]), .for-col-lg-3:not([class*="for-gutter*"]), .for-col-lgx-3:not([class*="for-gutter*"]), .for-col-4:not([class*="for-gutter*"]), .for-col-sm-4:not([class*="for-gutter*"]), .for-col-md-4:not([class*="for-gutter*"]), .for-col-lg-4:not([class*="for-gutter*"]), .for-col-lgx-4:not([class*="for-gutter*"]), .for-col-5:not([class*="for-gutter*"]), .for-col-sm-5:not([class*="for-gutter*"]), .for-col-md-5:not([class*="for-gutter*"]), .for-col-lg-5:not([class*="for-gutter*"]), .for-col-lgx-5:not([class*="for-gutter*"]), .for-col-6:not([class*="for-gutter*"]), .for-col-sm-6:not([class*="for-gutter*"]), .for-col-md-6:not([class*="for-gutter*"]), .for-col-lg-6:not([class*="for-gutter*"]), .for-col-lgx-6:not([class*="for-gutter*"]), .for-col-7:not([class*="for-gutter*"]), .for-col-sm-7:not([class*="for-gutter*"]), .for-col-md-7:not([class*="for-gutter*"]), .for-col-lg-7:not([class*="for-gutter*"]), .for-col-lgx-7:not([class*="for-gutter*"]), .for-col-8:not([class*="for-gutter*"]), .for-col-sm-8:not([class*="for-gutter*"]), .for-col-md-8:not([class*="for-gutter*"]), .for-col-lg-8:not([class*="for-gutter*"]), .for-col-lgx-8:not([class*="for-gutter*"]), .for-col-9:not([class*="for-gutter*"]), .for-col-sm-9:not([class*="for-gutter*"]), .for-col-md-9:not([class*="for-gutter*"]), .for-col-lg-9:not([class*="for-gutter*"]), .for-col-lgx-9:not([class*="for-gutter*"]), .for-col-10:not([class*="for-gutter*"]), .for-col-sm-10:not([class*="for-gutter*"]), .for-col-md-10:not([class*="for-gutter*"]), .for-col-lg-10:not([class*="for-gutter*"]), .for-col-lgx-10:not([class*="for-gutter*"]), .for-col-11:not([class*="for-gutter*"]), .for-col-sm-11:not([class*="for-gutter*"]), .for-col-md-11:not([class*="for-gutter*"]), .for-col-lg-11:not([class*="for-gutter*"]), .for-col-lgx-11:not([class*="for-gutter*"]), .for-col-12:not([class*="for-gutter*"]), .for-col-sm-12:not([class*="for-gutter*"]), .for-col-md-12:not([class*="for-gutter*"]), .for-col-lg-12:not([class*="for-gutter*"]), .for-col-lgx-12:not([class*="for-gutter*"]), .for-col-13:not([class*="for-gutter*"]), .for-col-sm-13:not([class*="for-gutter*"]), .for-col-md-13:not([class*="for-gutter*"]), .for-col-lg-13:not([class*="for-gutter*"]), .for-col-lgx-13:not([class*="for-gutter*"]), .for-col-14:not([class*="for-gutter*"]), .for-col-sm-14:not([class*="for-gutter*"]), .for-col-md-14:not([class*="for-gutter*"]), .for-col-lg-14:not([class*="for-gutter*"]), .for-col-lgx-14:not([class*="for-gutter*"]), .for-col-15:not([class*="for-gutter*"]), .for-col-sm-15:not([class*="for-gutter*"]), .for-col-md-15:not([class*="for-gutter*"]), .for-col-lg-15:not([class*="for-gutter*"]), .for-col-lgx-15:not([class*="for-gutter*"]), .for-col-16:not([class*="for-gutter*"]), .for-col-sm-16:not([class*="for-gutter*"]), .for-col-md-16:not([class*="for-gutter*"]), .for-col-lg-16:not([class*="for-gutter*"]), .for-col-lgx-16:not([class*="for-gutter*"]), .for-col-17:not([class*="for-gutter*"]), .for-col-sm-17:not([class*="for-gutter*"]), .for-col-md-17:not([class*="for-gutter*"]), .for-col-lg-17:not([class*="for-gutter*"]), .for-col-lgx-17:not([class*="for-gutter*"]), .for-col-18:not([class*="for-gutter*"]), .for-col-sm-18:not([class*="for-gutter*"]), .for-col-md-18:not([class*="for-gutter*"]), .for-col-lg-18:not([class*="for-gutter*"]), .for-col-lgx-18:not([class*="for-gutter*"]), .for-col-19:not([class*="for-gutter*"]), .for-col-sm-19:not([class*="for-gutter*"]), .for-col-md-19:not([class*="for-gutter*"]), .for-col-lg-19:not([class*="for-gutter*"]), .for-col-lgx-19:not([class*="for-gutter*"]), .for-col-20:not([class*="for-gutter*"]), .for-col-sm-20:not([class*="for-gutter*"]), .for-col-md-20:not([class*="for-gutter*"]), .for-col-lg-20:not([class*="for-gutter*"]), .for-col-lgx-20:not([class*="for-gutter*"]), .for-col-21:not([class*="for-gutter*"]), .for-col-sm-21:not([class*="for-gutter*"]), .for-col-md-21:not([class*="for-gutter*"]), .for-col-lg-21:not([class*="for-gutter*"]), .for-col-lgx-21:not([class*="for-gutter*"]), .for-col-22:not([class*="for-gutter*"]), .for-col-sm-22:not([class*="for-gutter*"]), .for-col-md-22:not([class*="for-gutter*"]), .for-col-lg-22:not([class*="for-gutter*"]), .for-col-lgx-22:not([class*="for-gutter*"]), .for-col-23:not([class*="for-gutter*"]), .for-col-sm-23:not([class*="for-gutter*"]), .for-col-md-23:not([class*="for-gutter*"]), .for-col-lg-23:not([class*="for-gutter*"]), .for-col-lgx-23:not([class*="for-gutter*"]), .for-col-24:not([class*="for-gutter*"]), .for-col-sm-24:not([class*="for-gutter*"]), .for-col-md-24:not([class*="for-gutter*"]), .for-col-lg-24:not([class*="for-gutter*"]), .for-col-lgx-24:not([class*="for-gutter*"]) {
       padding: 15px 15px; } }
   @media (min-width: 3000px) {
-    .for-col-1:not(.for-gutter-none), .for-col-sm-1:not(.for-gutter-none), .for-col-md-1:not(.for-gutter-none), .for-col-lg-1:not(.for-gutter-none), .for-col-lgx-1:not(.for-gutter-none), .for-col-2:not(.for-gutter-none), .for-col-sm-2:not(.for-gutter-none), .for-col-md-2:not(.for-gutter-none), .for-col-lg-2:not(.for-gutter-none), .for-col-lgx-2:not(.for-gutter-none), .for-col-3:not(.for-gutter-none), .for-col-sm-3:not(.for-gutter-none), .for-col-md-3:not(.for-gutter-none), .for-col-lg-3:not(.for-gutter-none), .for-col-lgx-3:not(.for-gutter-none), .for-col-4:not(.for-gutter-none), .for-col-sm-4:not(.for-gutter-none), .for-col-md-4:not(.for-gutter-none), .for-col-lg-4:not(.for-gutter-none), .for-col-lgx-4:not(.for-gutter-none), .for-col-5:not(.for-gutter-none), .for-col-sm-5:not(.for-gutter-none), .for-col-md-5:not(.for-gutter-none), .for-col-lg-5:not(.for-gutter-none), .for-col-lgx-5:not(.for-gutter-none), .for-col-6:not(.for-gutter-none), .for-col-sm-6:not(.for-gutter-none), .for-col-md-6:not(.for-gutter-none), .for-col-lg-6:not(.for-gutter-none), .for-col-lgx-6:not(.for-gutter-none), .for-col-7:not(.for-gutter-none), .for-col-sm-7:not(.for-gutter-none), .for-col-md-7:not(.for-gutter-none), .for-col-lg-7:not(.for-gutter-none), .for-col-lgx-7:not(.for-gutter-none), .for-col-8:not(.for-gutter-none), .for-col-sm-8:not(.for-gutter-none), .for-col-md-8:not(.for-gutter-none), .for-col-lg-8:not(.for-gutter-none), .for-col-lgx-8:not(.for-gutter-none), .for-col-9:not(.for-gutter-none), .for-col-sm-9:not(.for-gutter-none), .for-col-md-9:not(.for-gutter-none), .for-col-lg-9:not(.for-gutter-none), .for-col-lgx-9:not(.for-gutter-none), .for-col-10:not(.for-gutter-none), .for-col-sm-10:not(.for-gutter-none), .for-col-md-10:not(.for-gutter-none), .for-col-lg-10:not(.for-gutter-none), .for-col-lgx-10:not(.for-gutter-none), .for-col-11:not(.for-gutter-none), .for-col-sm-11:not(.for-gutter-none), .for-col-md-11:not(.for-gutter-none), .for-col-lg-11:not(.for-gutter-none), .for-col-lgx-11:not(.for-gutter-none), .for-col-12:not(.for-gutter-none), .for-col-sm-12:not(.for-gutter-none), .for-col-md-12:not(.for-gutter-none), .for-col-lg-12:not(.for-gutter-none), .for-col-lgx-12:not(.for-gutter-none), .for-col-13:not(.for-gutter-none), .for-col-sm-13:not(.for-gutter-none), .for-col-md-13:not(.for-gutter-none), .for-col-lg-13:not(.for-gutter-none), .for-col-lgx-13:not(.for-gutter-none), .for-col-14:not(.for-gutter-none), .for-col-sm-14:not(.for-gutter-none), .for-col-md-14:not(.for-gutter-none), .for-col-lg-14:not(.for-gutter-none), .for-col-lgx-14:not(.for-gutter-none), .for-col-15:not(.for-gutter-none), .for-col-sm-15:not(.for-gutter-none), .for-col-md-15:not(.for-gutter-none), .for-col-lg-15:not(.for-gutter-none), .for-col-lgx-15:not(.for-gutter-none), .for-col-16:not(.for-gutter-none), .for-col-sm-16:not(.for-gutter-none), .for-col-md-16:not(.for-gutter-none), .for-col-lg-16:not(.for-gutter-none), .for-col-lgx-16:not(.for-gutter-none), .for-col-17:not(.for-gutter-none), .for-col-sm-17:not(.for-gutter-none), .for-col-md-17:not(.for-gutter-none), .for-col-lg-17:not(.for-gutter-none), .for-col-lgx-17:not(.for-gutter-none), .for-col-18:not(.for-gutter-none), .for-col-sm-18:not(.for-gutter-none), .for-col-md-18:not(.for-gutter-none), .for-col-lg-18:not(.for-gutter-none), .for-col-lgx-18:not(.for-gutter-none), .for-col-19:not(.for-gutter-none), .for-col-sm-19:not(.for-gutter-none), .for-col-md-19:not(.for-gutter-none), .for-col-lg-19:not(.for-gutter-none), .for-col-lgx-19:not(.for-gutter-none), .for-col-20:not(.for-gutter-none), .for-col-sm-20:not(.for-gutter-none), .for-col-md-20:not(.for-gutter-none), .for-col-lg-20:not(.for-gutter-none), .for-col-lgx-20:not(.for-gutter-none), .for-col-21:not(.for-gutter-none), .for-col-sm-21:not(.for-gutter-none), .for-col-md-21:not(.for-gutter-none), .for-col-lg-21:not(.for-gutter-none), .for-col-lgx-21:not(.for-gutter-none), .for-col-22:not(.for-gutter-none), .for-col-sm-22:not(.for-gutter-none), .for-col-md-22:not(.for-gutter-none), .for-col-lg-22:not(.for-gutter-none), .for-col-lgx-22:not(.for-gutter-none), .for-col-23:not(.for-gutter-none), .for-col-sm-23:not(.for-gutter-none), .for-col-md-23:not(.for-gutter-none), .for-col-lg-23:not(.for-gutter-none), .for-col-lgx-23:not(.for-gutter-none), .for-col-24:not(.for-gutter-none), .for-col-sm-24:not(.for-gutter-none), .for-col-md-24:not(.for-gutter-none), .for-col-lg-24:not(.for-gutter-none), .for-col-lgx-24:not(.for-gutter-none) {
+    .for-col-1:not([class*="for-gutter*"]), .for-col-sm-1:not([class*="for-gutter*"]), .for-col-md-1:not([class*="for-gutter*"]), .for-col-lg-1:not([class*="for-gutter*"]), .for-col-lgx-1:not([class*="for-gutter*"]), .for-col-2:not([class*="for-gutter*"]), .for-col-sm-2:not([class*="for-gutter*"]), .for-col-md-2:not([class*="for-gutter*"]), .for-col-lg-2:not([class*="for-gutter*"]), .for-col-lgx-2:not([class*="for-gutter*"]), .for-col-3:not([class*="for-gutter*"]), .for-col-sm-3:not([class*="for-gutter*"]), .for-col-md-3:not([class*="for-gutter*"]), .for-col-lg-3:not([class*="for-gutter*"]), .for-col-lgx-3:not([class*="for-gutter*"]), .for-col-4:not([class*="for-gutter*"]), .for-col-sm-4:not([class*="for-gutter*"]), .for-col-md-4:not([class*="for-gutter*"]), .for-col-lg-4:not([class*="for-gutter*"]), .for-col-lgx-4:not([class*="for-gutter*"]), .for-col-5:not([class*="for-gutter*"]), .for-col-sm-5:not([class*="for-gutter*"]), .for-col-md-5:not([class*="for-gutter*"]), .for-col-lg-5:not([class*="for-gutter*"]), .for-col-lgx-5:not([class*="for-gutter*"]), .for-col-6:not([class*="for-gutter*"]), .for-col-sm-6:not([class*="for-gutter*"]), .for-col-md-6:not([class*="for-gutter*"]), .for-col-lg-6:not([class*="for-gutter*"]), .for-col-lgx-6:not([class*="for-gutter*"]), .for-col-7:not([class*="for-gutter*"]), .for-col-sm-7:not([class*="for-gutter*"]), .for-col-md-7:not([class*="for-gutter*"]), .for-col-lg-7:not([class*="for-gutter*"]), .for-col-lgx-7:not([class*="for-gutter*"]), .for-col-8:not([class*="for-gutter*"]), .for-col-sm-8:not([class*="for-gutter*"]), .for-col-md-8:not([class*="for-gutter*"]), .for-col-lg-8:not([class*="for-gutter*"]), .for-col-lgx-8:not([class*="for-gutter*"]), .for-col-9:not([class*="for-gutter*"]), .for-col-sm-9:not([class*="for-gutter*"]), .for-col-md-9:not([class*="for-gutter*"]), .for-col-lg-9:not([class*="for-gutter*"]), .for-col-lgx-9:not([class*="for-gutter*"]), .for-col-10:not([class*="for-gutter*"]), .for-col-sm-10:not([class*="for-gutter*"]), .for-col-md-10:not([class*="for-gutter*"]), .for-col-lg-10:not([class*="for-gutter*"]), .for-col-lgx-10:not([class*="for-gutter*"]), .for-col-11:not([class*="for-gutter*"]), .for-col-sm-11:not([class*="for-gutter*"]), .for-col-md-11:not([class*="for-gutter*"]), .for-col-lg-11:not([class*="for-gutter*"]), .for-col-lgx-11:not([class*="for-gutter*"]), .for-col-12:not([class*="for-gutter*"]), .for-col-sm-12:not([class*="for-gutter*"]), .for-col-md-12:not([class*="for-gutter*"]), .for-col-lg-12:not([class*="for-gutter*"]), .for-col-lgx-12:not([class*="for-gutter*"]), .for-col-13:not([class*="for-gutter*"]), .for-col-sm-13:not([class*="for-gutter*"]), .for-col-md-13:not([class*="for-gutter*"]), .for-col-lg-13:not([class*="for-gutter*"]), .for-col-lgx-13:not([class*="for-gutter*"]), .for-col-14:not([class*="for-gutter*"]), .for-col-sm-14:not([class*="for-gutter*"]), .for-col-md-14:not([class*="for-gutter*"]), .for-col-lg-14:not([class*="for-gutter*"]), .for-col-lgx-14:not([class*="for-gutter*"]), .for-col-15:not([class*="for-gutter*"]), .for-col-sm-15:not([class*="for-gutter*"]), .for-col-md-15:not([class*="for-gutter*"]), .for-col-lg-15:not([class*="for-gutter*"]), .for-col-lgx-15:not([class*="for-gutter*"]), .for-col-16:not([class*="for-gutter*"]), .for-col-sm-16:not([class*="for-gutter*"]), .for-col-md-16:not([class*="for-gutter*"]), .for-col-lg-16:not([class*="for-gutter*"]), .for-col-lgx-16:not([class*="for-gutter*"]), .for-col-17:not([class*="for-gutter*"]), .for-col-sm-17:not([class*="for-gutter*"]), .for-col-md-17:not([class*="for-gutter*"]), .for-col-lg-17:not([class*="for-gutter*"]), .for-col-lgx-17:not([class*="for-gutter*"]), .for-col-18:not([class*="for-gutter*"]), .for-col-sm-18:not([class*="for-gutter*"]), .for-col-md-18:not([class*="for-gutter*"]), .for-col-lg-18:not([class*="for-gutter*"]), .for-col-lgx-18:not([class*="for-gutter*"]), .for-col-19:not([class*="for-gutter*"]), .for-col-sm-19:not([class*="for-gutter*"]), .for-col-md-19:not([class*="for-gutter*"]), .for-col-lg-19:not([class*="for-gutter*"]), .for-col-lgx-19:not([class*="for-gutter*"]), .for-col-20:not([class*="for-gutter*"]), .for-col-sm-20:not([class*="for-gutter*"]), .for-col-md-20:not([class*="for-gutter*"]), .for-col-lg-20:not([class*="for-gutter*"]), .for-col-lgx-20:not([class*="for-gutter*"]), .for-col-21:not([class*="for-gutter*"]), .for-col-sm-21:not([class*="for-gutter*"]), .for-col-md-21:not([class*="for-gutter*"]), .for-col-lg-21:not([class*="for-gutter*"]), .for-col-lgx-21:not([class*="for-gutter*"]), .for-col-22:not([class*="for-gutter*"]), .for-col-sm-22:not([class*="for-gutter*"]), .for-col-md-22:not([class*="for-gutter*"]), .for-col-lg-22:not([class*="for-gutter*"]), .for-col-lgx-22:not([class*="for-gutter*"]), .for-col-23:not([class*="for-gutter*"]), .for-col-sm-23:not([class*="for-gutter*"]), .for-col-md-23:not([class*="for-gutter*"]), .for-col-lg-23:not([class*="for-gutter*"]), .for-col-lgx-23:not([class*="for-gutter*"]), .for-col-24:not([class*="for-gutter*"]), .for-col-sm-24:not([class*="for-gutter*"]), .for-col-md-24:not([class*="for-gutter*"]), .for-col-lg-24:not([class*="for-gutter*"]), .for-col-lgx-24:not([class*="for-gutter*"]) {
       padding: 15px 15px; } }
 
 .for-col-1 {
@@ -1518,19 +1551,29 @@ form input[type=text], form input[type=password], form input[type=color], form i
   text-transform: none; }
   @media (max-width: 767px) {
     .for-footer {
-      height: auto; } }
+      height: auto;
+      border: 0;
+      padding: 10px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .for-footer {
-      height: auto; } }
+      height: auto;
+      border: 0;
+      padding: 10px 15px; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .for-footer {
-      height: auto; } }
+      height: auto;
+      border: 0;
+      padding: 10px 15px; } }
   @media (min-width: 1200px) and (max-width: 2999px) {
     .for-footer {
-      height: auto; } }
+      height: auto;
+      border: 0;
+      padding: 15px 15px; } }
   @media (min-width: 3000px) {
     .for-footer {
-      height: auto; } }
+      height: auto;
+      border: 0;
+      padding: 15px 15px; } }
   .for-footer a {
     font: normal 400 16px/normal Helvetica, sans-serif;
     font: normal 400 1rem/normal Helvetica, sans-serif;

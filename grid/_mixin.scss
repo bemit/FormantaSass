@@ -9,10 +9,10 @@
 /// Will position elements vertical aligned middle
 /// @param {String} $position [relative] - The position the element should become, normally relative is working
 /// @output positioning with top: 50% and a for-transform with translateY(-50%)
-@mixin for-vertical-align($position: relative) {
+@mixin for-vertical-align($position: relative, $translateY: -50%) {
     top: 50%;
     position: $position;
-    @include for-transform(perspective(1px) translateY(-50%));
+    @include for-transform(perspective(1px) translateY($translateY));
 }
 
 /// Will position elements horizontal aligned center

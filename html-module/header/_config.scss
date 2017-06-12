@@ -106,7 +106,7 @@ $for-header-link-line-height: $for-link-line-height !default;
 // ##########
 
 /// @prop {} $for-header-smx-height [auto] - header height for bp smx in html-module: header
-$for-header-smx-height: auto;
+$for-header-smx-height: auto !default;
 /// @prop {} $for-header-sm-height [$for-header-smx-height] - header height for bp sm in html-module: header
 $for-header-sm-height: $for-header-smx-height !default;
 /// @prop {} $for-header-md-height [$for-header-sm-height] - header height for bp md in html-module: header
