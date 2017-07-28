@@ -11,49 +11,49 @@
 @mixin for-button-base($for-expand: true) {
     @if $for-expand {
         display: block;
-        width: 100%;
+        width:   100%;
     } @else {
         display: inline-block;
     }
-    font: $for-button-font-style $for-button-font-weight #{$for-button-font-size}/#{$for-button-line-height} $for-button-font-family;
-    font-variant: $for-button-font-variant;
-    color: $for-button-font-color;
+    font:            $for-button-font-style $for-button-font-weight #{$for-button-font-size}/#{$for-button-line-height} $for-button-font-family;
+    font-variant:    $for-button-font-variant;
+    color:           $for-button-font-color;
 
-    padding: $for-button-padding;
-    margin: $for-button-margin;
+    padding:         $for-button-padding;
+    margin:          $for-button-margin;
 
-    background: $for-button-background;
+    background:      $for-button-background;
     background-size: $for-button-background-size;
 
     text: {
         decoration: $for-button-text-decoration;
-        transform: $for-button-text-transform;
-        align: $for-button-text-align;
+        transform:  $for-button-text-transform;
+        align:      $for-button-text-align;
     }
     border: {
-        top: $for-button-border-top;
-        right: $for-button-border-right;
+        top:    $for-button-border-top;
+        right:  $for-button-border-right;
         bottom: $for-button-border-bottom;
-        left: $for-button-border-left;
+        left:   $for-button-border-left;
         radius: #{$for-button-border-radius-inner} / #{$for-button-border-radius-outer};
     }
 
     &:hover {
-        cursor: pointer;
-        background: $for-button-hover-background;
+        cursor:          pointer;
+        background:      $for-button-hover-background;
         background-size: $for-button-hover-background-size;
-        font: $for-button-hover-font-style $for-button-hover-font-weight #{$for-button-hover-font-size}/#{$for-button-line-height} $for-button-font-family;
-        font-variant: $for-button-hover-font-variant;
-        color: $for-button-hover-font-color;
+        font:            $for-button-hover-font-style $for-button-hover-font-weight #{$for-button-hover-font-size}/#{$for-button-line-height} $for-button-font-family;
+        font-variant:    $for-button-hover-font-variant;
+        color:           $for-button-hover-font-color;
         text: {
             decoration: $for-button-hover-text-decoration;
-            transform: $for-button-hover-text-transform;
+            transform:  $for-button-hover-text-transform;
         }
         border: {
-            top: $for-button-hover-border-top;
-            right: $for-button-hover-border-right;
+            top:    $for-button-hover-border-top;
+            right:  $for-button-hover-border-right;
             bottom: $for-button-hover-border-bottom;
-            left: $for-button-hover-border-left;
+            left:   $for-button-hover-border-left;
             radius: #{$for-button-hover-border-radius-inner} / #{$for-button-hover-border-radius-outer};
         }
     }

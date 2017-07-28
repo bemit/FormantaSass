@@ -10,7 +10,7 @@
 /// @output none
 @mixin for-container {
     margin: {
-        left: auto;
+        left:  auto;
         right: auto;
     }
     @include for-clearfix;

@@ -11,10 +11,10 @@
 /// @param $args - the transition that should be prefixed
 @mixin for-transition($args...) {
     -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    -o-transition: $args;
-    transition: $args;
+    -moz-transition:    $args;
+    -ms-transition:     $args;
+    -o-transition:      $args;
+    transition:         $args;
 }
 
 /// Fade effect with included hover
@@ -91,26 +91,26 @@
     // That the content doesn't vanish
     > * {
         position: relative;
-        z-index: 2;
+        z-index:  2;
     }
     // Image CSS & Overlay CSS
     #{$selector-image},
     #{$selector-overlay} {
-        content: ' ';
-        display: block;
+        content:  ' ';
+        display:  block;
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        top:      0;
+        right:    0;
+        bottom:   0;
+        left:     0;
     }
     // Image CSS
     #{$selector-image} {
         -webkit-transition: -moz-transform $duration $timing-function $delay;
-        -moz-transition: -webkit-transform $duration $timing-function $delay;
-        -o-transition: -o-transform $duration $timing-function $delay;
-        transition: transform $duration $timing-function $delay;
-        z-index: 0;
+        -moz-transition:    -webkit-transform $duration $timing-function $delay;
+        -o-transition:      -o-transform $duration $timing-function $delay;
+        transition:         transform $duration $timing-function $delay;
+        z-index:            0;
     }
     // Overlay CSS
     @if $bg-overlay != false {
@@ -121,7 +121,7 @@
                 $bg-overlay: $for-animation-zoom-bg-overlay;
             }
             background: $bg-overlay;
-            z-index: 1;
+            z-index:    1;
             @include for-transition(opacity $duration $timing-function $delay);
         }
     }
@@ -155,7 +155,7 @@
 /// @param {Int} $delay [null] - how long the animation should be delayed
 @mixin for-zoom($bg-url, $bg-overlay: false, $to-scale: null, $to-opacity: null, $duration: null, $timing-function: null, $delay: null) {
     &:before {
-        background: url($bg-url) no-repeat;
+        background:      url($bg-url) no-repeat;
         background-size: cover;
     }
     $selector-image: '&:before';

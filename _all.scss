@@ -1,20 +1,17 @@
 @charset "utf-8";
-/*! FormantaSass v0.9.0 | GNU LGPL v3 or CeCILL-C 1.0 | formanta.bemit.eu */
+/*! FormantaSass v0.9.3 | GNU LGPL v3 or CeCILL-C 1.0 | © 2016-2017 Michael Becker | formanta.bemit.eu */
 /*
 
     FormantaSass, the individualist Sass Framework
 
-/*
-    Copyright  : © 2016 Michael Becker, bemit.eu
+
+    Copyright  : © 2016-2017 Michael Becker, bemit.eu
     Author     : Michael Becker
     Licence:   : GNU LGPL v3 | CeCILL-C 1.0
 */
-
 @import 'output';
-
 @import 'calculation/function';
 @import 'color/function';
-
 @import 'color/config';
 @import 'grid/config';
 @import 'grid/config-gutter';
@@ -23,9 +20,7 @@
 @import 'button/config';
 @import 'table/config';
 @import 'form/config';
-
 @import 'reset';
-
 @import 'mixin';
 @import 'color/mixin';
 @import 'grid/mixin';
@@ -34,7 +29,6 @@
 @import 'button/mixin';
 @import 'table/mixin';
 @import 'form/mixin';
-
 @import 'button/style';
 @import 'color/style';
 @import 'animation/style';
@@ -42,5 +36,4 @@
 @import 'grid/style';
 @import 'table/style';
 @import 'form/style';
-
 @import 'html-module/all';

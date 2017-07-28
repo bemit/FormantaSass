@@ -15,35 +15,35 @@
     font: $for-table-font-style $for-table-font-variant $for-table-font-weight #{$for-table-font-size}/#{$for-table-line-height} $for-table-font-family;
     text: {
         decoration: $for-table-text-decoration;
-        transform: $for-table-text-transform;
-        align: $for-table-text-align;
+        transform:  $for-table-text-transform;
+        align:      $for-table-text-align;
     }
     border: {
-        top: $for-table-border-top;
-        right: $for-table-border-right;
-        bottom: $for-table-border-bottom;
-        left: $for-table-border-left;
-        radius: #{$for-table-border-radius-inner} / #{$for-table-border-radius-outer};
+        top:      $for-table-border-top;
+        right:    $for-table-border-right;
+        bottom:   $for-table-border-bottom;
+        left:     $for-table-border-left;
+        radius:   #{$for-table-border-radius-inner} / #{$for-table-border-radius-outer};
         collapse: $for-table-border-collapse;
     }
     a {
-        font: $for-table-link-font-style $for-table-link-font-variant $for-table-link-font-weight #{$for-table-link-font-size}/#{$for-table-line-height} $for-table-link-font-family;
+        font:  $for-table-link-font-style $for-table-link-font-variant $for-table-link-font-weight #{$for-table-link-font-size}/#{$for-table-line-height} $for-table-link-font-family;
         color: $for-table-link-font-color;
         text: {
             decoration: $for-table-link-text-decoration;
-            transform: $for-table-link-text-transform;
-            align: $for-table-link-text-align;
+            transform:  $for-table-link-text-transform;
+            align:      $for-table-link-text-align;
         }
         line: {
             height: $for-table-link-line-height;
         }
         &:hover {
-            font: $for-table-link-hover-font-style $for-table-link-hover-font-variant $for-table-link-hover-font-weight $for-table-link-hover-font-size $for-table-link-hover-font-family;
+            font:  $for-table-link-hover-font-style $for-table-link-hover-font-variant $for-table-link-hover-font-weight $for-table-link-hover-font-size $for-table-link-hover-font-family;
             color: $for-table-link-hover-font-color;
             text: {
                 decoration: $for-table-link-hover-text-decoration;
-                transform: $for-table-link-hover-text-transform;
-                align: $for-table-link-hover-text-align;
+                transform:  $for-table-link-hover-text-transform;
+                align:      $for-table-link-hover-text-align;
             }
         }
     }
@@ -77,10 +77,10 @@
 /// @output border and display: table-cell
 @mixin for-table-cell {
     border: {
-        top: $for-table-cell-border-top;
-        right: $for-table-cell-border-right;
+        top:    $for-table-cell-border-top;
+        right:  $for-table-cell-border-right;
         bottom: $for-table-cell-border-bottom;
-        left: $for-table-cell-border-left;
+        left:   $for-table-cell-border-left;
         radius: #{$for-table-cell-border-radius-inner} / #{$for-table-cell-border-radius-outer};
     }
     padding: $for-table-cell-padding;
@@ -91,22 +91,22 @@
 /// @output font and border styling as well as display: table-cell
 @mixin for-table-cell-head {
     @include for-table-cell-base;
-    font: $for-table-cell-head-font-style $for-table-cell-head-font-variant $for-table-cell-head-font-weight #{$for-table-cell-head-font-size}/#{$for-table-cell-head-line-height} $for-table-cell-head-font-family;
-    color: $for-table-cell-head-font-color;
+    font:       $for-table-cell-head-font-style $for-table-cell-head-font-variant $for-table-cell-head-font-weight #{$for-table-cell-head-font-size}/#{$for-table-cell-head-line-height} $for-table-cell-head-font-family;
+    color:      $for-table-cell-head-font-color;
     background: $for-table-cell-head-background;
     text: {
         decoration: $for-table-cell-head-text-decoration;
-        transform: $for-table-cell-head-text-transform;
-        align: $for-table-cell-head-text-align;
+        transform:  $for-table-cell-head-text-transform;
+        align:      $for-table-cell-head-text-align;
     }
     border: {
-        top: $for-table-cell-head-border-top;
-        right: $for-table-cell-head-border-right;
+        top:    $for-table-cell-head-border-top;
+        right:  $for-table-cell-head-border-right;
         bottom: $for-table-cell-head-border-bottom;
-        left: $for-table-cell-head-border-left;
+        left:   $for-table-cell-head-border-left;
         radius: #{$for-table-cell-head-border-radius-inner} / #{$for-table-cell-head-border-radius-outer};
     }
-    padding: $for-table-cell-head-padding;
+    padding:    $for-table-cell-head-padding;
 }
 
 /// Generates a striped background for the rows and columns, should be applied to <table> or .for-table, as every first child would be interpreted as row and the second generation as column

@@ -8,32 +8,32 @@
 
 /// Generates with the config values a content section with formanta styles
 @mixin for-content() {
-    background: $for-content-background;
+    background:      $for-content-background;
     background-size: $for-content-background-size;
 
-    font: $for-content-font-style $for-content-font-weight #{$for-content-font-size}/#{$for-content-line-height} $for-content-font-family;
-    font-variant: $for-content-font-variant;
-    color: $for-content-font-color;
+    font:            $for-content-font-style $for-content-font-weight #{$for-content-font-size}/#{$for-content-line-height} $for-content-font-family;
+    font-variant:    $for-content-font-variant;
+    color:           $for-content-font-color;
     text: {
         decoration: $for-content-text-decoration;
-        transform: $for-content-text-transform;
+        transform:  $for-content-text-transform;
     }
 
     a {
-        font: $for-content-link-font-style $for-content-link-font-weight #{$for-content-link-font-size}/#{$for-content-link-line-height} $for-content-link-font-family;
+        font:         $for-content-link-font-style $for-content-link-font-weight #{$for-content-link-font-size}/#{$for-content-link-line-height} $for-content-link-font-family;
         font-variant: $for-content-link-font-variant;
-        color: $for-content-link-font-color;
+        color:        $for-content-link-font-color;
         text: {
             decoration: $for-content-link-text-decoration;
-            transform: $for-content-link-text-transform;
+            transform:  $for-content-link-text-transform;
         }
         &:hover {
-            font: $for-content-link-hover-font-style $for-content-link-hover-font-weight $for-content-link-hover-font-size $for-content-link-hover-font-family;
+            font:         $for-content-link-hover-font-style $for-content-link-hover-font-weight $for-content-link-hover-font-size $for-content-link-hover-font-family;
             font-variant: $for-content-link-hover-font-variant;
-            color: $for-content-link-hover-font-color;
+            color:        $for-content-link-hover-font-color;
             text: {
                 decoration: $for-content-link-hover-text-decoration;
-                transform: $for-content-link-hover-text-transform;
+                transform:  $for-content-link-hover-text-transform;
             }
         }
     }

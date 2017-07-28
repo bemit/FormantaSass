@@ -23,7 +23,7 @@
     @if (0 < $angular OR 0 > $angular) {
         $gradientType: 0;
     }
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$first-color}", endColorstr="#{$second-color}" GradientType=1);
+    filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$first-color}", endColorstr="#{$second-color}" GradientType=1);
 }
 
 /// Generates a grayscale
