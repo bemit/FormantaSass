@@ -81,5 +81,5 @@ $for-output-typography: $for-output-all !default;
 
 /// @prop {Bool} $for-output-reset [$for-output-all] - turn off or on css output: reset rules by formanta
 $for-output-reset: $for-output-all !default;
-/// @prop {Bool} $for-output-reset-normalize [$for-output-all] - turn off or on css output: built-in normalize-css Library by (c) Nicolas Gallagher and Jonathan Neal (libs/normalize/LICENSE.md)
+/// @prop {Bool} $for-output-reset-normalize [$for-output-reset] - turn off or on css output: built-in normalize-css Library by (c) Nicolas Gallagher and Jonathan Neal (libs/normalize/LICENSE.md)
 $for-output-reset-normalize: $for-output-reset !default;

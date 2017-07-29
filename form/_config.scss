@@ -13,7 +13,7 @@
 // ##############################
 
 /// @prop {String} $for-form-input-text-height [20px] - font family for input-text items
-$for-form-input-text-height: 20px !default;
+$for-form-input-text-height: 30px !default;
 
 // Typography
 // ##########
@@ -42,8 +42,8 @@ $for-form-input-text-font-weight: $for-general-font-weight !default;
 // Padding
 // ##########
 
-/// @prop {Float} $for-form-input-text-padding [10px] - padding for button
-$for-form-input-text-padding: 10px !default;
+/// @prop {Float} $for-form-input-text-padding [$for-form-input-text-height / 6] - padding for button
+$for-form-input-text-padding: ($for-form-input-text-height / 6) !default;
 
 // Margin
 // ##########

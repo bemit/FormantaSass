@@ -1474,8 +1474,9 @@ form input[type=text], form input[type=password], form input[type=color], form i
   font: normal 400 1rem/normal Helvetica, sans-serif;
   color: #7f7f7f;
   text-decoration: none;
-  height: 20px;
-  padding: 10px;
+  blaaaaaaabel: 5px;
+  height: 30px;
+  padding: 5px;
   background: #e5e5e5;
   cursor: pointer;
   vertical-align: middle;
@@ -1485,6 +1486,35 @@ form input[type=text], form input[type=password], form input[type=color], form i
   border-left: 1px solid #7f7f7f;
   border-radius: 0 / 0; }
   form input[type=text]:hover, form input[type=password]:hover, form input[type=color]:hover, form input[type=date]:hover, form input[type=datetime]:hover, form input[type=datetime-local]:hover, form input[type=email]:hover, form input[type=month]:hover, form input[type=number]:hover, form input[type=range]:hover, form input[type=search]:hover, form input[type=tel]:hover, form input[type=time]:hover, form input[type=url]:hover, form input[type=week]:hover {
+    background: #b2b2b2;
+    border-top: 1px solid #7f7f7f;
+    border-right: 1px solid #7f7f7f;
+    border-bottom: 1px solid #7f7f7f;
+    border-left: 1px solid #7f7f7f;
+    border-radius: 0 / 0; }
+
+form input.for-input-expand {
+  display: block;
+  width: 100%;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  font: normal 400 16px/normal Helvetica, sans-serif;
+  font: normal 400 1rem/normal Helvetica, sans-serif;
+  color: #7f7f7f;
+  text-decoration: none;
+  blaaaaaaabel: 5px;
+  height: 30px;
+  padding: 5px;
+  background: #e5e5e5;
+  cursor: pointer;
+  vertical-align: middle;
+  border-top: 1px solid #7f7f7f;
+  border-right: 1px solid #7f7f7f;
+  border-bottom: 1px solid #7f7f7f;
+  border-left: 1px solid #7f7f7f;
+  border-radius: 0 / 0; }
+  form input.for-input-expand:hover {
     background: #b2b2b2;
     border-top: 1px solid #7f7f7f;
     border-right: 1px solid #7f7f7f;

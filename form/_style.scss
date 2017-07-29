@@ -18,6 +18,9 @@
             &[type=week] {
                 @include for-form-input-text-base(false);
             }
+            &.#{$for-output-prefix}input-expand {
+                @include for-form-input-text-base(true);
+            }
         }
         textarea {
 
