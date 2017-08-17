@@ -54,7 +54,7 @@
     }
     #{$for-col-base-str} {
         @include for-col-base;
-        &:not([class*="#{$for-output-prefix}gutter*"]) {
+        &:not([class|="gutter"]) {
             @include for-gutter;
         }
     }
@@ -247,6 +247,10 @@
         @include for-gutter-thinnest;
     }
     .#{$for-output-prefix}gutter-none {
+        padding: 0 !important;
+        /**
+        todo: buggy, not working like it should with :not on col-*
+         */
         /* just as reminder: when this class is together with a col-* class no gutter will be displayed! */
     }
 }
