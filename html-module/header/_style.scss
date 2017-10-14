@@ -1,53 +1,14 @@
-@if($for-output-html-module-header) {
+////
+/// HTML-Module: header
+/// ================
+/// basic selector: .for-header, something for the head of the page, a warm beanie i mean
+/// @group HTML-Module:header
+/// @author Michael Becker
+////
+
+@if ($for-output-html-module-header) {
+    /// .for-header - a header style selector
     .#{$for-output-prefix}header {
-        background: $for-header-background;
-        background-size: $for-header-background-size;
-        
-        font: $for-header-font-style $for-header-font-weight #{$for-header-font-size}/#{$for-header-line-height} $for-header-font-family;
-        font-variant: $for-header-font-variant;
-        color: $for-header-font-color;
-        text: {
-            decoration: $for-header-text-decoration;
-            transform: $for-header-text-transform;
-        }
-        
-        @include for-bp-smx {
-            height: $for-header-xsmall-height;
-        }
-        
-        @include for-bp-sm {
-            height: $for-header-small-height;
-        }
-        
-        @include for-bp-md {
-            height: $for-header-medium-height;
-        }
-
-        @include for-bp-lg {
-            height: $for-header-large-height;
-        }
-
-        @include for-bp-lgx {
-            height: $for-header-xlarge-height;
-        }
-        
-        a {
-            font: $for-header-link-font-style $for-header-link-font-weight #{$for-header-link-font-size}/#{$for-header-link-line-height} $for-header-link-font-family;
-            font-variant: $for-header-link-font-variant;
-            color: $for-header-link-font-color;
-            text: {
-                decoration: $for-header-link-text-decoration;
-                transform: $for-header-link-text-transform;
-            }
-            &:hover {
-                font: $for-header-link-hover-font-style $for-header-link-hover-font-weight $for-header-link-hover-font-size $for-header-link-hover-font-family;
-                font-variant: $for-header-link-hover-font-variant;
-                color: $for-header-link-hover-font-color;
-                text: {
-                    decoration: $for-header-link-hover-text-decoration;
-                    transform: $for-header-link-hover-text-transform;
-                }
-            }
-        }
+        @include for-header;
     }
 }

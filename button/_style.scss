@@ -1,11 +1,30 @@
-@if($for-output-button) {
-    input[type=submit] {
-        @include for-button-normal(false);
-    }
-    input[type=button] {
-        @include for-button-normal(false);
-    }
+////
+/// Button: Selector
+/// ================
+/// @group Button
+/// @author Michael Becker
+////
+
+@if ($for-output-button) {
+    /// Selector for button
+    /// .for-btn | input[type=submit] | input[type=button] | button - normal button design
+    /// .for-btn-expand - button which spans in full available width
+    /// .for-btn-outline - -o as alias, outlined button
+    /// .for-btn-outline.for-btn-expand - -o as alias, outlined button which spans in full available widths
+    input[type=submit],
+    input[type=button],
+    .#{$for-output-prefix}btn,
     button {
         @include for-button-normal(false);
+    }
+    &.#{$for-output-prefix}btn-expand {
+        @include for-button-normal(false);
+    }
+    &.#{$for-output-prefix}btn-outline,
+    &.#{$for-output-prefix}btn-o {
+        @include for-button-outline(false);
+        &.#{$for-output-prefix}expand {
+            @include for-button-outline(true);
+        }
     }
 }

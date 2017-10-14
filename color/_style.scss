@@ -1,5 +1,6 @@
-@if($for-output-color) {
-    body {
+@if ($for-output-color) {
+    .#{$for-output-prefix}body {
         background: $for-body-background;
     }
+    @include for-grayscale();
 }

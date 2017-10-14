@@ -1,53 +1,14 @@
-@if($for-output-html-module-footer) {
+////
+/// HTML-Module: footer
+/// ================
+/// basic selector: .for-footer, something for the foot of the page, so it doesn't get cold feet
+/// @group HTML-Module:footer
+/// @author Michael Becker
+////
+
+@if ($for-output-html-module-footer) {
+    /// .for-footer - for the page end
     .#{$for-output-prefix}footer {
-        background: $for-footer-background;
-        background-size: $for-footer-background-size;
-        
-        font: $for-footer-font-style $for-footer-font-weight #{$for-footer-font-size}/#{$for-footer-line-height} $for-footer-font-family;
-        font-variant: $for-footer-font-variant;
-        color: $for-footer-font-color;
-        text: {
-            decoration: $for-footer-text-decoration;
-            transform: $for-footer-text-transform;
-        }
-        
-        @include for-bp-smx {
-            height: $for-footer-xsmall-height;
-        }
-        
-        @include for-bp-sm {
-            height: $for-footer-small-height;
-        }
-        
-        @include for-bp-md {
-            height: $for-footer-medium-height;
-        }
-
-        @include for-bp-lg {
-            height: $for-footer-large-height;
-        }
-
-        @include for-bp-lgx {
-            height: $for-footer-xlarge-height;
-        }
-        
-        a {
-            font: $for-footer-link-font-style $for-footer-link-font-weight #{$for-footer-link-font-size}/#{$for-footer-link-line-height} $for-footer-link-font-family;
-            font-variant: $for-footer-link-font-variant;
-            color: $for-footer-link-font-color;
-            text: {
-                decoration: $for-footer-link-text-decoration;
-                transform: $for-footer-link-text-transform;
-            }
-            &:hover {
-                font: $for-footer-link-hover-font-style $for-footer-link-hover-font-weight $for-footer-link-hover-font-size $for-footer-link-hover-font-family;
-                font-variant: $for-footer-link-hover-font-variant;
-                color: $for-footer-link-hover-font-color;
-                text: {
-                    decoration: $for-footer-link-hover-text-decoration;
-                    transform: $for-footer-link-hover-text-transform;
-                }
-            }
-        }
+        @include for-footer;
     }
 }

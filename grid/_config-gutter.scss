@@ -1,0 +1,39 @@
+////
+/// Grid: Gutter Config
+/// ================
+///
+/// @group Grid:Gutter
+/// @author Michael Becker
+////
+
+/// @prop {Size} $for-gutter-thickest [75px] - gutter size for thickest
+$for-gutter-thickest: 25px !default;
+
+/// @prop {Size} $for-gutter-thicker [50px] - gutter size for thicker
+$for-gutter-thicker: 20px !default;
+
+/// @prop {Size} $for-gutter-thick [15px 30px] - gutter size for thick
+$for-gutter-thick: 15px 15px !default;
+
+/// @prop {Size} $for-gutter-normal [10px 20px] - gutter size for normal
+$for-gutter-normal: 10px 15px !default;
+
+/// @prop {Size} $for-gutter-thin [10px] - gutter size for thin
+$for-gutter-thin: 10px !default;
+
+/// @prop {Size} $for-gutter-thinner [6px] - gutter size for thinner
+$for-gutter-thinner: 6px !default;
+
+/// @prop {Size} $for-gutter-thinnest [3px] - gutter size for thinnest
+$for-gutter-thinnest: 3px !default;
+
+/// @prop {Size} $for-gutter-lgx [$for-gutter-thick] - the gutter thicknest applied to bp-lgx
+$for-gutter-lgx: $for-gutter-thick !default;
+/// @prop {Size} $for-gutter-lg [$for-gutter-thick] - the gutter thicknest applied to bp-lg
+$for-gutter-lg: $for-gutter-thick !default;
+/// @prop {Size} $for-gutter-md [$for-gutter-normal] - the gutter thicknest applied to bp-md
+$for-gutter-md: $for-gutter-normal !default;
+/// @prop {Size} $for-gutter-sm [$for-gutter-normal] - the gutter thicknest applied to bp-sm
+$for-gutter-sm: $for-gutter-normal !default;
+/// @prop {Size} $for-gutter-smx [$for-gutter-thin] - the gutter thicknest applied to bp-smx
+$for-gutter-smx: $for-gutter-thin !default;

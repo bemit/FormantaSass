@@ -1,28 +1,26 @@
 @charset "utf-8";
-/*! FormantaSassLibrary v0.1.0.0 | GNU LGPL v3 | http://formanta-sass.bemit.eu */
+/*! FormantaSass v0.9.4 | GNU LGPL v3 or CeCILL-C 1.0 | © 2016-2017 Michael Becker | formanta.bemit.eu */
 /*
-    FormantaSassLibrary for basic config, mixins, formatting and typography.
 
-    Part 1 of the FormantaLibrary for FrontendDevelopment.
-/*
-    Copyright  : © 2016 Michael Becker, bemit UG (haftungsbeschränkt), bemit.eu
+    FormantaSass, the individualist Sass Framework
+
+
+    Copyright  : © 2016-2017 Michael Becker, bemit.eu
     Author     : Michael Becker
-    Company    : bemit UG (haftungsbeschränkt)
-    Licence:   : GNU LGPL v3
+    Licence:   : GNU LGPL v3 | CeCILL-C 1.0
 */
-
-@import 'config/all';
-
+@import 'output';
+@import 'calculation/function';
+@import 'color/function';
 @import 'color/config';
 @import 'grid/config';
+@import 'grid/config-gutter';
 @import 'animation/config';
 @import 'typography/config';
 @import 'button/config';
 @import 'table/config';
 @import 'form/config';
-
 @import 'reset';
-
 @import 'mixin';
 @import 'color/mixin';
 @import 'grid/mixin';
@@ -31,7 +29,6 @@
 @import 'button/mixin';
 @import 'table/mixin';
 @import 'form/mixin';
-
 @import 'button/style';
 @import 'color/style';
 @import 'animation/style';
@@ -39,5 +36,4 @@
 @import 'grid/style';
 @import 'table/style';
 @import 'form/style';
-
 @import 'html-module/all';

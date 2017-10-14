@@ -1,29 +1,11 @@
+////
+/// Grid: Stzle
+/// ================
+/// All the grid styles.
+/// @group Grid
+/// @author Michael Becker
+////
 @if ($for-output-grid) {
-    //
-    // Fixed width blocks
-    // DO NOT mistake it with for-col-* classes!
-    //
-    .#{$for-output-prefix}block-tenth {
-        @include for-block-tenth;
-    }
-    .#{$for-output-prefix}block-fifth {
-        @include for-block-fifth;
-    }
-    .#{$for-output-prefix}block-quarter {
-        @include for-block-quarter;
-    }
-    .#{$for-output-prefix}block-third {
-        @include for-block-third;
-    }
-    .#{$for-output-prefix}block-half {
-        @include for-block-half;
-    }
-    .#{$for-output-prefix}block-three-quarters {
-        @include for-block-three-quarters;
-    }
-    .#{$for-output-prefix}block-hundred {
-        @include for-block-hundred;
-    }
     //
     // Display
     //
@@ -36,6 +18,7 @@
     .#{$for-output-prefix}display-inline {
         @include for-display-inline;
     }
+
     //
     // Clear
     //
@@ -50,18 +33,20 @@
     }
 
     //
-    //
-    //
     // Columns
     //
-    //
-    //
+
+    /// .for-row - should be direct father container for all .for-col-*
+    .#{$for-output-prefix}row {
+        @include for-row;
+    }
+
     $for-col-base-str: '';
     @for $i from 1 through $for-col-qty {
         /*
             Concatenating the all needed classes of the columns
         */
-        $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-smx-#{$i},';
+        $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-#{$i},';
         $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-sm-#{$i},';
         $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-md-#{$i},';
         $for-col-base-str: $for-col-base-str + '.#{$for-output-prefix}col-lg-#{$i},';
@@ -69,7 +54,7 @@
     }
     #{$for-col-base-str} {
         @include for-col-base;
-        &:not(.#{$for-output-prefix}gutter-none) {
+        &:not([class|="gutter"]) {
             @include for-gutter;
         }
     }
@@ -77,7 +62,7 @@
     //
     // SMX
     @for $i from 1 through $for-col-qty {
-        .#{$for-output-prefix}col-smx-#{$i} {
+        .#{$for-output-prefix}col-#{$i} {
             @include for-col($i);
         }
     }
@@ -123,20 +108,119 @@
     }
 
     //
-    //
-    //
     // Visibility
     //
-    //
-    //
 
+    /// Display the thing
+    .#{$for-output-prefix}visible {
+        @include for-visible;
+    }
+    /// Hide the thing
+    .#{$for-output-prefix}hidden {
+        @include for-hidden;
+    }
 
-    //
-    //
+    /// Display the thing
+    .#{$for-output-prefix}visible {
+        @include for-display-block;
+    }
+
+    /// Hide the thing
+    .#{$for-output-prefix}hidden {
+        display: none;
+    }
+
+    /// Display the thing: bp smx
+    .#{$for-output-prefix}visible-smx {
+        @include for-visible-smx;
+    }
+    /// Hide the thing: bp smx
+    .#{$for-output-prefix}hidden-smx {
+        @include for-hidden-smx;
+    }
+    /// Display the thing: bp sm up
+    .#{$for-output-prefix}visible-sm-up {
+        @include for-visible-sm-up;
+    }
+    /// Display the thing: bp sm
+    .#{$for-output-prefix}visible-sm {
+        @include for-visible-sm;
+    }
+    /// Display the thing: bp sm down
+    .#{$for-output-prefix}visible-sm-down {
+        @include for-visible-sm-down;
+    }
+    /// Hide the thing: bp sm up
+    .#{$for-output-prefix}hidden-sm-up {
+        @include for-hidden-sm-up;
+    }
+    /// Hide the thing: bp sm
+    .#{$for-output-prefix}hidden-sm {
+        @include for-hidden-sm;
+    }
+    /// Hide the thing: bp sm down
+    .#{$for-output-prefix}hidden-sm-down {
+        @include for-hidden-sm-down;
+    }
+    /// Display the thing: bp md up
+    .#{$for-output-prefix}visible-md-up {
+        @include for-visible-md-up;
+    }
+    /// Display the thing: bp md
+    .#{$for-output-prefix}visible-md {
+        @include for-visible-md;
+    }
+    /// Display the thing: bp md down
+    .#{$for-output-prefix}visible-md-down {
+        @include for-visible-md-down;
+    }
+    /// Hide the thing: bp md up
+    .#{$for-output-prefix}hidden-md-up {
+        @include for-hidden-md-up;
+    }
+    /// Hide the thing: bp md
+    .#{$for-output-prefix}hidden-md {
+        @include for-hidden-md;
+    }
+    /// Hide the thing: bp md down
+    .#{$for-output-prefix}hidden-md-down {
+        @include for-hidden-md-down;
+    }
+    /// Display the thing: bp lg up
+    .#{$for-output-prefix}visible-lg-up {
+        @include for-visible-lg-up;
+    }
+    /// Display the thing: bp lg
+    .#{$for-output-prefix}visible-lg {
+        @include for-visible-lg;
+    }
+    /// Display the thing: bp lg down
+    .#{$for-output-prefix}visible-lg-down {
+        @include for-visible-lg-down;
+    }
+    /// Hide the thing: bp lg up
+    .#{$for-output-prefix}hidden-lg-up {
+        @include for-hidden-lg-up;
+    }
+    /// Hide the thing: bp lg
+    .#{$for-output-prefix}hidden-lg {
+        @include for-hidden-lg;
+    }
+    /// Hide the thing: bp lg down
+    .#{$for-output-prefix}hidden-lg-down {
+        @include for-hidden-lg-down;
+    }
+    /// Display the thing: bp lgx
+    .#{$for-output-prefix}visible-lgx {
+        @include for-visible-lgx;
+    }
+    /// Hide the thing: bp lgx
+    .#{$for-output-prefix}hidden-lgx {
+        @include for-hidden-lgx;
+    }
+
     //
     // Gutter
-    //
-    //
     //
     .#{$for-output-prefix}gutter {
         @include for-gutter;
@@ -163,6 +247,10 @@
         @include for-gutter-thinnest;
     }
     .#{$for-output-prefix}gutter-none {
+        padding: 0 !important;
+        /**
+        todo: buggy, not working like it should with :not on col-*
+         */
         /* just as reminder: when this class is together with a col-* class no gutter will be displayed! */
     }
 }

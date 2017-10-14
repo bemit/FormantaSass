@@ -1,0 +1,25 @@
+{
+  "name": "bemit/formantasass",
+  "description": "the individualist Sass Framework",
+  "homepage": "https://formanta.bemit.eu/",
+  "license": [
+    "LGPL-3.0",
+    "CECILL-C"
+  ],
+  "authors": [
+    {
+      "name": "Michael Becker",
+      "email": "mb.project@bemit.eu",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "docs": "https://help.formanta.bemit.eu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bemit/FormantaSass.git"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

@@ -1,59 +1,24 @@
-@if($for-output-html-module-sidebar) {
+////
+/// HTML-Module: sidebar
+/// ================
+/// basic selector: .for-sidebar
+/// sidebar-heading: .for-sidebar > .for-sidebar-heading
+/// sidebar-content: .for-sidebar > .for-sidebar-content
+/// @group HTML-Module:sidebar
+/// @author Michael Becker
+////
+
+@if ($for-output-html-module-sidebar) {
+    /// .for-sidebar - a sidebar style container, could contain .for-sidebar-heading and .for-sidebar-content
     .#{$for-output-prefix}sidebar {
-        background: $for-sidebar-background;
-        background-size: $for-sidebar-background-size;
-        
-        font: $for-sidebar-font-style $for-sidebar-font-weight #{$for-sidebar-font-size}/#{$for-sidebar-line-height} $for-sidebar-font-family;
-        font-variant: $for-sidebar-font-variant;
-        color: $for-sidebar-font-color;
-        text: {
-            decoration: $for-sidebar-text-decoration;
-            transform: $for-sidebar-text-transform;
+        @include for-sidebar;
+        /// .for-sidebar-heading - a sidebar heading style container, must be a child of .for-sidebar
+        .#{$for-output-prefix}sidebar-heading {
+            @include for-sidebar-heading;
         }
-        
-        /*@include for-bp-smx {
-            width: $for-sidebar-xsmall-width;
-        }
-        
-        @include for-bp-sm {
-            width: $for-sidebar-small-width;
-        }
-        
-        @include for-bp-md {
-            width: $for-sidebar-medium-width;
-        }
-
-        @include for-bp-lg {
-            width: $for-sidebar-large-width;
-        }
-
-        @include for-bp-lgx {
-            width: $for-sidebar-xlarge-width;
-        }*/
-        
-        a {
-            font: $for-sidebar-link-font-style $for-sidebar-link-font-weight #{$for-sidebar-link-font-size}/#{$for-sidebar-link-line-height} $for-sidebar-link-font-family;
-            font-variant: $for-sidebar-link-font-variant;
-            color: $for-sidebar-link-font-color;
-            text: {
-                decoration: $for-sidebar-link-text-decoration;
-                transform: $for-sidebar-link-text-transform;
-            }
-            &:hover {
-                font: $for-sidebar-link-hover-font-style $for-sidebar-link-hover-font-weight $for-sidebar-link-hover-font-size $for-sidebar-link-hover-font-family;
-                font-variant: $for-sidebar-link-hover-font-variant;
-                color: $for-sidebar-link-hover-font-color;
-                text: {
-                    decoration: $for-sidebar-link-hover-text-decoration;
-                    transform: $for-sidebar-link-hover-text-transform;
-                }
-            }
-        }
-        .#{$for-output-prefix}heading {
-            //TODO
-        }
-        .#{$for-output-prefix}content {
-            //TODO
+        /// .for-sidebar-content - a sidebar content style container, must be a child of .for-sidebar
+        .#{$for-output-prefix}sidebar-content {
+            @include for-sidebar-content;
         }
     }
 }

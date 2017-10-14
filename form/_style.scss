@@ -1,59 +1,25 @@
-@if($for-output-form) {
+@if ($for-output-form) {
     form {
-        input{
-            &[type=text] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=password] {
-                @include for-form-input-text-base(false);
-            }
-            // HTML5 types, when no browser support fallback to type=text
-            // ->
-            &[type=color] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=date] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=datetime] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=datetime-local] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=email] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=month] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=number] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=range] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=search] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=tel] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=time] {
-                @include for-form-input-text-base(false);
-            }
-            &[type=url] {
-                @include for-form-input-text-base(false);
-            }
+        input {
+            &[type=text],
+            &[type=password],
+            &[type=color],
+            &[type=date],
+            &[type=datetime],
+            &[type=datetime-local],
+            &[type=email],
+            &[type=month],
+            &[type=number],
+            &[type=range],
+            &[type=search],
+            &[type=tel],
+            &[type=time],
+            &[type=url],
             &[type=week] {
                 @include for-form-input-text-base(false);
             }
-            // <-
-            &[type=submit] {
-
-            }
-            &[type=button] {
-
+            &.#{$for-output-prefix}input-expand {
+                @include for-form-input-text-base(true);
             }
         }
         textarea {
