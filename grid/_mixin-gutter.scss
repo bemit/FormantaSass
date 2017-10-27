@@ -7,63 +7,83 @@
 ////
 
 /// Complete responsive gutter
+/// @param {String} $max [lgx] - Which gutter size shoud be the maximum, when md the thickest gutter will be $for-gutter-md, takes breakpoint sizes
+/// @param {String} $use [padding] - What box element should be used to apply the gutter, default is padding
 /// @output gutter as padding with breakpoints
-@mixin for-gutter {
-    @include for-bp-smx {
-        padding: $for-gutter-smx;
+@mixin for-gutter($max: lgx, $use: padding) {
+
+    #{$use}: $for-gutter-smx;
+    @if $max == smx {
+    } @else {
+        @include for-bp-sm-up {
+            #{$use}: $for-gutter-sm;
+        }
+        @if $max == sm {
+        } @else {
+            @include for-bp-md-up {
+                #{$use}: $for-gutter-md;
+            }
+            @if $max == md {
+            } @else {
+                @include for-bp-lg-up {
+                    #{$use}: $for-gutter-lg;
+                }
+                @if $max == lg {
+                } @else {
+                    @include for-bp-lgx {
+                        #{$use}: $for-gutter-lgx;
+                    }
+                }
+            }
+        }
     }
-    @include for-bp-sm {
-        padding: $for-gutter-sm;
-    }
-    @include for-bp-md {
-        padding: $for-gutter-md;
-    }
-    @include for-bp-lg {
-        padding: $for-gutter-lg;
-    }
-    @include for-bp-lgx {
-        padding: $for-gutter-lgx;
-    }
 }
 
-/// The thickest gutter as padding
-/// @output gutter as padding in thickest
-@mixin for-gutter-thickest {
-    padding: $for-gutter-thickest;
+/// Applies the thickest gutter as (default) padding
+/// @param {String} $use [padding] - What box element should be used to apply the gutter, default is padding
+/// @output gutter on box element $use
+@mixin for-gutter-thickest($use: padding) {
+    #{$use}: $for-gutter-thickest;
 }
 
-/// The thickest gutter as padding
-/// @output gutter as padding in thicker
-@mixin for-gutter-thicker {
-    padding: $for-gutter-thicker;
+/// Applies the thicker gutter as padding
+/// @param {String} $use [padding] - What box element should be used to apply the gutter, default is padding
+/// @output gutter on box element $use
+@mixin for-gutter-thicker($use: padding) {
+    #{$use}: $for-gutter-thicker;
 }
 
-/// The thickest gutter as padding
-/// @output gutter as padding in thick
-@mixin for-gutter-thick {
-    padding: $for-gutter-thick;
+/// Applies the thick gutter as padding
+/// @param {String} $use [padding] - What box element should be used to apply the gutter, default is padding
+/// @output gutter on box element $use
+@mixin for-gutter-thick($use: padding) {
+    #{$use}: $for-gutter-thick;
 }
 
-/// The thickest gutter as padding
-/// @output gutter as padding in normal
-@mixin for-gutter-normal {
-    padding: $for-gutter-normal;
+/// Applies the normal gutter as padding
+/// @param {String} $use [padding] - What box element should be used to apply the gutter, default is padding
+/// @output gutter on box element $use
+@mixin for-gutter-normal($use: padding) {
+    #{$use}: $for-gutter-normal;
 }
 
-/// The thickest gutter as padding
-/// @output gutter as padding in thin
-@mixin for-gutter-thin {
-    padding: $for-gutter-thin;
+/// Applies the thin gutter as padding
+/// @param {String} $use [padding] - What box element should be used to apply the gutter, default is padding
+/// @output gutter on box element $use
+@mixin for-gutter-thin($use: padding) {
+    #{$use}: $for-gutter-thin;
 }
 
-/// The thickest gutter as padding
-/// @output gutter as padding in thinner
-@mixin for-gutter-thinner {
-    padding: $for-gutter-thinner;
+/// Applies the thinner gutter as padding
+/// @param {String} $use [padding] - What box element should be used to apply the gutter, default is padding
+/// @output gutter on box element $use
+@mixin for-gutter-thinner($use: padding) {
+    #{$use}: $for-gutter-thinner;
 }
 
-/// The thickest gutter as padding
-/// @output gutter as padding in thinnest
-@mixin for-gutter-thinnest {
-    padding: $for-gutter-thinnest;
+/// Applies the thinnest gutter as padding
+/// @param {String} $use [padding] - What box element should be used to apply the gutter, default is padding
+/// @output gutter on box element $use
+@mixin for-gutter-thinnest($use: padding) {
+    #{$use}: $for-gutter-thinnest;
 }
