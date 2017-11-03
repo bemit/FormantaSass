@@ -1,3 +1,11 @@
+////
+/// Form: Mixin
+/// ================
+///
+/// @group Form
+/// @author Michael Becker
+////
+
 @mixin for-form-input-text-base($for-expand: true) {
     @if $for-expand {
         display: block;
@@ -13,7 +21,6 @@
         decoration: $for-form-input-text-text-decoration;
     }
 
-    blaaaaaaabel:   ($for-form-input-text-height / 6);
     height:         $for-form-input-text-height;
     padding:        $for-form-input-text-padding;
 
