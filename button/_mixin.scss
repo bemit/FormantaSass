@@ -24,11 +24,14 @@
 
     background:      $for-button-background;
     background-size: $for-button-background-size;
+    
+    text-decoration: $for-button-text-decoration;
+    text-transform:  $for-button-text-transform;
 
-    text: {
-        decoration: $for-button-text-decoration;
-        transform:  $for-button-text-transform;
-        align:      $for-button-text-align;
+    @if $for-expand {
+        text-align: center;
+    } @else {
+        text-align: $for-button-text-align;
     }
     border: {
         top:    $for-button-border-top;
