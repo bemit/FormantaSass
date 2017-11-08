@@ -7,14 +7,14 @@
 
 /// Returns a granular lighted color, uses scale-color not lighten
 /// @param {Color} $color [] - the color which should be lighted
-/// @param {Int} $percentage [] - how much the color should be lighted
+/// @param {Int} $percentage [] - how much the color should be lighted, e.g. 40%
 @function for-lighten($color, $percentage) {
     @return scale-color($color, $lightness: $percentage);
 }
 
 /// Returns a granular darked color, uses scale-color not darken
 /// @param {Color} $color [] - the color which should be darkened
-/// @param {Int} $percentage [] - how much the color should be darkened
+/// @param {Int} $percentage [] - how much the color should be darkened, e.g. 40%
 @function for-darken($color, $percentage) {
     @return scale-color($color, $lightness: ($percentage * -1));
 }

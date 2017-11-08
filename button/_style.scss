@@ -18,7 +18,7 @@
         @include for-button-normal(false);
     }
     &.#{$for-output-prefix}btn-expand {
-        @include for-button-normal(false);
+        @include for-button-normal(true);
     }
     &.#{$for-output-prefix}btn-outline,
     &.#{$for-output-prefix}btn-o {

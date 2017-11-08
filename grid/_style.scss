@@ -59,6 +59,15 @@
         }
     }
 
+    // The first column style: no padding at the left side
+    .#{$for-output-prefix}col-first {
+        padding-left: 0;
+    }
+    // The last column style: no padding at the right side
+    .#{$for-output-prefix}col-last {
+        padding-right: 0;
+    }
+
     //
     // SMX
     @for $i from 1 through $for-col-qty {

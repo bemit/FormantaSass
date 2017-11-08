@@ -29,6 +29,7 @@
 @import 'button/mixin';
 @import 'table/mixin';
 @import 'form/mixin';
+@import 'form/input-group--mixin';
 @import 'button/style';
 @import 'color/style';
 @import 'animation/style';
@@ -36,4 +37,5 @@
 @import 'grid/style';
 @import 'table/style';
 @import 'form/style';
-@import 'html-module/all';
+@import 'form/input-group--style';
+@import 'html-block/all';
