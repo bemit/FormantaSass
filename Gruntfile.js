@@ -47,7 +47,7 @@ module.exports = function(grunt) {
                 src: 'example/main.css'
             }
         },
-        
+
         cssmin: {
             main: {
                 files: [{
