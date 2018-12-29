@@ -1,16 +1,17 @@
 {
-  "name": "@bemit/formantasass",
-  "version": "0.9.4",
+  "name": "@formanta/sass",
+  "version": "0.10.0",
   "description": "the individualist Sass Framework",
   "homepage": "https://formanta.bemit.eu/",
-  "license": "(LGPL-3.0 OR CECILL-C)",
   "authors": [
     {
       "name": "Michael Becker",
-      "email": "mb@project.bemit.eu",
+      "email": "michael@bemit.codes",
+      "homepage": "https://mlbr.xyz",
       "role": "Developer"
     }
   ],
+  "license": "(LGPL-3.0 OR CECILL-C)",
   "support": {
     "docs": "https://help.formanta.bemit.eu"
   },

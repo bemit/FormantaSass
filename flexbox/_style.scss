@@ -1,5 +1,0 @@
-@if ($for-output-grid) {
-    .#{$for-output-prefix}flex-container {
-        @include for-flex-container();
-    }
-}
