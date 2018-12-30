@@ -1,0 +1,73 @@
+image: bemiteu/webbuild:release-0.3
+
+#
+# Defaults
+
+options:
+  max-time: 10
+
+clone:
+  depth: 1
+
+#
+## Reusable Steps, define only one step per var (thus no hyphen)
+
+build: &build
+  step:
+    name: Build
+    caches:
+      - node
+    script:
+      - rsync -av --exclude='.git' --exclude='node_modules' . ../build_tmp
+      - mv ../build_tmp ./build
+      - npm install
+    artifacts:
+      - build/**
+
+publish: &publish
+  step:
+    name: Publish
+    script:
+      - rm -rf build/**
+      - rm -rf test-reports/**
+      - npmPublish.sh
+
+artifactSave: &artifactSave
+  step:
+    name: Artifact Save
+    script:
+      - zip -r build.zip ./build
+      - saveDownloadBranch.sh build.zip
+    artifacts:
+      - build.zip
+
+artifactSaveTag: &artifactSaveTag
+  step:
+    name: Artifact Save
+    script:
+      - zip -r build.zip ./build
+      - saveDownloadTag.sh build.zip
+    artifacts:
+      - build.zip
+
+#
+## Actual Pipeline
+
+pipelines:
+  default:
+    - <<: *build
+  tags:
+    '*.*.*':
+      - <<: *build
+      - parallel:
+        - <<: *artifactSaveTag
+        - <<: *publish
+  branches:
+    master:
+      - <<: *build
+      - <<: *artifactSave
+    develop:
+      - <<: *build
+      - <<: *artifactSave
+    feature/*:
+      - <<: *build
