@@ -1,0 +1,47 @@
+////
+/// Color: Mixin
+/// ================
+/// @group Color
+/// @author Michael Becker
+////
+
+/// Generates a 2 color gradient background
+/// @param {Color} $first-color [] - first color for the gradient (left one)
+/// @param {Color} $second-color [] - second color for the gradient (right one)
+/// @param {Float} $angular [] - the degree the gradient should be tilted
+@mixin for-linear-gradient-2-color($first-color, $second-color, $angular) {
+    // Old browser
+    background : $first-color;
+    // FF < 15
+    background : -moz-linear-gradient($angular, $first-color 0%, $second-color 100%);
+    // Chrome < 25, Safari < 6
+    background : -webkit-linear-gradient($angular, $first-color 0%, $second-color 100%);
+    // Standard
+    background : linear-gradient($angular, $first-color 0%, $second-color 100%);
+    // IE 6-9
+    $gradientType : 1;
+    @if (0 < $angular OR 0 > $angular) {
+        $gradientType : 0;
+    }
+    filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$first-color}", endColorstr="#{$second-color}" GradientType=1);
+}
+
+/// Generates a grayscale
+/// @param {Int} $grayscale-qty [$for-grayscale-qty] - how much steps the grayscale should have
+/// @param {Color} $grayscale-base [$for-grayscale-base] - what should be the center of the grayscale
+@mixin for-grayscale($grayscale-qty: $for-grayscale-qty, $grayscale-base: $for-grayscale-base) {
+    @for $i from 1 through ($grayscale-qty - 1) {
+        $tmp-grayscale-name : '';
+        $tmp-grayscale-color : $for-grayscale-base;
+        @if $i < ($grayscale-qty/2) {
+            $tmp-grayscale-name : n + $i;
+            $tmp-grayscale-color : for-grayscale(($i * -1), $grayscale-qty, $grayscale-base);
+        } @else if $i > ($grayscale-qty/2) {
+            $tmp-grayscale-name : p + ($i - $grayscale-qty/2 + 0.5);
+            $tmp-grayscale-color : for-grayscale(($i - $grayscale-qty/2 + 0.5), $grayscale-qty, $grayscale-base);
+        }
+        .#{$for-output-prefix}gray-#{$tmp-grayscale-name} {
+            color : $tmp-grayscale-color;
+        }
+    }
+}

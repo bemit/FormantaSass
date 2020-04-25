@@ -1,0 +1,80 @@
+////
+/// Typography
+/// ================
+/// All general styling for text (font general, h1-h6, p, a, a:hover)
+/// @group Typography
+/// @author Michael Becker
+////
+
+@if ($for-output-typography) {
+    html {
+        /* It is advised to set font-size and line-height here as rem is becoming popular (rem = root em) */
+        font     : {
+            size : $for-general-font-size;
+        }
+        line       : {
+            height : $for-general-line-height;
+        }
+    }
+
+    body {
+        color : $for-general-font-color;
+        font       : {
+            family : $for-general-font-family;
+            weight : $for-general-font-weight;
+            style  : $for-general-font-style;
+        }
+        text           : {
+            decoration : $for-general-text-decoration;
+            transform  : $for-general-text-transform;
+            align      : $for-general-text-align;
+        }
+    }
+
+    a {
+        @include for-typography-link;
+    }
+
+    p {
+        @include for-typography-p;
+    }
+
+    h1 {
+        @include for-typography-h1;
+    }
+
+    h2 {
+        @include for-typography-h2;
+    }
+
+    h3 {
+        @include for-typography-h3;
+    }
+
+    h4 {
+        @include for-typography-h4;
+    }
+
+    h5 {
+        @include for-typography-h5;
+    }
+
+    h6 {
+        @include for-typography-h6;
+    }
+
+    /// .for-text-left - aligns text left
+    .#{$for-output-prefix}text-left {
+        text-align : left;
+    }
+
+    /// .for-text-center - aligns text center
+    .#{$for-output-prefix}text-center {
+        text-align : center;
+    }
+
+    /// .for-text-right - aligns text right
+    .#{$for-output-prefix}text-right {
+        text-align : right;
+    }
+}

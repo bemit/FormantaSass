@@ -1,0 +1,29 @@
+////
+/// Animation: Config
+/// ================
+/// The basic animation config values.
+/// @group Animation
+/// @author Michael Becker
+////
+
+/// @prop {Float} $for-animation-fade-to-opacity [0.6] - opacity value during :hover in for-fade()
+$for-animation-fade-to-opacity : 0.6 !default;
+/// @prop {Float} $for-animation-fade-delay [0s] - delay of fade effect in for-fade()
+$for-animation-fade-delay : 0s !default;
+/// @prop {Float} $for-animation-fade-duration [0.4s] - duration of the fade effect in for-fade()
+$for-animation-fade-duration : 0.4s !default;
+/// @prop {String} $for-animation-fade-timing-function [linear] - CSS3 timing function for transition in for-fade()
+$for-animation-fade-timing-function : linear !default;
+
+/// @prop {Float} $for-animation-zoom-to-scale [1.1] - the scale() size of the background image in for-zoom()
+$for-animation-zoom-to-scale : 1.1 !default;
+/// @prop {Float} $for-animation-zoom-to-opacity [0.6] - what opacity the colored overlay should get in for-zoom()
+$for-animation-zoom-to-opacity : 0.2 !default;
+/// @prop {Bool|Color} $for-animation-zoom-bg-overlay [rgba(221, 221, 221, 0.2)] - what color the colored overlay should get, when false it doesn't get displayed in for-zoom()
+$for-animation-zoom-bg-overlay : rgba(221, 221, 221, 0.2) !default;
+/// @prop {Float} $for-animation-zoom-delay [0s] - delay of fade effect in for-zoom()
+$for-animation-zoom-delay : 0s !default;
+/// @prop {Float} $for-animation-zoom-duration [0.4s] - duration of the fade effect in for-zoom()
+$for-animation-zoom-duration : 0.4s !default;
+/// @prop {String} $for-animation-zoom-timing-function [linear] - CSS3 timing function for transition in for-zoom()
+$for-animation-zoom-timing-function : linear !default;

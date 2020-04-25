@@ -1,0 +1,36 @@
+////
+/// Color: Function
+/// ================
+/// @group Color
+/// @author Michael Becker
+////
+
+/// Returns a granular lighted color, uses scale-color not lighten for not having HLS problems
+/// @param {Color} $color [] - the color which should be lighted
+/// @param {Int} $percentage [] - how much the color should be lighted, e.g. 40%
+@function for-lighten($color, $percentage) {
+    @return scale-color($color, $lightness : $percentage);
+}
+
+/// Returns a granular darked color, uses scale-color not darken for not having HLS problems
+/// @param {Color} $color [] - the color which should be darkened
+/// @param {Int} $percentage [] - how much the color should be darkened, e.g. 40%
+@function for-darken($color, $percentage) {
+    @return scale-color($color, $lightness : ($percentage * -1));
+}
+
+/// Generates a grayscale
+/// @param {Int} $ident [] - negative values will be dark grayscale, 0 is grayscale-base, positivie is light grayscale
+/// @param {Int} $grayscale-qty [$for-grayscale-qty] - how much steps the grayscale should have
+/// @param {Color} $grayscale-base [$for-grayscale-base] - what should be the center of the grayscale
+@function for-grayscale($ident, $grayscale-qty: $for-grayscale-qty, $grayscale-base: $for-grayscale-base) {
+    $calculated-gray : $grayscale-base;
+
+    @if $ident < 0 {
+        $calculated-gray : for-darken($grayscale-base, (100 * (($ident * -1)/ ($grayscale-qty / 2))));
+    } @else if $ident > 0 {
+        $calculated-gray : for-lighten($grayscale-base, (100 * ($ident / ($grayscale-qty / 2))));
+    }
+
+    @return $calculated-gray;
+}

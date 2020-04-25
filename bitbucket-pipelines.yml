@@ -18,9 +18,10 @@ build: &build
     caches:
       - node
     script:
+      - npm install
+      - npm run build
       - rsync -av --exclude='.git' --exclude='node_modules' . ../build_tmp
       - mv ../build_tmp ./build
-      - npm install
     artifacts:
       - build/**
 
@@ -66,8 +67,20 @@ pipelines:
     master:
       - <<: *build
       - <<: *artifactSave
+      - step:
+          name: Deploy Production
+          deployment: production
+          script:
+            # todo: fix certificate error on alpine-lftps, not possible to load pipeline runners ca to authenticate the receiving
+            - lftp -d -e "set ssl:verify-certificate no; mirror --reverse --delete ./dist/sassdoc $PROD_FTP_TARGET_PATH; quit" -p $PROD_FTP_PORT -u $PROD_FTP_USERNAME,$PROD_FTP_PASSWORD $PROD_FTP_TARGET_SITE
     develop:
       - <<: *build
       - <<: *artifactSave
+      - step:
+          name: Deploy Nightly
+          deployment: staging
+          script:
+            # todo: fix certificate error on alpine-lftps, not possible to load pipeline runners ca to authenticate the receiving
+            - lftp -d -e "set ssl:verify-certificate no; mirror --reverse --delete ./dist/sassdoc $NIGHT_FTP_TARGET_PATH; quit" -p $NIGHT_FTP_PORT -u $NIGHT_FTP_USERNAME,$NIGHT_FTP_PASSWORD $NIGHT_FTP_TARGET_SITE
     feature/*:
       - <<: *build

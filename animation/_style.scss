@@ -1,0 +1,25 @@
+////
+/// Animation: Selectors
+/// ================
+/// @group Animation
+/// @author Michael Becker
+////
+
+@if ($for-output-animation) {
+    /// Selector for animation fade, fades away on hover
+    /// .for-fade
+    .#{$for-output-prefix}fade {
+        @include for-fade();
+    }
+    /// Selector for animation zoom
+    /// .for-zoom img:first-child - gets background and zooms on hover
+    .#{$for-output-prefix}zoom {
+        @include for-zoom-html();
+    }
+    /// Selector for animation zoom with overlay
+    /// .for-zoom img:first-child - gets background and zooms on hover
+    /// .for-zoom .for-zoom-overlay - gets a semi-transparent overlay on background and background for following elements
+    .#{$for-output-prefix}zoom-overlay {
+        @include for-zoom-html(null, null, rgba($for-grayscale-base-n1, 0.5));
+    }
+}

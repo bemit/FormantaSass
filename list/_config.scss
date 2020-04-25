@@ -1,0 +1,18 @@
+////
+/// List
+/// ================
+/// basic selector: .for-list
+/// @group List
+/// @author Michael Becker
+////
+
+/// @prop {Size} $for-list-gutter-lgx [] - used as gutter for the list root node, e.g. an ul
+$for-list-gutter-lgx : $for-gutter-thick !default;
+/// @prop {Size} $for-list-gutter-lg [] -
+$for-list-gutter-lg : $for-gutter-thick !default;
+/// @prop {Size} $for-list-gutter-md [] -
+$for-list-gutter-md : $for-gutter-normal !default;
+/// @prop {Size} $for-list-gutter-sm [] -
+$for-list-gutter-sm : $for-gutter-normal !default;
+/// @prop {Size} $for-list-gutter-smx [] -
+$for-list-gutter-smx : $for-gutter-thin !default;

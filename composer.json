@@ -1,7 +1,7 @@
 {
-  "name": "bemit/formantasass",
-  "description": "the individualist Sass Framework",
-  "homepage": "https://formanta.bemit.eu/",
+  "name": "bemit/formantasass-core",
+  "description": "the individualist Sass Framework - structure, color and typography part",
+  "homepage": "https://formanta.bemit.eu",
   "license": [
     "LGPL-3.0",
     "CECILL-C"
@@ -10,7 +10,14 @@
     {
       "name": "Michael Becker",
       "email": "mb@project.bemit.eu",
+      "homepage": "https://painttheweb.de",
       "role": "Developer"
+    },
+    {
+      "name": "bemit UG (haftungsbeschränkt)",
+      "email": "project@we.bemit.eu",
+      "homepage": "https://bemit.eu",
+      "role": "Sponsor"
     }
   ],
   "support": {
@@ -18,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bemit/FormantaSass.git"
+    "url": "git+https://bitbucket.org/bemit_eu/formantasass-core.git"
   },
   "minimum-stability": "dev",
   "prefer-stable": true

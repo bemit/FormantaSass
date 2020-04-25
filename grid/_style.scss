@@ -1,0 +1,248 @@
+////
+/// Grid: Stzle
+/// ================
+/// All the grid styles.
+/// @group Grid
+/// @author Michael Becker
+////
+@if ($for-output-grid) {
+    //
+    // Display
+    //
+    .#{$for-output-prefix}display-block {
+        @include for-display-block;
+    }
+    .#{$for-output-prefix}display-inline-block {
+        @include for-display-inline-block;
+    }
+    .#{$for-output-prefix}display-inline {
+        @include for-display-inline;
+    }
+
+    //
+    // Columns
+    //
+
+    /// .for-row - should be direct father container for all .for-col-*
+    .#{$for-output-prefix}row {
+        @include for-row;
+    }
+
+    $for-col-base-str : '';
+    @for $i from 1 through $for-col-qty {
+        /*
+            Concatenating the all needed classes of the columns
+        */
+        $for-col-base-str : $for-col-base-str + '.#{$for-output-prefix}col-#{$i},';
+        $for-col-base-str : $for-col-base-str + '.#{$for-output-prefix}col-sm-#{$i},';
+        $for-col-base-str : $for-col-base-str + '.#{$for-output-prefix}col-md-#{$i},';
+        $for-col-base-str : $for-col-base-str + '.#{$for-output-prefix}col-lg-#{$i},';
+        $for-col-base-str : $for-col-base-str + '.#{$for-output-prefix}col-lgx-#{$i},';
+    }
+    #{$for-col-base-str} {
+        @include for-col-base;
+        /*&:not([class|="gutter"]) {
+            @include for-gutter;
+        }*/
+    }
+
+    // The first column style: no padding at the left side
+    .#{$for-output-prefix}col-first {
+        padding-left : 0;
+    }
+    // The last column style: no padding at the right side
+    .#{$for-output-prefix}col-last {
+        padding-right : 0;
+    }
+
+    //
+    // SMX
+    @for $i from 1 through $for-col-qty {
+        .#{$for-output-prefix}col-#{$i} {
+            @include for-col($i);
+        }
+    }
+
+    //
+    // SM
+    @include for-bp-sm-up {
+        @for $i from 1 through $for-col-qty {
+            .#{$for-output-prefix}col-sm-#{$i} {
+                @include for-col($i);
+            }
+        }
+    }
+
+    //
+    // MD
+    @include for-bp-md-up {
+        @for $i from 1 through $for-col-qty {
+            .#{$for-output-prefix}col-md-#{$i} {
+                @include for-col($i);
+            }
+        }
+    }
+
+    //
+    // LG
+    @include for-bp-lg-up {
+        @for $i from 1 through $for-col-qty {
+            .#{$for-output-prefix}col-lg-#{$i} {
+                @include for-col($i);
+            }
+        }
+    }
+
+    //
+    // LGX
+    @include for-bp-lgx {
+        @for $i from 1 through $for-col-qty {
+            .#{$for-output-prefix}col-lgx-#{$i} {
+                @include for-col($i);
+            }
+        }
+    }
+
+    //
+    // Visibility
+    //
+
+    /// Display the node
+    .#{$for-output-prefix}visible {
+        @include for-visible;
+    }
+    /// Hide the node
+    .#{$for-output-prefix}hidden {
+        @include for-hidden;
+    }
+
+    /// Display the node
+    .#{$for-output-prefix}visible {
+        @include for-display-block;
+    }
+
+    /// Hide the node
+    .#{$for-output-prefix}hidden {
+        display : none;
+    }
+
+    /// Display the node: bp smx
+    .#{$for-output-prefix}visible-smx {
+        @include for-visible-smx;
+    }
+    /// Hide the node: bp smx
+    .#{$for-output-prefix}hidden-smx {
+        @include for-hidden-smx;
+    }
+    /// Display the node: bp sm up
+    .#{$for-output-prefix}visible-sm-up {
+        @include for-visible-sm-up;
+    }
+    /// Display the node: bp sm
+    .#{$for-output-prefix}visible-sm {
+        @include for-visible-sm;
+    }
+    /// Display the node: bp sm down
+    .#{$for-output-prefix}visible-sm-down {
+        @include for-visible-sm-down;
+    }
+    /// Hide the node: bp sm up
+    .#{$for-output-prefix}hidden-sm-up {
+        @include for-hidden-sm-up;
+    }
+    /// Hide the node: bp sm
+    .#{$for-output-prefix}hidden-sm {
+        @include for-hidden-sm;
+    }
+    /// Hide the node: bp sm down
+    .#{$for-output-prefix}hidden-sm-down {
+        @include for-hidden-sm-down;
+    }
+    /// Display the node: bp md up
+    .#{$for-output-prefix}visible-md-up {
+        @include for-visible-md-up;
+    }
+    /// Display the node: bp md
+    .#{$for-output-prefix}visible-md {
+        @include for-visible-md;
+    }
+    /// Display the node: bp md down
+    .#{$for-output-prefix}visible-md-down {
+        @include for-visible-md-down;
+    }
+    /// Hide the node: bp md up
+    .#{$for-output-prefix}hidden-md-up {
+        @include for-hidden-md-up;
+    }
+    /// Hide the node: bp md
+    .#{$for-output-prefix}hidden-md {
+        @include for-hidden-md;
+    }
+    /// Hide the node: bp md down
+    .#{$for-output-prefix}hidden-md-down {
+        @include for-hidden-md-down;
+    }
+    /// Display the node: bp lg up
+    .#{$for-output-prefix}visible-lg-up {
+        @include for-visible-lg-up;
+    }
+    /// Display the node: bp lg
+    .#{$for-output-prefix}visible-lg {
+        @include for-visible-lg;
+    }
+    /// Display the node: bp lg down
+    .#{$for-output-prefix}visible-lg-down {
+        @include for-visible-lg-down;
+    }
+    /// Hide the node: bp lg up
+    .#{$for-output-prefix}hidden-lg-up {
+        @include for-hidden-lg-up;
+    }
+    /// Hide the node: bp lg
+    .#{$for-output-prefix}hidden-lg {
+        @include for-hidden-lg;
+    }
+    /// Hide the node: bp lg down
+    .#{$for-output-prefix}hidden-lg-down {
+        @include for-hidden-lg-down;
+    }
+    /// Display the node: bp lgx
+    .#{$for-output-prefix}visible-lgx {
+        @include for-visible-lgx;
+    }
+    /// Hide the node: bp lgx
+    .#{$for-output-prefix}hidden-lgx {
+        @include for-hidden-lgx;
+    }
+
+    //
+    // Gutter
+    //
+    .#{$for-output-prefix}gutter {
+        @include for-gutter;
+    }
+    .#{$for-output-prefix}gutter-thickest {
+        @include for-gutter-thickest;
+    }
+    .#{$for-output-prefix}gutter-thicker {
+        @include for-gutter-thicker;
+    }
+    .#{$for-output-prefix}gutter-thick {
+        @include for-gutter-thick;
+    }
+    .#{$for-output-prefix}gutter-normal {
+        @include for-gutter-normal;
+    }
+    .#{$for-output-prefix}gutter-thin {
+        @include for-gutter-thin;
+    }
+    .#{$for-output-prefix}gutter-thinner {
+        @include for-gutter-thinner;
+    }
+    .#{$for-output-prefix}gutter-thinnest {
+        @include for-gutter-thinnest;
+    }
+    .#{$for-output-prefix}gutter-none {
+        /* just as reminder: when this class is together with a col-* class no gutter will be displayed! */
+    }
+}

@@ -1,3 +1,26 @@
-# IDE and Tools
-.idea/
-node_modules/
+# PHP Storm
+.idea
+
+# IntelliJ
+/*.iml
+
+# NodeJS
+node_modules
+
+# Build
+build
+build.zip
+
+# Tests test-reports
+test-reports
+test-reports.zip
+
+# Mac
+.DS_Store\
+
+# Bower
+bower_components
+
+# Cache
+tmp
+!tmp/.gitkeep

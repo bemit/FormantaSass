@@ -1,0 +1,58 @@
+// Should be added with bower
+// @import 'bower_components/normalize-css/normalize';
+
+@if ($for-output-reset) {
+    // some additional reset styles which where helpful over the time
+    html {
+        width      : 100%;
+        height     : 100%;
+        margin     : 0;
+        padding    : 0;
+        box-sizing : border-box;
+    }
+
+    body {
+        width                   : 100%;
+        height                  : 100%;
+        margin                  : 0;
+        padding                 : 0;
+        // @link http://maxvoltar.com/archive/-webkit-font-smoothing
+        -webkit-font-smoothing  : antialiased;
+        -moz-osx-font-smoothing : grayscale;
+    }
+
+    // Set box-sizing globally to handle padding and border widths
+    *,
+    *:before,
+    *:after {
+        box-sizing : inherit;
+    }
+
+    img {
+        image-rendering        : -moz-optimizeQuality; /* Firefox */
+        image-rendering        : -o-optimizeQuality; /* Opera */
+        image-rendering        : -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+        image-rendering        : optimizeQuality;
+        -ms-interpolation-mode : bicubic; /* Internetexplorer */
+        border                 : 0; /* removes border around images in older Internetexplorer */
+    }
+
+    select {
+        width : 100%;
+    }
+
+    /* Remove standard design of browsers */
+    button {
+        -webkit-appearance : none;
+        -moz-appearance    : none;
+        background         : transparent;
+        padding            : 0;
+        border             : 0;
+        line-height        : 1;
+    }
+
+    textarea {
+        height     : auto;
+        min-height : 50px;
+    }
+}
