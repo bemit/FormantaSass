@@ -1,0 +1,21 @@
+////
+/// List
+/// ================
+/// basic selector: .for-list
+/// @group List
+/// @author Michael Becker
+////
+
+@if ($for-output-list) {
+    /// .for-list
+    .#{$for-output-prefix}list {
+        @include for-list;
+    }
+}
+
+@if ($for-output-list-node) {
+    /// ul
+    ul {
+        @include for-list;
+    }
+}

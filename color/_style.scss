@@ -1,0 +1,3 @@
+@if ($for-output-color) {
+    @include for-grayscale();
+}

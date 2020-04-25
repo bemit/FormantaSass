@@ -1,0 +1,171 @@
+////
+/// Grid: Visibility
+/// ================
+/// All the grid visible invisible potato things.
+/// @group Grid:Visibility
+/// @author Michael Becker
+////
+
+/// Display the thing
+@mixin for-visible {
+    @include for-display-block;
+}
+
+/// Hide the thing
+@mixin for-hidden {
+    display : none;
+}
+
+/// Display the thing: bp smx
+@mixin for-visible-smx {
+    @include for-bp-smx {
+        @include for-visible;
+    }
+}
+
+/// Hide the thing: bp smx
+@mixin for-hidden-smx {
+    @include for-bp-smx {
+        @include for-hidden;
+    }
+}
+
+/// Display the thing: bp sm up
+@mixin for-visible-sm-up {
+    @include for-bp-sm-up {
+        @include for-visible;
+    }
+}
+
+/// Display the thing: bp sm
+@mixin for-visible-sm {
+    @include for-bp-sm {
+        @include for-visible;
+    }
+}
+
+/// Display the thing: bp sm down
+@mixin for-visible-sm-down {
+    @include for-bp-sm-down {
+        @include for-visible;
+    }
+}
+
+/// Hide the thing: bp sm up
+@mixin for-hidden-sm-up {
+    @include for-bp-sm-up {
+        @include for-hidden;
+    }
+}
+
+/// Hide the thing: bp sm
+@mixin for-hidden-sm {
+    @include for-bp-sm {
+        @include for-hidden;
+    }
+}
+
+/// Hide the thing: bp sm down
+@mixin for-hidden-sm-down {
+    @include for-bp-sm-down {
+        @include for-hidden;
+    }
+}
+
+/// Display the thing: bp md up
+@mixin for-visible-md-up {
+    @include for-bp-md-up {
+        @include for-visible;
+    }
+}
+
+/// Display the thing: bp md
+@mixin for-visible-md {
+    @include for-bp-md {
+        @include for-visible;
+    }
+}
+
+/// Display the thing: bp md down
+@mixin for-visible-md-down {
+    @include for-bp-md-down {
+        @include for-visible;
+    }
+}
+
+/// Hide the thing: bp md up
+@mixin for-hidden-md-up {
+    @include for-bp-md-up {
+        @include for-hidden;
+    }
+}
+
+/// Hide the thing: bp md
+@mixin for-hidden-md {
+    @include for-bp-md {
+        @include for-hidden;
+    }
+}
+
+/// Hide the thing: bp md down
+@mixin for-hidden-md-down {
+    @include for-bp-md-down {
+        @include for-hidden;
+    }
+}
+
+/// Display the thing: bp lg up
+@mixin for-visible-lg-up {
+    @include for-bp-lg-up {
+        @include for-visible;
+    }
+}
+
+/// Display the thing: bp lg
+@mixin for-visible-lg {
+    @include for-bp-lg {
+        @include for-visible;
+    }
+}
+
+/// Display the thing: bp lg down
+@mixin for-visible-lg-down {
+    @include for-bp-lg-down {
+        @include for-visible;
+    }
+}
+
+/// Hide the thing: bp lg up
+@mixin for-hidden-lg-up {
+    @include for-bp-lg-up {
+        @include for-hidden;
+    }
+}
+
+/// Hide the thing: bp lg
+@mixin for-hidden-lg {
+    @include for-bp-lg {
+        @include for-hidden;
+    }
+}
+
+/// Hide the thing: bp lg down
+@mixin for-hidden-lg-down {
+    @include for-bp-lg-down {
+        @include for-hidden;
+    }
+}
+
+/// Display the thing: bp lgx
+@mixin for-visible-lgx {
+    @include for-bp-lgx {
+        @include for-visible;
+    }
+}
+
+/// Hide the thing: bp lgx
+@mixin for-hidden-lgx {
+    @include for-bp-lgx {
+        @include for-hidden;
+    }
+}

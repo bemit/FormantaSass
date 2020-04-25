@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@import '../../all';
+
+hr {
+    border-top: 1px solid $for-grayscale-base-p2;
+}
+
+img {
+    width:  100%;
+    height: auto;
+}

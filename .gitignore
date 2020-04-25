@@ -17,3 +17,10 @@ test-reports.zip
 
 # Mac
 .DS_Store\
+
+# Bower
+bower_components
+
+# Cache
+tmp
+!tmp/.gitkeep
