@@ -8,8 +8,7 @@
 node_modules
 
 # Build
-build
-build.zip
+/dist
 
 # Tests test-reports
 test-reports

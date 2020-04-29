@@ -1,0 +1,47 @@
+// TOOLTIPS
+// ==============================
+
+$tooltip-border-radius: 4px !default;
+$tooltip-bg-color: $color-gray-800 !default;
+$tooltip-underline-color: $color-gray-400 !default;
+
+.tooltip {
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px dashed $tooltip-underline-color;
+
+    &:focus,
+    &:hover {
+        cursor: pointer;
+
+        .tooltip-text {
+            display: block;
+        }
+    }
+}
+
+.tooltip-text {
+    display: none;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100px;
+    padding: space(1) space(2);
+    color: $color-white;
+    text-align: center;
+    background: $tooltip-bg-color;
+    border-radius: $tooltip-border-radius;
+    box-shadow: elevation(2);
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 8px;
+        border-style: solid;
+        border-color: $tooltip-bg-color transparent transparent;
+    }
+}

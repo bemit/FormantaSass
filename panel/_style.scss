@@ -1,0 +1,39 @@
+// PANELS
+// =============================
+
+$panel-shadow: true !default;
+$panel-bg-color: $color-white !default;
+
+.panel {
+    background: $panel-bg-color;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 0 space(4) 0;
+
+    @if $panel-shadow {
+        box-shadow: elevation(light);
+    }
+}
+
+.panel-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: space(4);
+}
+
+.panel-title {
+    margin: 0;
+}
+
+.panel-body {
+    margin: space(5) space(4);
+}
+
+.panel-footer {
+    margin: space(4);
+
+    & > * {
+        margin-bottom: 0;
+    }
+}

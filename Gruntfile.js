@@ -14,7 +14,7 @@ module.exports = function(grunt) {
                     sourceMap: true
                 },
                 files: {
-                    'main.css': 'main.scss'
+                    'dist/main.css': 'main.scss'
                 }
             },
             example: {
@@ -31,16 +31,16 @@ module.exports = function(grunt) {
             main: {
                 options: {
                     processors: [
-                        require('pixrem')(), // add fallbacks for rem units
+                        require('pixrem')(), // add fallback for rem units
                         require('autoprefixer')({browsers: 'last 4 versions'})
                     ]
                 },
-                src: 'main.css'
+                src: 'dist/main.css'
             },
             example: {
                 options: {
                     processors: [
-                        require('pixrem')(), // add fallbacks for rem units
+                        require('pixrem')(), // add fallback for rem units
                         require('autoprefixer')({browsers: 'last 4 versions'})
                     ]
                 },
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '',
-                    src: ['main.css'],
+                    src: ['dist/main.css'],
                     dest: '',
                     ext: '.min.css'
                 }]

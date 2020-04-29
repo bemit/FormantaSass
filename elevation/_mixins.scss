@@ -1,0 +1,12 @@
+$elevation-steps: (
+    0: none,
+    1: 0 2px 4px rgba($color-gray-500, 0.5),
+    2: 0 2px 6px rgba($color-gray-600, 0.6),
+    3: 0 3px 6px rgba($color-gray-600, 0.7),
+    4: 0 4px 6px rgba($color-gray-600, 0.7),
+    'light': 0 4px 12px rgba($color-gray-300, 0.6),
+) !default;
+
+@function elevation($number) {
+    @return map-get($elevation-steps, $number);
+}

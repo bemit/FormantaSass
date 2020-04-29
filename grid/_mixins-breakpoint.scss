@@ -1,0 +1,73 @@
+////
+/// Grid: Breakpoint.Mixin
+/// ================
+/// All the grid breakpoint things.
+/// @group Grid:Breakpoint
+/// @author Michael Becker
+////
+
+/// Breakpoint mixin for sm-eXtra
+/// got no  or -down version, as  would be all and -down would be like normal xs, as it is the smallest size
+/// @content will only be displayed when screen smaller or same then $bp-xs
+@mixin bp-xs {
+    @media (max-width : $bp-xsmall) {
+        @content;
+    }
+}
+
+/// Breakpoint mixin for sm and bigger
+/// @content will only be displayed when screen bigger then $bp-small
+@mixin bp-sm {
+    @media (min-width : $bp-small) {
+        @content;
+    }
+}
+
+/// Breakpoint mixin for only sm
+/// @content will only be displayed when screen bigger then $bp-small and smaller then $bp-medium
+@mixin bp-sm-only {
+    @media (min-width : $bp-small) and (max-width : $bp-medium - 1) {
+        @content;
+    }
+}
+
+/// Breakpoint mixin for md and bigger
+/// @content will only be displayed when screen bigger then $bp-small
+@mixin bp-md {
+    @media (min-width : $bp-medium) {
+        @content;
+    }
+}
+
+/// Breakpoint mixin for only md
+/// @content will only be displayed when screen bigger then $bp-small and smaller then $bp-medium
+@mixin bp-md-only {
+    @media (min-width : $bp-medium) and (max-width : $bp-large - 1) {
+        @content;
+    }
+}
+
+/// Breakpoint mixin for lg and bigger
+/// @content will only be displayed when screen bigger then $bp-large
+@mixin bp-lg {
+    @media (min-width : $bp-large) {
+        @content;
+    }
+}
+
+/// Breakpoint mixin for only lg
+/// @content will only be displayed when screen bigger then $bp-large and smaller then $bp-xlarge
+@mixin bp-lg-only {
+    @media (min-width : $bp-large) and (max-width : $bp-xlarge - 1) {
+        @content;
+    }
+}
+
+/// Breakpoint mixin for lg-eXtra
+/// This screen size got no  or -down version, as -down would be all and  would be like normal xlarge, as it is the highest size
+/// @content will only be displayed when screen bigger then $bp-xlarge
+@mixin bp-xl {
+    @media (min-width : $bp-xlarge) {
+        @content;
+    }
+}

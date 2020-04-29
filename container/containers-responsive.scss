@@ -1,0 +1,15 @@
+$container-responsive-sizes: (
+    'small' : 90%,
+    'large' : map-get($container-sizes, 'large'),
+) !default;
+
+.container {
+    &-responsive {
+        @include bp-md {
+            max-width: map-get($container-responsive-sizes, 'small');
+        }
+        @include bp-lg {
+            max-width: map-get($container-responsive-sizes, 'large');
+        }
+    }
+}

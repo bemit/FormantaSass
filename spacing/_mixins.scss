@@ -1,0 +1,62 @@
+////
+/// Spacing
+///
+/// @group Spacing
+/// @author Michael Becker
+////
+
+/// Spacing default
+/// @type Size
+$spacing: 5px !default;
+
+$spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
+
+@function space($size) {
+    @return ($spacing * map-get($spacings-def, $size))
+}
+
+@mixin spacingMaker($short, $property, $suffix: '', $negative: false) {
+    @each $name, $size in $spacings-def {
+        @if $negative {
+            .#{$short}n#{$name}#{$suffix} {
+                #{$property}: space($name) * -1;
+            }
+        } @else {
+            .#{$short}#{$name}#{$suffix} {
+                #{$property}: space($name);
+            }
+        }
+    }
+}
+
+@mixin spacingMakerX($short, $property, $suffix: '', $negative: false) {
+    @each $name, $size in $spacings-def {
+        @if $negative {
+            .#{$short}n#{$name}#{$suffix} {
+                #{$property}-left: space($name) * -1;
+                #{$property}-right: space($name) * -1;
+            }
+        } @else {
+            .#{$short}#{$name}#{$suffix} {
+                #{$property}-left: space($name);
+                #{$property}-right: space($name);
+            }
+        }
+    }
+}
+
+@mixin spacingMakerY($short, $property, $suffix: '', $negative: false) {
+    @each $name, $size in $spacings-def {
+        @if $negative {
+            .#{$short}n#{$name}#{$suffix} {
+                #{$property}-top: space($name) * -1;
+                #{$property}-bottom: space($name) * -1;
+            }
+        } @else {
+            .#{$short}#{$name} {
+                #{$property}-top: space($name);
+                #{$property}-bottom: space($name);
+            }
+        }
+    }
+}

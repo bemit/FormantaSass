@@ -1,89 +1,52 @@
-# FormantaSass: Core
+# FormantaSass
 
-A Sass Library with style output or not, complete themes could be build using only config values.
+A Sass Library with style output or not, optimized for [AMP](https://amp.dev) and with CSS semantics like bootstrap *or* Basscss (either `col-md-6` or `md-col-6`).
 
-It is split into two parts:
+The newest version is inspired and based upon [mustard-ui](https://kylelogue.github.io/mustard-ui) and [Basscss](https://basscss.com/). But everything in Sass with more configurable through Sass variables, which where not in e.g. mustard or done by CSS vars in Basscss, included are mixins for easier reuse without copying Sass.
 
-- [FormantaSass](https://bitbucket.org/bemit_eu/formantasass), containing full sets of reusable components
-- [FormantaSass: Core](https://bitbucket.org/bemit_eu/formantasass-core), this repo, core logic, basic style and utility functions
-- Core is independent, whereas FormantaSass relies on Core
+## Parts
 
-## This part
+These style parts are available:
 
-Mixins, functions and style output for building the structure of a web app.
+### Blockquote
+### Buttons
+### Code
+### Container
+### Elevation
+### Forms
+### Grid
+### Loading
+### Modal / Overlay
+### Panel
+### Spacing
+#### Spacing-Responsive
+### Table
+### Tooltip
+### Typography
 
-### Features
-
-- default output of components could be turned of
-- bp: breakpoint mixins and breakpoint controlled visible tools and more
-- container: bp based centered block
-- grid: dynamic grid and stacking system, on default 24 columns based
-- typography: setting all needed typographic parts, normalize the font in complete
-- doc coverage: inline and generated (simple) source code docu
-- color: basic color functions and variables
-- animation: some animation (dev)
-- everything is mixin and function based, meaning you could use everything that would have been with a default formanta class also everywhere else, write less duplicate code which will differ very soon (in some way, anytime). Worried about the size? As the code blocks are identical, they will easily compressed before they will be transferred. When applying BEM style selectors you could also decrese size and use the mixins efficiently.
-
-## Install
-
-### With Composer
-```
-composer require bemit/formantasass
-composer require bemit/formantasass-core
-```
-
-### Manual Installation
-
-Download or clone both repo's `master` into one folder, it is needed that both projects are in the same folder with their names.
-
-```text
-/vendor/bemit/formantasass
-/vendor/bemit/formantasass-core
-``` 
-or
-```text
-/asset/formantasass
-/asset/formantasass-core
-``` 
-
-Clone:
-
-```bash
-git clone https://bitbucket.org/bemit_eu/formantasass.git ./vendor/bemit/formantasass
-git clone https://bitbucket.org/bemit_eu/formantasass-core.git ./vendor/bemit/formantasass-core
-```
-
-### Download
-
-- FormantaSass
-    - [master zip](https://bitbucket.org/bemit_eu/formantasass/get/master.zip)
-    - [develop zip](https://bitbucket.org/bemit_eu/formantasass/get/develop.zip)
-- FormantaSass-Core
-    - [master zip](https://bitbucket.org/bemit_eu/formantasass-core/get/master.zip)
-    - [develop zip](https://bitbucket.org/bemit_eu/formantasass-core/get/develop.zip)
-    
-## Ready To Use
-
-For example, integrated in [`Flood\Canal`](https://painttheweb.de/flood-canal/setup-and-run-a-project)
+### Base
+#### Align
+#### Border
+#### Flexbox
+#### Hide
+#### Layout
+#### Links
+#### Position
 
 ### Licence
 
-This project is free software distributed under the terms of two licences, the CeCILL-C and the GNU Lesser General Public License. You can use, modify and/ or redistribute the software under the terms of CeCILL-C (v1) for Europe or GNU LGPL (v3) for the rest of the world.
+Formanta: Michael Becker, MIT License, see [LICENCE](LICENSE)
 
-This file and the LICENCE.* files need to be distributed and not changed when distributing.
+Basscss: Copyright (c) 2013 – 2016 Brent Jackson (MIT License)
 
-> For more informations on the licences which are applied read: [LICENCE.md](LICENCE.md)
-
-### Information, Support and Documentation
-
-More informations, contacts and support for FormantaSass could be found under <https://formanta.bemit.eu> the documentation is located at <https://help.formanta.bemit.eu>.
+Mustard-UI: Copyright 2018 Kyle Logue (MIT License)
 
 # Made by
 
-Michael Becker, mb@project.bemit.eu
+[Michael Becker](https://mlbr.xyz)
 
-The Logo was made by friends of Born & Partner <http://werbeagentur-born.de>
+Logo made by Born & Partner
 
 ## Copyright
 
-    2015 - 2018 | Michael Becker, bemit UG (haftungsbeschränkt) - project@we.bemit.eu
+2015 - 2020 | Michael Becker, bemit UG (haftungsbeschränkt) - project@bemit.codes

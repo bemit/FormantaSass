@@ -1,0 +1,62 @@
+////
+/// Spacings Style
+///
+/// @group Spacing
+/// @author Michael Becker
+////
+
+// Margins Auto
+
+.ma {
+    margin: auto;
+}
+
+.mra {
+    margin-right: auto;
+}
+
+.mla {
+    margin-left: auto;
+}
+
+.mta {
+    margin-top: auto;
+}
+
+.mba {
+    margin-bottom: auto;
+}
+
+.mxa {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mya {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@include spacingMaker('m', 'margin');
+@include spacingMakerX('mx', 'margin');
+@include spacingMakerY('my', 'margin');
+@include spacingMaker('mt', 'margin-top');
+@include spacingMaker('mr', 'margin-right');
+@include spacingMaker('mb', 'margin-bottom');
+@include spacingMaker('ml', 'margin-left');
+
+@include spacingMaker('m', 'margin', '', true);
+@include spacingMakerX('mx', 'margin', '', true);
+@include spacingMakerY('my', 'margin', '', true);
+@include spacingMaker('mt', 'margin-top', '', true);
+@include spacingMaker('mr', 'margin-right', '', true);
+@include spacingMaker('mb', 'margin-bottom', '', true);
+@include spacingMaker('ml', 'margin-left', '', true);
+
+@include spacingMaker('p', 'padding');
+@include spacingMakerX('px', 'padding');
+@include spacingMakerY('py', 'padding');
+@include spacingMaker('pt', 'padding-top');
+@include spacingMaker('pr', 'padding-right');
+@include spacingMaker('pb', 'padding-bottom');
+@include spacingMaker('pl', 'padding-left');
