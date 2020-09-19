@@ -1,0 +1,6 @@
+@each $name, $elevation in $elevation-steps {
+    /// for each $elevation-steps
+    .ev#{$name} {
+        box-shadow: $elevation;
+    }
+}

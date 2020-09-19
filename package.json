@@ -1,44 +1,44 @@
 {
-  "name": "@formanta/sass-core",
-  "version": "1.9.10",
-  "description": "the individualist Sass Framework - structure, color and typography part",
-  "homepage": "https://formanta.bemit.codes",
-  "authors": [
-    {
-      "name": "Michael Becker",
-      "email": "michael@bemit.codes",
-      "homepage": "https://mlbr.xyz",
-      "role": "Developer"
+    "name": "@formanta/sass",
+    "version": "0.20.0",
+    "description": "Mini CSS Framework with modular Sass files, AMP compatible",
+    "homepage": "https://formanta.bemit.codes",
+    "authors": [
+        {
+            "name": "Michael Becker",
+            "email": "michael@bemit.codes",
+            "homepage": "https://mlbr.xyz",
+            "role": "Developer"
+        },
+        {
+            "name": "bemit UG (haftungsbeschränkt)",
+            "email": "project@bemit.codes",
+            "homepage": "https://bemit.eu",
+            "role": "Sponsor"
+        }
+    ],
+    "keywords": [
+        "atomic css",
+        "functional css",
+        "css",
+        "framework",
+        "oocss",
+        "basscss",
+        "frontend",
+        "css-library",
+        "ux",
+        "ui"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "build": "sassdoc **/*.scss --dest ./build --theme ../formantasass-doctheme"
     },
-    {
-      "name": "bemit UG (haftungsbeschränkt)",
-      "email": "project@we.bemit.eu",
-      "homepage": "https://bemit.eu",
-      "role": "Sponsor"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bemit/FormantaSass.git"
+    },
+    "devDependencies": {
+        "@formanta/sass-doctheme": "^0.1.2",
+        "sassdoc": "^2.7.3"
     }
-  ],
-  "license": "(LGPL-3.0 OR CECILL-C)",
-  "support": {
-    "docs": "https://help.formanta.bemit.codes"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://bitbucket.org/bemit_eu/formantasass-core.git"
-  },
-  "scripts": {
-    "build": "grunt build"
-  },
-  "devDependencies": {
-    "@formanta/sass-doctheme": "^0.1.1",
-    "autoprefixer": "^9.4.3",
-    "grunt": "^1.0.3",
-    "grunt-concurrent": "^2.3.1",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^2.0.0",
-    "grunt-sassdoc": "^2.0.2",
-    "load-grunt-tasks": "^3.5.2",
-    "pixrem": "^3.0.2",
-    "time-grunt": "^1.4.0"
-  }
 }

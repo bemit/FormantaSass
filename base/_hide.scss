@@ -1,0 +1,67 @@
+
+///
+.hide, .sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+///
+$class-hide-xs: hide-xs !default;
+///
+$class-hide-sm: hide-sm !default;
+///
+$class-hide-md: hide-md !default;
+///
+$class-hide-lg: hide-lg !default;
+///
+$class-hide-xl: hide-xl !default;
+@if $class-style == basscss {
+    $class-hide-xs: xs-hide !default;
+    $class-hide-sm: sm-hide !default;
+    $class-hide-md: md-hide !default;
+    $class-hide-lg: lg-hide !default;
+    $class-hide-xl: xl-hide !default;
+}
+
+@include bp-xs {
+    /// for bp-xs
+    .#{$class-hide-xs} {
+        display: none
+    }
+}
+
+@include bp-sm {
+    /// for bp-sm
+    .#{$class-hide-sm} {
+        display: none
+    }
+}
+
+@include bp-md {
+    /// for bp-md
+    .#{$class-hide-md} {
+        display: none
+    }
+}
+
+@include bp-lg {
+    /// for bp-lg
+    .#{$class-hide-lg} {
+        display: none
+    }
+}
+
+@include bp-xl {
+    /// for bp-xl
+    .#{$class-hide-xl} {
+        display: none
+    }
+}
+
+///
+.display-none {
+    display: none
+}

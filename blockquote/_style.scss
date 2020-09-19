@@ -1,0 +1,28 @@
+// BLOCKQUOTES
+// ==============================
+
+///
+$blockquote-bg-color: $color-white !default;
+///
+$blockquote-border-color: $brand-color !default;
+
+///
+blockquote {
+    display: block;
+    margin: 0 space(3);
+    padding: 0 space(4);
+    border-left: 4px solid $blockquote-border-color;
+    background: $blockquote-bg-color;
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+///
+.blockquote-author {
+    margin: 0 space(3);
+    padding: 0 space(4) 0 space(2);
+    border-left: 4px solid $blockquote-border-color;
+    font-size: 0.875em;
+}

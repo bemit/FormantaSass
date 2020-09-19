@@ -1,0 +1,43 @@
+// TABLES
+// ==============================
+
+///
+$table-border-color: $color-gray-200 !default;
+///
+$table-bg-cell: $color-gray-200 !default;
+
+///
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+
+
+    tr {
+        border-bottom: 1px solid $table-border-color;
+        text-align: left;
+    }
+
+    thead {
+        th {
+            padding: space(1) space(2);
+        }
+    }
+
+    tbody {
+        td {
+            padding: space(1) space(2);
+        }
+    }
+}
+
+///
+table.fullwidth {
+    width: 100%;
+}
+
+///
+table.striped {
+    tbody tr:nth-child(2n+1) {
+        background: $table-bg-cell
+    }
+}

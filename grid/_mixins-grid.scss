@@ -1,0 +1,80 @@
+////
+/// Grid: Mixin
+/// ================
+/// All the grid things.
+/// @group Grid
+/// @author Michael Becker
+////
+
+//
+// Clear
+//
+
+/// Gives float parents its size
+/// @example Include this mixin on a container if all children are floated, gives the container a proper size.
+/// @output :before and :after tricks with display: table on before and after and clear: both only on :after
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+
+/// Easy column size calculator for whatever size the grid wanted is based on
+/// @example "1,5" (1 out of 5) gives the size (20)[%] for a column in a 5er grid system, even the default grid system doesn't allow the use of 5 cols per row, this would be a 4.8 column "4.8 out of 24" with default $col-qty: 24
+/// @example "1" (1 out of default) gives the size (4,166)[%] for a column in a 24er grid system with default $col-qty: 24
+/// @param {Int} $number - id of the column calculated
+/// @param {Int} $col-qty [$col-qty] - max. columns used, overwrites the standard column qty grid
+@function col($number, $col-qty: $col-qty) {
+    @return (100% / $col-qty) * $number;
+}
+
+
+/// Generates size for a column
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$col-qty] - max. columns used
+@mixin col($number, $col-qty: $col-qty) {
+    width: col($number, $col-qty);
+}
+
+/// Generates a column for breakpoint size sm and bigger
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$col-qty] - max. columns used
+@mixin col-sm($number, $col-qty: $col-qty) {
+    @include bp-sm {
+        @include col($number, $col-qty);
+    }
+}
+
+/// Generates a column for breakpoint size md
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$col-qty] - max. columns used
+@mixin col-md($number, $col-qty: $col-qty) {
+    @include bp-md {
+        @include col($number, $col-qty);
+    }
+}
+
+/// Generates a column for breakpoint size lg
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$col-qty] - max. columns used
+@mixin col-lg($number, $col-qty: $col-qty) {
+    @include bp-lg {
+        @include col($number, $col-qty);
+    }
+}
+
+/// Generates a column for breakpoint size xlarge
+/// @param {Int} $number - id of the column you want
+/// @param {Int} $col-qty [$col-qty] - max. columns used
+@mixin col-xlarge($number, $col-qty: $col-qty) {
+    @include bp-xl {
+        @include col($number, $col-qty);
+    }
+}

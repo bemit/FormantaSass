@@ -1,0 +1,28 @@
+// CONTAINERS
+// ==============================
+
+///
+$container-sizes: (
+    'small' : $bp-small,
+    'medium' : $bp-medium,
+    'large' : $bp-large,
+    'xlarge' : $bp-xlarge,
+) !default;
+
+@each $name, $size in $container-sizes {
+    ///
+    .container-#{$name} {
+        max-width: $size;
+    }
+}
+
+///
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+///
+.container-fixed {
+    width: 100%;
+}

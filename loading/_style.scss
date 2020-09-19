@@ -1,0 +1,60 @@
+////
+/// dual-ring loading animation
+/// @group Loading
+/// @author https://github.com/loadingio/css-spinner/
+/// @license CC-0
+////
+
+///
+$loading-ring-width: 6px;
+///
+$loading-size: 80px;
+///
+$loading-ring-width-dense: 3px;
+///
+$loading-size-dense: 30px;
+///
+$loading-color: $color-gray-600;
+
+
+///
+.loading {
+    display: block;
+    width: $loading-size;
+    height: $loading-size;
+
+    &:after {
+        content: " ";
+        display: block;
+        width: $loading-size - $loading-ring-width - 2;
+        height: $loading-size - $loading-ring-width - 2;
+        margin: $loading-ring-width + 2;
+        border-radius: 50%;
+        border: $loading-ring-width solid $loading-color;
+        border-color: $loading-color transparent $loading-color transparent;
+        animation: loading 1.2s linear infinite;
+    }
+}
+
+///
+.loading.dense {
+    width: $loading-size-dense;
+    height: $loading-size-dense;
+
+    &:after {
+        width: $loading-size-dense - $loading-ring-width-dense - 2;
+        height: $loading-size-dense - $loading-ring-width-dense - 2;
+        margin: $loading-ring-width-dense + 2;
+        border-width: $loading-ring-width-dense;
+    }
+}
+
+///
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

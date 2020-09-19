@@ -1,0 +1,31 @@
+// CODE
+// ==============================
+
+///
+$code-bg-color: $color-gray-100 !default;
+///
+$code-border-color: $brand-color !default;
+///
+$code-font-color: $color-gray-900 !default;
+
+///
+pre {
+    display: block;
+    padding: space(1) space(2);
+    border-left: 4px solid $code-border-color;
+    background: $code-bg-color;
+    font-family: $font-family-mono;
+    color: $code-font-color;
+    white-space: normal;
+    overflow-x: auto;
+}
+
+///
+code {
+    font-size: 0.9em;
+    background: $code-bg-color;
+    color: $code-font-color;
+    font-family: $font-family-mono;
+    white-space: pre;
+    padding: space(1)
+}
