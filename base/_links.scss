@@ -1,9 +1,11 @@
 // LINKS
 // ==============================
 
+///
 $link-color: $brand-color !default;
 
-a:not(.no-link):not($button-selector) {
+///
+a {
     text-decoration: none;
     color: $link-color;
     font-weight: 400;
@@ -16,5 +18,29 @@ a:not(.no-link):not($button-selector) {
 
     &:active {
         opacity: 1;
+    }
+}
+
+///
+a.no-link {
+    color: (internal value);
+    text-decoration: underline;
+    cursor: auto;
+
+    ///
+    &:visited {
+        color: (internal value);
+        text-decoration: underline;
+        cursor: auto;
+    }
+
+    ///
+    &:link:active {
+        color: (internal value);
+    }
+
+    ///
+    &:visited:active {
+        color: (internal value);
     }
 }

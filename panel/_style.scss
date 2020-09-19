@@ -1,9 +1,12 @@
 // PANELS
 // =============================
 
+///
 $panel-shadow: true !default;
+///
 $panel-bg-color: $color-white !default;
 
+///
 .panel {
     background: $panel-bg-color;
     border-radius: 5px;
@@ -15,6 +18,7 @@ $panel-bg-color: $color-white !default;
     }
 }
 
+///
 .panel-head {
     display: flex;
     align-items: center;
@@ -22,14 +26,17 @@ $panel-bg-color: $color-white !default;
     margin: space(4);
 }
 
+///
 .panel-title {
     margin: 0;
 }
 
+///
 .panel-body {
     margin: space(5) space(4);
 }
 
+///
 .panel-footer {
     margin: space(4);
 

@@ -1,16 +1,16 @@
 // TABLES
 // ==============================
 
+///
 $table-border-color: $color-gray-200 !default;
+///
 $table-bg-cell: $color-gray-200 !default;
 
+///
 table {
     border-spacing: 0;
     border-collapse: collapse;
 
-    &.fullwidth {
-        width: 100%;
-    }
 
     tr {
         border-bottom: 1px solid $table-border-color;
@@ -28,10 +28,16 @@ table {
             padding: space(1) space(2);
         }
     }
+}
 
-    &.striped {
-        tbody tr:nth-child(2n+1) {
-            background: $table-bg-cell
-        }
+///
+table.fullwidth {
+    width: 100%;
+}
+
+///
+table.striped {
+    tbody tr:nth-child(2n+1) {
+        background: $table-bg-cell
     }
 }

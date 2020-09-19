@@ -1,24 +1,30 @@
 ////
-/// Grid: Stzle
+/// Grid: Style
 /// ================
 /// All the grid styles.
 /// @group Grid
 /// @author Michael Becker
 ////
 
+///
 .col {
     float: left;
     box-sizing: border-box;
 }
 
+///
 .col-right {
     float: right;
     box-sizing: border-box;
 }
 
+///
 $class-col-sm: col-sm !default;
+///
 $class-col-md: col-md !default;
+///
 $class-col-lg: col-lg !default;
+///
 $class-col-xl: col-xl !default;
 @if $class-style == basscss {
     $class-col-sm: sm-col !default;
@@ -30,6 +36,7 @@ $class-col-xl: col-xl !default;
 //
 // xs
 @for $i from 1 through $col-qty {
+    ///
     .col-#{$i} {
         @include col($i);
     }
@@ -75,11 +82,13 @@ $class-col-xl: col-xl !default;
     }
 }
 
-/// offset
-
+///
 $class-offset-sm: offset-sm !default;
+///
 $class-offset-md: offset-md !default;
+///
 $class-offset-lg: offset-lg !default;
+///
 $class-offset-xl: offset-xl !default;
 @if $class-style == basscss {
     $class-offset-sm: sm-offset !default;

@@ -1,7 +1,7 @@
 {
     "name": "@formanta/sass",
-    "version": "0.11.0",
-    "description": "the individualist Sass Framework",
+    "version": "0.20.0",
+    "description": "Mini CSS Framework with modular Sass files, AMP compatible",
     "homepage": "https://formanta.bemit.codes",
     "authors": [
         {
@@ -12,29 +12,33 @@
         },
         {
             "name": "bemit UG (haftungsbeschränkt)",
-            "email": "project@we.bemit.eu",
+            "email": "project@bemit.codes",
             "homepage": "https://bemit.eu",
             "role": "Sponsor"
         }
     ],
+    "keywords": [
+        "atomic css",
+        "functional css",
+        "css",
+        "framework",
+        "oocss",
+        "basscss",
+        "frontend",
+        "css-library",
+        "ux",
+        "ui"
+    ],
     "license": "MIT",
-    "support": {
-        "docs": "https://help.formanta.bemit.codes"
-    },
     "scripts": {
-        "build": "grunt build"
+        "build": "sassdoc **/*.scss --dest ./build --theme ../formantasass-doctheme"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bemit/FormantaSass.git"
     },
     "devDependencies": {
-        "@formanta/sass-doctheme": "^0.1.1",
-        "autoprefixer": "^9.7.6",
-        "grunt": "^1.1.0",
-        "grunt-concurrent": "^3.0.0",
-        "grunt-contrib-cssmin": "^3.0.0",
-        "grunt-postcss": "^0.9.0",
-        "grunt-sass": "^3.1.0",
-        "grunt-sassdoc": "^2.0.3",
-        "load-grunt-tasks": "^5.1.0",
-        "pixrem": "^5.0.0",
-        "time-grunt": "^2.0.0"
+        "@formanta/sass-doctheme": "^0.1.2",
+        "sassdoc": "^2.7.3"
     }
 }

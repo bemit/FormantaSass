@@ -9,12 +9,15 @@
 /// @type Size
 $spacing: 5px !default;
 
+///
 $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 
+///
 @function space($size) {
     @return ($spacing * map-get($spacings-def, $size))
 }
 
+///
 @mixin spacingMaker($short, $property, $suffix: '', $negative: false) {
     @each $name, $size in $spacings-def {
         @if $negative {
@@ -29,6 +32,7 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
     }
 }
 
+///
 @mixin spacingMakerX($short, $property, $suffix: '', $negative: false) {
     @each $name, $size in $spacings-def {
         @if $negative {
@@ -45,6 +49,7 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
     }
 }
 
+///
 @mixin spacingMakerY($short, $property, $suffix: '', $negative: false) {
     @each $name, $size in $spacings-def {
         @if $negative {

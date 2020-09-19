@@ -1,9 +1,12 @@
 // BLOCKQUOTES
 // ==============================
 
+///
 $blockquote-bg-color: $color-white !default;
+///
 $blockquote-border-color: $brand-color !default;
 
+///
 blockquote {
     display: block;
     margin: 0 space(3);
@@ -16,6 +19,7 @@ blockquote {
     }
 }
 
+///
 .blockquote-author {
     margin: 0 space(3);
     padding: 0 space(4) 0 space(2);
