@@ -40,5 +40,8 @@
     "devDependencies": {
         "@formanta/sass-doctheme": "~0.1.2",
         "sassdoc": "^2.7.3"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
