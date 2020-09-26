@@ -1,6 +1,6 @@
 {
     "name": "@formanta/sass",
-    "version": "0.20.1",
+    "version": "0.20.2",
     "description": "Mini CSS Framework with modular Sass files, AMP compatible",
     "homepage": "https://formanta.bemit.codes",
     "authors": [
@@ -26,12 +26,13 @@
         "basscss",
         "frontend",
         "css-library",
+        "amp",
         "ux",
         "ui"
     ],
     "license": "MIT",
     "scripts": {
-        "build": "sassdoc **/*.scss --dest ./build --theme ../formantasass-doctheme"
+        "build": "sassdoc **/*.scss -c sassdoc.json --dest ./build --theme ../formantasass-doctheme"
     },
     "repository": {
         "type": "git",

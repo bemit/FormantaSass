@@ -17,6 +17,8 @@ From Version `>0.20.0` onwards this library is inspired and based upon [mustard-
 
 **Take a look & inspect the [example page](https://formanta.bemit.codes)** for all selectors and styles. For implementation details check the [documentation](https://formanta.bemit.codes/docs/) of Sass and CSS.
 
+Looking for an easy [static site generator for AMP](https://github.com/bemit/create-amp-page)?
+
 ## Quick Start
 
 Install package: `npm i --save-dev @formanta/sass`

@@ -1,11 +1,18 @@
-// MODALS
-// ==============================
+////
+/// @group Component:Modal
+/// @author Mustard-UI@v1, Michael Becker
+////
 
+///
 $modal-border-radius: 4px !default;
+///
 $modal-shadow: true !default;
+///
 $modal-mask-color: rgba(20, 20, 20, 0.5) !default;
+///
 $modal-bg-color: $color-white !default;
 
+///
 .modal-mask {
     position: fixed;
     top: 0;
@@ -16,6 +23,7 @@ $modal-bg-color: $color-white !default;
     background-color: $modal-mask-color;
 }
 
+///
 .modal {
     display: flex;
     flex-direction: column;
@@ -34,6 +42,7 @@ $modal-bg-color: $color-white !default;
     }
 }
 
+///
 .modal-head {
     padding: space(2);
 
@@ -42,11 +51,13 @@ $modal-bg-color: $color-white !default;
     }
 }
 
+///
 .modal-body {
     flex: 1;
     padding: space(4) space(2);
 }
 
+///
 .modal-footer {
     padding: space(2);
 

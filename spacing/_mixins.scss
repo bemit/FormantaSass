@@ -19,6 +19,8 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 
 ///
 @mixin spacingMaker($short, $property, $suffix: '', $negative: false) {
+    // todo: negative can be skipped for `0` value
+    // todo: add also `bootstrap` or `basscss` naming style switch
     @each $name, $size in $spacings-def {
         @if $negative {
             .#{$short}n#{$name}#{$suffix} {
@@ -34,6 +36,8 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 
 ///
 @mixin spacingMakerX($short, $property, $suffix: '', $negative: false) {
+    // todo: negative can be skipped for `0` value
+    // todo: add also `bootstrap` or `basscss` naming style switch
     @each $name, $size in $spacings-def {
         @if $negative {
             .#{$short}n#{$name}#{$suffix} {
@@ -51,6 +55,8 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 
 ///
 @mixin spacingMakerY($short, $property, $suffix: '', $negative: false) {
+    // todo: negative can be skipped for `0` value
+    // todo: add also `bootstrap` or `basscss` naming style switch
     @each $name, $size in $spacings-def {
         @if $negative {
             .#{$short}n#{$name}#{$suffix} {
@@ -63,5 +69,233 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
                 #{$property}-bottom: space($name);
             }
         }
+    }
+}
+
+/// Responsive Spacings for breakpoint sm;
+/// margin and paddings, with numerics like configured for `$spacings-def`
+/// @example
+/// // margins:
+/// `.m0-sm`, `m05-sm`, `m1-sm` etc. for all-spacings
+/// `.mx0-sm` for horizontal spacings
+/// `.my0-sm` for vertical spacings
+/// `.mt0-sm` for top spacings
+/// `.mr0-sm` for right spacings
+/// `.mb0-sm` for bottom spacings
+/// `.ml0-sm` for left spacings
+///
+/// // margins negative:
+/// `.mn0-sm`, `mn05-sm`, `mn1-sm` etc. for all-spacings
+/// `.mxn0-sm` for horizontal spacings
+/// `.myn0-sm` for vertical spacings
+/// `.mtn0-sm` for top spacings
+/// `.mrn0-sm` for right spacings
+/// `.mbn0-sm` for bottom spacings
+/// `.mln0-sm` for left spacings
+///
+/// // padding:
+/// `.p0-sm`, `m05-sm`, `m1-sm` etc. for all-spacings
+/// `.px0-sm` for horizontal spacings
+/// `.py0-sm` for vertical spacings
+/// `.pt0-sm` for top spacings
+/// `.pr0-sm` for right spacings
+/// `.pb0-sm` for bottom spacings
+/// `.pl0-sm` for left spacings
+@mixin spacing-sm {
+    @include bp-sm {
+        @include spacingMaker('m', 'margin', '-sm');
+        @include spacingMakerX('mx', 'margin', '-sm');
+        @include spacingMakerY('my', 'margin', '-sm');
+        @include spacingMaker('mt', 'margin-top', '-sm');
+        @include spacingMaker('mr', 'margin-right', '-sm');
+        @include spacingMaker('mb', 'margin-bottom', '-sm');
+        @include spacingMaker('ml', 'margin-left', '-sm');
+
+        @include spacingMaker('m', 'margin', '-sm', true);
+        @include spacingMakerX('mx', 'margin', '-sm', true);
+        @include spacingMakerY('my', 'margin', '-sm', true);
+        @include spacingMaker('mt', 'margin-top', '-sm', true);
+        @include spacingMaker('mr', 'margin-right', '-sm', true);
+        @include spacingMaker('mb', 'margin-bottom', '-sm', true);
+        @include spacingMaker('ml', 'margin-left', '-sm', true);
+
+        @include spacingMaker('p', 'padding', '-sm');
+        @include spacingMakerX('px', 'padding', '-sm');
+        @include spacingMakerY('py', 'padding', '-sm');
+        @include spacingMaker('pt', 'padding-top', '-sm');
+        @include spacingMaker('pr', 'padding-right', '-sm');
+        @include spacingMaker('pb', 'padding-bottom', '-sm');
+        @include spacingMaker('pl', 'padding-left', '-sm');
+    }
+}
+
+/// Responsive Spacings for breakpoint md;
+/// margin and paddings, with numerics like configured for `$spacings-def`
+/// @example
+/// // margins:
+/// `.m0-md`, `m05-md`, `m1-md` etc. for all-spacings
+/// `.mx0-md` for horizontal spacings
+/// `.my0-md` for vertical spacings
+/// `.mt0-md` for top spacings
+/// `.mr0-md` for right spacings
+/// `.mb0-md` for bottom spacings
+/// `.ml0-md` for left spacings
+///
+/// // margins negative:
+/// `.mn0-md`, `mn05-md`, `mn1-md` etc. for all-spacings
+/// `.mxn0-md` for horizontal spacings
+/// `.myn0-md` for vertical spacings
+/// `.mtn0-md` for top spacings
+/// `.mrn0-md` for right spacings
+/// `.mbn0-md` for bottom spacings
+/// `.mln0-md` for left spacings
+///
+/// // padding:
+/// `.p0-md`, `m05-md`, `m1-md` etc. for all-spacings
+/// `.px0-md` for horizontal spacings
+/// `.py0-md` for vertical spacings
+/// `.pt0-md` for top spacings
+/// `.pr0-md` for right spacings
+/// `.pb0-md` for bottom spacings
+/// `.pl0-md` for left spacings
+@mixin spacing-md {
+    @include bp-md {
+        @include spacingMaker('m', 'margin', '-md');
+        @include spacingMakerX('mx', 'margin', '-md');
+        @include spacingMakerY('my', 'margin', '-md');
+        @include spacingMaker('mt', 'margin-top', '-md');
+        @include spacingMaker('mr', 'margin-right', '-md');
+        @include spacingMaker('mb', 'margin-bottom', '-md');
+        @include spacingMaker('ml', 'margin-left', '-md');
+
+        @include spacingMaker('m', 'margin', '-md', true);
+        @include spacingMakerX('mx', 'margin', '-md', true);
+        @include spacingMakerY('my', 'margin', '-md', true);
+        @include spacingMaker('mt', 'margin-top', '-md', true);
+        @include spacingMaker('mr', 'margin-right', '-md', true);
+        @include spacingMaker('mb', 'margin-bottom', '-md', true);
+        @include spacingMaker('ml', 'margin-left', '-md', true);
+
+        @include spacingMaker('p', 'padding', '-md');
+        @include spacingMakerX('px', 'padding', '-md');
+        @include spacingMakerY('py', 'padding', '-md');
+        @include spacingMaker('pt', 'padding-top', '-md');
+        @include spacingMaker('pr', 'padding-right', '-md');
+        @include spacingMaker('pb', 'padding-bottom', '-md');
+        @include spacingMaker('pl', 'padding-left', '-md');
+    }
+}
+
+/// Responsive Spacings for breakpoint lg;
+/// margin and paddings, with numerics like configured for `$spacings-def`
+/// @example
+/// // margins:
+/// `.m0-lg`, `m05-lg`, `m1-lg` etc. for all-spacings
+/// `.mx0-lg` for horizontal spacings
+/// `.my0-lg` for vertical spacings
+/// `.mt0-lg` for top spacings
+/// `.mr0-lg` for right spacings
+/// `.mb0-lg` for bottom spacings
+/// `.ml0-lg` for left spacings
+///
+/// // margins negative:
+/// `.mn0-lg`, `mn05-lg`, `mn1-lg` etc. for all-spacings
+/// `.mxn0-lg` for horizontal spacings
+/// `.myn0-lg` for vertical spacings
+/// `.mtn0-lg` for top spacings
+/// `.mrn0-lg` for right spacings
+/// `.mbn0-lg` for bottom spacings
+/// `.mln0-lg` for left spacings
+///
+/// // padding:
+/// `.p0-lg`, `m05-lg`, `m1-lg` etc. for all-spacings
+/// `.px0-lg` for horizontal spacings
+/// `.py0-lg` for vertical spacings
+/// `.pt0-lg` for top spacings
+/// `.pr0-lg` for right spacings
+/// `.pb0-lg` for bottom spacings
+/// `.pl0-lg` for left spacings
+@mixin spacing-lg {
+    @include bp-lg {
+        @include spacingMaker('m', 'margin', '-lg');
+        @include spacingMakerX('mx', 'margin', '-lg');
+        @include spacingMakerY('my', 'margin', '-lg');
+        @include spacingMaker('mt', 'margin-top', '-lg');
+        @include spacingMaker('mr', 'margin-right', '-lg');
+        @include spacingMaker('mb', 'margin-bottom', '-lg');
+        @include spacingMaker('ml', 'margin-left', '-lg');
+
+        @include spacingMaker('m', 'margin', '-lg', true);
+        @include spacingMakerX('mx', 'margin', '-lg', true);
+        @include spacingMakerY('my', 'margin', '-lg', true);
+        @include spacingMaker('mt', 'margin-top', '-lg', true);
+        @include spacingMaker('mr', 'margin-right', '-lg', true);
+        @include spacingMaker('mb', 'margin-bottom', '-lg', true);
+        @include spacingMaker('ml', 'margin-left', '-lg', true);
+
+        @include spacingMaker('p', 'padding', '-lg');
+        @include spacingMakerX('px', 'padding', '-lg');
+        @include spacingMakerY('py', 'padding', '-lg');
+        @include spacingMaker('pt', 'padding-top', '-lg');
+        @include spacingMaker('pr', 'padding-right', '-lg');
+        @include spacingMaker('pb', 'padding-bottom', '-lg');
+        @include spacingMaker('pl', 'padding-left', '-lg');
+    }
+}
+
+/// Responsive Spacings for breakpoint xl;
+/// margin and paddings, with numerics like configured for `$spacings-def`
+/// @example
+/// // margins:
+/// `.m0-xl`, `m05-xl`, `m1-xl` etc. for all-spacings
+/// `.mx0-xl` for horizontal spacings
+/// `.my0-xl` for vertical spacings
+/// `.mt0-xl` for top spacings
+/// `.mr0-xl` for right spacings
+/// `.mb0-xl` for bottom spacings
+/// `.ml0-xl` for left spacings
+///
+/// // margins negative:
+/// `.mn0-xl`, `mn05-xl`, `mn1-xl` etc. for all-spacings
+/// `.mxn0-xl` for horizontal spacings
+/// `.myn0-xl` for vertical spacings
+/// `.mtn0-xl` for top spacings
+/// `.mrn0-xl` for right spacings
+/// `.mbn0-xl` for bottom spacings
+/// `.mln0-xl` for left spacings
+///
+/// // padding:
+/// `.p0-xl`, `m05-xl`, `m1-xl` etc. for all-spacings
+/// `.px0-xl` for horizontal spacings
+/// `.py0-xl` for vertical spacings
+/// `.pt0-xl` for top spacings
+/// `.pr0-xl` for right spacings
+/// `.pb0-xl` for bottom spacings
+/// `.pl0-xl` for left spacings
+@mixin spacing-xl {
+    @include bp-xl {
+        @include spacingMaker('m', 'margin', '-xl');
+        @include spacingMakerX('mx', 'margin', '-xl');
+        @include spacingMakerY('my', 'margin', '-xl');
+        @include spacingMaker('mt', 'margin-top', '-xl');
+        @include spacingMaker('mr', 'margin-right', '-xl');
+        @include spacingMaker('mb', 'margin-bottom', '-xl');
+        @include spacingMaker('ml', 'margin-left', '-xl');
+
+        @include spacingMaker('m', 'margin', '-xl', true);
+        @include spacingMakerX('mx', 'margin', '-xl', true);
+        @include spacingMakerY('my', 'margin', '-xl', true);
+        @include spacingMaker('mt', 'margin-top', '-xl', true);
+        @include spacingMaker('mr', 'margin-right', '-xl', true);
+        @include spacingMaker('mb', 'margin-bottom', '-xl', true);
+        @include spacingMaker('ml', 'margin-left', '-xl', true);
+
+        @include spacingMaker('p', 'padding', '-xl');
+        @include spacingMakerX('px', 'padding', '-xl');
+        @include spacingMakerY('py', 'padding', '-xl');
+        @include spacingMaker('pt', 'padding-top', '-xl');
+        @include spacingMaker('pr', 'padding-right', '-xl');
+        @include spacingMaker('pb', 'padding-bottom', '-xl');
+        @include spacingMaker('pl', 'padding-left', '-xl');
     }
 }
