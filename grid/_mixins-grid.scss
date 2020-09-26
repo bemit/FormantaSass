@@ -73,7 +73,7 @@
 /// Generates a column for breakpoint size xlarge
 /// @param {Int} $number - id of the column you want
 /// @param {Int} $col-qty [$col-qty] - max. columns used
-@mixin col-xlarge($number, $col-qty: $col-qty) {
+@mixin col-xl($number, $col-qty: $col-qty) {
     @include bp-xl {
         @include col($number, $col-qty);
     }

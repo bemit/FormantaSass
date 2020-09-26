@@ -5,6 +5,7 @@
 <h1 align="center">FormantaSass</h1>
 
 [![npm (scoped)](https://img.shields.io/npm/v/@formanta/sass?style=flat-square)](https://www.npmjs.com/package/@formanta/sass)
+[![Travis (.com) master build](https://img.shields.io/travis/com/bemit/Formanta/master?style=flat-square)](https://travis-ci.com/bemit/Formanta)
 
 Sass library optimized for [AMP](https://amp.dev), size: `44KB` *(gzip `8KB`)* - or **only `27KB`** without responsive spacings!
 
@@ -15,6 +16,8 @@ CSS semantics like bootstrap *or* Basscss (e.g. `col-md-6` or `md-col-6`). Used 
 From Version `>0.20.0` onwards this library is inspired and based upon [mustard-ui](https://kylelogue.github.io/mustard-ui) and [Basscss](https://basscss.com/). But written in Sass, with more configuration options through Sass variables, which where not existing in mustard or done by CSS vars in Basscss. Sass mixins are included for easier reuse without copying Sass/CSS.
 
 **Take a look & inspect the [example page](https://formanta.bemit.codes)** for all selectors and styles. For implementation details check the [documentation](https://formanta.bemit.codes/docs/) of Sass and CSS.
+
+Looking for an easy [static site generator for AMP](https://github.com/bemit/create-amp-page)?
 
 ## Quick Start
 
@@ -170,6 +173,8 @@ Styling for these components are available:
 For updates see [github release notes](https://github.com/bemit/FormantaSass/releases).
 
 This project is **in beta**.
+
+This package is managed [in a monorepo](https://github.com/bemit/Formanta).
 
 ## License
 

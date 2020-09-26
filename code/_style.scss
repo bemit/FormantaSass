@@ -1,5 +1,7 @@
-// CODE
-// ==============================
+////
+/// @group Code
+/// @author Michael Becker
+////
 
 ///
 $code-bg-color: $color-gray-100 !default;
@@ -28,4 +30,9 @@ code {
     font-family: $font-family-mono;
     white-space: pre;
     padding: space(1)
+}
+
+///
+pre > code {
+    padding: 0;
 }

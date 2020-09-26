@@ -1,3 +1,8 @@
+////
+/// @group Elevation
+/// @author Michael Becker
+////
+
 @each $name, $elevation in $elevation-steps {
     /// for each $elevation-steps
     .ev#{$name} {

@@ -1,0 +1,30 @@
+{
+    "groups": {
+        "undefined": "General",
+        "base:align": "Base Align",
+        "base:border": "Base Border",
+        "base:flexbox": "Base Flexbox",
+        "base:hide": "Base Hide",
+        "base:layout": "Base Layout",
+        "base:links": "Base Links",
+        "base:position": "Base Position",
+        "blockquote": "Blockquote",
+        "buttons": "Buttons",
+        "code": "Code / Pre",
+        "component:modal": "Component Modal",
+        "component:panel": "Component Panel",
+        "component:tooltip": "Component Tooltip",
+        "component:loading": "Component Loading",
+        "container": "Container",
+        "elevation": "Elevation",
+        "form": "Form",
+        "grid": "Grid",
+        "grid:breakpoint": "Grid Breakpoints (bp)",
+        "loading": "Loading",
+        "spacing": "Spacing",
+        "table": "Table",
+        "typography": "Typography",
+        "vars:colors": "Variables: Colors",
+        "vars:grid": "Variables: Grid"
+    }
+}

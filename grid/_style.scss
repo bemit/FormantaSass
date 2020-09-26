@@ -6,13 +6,13 @@
 /// @author Michael Becker
 ////
 
-///
+/// col position left - only when not using flexbox
 .col {
     float: left;
     box-sizing: border-box;
 }
 
-///
+/// col position right - only when not using flexbox
 .col-right {
     float: right;
     box-sizing: border-box;
@@ -33,49 +33,43 @@ $class-col-xl: col-xl !default;
     $class-col-xl: xl-col !default;
 }
 
-//
-// xs
 @for $i from 1 through $col-qty {
-    ///
+    /// columns
     .col-#{$i} {
         @include col($i);
     }
 }
 
-//
-// SM
 @include bp-sm {
     @for $i from 1 through $col-qty {
+        /// col for breakpoint sm
         .#{$class-col-sm}-#{$i} {
             @include col($i);
         }
     }
 }
 
-//
-// MD
 @include bp-md {
     @for $i from 1 through $col-qty {
+        /// col for breakpoint md
         .#{$class-col-md}-#{$i} {
             @include col($i);
         }
     }
 }
 
-//
-// LG
 @include bp-lg {
     @for $i from 1 through $col-qty {
+        /// col for breakpoint lg
         .#{$class-col-lg}-#{$i} {
             @include col($i);
         }
     }
 }
 
-//
-// xlarge
 @include bp-xl {
     @for $i from 1 through $col-qty {
+        /// col for breakpoint xlarge
         .#{$class-col-xl}-#{$i} {
             @include col($i);
         }
@@ -97,50 +91,84 @@ $class-offset-xl: offset-xl !default;
     $class-offset-xl: xl-offset !default;
 }
 
-//
-// xs
 @for $i from 1 through $col-qty {
+    /// offset for cols
     .offset-#{$i} {
         margin-left: col($i);
     }
 }
 
-//
-// SM
 @include bp-sm {
     @for $i from 1 through $col-qty {
+        /// offset for col for breakpoint sm
         .#{$class-offset-sm}-#{$i} {
             margin-left: col($i);
         }
     }
 }
 
-//
-// MD
 @include bp-md {
     @for $i from 1 through $col-qty {
+        /// offset for col for breakpoint md
         .#{$class-offset-md}-#{$i} {
             margin-left: col($i);
         }
     }
 }
 
-//
-// LG
 @include bp-lg {
     @for $i from 1 through $col-qty {
+        /// offset for col for breakpoint lg
         .#{$class-offset-lg}-#{$i} {
             margin-left: col($i);
         }
     }
 }
 
-//
-// xlarge
 @include bp-xl {
     @for $i from 1 through $col-qty {
+        /// offset for col for breakpoint xl
         .#{$class-offset-xl}-#{$i} {
             margin-left: col($i);
         }
     }
 }
+
+// todo: more nested grid wrapper spacing, also using $spacing-def?
+
+/// nested grid wrapper, for spacing 0.5
+.grid-s05 {
+    width: #{'calc(100% + ' + (space('05') * 2) + ')'};
+    margin: space('05') * -1;
+}
+
+/// all `.col-*` classes as direct child get the padding inherited
+.grid-s05 > [class^="col"] {
+    padding: space('05');
+}
+
+/// nested grid wrapper, for spacing 1
+.grid-s1 {
+    width: #{'calc(100% + ' + (space(1) * 2) + ')'};
+    margin: space(1) * -1;
+}
+
+/// all `.col-*` classes as direct child get the padding inherited
+.grid-s1 > [class^="col"] {
+    padding: space(1);
+}
+
+/// nested grid wrapper, for spacing 2
+.grid-s2 {
+    width: #{'calc(100% + ' + (space(2) * 2) + ')'};
+    margin: space(2) * -1;
+}
+
+/// all `.col-*` classes as direct child get the padding inherited
+.grid-s2 > [class^="col"] {
+    padding: space(2);
+}
+
+// 1042
+// 1062 -10 -10
+// 531

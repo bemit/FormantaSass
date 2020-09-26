@@ -1,5 +1,9 @@
+////
+/// @group Typography
+/// @author Basscss@v8, Mustard-UI@v1, Michael Becker
+////
 
-///
+//
 body {
     font-family: $font-family;
     line-height: $line-height;
@@ -124,13 +128,18 @@ p.magnify {
 }
 
 ///
+.light {
+    font-weight: $font-weight-light
+}
+
+///
 .bold {
-    font-weight: var(--bold-font-weight, bold)
+    font-weight: $font-weight-bold
 }
 
 ///
 .regular {
-    font-weight: normal
+    font-weight: $font-weight
 }
 
 ///
