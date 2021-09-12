@@ -1,0 +1,35 @@
+///
+//
+// Form
+//
+///
+
+///
+$button-class: ".btn" !default;
+///
+$button-selector: "#{$button-class}" !default;
+
+///
+$input-selector: 'input[type="file"].inp, input[type="color"].inp, input[type="date"].inp, input[type="datetime-local"].inp, input[type="email"].inp, input[type="month"].inp, input[type="number"].inp, input[type="range"].inp, input[type="search"].inp, input[type="tel"].inp, input[type="time"].inp, input[type="url"].inp, input[type="week"].inp, input[type="text"].inp, input[type="password"].inp, select.inp' !default;
+///
+$textarea-selector: ".inp-text" !default;
+///
+$input-base-selector: 'input.inp, select.inp, fieldset.inp' !default;
+///
+$input-fieldset-selector: '.fieldset' !default;
+///
+$input-option-selector: 'input[type="checkbox"].inp, input[type="radio"].inp' !default;
+///
+$label-selector: '.label' !default;
+///
+$input-range-selector: 'input[type="range"].inp' !default;
+///
+$input-color-selector: 'input[type="color"].inp' !default;
+///
+$select-selector: 'select.inp' !default;
+
+///
+//
+// Table
+//
+///

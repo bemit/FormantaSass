@@ -1,0 +1,60 @@
+////
+/// Show Classes
+/// - either with `basscss` or `bootstrap` (default) naming-style for responsive classes
+/// - should be imported after `hide` classes, so `hide` is default, `show` overwrites hide to display
+/// @group Base:Show
+/// @author Michael becker
+////
+
+///
+$class-show-xs: show-xs !default;
+///
+$class-show-sm: show-sm !default;
+///
+$class-show-md: show-md !default;
+///
+$class-show-lg: show-lg !default;
+///
+$class-show-xl: show-xl !default;
+@if $class-style == basscss {
+    $class-show-xs: xs-show !default;
+    $class-show-sm: sm-show !default;
+    $class-show-md: md-show !default;
+    $class-show-lg: lg-show !default;
+    $class-show-xl: xl-show !default;
+}
+
+@include bp-xs {
+    /// for bp-xs
+    .#{$class-show-xs} {
+        display: initial;
+    }
+}
+
+@include bp-sm {
+    /// for bp-sm
+    .#{$class-show-sm} {
+        display: initial;
+    }
+}
+
+@include bp-md {
+    /// for bp-md
+    .#{$class-show-md} {
+        display: initial;
+    }
+}
+
+@include bp-lg {
+    /// for bp-lg
+    .#{$class-show-lg} {
+        display: initial;
+    }
+}
+
+@include bp-xl {
+    /// for bp-xl
+    .#{$class-show-xl} {
+        display: initial;
+    }
+}

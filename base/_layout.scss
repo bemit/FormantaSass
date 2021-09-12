@@ -43,16 +43,17 @@
     overflow: auto
 }
 
-///
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table
-}
+/// correct sizing for the parent node when the children are using `float: left|right`
+.clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table
+    }
 
-///
-.clearfix:after {
-    clear: both
+    &:after {
+        clear: both
+    }
 }
 
 ///
