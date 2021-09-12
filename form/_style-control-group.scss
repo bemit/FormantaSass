@@ -1,0 +1,42 @@
+////
+/// @group Form
+/// @author Mustard-UI@v1, Michael Becker
+
+///
+.form-control {
+    position: relative;
+    margin-bottom: space(2);
+}
+
+///
+.form-control-group {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+///
+.form-control-group .form-control {
+    flex: 1;
+    //padding-right: 15px;
+}
+
+///
+.form-control-group .form-control:last-of-type {
+    padding-right: 0;
+}
+
+///
+.form-control-group .form-control.grow-1x {
+    flex-grow: 1;
+}
+
+///
+.form-control-group .form-control.grow-2x {
+    flex-grow: 2;
+}
+
+///
+.form-control-group .form-control.grow-3x {
+    flex-grow: 3;
+}

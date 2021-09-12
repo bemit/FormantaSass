@@ -39,6 +39,8 @@ $button-colors: (
     border-radius: $button-radius;
     border-style: solid;
     border-width: 1px;
+    border-color: inherit;
+    line-height: inherit;
 
     @if $button-shadow {
         box-shadow: elevation(1);
