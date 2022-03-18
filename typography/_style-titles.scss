@@ -4,74 +4,44 @@
 ////
 
 ///
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $heading-font-family;
-    font-weight: $font-weight;
-    color: $heading-font-color;
-    margin: 0 0 0.3em;
+#{$title1-selector},
+#{$title2-selector},
+#{$title3-selector},
+#{$title4-selector},
+#{$title5-selector},
+#{$title6-selector} {
+    font-family: $title-font-family;
+    font-weight: $title-font-weight;
+    color: $title-font-color;
+    margin: $title-margin;
 }
 
 ///
-h1 {
+#{$title1-selector} {
     @include title1;
 }
 
 ///
-h2 {
+#{$title2-selector} {
     @include title2;
 }
 
 ///
-h3 {
+#{$title3-selector} {
     @include title3;
 }
 
 ///
-h4 {
+#{$title4-selector} {
     @include title4;
 }
 
 ///
-h5 {
+#{$title5-selector} {
     @include title5;
 }
 
 ///
-h6 {
-    @include title6;
-}
-
-///
-.h1 {
-    @include title1;
-}
-
-///
-.h2 {
-    @include title2;
-}
-
-///
-.h3 {
-    @include title3;
-}
-
-///
-.h4 {
-    @include title4;
-}
-
-///
-.h5 {
-    @include title5;
-}
-
-///
-.h6 {
+#{$title6-selector} {
     @include title6;
 }

@@ -12,17 +12,6 @@ body {
 }
 
 ///
-p {
-    margin-bottom: space(3);
-}
-
-///
-p.magnify {
-    font-size: 1em * 1.1;
-    line-height: 1.8;
-}
-
-///
 .body1 {
     @include body1()
 }

@@ -11,6 +11,7 @@ $class-style: bootstrap !default;
 @import 'grid/mixins-breakpoint';
 @import 'grid/mixins-grid';
 @import 'spacing/mixins';
-@import 'typography/mixins';
+@import 'typography/meta';
+@import 'typography/links-meta';
 
 

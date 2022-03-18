@@ -1,0 +1,140 @@
+////
+/// @group Typography
+/// @author Mustard-UI@v1, Michael Becker
+////
+
+///
+$line-height: 1.6 !default;
+///
+$font-weight-light: 300 !default;
+///
+$font-weight: 400 !default;
+///
+$font-weight-bold: 600 !default;
+///
+$font-color: $color-gray-800 !default;
+
+// Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+///
+$font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif !default;
+///
+$font-family-mono: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
+
+///
+$title-font-color: $color-gray-800 !default;
+///
+$title-font-weight: $font-weight !default;
+///
+$title-margin: 0 0 0.3em 0 !default;
+///
+$title-font-family: $font-family !default;
+
+///
+$title1-font-size: 3em !default;
+///
+$title1-line-height: 1.25em !default;
+///
+$title2-font-size: 2.5em !default;
+///
+$title2-line-height: 1.25em !default;
+///
+$title3-font-size: 2em !default;
+///
+$title3-line-height: 1.25em !default;
+///
+$title4-font-size: 1.75em !default;
+///
+$title4-line-height: 1em !default;
+///
+$title5-font-size: 1.5em !default;
+///
+$title5-line-height: 1em !default;
+///
+$title6-font-size: 1.25em !default;
+///
+$title6-line-height: 1em !default;
+
+///
+$title1-selector: 'h1, .h1' !default;
+///
+$title2-selector: 'h2, .h2' !default;
+///
+$title3-selector: 'h3, .h3' !default;
+///
+$title4-selector: 'h4, .h4' !default;
+///
+$title5-selector: 'h5, .h5' !default;
+///
+$title6-selector: 'h6, .h6' !default;
+
+///
+$body1-margin: 0 0 0.8em 0 !default;
+
+///
+$body2-factor: 0.9 !default;
+///
+$body2-margin: 0 0 0.4em 0 !default;
+
+///
+$text-colors: (
+    'primary' : $brand-color,
+    'success' : $color-green-500,
+    'info' : $color-gray-500,
+    'warning' : $color-amber-600,
+    'danger' : $color-red-500,
+    'light' : $color-gray-50,
+    'dark' : $color-gray-900,
+    'accent' : $color-blue-700,
+) !default;
+
+///
+@mixin title1 {
+    font-size: $title1-font-size;
+    line-height: $title1-line-height;
+}
+
+///
+@mixin title2 {
+    font-size: $title2-font-size;
+    line-height: $title2-line-height;
+}
+
+///
+@mixin title3 {
+    font-size: $title3-font-size;
+    line-height: $title3-line-height;
+}
+
+///
+@mixin title4 {
+    font-size: $title4-font-size;
+    line-height: $title4-line-height;
+}
+
+///
+@mixin title5 {
+    font-size: $title5-font-size;
+    line-height: $title5-line-height;
+}
+
+///
+@mixin title6 {
+    font-size: $title6-font-size;
+    line-height: $title6-line-height;
+}
+
+///
+@mixin body1($factor: 1) {
+    font-family: $font-family;
+    font-size: 1em * $factor;
+    line-height: $line-height * $factor;
+    font-weight: $font-weight;
+    color: $font-color;
+    margin: $body1-margin;
+}
+
+///
+@mixin body2 {
+    @include body1($body2-factor);
+    margin: $body2-margin;
+}

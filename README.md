@@ -146,10 +146,10 @@ Most important:
 - [`$line-height`](https://formanta.bemit.codes/docs/#undefined-variable-line-height)
 - [`$font-weight`](https://formanta.bemit.codes/docs/#undefined-variable-font-weight)
 - [`$font-color`](https://formanta.bemit.codes/docs/#undefined-variable-font-color)
-- [`$heading-font-color`](https://formanta.bemit.codes/docs/#undefined-variable-heading-font-color)
+- [`$title-font-color`](https://formanta.bemit.codes/docs/#undefined-variable-heading-font-color)
 - [`$font-family`](https://formanta.bemit.codes/docs/#undefined-variable-font-family)
 - [`$font-family-mono`](https://formanta.bemit.codes/docs/#undefined-variable-font-family-mono)
-- [`$heading-font-family`](https://formanta.bemit.codes/docs/#undefined-variable-heading-font-family)
+- [`$title-font-family`](https://formanta.bemit.codes/docs/#undefined-variable-heading-font-family)
 
 ## Components
 

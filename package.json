@@ -1,6 +1,6 @@
 {
     "name": "@formanta/sass",
-    "version": "0.21.1",
+    "version": "0.22.0",
     "description": "Mini CSS Framework with modular Sass files, AMP compatible",
     "homepage": "https://formanta.bemit.codes",
     "authors": [
@@ -13,7 +13,7 @@
         {
             "name": "bemit UG (haftungsbeschränkt)",
             "email": "project@bemit.codes",
-            "homepage": "https://bemit.eu",
+            "homepage": "https://bemit.codes",
             "role": "Sponsor"
         }
     ],
