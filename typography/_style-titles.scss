@@ -1,0 +1,77 @@
+////
+/// @group Typography
+/// @author Basscss@v8, Mustard-UI@v1, Michael Becker
+////
+
+///
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    font-weight: $font-weight;
+    color: $heading-font-color;
+    margin: 0 0 0.3em;
+}
+
+///
+h1 {
+    @include title1;
+}
+
+///
+h2 {
+    @include title2;
+}
+
+///
+h3 {
+    @include title3;
+}
+
+///
+h4 {
+    @include title4;
+}
+
+///
+h5 {
+    @include title5;
+}
+
+///
+h6 {
+    @include title6;
+}
+
+///
+.h1 {
+    @include title1;
+}
+
+///
+.h2 {
+    @include title2;
+}
+
+///
+.h3 {
+    @include title3;
+}
+
+///
+.h4 {
+    @include title4;
+}
+
+///
+.h5 {
+    @include title5;
+}
+
+///
+.h6 {
+    @include title6;
+}

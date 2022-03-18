@@ -1,0 +1,33 @@
+////
+/// @group Typography
+/// @author Basscss@v8, Mustard-UI@v1, Michael Becker
+////
+
+//
+body {
+    font-family: $font-family;
+    line-height: $line-height;
+    font-weight: $font-weight;
+    color: $font-color;
+}
+
+///
+p {
+    margin-bottom: space(3);
+}
+
+///
+p.magnify {
+    font-size: 1em * 1.1;
+    line-height: 1.8;
+}
+
+///
+.body1 {
+    @include body1()
+}
+
+///
+.body2 {
+    @include body2()
+}

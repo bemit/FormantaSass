@@ -1,21 +1,4 @@
-
-///
-html {
-    box-sizing: border-box;
-}
-
-///
-*, *::after, *::before {
-    box-sizing: inherit;
-}
-
-///
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
+@import "style-global";
 
 @import "loading/style";
 @import "modal/style";
@@ -32,8 +15,8 @@ body {
 @import "table/style";
 
 @import "typography/style";
+@import "typography/links";
 
-@import "base/links";
 @import "buttons/style";
 
 @import "elevation/style";
@@ -42,11 +25,4 @@ body {
 @import "spacing/style-responsive";
 @import "grid/style";
 
-@import "base/align";
-@import "base/border";
-@import "base/cursor";
-@import "base/flexbox";
-@import "base/hide";
-@import "base/show";
-@import "base/layout";
-@import "base/position";
+@import "style-base";

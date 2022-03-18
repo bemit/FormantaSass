@@ -1,7 +1,7 @@
 // Variables
 
 /// @prop {String} $class-style [bootstrap] `bootstrap` or `basscss`
-$class-style: bootstrap;
+$class-style: bootstrap !default;
 
 @import 'vars/grid';
 @import 'vars/colors';

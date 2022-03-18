@@ -5,17 +5,25 @@
 <h1 align="center">FormantaSass</h1>
 
 [![npm (scoped)](https://img.shields.io/npm/v/@formanta/sass?style=flat-square)](https://www.npmjs.com/package/@formanta/sass)
-[![Travis (.com) master build](https://img.shields.io/travis/com/bemit/Formanta/master?style=flat-square)](https://travis-ci.com/bemit/Formanta)
 
-Sass library optimized for [AMP](https://amp.dev), size: `44KB` *(gzip `8KB`)* - or **only `27KB`** without responsive spacings!
+Sass library optimized for [AMP](https://amp.dev), size: `44KB` *(gzip `8KB`)* - or **only `27KB`** without responsive
+spacings!
 
-Features a low-level OOCSS framework with optional CSS output and ready components to speed up development and page load!
+Features a low-level OOCSS framework with optional CSS output and ready components to speed up development and page
+load!
 
-CSS semantics like bootstrap *or* Basscss (e.g. `col-md-6` or `md-col-6`). Used CSS selectors can be changed for (currently just) some components, like applying button styles only to `.btn` and not on `.btn, button, input[type='button'], input[type='reset'], input[type='submit']` or using `.button`/`.button-round`/`.button-lg` instead of `.btn`/`.btn-round`/`.btn-lg`. 
+CSS semantics like bootstrap *or* Basscss (e.g. `col-md-6` or `md-col-6`). Used CSS selectors can be changed for (
+currently just) some components, like applying button styles only to `.btn` and not
+on `.btn, button, input[type='button'], input[type='reset'], input[type='submit']` or using `.button`/`.button-round`
+/`.button-lg` instead of `.btn`/`.btn-round`/`.btn-lg`.
 
-From Version `>0.20.0` onwards this library is inspired and based upon [mustard-ui](https://kylelogue.github.io/mustard-ui) and [Basscss](https://basscss.com/). But written in Sass, with more configuration options through Sass variables, which where not existing in mustard or done by CSS vars in Basscss. Sass mixins are included for easier reuse without copying Sass/CSS.
+From Version `>0.20.0` onwards this library is inspired and based
+upon [mustard-ui](https://kylelogue.github.io/mustard-ui) and [Basscss](https://basscss.com/). But written in Sass, with
+more configuration options through Sass variables, which where not existing in mustard or done by CSS vars in Basscss.
+Sass mixins are included for easier reuse without copying Sass/CSS.
 
-**Take a look & inspect the [example page](https://formanta.bemit.codes)** for all selectors and styles. For implementation details check the [documentation](https://formanta.bemit.codes/docs/) of Sass and CSS.
+**Take a look & inspect the [example page](https://formanta.bemit.codes)** for all selectors and styles. For
+implementation details check the [documentation](https://formanta.bemit.codes/docs/) of Sass and CSS.
 
 Looking for an easy [static site generator for AMP](https://github.com/bemit/create-amp-page)?
 
@@ -49,7 +57,8 @@ Add imports, config and custom styles in your `.scss`/`.sass` file:
 
 Reference the transpiled CSS file and use the CSS classes and styles in your next awesome project!
 
-Small boilerplate to get you started, also on [codesandbox](https://codesandbox.io/s/formanta-starter-9onf2), for a more real life example check the [example page](https://formanta.bemit.codes).
+Small boilerplate to get you started, also on [codesandbox](https://codesandbox.io/s/formanta-starter-9onf2), for a more
+real life example check the [example page](https://formanta.bemit.codes).
 
 ```html
 <!doctype html>
@@ -69,13 +78,16 @@ Small boilerplate to get you started, also on [codesandbox](https://codesandbox.
 <article class="px2">
     <header>
         <h1 class="bold normal mt4">Formanta</h1>
-    
+
         <p class="body1 px2">
-            Mini CSS Framework with modular Sass files, configuration by Sass or (some) CSS variables and <strong>especially made for <a href="https://amp.dev" rel="noreferrer noopener" target="_blank">AMP</a>!</strong>
+            Mini CSS Framework with modular Sass files, configuration by Sass or (some) CSS variables and
+            <strong>especially made for
+                <a href="https://amp.dev" rel="noreferrer noopener" target="_blank">AMP</a>!</strong>
         </p>
-    
+
         <p class="body1 mt1 mb0 px2">
-            Checkout the <a href="https://github.com/bemit/FormantaSass" rel="noreferrer noopener" class="italic">quick start, features and issues</a> of the current version.
+            Checkout the
+            <a href="https://github.com/bemit/FormantaSass" rel="noreferrer noopener" class="italic">quick start, features and issues</a> of the current version.
         </p>
         <p class="body1 mt0 mb4 px2">
             <code>npm i --save-dev @formanta/sass</code>
@@ -113,8 +125,9 @@ Small boilerplate to get you started, also on [codesandbox](https://codesandbox.
 </article>
 
 <footer class="px2">
-    <p class="mb0">© 2015 - 2020 Michael Becker</p>
-    <p class="mt0">styled with <a href="https://formanta.bemit.codes" rel="noreferrer noopener" target="_blank">Formanta</a></p>
+    <p class="mb0">© Your Page</p>
+    <p class="mt0">styled with
+        <a href="https://formanta.bemit.codes" rel="noreferrer noopener" target="_blank">Formanta</a></p>
 </footer>
 
 </body>
@@ -147,7 +160,7 @@ Styling for these components are available:
 - Blockquote
 - Buttons
 - Code
-- Container
+- Containers / Containers-Responsive
 - Elevation
 - Forms
 - Grid
@@ -159,13 +172,16 @@ Styling for these components are available:
 - Table
 - Tooltip
 - Typography
+    - Links
+    - Body Text
+    - Titles / Headlines
+    - Attributes
 - Base
     - Align
     - Border
     - Flexbox
     - Hide
     - Layout
-    - Links
     - Position
 
 ## Versions
@@ -186,6 +202,4 @@ Mustard-UI: Copyright 2018 Kyle Logue, MIT License
 
 ## Copyright
 
-2015 - 2020 | [Michael Becker](https://mlbr.xyz), [bemit UG (haftungsbeschränkt)](https://bemit.codes)
-
-Logo made by Born & Partner
+2015 - 2022 | [Michael Becker](https://mlbr.xyz), [bemit UG (haftungsbeschränkt)](https://bemit.codes)
