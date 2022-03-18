@@ -3,9 +3,42 @@
 /// @author Michael Becker
 ////
 
-// todo: replace CSS vars with Sass vars
-
 ///
 .cursor-pointer {
     cursor: pointer;
+}
+
+///
+.cursor-help {
+    cursor: help;
+}
+
+///
+.cursor-copy {
+    cursor: copy;
+}
+
+///
+.cursor-copy {
+    cursor: copy;
+}
+
+///
+.cursor-wait {
+    cursor: wait;
+}
+
+///
+.cursor-progress {
+    cursor: progress;
+}
+
+///
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+///
+.cursor-none {
+    cursor: none;
 }

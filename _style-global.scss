@@ -1,0 +1,18 @@
+
+///
+html {
+    box-sizing: border-box;
+}
+
+///
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+///
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
