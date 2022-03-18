@@ -5,7 +5,6 @@
 <h1 align="center">FormantaSass</h1>
 
 [![npm (scoped)](https://img.shields.io/npm/v/@formanta/sass?style=flat-square)](https://www.npmjs.com/package/@formanta/sass)
-[![Travis (.com) master build](https://img.shields.io/travis/com/bemit/Formanta/master?style=flat-square)](https://travis-ci.com/bemit/Formanta)
 
 Sass library optimized for [AMP](https://amp.dev), size: `44KB` *(gzip `8KB`)* - or **only `27KB`** without responsive
 spacings!
