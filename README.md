@@ -6,7 +6,7 @@
 
 [![npm (scoped)](https://img.shields.io/npm/v/@formanta/sass?style=flat-square)](https://www.npmjs.com/package/@formanta/sass)
 
-Sass library optimized for [AMP](https://amp.dev), size: `44KB` *(gzip `8KB`)* - or **only `27KB`** without responsive
+Sass library optimized for [AMP](https://amp.dev), size: `41KB` *(gzip `8.75KB`)* - or **only `24KB`** *(gzip `6.36KB`)* without responsive
 spacings!
 
 Features a low-level OOCSS framework with optional CSS output and ready components to speed up development and page
@@ -25,7 +25,7 @@ Sass mixins are included for easier reuse without copying Sass/CSS.
 **Take a look & inspect the [example page](https://formanta.bemit.codes)** for all selectors and styles. For
 implementation details check the [documentation](https://formanta.bemit.codes/docs/) of Sass and CSS.
 
-Looking for an easy [static site generator for AMP](https://github.com/bemit/create-amp-page)?
+Looking for an easy [static site generator for AMP or PWA-enhanced pages](https://github.com/bemit/create-amp-page)?
 
 ## Quick Start
 
@@ -40,6 +40,13 @@ Add imports, config and custom styles in your `.scss`/`.sass` file:
 
 // get mixins, functions, variables from Formanta
 @import "node_modules/@formanta/sass/meta";
+
+// a global reset for `p`, as there is no default `p` rule included since formanta `0.22.0`
+p {
+    margin: 0;
+    // or apply `body1` style:
+    // @include body1();
+}
 
 // own styles which may use Formanta Sass
 .bg-grey {
@@ -60,80 +67,6 @@ Reference the transpiled CSS file and use the CSS classes and styles in your nex
 Small boilerplate to get you started, also on [codesandbox](https://codesandbox.io/s/formanta-starter-9onf2), for a more
 real life example check the [example page](https://formanta.bemit.codes).
 
-```html
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <title>Formanta Mini CSS Framework</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta http-equiv="language" content="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style/main.css" rel="stylesheet" type="text/css"/>
-</head>
-
-<body>
-
-<article class="px2">
-    <header>
-        <h1 class="bold normal mt4">Formanta</h1>
-
-        <p class="body1 px2">
-            Mini CSS Framework with modular Sass files, configuration by Sass or (some) CSS variables and
-            <strong>especially made for
-                <a href="https://amp.dev" rel="noreferrer noopener" target="_blank">AMP</a>!</strong>
-        </p>
-
-        <p class="body1 mt1 mb0 px2">
-            Checkout the
-            <a href="https://github.com/bemit/FormantaSass" rel="noreferrer noopener" class="italic">quick start, features and issues</a> of the current version.
-        </p>
-        <p class="body1 mt0 mb4 px2">
-            <code>npm i --save-dev @formanta/sass</code>
-        </p>
-    </header>
-
-    <section>
-        <h2>Loading</h2>
-
-        <div class="loading dense mxa my2"></div>
-    </section>
-
-    <section>
-        <h2>Panels</h2>
-        <div class="panel">
-            <div class="panel-head">
-                <h3 class="panel-title">Title Panel</h3>
-            </div>
-
-            <div class="panel-body">
-                <p class="body1">Lorem ipsum dolor sit amet consectutor adispisci.</p>
-            </div>
-
-            <div class="panel-footer">
-                <a class="btn btn-primary-o no-link" href="#">More</a>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Tooltip</h2>
-
-        <span class="tooltip">Hover for more info<span class="tooltip-text">awesome!</span></span>
-    </section>
-</article>
-
-<footer class="px2">
-    <p class="mb0">© Your Page</p>
-    <p class="mt0">styled with
-        <a href="https://formanta.bemit.codes" rel="noreferrer noopener" target="_blank">Formanta</a></p>
-</footer>
-
-</body>
-</html>
-```
-
 ## Config
 
 For a full list of variables consult the [documentation](https://formanta.bemit.codes/docs/).
@@ -146,10 +79,10 @@ Most important:
 - [`$line-height`](https://formanta.bemit.codes/docs/#undefined-variable-line-height)
 - [`$font-weight`](https://formanta.bemit.codes/docs/#undefined-variable-font-weight)
 - [`$font-color`](https://formanta.bemit.codes/docs/#undefined-variable-font-color)
-- [`$heading-font-color`](https://formanta.bemit.codes/docs/#undefined-variable-heading-font-color)
+- [`$title-font-color`](https://formanta.bemit.codes/docs/#undefined-variable-heading-font-color)
 - [`$font-family`](https://formanta.bemit.codes/docs/#undefined-variable-font-family)
 - [`$font-family-mono`](https://formanta.bemit.codes/docs/#undefined-variable-font-family-mono)
-- [`$heading-font-family`](https://formanta.bemit.codes/docs/#undefined-variable-heading-font-family)
+- [`$title-font-family`](https://formanta.bemit.codes/docs/#undefined-variable-heading-font-family)
 
 ## Components
 
@@ -202,4 +135,4 @@ Mustard-UI: Copyright 2018 Kyle Logue, MIT License
 
 ## Copyright
 
-2015 - 2022 | [Michael Becker](https://mlbr.xyz), [bemit UG (haftungsbeschränkt)](https://bemit.codes)
+2015 - 2022 | [Michael Becker](https://mlbr.xyz), [bemit](https://bemit.codes)

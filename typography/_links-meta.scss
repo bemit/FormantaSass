@@ -1,0 +1,39 @@
+////
+/// @group Typography:Links
+/// @author Mustard-UI@v1
+////
+
+///
+$link-selector: "a" !default;
+///
+$link-color: $brand-color !default;
+///
+$link-weight: 400 !default;
+///
+$link-decoration: none !default;
+///
+$link-weight-strong: $font-weight-bold !default;
+///
+$link-selected-opacity: 0.75 !default;
+///
+$link-selected-decoration: $link-decoration !default;
+///
+$link-select-transition: opacity .1s ease-out !default;
+
+///
+@mixin link {
+    text-decoration: $link-decoration;
+    color: $link-color;
+    font-weight: $link-weight;
+    transition: $link-select-transition;
+
+    &:focus,
+    &:hover {
+        opacity: $link-selected-opacity;
+        text-decoration: $link-selected-decoration;
+    }
+
+    &:active {
+        opacity: 1;
+    }
+}

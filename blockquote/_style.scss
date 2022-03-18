@@ -7,13 +7,21 @@
 $blockquote-bg-color: $color-white !default;
 ///
 $blockquote-border-color: $brand-color !default;
+///
+$blockquote-border-width: 4px !default;
+///
+$blockquote-selector: "blockquote" !default;
+///
+$blockquote-author-selector: ".blockquote-author" !default;
+///
+$blockquote-author-font-size: 0.875rem !default;
 
 ///
-blockquote {
+#{$blockquote-selector} {
     display: block;
-    margin: 0 space(3);
-    padding: 0 space(4);
-    border-left: 4px solid $blockquote-border-color;
+    margin: 0 0 0 space(3);
+    padding: 0 0 0 space(4);
+    border-left: $blockquote-border-width solid $blockquote-border-color;
     background: $blockquote-bg-color;
 
     :last-child {
@@ -22,9 +30,9 @@ blockquote {
 }
 
 ///
-.blockquote-author {
-    margin: 0 space(3);
+#{$blockquote-author-selector} {
+    margin: 0 0 0 space(3);
     padding: 0 space(4) 0 space(2);
-    border-left: 4px solid $blockquote-border-color;
-    font-size: 0.875em;
+    border-left: $blockquote-border-width solid $blockquote-border-color;
+    font-size: $blockquote-author-font-size;
 }

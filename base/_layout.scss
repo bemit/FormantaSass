@@ -39,6 +39,11 @@
 }
 
 ///
+.overflow-visible {
+    overflow: visible
+}
+
+///
 .overflow-auto {
     overflow: auto
 }
@@ -69,6 +74,18 @@
 ///
 .fit {
     max-width: 100%
+}
+
+///
+.img-fit-w {
+    width: 100%;
+    height: auto;
+}
+
+///
+.img-fit-h {
+    height: 100%;
+    width: auto;
 }
 
 ///

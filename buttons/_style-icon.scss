@@ -1,0 +1,29 @@
+////
+/// @group Buttons
+/// @author Michael Becker
+////
+
+///
+#{$button-class}-icon {
+    position: relative;
+    display: inline-flex;
+    border-radius: 50%;
+    padding: $button-icon-padding;
+    flex-shrink: 0;
+
+    > * {
+        width: $button-icon-size;
+        height: $button-icon-size;
+        z-index: 1;
+    }
+}
+
+///
+#{$button-class}-icon-small {
+    padding: $button-icon-small-padding;
+
+    > * {
+        width: $button-icon-small-size;
+        height: $button-icon-small-size;
+    }
+}

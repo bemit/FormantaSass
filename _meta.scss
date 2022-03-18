@@ -6,11 +6,17 @@ $class-style: bootstrap !default;
 @import 'vars/grid';
 @import 'vars/colors';
 
-@import 'buttons/mixins';
-@import 'elevation/mixins';
-@import 'grid/mixins-breakpoint';
-@import 'grid/mixins-grid';
-@import 'spacing/mixins';
-@import 'typography/mixins';
+@import 'base/border-vars';
+@import 'base/position-vars';
+
+@import 'spacing/meta';
+@import 'buttons/meta';
+@import 'elevation/meta';
+
+@import 'grid/meta-breakpoint';
+@import 'grid/meta-grid';
+
+@import 'typography/meta';
+@import 'typography/links-meta';
 
 
