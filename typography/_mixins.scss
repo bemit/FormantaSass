@@ -1,0 +1,56 @@
+////
+/// @group Typography
+/// @author Mustard-UI@v1, Michael Becker
+////
+
+///
+@mixin title1 {
+    font-size: $title1-font-size;
+    line-height: $title1-line-height;
+}
+
+///
+@mixin title2 {
+    font-size: $title2-font-size;
+    line-height: $title2-line-height;
+}
+
+///
+@mixin title3 {
+    font-size: $title3-font-size;
+    line-height: $title3-line-height;
+}
+
+///
+@mixin title4 {
+    font-size: $title4-font-size;
+    line-height: $title4-line-height;
+}
+
+///
+@mixin title5 {
+    font-size: $title5-font-size;
+    line-height: $title5-line-height;
+}
+
+///
+@mixin title6 {
+    font-size: $title6-font-size;
+    line-height: $title6-line-height;
+}
+
+///
+@mixin body1($factor: 1) {
+    font-family: $font-family;
+    font-size: 1em * $factor;
+    line-height: $line-height * $factor;
+    font-weight: $font-weight;
+    color: $font-color;
+    margin: $body1-margin;
+}
+
+///
+@mixin body2 {
+    @include body1($body2-factor);
+    margin: $body2-margin;
+}

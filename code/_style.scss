@@ -9,12 +9,18 @@ $code-bg-color: $color-gray-100 !default;
 $code-border-color: $brand-color !default;
 ///
 $code-font-color: $color-gray-900 !default;
+///
+$code-font-size: 0.9rem !default;
+///
+$code-border-width: 4px !default;
+///
+$code-pre-selector: pre !default;
 
 ///
-pre {
+#{$code-pre-selector} {
     display: block;
     padding: space(1) space(2);
-    border-left: 4px solid $code-border-color;
+    border-left: $code-border-width solid $code-border-color;
     background: $code-bg-color;
     font-family: $font-family-mono;
     color: $code-font-color;
@@ -24,7 +30,7 @@ pre {
 
 ///
 code {
-    font-size: 0.9em;
+    font-size: $code-font-size;
     background: $code-bg-color;
     color: $code-font-color;
     font-family: $font-family-mono;
@@ -33,6 +39,6 @@ code {
 }
 
 ///
-pre > code {
+#{$code-pre-selector} > code {
     padding: 0;
 }

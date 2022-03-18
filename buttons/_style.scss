@@ -4,11 +4,6 @@
 ////
 
 ///
-$button-class: ".btn" !default;
-///
-$button-selector: "#{$button-class}, button, input[type='button'], input[type='reset'], input[type='submit']" !default;
-
-///
 #{$button-selector} {
     @include btn;
 }
@@ -37,19 +32,19 @@ $button-selector: "#{$button-class}, button, input[type='button'], input[type='r
 
 ///
 #{$button-class}-round {
-    border-radius: 24px;
+    border-radius: $button-round-radius;
 }
 
 ///
 #{$button-class}-lg {
-    padding: space(2) space(4);
-    font-size: 1em;
+    padding: $button-lg-padding;
+    font-size: $button-lg-font-size;
 }
 
 ///
 #{$button-class}-sm {
-    padding: (space(1)*0.6) (space(2)*0.6);
-    font-size: 0.875em;
+    padding: $button-sm-padding;
+    font-size: $button-sm-font-size;
 }
 
 ///

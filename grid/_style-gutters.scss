@@ -1,0 +1,42 @@
+////
+/// Grid: Style
+/// ================
+/// All the grid styles.
+/// @group Grid
+/// @author Michael Becker
+////
+
+// todo: more nested grid wrapper spacing, also using $spacing-def?
+
+/// nested grid wrapper, for spacing 0.5
+.grid-s05 {
+    width: #{'calc(100% + ' + (space('05') * 2) + ')'};
+    margin: space('05') * -1;
+}
+
+/// all `.col-*` classes as direct child get the padding inherited
+.grid-s05 > [class^="col"] {
+    padding: space('05');
+}
+
+/// nested grid wrapper, for spacing 1
+.grid-s1 {
+    width: #{'calc(100% + ' + (space(1) * 2) + ')'};
+    margin: space(1) * -1;
+}
+
+/// all `.col-*` classes as direct child get the padding inherited
+.grid-s1 > [class^="col"] {
+    padding: space(1);
+}
+
+/// nested grid wrapper, for spacing 2
+.grid-s2 {
+    width: #{'calc(100% + ' + (space(2) * 2) + ')'};
+    margin: space(2) * -1;
+}
+
+/// all `.col-*` classes as direct child get the padding inherited
+.grid-s2 > [class^="col"] {
+    padding: space(2);
+}

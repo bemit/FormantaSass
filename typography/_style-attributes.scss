@@ -51,7 +51,7 @@
 ///
 .caps {
     text-transform: uppercase;
-    letter-spacing: var(--caps-letter-spacing);
+    letter-spacing: $caps-letter-spacing;
 }
 
 ///
@@ -86,22 +86,22 @@
 
 ///
 .line-height-1 {
-    line-height: var(--line-height-1)
+    line-height: $line-height-1
 }
 
 ///
 .line-height-2 {
-    line-height: var(--line-height-2)
+    line-height: $line-height-2
 }
 
 ///
 .line-height-3 {
-    line-height: var(--line-height-3)
+    line-height: $line-height-3
 }
 
 ///
 .line-height-4 {
-    line-height: var(--line-height-4)
+    line-height: $line-height-4
 }
 
 ///

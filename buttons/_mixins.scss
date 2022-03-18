@@ -3,49 +3,36 @@
 /// @author Mustard-UI@v1, Michael Becker
 ////
 
-///
-$button-radius: 4px !default;
-///
-$button-shadow: false !default;
-///
-$button-text-color: $color-white !default;
-///
-$button-colors: (
-    'primary' : $brand-color,
-    'success' : $color-green-500,
-    'info' : $color-gray-500,
-    'warning' : $color-amber-600,
-    'danger' : $color-red-500
-) !default;
-
-///
-@mixin btn {
+/// the styling for the button base element, without states (e.g. no `hover` included)
+@mixin btnBase {
     display: inline-block;
-    padding: space(1) space(2);
+    padding: $button-padding;
     width: auto;
     background: none;
     overflow: visible;
     appearance: none;
     transition: all .1s ease-out;
 
-    font-size: 0.9em;
-    font-weight: 600;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
     color: inherit;
-    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
 
     border-radius: $button-radius;
     border-style: solid;
-    border-width: 1px;
+    border-width: $button-border-width;
     border-color: inherit;
     line-height: inherit;
 
     @if $button-shadow {
         box-shadow: elevation(1);
     }
+}
 
+/// the styling for `focus`/`hover`/`active`/`disabled` pseudo elements
+@mixin btnStates {
     &:focus {
         outline: none;
     }
@@ -71,4 +58,10 @@ $button-colors: (
         opacity: 0.5;
         cursor: not-allowed;
     }
+}
+
+/// the full btn styling
+@mixin btn {
+    @include btnBase;
+    @include btnStates;
 }

@@ -3,12 +3,10 @@
 /// @author Basscss@v8
 ////
 
-// todo: replace CSS vars with Sass vars
-
 ///
 .border {
     border-style: solid;
-    border-width: var(--border-width);
+    border-width: $base-border-width;
 }
 
 ///
@@ -19,30 +17,30 @@
 ///
 .border-top {
     border-top-style: solid;
-    border-top-width: var(--border-width);
+    border-top-width: $base-border-width;
 }
 
 ///
 .border-right {
     border-right-style: solid;
-    border-right-width: var(--border-width);
+    border-right-width: $base-border-width;
 }
 
 ///
 .border-bottom {
     border-bottom-style: solid;
-    border-bottom-width: var(--border-width);
+    border-bottom-width: $base-border-width;
 }
 
 ///
 .border-left {
     border-left-style: solid;
-    border-left-width: var(--border-width);
+    border-left-width: $base-border-width;
 }
 
 ///
 .rounded {
-    border-radius: var(--border-radius)
+    border-radius: $base-border-radius;
 }
 
 ///
@@ -57,26 +55,20 @@
 
 ///
 .rounded-top {
-    border-radius: var(--border-radius) var(--border-radius) 0 0
+    border-radius: $base-border-radius $base-border-radius 0 0
 }
 
 ///
 .rounded-right {
-    border-radius: 0 var(--border-radius) var(--border-radius) 0
+    border-radius: 0 $base-border-radius $base-border-radius 0
 }
 
 ///
 .rounded-bottom {
-    border-radius: 0 0 var(--border-radius) var(--border-radius)
+    border-radius: 0 0 $base-border-radius $base-border-radius
 }
 
 ///
 .rounded-left {
-    border-radius: var(--border-radius) 0 0 var(--border-radius)
-}
-
-///
-:root {
-    --border-width: 1px;
-    --border-radius: 3px;
+    border-radius: $base-border-radius 0 0 $base-border-radius
 }

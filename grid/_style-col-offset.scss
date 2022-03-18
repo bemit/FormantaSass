@@ -1,0 +1,65 @@
+////
+/// Grid: Style
+/// ================
+/// All the grid styles.
+/// @group Grid
+/// @author Michael Becker
+////
+
+///
+$class-offset-sm: offset-sm !default;
+///
+$class-offset-md: offset-md !default;
+///
+$class-offset-lg: offset-lg !default;
+///
+$class-offset-xl: offset-xl !default;
+@if $class-style == basscss {
+    $class-offset-sm: sm-offset !default;
+    $class-offset-md: md-offset !default;
+    $class-offset-lg: lg-offset !default;
+    $class-offset-xl: xl-offset !default;
+}
+
+@for $i from 1 through $col-qty {
+    /// offset for cols
+    .offset-#{$i} {
+        margin-left: col($i);
+    }
+}
+
+@include bp-sm {
+    @for $i from 1 through $col-qty {
+        /// offset for col for breakpoint sm
+        .#{$class-offset-sm}-#{$i} {
+            margin-left: col($i);
+        }
+    }
+}
+
+@include bp-md {
+    @for $i from 1 through $col-qty {
+        /// offset for col for breakpoint md
+        .#{$class-offset-md}-#{$i} {
+            margin-left: col($i);
+        }
+    }
+}
+
+@include bp-lg {
+    @for $i from 1 through $col-qty {
+        /// offset for col for breakpoint lg
+        .#{$class-offset-lg}-#{$i} {
+            margin-left: col($i);
+        }
+    }
+}
+
+@include bp-xl {
+    @for $i from 1 through $col-qty {
+        /// offset for col for breakpoint xl
+        .#{$class-offset-xl}-#{$i} {
+            margin-left: col($i);
+        }
+    }
+}

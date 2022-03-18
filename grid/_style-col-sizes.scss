@@ -1,0 +1,65 @@
+////
+/// Grid: Style
+/// ================
+/// All the grid styles.
+/// @group Grid
+/// @author Michael Becker
+////
+
+///
+$class-col-sm: col-sm !default;
+///
+$class-col-md: col-md !default;
+///
+$class-col-lg: col-lg !default;
+///
+$class-col-xl: col-xl !default;
+@if $class-style == basscss {
+    $class-col-sm: sm-col !default;
+    $class-col-md: md-col !default;
+    $class-col-lg: lg-col !default;
+    $class-col-xl: xl-col !default;
+}
+
+@for $i from 1 through $col-qty {
+    /// columns
+    .col-#{$i} {
+        @include col($i);
+    }
+}
+
+@include bp-sm {
+    @for $i from 1 through $col-qty {
+        /// col for breakpoint sm
+        .#{$class-col-sm}-#{$i} {
+            @include col($i);
+        }
+    }
+}
+
+@include bp-md {
+    @for $i from 1 through $col-qty {
+        /// col for breakpoint md
+        .#{$class-col-md}-#{$i} {
+            @include col($i);
+        }
+    }
+}
+
+@include bp-lg {
+    @for $i from 1 through $col-qty {
+        /// col for breakpoint lg
+        .#{$class-col-lg}-#{$i} {
+            @include col($i);
+        }
+    }
+}
+
+@include bp-xl {
+    @for $i from 1 through $col-qty {
+        /// col for breakpoint xlarge
+        .#{$class-col-xl}-#{$i} {
+            @include col($i);
+        }
+    }
+}

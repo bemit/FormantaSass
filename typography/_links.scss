@@ -1,6 +1,6 @@
 ////
 /// @group Typography:Links
-/// @author Mustard-UI@v1
+/// @author Mustard-UI@v1, Michael Becker
 ////
 
 ///
@@ -11,28 +11,4 @@
 ///
 strong #{$link-selector} {
     font-weight: $link-weight-strong;
-}
-
-///
-#{$link-selector}.no-link {
-    color: (internal value);
-    text-decoration: underline;
-    cursor: auto;
-
-    ///
-    &:visited {
-        color: (internal value);
-        text-decoration: underline;
-        cursor: auto;
-    }
-
-    ///
-    &:link:active {
-        color: (internal value);
-    }
-
-    ///
-    &:visited:active {
-        color: (internal value);
-    }
 }
