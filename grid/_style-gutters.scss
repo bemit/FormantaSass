@@ -40,3 +40,14 @@
 .grid-s2 > [class^="col"] {
     padding: space(2);
 }
+
+/// nested grid wrapper, for spacing 3
+.grid-s3 {
+    width: #{'calc(100% + ' + (space(3) * 2) + ')'};
+    margin: space(3) * -1;
+}
+
+/// all `.col-*` classes as direct child get the padding inherited
+.grid-s3 > [class^="col"] {
+    padding: space(3);
+}

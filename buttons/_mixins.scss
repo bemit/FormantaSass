@@ -8,23 +8,24 @@
     display: inline-block;
     padding: $button-padding;
     width: auto;
-    background: none;
+    background: $button-background-color;
     overflow: visible;
     appearance: none;
     transition: all .1s ease-out;
 
     font-size: $button-font-size;
     font-weight: $button-font-weight;
+    letter-spacing: $button-letter-spacing;
     color: inherit;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: $button-text-transform;
     white-space: nowrap;
 
     border-radius: $button-radius;
     border-style: solid;
     border-width: $button-border-width;
     border-color: inherit;
-    line-height: inherit;
+    line-height: $button-line-height;
 
     @if $button-shadow {
         box-shadow: elevation(1);

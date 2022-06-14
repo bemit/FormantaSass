@@ -3,12 +3,6 @@
 /// @author Michael Becker
 ////
 
-//
-$container-responsive-sizes: (
-    'small' : 90%,
-    'large' : map-get($container-sizes, 'large'),
-) !default;
-
 ///
 .container-responsive {
     @include bp-md {

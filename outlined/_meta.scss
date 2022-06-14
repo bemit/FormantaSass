@@ -1,0 +1,29 @@
+////
+/// @group Outlined
+/// @author Michael Becker
+////
+
+///
+$outlined-border-radius: $base-border-radius !default;
+///
+$outlined-border-width: $base-border-width !default;
+///
+$outlined-border-color: $base-border-color !default;
+///
+$outlined-rect-border-radius: 0 !default;
+///
+$outlined-round-border-radius: $base-border-radius * 3 !default;
+///
+$outlined-thick-border-width: $base-border-thick-width !default;
+
+///
+$outlined-class-name: '.o' !default;
+
+///
+$outlined-colors: (
+    'primary': $color-primary,
+    'secondary': $color-secondary,
+    'success': $color-success,
+    'danger': $color-danger,
+    'divider': $color-divider,
+) !default;

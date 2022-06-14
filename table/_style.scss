@@ -4,18 +4,12 @@
 ////
 
 ///
-$table-border-color: $color-gray-200 !default;
-///
-$table-bg-cell: $color-gray-200 !default;
-
-///
 table {
     border-spacing: 0;
     border-collapse: collapse;
 
-
     tr {
-        border-bottom: 1px solid $table-border-color;
+        border-bottom: $base-border-width solid $table-border-color;
         text-align: left;
     }
 
@@ -26,6 +20,7 @@ table {
     }
 
     tbody {
+        th,
         td {
             padding: space(1) space(2);
         }

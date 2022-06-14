@@ -4,13 +4,6 @@
 ////
 
 ///
-$tooltip-border-radius: 4px !default;
-///
-$tooltip-bg-color: $color-gray-800 !default;
-///
-$tooltip-underline-color: $color-gray-400 !default;
-
-///
 .tooltip {
     display: inline-block;
     position: relative;
@@ -35,7 +28,7 @@ $tooltip-underline-color: $color-gray-400 !default;
     transform: translateX(-50%);
     min-width: 100px;
     padding: space(1) space(2);
-    color: $color-white;
+    color: $color-light;
     text-align: center;
     background: $tooltip-bg-color;
     border-radius: $tooltip-border-radius;

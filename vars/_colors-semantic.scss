@@ -1,0 +1,48 @@
+////
+/// Vars: Colors
+/// ================
+/// @group vars:colors
+////
+
+/// @type Color
+$color-success: $color-green-500 !default;
+/// @type Color
+$color-success-dark: $color-green-700 !default;
+/// @type Color
+$color-info: $color-blue-700 !default;
+/// @type Color
+$color-info-dark: $color-blue-800 !default;
+/// @type Color
+$color-warning: $color-amber-800 !default;
+/// @type Color
+$color-warning-dark: $color-orange-800 !default;
+/// @type Color
+$color-danger: $color-red-600 !default;
+/// @type Color
+$color-danger-dark: $color-red-800 !default;
+
+/// Paper background
+/// @type Color
+$bg-paper: $color-light !default;
+/// Paper background for light-backdrop usages
+/// @type Color
+$bg-paper-transparent: $color-light-transparent !default;
+/// Areas which are embedded or highlighted or contained inside of paper
+/// @type Color
+$bg-contained: $color-gray-100 !default;
+/// Body background
+/// @type Color
+$bg-body: #f1f5f6 !default;
+/// Backdrop for modals/overlays over the body/paper backgrounds
+/// @type Color
+$bg-backdrop: $color-dark-transparent !default;
+
+/// @type Color
+$color-divider: rgba($color-blue-gray-400, 0.35) !default;
+
+/// @type Color
+$color-primary: $color-purple-600 !default;
+/// @type Color
+$color-secondary: $color-teal-600 !default;
+/// @deprecated use `$color-primary` instead
+$brand-color: $color-primary !default;

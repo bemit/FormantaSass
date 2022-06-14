@@ -1,0 +1,14 @@
+////
+/// @group Typography:Links
+/// @author Mustard-UI@v1, Michael Becker
+////
+
+///
+#{$link-selector} {
+    @include link();
+}
+
+///
+strong #{$link-selector} {
+    font-weight: $link-weight-strong;
+}

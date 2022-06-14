@@ -1,0 +1,18 @@
+////
+/// @group collapse
+/// @author Michael Becker
+////
+
+///
+.collapse {
+    overflow: hidden;
+    transition: $collapse-transition;
+
+    &.closed {
+        height: 0;
+    }
+
+    &.open {
+
+    }
+}

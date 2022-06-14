@@ -4,25 +4,6 @@
 ////
 
 ///
-$modal-border-radius: 4px !default;
-///
-$modal-max-height: 95vh !default;
-///
-$modal-shadow: true !default;
-///
-$modal-mask-color: rgba(20, 20, 20, 0.5) !default;
-///
-$modal-bg-color: $color-white !default;
-///
-$modal-head-padding: space(2) !default;
-///
-$modal-body-padding: space(4) space(2) !default;
-///
-$modal-footer-padding: space(2) !default;
-///
-$modal-z: 10 !default;
-
-///
 .modal-mask {
     position: fixed;
     top: 0;
@@ -50,6 +31,14 @@ $modal-z: 10 !default;
     @if $modal-shadow {
         box-shadow: elevation(3);
     }
+
+    &.fullscreen {
+        inset: 0;
+        justify-content: flex-start;
+        position: absolute;
+        transform: none;
+        max-height: 100%;
+    }
 }
 
 ///
@@ -71,8 +60,4 @@ $modal-z: 10 !default;
 ///
 .modal-footer {
     padding: $modal-footer-padding;
-
-    & > * {
-        margin-bottom: 0;
-    }
 }

@@ -45,3 +45,23 @@
 #{$title6-selector} {
     @include title6;
 }
+
+
+///
+#{$subtitle2-selector},
+#{$subtitle1-selector} {
+    font-family: $subtitle-font-family;
+    font-weight: $subtitle-font-weight;
+    color: $subtitle-font-color;
+    margin: $subtitle-margin;
+}
+
+///
+#{$subtitle1-selector} {
+    @include subtitle1;
+}
+
+///
+#{$subtitle2-selector} {
+    @include subtitle2;
+}

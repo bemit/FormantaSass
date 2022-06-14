@@ -9,7 +9,8 @@
 /// @type Size
 $spacing: 5px !default;
 
-///
+/// Spacing definitions
+/// @type Map
 $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 
 ///
@@ -64,11 +65,44 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
                 #{$property}-bottom: space($name) * -1;
             }
         } @else {
-            .#{$short}#{$name} {
+            .#{$short}#{$name}#{$suffix} {
                 #{$property}-top: space($name);
                 #{$property}-bottom: space($name);
             }
         }
+    }
+}
+
+///
+@mixin spacingMakerA($suffix: '') {
+    .ma#{$suffix} {
+        margin: auto;
+    }
+
+    .mra#{$suffix} {
+        margin-right: auto;
+    }
+
+    .mla#{$suffix} {
+        margin-left: auto;
+    }
+
+    .mta#{$suffix} {
+        margin-top: auto;
+    }
+
+    .mba#{$suffix} {
+        margin-bottom: auto;
+    }
+
+    .mxa#{$suffix} {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .mya#{$suffix} {
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 
@@ -103,6 +137,7 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 /// `.pl0-sm` for left spacings
 @mixin spacing-sm {
     @include bp-sm {
+        @include spacingMakerA('-sm');
         @include spacingMaker('m', 'margin', '-sm');
         @include spacingMakerX('mx', 'margin', '-sm');
         @include spacingMakerY('my', 'margin', '-sm');
@@ -160,6 +195,7 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 /// `.pl0-md` for left spacings
 @mixin spacing-md {
     @include bp-md {
+        @include spacingMakerA('-md');
         @include spacingMaker('m', 'margin', '-md');
         @include spacingMakerX('mx', 'margin', '-md');
         @include spacingMakerY('my', 'margin', '-md');
@@ -217,6 +253,7 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 /// `.pl0-lg` for left spacings
 @mixin spacing-lg {
     @include bp-lg {
+        @include spacingMakerA('-lg');
         @include spacingMaker('m', 'margin', '-lg');
         @include spacingMakerX('mx', 'margin', '-lg');
         @include spacingMakerY('my', 'margin', '-lg');
@@ -274,6 +311,7 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 /// `.pl0-xl` for left spacings
 @mixin spacing-xl {
     @include bp-xl {
+        @include spacingMakerA('-xl');
         @include spacingMaker('m', 'margin', '-xl');
         @include spacingMakerX('mx', 'margin', '-xl');
         @include spacingMakerY('my', 'margin', '-xl');

@@ -15,27 +15,23 @@
 }
 
 ///
-.border-top {
-    border-top-style: solid;
-    border-top-width: $base-border-width;
+.border-none-top {
+    border-top: 0
 }
 
 ///
-.border-right {
-    border-right-style: solid;
-    border-right-width: $base-border-width;
+.border-none-right {
+    border-right: 0
 }
 
 ///
-.border-bottom {
-    border-bottom-style: solid;
-    border-bottom-width: $base-border-width;
+.border-none-bottom {
+    border-bottom: 0
 }
 
 ///
-.border-left {
-    border-left-style: solid;
-    border-left-width: $base-border-width;
+.border-none-left {
+    border-left: 0
 }
 
 ///

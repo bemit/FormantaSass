@@ -22,43 +22,45 @@
 ///     .ml0
 ///
 ////
+//
+/////
+//.ma {
+//    margin: auto;
+//}
+//
+/////
+//.mra {
+//    margin-right: auto;
+//}
+//
+/////
+//.mla {
+//    margin-left: auto;
+//}
+//
+/////
+//.mta {
+//    margin-top: auto;
+//}
+//
+/////
+//.mba {
+//    margin-bottom: auto;
+//}
+//
+/////
+//.mxa {
+//    margin-right: auto;
+//    margin-left: auto;
+//}
+//
+/////
+//.mya {
+//    margin-top: auto;
+//    margin-bottom: auto;
+//}
 
-///
-.ma {
-    margin: auto;
-}
-
-///
-.mra {
-    margin-right: auto;
-}
-
-///
-.mla {
-    margin-left: auto;
-}
-
-///
-.mta {
-    margin-top: auto;
-}
-
-///
-.mba {
-    margin-bottom: auto;
-}
-
-///
-.mxa {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-///
-.mya {
-    margin-top: auto;
-    margin-bottom: auto;
-}
+@include spacingMakerA();
 
 @include spacingMaker('m', 'margin');
 @include spacingMakerX('mx', 'margin');

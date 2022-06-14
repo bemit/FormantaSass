@@ -1,0 +1,17 @@
+////
+/// @group Blockquote
+/// @author Mustard-UI@v1, Michael Becker
+////
+
+///
+$blockquote-bg-color: $bg-contained !default;
+///
+$blockquote-border-color: $color-primary !default;
+///
+$blockquote-border-width: $base-border-thick-width !default;
+///
+$blockquote-selector: "blockquote" !default;
+///
+$blockquote-author-selector: ".blockquote-author" !default;
+///
+$blockquote-author-font-size: 0.875rem !default;

@@ -35,12 +35,14 @@
     @return (100% / $col-qty) * $number;
 }
 
+/// @type String [width|min-width|flex-basis]
+$col-property: 'width';
 
 /// Generates size for a column
 /// @param {Int} $number - id of the column you want
 /// @param {Int} $col-qty [$col-qty] - max. columns used
 @mixin col($number, $col-qty: $col-qty) {
-    width: col($number, $col-qty);
+    #{$col-property}: col($number, $col-qty);
 }
 
 /// Generates a column for breakpoint size sm and bigger

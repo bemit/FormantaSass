@@ -27,17 +27,21 @@ $caps-letter-spacing: 0.05em;
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
 ///
 $font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif !default;
+// @todo move system font examples somewhere else
+// Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+// Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif;
+$font-family-serif: Baskerville, Baskerville Old Face, Hoefler Text, Garamond, Times New Roman, serif !default;
 ///
 $font-family-mono: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace !default;
 
 ///
-$title-font-color: $color-gray-800 !default;
+$title-font-color: $color-indigo-900 !default;
 ///
 $title-font-weight: $font-weight !default;
 ///
 $title-margin: 0 0 0.3em 0 !default;
 ///
-$title-font-family: $font-family !default;
+$title-font-family: $font-family-serif !default;
 
 ///
 $title1-font-size: 3em !default;
@@ -78,7 +82,30 @@ $title5-selector: 'h5, .h5' !default;
 $title6-selector: 'h6, .h6' !default;
 
 ///
-$body1-margin: 0 0 0.8em 0 !default;
+$subtitle-font-color: $title-font-color !default;
+///
+$subtitle-font-weight: bold !default;
+///
+$subtitle-margin: 0 0 0.2423em 0 !default;
+///
+$subtitle-font-family: $title-font-family !default;
+
+///
+$subtitle1-font-size: 1.36em !default;
+///
+$subtitle1-line-height: 1.126em !default;
+///
+$subtitle2-font-size: 1.125em !default;
+///
+$subtitle2-line-height: 1em !default;
+
+///
+$subtitle1-selector: '.subtitle1' !default;
+///
+$subtitle2-selector: '.subtitle2' !default;
+
+///
+$body1-margin: 0 0 0.6125em 0 !default;
 
 ///
 $body2-factor: 0.9 !default;
@@ -87,12 +114,12 @@ $body2-margin: 0 0 0.4em 0 !default;
 
 ///
 $text-colors: (
-    'primary' : $brand-color,
-    'success' : $color-green-500,
-    'info' : $color-gray-500,
-    'warning' : $color-amber-600,
-    'danger' : $color-red-500,
-    'light' : $color-gray-50,
-    'dark' : $color-gray-900,
-    'accent' : $color-blue-700,
+    'primary' : $color-primary,
+    'secondary' : $color-secondary,
+    'success' : $color-success-dark,
+    'info' : $color-info-dark,
+    'warning' : $color-warning-dark,
+    'danger' : $color-danger-dark,
+    'light' : $color-gray-600,
+    'strong' : $color-gray-900,
 ) !default;

@@ -1,13 +1,13 @@
 {
     "name": "@formanta/sass",
-    "version": "0.22.0",
+    "version": "0.23.0",
     "description": "Mini CSS Framework with modular Sass files, AMP compatible",
     "homepage": "https://formanta.bemit.codes",
     "authors": [
         {
             "name": "Michael Becker",
             "email": "michael@bemit.codes",
-            "homepage": "https://mlbr.xyz",
+            "homepage": "https://i-am-digital.eu",
             "role": "Developer"
         },
         {

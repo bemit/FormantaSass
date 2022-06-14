@@ -4,7 +4,7 @@
 ////
 
 ///
-#{$button-class}-icon {
+#{$button-class}-ic {
     position: relative;
     display: inline-flex;
     border-radius: 50%;
@@ -19,11 +19,21 @@
 }
 
 ///
-#{$button-class}-icon-small {
-    padding: $button-icon-small-padding;
+#{$button-class}-ic-lg {
+    padding: $button-icon-lg-padding;
 
     > * {
-        width: $button-icon-small-size;
-        height: $button-icon-small-size;
+        width: $button-icon-lg-size;
+        height: $button-icon-lg-size;
+    }
+}
+
+///
+#{$button-class}-ic-sm {
+    padding: $button-icon-sm-padding;
+
+    > * {
+        width: $button-icon-sm-size;
+        height: $button-icon-sm-size;
     }
 }

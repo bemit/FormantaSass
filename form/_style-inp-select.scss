@@ -9,10 +9,11 @@ $select-selector: 'select' !default;
 #{$select-selector} {
     background-color: $input-bg-color;
     background-image: linear-gradient(45deg, transparent 50%, $input-border-color 50%), linear-gradient(135deg, $input-border-color 50%, transparent 50%), linear-gradient(to right, $input-border-color, $input-border-color);
-    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.3em;
+    background-position: calc(100% - 18px) calc(1em), calc(100% - 13px) calc(1em), calc(100% - 2.5em) 0.45em;
     background-size: 5px 5px, 5px 5px, 1px 1.5em;
     background-repeat: no-repeat;
-    padding-right: 30px;
+
+    padding: 0.675em 30px 0.675em 0.8em;
 
     &:hover {
         cursor: pointer;
@@ -31,5 +32,5 @@ $select-selector: 'select' !default;
 #{$select-selector}.dense {
     background-position: calc(100% - 12px) calc(1em + 0px), calc(100% - 7px) calc(1em + 0px), calc(100% - 25px) 0.3em;
     background-size: 5px 5px, 5px 5px, 1px 1.5em;
-    padding-right: 25px;
+    padding: 0.475em 25px 0.475em 0.8em;
 }

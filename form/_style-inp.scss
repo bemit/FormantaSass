@@ -18,15 +18,15 @@ $input-range-selector: 'input[type="range"]' !default;
 $input-color-selector: 'input[type="color"]' !default;
 
 ///
-$input-bg-color: $color-white !default;
+$input-bg-color: $bg-paper !default;
 ///
-$input-active-color: $brand-color !default;
+$input-active-color: $color-primary !default;
 ///
-$input-border-color: $color-gray-400 !default;
+$input-border-color: $base-border-color !default;
 ///
-$input-invalid-color: $color-red-200 !default;
+$input-invalid-color: $color-red-600 !default;
 ///
-$input-error-text-color: $color-red-500 !default;
+$input-error-text-color: $color-danger-dark !default;
 ///
 $input-placeholder-color: $color-gray-500 !default;
 
@@ -41,6 +41,12 @@ $input-placeholder-color: $color-gray-500 !default;
 #{$label-selector} {
     font-size: 0.875em;
     font-weight: 400;
+
+    > span {
+        display: block;
+        margin-bottom: 0.128em;
+        margin-left: space(1);
+    }
 }
 
 ///
@@ -48,12 +54,17 @@ $input-placeholder-color: $color-gray-500 !default;
     appearance: none;
     display: block;
     width: 100%;
-    padding: space(1);
-    font-size: 1em;
+    padding: 0.6em 0.8em;
+    font-size: 0.85rem;
     font-weight: inherit;
+    color: $font-color;
     background: $input-bg-color;
-    border-radius: 5px;
+    border-radius: $base-border-radius;
     border: 1px solid $input-border-color;
+
+    &.invalid, &:invalid {
+        border-color: $input-invalid-color;
+    }
 }
 
 ///
@@ -74,20 +85,20 @@ $input-placeholder-color: $color-gray-500 !default;
 
 ///
 #{$input-fieldset-selector} {
-    margin: 15px 0;
-    padding: 15px;
+    margin: space(3) 0;
+    padding: space(2) space(3);
     font-size: 14px;
     border: 1px solid $input-border-color;
-    border-radius: 5px;
+    border-radius: $base-border-radius;
 
     legend {
-        padding: 0 5px;
+        padding: 0 space(1);
     }
 }
 
 ///
 #{$input-option-selector} {
-    margin-right: 10px;
+    margin-right: space(1);
 }
 
 ///

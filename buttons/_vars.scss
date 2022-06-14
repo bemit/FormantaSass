@@ -4,49 +4,77 @@
 ////
 
 ///
-$button-radius: 4px !default;
+$button-border-radius: $base-border-radius !default;
+/// @deprecated use `button-border-radius` instead
+$button-radius: $button-border-radius !default;
 ///
-$button-border-width: 1px !default;
+$button-border-width: $base-border-width !default;
 ///
-$button-outline-border-style: solid !default;
+$button-background-color: none !default;
 ///
 $button-shadow: false !default;
 ///
-$button-text-color: $color-white !default;
+$button-text-color: $color-light !default;
+///
+$button-text-transform: uppercase !default;
+
 ///
 $button-colors: (
-    'primary' : $brand-color,
-    'success' : $color-green-500,
-    'info' : $color-gray-500,
-    'warning' : $color-amber-600,
-    'danger' : $color-red-500
+    'primary' : $color-primary,
+    'secondary' : $color-secondary,
+    'success' : $color-success,
+    'info' : $color-info,
+    'warning' : $color-warning,
+    'danger' : $color-danger,
 ) !default;
+
+///
+$button-outline-border-style: solid !default;
+///
+$button-outline-background-color: $button-background-color !default;
 
 ///
 $button-class: ".btn" !default;
 ///
-$button-selector: "#{$button-class}, button, input[type='button'], input[type='reset'], input[type='submit']" !default;
+$button-selector: "#{$button-class}" !default;
 ///
 $button-padding: space(1) space(2) !default;
+
 ///
 $button-font-size: 0.9rem !default;
 ///
 $button-font-weight: 600 !default;
 ///
+$button-line-height: 1.6825em !default;
+///
+$button-letter-spacing: 0.0125em !default;
+
+///
 $button-sm-padding: space('05') space(2) !default;
 ///
-$button-sm-font-size: 0.75rem !default;
+$button-sm-font-size: 0.875rem !default;
 ///
-$button-lg-padding: space(2) space(4) !default;
+$button-sm-letter-spacing: $button-letter-spacing !default;
+
 ///
-$button-lg-font-size: 1rem !default;
+$button-lg-padding: space(1) space(4) !default;
 ///
-$button-round-radius: 24px !default;
+$button-lg-font-size: 1.125rem !default;
+
 ///
-$button-icon-size: 32px !default;
+$button-round-radius: $button-border-radius * 4 !default;
+
 ///
-$button-icon-padding: 2px !default;
+$button-icon-size: 28px !default;
 ///
-$button-icon-small-size: 24px !default;
+$button-icon-padding: 3px !default;
+
 ///
-$button-icon-small-padding: 3px !default;
+$button-icon-sm-size: 20px !default;
+///
+$button-icon-sm-padding: 3px !default;
+
+///
+$button-icon-lg-size: $button-icon-size !default;
+///
+$button-icon-lg-padding: 6px !default;

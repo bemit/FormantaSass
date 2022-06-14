@@ -1,0 +1,23 @@
+////
+/// @group Component:Modal
+/// @author Mustard-UI@v1, Michael Becker
+////
+
+///
+$modal-border-radius: 4px !default;
+///
+$modal-max-height: 95vh !default;
+///
+$modal-shadow: true !default;
+///
+$modal-mask-color: $bg-backdrop !default;
+///
+$modal-bg-color: $bg-paper !default;
+///
+$modal-head-padding: space(2) !default;
+///
+$modal-body-padding: space(4) space(2) !default;
+///
+$modal-footer-padding: space(2) !default;
+///
+$modal-z: 10 !default;
