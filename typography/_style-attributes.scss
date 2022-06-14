@@ -127,3 +127,15 @@
     list-style: none;
     padding-left: 0;
 }
+
+///
+.color-inherit {
+    color: inherit;
+}
+
+@each $name, $color in $text-colors {
+    ///
+    .color-#{$name} {
+        color: $color;
+    }
+}

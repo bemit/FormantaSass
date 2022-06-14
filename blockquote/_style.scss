@@ -4,19 +4,6 @@
 ////
 
 ///
-$blockquote-bg-color: $color-white !default;
-///
-$blockquote-border-color: $brand-color !default;
-///
-$blockquote-border-width: 4px !default;
-///
-$blockquote-selector: "blockquote" !default;
-///
-$blockquote-author-selector: ".blockquote-author" !default;
-///
-$blockquote-author-font-size: 0.875rem !default;
-
-///
 #{$blockquote-selector} {
     display: block;
     margin: 0 0 0 space(3);

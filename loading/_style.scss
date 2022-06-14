@@ -2,51 +2,8 @@
 /// dual-ring loading animation
 /// @group Component:Loading
 /// @author https://github.com/loadingio/css-spinner/
-/// @license CC-0
+/// license CC-0
 ////
-
-///
-$loading-ring-width: 6px;
-///
-$loading-size: 80px;
-///
-$loading-ring-width-dense: 3px;
-///
-$loading-size-dense: 30px;
-///
-$loading-color: $color-gray-600;
-
-///
-.loading {
-    display: block;
-    width: $loading-size;
-    height: $loading-size;
-
-    &:after {
-        content: " ";
-        display: block;
-        width: $loading-size - $loading-ring-width - 2;
-        height: $loading-size - $loading-ring-width - 2;
-        margin: $loading-ring-width + 2;
-        border-radius: 50%;
-        border: $loading-ring-width solid $loading-color;
-        border-color: $loading-color transparent $loading-color transparent;
-        animation: loading 1.2s linear infinite;
-    }
-}
-
-///
-.loading.dense {
-    width: $loading-size-dense;
-    height: $loading-size-dense;
-
-    &:after {
-        width: $loading-size-dense - $loading-ring-width-dense - 2;
-        height: $loading-size-dense - $loading-ring-width-dense - 2;
-        margin: $loading-ring-width-dense + 2;
-        border-width: $loading-ring-width-dense;
-    }
-}
 
 ///
 @keyframes loading {
@@ -56,4 +13,35 @@ $loading-color: $color-gray-600;
     100% {
         transform: rotate(360deg);
     }
+}
+
+///
+.loading {
+    display: block;
+    width: $loading-size - $loading-ring-width - 2;
+    height: $loading-size - $loading-ring-width - 2;
+    border-radius: 50%;
+    border: $loading-ring-width solid $loading-color;
+    border-color: $loading-color transparent $loading-color transparent;
+    animation: loading 1.2s linear infinite;
+
+    &.loading-stopped {
+        animation-play-state: paused;
+        animation-delay: 0.1s;
+        transform: rotate(145deg);
+    }
+
+    @each $name, $color in $outlined-colors {
+        ///
+        &#{$outlined-class-name}-#{$name} {
+            border-color: $color transparent $color transparent !important;
+        }
+    }
+}
+
+///
+.loading.dense {
+    width: $loading-size-dense - $loading-ring-width-dense - 2;
+    height: $loading-size-dense - $loading-ring-width-dense - 2;
+    border-width: $loading-ring-width-dense;
 }

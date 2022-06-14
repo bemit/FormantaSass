@@ -1,0 +1,12 @@
+////
+/// Background
+/// ================
+/// @group bg
+////
+
+@each $name, $color in $bg-colors {
+    ///
+    .bg-#{$name} {
+        background-color: $color;
+    }
+}

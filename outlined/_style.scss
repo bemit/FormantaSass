@@ -1,0 +1,76 @@
+////
+/// @group Outlined
+/// @author Michael Becker
+////
+
+///
+#{$outlined-class-name} {
+    border: $outlined-border-width solid $outlined-border-color;
+    border-radius: $outlined-border-radius;
+
+    @each $name, $color in $outlined-colors {
+        ///
+        &-#{$name} {
+            border-color: $color;
+        }
+    }
+
+    ///
+    &#{$outlined-class-name}-thick {
+        border-width: $outlined-thick-border-width;
+    }
+}
+
+///
+#{$outlined-class-name}-rect {
+    border-radius: $outlined-rect-border-radius;
+}
+
+///
+#{$outlined-class-name}-round {
+    border-radius: $outlined-round-border-radius;
+}
+
+///
+#{$outlined-class-name}t {
+    border-top-style: solid;
+    border-top-width: $outlined-border-width;
+
+    ///
+    &#{$outlined-class-name}-thick {
+        border-top-width: $outlined-thick-border-width;
+    }
+}
+
+///
+#{$outlined-class-name}r {
+    border-right-style: solid;
+    border-right-width: $outlined-border-width;
+
+    ///
+    &#{$outlined-class-name}-thick {
+        border-right-width: $outlined-thick-border-width;
+    }
+}
+
+///
+#{$outlined-class-name}b {
+    border-bottom-style: solid;
+    border-bottom-width: $outlined-border-width;
+
+    ///
+    &#{$outlined-class-name}-thick {
+        border-bottom-width: $outlined-thick-border-width;
+    }
+}
+
+///
+#{$outlined-class-name}l {
+    border-left-style: solid;
+    border-left-width: $outlined-border-width;
+
+    ///
+    &#{$outlined-class-name}-thick {
+        border-left-width: $outlined-thick-border-width;
+    }
+}

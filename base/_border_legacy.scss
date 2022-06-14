@@ -1,0 +1,30 @@
+////
+/// @group Base:Border
+/// @author Basscss@v8
+////
+
+@import "border";
+
+///
+.border-top {
+    border-top-style: solid;
+    border-top-width: $base-border-width;
+}
+
+///
+.border-right {
+    border-right-style: solid;
+    border-right-width: $base-border-width;
+}
+
+///
+.border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: $base-border-width;
+}
+
+///
+.border-left {
+    border-left-style: solid;
+    border-left-width: $base-border-width;
+}

@@ -40,6 +40,18 @@
 }
 
 ///
+@mixin subtitle1 {
+    font-size: $subtitle1-font-size;
+    line-height: $subtitle1-line-height;
+}
+
+///
+@mixin subtitle2 {
+    font-size: $subtitle2-font-size;
+    line-height: $subtitle2-line-height;
+}
+
+///
 @mixin body1($factor: 1) {
     font-family: $font-family;
     font-size: 1em * $factor;

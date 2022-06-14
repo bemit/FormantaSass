@@ -8,6 +8,12 @@
     @include btn;
 }
 
+///
+#{$button-class}-text {
+    background-color: transparent;
+    border-color: transparent;
+}
+
 @each $name, $color in $button-colors {
     ///
     #{$button-class}-#{$name} {
@@ -18,7 +24,7 @@
 
     ///
     #{$button-class}-#{$name}-o {
-        background-color: $color-white;
+        background-color: $button-outline-background-color;
         color: $color;
         border-color: $color;
     }
@@ -45,11 +51,14 @@
 #{$button-class}-sm {
     padding: $button-sm-padding;
     font-size: $button-sm-font-size;
+    letter-spacing: $button-sm-letter-spacing;
 }
 
 ///
 #{$button-class}-raw {
     border: 0;
-    background: 0;
+    padding: 0;
+    background: transparent;
     cursor: pointer;
+    text-align: start;
 }

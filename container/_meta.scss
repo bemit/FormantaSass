@@ -1,0 +1,18 @@
+////
+/// @group Container
+/// @author Michael Becker
+////
+
+///
+$container-sizes: (
+    'sm' : $bp-small,
+    'md' : $bp-medium,
+    'lg' : $bp-large,
+    'xl' : $bp-xlarge,
+) !default;
+
+///
+$container-responsive-sizes: (
+    'small' : 90%,
+    'large' : map-get($container-sizes, 'large'),
+) !default;

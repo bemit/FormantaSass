@@ -1,22 +1,7 @@
-// Variables
+//
+// This file includes all imports which DO NO produce CSS output, they only define vars, mixins and functions
+//
 
-/// @prop {String} $class-style [bootstrap] `bootstrap` or `basscss`
-$class-style: bootstrap !default;
-
-@import 'vars/grid';
-@import 'vars/colors';
-
-@import 'base/border-vars';
-@import 'base/position-vars';
-
-@import 'spacing/meta';
-@import 'buttons/meta';
-@import 'elevation/meta';
-
-@import 'grid/meta-breakpoint';
-@import 'grid/meta-grid';
-
-@import 'typography/meta';
-@import 'typography/links-meta';
-
-
+@import 'meta-base';
+@import 'meta-elements';
+@import 'meta-components';

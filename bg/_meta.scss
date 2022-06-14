@@ -1,0 +1,17 @@
+////
+/// Background
+/// ================
+/// @group bg
+////
+
+///
+$bg-colors: (
+    'paper': $bg-paper,
+    'paper-transparent': $bg-paper-transparent,
+    'body': $bg-body,
+    'backdrop': $bg-backdrop,
+    'success': rgba($color-success, 0.2125),
+    'info': rgba($color-info, 0.2125),
+    'warning': rgba($color-warning, 0.2125),
+    'danger': rgba($color-danger, 0.2125),
+) !default;

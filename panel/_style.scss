@@ -4,19 +4,16 @@
 ////
 
 ///
-$panel-shadow: true !default;
-///
-$panel-bg-color: $color-white !default;
-
-///
 .panel {
     background: $panel-bg-color;
-    border-radius: 5px;
+    border-radius: $base-border-radius;
     overflow: hidden;
-    margin: 0 0 space(4) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
     @if $panel-shadow {
-        box-shadow: elevation(light);
+        box-shadow: elevation('area');
     }
 }
 
@@ -25,24 +22,64 @@ $panel-bg-color: $color-white !default;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: space(4);
-}
-
-///
-.panel-title {
-    margin: 0;
+    margin: space(3) space(4) 0 space(4);
 }
 
 ///
 .panel-body {
-    margin: space(5) space(4);
+    margin: space(2) space(4);
 }
 
 ///
 .panel-footer {
-    margin: space(4);
+    margin: 0 space(4) space(4) space(4);
+}
 
-    & > * {
-        margin-bottom: 0;
+///
+.panel.dense {
+    ///
+    .panel-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: space(2) space(2) 0 space(2);
     }
+
+    ///
+    .panel-body {
+        margin: space(1) space(2);
+    }
+
+    ///
+    .panel-footer {
+        margin: 0 space(2) space(3) space(2);
+    }
+}
+
+///
+.panel[tabindex]:not([tabindex="-1"]),
+button.panel,
+a.panel {
+    transition: 0.0926s transform linear;
+    cursor: pointer;
+}
+
+///
+.panel[tabindex]:not([tabindex="-1"]):hover,
+.panel[tabindex]:not([tabindex="-1"]):focus,
+button.panel:hover,
+button.panel:focus,
+a.panel:hover,
+a.panel:focus {
+    transform: scale(1.013);
+    opacity: 1;
+    transition: 0.026s transform linear;
+}
+
+///
+.panel[tabindex]:not([tabindex="-1"]):active,
+button.panel:active,
+a.panel:active {
+    transform: scale(0.997);
+    opacity: 1;
 }

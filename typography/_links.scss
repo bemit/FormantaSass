@@ -1,14 +1,7 @@
 ////
 /// @group Typography:Links
 /// @author Mustard-UI@v1, Michael Becker
+/// @deprecated use `links-style` instead
 ////
 
-///
-#{$link-selector} {
-    @include link();
-}
-
-///
-strong #{$link-selector} {
-    font-weight: $link-weight-strong;
-}
+@import "links-style";

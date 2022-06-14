@@ -3,14 +3,6 @@
 /// @author Mustard-UI@v1, Michael Becker
 ////
 
-///
-$container-sizes: (
-    'small' : $bp-small,
-    'medium' : $bp-medium,
-    'large' : $bp-large,
-    'xlarge' : $bp-xlarge,
-) !default;
-
 @each $name, $size in $container-sizes {
     ///
     .container-#{$name} {
@@ -24,7 +16,12 @@ $container-sizes: (
     margin-right: auto;
 }
 
-///
+/// @deprecated use `container-fullwidth`
 .container-fixed {
+    width: 100%;
+}
+
+///
+.container-fullwidth {
     width: 100%;
 }
