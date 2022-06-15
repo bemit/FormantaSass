@@ -1,50 +1,9 @@
 //
 // This file includes all imports which produce CSS output.
 //
-// The order of @import is important, but not if all are imported
-// - beginning with the most global styles
-// - then the more rich components, which may need to overwrite the global styles (e.g. `box-sizing`)
-// - afterwards the basic components in their "wanted order"
-// - at the end the most basic styles, which could overwrite any rule in any component
-//
 
 @import "style-global";
-
-@import "loading/style";
-@import "modal/style";
-@import "panel/style";
-@import "tooltip/style";
-
-@import "container/containers";
-@import "container/containers-responsive";
-
-@import "code/style";
-@import "blockquote/style";
-
-@import "form/style";
-@import "table/style";
-@import 'collapse/style';
-
-// semantic typography should overwrite any `rich component` rules
-@import "typography/style-titles";
-@import "typography/style-body";
-@import "typography/links-style";
-
-// buttons should be able to overwrite `typography` rules
-@import "buttons/style";
-@import "buttons/style-icon";
-
-// typography attributes should override any `button`, `a`, `h1`, ... styles
-@import "typography/style-attributes";
-
-// elevation/outlined needs to overwrite nearly anything (in e.g. panel, buttons etc)
-@import "elevation/style";
-@import "outlined/style";
-
-@import "bg/style";
-
-// the most basic styles, which should overwrite any other rule
-@import "spacing/style";
-@import "spacing/style-responsive";
-@import "grid/style";
+@import "style-components";
+@import "style-elements";
+@import "style-attributes";
 @import "style-base";

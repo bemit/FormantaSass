@@ -29,7 +29,8 @@
         "table": "Table",
         "typography": "Typography",
         "typography:links": "Typography Links",
-        "vars:colors": "Variables: Colors",
+        "vars:colors-map": "Variables: Colors Map",
+        "vars:colors-semantic": "Variables: Colors Semantic",
         "vars:grid": "Variables: Grid",
         "vars:naming": "Variables: Naming",
         "global-style": "Global Style"

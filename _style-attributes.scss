@@ -1,0 +1,18 @@
+//
+// This file includes all imports which produce CSS output.
+// -> for "style attributes", which should be usable to overwrite any specific design implementation
+//
+
+// typography attributes should override any `button`, `a`, `h1`, ... styles
+@import "typography/style-attributes";
+
+// elevation/outlined needs to overwrite nearly anything (in e.g. panel, buttons etc)
+@import "elevation/style";
+@import "outlined/style";
+
+@import "bg/style";
+
+// the most basic styles, which should overwrite any other rule
+@import "spacing/style";
+@import "spacing/style-responsive";
+@import "grid/style";

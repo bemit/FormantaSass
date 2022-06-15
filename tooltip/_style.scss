@@ -33,6 +33,7 @@
     background: $tooltip-bg-color;
     border-radius: $tooltip-border-radius;
     box-shadow: elevation(2);
+    z-index: $tooltip-z;
 
     &::after {
         position: absolute;

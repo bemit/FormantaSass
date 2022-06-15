@@ -1,9 +1,10 @@
 //
-// This file includes meta imports which may rely on `_meta-elements`/`_meta.
+// This file includes meta imports which may rely on `_meta-attributes`/`_meta.
 //
 
 @import 'container/meta';
 
+@import 'form/meta';
 @import 'buttons/meta';
 
 @import 'table/meta';
