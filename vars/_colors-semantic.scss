@@ -1,7 +1,7 @@
 ////
 /// Vars: Colors
 /// ================
-/// @group vars:colors
+/// @group vars:colors-semantic
 ////
 
 /// @type Color
@@ -29,10 +29,10 @@ $bg-paper: $color-light !default;
 $bg-paper-transparent: $color-light-transparent !default;
 /// Areas which are embedded or highlighted or contained inside of paper
 /// @type Color
-$bg-contained: $color-gray-100 !default;
+$bg-contained: $color-gray-200 !default;
 /// Body background
 /// @type Color
-$bg-body: #f1f5f6 !default;
+$bg-body: #f0ecf0 !default;
 /// Backdrop for modals/overlays over the body/paper backgrounds
 /// @type Color
 $bg-backdrop: $color-dark-transparent !default;

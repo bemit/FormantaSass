@@ -11,7 +11,7 @@
     padding: $button-icon-padding;
     flex-shrink: 0;
 
-    > * {
+    #{$button-icon-inner-selector} {
         width: $button-icon-size;
         height: $button-icon-size;
         z-index: 1;
@@ -19,21 +19,24 @@
 }
 
 ///
-#{$button-class}-ic-lg {
-    padding: $button-icon-lg-padding;
+#{$button-class}-ic {
+    ///
+    &#{$button-class}-lg {
+        padding: $button-icon-lg-padding;
 
-    > * {
-        width: $button-icon-lg-size;
-        height: $button-icon-lg-size;
+        #{$button-icon-inner-selector} {
+            width: $button-icon-lg-size;
+            height: $button-icon-lg-size;
+        }
     }
-}
 
-///
-#{$button-class}-ic-sm {
-    padding: $button-icon-sm-padding;
+    ///
+    &#{$button-class}-sm {
+        padding: $button-icon-sm-padding;
 
-    > * {
-        width: $button-icon-sm-size;
-        height: $button-icon-sm-size;
+        #{$button-icon-inner-selector} {
+            width: $button-icon-sm-size;
+            height: $button-icon-sm-size;
+        }
     }
 }

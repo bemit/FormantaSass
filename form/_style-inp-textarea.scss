@@ -1,9 +1,7 @@
 ////
 /// @group Form
 /// @author Mustard-UI@v1, Michael Becker
-
-///
-$textarea-selector: 'textarea' !default;
+////
 
 ///
 #{$textarea-selector} {
@@ -12,13 +10,13 @@ $textarea-selector: 'textarea' !default;
     width: 100%;
     padding: 0.6em 0.8em;
     min-height: 100px;
-    font-size: 1em;
+    font-size: 0.875rem;
     //font-weight: 300;
     line-height: 1.4;
     color: $font-color;
     background-color: $input-bg-color;
-    border: 1px solid $input-border-color;
-    border-radius: 5px;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-border-radius;
 
     &::placeholder {
         color: $input-placeholder-color;

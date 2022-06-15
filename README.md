@@ -6,9 +6,9 @@
 
 [![npm (scoped)](https://img.shields.io/npm/v/@formanta/sass?style=flat-square)](https://www.npmjs.com/package/@formanta/sass)
 
-Sass library optimized for [AMP](https://amp.dev), size: `45KB` *(gzip `8.75KB`)* - or **only `27KB`** *(gzip `6.36KB`)* without responsive spacings!
+Feature rich Sass library with small output size: `~45KB` *(gzip `9KB`)* CSS - or **only `~25.8KB`** *(gzip `6.5KB`)* without responsive spacings!
 
-Features a low-level OOCSS framework with optional CSS output and ready components to speed up development and page load!
+Low-level OOCSS framework with optional CSS output and ready components to speed up development and page load!
 
 CSS semantics like bootstrap *or* Basscss (e.g. `col-md-6` or `md-col-6`). Used CSS selectors can be changed for most components, like applying button styles only to `.btn` and not on `.btn, button` or using `.button`/`.button-round`/`.button-lg` instead of `.btn`/`.btn-round`/`.btn-lg`.
 
@@ -16,7 +16,15 @@ From Version `>0.20.0` onwards this library is inspired and based upon [mustard-
 
 **Take a look & inspect the [example page](https://formanta.bemit.codes)** for all selectors and styles. For implementation details check the [documentation](https://formanta.bemit.codes/docs/) of Sass and CSS.
 
-Looking for an easy [static site generator for AMP or PWA-enhanced pages](https://github.com/bemit/create-amp-page)?
+*Compatible with [AMP](https://amp.dev).*
+
+- [Quick Start](#quick-start)
+- [Config](#config)
+- [Modular Imports](#modular-imports)
+- [Pre Build CSS](#pre-build-css)
+- [License](#license)
+
+> Easily build your homepage with a modern static site generator, try out [create-amp-page]((https://github.com/bemit/create-amp-page)) with one of the [starter repos](https://github.com/bemit/create-amp-page#starter-templates), for AMP or PWA-enhanced pages.
 
 ## Quick Start
 
@@ -64,8 +72,8 @@ For a full list of variables consult the [documentation](https://formanta.bemit.
 Most important:
 
 - [`$class-style`](https://formanta.bemit.codes/docs/#vars:naming-variable-class-style)
-- [`$color-primary`](https://formanta.bemit.codes/docs/#vars:colors-variable-color-primary)
-- [`$color-secondary`](https://formanta.bemit.codes/docs/#vars:colors-variable-color-secondary)
+- [`$color-primary`](https://formanta.bemit.codes/docs/#vars:colors-semantic-variable-color-primary)
+- [`$color-secondary`](https://formanta.bemit.codes/docs/#vars:colors-semantic-variable-color-secondary)
 - [`$spacing`](https://formanta.bemit.codes/docs/#spacing-variable-spacing)
 - [`$line-height`](https://formanta.bemit.codes/docs/#typography-variable-line-height)
 - [`$font-weight`](https://formanta.bemit.codes/docs/#typography-variable-font-weight)
@@ -76,13 +84,19 @@ Most important:
 - [`$title-font-family`](https://formanta.bemit.codes/docs/#typography-variable-title-font-family)
 - [`$container-sizes`](https://formanta.bemit.codes/docs/#container-variable-container-sizes)
 
-## Modular Loading
+## Modular Imports
 
 The Sass files are structured, so it's possible to include just the needed styles, but have all variables and mixins ready.
 
-The general overriding order is `base > specific` for variables (`_meta*`) and `specific > base` for most styles (`_style*`), this enables the reusable of more basic variables while configuring the more complex structures. But with the inversion for the styles, it is possible to overwrite more specific structures with the low-level CSS basics again.
+The general overriding order is `low-level > specific` for variables (`_meta*`) and `specific > low-level` for most styles (`_style*`), this enables the reuse of low-level variables while configuring the more complex structures. But with the inversion at the style order, it is possible to overwrite more specific structures with the low-level CSS styles again.
 
-This file shows one way to re-build it, it enables reusing "the more basic vars/mixins" at the config and output of the "more rich elements and components" - and overwriting styles in a similar fashion.
+> `specific` = more complex structures, mostly called `components` in this library
+>
+> `low-level` = low-level / object-oriented CSS rules, called `elements` / `base` / `attributes` in this library
+>
+> `base` = lowest low-level CSS rules, based/inspired upon `Basscss@v8`
+
+This file shows one way to re-build it:
 
 ```scss
 // 1. here the base vars can be overwritten
@@ -92,10 +106,12 @@ $color-light: #f3f3f3;
 // 2. import: base, spacing vars and mixins
 @import '~@formanta/sass/meta-base';
 
-// 3. here the component vars can be overwritten - the base vars and spacing mixin can be used
+// here reuse the base vars, e.g.
+//    - configure `color-semantic` and attribute/component colors using the `color-map` vars
+//    - configure the component sizing, using the spacing vars and mixins
 
-$title-font-color: $color-gray-800;
-$font-color: #2f373a;
+$title-font-color: $color-gray-900;
+$font-color: $color-gray-700;
 $line-height: 1.45;
 $color-primary: #6224ff;
 $container-sizes: (
@@ -104,24 +120,29 @@ $container-sizes: (
     'large' : $bp-large + 100,
     'xlarge' : $bp-xlarge,
 );
+$button-padding: space(2) space(3);
 
-// 4. import the missing vars and the basic mixins/variables
-@import '~@formanta/sass/meta-elements';
+// 3. import the missing vars and the low-level/basic mixins/variables
+@import '~@formanta/sass/meta-attributes';
 
-// here the component vars can be reconfigured, using vars and mixins from the elements
+// here the component vars can be reconfigured, using vars and mixins from the attributes/elements
 
-// 6. import the component defaults/mixins
+// 4. import the component defaults/mixins
 @import '~@formanta/sass/meta-components';
 
-// 6. add own CSS rules which may use variable/mixins from Formanta Sass
+// 5. get everything that actually produces CSS from Formanta or import only the wanted styles
+@import '~@formanta/sass/style-global'; // global html, body style
+@import '~@formanta/sass/style-components'; // complex structures (e.g. panel) and basic components
+@import '~@formanta/sass/style-elements'; // basic HTML elements (e.g. `h1 - h6`, `body1`, `code`, `blockquote`)
 
-// 7. here the `style` component vars (e.g. `$blockquote-selector`) can be overwritten
+// add own custom structures here, so they can be overwritten using the low-level styles,
+// but can override basic styles of titles, links, buttons etc.
 
-// 8. get everything that actually produces CSS from Formanta or import only the wanted styles
-@import '~@formanta/sass/style';
+// 6. get the low-level CSS output rules
+@import '~@formanta/sass/style-attributes'; // low-level attribute rules, incl. typography attribute styles, responsive spacings
+@import '~@formanta/sass/style-base'; // low-level base rules
 
-// 9. here - if really necessary - the formanta rules can be overwritten,
-//    or styles which rely on component variables (e.g. `$panel-shadow`)
+// here - if really necessary - the low-level rules can be overwritten
 ```
 
 ## Versions
@@ -130,9 +151,44 @@ This project is **in beta**.
 
 This package is managed [in a monorepo](https://github.com/bemit/Formanta).
 
+## Pre Build CSS
+
+Prebuild CSS are available to try it out with some default configs.
+
+> all are containing [normalize.css v8.0.1](https://github.com/necolas/normalize.css), except the two with the `-no-normalize` suffix
+
+- [defaults](https://formanta.bemit.codes/styles/prebuild/main.css)
+    - [defaults no-normalize](https://formanta.bemit.codes/styles/prebuild/main-no-normalize.css)
+    - uses just the defaults
+    - source files in demo monorepo:
+        - [prebuild/main](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main.scss)
+        - [prebuild/main-no-normalize](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-no-normalize.scss)
+- [defaults no-responsive-spacings](https://formanta.bemit.codes/styles/prebuild/main-no-responsive-spacings.css)
+    - [defaults no-responsive-spacings no-normalize](https://formanta.bemit.codes/styles/prebuild/main-no-responsive-spacings-no-normalize.css)
+    - uses just the defaults, but does not include responsive spacings
+    - source files in demo monorepo:
+        - [prebuild/main-no-responsive-spacings](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-no-responsive-spacings.scss)
+        - [prebuild/main-no-responsive-spacings-no-normalize](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-no-responsive-spacings-no-normalize.scss)
+- [contrast](https://formanta.bemit.codes/styles/prebuild/main-contrast.css)
+    - source files in demo monorepo:
+        - [config/vars-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/vars-contrast.scss)
+        - [prebuild/main-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-contrast.scss)
+- [dark](https://formanta.bemit.codes/styles/prebuild/main-dark.css)
+    - source files in demo monorepo:
+        - [config/vars-dark](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/vars-dark.scss)
+        - [prebuild/main-dark](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-dark.scss)
+- [dark-contrast](https://formanta.bemit.codes/styles/prebuild/main-dark-contrast.css)
+    - source files in demo monorepo:
+        - [config/vars-dark-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/vars-dark-contrast.scss)
+        - [prebuild/main-dark-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-dark-contrast.scss)
+- [dark cssvars](https://formanta.bemit.codes/styles/prebuild/main-dark-cssvars.css)
+    - source files in demo monorepo:
+        - [config/vars-dark-cssvars](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/vars-dark-cssvars.scss)
+        - [prebuild/main-dark-cssvars](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-dark-cssvars.scss)
+
 ## License
 
-Formanta: Michael Becker, [MIT License](https://github.com/bemit/Formanta/blob/master/LICENSE)
+Formanta: Michael Becker, [MIT License](https://github.com/bemit/FormantaSass/blob/master/LICENSE)
 
 Basscss: Copyright (c) 2013 – 2016 Brent Jackson, [MIT License](https://github.com/basscss/basscss/blob/master/LICENSE.md)
 

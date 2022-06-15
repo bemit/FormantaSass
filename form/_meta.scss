@@ -1,0 +1,44 @@
+////
+/// @group Form
+/// @author Mustard-UI@v1, Michael Becker
+////
+
+///
+$input-selector: 'input[type="file"], input[type="color"], input[type="date"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="range"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"], input[type="text"], input[type="password"], select' !default;
+///
+$input-base-selector: 'input, select, fieldset' !default;
+///
+$input-fieldset-selector: 'fieldset' !default;
+///
+$input-option-selector: 'input[type="checkbox"], input[type="radio"]' !default;
+///
+$label-selector: 'label' !default;
+///
+$input-range-selector: 'input[type="range"]' !default;
+///
+$input-color-selector: 'input[type="color"]' !default;
+
+///
+$input-bg-color: $bg-paper !default;
+///
+$input-active-color: $color-primary !default;
+///
+$input-invalid-color: $color-red-600 !default;
+///
+$input-error-text-color: $color-danger-dark !default;
+///
+$input-placeholder-color: $color-gray-500 !default;
+///
+$input-border-color: $base-border-color !default;
+///
+$input-border-width: $base-border-width !default;
+///
+$input-border-radius: $base-border-radius !default;
+///
+$input-label-font-weight: 400 !default;
+
+///
+$select-selector: 'select' !default;
+
+///
+$textarea-selector: 'textarea' !default;

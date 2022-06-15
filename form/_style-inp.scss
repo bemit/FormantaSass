@@ -1,46 +1,19 @@
 ////
 /// @group Form
 /// @author Mustard-UI@v1, Michael Becker
-
-///
-$input-selector: 'input[type="file"], input[type="color"], input[type="date"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="range"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"], input[type="text"], input[type="password"], select' !default;
-///
-$input-base-selector: 'input, select, fieldset' !default;
-///
-$input-fieldset-selector: 'fieldset' !default;
-///
-$input-option-selector: 'input[type="checkbox"], input[type="radio"]' !default;
-///
-$label-selector: 'label' !default;
-///
-$input-range-selector: 'input[type="range"]' !default;
-///
-$input-color-selector: 'input[type="color"]' !default;
-
-///
-$input-bg-color: $bg-paper !default;
-///
-$input-active-color: $color-primary !default;
-///
-$input-border-color: $base-border-color !default;
-///
-$input-invalid-color: $color-red-600 !default;
-///
-$input-error-text-color: $color-danger-dark !default;
-///
-$input-placeholder-color: $color-gray-500 !default;
+////
 
 ///
 .validation-error {
     margin-top: 2px;
-    font-size: 12px;
+    font-size: 0.785em;
     color: $input-error-text-color;
 }
 
 ///
 #{$label-selector} {
-    font-size: 0.875em;
-    font-weight: 400;
+    font-size: 0.875rem;
+    font-weight: $input-label-font-weight;
 
     > span {
         display: block;
@@ -55,12 +28,12 @@ $input-placeholder-color: $color-gray-500 !default;
     display: block;
     width: 100%;
     padding: 0.6em 0.8em;
-    font-size: 0.85rem;
+    font-size: 0.875rem;
     font-weight: inherit;
     color: $font-color;
     background: $input-bg-color;
-    border-radius: $base-border-radius;
-    border: 1px solid $input-border-color;
+    border-radius: $input-border-radius;
+    border: $input-border-width solid $input-border-color;
 
     &.invalid, &:invalid {
         border-color: $input-invalid-color;
@@ -87,9 +60,9 @@ $input-placeholder-color: $color-gray-500 !default;
 #{$input-fieldset-selector} {
     margin: space(3) 0;
     padding: space(2) space(3);
-    font-size: 14px;
-    border: 1px solid $input-border-color;
-    border-radius: $base-border-radius;
+    font-size: 0.875rem;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-border-radius;
 
     legend {
         padding: 0 space(1);

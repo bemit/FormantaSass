@@ -55,7 +55,7 @@
 @mixin body1($factor: 1) {
     font-family: $font-family;
     font-size: 1em * $factor;
-    line-height: $line-height * $factor;
+    line-height: $line-height;
     font-weight: $font-weight;
     color: $font-color;
     margin: $body1-margin;

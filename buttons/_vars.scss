@@ -62,12 +62,19 @@ $button-lg-padding: space(1) space(4) !default;
 $button-lg-font-size: 1.125rem !default;
 
 ///
-$button-round-radius: $button-border-radius * 4 !default;
+$button-round-radius: $base-border-radius * 4 !default;
+
+///
+$button-group-radius: $button-border-radius !default;
+///
+$button-group-round-radius: $base-border-radius * 6 !default;
 
 ///
 $button-icon-size: 28px !default;
 ///
 $button-icon-padding: 3px !default;
+///
+$button-icon-inner-selector: "> svg, > img" !default;
 
 ///
 $button-icon-sm-size: 20px !default;
