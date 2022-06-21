@@ -4,12 +4,7 @@
 ////
 
 ///
-#{$title1-selector},
-#{$title2-selector},
-#{$title3-selector},
-#{$title4-selector},
-#{$title5-selector},
-#{$title6-selector} {
+#{$titles-selectors} {
     font-family: $title-font-family;
     font-weight: $title-font-weight;
     color: $title-font-color;
@@ -46,10 +41,8 @@
     @include title6;
 }
 
-
 ///
-#{$subtitle2-selector},
-#{$subtitle1-selector} {
+#{$subtitles-selectors} {
     font-family: $subtitle-font-family;
     font-weight: $subtitle-font-weight;
     color: $subtitle-font-color;

@@ -10,25 +10,60 @@
     align-content: center;
     justify-content: flex-start;
 
-    #{$button-class}:first-child:not(:last-child):not(#{$outlined-class-name}-rect) {
-        border-radius: $button-group-radius 0 0 $button-group-radius;
+    ///
+    :first-child:not(:last-child) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        &#{$button-class}-ic:not(#{$outlined-class-name}-rect) {
+            border-top-left-radius: $button-border-radius;
+            border-bottom-left-radius: $button-border-radius;
+        }
     }
 
-    #{$button-class}:last-child:not(:first-child):not(#{$outlined-class-name}-rect) {
-        border-radius: 0 $button-group-radius $button-group-radius 0;
+    ///
+    :last-child:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+
+        &#{$button-class}-ic:not(#{$outlined-class-name}-rect) {
+            border-top-right-radius: $button-border-radius;
+            border-bottom-right-radius: $button-border-radius;
+        }
     }
 
-    #{$button-class}:not(:first-child):not(:last-child) {
+    ///
+    :not(:first-child):not(:last-child) {
         border-radius: 0;
     }
 
+    ///
     &#{$button-class}-group-round {
-        #{$button-class}:first-child:not(:last-child):not(#{$outlined-class-name}-rect) {
-            border-radius: $button-group-round-radius 0 0 $button-group-round-radius;
+        :first-child:not(:last-child) {
+            &:not(#{$outlined-class-name}-rect) {
+                border-top-left-radius: $button-round-radius;
+                border-bottom-left-radius: $button-round-radius;
+            }
         }
 
-        #{$button-class}:last-child:not(:first-child):not(#{$outlined-class-name}-rect) {
-            border-radius: 0 $button-group-round-radius $button-group-round-radius 0;
+        :last-child:not(:first-child) {
+            &:not(#{$outlined-class-name}-rect) {
+                border-top-right-radius: $button-round-radius;
+                border-bottom-right-radius: $button-round-radius;
+            }
+        }
+    }
+
+    ///
+    &-vertical {
+        @include button-group-vertical();
+
+        @each $name, $bp in $button-group-vertical-bp {
+            @media #{$bp} {
+                &-#{$name} {
+                    @include button-group-vertical();
+                }
+            }
         }
     }
 }
