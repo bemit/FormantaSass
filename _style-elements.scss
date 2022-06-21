@@ -5,7 +5,6 @@
 
 @import "code/style";
 @import "blockquote/style";
-@import 'collapse/style';
 
 // semantic typography should overwrite any `rich component` rules
 @import "typography/style-titles";
@@ -16,3 +15,6 @@
 @import "buttons/style";
 @import "buttons/style-icon";
 @import "buttons/style-group";
+
+// as tabs are more specific implementations of buttons/btn-group, they must be able to overwrite those
+@import "tabs/style";

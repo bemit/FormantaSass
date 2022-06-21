@@ -36,7 +36,7 @@ $button-outline-background-color: $button-background-color !default;
 ///
 $button-class: ".btn" !default;
 ///
-$button-selector: "#{$button-class}" !default;
+$button-selector: "#{$button-class},.button" !default;
 ///
 $button-padding: space(1) space(2) !default;
 
@@ -64,10 +64,25 @@ $button-lg-font-size: 1.125rem !default;
 ///
 $button-round-radius: $base-border-radius * 4 !default;
 
+/// styles applied to `hover`/`focus` states
+$button-interaction-intent: (
+    'opacity': 0.85,
+    'transform': scale(1.025),
+) !default;
+
 ///
-$button-group-radius: $button-border-radius !default;
+$button-interaction-active: (
+    'opacity': 1,
+    'transform': scale(1),
+) !default;
+
 ///
-$button-group-round-radius: $base-border-radius * 6 !default;
+$button-interaction-disabled: (
+    'opacity': 0.5,
+) !default;
+
+///
+$button-interaction-disabled-cursor: not-allowed !default;
 
 ///
 $button-icon-size: 28px !default;
@@ -85,3 +100,8 @@ $button-icon-sm-padding: 3px !default;
 $button-icon-lg-size: $button-icon-size !default;
 ///
 $button-icon-lg-padding: 6px !default;
+
+///
+$button-group-vertical-bp: (
+    'md': bp-md-q(),
+) !default;

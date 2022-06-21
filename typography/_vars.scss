@@ -82,6 +82,9 @@ $title5-selector: 'h5, .h5' !default;
 $title6-selector: 'h6, .h6' !default;
 
 ///
+$titles-selectors: $title1-selector, $title2-selector, $title3-selector, $title4-selector, $title5-selector, $title6-selector !default;
+
+///
 $subtitle-font-color: $title-font-color !default;
 ///
 $subtitle-font-weight: bold !default;
@@ -103,6 +106,9 @@ $subtitle2-line-height: 1em !default;
 $subtitle1-selector: '.subtitle1' !default;
 ///
 $subtitle2-selector: '.subtitle2' !default;
+
+///
+$subtitles-selectors: $subtitle1-selector, $subtitle2-selector !default;
 
 ///
 $body1-margin: 0 0 0.6125em 0 !default;

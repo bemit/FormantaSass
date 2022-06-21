@@ -56,30 +56,32 @@
     }
 }
 
+
 ///
 .panel[tabindex]:not([tabindex="-1"]),
 button.panel,
 a.panel {
     transition: 0.0926s transform linear;
     cursor: pointer;
-}
 
-///
-.panel[tabindex]:not([tabindex="-1"]):hover,
-.panel[tabindex]:not([tabindex="-1"]):focus,
-button.panel:hover,
-button.panel:focus,
-a.panel:hover,
-a.panel:focus {
-    transform: scale(1.013);
-    opacity: 1;
-    transition: 0.026s transform linear;
-}
+    ///
+    &:focus {
+        // todo: maybe remove the `keyboard outline` reset with a good style
+        outline: none;
+    }
 
-///
-.panel[tabindex]:not([tabindex="-1"]):active,
-button.panel:active,
-a.panel:active {
-    transform: scale(0.997);
-    opacity: 1;
+    ///
+    &:hover,
+    &:focus {
+        transform: scale(1.013);
+        opacity: 1;
+        transition: 0.026s transform linear;
+    }
+
+    ///
+    &:active {
+        transform: scale(0.997);
+        opacity: 1;
+    }
+
 }

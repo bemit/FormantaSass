@@ -35,34 +35,47 @@
 /// the styling for `focus`/`hover`/`active`/`disabled` pseudo elements
 @mixin btnStates {
     &:focus {
+        // todo: maybe remove the `keyboard outline` reset with a good style
         outline: none;
     }
 
     &:focus,
     &:hover {
-        opacity: 0.85;
         cursor: pointer;
-        transform: scale(1.025);
 
         @if $button-shadow {
             box-shadow: elevation(2);
         }
+
+        @each $type, $style in $button-interaction-intent {
+            #{$type}: $style;
+        }
     }
 
     &:active {
-        opacity: 1;
-        transform: scale(1);
+        @each $type, $style in $button-interaction-active {
+            #{$type}: $style;
+        }
     }
 
     &:disabled,
     &.disabled {
-        opacity: 0.5;
-        cursor: not-allowed;
+        cursor: $button-interaction-disabled-cursor;
+        @each $type, $style in $button-interaction-active {
+            #{$type}: $style;
+        }
     }
 }
 
-/// the full btn styling
-@mixin btn {
-    @include btnBase;
-    @include btnStates;
+///
+@mixin button-group-vertical() {
+    flex-direction: column;
+
+    :first-child:not(:last-child) {
+        border-radius: $button-border-radius $button-border-radius 0 0;
+    }
+
+    :last-child:not(:first-child) {
+        border-radius: 0 0 $button-border-radius $button-border-radius;
+    }
 }

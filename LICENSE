@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2015-2022 bemit UG (haftungsbeschränkt), https://bemit.codes
+Copyright (c) 2015-2022 Michael Becker / bemit UG (haftungsbeschränkt), https://bemit.codes
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Since 0.20.0 influenced and based upon:
+
+Basscss: Copyright (c) 2013 – 2016 Brent Jackson, MIT License, https://github.com/basscss/basscss/blob/master/LICENSE.md, used as initial source of `base`/low-level rules.
+
+Mustard-UI: Copyright 2018 Kyle Logue, MIT License, https://github.com/kylelogue/mustard-ui/blob/master/LICENSE, used as initial code for forms, buttons and other elements, the general influence of components.

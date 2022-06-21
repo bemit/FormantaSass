@@ -6,13 +6,11 @@
 
 [![npm (scoped)](https://img.shields.io/npm/v/@formanta/sass?style=flat-square)](https://www.npmjs.com/package/@formanta/sass)
 
-Feature rich Sass library with small output size: `~45KB` *(gzip `9KB`)* CSS - or **only `~25.8KB`** *(gzip `6.5KB`)* without responsive spacings!
+Feature rich Sass library with small output size: `~46KB` *(gzip `9.5KB`)* CSS - or **only `~27.5B`** *(gzip `6.7KB`)* without responsive spacings!
 
-Low-level OOCSS framework with optional CSS output and ready components to speed up development and page load!
+Low-level OOCSS framework with modular style files (optional CSS output), contains additionally ready to use components to speed up development and page load!
 
 CSS semantics like bootstrap *or* Basscss (e.g. `col-md-6` or `md-col-6`). Used CSS selectors can be changed for most components, like applying button styles only to `.btn` and not on `.btn, button` or using `.button`/`.button-round`/`.button-lg` instead of `.btn`/`.btn-round`/`.btn-lg`.
-
-From Version `>0.20.0` onwards this library is inspired and based upon [mustard-ui](https://kylelogue.github.io/mustard-ui) and [Basscss](https://basscss.com/). But written in Sass, with more configuration options through Sass variables, which where not existing in mustard or done by CSS vars in Basscss. Sass mixins are included for easier reuse without copying Sass/CSS.
 
 **Take a look & inspect the [example page](https://formanta.bemit.codes)** for all selectors and styles. For implementation details check the [documentation](https://formanta.bemit.codes/docs/) of Sass and CSS.
 
@@ -21,6 +19,7 @@ From Version `>0.20.0` onwards this library is inspired and based upon [mustard-
 - [Quick Start](#quick-start)
 - [Config](#config)
 - [Modular Imports](#modular-imports)
+- [Aims](#aims)
 - [Pre Build CSS](#pre-build-css)
 - [License](#license)
 
@@ -145,6 +144,22 @@ $button-padding: space(2) space(3);
 // here - if really necessary - the low-level rules can be overwritten
 ```
 
+## Aims
+
+Having a code-controlled CSS framework, which produces CSS from variable configurations and provides logic components, to ease config-based styles in clean-data environments.
+
+**additional aim since `0.20.0`:**
+
+Combining the flexibility of low-level style architectures, like Basscss, with the readyness and consistency of frameworks like Bootstrap.
+
+Using the CSS generator (Sass) var overriding together with optional CSS output and CSS overriding patterns to produce a small-size output.
+
+> From Version `>0.20.0` onwards this library is inspired and based upon [mustard-ui](https://kylelogue.github.io/mustard-ui) and [Basscss](https://basscss.com/). But written in Sass, with more configuration options through Sass variables, which where not existing in mustard or done by CSS vars in Basscss. Sass mixins are included for easier reuse without copying Sass/CSS.
+
+**additional aim since `0.23.0`:**
+
+Optimal design translations from UI language specifications, through better interoperable low-level attributes and elements which use e.g. Material-UI influenced color semantics, together with the low-level/OOCSS type of naming, modular components and controlled CSS output.
+
 ## Versions
 
 This project is **in beta**.
@@ -155,7 +170,7 @@ This package is managed [in a monorepo](https://github.com/bemit/Formanta).
 
 Prebuild CSS are available to try it out with some default configs.
 
-> all are containing [normalize.css v8.0.1](https://github.com/necolas/normalize.css), except the two with the `-no-normalize` suffix
+> build together with [normalize.css v8.0.1](https://github.com/necolas/normalize.css), except the two files with the `-no-normalize` suffix
 
 - [defaults](https://formanta.bemit.codes/styles/prebuild/main.css)
     - [defaults no-normalize](https://formanta.bemit.codes/styles/prebuild/main-no-normalize.css)
@@ -171,28 +186,29 @@ Prebuild CSS are available to try it out with some default configs.
         - [prebuild/main-no-responsive-spacings-no-normalize](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-no-responsive-spacings-no-normalize.scss)
 - [contrast](https://formanta.bemit.codes/styles/prebuild/main-contrast.css)
     - source files in demo monorepo:
-        - [config/vars-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/vars-contrast.scss)
+        - [config/_vars-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/_vars-contrast.scss)
         - [prebuild/main-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-contrast.scss)
 - [dark](https://formanta.bemit.codes/styles/prebuild/main-dark.css)
     - source files in demo monorepo:
-        - [config/vars-dark](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/vars-dark.scss)
+        - [config/_vars-dark](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/_vars-dark.scss)
         - [prebuild/main-dark](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-dark.scss)
 - [dark-contrast](https://formanta.bemit.codes/styles/prebuild/main-dark-contrast.css)
     - source files in demo monorepo:
-        - [config/vars-dark-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/vars-dark-contrast.scss)
+        - [config/_vars-dark-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/_vars-dark-contrast.scss)
         - [prebuild/main-dark-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-dark-contrast.scss)
 - [dark cssvars](https://formanta.bemit.codes/styles/prebuild/main-dark-cssvars.css)
     - source files in demo monorepo:
-        - [config/vars-dark-cssvars](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/vars-dark-cssvars.scss)
         - [prebuild/main-dark-cssvars](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-dark-cssvars.scss)
 
 ## License
 
-Formanta: Michael Becker, [MIT License](https://github.com/bemit/FormantaSass/blob/master/LICENSE)
+Formanta: Michael Becker / bemit [MIT License](https://github.com/bemit/FormantaSass/blob/master/LICENSE)
 
-Basscss: Copyright (c) 2013 – 2016 Brent Jackson, [MIT License](https://github.com/basscss/basscss/blob/master/LICENSE.md)
+Since 0.20.0 influenced and based upon:
 
-Mustard-UI: Copyright 2018 Kyle Logue, [MIT License](https://github.com/kylelogue/mustard-ui/blob/master/LICENSE)
+Basscss: Copyright (c) 2013 – 2016 Brent Jackson, [MIT License](https://github.com/basscss/basscss/blob/master/LICENSE.md), *used as initial source of `base`/low-level rules*.
+
+Mustard-UI: Copyright 2018 Kyle Logue, [MIT License](https://github.com/kylelogue/mustard-ui/blob/master/LICENSE), *used as initial code for forms, buttons and other elements, the general influence of components*.
 
 ## Copyright
 

@@ -109,6 +109,11 @@ $class-flex-xl: flex-xl !default;
 }
 
 ///
+.grow-0x {
+    flex-grow: 0;
+}
+
+///
 .grow-1x {
     flex-grow: 1;
 }

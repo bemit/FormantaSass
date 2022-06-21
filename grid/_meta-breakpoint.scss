@@ -6,11 +6,31 @@
 /// @author Michael Becker
 ////
 
+///
+@function bp-sm-q() {
+    @return '(min-width : ' + $bp-small + ')'
+}
+
+///
+@function bp-md-q() {
+    @return "(min-width: #{$bp-medium})"
+}
+
+///
+@function bp-lg-q() {
+    @return '(min-width : ' + $bp-large + ')'
+}
+
+///
+@function bp-xl-q() {
+    @return '(min-width : ' + $bp-xlarge + ')'
+}
+
 /// Breakpoint mixin for sm-eXtra
 /// got no  or -down version, as  would be all and -down would be like normal xs, as it is the smallest size
 /// @content will only be displayed when screen smaller or same then $bp-xs
 @mixin bp-xs {
-    @media (max-width : $bp-xsmall) {
+    @media (max-width: $bp-xsmall) {
         @content;
     }
 }
@@ -18,7 +38,7 @@
 /// Breakpoint mixin for sm and bigger
 /// @content will only be displayed when screen bigger then $bp-small
 @mixin bp-sm {
-    @media (min-width : $bp-small) {
+    @media #{bp-sm-q()} {
         @content;
     }
 }
@@ -26,7 +46,7 @@
 /// Breakpoint mixin for only sm
 /// @content will only be displayed when screen bigger then $bp-small and smaller then $bp-medium
 @mixin bp-sm-only {
-    @media (min-width : $bp-small) and (max-width : $bp-medium - 1) {
+    @media (min-width: $bp-small) and (max-width: $bp-medium - 1) {
         @content;
     }
 }
@@ -34,7 +54,7 @@
 /// Breakpoint mixin for md and bigger
 /// @content will only be displayed when screen bigger then $bp-small
 @mixin bp-md {
-    @media (min-width : $bp-medium) {
+    @media #{bp-md-q()} {
         @content;
     }
 }
@@ -42,7 +62,7 @@
 /// Breakpoint mixin for only md
 /// @content will only be displayed when screen bigger then $bp-small and smaller then $bp-medium
 @mixin bp-md-only {
-    @media (min-width : $bp-medium) and (max-width : $bp-large - 1) {
+    @media (min-width: $bp-medium) and (max-width: $bp-large - 1) {
         @content;
     }
 }
@@ -50,7 +70,7 @@
 /// Breakpoint mixin for lg and bigger
 /// @content will only be displayed when screen bigger then $bp-large
 @mixin bp-lg {
-    @media (min-width : $bp-large) {
+    @media #{bp-lg-q()} {
         @content;
     }
 }
@@ -58,7 +78,7 @@
 /// Breakpoint mixin for only lg
 /// @content will only be displayed when screen bigger then $bp-large and smaller then $bp-xlarge
 @mixin bp-lg-only {
-    @media (min-width : $bp-large) and (max-width : $bp-xlarge - 1) {
+    @media (min-width: $bp-large) and (max-width: $bp-xlarge - 1) {
         @content;
     }
 }
@@ -67,7 +87,7 @@
 /// This screen size got no  or -down version, as -down would be all and  would be like normal xlarge, as it is the highest size
 /// @content will only be displayed when screen bigger then $bp-xlarge
 @mixin bp-xl {
-    @media (min-width : $bp-xlarge) {
+    @media #{bp-xl-q()} {
         @content;
     }
 }

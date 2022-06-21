@@ -3,9 +3,23 @@
 /// @author Mustard-UI@v1, Michael Becker
 ////
 
+
 ///
 #{$button-selector} {
-    @include btn;
+    @include btnBase;
+    @include btnStates;
+}
+
+///
+#{$button-class}-style {
+    @include btnBase;
+
+    @at-root #{&}[tabindex]:not([tabindex="-1"]), a#{&}, button#{&} {
+        &:hover,
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 ///

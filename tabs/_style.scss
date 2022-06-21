@@ -1,0 +1,24 @@
+////
+/// @group Tabs
+/// @author Michael Becker
+////
+
+///
+.tabs-toggle-group {
+    margin-bottom: $button-border-width * -1;
+
+    ///
+    :first-child {
+        border-bottom-left-radius: 0;
+    }
+
+    ///
+    :last-child {
+        border-bottom-right-radius: 0;
+    }
+
+    ///
+    .toggle-active {
+        border-bottom-color: $color-primary;
+    }
+}
