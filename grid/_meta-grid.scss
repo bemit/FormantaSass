@@ -32,7 +32,7 @@
 /// @param {Int} $number - id of the column calculated
 /// @param {Int} $col-qty [$col-qty] - max. columns used, overwrites the standard column qty grid
 @function col($number, $col-qty: $col-qty) {
-    @return (100% / $col-qty) * $number;
+    @return calc(100% / $col-qty) * $number;
 }
 
 /// @type String [width|min-width|flex-basis]

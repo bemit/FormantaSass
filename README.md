@@ -6,7 +6,7 @@
 
 [![npm (scoped)](https://img.shields.io/npm/v/@formanta/sass?style=flat-square)](https://www.npmjs.com/package/@formanta/sass)
 
-Feature rich Sass library with small output size: `~46KB` *(gzip `9.5KB`)* CSS - or **only `~27.5B`** *(gzip `6.7KB`)* without responsive spacings!
+Feature rich Sass library with small output size: `~46KB` *(gzip `9.5KB`)* CSS - or **only `~27.5KB`** *(gzip `6.7KB`)* without responsive spacings!
 
 Low-level OOCSS framework with modular style files (optional CSS output), contains additionally ready to use components to speed up development and page load!
 
@@ -172,31 +172,31 @@ Prebuild CSS are available to try it out with some default configs.
 
 > build together with [normalize.css v8.0.1](https://github.com/necolas/normalize.css), except the two files with the `-no-normalize` suffix
 
-- [defaults](https://formanta.bemit.codes/styles/prebuild/main.css)
+- [defaults.css](https://formanta.bemit.codes/styles/prebuild/main.css)
     - [defaults no-normalize](https://formanta.bemit.codes/styles/prebuild/main-no-normalize.css)
     - uses just the defaults
     - source files in demo monorepo:
         - [prebuild/main](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main.scss)
         - [prebuild/main-no-normalize](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-no-normalize.scss)
-- [defaults no-responsive-spacings](https://formanta.bemit.codes/styles/prebuild/main-no-responsive-spacings.css)
+- [defaults-no-responsive-spacings.css](https://formanta.bemit.codes/styles/prebuild/main-no-responsive-spacings.css)
     - [defaults no-responsive-spacings no-normalize](https://formanta.bemit.codes/styles/prebuild/main-no-responsive-spacings-no-normalize.css)
     - uses just the defaults, but does not include responsive spacings
     - source files in demo monorepo:
         - [prebuild/main-no-responsive-spacings](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-no-responsive-spacings.scss)
         - [prebuild/main-no-responsive-spacings-no-normalize](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-no-responsive-spacings-no-normalize.scss)
-- [contrast](https://formanta.bemit.codes/styles/prebuild/main-contrast.css)
+- [contrast.css](https://formanta.bemit.codes/styles/prebuild/main-contrast.css)
     - source files in demo monorepo:
         - [config/_vars-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/_vars-contrast.scss)
         - [prebuild/main-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-contrast.scss)
-- [dark](https://formanta.bemit.codes/styles/prebuild/main-dark.css)
+- [dark.css](https://formanta.bemit.codes/styles/prebuild/main-dark.css)
     - source files in demo monorepo:
         - [config/_vars-dark](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/_vars-dark.scss)
         - [prebuild/main-dark](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-dark.scss)
-- [dark-contrast](https://formanta.bemit.codes/styles/prebuild/main-dark-contrast.css)
+- [dark-contrast.css](https://formanta.bemit.codes/styles/prebuild/main-dark-contrast.css)
     - source files in demo monorepo:
         - [config/_vars-dark-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/config/_vars-dark-contrast.scss)
         - [prebuild/main-dark-contrast](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-dark-contrast.scss)
-- [dark cssvars](https://formanta.bemit.codes/styles/prebuild/main-dark-cssvars.css)
+- [dark-cssvars.css](https://formanta.bemit.codes/styles/prebuild/main-dark-cssvars.css)
     - source files in demo monorepo:
         - [prebuild/main-dark-cssvars](https://github.com/bemit/Formanta/blob/master/packages/demo/src/styles/prebuild/main-dark-cssvars.scss)
 
