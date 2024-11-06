@@ -212,4 +212,4 @@ Mustard-UI: Copyright 2018 Kyle Logue, [MIT License](https://github.com/kylelogu
 
 ## Copyright
 
-2015 - 2022 | [Michael Becker](https://i-am-digital.eu), [bemit](https://bemit.codes)
+2015 - 2024 | [Michael Becker](https://i-am-digital.eu), [bemit](https://bemit.codes)

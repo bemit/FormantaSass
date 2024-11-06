@@ -1,6 +1,6 @@
 {
     "name": "@formanta/sass",
-    "version": "0.23.3",
+    "version": "0.23.4",
     "description": "Mini CSS Framework with modular Sass files, AMP compatible",
     "homepage": "https://formanta.bemit.codes",
     "author": {
@@ -36,7 +36,7 @@
     },
     "devDependencies": {
         "@formanta/sass-doctheme": "~0.1.2",
-        "sassdoc": "^2.7.3"
+        "sassdoc": "^2.7.4"
     },
     "publishConfig": {
         "access": "public"
