@@ -10,7 +10,7 @@
 
 /// nested grid wrapper, for spacing 0.5
 .grid-s05 {
-    width: #{'calc(100% + ' + (space('05') * 2) + ')'};
+    width: calc(100% + (space('05') * 2));
     margin: space('05') * -1;
 }
 
@@ -21,7 +21,7 @@
 
 /// nested grid wrapper, for spacing 1
 .grid-s1 {
-    width: #{'calc(100% + ' + (space(1) * 2) + ')'};
+    width: calc(100% + (space(1) * 2));
     margin: space(1) * -1;
 }
 
@@ -32,7 +32,7 @@
 
 /// nested grid wrapper, for spacing 2
 .grid-s2 {
-    width: #{'calc(100% + ' + (space(2) * 2) + ')'};
+    width: calc(100% + (space(2) * 2));
     margin: space(2) * -1;
 }
 
@@ -43,7 +43,7 @@
 
 /// nested grid wrapper, for spacing 3
 .grid-s3 {
-    width: #{'calc(100% + ' + (space(3) * 2) + ')'};
+    width: calc(100% + (space(3) * 2));
     margin: space(3) * -1;
 }
 

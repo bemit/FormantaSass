@@ -23,5 +23,3 @@ $bp-xsmall: $bp-small - 1 !default;
 // ##################################################
 /// @prop {Int} $col-qty [12] - how much columns the grid should be based of, 12 or 24 are a good match
 $col-qty: 12 !default;
-/// @prop {Size} $col-basic-size [100% / $col-qty] - basic size for one column element
-$col-basic-size: 100% / $col-qty !default;
