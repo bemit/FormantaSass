@@ -2,6 +2,7 @@
 /// @group Elevation
 /// @author Michael Becker
 ////
+@use 'sass:map';
 
 ///
 $elevation-steps: (
@@ -15,5 +16,5 @@ $elevation-steps: (
 
 ///
 @function elevation($number) {
-    @return map-get($elevation-steps, $number);
+    @return map.get($elevation-steps, $number);
 }

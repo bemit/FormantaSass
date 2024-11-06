@@ -2,6 +2,7 @@
 /// @group Container
 /// @author Michael Becker
 ////
+@use 'sass:map';
 
 ///
 $container-sizes: (
@@ -14,5 +15,5 @@ $container-sizes: (
 ///
 $container-responsive-sizes: (
     'small' : 90%,
-    'large' : map-get($container-sizes, 'large'),
+    'large' : map.get($container-sizes, 'large'),
 ) !default;

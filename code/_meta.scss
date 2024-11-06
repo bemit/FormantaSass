@@ -2,13 +2,14 @@
 /// @group Code
 /// @author Michael Becker
 ////
+@use 'sass:map';
 
 ///
 $code-bg-color: $bg-contained !default;
 ///
 $code-border-color: $color-primary !default;
 ///
-$code-font-color: map-get($text-colors, 'strong') !default;
+$code-font-color: map.get($text-colors, 'strong') !default;
 ///
 $code-font-size: 0.9rem !default;
 ///

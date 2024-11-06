@@ -4,6 +4,7 @@
 /// @group Spacing
 /// @author Michael Becker
 ////
+@use 'sass:map';
 
 /// Spacing default
 /// @type Size
@@ -15,7 +16,7 @@ $spacings-def: (0: 0, '05': 0.5, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5) !default;
 
 ///
 @function space($size) {
-    @return ($spacing * map-get($spacings-def, $size))
+    @return ($spacing * map.get($spacings-def, $size))
 }
 
 ///
